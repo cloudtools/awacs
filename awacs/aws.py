@@ -1,0 +1,150 @@
+# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# All rights reserved.
+#
+# See LICENSE file for full license.
+
+import json
+from . import AWSHelperFn, AWSProperty, awsencode
+
+
+# Policy effect constants.
+Allow = "Allow"
+Deny = "Deny"
+
+# Policy principal constants.
+Everybody = "*"
+
+# Policy condition key constants.
+CurrentTime = "aws:CurrentTime"
+EpochTime = "aws:EpochTime"
+MultiFactorAuthAge = "aws:MultiFactorAuthAge"
+Referer = "aws:Referer"
+SecureTransport = "aws:SecureTransport"
+SourceArn = "aws:SourceArn"
+SourceIp = "aws:SourceIp"
+UserAgent = "aws:UserAgent"
+
+
+class Action(AWSHelperFn):
+    def __init__(self, action):
+        self.data = action
+
+    def JSONrepr(self):
+        return self.data
+
+
+class ARN(AWSHelperFn):
+    def __init__(self, resource, region, account, data):
+        self.data = "arn:aws:%s:%s:%s:%s" % (resource, region, account, data)
+
+    def JSONrepr(self):
+        return self.data
+
+
+class ConditionElement(AWSHelperFn):
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+
+
+class Condition(AWSHelperFn):
+    def __init__(self, conditions):
+        if isinstance(conditions, ConditionElement):
+            self.conditions = [conditions]
+        elif isinstance(conditions, list):
+            for c in conditions:
+                if not isinstance(c, ConditionElement):
+                    raise ValueError(
+                        "ConditionElement is type %s" % (type(c),))
+            self.conditions = conditions
+        else:
+            raise TypeError
+
+    def JSONrepr(self):
+        d = {}
+        for c in self.conditions:
+            d[c.condition] = {c.key: c.value}
+        return d
+
+
+class Principal(AWSHelperFn):
+    def __init__(self, principal, resources):
+        self.data = {principal: resources}
+
+    def JSONrepr(self):
+        return self.data
+
+
+class AWSPrincipal(Principal):
+    def __init__(self, principals):
+        sup = super(AWSPrincipal, self)
+        sup.__init__('AWS', principals)
+
+
+def effect(x):
+    if x not in [Allow, Deny]:
+        raise ValueError(x)
+    return x
+
+
+class Statement(AWSProperty):
+    props = {
+        'Action': ([Action], False),
+        'Condition': (Condition, False),
+        'Effect': (effect, True),
+        'NotAction': (list, False),
+        'NotPrincipal': ([Principal], False),
+        'Principal': ([Principal], False),
+        'Resource': (list, False),
+        'NotResource': (list, False),
+        'Sid': (basestring, False),
+    }
+
+
+class Policy(AWSProperty):
+    props = {
+        'Id': (basestring, False),
+        'Statement': ([Statement], True),
+        'Version': (basestring, False),
+    }
+
+    def to_json(self, indent=4, sort_keys=True):
+        p = self.properties
+        return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
+
+    def JSONrepr(self):
+        return self.properties
+
+
+_condition_strings = [
+    "ArnEquals",
+    "ArnNotEquals",
+    "ArnLike",
+    "ArnNotLike",
+    "Bool",
+    "DateEquals",
+    "DateNotEquals",
+    "DateLessThan",
+    "DateLessThanEquals",
+    "DateGreaterThan",
+    "DateGreaterThanEquals",
+    "IpAddress",
+    "NotIpAddress",
+    "NumericEquals",
+    "NumericNotEquals",
+    "NumericLessThan",
+    "NumericLessThanEquals",
+    "NumericGreaterThan",
+    "NumericGreaterThanEquals",
+    "StringEquals",
+    "StringNotEquals",
+    "StringEqualsIgnoresCase",
+    "StringLike",
+    "StringNotLike",
+]
+
+# Create condition classes
+for i in _condition_strings:
+    globals()[i] = type(i, (ConditionElement,), dict(condition=i))
+    i = i + "IfExists"
+    globals()[i] = type(i, (ConditionElement,), dict(condition=i))
