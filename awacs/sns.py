@@ -5,21 +5,27 @@
 
 from aws import Action, ARN
 
+service_name = 'Amazon SNS'
+prefix = 'sns'
 
 # SNS policy condition key constants.
 EndPoint = "sns:EndPoint"
 Protocol = "sns:Protocol"
 
 # SNS policy action constants.
-AddPermission = Action("sns:AddPermission")
-DeleteTopic = Action("sns:DeleteTopic")
-GetTopicAttributes = Action("sns:GetTopicAttributes")
-ListSubscriptionsByTopic = Action("sns:ListSubscriptionsByTopic")
-Publish = Action("sns:Publish")
-Receive = Action("sns:Receive")
-RemovePermission = Action("sns:RemovePermission")
-SetTopicAttributes = Action("sns:SetTopicAttributes")
-Subscribe = Action("sns:Subscribe")
+AddPermission = Action(prefix, 'AddPermission')
+ConfirmSubscription = Action(prefix, 'ConfirmSubscription')
+CreateTopic = Action(prefix, 'CreateTopic')
+DeleteTopic = Action(prefix, 'DeleteTopic')
+GetTopicAttributes = Action(prefix, 'GetTopicAttributes')
+ListSubscriptions = Action(prefix, 'ListSubscriptions')
+ListSubscriptionsByTopic = Action(prefix, 'ListSubscriptionsByTopic')
+ListTopics = Action(prefix, 'ListTopics')
+Publish = Action(prefix, 'Publish')
+RemovePermission = Action(prefix, 'RemovePermission')
+SetTopicAttributes = Action(prefix, 'SetTopicAttributes')
+Subscribe = Action(prefix, 'Subscribe')
+Unsubscribe = Action(prefix, 'Unsubscribe')
 
 
 class SNS_ARN(ARN):

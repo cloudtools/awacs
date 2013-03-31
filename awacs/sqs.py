@@ -6,22 +6,25 @@
 from aws import Action, ARN
 
 
-# SQS policy action constants.
-AddPermission = Action("sqs:AddPermission")
-ChangeMessageVisibility = Action("sqs:ChangeMessageVisibility")
-ChangeMessageVisibilityBatch = Action("sqs:ChangeMessageVisibilityBatch")
-CreateQueue = Action("sqs:CreateQueue")
-DeleteMessage = Action("sqs:DeleteMessage")
-DeleteMessageBatch = Action("sqs:DeleteMessageBatch")
-DeleteQueue = Action("sqs:DeleteQueue")
-GetQueueAttributes = Action("sqs:GetQueueAttributes")
-GetQueueUrl = Action("sqs:GetQueueUrl")
-ListQueues = Action("sqs:ListQueues")
-ReceiveMessage = Action("sqs:ReceiveMessage")
-RemovePermission = Action("sqs:RemovePermission")
-SendMessage = Action("sqs:SendMessage")
-SendMessageBatch = Action("sqs:SendMessageBatch")
-SetQueueAttributes = Action("sqs:SetQueueAttributes")
+service_name = 'Amazon SQS'
+prefix = 'sqs'
+
+AddPermission = Action(prefix, 'AddPermission')
+ChangeMessageVisibility = Action(prefix, 'ChangeMessageVisibility')
+ChangeMessageVisibilityBatch = \
+    Action(prefix, 'ChangeMessageVisibilityBatch')
+CreateQueue = Action(prefix, 'CreateQueue')
+DeleteMessage = Action(prefix, 'DeleteMessage')
+DeleteMessageBatch = Action(prefix, 'DeleteMessageBatch')
+DeleteQueue = Action(prefix, 'DeleteQueue')
+GetQueueAttributes = Action(prefix, 'GetQueueAttributes')
+GetQueueUrl = Action(prefix, 'GetQueueUrl')
+ListQueues = Action(prefix, 'ListQueues')
+ReceiveMessage = Action(prefix, 'ReceiveMessage')
+RemovePermission = Action(prefix, 'RemovePermission')
+SendMessage = Action(prefix, 'SendMessage')
+SendMessageBatch = Action(prefix, 'SendMessageBatch')
+SetQueueAttributes = Action(prefix, 'SetQueueAttributes')
 
 
 class SQS_ARN(ARN):

@@ -26,11 +26,12 @@ UserAgent = "aws:UserAgent"
 
 
 class Action(AWSHelperFn):
-    def __init__(self, action):
-        self.data = action
+    def __init__(self, prefix, action):
+        self.prefix = prefix
+        self.action = action
 
     def JSONrepr(self):
-        return self.data
+        return ''.join([self.prefix, ":", self.action])
 
 
 class ARN(AWSHelperFn):

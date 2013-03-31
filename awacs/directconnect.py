@@ -5,17 +5,19 @@
 
 from aws import Action
 
+service_name = 'AWS Direct Connect'
+prefix = 'directconnect:'
 
-CreateConnection = Action("directconnect:CreateConnection")
+CreateConnection = Action(prefix, 'CreateConnection')
 CreatePrivateVirtualInterface = \
-    Action("directconnect:CreatePrivateVirtualInterface")
+    Action(prefix, 'CreatePrivateVirtualInterface')
 CreatePublicVirtualInterface = \
-    Action("directconnect:CreatePublicVirtualInterface")
-DeleteConnection = Action("directconnect:DeleteConnection")
-DeleteVirtualInterface = Action("directconnect:DeleteVirtualInterface")
-DescribeConnectionDetail = Action("directconnect:DescribeConnectionDetail")
-DescribeConnections = Action("directconnect:DescribeConnections")
-DescribeOfferingDetail = Action("directconnect:DescribeOfferingDetail")
-DescribeOfferings = Action("directconnect:DescribeOfferings")
-DescribeVirtualGateways = Action("directconnect:DescribeVirtualGateways")
-DescribeVirtualInterfaces = Action("directconnect:DescribeVirtualInterfaces")
+    Action(prefix, 'CreatePublicVirtualInterface')
+DeleteConnection = Action(prefix, 'DeleteConnection')
+DeleteVirtualInterface = Action(prefix, 'DeleteVirtualInterface')
+DescribeConnectionDetail = Action(prefix, 'DescribeConnectionDetail')
+DescribeConnections = Action(prefix, 'DescribeConnections')
+DescribeOfferingDetail = Action(prefix, 'DescribeOfferingDetail')
+DescribeOfferings = Action(prefix, 'DescribeOfferings')
+DescribeVirtualGateways = Action(prefix, 'DescribeVirtualGateways')
+DescribeVirtualInterfaces = Action(prefix, 'DescribeVirtualInterfaces')
