@@ -8,7 +8,7 @@ import json
 import re
 import types
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 valid_names = re.compile(r'^[a-zA-Z0-9]+$')
