@@ -28,6 +28,6 @@ SetQueueAttributes = Action(prefix, 'SetQueueAttributes')
 
 
 class SQS_ARN(ARN):
-    def __init__(self, region, account, data):
+    def __init__(self, region, account, resource):
         sup = super(SQS_ARN, self)
-        sup.__init__('sqs', region, account, data)
+        sup.__init__('sqs', region, account, resource)
