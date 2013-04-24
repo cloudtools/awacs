@@ -10,9 +10,9 @@ prefix = 'iam'
 
 
 class IAM_ARN(ARN):
-    def __init__(self, region, account, data):
+    def __init__(self, account, resource):
         sup = super(IAM_ARN, self)
-        sup.__init__('iam', region, account, data)
+        sup.__init__('iam', '', account, resource)
 
 AddRoleToInstanceProfile = Action(prefix, 'AddRoleToInstanceProfile')
 AddUserToGroup = Action(prefix, 'AddUserToGroup')
