@@ -3,7 +3,7 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, ARN
 
 service_name = 'Amazon S3'
 prefix = 's3'
