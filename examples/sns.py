@@ -11,7 +11,7 @@ pd = Policy(
     Statement=[
         Statement(
             Effect=Allow,
-            Principal=[AWSPrincipal("210987654321"), ],
+            Principal=AWSPrincipal("210987654321"),
             Action=[sqs.SendMessage],
             Resource=[sqs.SQS_ARN(region, account, "your_queue_xyz"), ],
             Condition=Condition(
