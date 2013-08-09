@@ -36,7 +36,8 @@ class Action(AWSHelperFn):
 
 class ARN(AWSHelperFn):
     def __init__(self, service, resource, region='', account=''):
-        self.data = "arn:aws:%s:%s:%s:%s" % (service, region, account, resource)
+        self.data = "arn:aws:%s:%s:%s:%s" % (
+            service, region, account, resource)
 
     def JSONrepr(self):
         return self.data
