@@ -12,7 +12,7 @@ prefix = 's3'
 class S3_ARN(ARN):
     def __init__(self, resource):
         sup = super(S3_ARN, self)
-        sup.__init__('s3', '', '', resource)
+        sup.__init__(service='s3', resource=resource)
 
 
 AbortMultipartUpload = Action(prefix, 'AbortMultipartUpload')
