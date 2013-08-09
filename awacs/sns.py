@@ -31,4 +31,4 @@ Unsubscribe = Action(prefix, 'Unsubscribe')
 class SNS_ARN(ARN):
     def __init__(self, region, account, resource):
         sup = super(SNS_ARN, self)
-        sup.__init__('sns', region, account, resource)
+        sup.__init__('sns', region=region, account=account, resource=resource)
