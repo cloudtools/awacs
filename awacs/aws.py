@@ -44,9 +44,19 @@ class ARN(AWSHelperFn):
 
 
 class ConditionElement(AWSHelperFn):
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
+    def __init__(self, data, value=None):
+        self.cond_dict = None
+        if value is not None:
+            self.key = data
+            self.value = value
+        else:
+            self.cond_dict = data
+
+    def get_dict(self):
+        if self.cond_dict:
+            return self.cond_dict
+        else:
+            return {self.key: self.value}
 
 
 class Condition(AWSHelperFn):
@@ -65,7 +75,7 @@ class Condition(AWSHelperFn):
     def JSONrepr(self):
         d = {}
         for c in self.conditions:
-            d[c.condition] = {c.key: c.value}
+            d[c.condition] = c.get_dict()
         return d
 
 
