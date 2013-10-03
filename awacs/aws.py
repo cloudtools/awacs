@@ -44,9 +44,30 @@ class ARN(AWSHelperFn):
 
 
 class ConditionElement(AWSHelperFn):
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
+    def __init__(self, data, value=None):
+        """Create a ConditionElement
+
+        There are two supported ways to create a new ConditionElement.
+        For a simple key/value pair use something of the form:
+            StringEquals('s3:prefix': ['', 'home/']),
+        If more than one condition is needed, pass a dict:
+            StringEquals({
+                's3:prefix': ['', 'home/'],
+                's3:delimiter': ['/'],
+            }),
+        """
+        self.cond_dict = None
+        if value is not None:
+            self.key = data
+            self.value = value
+        else:
+            self.cond_dict = data
+
+    def get_dict(self):
+        if self.cond_dict:
+            return self.cond_dict
+        else:
+            return {self.key: self.value}
 
 
 class Condition(AWSHelperFn):
@@ -65,7 +86,7 @@ class Condition(AWSHelperFn):
     def JSONrepr(self):
         d = {}
         for c in self.conditions:
-            d[c.condition] = {c.key: c.value}
+            d[c.condition] = c.get_dict()
         return d
 
 
