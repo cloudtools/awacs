@@ -3,6 +3,7 @@ python:
   - "2.7"
   - "3.3"
 install:
+  - 2to3 -n -w --no-diffs awacs
   - pip install pep8
   - pip install pyflakes
 before_script:
