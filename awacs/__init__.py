@@ -81,7 +81,7 @@ class AWSObject(object):
                 self._raise_type(name, value, expected_type)
 
         raise AttributeError("%s object does not support attribute %s" %
-                            (self.type, name))
+                             (self.type, name))
 
     def _raise_type(self, name, value, expected_type):
         raise TypeError('%s is %s, expected %s' %
