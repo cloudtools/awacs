@@ -3,10 +3,20 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, ARN
 
 service_name = 'Amazon SimpleDB'
 prefix = 'sdb'
+
+
+class SDB_ARN(ARN):
+    def __init__(self, region, account, domain=None):
+        sup = super(SDB_ARN, self)
+        resource = '*'
+        if domain:
+            resource = 'domain/' + domain
+        sup.__init__(prefix, region=region, account=account, resource=resource)
+
 
 BatchDeleteAttributes = Action(prefix, 'BatchDeleteAttributes')
 BatchPutAttributes = Action(prefix, 'BatchPutAttributes')
