@@ -4,13 +4,13 @@
 # See LICENSE file for full license.
 
 from aws import Action
-from aws import ARN as BASE_ARN
+from aws import BaseARN
 
 service_name = 'Amazon DynamoDB'
 prefix = 'dynamodb'
 
 
-class ARN(BASE_ARN):
+class ARN(BaseARN):
     def __init__(self, region, account, table=None, index=None):
         sup = super(ARN, self)
         resource = '*'

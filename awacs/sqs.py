@@ -3,7 +3,22 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, ARN
+import warnings
+
+from aws import Action, BaseARN
+
+
+class ARN(BaseARN):
+    def __init__(self, region, account, resource):
+        sup = super(ARN, self)
+        sup.__init__('sqs', region=region, account=account, resource=resource)
+
+
+class SQS_ARN(ARN):
+    def __init__(self, *args, **kwargs):
+        super(SQS_ARN, self).__init__(*args, **kwargs)
+        warnings.warn("This class is going away. Use sqs.ARN instead.",
+                      FutureWarning)
 
 
 service_name = 'Amazon SQS'
@@ -25,9 +40,3 @@ RemovePermission = Action(prefix, 'RemovePermission')
 SendMessage = Action(prefix, 'SendMessage')
 SendMessageBatch = Action(prefix, 'SendMessageBatch')
 SetQueueAttributes = Action(prefix, 'SetQueueAttributes')
-
-
-class SQS_ARN(ARN):
-    def __init__(self, region, account, resource):
-        sup = super(SQS_ARN, self)
-        sup.__init__('sqs', region=region, account=account, resource=resource)

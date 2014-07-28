@@ -3,16 +3,25 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, ARN
+import warnings
+
+from aws import Action, BaseARN
 
 service_name = 'Amazon S3'
 prefix = 's3'
 
 
-class S3_ARN(ARN):
+class ARN(BaseARN):
     def __init__(self, resource):
-        sup = super(S3_ARN, self)
+        sup = super(ARN, self)
         sup.__init__(service='s3', resource=resource)
+
+
+class S3_ARN(ARN):
+    def __init__(self, *args, **kwargs):
+        super(S3_ARN, self).__init__(*args, **kwargs)
+        warnings.warn("This class is going away. Use s3.ARN instead.",
+                      FutureWarning)
 
 
 AbortMultipartUpload = Action(prefix, 'AbortMultipartUpload')

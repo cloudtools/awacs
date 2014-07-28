@@ -3,16 +3,26 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, ARN
+import warnings
+
+from aws import Action, BaseARN
 
 service_name = 'AWS Identity and Access Management'
 prefix = 'iam'
 
 
-class IAM_ARN(ARN):
+class ARN(BaseARN):
     def __init__(self, account, resource):
-        sup = super(IAM_ARN, self)
+        sup = super(ARN, self)
         sup.__init__('iam', region='', account=account, resource=resource)
+
+
+class IAM_ARN(ARN):
+    def __init__(self, *args, **kwargs):
+        super(IAM_ARN, self).__init__(*args, **kwargs)
+        warnings.warn("This class is going away. Use iam.ARN instead.",
+                      FutureWarning)
+
 
 AddRoleToInstanceProfile = Action(prefix, 'AddRoleToInstanceProfile')
 AddUserToGroup = Action(prefix, 'AddUserToGroup')

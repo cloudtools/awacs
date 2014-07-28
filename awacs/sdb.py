@@ -3,19 +3,28 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, ARN
+import warnings
+
+from aws import Action, BaseARN
 
 service_name = 'Amazon SimpleDB'
 prefix = 'sdb'
 
 
-class SDB_ARN(ARN):
+class ARN(BaseARN):
     def __init__(self, region, account, domain=None):
         sup = super(SDB_ARN, self)
         resource = '*'
         if domain:
             resource = 'domain/' + domain
         sup.__init__(prefix, region=region, account=account, resource=resource)
+
+
+class SDB_ARN(ARN):
+    def __init__(self, *args, **kwargs):
+        super(SDB_ARN, self).__init__(*args, **kwargs)
+        warnings.warn("This class is going away. Use sdb.ARN instead.",
+                      FutureWarning)
 
 
 BatchDeleteAttributes = Action(prefix, 'BatchDeleteAttributes')

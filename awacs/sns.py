@@ -3,10 +3,26 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, ARN
+import warnings
+
+from aws import Action, BaseARN
 
 service_name = 'Amazon SNS'
 prefix = 'sns'
+
+
+class ARN(BaseARN):
+    def __init__(self, region, account, resource):
+        sup = super(ARN, self)
+        sup.__init__('sns', region=region, account=account, resource=resource)
+
+
+class SNS_ARN(ARN):
+    def __init__(self, *args, **kwargs):
+        super(SNS_ARN, self).__init__(*args, **kwargs)
+        warnings.warn("This class is going away. Use sns.ARN instead.",
+                      FutureWarning)
+
 
 # SNS policy condition key constants.
 EndPoint = "sns:EndPoint"
@@ -26,9 +42,3 @@ RemovePermission = Action(prefix, 'RemovePermission')
 SetTopicAttributes = Action(prefix, 'SetTopicAttributes')
 Subscribe = Action(prefix, 'Subscribe')
 Unsubscribe = Action(prefix, 'Unsubscribe')
-
-
-class SNS_ARN(ARN):
-    def __init__(self, region, account, resource):
-        sup = super(SNS_ARN, self)
-        sup.__init__('sns', region=region, account=account, resource=resource)

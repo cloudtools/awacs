@@ -4,6 +4,7 @@
 # See LICENSE file for full license.
 
 import json
+import warnings
 from . import AWSHelperFn, AWSProperty, awsencode
 
 
@@ -34,13 +35,20 @@ class Action(AWSHelperFn):
         return ''.join([self.prefix, ":", self.action])
 
 
-class ARN(AWSHelperFn):
+class BaseARN(AWSHelperFn):
     def __init__(self, service, resource, region='', account=''):
         self.data = "arn:aws:%s:%s:%s:%s" % (
             service, region, account, resource)
 
     def JSONrepr(self):
         return self.data
+
+
+class ARN(BaseARN):
+    def __init__(self, service, resource, region='', account=''):
+        super(ARN, self).__init__(self, service, resource, region, account)
+        warnings.warn('This is going away. Either use a service specific '
+                      'ARN class, or use the BaseARN class.', FutureWarning)
 
 
 class ConditionElement(AWSHelperFn):
