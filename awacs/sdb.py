@@ -13,7 +13,7 @@ prefix = 'sdb'
 
 class ARN(BaseARN):
     def __init__(self, region, account, domain=None):
-        sup = super(SDB_ARN, self)
+        sup = super(ARN, self)
         resource = '*'
         if domain:
             resource = 'domain/' + domain
