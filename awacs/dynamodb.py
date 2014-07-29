@@ -22,6 +22,7 @@ class ARN(BaseARN):
 
 
 BatchGetItem = Action(prefix, 'BatchGetItem')
+BatchWriteItem = Action(prefix, 'BatchWriteItem')
 CreateTable = Action(prefix, 'CreateTable')
 DeleteItem = Action(prefix, 'DeleteItem')
 DeleteTable = Action(prefix, 'DeleteTable')
