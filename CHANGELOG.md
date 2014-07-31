@@ -1,3 +1,6 @@
+## 0.4.2 (2014-07-31)
+- Base ARN class has extra self bug
+
 ## 0.4.1 (2014-07-29)
 - Typo on SDB ARN class fix.
 

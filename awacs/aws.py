@@ -46,7 +46,7 @@ class BaseARN(AWSHelperFn):
 
 class ARN(BaseARN):
     def __init__(self, service, resource, region='', account=''):
-        super(ARN, self).__init__(self, service, resource, region, account)
+        super(ARN, self).__init__(service, resource, region, account)
         warnings.warn('This is going away. Either use a service specific '
                       'ARN class, or use the BaseARN class.', FutureWarning)
 
