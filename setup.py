@@ -11,4 +11,5 @@ setup(
     packages=['awacs'],
     test_suite="tests",
     use_2to3=True,
+    requires=['slimit'],
 )
