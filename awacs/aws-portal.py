@@ -5,8 +5,13 @@
 
 from aws import Action
 
-service_name = 'AWS Website'
+service_name = 'AWS Billing'
 prefix = 'aws-portal'
 
+ModifyAccount = Action(prefix, 'ModifyAccount')
+ModifyBilling = Action(prefix, 'ModifyBilling')
+ModifyPaymentMethods = Action(prefix, 'ModifyPaymentMethods')
+ViewAccount = Action(prefix, 'ViewAccount')
 ViewBilling = Action(prefix, 'ViewBilling')
+ViewPaymentMethods = Action(prefix, 'ViewPaymentMethods')
 ViewUsage = Action(prefix, 'ViewUsage')
