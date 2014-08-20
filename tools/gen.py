@@ -10,7 +10,8 @@ from slimit.visitors import nodevisitor
 from slimit.visitors.ecmavisitor import ECMAVisitor
 from slimit import ast
 
-aws_url = "https://awsiamconsole.s3.amazonaws.com/iam/assets/js/bundles/policies.js"
+aws_url =
+"https://awsiamconsole.s3.amazonaws.com/iam/assets/js/bundles/policies.js"
 
 header = """\
 # Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
@@ -27,6 +28,7 @@ basedir = 'generated'
 response = urllib2.urlopen(aws_url)
 config = response.read()
 
+
 class JSONVisitor(ECMAVisitor):
     def visit_Identifier(self, node):
         return '"%s"' % node.value
@@ -37,9 +39,9 @@ class JSONVisitor(ECMAVisitor):
     def visit_UnaryOp(self, node):
         s = self.visit(node.value)
         if node.op == '!' and s == 0:
-           return '"true"'
+            return '"true"'
         else:
-           return s
+            return s
 
 
 visitor = JSONVisitor()
@@ -49,7 +51,8 @@ tree = parser.parse(config)
 flag = False
 policy_editor_config = ""
 for node in nodevisitor.visit(tree):
-    if isinstance(node, ast.Identifier) and node.value  == 'PolicyEditorConfig':
+    if (isinstance(node, ast.Identifier)
+            and node.value == 'PolicyEditorConfig'):
         flag = True
     elif flag:
         policy_editor_config = visitor.visit(node)
