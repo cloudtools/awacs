@@ -10,8 +10,8 @@ from slimit.visitors import nodevisitor
 from slimit.visitors.ecmavisitor import ECMAVisitor
 from slimit import ast
 
-aws_url =
-"https://awsiamconsole.s3.amazonaws.com/iam/assets/js/bundles/policies.js"
+aws_url = \
+    "https://awsiamconsole.s3.amazonaws.com/iam/assets/js/bundles/policies.js"
 
 header = """\
 # Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
