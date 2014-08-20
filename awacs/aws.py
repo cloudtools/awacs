@@ -29,13 +29,13 @@ UserAgent = "aws:UserAgent"
 class Action(AWSHelperFn):
     def __init__(self, prefix, action=None):
         self.prefix = prefix
-        if prefix == '*' and action != None:
+        if prefix == '*' and action is not None:
             raise ValueError("Action not supported with wildcard prefix")
         else:
             self.action = action
 
     def JSONrepr(self):
-        if self.prefix == '*' and self.action == None:
+        if self.prefix == '*' and self.action is None:
             return self.prefix
         else:
             return ''.join([self.prefix, ":", self.action])
