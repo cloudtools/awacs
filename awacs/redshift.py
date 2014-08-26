@@ -10,6 +10,7 @@ prefix = 'redshift'
 
 AuthorizeClusterSecurityGroupIngress = \
     Action(prefix, 'AuthorizeClusterSecurityGroupIngress')
+AuthorizeSnapshotAccess = Action(prefix, 'AuthorizeSnapshotAccess')
 CopyClusterSnapshot = Action(prefix, 'CopyClusterSnapshot')
 CreateCluster = Action(prefix, 'CreateCluster')
 CreateClusterParameterGroup = \
@@ -18,6 +19,10 @@ CreateClusterSecurityGroup = \
     Action(prefix, 'CreateClusterSecurityGroup')
 CreateClusterSnapshot = Action(prefix, 'CreateClusterSnapshot')
 CreateClusterSubnetGroup = Action(prefix, 'CreateClusterSubnetGroup')
+CreateEventSubscription = Action(prefix, 'CreateEventSubscription')
+CreateHsmClientCertificate = \
+    Action(prefix, 'CreateHsmClientCertificate')
+CreateHsmConfiguration = Action(prefix, 'CreateHsmConfiguration')
 DeleteCluster = Action(prefix, 'DeleteCluster')
 DeleteClusterParameterGroup = \
     Action(prefix, 'DeleteClusterParameterGroup')
@@ -25,6 +30,10 @@ DeleteClusterSecurityGroup = \
     Action(prefix, 'DeleteClusterSecurityGroup')
 DeleteClusterSnapshot = Action(prefix, 'DeleteClusterSnapshot')
 DeleteClusterSubnetGroup = Action(prefix, 'DeleteClusterSubnetGroup')
+DeleteEventSubscription = Action(prefix, 'DeleteEventSubscription')
+DeleteHsmClientCertificate = \
+    Action(prefix, 'DeleteHsmClientCertificate')
+DeleteHsmConfiguration = Action(prefix, 'DeleteHsmConfiguration')
 DescribeClusterParameterGroups = \
     Action(prefix, 'DescribeClusterParameterGroups')
 DescribeClusterParameters = Action(prefix, 'DescribeClusterParameters')
@@ -37,17 +46,31 @@ DescribeClusterVersions = Action(prefix, 'DescribeClusterVersions')
 DescribeClusters = Action(prefix, 'DescribeClusters')
 DescribeDefaultClusterParameters = \
     Action(prefix, 'DescribeDefaultClusterParameters')
+DescribeEventCategories = Action(prefix, 'DescribeEventCategories')
+DescribeEventSubscriptions = \
+    Action(prefix, 'DescribeEventSubscriptions')
 DescribeEvents = Action(prefix, 'DescribeEvents')
+DescribeHsmClientCertificates = \
+    Action(prefix, 'DescribeHsmClientCertificates')
+DescribeHsmConfigurations = Action(prefix, 'DescribeHsmConfigurations')
+DescribeLoggingStatus = Action(prefix, 'DescribeLoggingStatus')
 DescribeOrderableClusterOptions = \
     Action(prefix, 'DescribeOrderableClusterOptions')
 DescribeReservedNodeOfferings = \
     Action(prefix, 'DescribeReservedNodeOfferings')
 DescribeReservedNodes = Action(prefix, 'DescribeReservedNodes')
 DescribeResize = Action(prefix, 'DescribeResize')
+DisableLogging = Action(prefix, 'DisableLogging')
+DisableSnapshotCopy = Action(prefix, 'DisableSnapshotCopy')
+EnableLogging = Action(prefix, 'EnableLogging')
+EnableSnapshotCopy = Action(prefix, 'EnableSnapshotCopy')
 ModifyCluster = Action(prefix, 'ModifyCluster')
 ModifyClusterParameterGroup = \
     Action(prefix, 'ModifyClusterParameterGroup')
 ModifyClusterSubnetGroup = Action(prefix, 'ModifyClusterSubnetGroup')
+ModifyEventSubscription = Action(prefix, 'ModifyEventSubscription')
+ModifySnapshotCopyRetentionPeriod = \
+    Action(prefix, 'ModifySnapshotCopyRetentionPeriod')
 PurchaseReservedNodeOffering = \
     Action(prefix, 'PurchaseReservedNodeOffering')
 RebootCluster = Action(prefix, 'RebootCluster')
@@ -57,3 +80,6 @@ RestoreFromClusterSnapshot = \
     Action(prefix, 'RestoreFromClusterSnapshot')
 RevokeClusterSecurityGroupIngress = \
     Action(prefix, 'RevokeClusterSecurityGroupIngress')
+RevokeSnapshotAccess = Action(prefix, 'RevokeSnapshotAccess')
+RotateEncryptionKey = Action(prefix, 'RotateEncryptionKey')
+ViewQueriesInConsole = Action(prefix, 'ViewQueriesInConsole')
