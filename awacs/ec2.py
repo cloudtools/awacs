@@ -3,10 +3,18 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, BaseARN
 
 service_name = 'Amazon EC2'
 prefix = 'ec2'
+
+
+class ARN(BaseARN):
+    def __init__(self, resource, region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
 
 AcceptVpcPeeringConnection = \
     Action(prefix, 'AcceptVpcPeeringConnection')
