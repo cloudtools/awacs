@@ -51,8 +51,8 @@ tree = parser.parse(config)
 flag = False
 policy_editor_config = ""
 for node in nodevisitor.visit(tree):
-    if (isinstance(node, ast.Identifier)
-            and node.value == 'PolicyEditorConfig'):
+    if (isinstance(node, ast.Identifier) and
+            node.value == 'PolicyEditorConfig'):
         flag = True
     elif flag:
         policy_editor_config = visitor.visit(node)
