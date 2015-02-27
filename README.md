@@ -1,3 +1,9 @@
+awacs
+===========
+
+[![Latest Version](https://pypip.in/version/awacs/badge.svg?text=version&style=flat)](https://pypi.python.org/pypi/awacs)
+[![Build Status](https://travis-ci.org/cloudtools/awacs.png?branch=master)](https://travis-ci.org/cloudtools/awacs) 
+
 awacs - Amazon Web Access Control Subsystem
 
 The awacs library allows for easier creation of AWS Access Policy
