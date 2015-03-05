@@ -29,7 +29,7 @@ pd = Policy(
         Statement(
             Sid="1",
             Effect=Allow,
-            Principal=Principal("AWS", [ARN(account, user)]),
+            Principal=Principal("AWS", [IAM_ARN(account, user)]),
             Action=[Action("s3", "*")],
             Resource=[S3_ARN("my_corporate_bucket/*"),],
         ),
