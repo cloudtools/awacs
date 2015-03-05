@@ -16,8 +16,8 @@ This shows creating policy attached to an Amazon S3 bucket:
 
 ```
 from awacs.aws import Action, Allow, Policy, Principal, Statement
-from awacs.iam import ARN
-from awacs.s3  import S3_ARN
+from awacs.iam import ARN as IAM_ARN
+from awacs.s3  import ARN as S3_ARN
 
 account = "123456789012"
 user = "user/Bob"
