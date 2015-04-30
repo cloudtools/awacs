@@ -1,3 +1,6 @@
+## pending
+- Add ECS support
+
 ## 0.5.0 (2015-02-27)
 - New/update actions - GH-7
 - Support wildcard action - GH-8
