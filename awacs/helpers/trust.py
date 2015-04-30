@@ -2,7 +2,7 @@ from awacs.aws import Statement, Principal, Allow, Policy
 from awacs import sts
 
 
-def get_default_assumerole_policy(region):
+def get_default_assumerole_policy(region=''):
     """ Helper function for building the Default AssumeRole Policy
 
     Taken from here:
