@@ -1,6 +1,5 @@
 # Example taken from AWS docs:
-# http://docs.aws.amazon.com/IAM/latest/UserGuide/
-# ExampleIAMPolicies.html#iampolicy-example-s3homedir
+# http://docs.aws.amazon.com/AmazonECS/latest/developerguide/IAM_policies.html#instance_IAM_role
 
 from awacs.aws import Allow
 from awacs.aws import Policy, Statement
