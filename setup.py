@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='awacs',
@@ -8,7 +8,7 @@ setup(
     author_email="mark@peek.org",
     url="https://github.com/cloudtools/awacs",
     license="New BSD license",
-    packages=['awacs'],
+    packages=find_packages(),
     test_suite="tests",
     use_2to3=True,
     requires=['slimit'],
