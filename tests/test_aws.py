@@ -16,3 +16,5 @@ class TestPrincipal(unittest.TestCase):
             p.data,
             {'AWS': 'arn:aws:iam::AccountNumber-WithoutHyphens:root'}
         )
+        with self.assertRaises(ValueError):
+            p = Principal("AWS")

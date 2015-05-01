@@ -112,6 +112,8 @@ class Principal(AWSHelperFn):
                                  "'*'.")
             self.data = "*"
         else:
+            if not resources:
+                raise ValueError("Must provide resources with principal.")
             self.data = {principal: resources}
 
     def JSONrepr(self):
