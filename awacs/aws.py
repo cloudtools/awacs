@@ -105,8 +105,14 @@ class Condition(AWSHelperFn):
 
 
 class Principal(AWSHelperFn):
-    def __init__(self, principal, resources):
-        self.data = {principal: resources}
+    def __init__(self, principal, resources=None):
+        if principal == "*":
+            if resources:
+                raise ValueError("Cannot provide resources if principal is "
+                                 "'*'.")
+            self.data = "*"
+        else:
+            self.data = {principal: resources}
 
     def JSONrepr(self):
         return self.data
