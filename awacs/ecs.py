@@ -10,7 +10,7 @@ prefix = 'ecs'
 
 
 class ARN(BaseARN):
-    def __init__(self, resource):
+    def __init__(self, resource="*"):
         sup = super(ARN, self)
         sup.__init__(service=prefix, resource=resource)
 
