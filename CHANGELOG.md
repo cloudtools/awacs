@@ -1,5 +1,6 @@
 ## pending
-- Add ECS support
+- Add ECS support GH-18
+- Add get\_default\_assumerole\_policy GH-17
 
 ## 0.5.0 (2015-02-27)
 - New/update actions - GH-7
