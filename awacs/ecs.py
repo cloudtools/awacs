@@ -10,9 +10,10 @@ prefix = 'ecs'
 
 
 class ARN(BaseARN):
-    def __init__(self, resource="*"):
+    def __init__(self, resource="*", region='', account=''):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
 
 
 class ECSAction(Action):
