@@ -88,7 +88,7 @@ Community
 =========
 
 We have a google group, cloudtools-dev_, where you can ask questions and
-engage with the troposphere community.  Issues & pull requests are always
+engage with the cloudtools/awacs community.  Issues & pull requests are always
 welcome!
 
 .. _`AWS IAM`: http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html
