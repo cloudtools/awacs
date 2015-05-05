@@ -1,6 +1,10 @@
 ## pending
+
+## 0.5.1 (2015-05-05)
 - Add ECS support GH-18
 - Add get\_default\_assumerole\_policy GH-17
+- Add EnterStandby, ExitStandby Actions - GH-13
+- Allow "\*" Principal - GH-16, GH-19
 
 ## 0.5.0 (2015-02-27)
 - New/update actions - GH-7
