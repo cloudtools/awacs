@@ -57,11 +57,9 @@ This shows creating policy attached to an Amazon S3 bucket::
       ],
   )
   print(pd.to_json())
-  ```
 
-  would produce this json policy:
+would produce this json policy::
 
-  ```
   {
       "Id": "S3-Account-Permissions", 
       "Statement": [
