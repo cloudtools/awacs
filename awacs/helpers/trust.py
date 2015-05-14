@@ -23,3 +23,20 @@ def get_default_assumerole_policy(region=''):
         ]
     )
     return policy
+
+
+def get_ecs_assumerole_policy(region=''):
+    """ Helper function for building the ECS AssumeRole Policy
+    """
+
+    service = 'ecs.amazonaws.com'
+    policy = Policy(
+        Statement=[
+            Statement(
+                Principal=Principal('Service', [service]),
+                Effect=Allow,
+                Action=[sts.AssumeRole]
+            )
+        ]
+    )
+    return policy
