@@ -3,54 +3,68 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, BaseARN
 
 service_name = 'Elastic Load Balancing'
 prefix = 'elasticloadbalancing'
 
-AddTags = Action(prefix, 'AddTags')
+
+class ARN(BaseARN):
+    def __init__(self, resource="*", region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+class ELBAction(Action):
+    def __init__(self, action=None):
+        self.prefix = prefix
+        self.action = action
+
+
+AddTags = ELBAction('AddTags')
 ApplySecurityGroupsToLoadBalancer = \
-    Action(prefix, 'ApplySecurityGroupsToLoadBalancer')
+    ELBAction('ApplySecurityGroupsToLoadBalancer')
 AttachLoadBalancerToSubnets = \
-    Action(prefix, 'AttachLoadBalancerToSubnets')
-ConfigureHealthCheck = Action(prefix, 'ConfigureHealthCheck')
+    ELBAction('AttachLoadBalancerToSubnets')
+ConfigureHealthCheck = ELBAction('ConfigureHealthCheck')
 CreateAppCookieStickinessPolicy = \
-    Action(prefix, 'CreateAppCookieStickinessPolicy')
+    ELBAction('CreateAppCookieStickinessPolicy')
 CreateLBCookieStickinessPolicy = \
-    Action(prefix, 'CreateLBCookieStickinessPolicy')
-CreateLoadBalancer = Action(prefix, 'CreateLoadBalancer')
+    ELBAction('CreateLBCookieStickinessPolicy')
+CreateLoadBalancer = ELBAction('CreateLoadBalancer')
 CreateLoadBalancerListeners = \
-    Action(prefix, 'CreateLoadBalancerListeners')
-CreateLoadBalancerPolicy = Action(prefix, 'CreateLoadBalancerPolicy')
-DeleteLoadBalancer = Action(prefix, 'DeleteLoadBalancer')
+    ELBAction('CreateLoadBalancerListeners')
+CreateLoadBalancerPolicy = ELBAction('CreateLoadBalancerPolicy')
+DeleteLoadBalancer = ELBAction('DeleteLoadBalancer')
 DeleteLoadBalancerListeners = \
-    Action(prefix, 'DeleteLoadBalancerListeners')
-DeleteLoadBalancerPolicy = Action(prefix, 'DeleteLoadBalancerPolicy')
+    ELBAction('DeleteLoadBalancerListeners')
+DeleteLoadBalancerPolicy = ELBAction('DeleteLoadBalancerPolicy')
 DeregisterInstancesFromLoadBalancer = \
-    Action(prefix, 'DeregisterInstancesFromLoadBalancer')
-DescribeInstanceHealth = Action(prefix, 'DescribeInstanceHealth')
+    ELBAction('DeregisterInstancesFromLoadBalancer')
+DescribeInstanceHealth = ELBAction('DescribeInstanceHealth')
 DescribeLoadBalancerAttributes = \
-    Action(prefix, 'DescribeLoadBalancerAttributes')
+    ELBAction('DescribeLoadBalancerAttributes')
 DescribeLoadBalancerPolicyTypes = \
-    Action(prefix, 'DescribeLoadBalancerPolicyTypes')
+    ELBAction('DescribeLoadBalancerPolicyTypes')
 DescribeLoadBalancerPolicies = \
-    Action(prefix, 'DescribeLoadBalancerPolicies')
-DescribeLoadBalancers = Action(prefix, 'DescribeLoadBalancers')
-DescribeTags = Action(prefix, 'DescribeTags')
+    ELBAction('DescribeLoadBalancerPolicies')
+DescribeLoadBalancers = ELBAction('DescribeLoadBalancers')
+DescribeTags = ELBAction('DescribeTags')
 DetachLoadBalancerFromSubnets = \
-    Action(prefix, 'DetachLoadBalancerFromSubnets')
+    ELBAction('DetachLoadBalancerFromSubnets')
 DisableAvailabilityZonesForLoadBalancer = \
-    Action(prefix, 'DisableAvailabilityZonesForLoadBalancer')
+    ELBAction('DisableAvailabilityZonesForLoadBalancer')
 EnableAvailabilityZonesForLoadBalancer = \
-    Action(prefix, 'EnableAvailabilityZonesForLoadBalancer')
+    ELBAction('EnableAvailabilityZonesForLoadBalancer')
 ModifyLoadBalancerAttributes = \
-    Action(prefix, 'ModifyLoadBalancerAttributes')
-RemoveTags = Action(prefix, 'RemoveTags')
+    ELBAction('ModifyLoadBalancerAttributes')
+RemoveTags = ELBAction('RemoveTags')
 RegisterInstancesWithLoadBalancer = \
-    Action(prefix, 'RegisterInstancesWithLoadBalancer')
+    ELBAction('RegisterInstancesWithLoadBalancer')
 SetLoadBalancerListenerSSLCertificate = \
-    Action(prefix, 'SetLoadBalancerListenerSSLCertificate')
+    ELBAction('SetLoadBalancerListenerSSLCertificate')
 SetLoadBalancerPoliciesForBackendServer = \
-    Action(prefix, 'SetLoadBalancerPoliciesForBackendServer')
+    ELBAction('SetLoadBalancerPoliciesForBackendServer')
 SetLoadBalancerPoliciesOfListener = \
-    Action(prefix, 'SetLoadBalancerPoliciesOfListener')
+    ELBAction('SetLoadBalancerPoliciesOfListener')
