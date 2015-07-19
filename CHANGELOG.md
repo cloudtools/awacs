@@ -1,5 +1,10 @@
 ## pending
 
+## 0.5.2 (2015-07-19)
+- Add ECS Assume Role policy trust helper - GH-24
+- Add new Route53 Actions - GH-23
+- Add ELB ARN & update actions - GH-22
+
 ## 0.5.1 (2015-05-05)
 - Add ECS support GH-18
 - Add get\_default\_assumerole\_policy GH-17
