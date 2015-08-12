@@ -8,12 +8,22 @@ from aws import Action
 service_name = 'Amazon Kinesis'
 prefix = 'kinesis'
 
-CreateStream = Action(prefix, 'CreateStream')
-DeleteStream = Action(prefix, 'DeleteStream')
-DescribeStream = Action(prefix, 'DescribeStream')
-ListStreams = Action(prefix, 'ListStreams')
-PutRecord = Action(prefix, 'PutRecord')
-GetShardIterator = Action(prefix, 'GetShardIterator')
-GetRecords = Action(prefix, 'GetRecords')
-MergeShards = Action(prefix, 'MergeShards')
-SplitShard = Action(prefix, 'SplitShard')
+
+class KinesisAction(Action):
+    def __init__(self, action=None):
+        self.prefix = prefix
+        self.action = action
+
+AddTagsToStream = KinesisAction('AddTagsToStream')
+CreateStream = KinesisAction('CreateStream')
+DeleteStream = KinesisAction('DeleteStream')
+DescribeStream = KinesisAction('DescribeStream')
+GetShardIterator = KinesisAction('GetShardIterator')
+GetRecords = KinesisAction('GetRecords')
+ListStreams = KinesisAction('ListStreams')
+ListTagsForStream = KinesisAction('ListTagsForStream')
+MergeShards = KinesisAction('MergeShards')
+PutRecord = KinesisAction('PutRecord')
+PutRecords = KinesisAction('PutRecords')
+RemoveTagsFromStream = KinesisAction('RemoveTagsFromStream')
+SplitShard = KinesisAction('SplitShard')
