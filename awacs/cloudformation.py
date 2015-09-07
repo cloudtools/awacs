@@ -8,15 +8,27 @@ from aws import Action
 service_name = 'AWS CloudFormation'
 prefix = 'cloudformation'
 
-CreateStack = Action(prefix, 'CreateStack')
-DeleteStack = Action(prefix, 'DeleteStack')
-DescribeStackEvents = Action(prefix, 'DescribeStackEvents')
-DescribeStackResource = Action(prefix, 'DescribeStackResource')
-DescribeStackResources = Action(prefix, 'DescribeStackResources')
-DescribeStacks = Action(prefix, 'DescribeStacks')
-EstimateTemplateCost = Action(prefix, 'EstimateTemplateCost')
-GetTemplate = Action(prefix, 'GetTemplate')
-ListStacks = Action(prefix, 'ListStacks')
-ListStackResources = Action(prefix, 'ListStackResources')
-UpdateStack = Action(prefix, 'UpdateStack')
-ValidateTemplate = Action(prefix, 'ValidateTemplate')
+
+class CloudformationAction(Action):
+    def __init__(self, action=None):
+        self.prefix = prefix
+        self.action = action
+
+
+CancelUpdateStack = CloudformationAction('CancelUpdateStack')
+CreateStack = CloudformationAction('CreateStack')
+DeleteStack = CloudformationAction('DeleteStack')
+DescribeStackEvents = CloudformationAction('DescribeStackEvents')
+DescribeStackResource = CloudformationAction('DescribeStackResource')
+DescribeStackResources = CloudformationAction('DescribeStackResources')
+DescribeStacks = CloudformationAction('DescribeStacks')
+EstimateTemplateCost = CloudformationAction('EstimateTemplateCost')
+GetStackPolicy = CloudformationAction('GetStackPolicy')
+GetTemplate = CloudformationAction('GetTemplate')
+GetTemplateSummary = CloudformationAction('GetTemplateSummary')
+ListStackResources = CloudformationAction('ListStackResources')
+ListStacks = CloudformationAction('ListStacks')
+SetStackPolicy = CloudformationAction('SetStackPolicy')
+SignalResource = CloudformationAction('SignalResource')
+UpdateStack = CloudformationAction('UpdateStack')
+ValidateTemplate = CloudformationAction('ValidateTemplate')
