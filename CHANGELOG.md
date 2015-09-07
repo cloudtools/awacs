@@ -1,5 +1,10 @@
 ## pending
 
+## 0.5.3 (2015-09-07)
+- Add EC2 Action [GH-26]
+- Add Kinesis Calls [GH-27]
+- Add Cloudformation actions [GH-28]
+
 ## 0.5.2 (2015-07-19)
 - Add ECS Assume Role policy trust helper - GH-24
 - Add new Route53 Actions - GH-23
