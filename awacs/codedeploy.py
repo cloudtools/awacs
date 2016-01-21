@@ -3,10 +3,18 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, BaseARN
 
 service_name = 'AWS CodeDeploy'
 prefix = 'codedeploy'
+
+
+class ARN(BaseARN):
+    def __init__(self, region, account, resource):
+        sup = super(ARN, self)
+        sup.__init__(prefix, region=region, account=account,
+                     resource=resource)
+
 
 AddTagsToOnPremisesInstances = Action(prefix, 'AddTagsToOnPremisesInstance')
 BatchGetApplications = Action(prefix, 'BatchGetApplications')
