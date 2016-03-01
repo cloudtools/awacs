@@ -5,7 +5,7 @@
 
 from aws import Action, BaseARN
 
-service_name = 'AWS Elastic Container Service'
+service_name = 'AWS EC2 Container Service'
 prefix = 'ecs'
 
 
