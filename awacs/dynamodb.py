@@ -11,7 +11,7 @@ prefix = 'dynamodb'
 
 
 class ARN(BaseARN):
-    def __init__(self, region, account, table=None, index=None):
+    def __init__(self, region='', account='', table=None, index=None):
         sup = super(ARN, self)
         resource = '*'
         if table:
