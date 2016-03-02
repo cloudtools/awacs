@@ -35,3 +35,14 @@ def get_ecs_assumerole_policy(region=''):
         Statement=[make_simple_assume_statement(service)]
     )
     return policy
+
+
+def get_lambda_assumerole_policy(region=''):
+    """ Helper function for building the ECS AssumeRole Policy
+    """
+
+    service = 'lambda.amazonaws.com'
+    policy = Policy(
+        Statement=[make_simple_assume_statement(service)]
+    )
+    return policy
