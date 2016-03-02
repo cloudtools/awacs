@@ -1,5 +1,13 @@
 ## pending
 
+## 0.5.4 (2016-03-01)
+- Add Elasticsearch Service [GH-29]
+- Add KMS [GH-30]
+- Update Elasticache, add CodeDeploy & CodeCommit [GH-31]
+- Add ARN to CodeDeploy module [GH-33]
+- Lambda Trust Policy [GH-35]
+- EC2 Container Registry [GH-36]
+
 ## 0.5.3 (2015-09-07)
 - Add EC2 Action [GH-26]
 - Add Kinesis Calls [GH-27]
