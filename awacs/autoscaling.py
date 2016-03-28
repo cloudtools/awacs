@@ -1,4 +1,4 @@
-# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# Copyright (c) 2012-2016, Mark Peek <mark@peek.org>
 # All rights reserved.
 #
 # See LICENSE file for full license.
@@ -9,6 +9,7 @@ service_name = 'Auto Scaling'
 prefix = 'autoscaling'
 
 AttachInstances = Action(prefix, 'AttachInstances')
+AttachLoadBalancers = Action(prefix, 'AttachLoadBalancers')
 CompleteLifecycleAction = Action(prefix, 'CompleteLifecycleAction')
 CreateAutoScalingGroup = Action(prefix, 'CreateAutoScalingGroup')
 CreateLaunchConfiguration = Action(prefix, 'CreateLaunchConfiguration')
@@ -36,6 +37,7 @@ DescribeLaunchConfigurations = \
 DescribeLifecycleHookTypes = \
     Action(prefix, 'DescribeLifecycleHookTypes')
 DescribeLifecycleHooks = Action(prefix, 'DescribeLifecycleHooks')
+DescribeLoadBalancers = Action(prefix, 'DescribeLoadBalancers')
 DescribeMetricCollectionTypes = \
     Action(prefix, 'DescribeMetricCollectionTypes')
 DescribeNotificationConfigurations = \
@@ -50,6 +52,7 @@ DescribeTerminationPolicyTypes = \
     Action(prefix, 'DescribeTerminationPolicyTypes')
 DescribeTriggers = Action(prefix, 'DescribeTriggers')
 DetachInstances = Action(prefix, 'DetachInstances')
+DetachLoadBalancers = Action(prefix, 'DetachLoadBalancers')
 DisableMetricsCollection = Action(prefix, 'DisableMetricsCollection')
 EnableMetricsCollection = Action(prefix, 'EnableMetricsCollection')
 EnterPolicy = Action(prefix, 'EnterPolicy')
@@ -68,6 +71,7 @@ RecordLifecycleActionHeartbeat = \
 ResumeProcesses = Action(prefix, 'ResumeProcesses')
 SetDesiredCapacity = Action(prefix, 'SetDesiredCapacity')
 SetInstanceHealth = Action(prefix, 'SetInstanceHealth')
+SetInstanceProtection = Action(prefix, 'SetInstanceProtection')
 SuspendProcesses = Action(prefix, 'SuspendProcesses')
 TerminateInstanceInAutoScalingGroup = \
     Action(prefix, 'TerminateInstanceInAutoScalingGroup')
