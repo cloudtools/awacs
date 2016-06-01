@@ -3,10 +3,23 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action, BaseARN
 
 service_name = 'Amazon Kinesis Firehose'
 prefix = 'firehose'
+
+
+class ARN(BaseARN):
+    def __init__(self, resource, region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+class FirehoseAction(Action):
+    def __init__(self, action=None):
+        self.prefix = prefix
+        self.action = action
 
 CreateDeliveryStream = Action(prefix, 'CreateDeliveryStream')
 DeleteDeliveryStream = Action(prefix, 'DeleteDeliveryStream')
