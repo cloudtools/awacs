@@ -3,23 +3,38 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon AppStream'
 prefix = 'appstream'
 
-CreateApplication = Action(prefix, 'CreateApplication')
-CreateSession = Action(prefix, 'CreateSession')
-DeleteApplication = Action(prefix, 'DeleteApplication')
-GetApiRoot = Action(prefix, 'GetApiRoot')
-GetApplication = Action(prefix, 'GetApplication')
-GetApplications = Action(prefix, 'GetApplications')
-GetApplicationError = Action(prefix, 'GetApplicationError')
-GetApplicationErrors = Action(prefix, 'GetApplicationErrors')
-GetApplicationStatus = Action(prefix, 'GetApplicationStatus')
-GetSession = Action(prefix, 'GetSession')
-GetSessions = Action(prefix, 'GetSessions')
-GetSessionStatus = Action(prefix, 'GetSessionStatus')
-UpdateApplication = Action(prefix, 'UpdateApplication')
-UpdateApplicationState = Action(prefix, 'UpdateApplicationState')
-UpdateSessionState = Action(prefix, 'UpdateSessionState')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CreateApplication = Action('CreateApplication')
+CreateSession = Action('CreateSession')
+DeleteApplication = Action('DeleteApplication')
+GetApiRoot = Action('GetApiRoot')
+GetApplication = Action('GetApplication')
+GetApplications = Action('GetApplications')
+GetApplicationError = Action('GetApplicationError')
+GetApplicationErrors = Action('GetApplicationErrors')
+GetApplicationStatus = Action('GetApplicationStatus')
+GetSession = Action('GetSession')
+GetSessions = Action('GetSessions')
+GetSessionStatus = Action('GetSessionStatus')
+UpdateApplication = Action('UpdateApplication')
+UpdateApplicationState = Action('UpdateApplicationState')
+UpdateSessionState = Action('UpdateSessionState')

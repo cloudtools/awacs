@@ -1,20 +1,27 @@
+import warnings
 # Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
 # All rights reserved.
 #
 # See LICENSE file for full license.
 
-import warnings
-
-from aws import Action, BaseARN
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon SNS'
 prefix = 'sns'
 
 
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
 class ARN(BaseARN):
-    def __init__(self, region, account, resource):
+    def __init__(self, resource='', region='', account=''):
         sup = super(ARN, self)
-        sup.__init__('sns', region=region, account=account, resource=resource)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
 
 
 class SNS_ARN(ARN):
@@ -24,36 +31,31 @@ class SNS_ARN(ARN):
                       FutureWarning)
 
 
-# SNS policy condition key constants.
-EndPoint = "sns:EndPoint"
-Protocol = "sns:Protocol"
-
-# SNS policy action constants.
-AddPermission = Action(prefix, 'AddPermission')
-ConfirmSubscription = Action(prefix, 'ConfirmSubscription')
-CreatePlatformApplication = Action(prefix, 'CreatePlatformApplication')
-CreatePlatformEndpoint = Action(prefix, 'CreatePlatformEndpoint')
-CreateTopic = Action(prefix, 'CreateTopic')
-DeleteEndpoint = Action(prefix, 'DeleteEndpoint')
-DeletePlatformApplication = Action(prefix, 'DeletePlatformApplication')
-DeleteTopic = Action(prefix, 'DeleteTopic')
-GetEndpointAttributes = Action(prefix, 'GetEndpointAttributes')
+AddPermission = Action('AddPermission')
+ConfirmSubscription = Action('ConfirmSubscription')
+CreatePlatformApplication = Action('CreatePlatformApplication')
+CreatePlatformEndpoint = Action('CreatePlatformEndpoint')
+CreateTopic = Action('CreateTopic')
+DeleteEndpoint = Action('DeleteEndpoint')
+DeletePlatformApplication = Action('DeletePlatformApplication')
+DeleteTopic = Action('DeleteTopic')
+GetEndpointAttributes = Action('GetEndpointAttributes')
 GetPlatformApplicationAttributes = \
-    Action(prefix, 'GetPlatformApplicationAttributes')
-GetSubscriptionAttributes = Action(prefix, 'GetSubscriptionAttributes')
-GetTopicAttributes = Action(prefix, 'GetTopicAttributes')
+    Action('GetPlatformApplicationAttributes')
+GetSubscriptionAttributes = Action('GetSubscriptionAttributes')
+GetTopicAttributes = Action('GetTopicAttributes')
 ListEndpointsByPlatformApplication = \
-    Action(prefix, 'ListEndpointsByPlatformApplication')
-ListPlatformApplications = Action(prefix, 'ListPlatformApplications')
-ListSubscriptions = Action(prefix, 'ListSubscriptions')
-ListSubscriptionsByTopic = Action(prefix, 'ListSubscriptionsByTopic')
-ListTopics = Action(prefix, 'ListTopics')
-Publish = Action(prefix, 'Publish')
-RemovePermission = Action(prefix, 'RemovePermission')
-SetEndpointAttributes = Action(prefix, 'SetEndpointAttributes')
+    Action('ListEndpointsByPlatformApplication')
+ListPlatformApplications = Action('ListPlatformApplications')
+ListSubscriptions = Action('ListSubscriptions')
+ListSubscriptionsByTopic = Action('ListSubscriptionsByTopic')
+ListTopics = Action('ListTopics')
+Publish = Action('Publish')
+RemovePermission = Action('RemovePermission')
+SetEndpointAttributes = Action('SetEndpointAttributes')
 SetPlatformApplicationAttributes = \
-    Action(prefix, 'SetPlatformApplicationAttributes')
-SetSubscriptionAttributes = Action(prefix, 'SetSubscriptionAttributes')
-SetTopicAttributes = Action(prefix, 'SetTopicAttributes')
-Subscribe = Action(prefix, 'Subscribe')
-Unsubscribe = Action(prefix, 'Unsubscribe')
+    Action('SetPlatformApplicationAttributes')
+SetSubscriptionAttributes = Action('SetSubscriptionAttributes')
+SetTopicAttributes = Action('SetTopicAttributes')
+Subscribe = Action('Subscribe')
+Unsubscribe = Action('Unsubscribe')

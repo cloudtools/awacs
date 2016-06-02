@@ -3,40 +3,51 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon CloudFront'
 prefix = 'cloudfront'
 
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
 CreateCloudFrontOriginAccessIdentity = \
-    Action(prefix, 'CreateCloudFrontOriginAccessIdentity')
-CreateDistribution = Action(prefix, 'CreateDistribution')
-CreateInvalidation = Action(prefix, 'CreateInvalidation')
-CreateStreamingDistribution = \
-    Action(prefix, 'CreateStreamingDistribution')
+    Action('CreateCloudFrontOriginAccessIdentity')
+CreateDistribution = Action('CreateDistribution')
+CreateInvalidation = Action('CreateInvalidation')
+CreateStreamingDistribution = Action('CreateStreamingDistribution')
 DeleteCloudFrontOriginAccessIdentity = \
-    Action(prefix, 'DeleteCloudFrontOriginAccessIdentity')
-DeleteDistribution = Action(prefix, 'DeleteDistribution')
-DeleteStreamingDistribution = \
-    Action(prefix, 'DeleteStreamingDistribution')
+    Action('DeleteCloudFrontOriginAccessIdentity')
+DeleteDistribution = Action('DeleteDistribution')
+DeleteStreamingDistribution = Action('DeleteStreamingDistribution')
 GetCloudFrontOriginAccessIdentity = \
-    Action(prefix, 'GetCloudFrontOriginAccessIdentity')
+    Action('GetCloudFrontOriginAccessIdentity')
 GetCloudFrontOriginAccessIdentityConfig = \
-    Action(prefix, 'GetCloudFrontOriginAccessIdentityConfig')
-GetDistribution = Action(prefix, 'GetDistribution')
-GetDistributionConfig = Action(prefix, 'GetDistributionConfig')
-GetInvalidation = Action(prefix, 'GetInvalidation')
-GetStreamingDistribution = Action(prefix, 'GetStreamingDistribution')
-GetStreamingDistributionConfig = \
-    Action(prefix, 'GetStreamingDistributionConfig')
+    Action('GetCloudFrontOriginAccessIdentityConfig')
+GetDistribution = Action('GetDistribution')
+GetDistributionConfig = Action('GetDistributionConfig')
+GetInvalidation = Action('GetInvalidation')
+GetStreamingDistribution = Action('GetStreamingDistribution')
+GetStreamingDistributionConfig = Action('GetStreamingDistributionConfig')
 ListCloudFrontOriginAccessIdentities = \
-    Action(prefix, 'ListCloudFrontOriginAccessIdentities')
-ListDistributions = Action(prefix, 'ListDistributions')
-ListInvalidations = Action(prefix, 'ListInvalidations')
-ListStreamingDistributions = \
-    Action(prefix, 'ListStreamingDistributions')
+    Action('ListCloudFrontOriginAccessIdentities')
+ListDistributions = Action('ListDistributions')
+ListDistributionsByWebACLId = Action('ListDistributionsByWebACLId')
+ListInvalidations = Action('ListInvalidations')
+ListStreamingDistributions = Action('ListStreamingDistributions')
 UpdateCloudFrontOriginAccessIdentity = \
-    Action(prefix, 'UpdateCloudFrontOriginAccessIdentity')
-UpdateDistribution = Action(prefix, 'UpdateDistribution')
-UpdateStreamingDistribution = \
-    Action(prefix, 'UpdateStreamingDistribution')
+    Action('UpdateCloudFrontOriginAccessIdentity')
+UpdateDistribution = Action('UpdateDistribution')
+UpdateStreamingDistribution = Action('UpdateStreamingDistribution')

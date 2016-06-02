@@ -3,34 +3,45 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
 from aws import BaseARN
 
 service_name = 'Amazon DynamoDB'
 prefix = 'dynamodb'
 
 
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
 class ARN(BaseARN):
-    def __init__(self, region, account, table=None, index=None):
+    def __init__(self, resource='', region='', account=''):
         sup = super(ARN, self)
-        resource = '*'
-        if table:
-            resource = 'table/' + table
-            if index:
-                resource += '/index/' + index
-        sup.__init__(prefix, region=region, account=account, resource=resource)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
 
 
-BatchGetItem = Action(prefix, 'BatchGetItem')
-BatchWriteItem = Action(prefix, 'BatchWriteItem')
-CreateTable = Action(prefix, 'CreateTable')
-DeleteItem = Action(prefix, 'DeleteItem')
-DeleteTable = Action(prefix, 'DeleteTable')
-DescribeTable = Action(prefix, 'DescribeTable')
-GetItem = Action(prefix, 'GetItem')
-ListTables = Action(prefix, 'ListTables')
-PutItem = Action(prefix, 'PutItem')
-Query = Action(prefix, 'Query')
-Scan = Action(prefix, 'Scan')
-UpdateItem = Action(prefix, 'UpdateItem')
-UpdateTable = Action(prefix, 'UpdateTable')
+BatchGetItem = Action('BatchGetItem')
+BatchWriteItem = Action('BatchWriteItem')
+CreateTable = Action('CreateTable')
+DeleteItem = Action('DeleteItem')
+DeleteTable = Action('DeleteTable')
+DescribeReservedCapacity = Action('DescribeReservedCapacity')
+DescribeReservedCapacityOfferings = \
+    Action('DescribeReservedCapacityOfferings')
+DescribeStream = Action('DescribeStream')
+DescribeTable = Action('DescribeTable')
+GetItem = Action('GetItem')
+GetRecords = Action('GetRecords')
+GetShardIterator = Action('GetShardIterator')
+ListStreams = Action('ListStreams')
+ListTables = Action('ListTables')
+PurchaseReservedCapacityOfferings = \
+    Action('PurchaseReservedCapacityOfferings')
+PutItem = Action('PutItem')
+Query = Action('Query')
+Scan = Action('Scan')
+UpdateItem = Action('UpdateItem')
+UpdateTable = Action('UpdateTable')

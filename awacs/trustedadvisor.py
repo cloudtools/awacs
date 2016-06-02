@@ -3,21 +3,34 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS Trusted Advisor'
 prefix = 'trustedadvisor'
 
-DescribeCheckItems = Action(prefix, 'DescribeCheckItems')
-DescribeCheckRefreshStatuses = \
-    Action(prefix, 'DescribeCheckRefreshStatuses')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+DescribeCheckItems = Action('DescribeCheckItems')
+DescribeCheckRefreshStatuses = Action('DescribeCheckRefreshStatuses')
 DescribeCheckStatusHistoryChanges = \
-    Action(prefix, 'DescribeCheckStatusHistoryChanges')
-DescribeCheckSummaries = Action(prefix, 'DescribeCheckSummaries')
+    Action('DescribeCheckStatusHistoryChanges')
+DescribeCheckSummaries = Action('DescribeCheckSummaries')
 DescribeNotificationPreferences = \
-    Action(prefix, 'DescribeNotificationPreferences')
-ExcludeCheckItems = Action(prefix, 'ExcludeCheckItems')
-IncludeCheckItems = Action(prefix, 'IncludeCheckItems')
-RefreshCheck = Action(prefix, 'RefreshCheck')
-UpdateNotificationPreferences = \
-    Action(prefix, 'UpdateNotificationPreferences')
+    Action('DescribeNotificationPreferences')
+ExcludeCheckItems = Action('ExcludeCheckItems')
+IncludeCheckItems = Action('IncludeCheckItems')
+RefreshCheck = Action('RefreshCheck')
+UpdateNotificationPreferences = Action('UpdateNotificationPreferences')

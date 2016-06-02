@@ -3,15 +3,31 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS CloudTrail'
 prefix = 'cloudtrail'
 
-CreateTrail = Action(prefix, 'CreateTrail')
-DeleteTrail = Action(prefix, 'DeleteTrail')
-DescribeTrails = Action(prefix, 'DescribeTrails')
-GetTrailStatus = Action(prefix, 'GetTrailStatus')
-StartLogging = Action(prefix, 'StartLogging')
-StopLogging = Action(prefix, 'StopLogging')
-UpdateTrail = Action(prefix, 'UpdateTrail')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CreateTrail = Action('CreateTrail')
+DeleteTrail = Action('DeleteTrail')
+DescribeTrails = Action('DescribeTrails')
+GetTrailStatus = Action('GetTrailStatus')
+LookupEvents = Action('LookupEvents')
+StartLogging = Action('StartLogging')
+StopLogging = Action('StopLogging')
+UpdateTrail = Action('UpdateTrail')

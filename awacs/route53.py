@@ -3,53 +3,73 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, BaseARN
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Route 53'
 prefix = 'route53'
 
 
-class ARN(BaseARN):
-    def __init__(self, resource="*"):
-        sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource)
-
-
-class Route53Action(Action):
+class Action(BaseAction):
     def __init__(self, action=None):
-        self.prefix = prefix
-        self.action = action
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
 
 
-AssociateVPCWithHostedZone = Route53Action("AssociateVPCWithHostedZone")
-ChangeResourceRecordSets = Route53Action("ChangeResourceRecordSets")
-ChangeTagsForResource = Route53Action("ChangeTagsForResource")
-CreateHealthCheck = Route53Action("CreateHealthCheck")
-CreateHostedZone = Route53Action("CreateHostedZone")
-CreateReusableDelegationSet = Route53Action("CreateReusableDelegationSet")
-DeleteHealthCheck = Route53Action("DeleteHealthCheck")
-DeleteHostedZone = Route53Action("DeleteHostedZone")
-DeleteReusableDelegationSet = Route53Action("DeleteReusableDelegationSet")
-DisassociateVPCFromHostedZone = Route53Action("DisassociateVPCFromHostedZone")
-GetChange = Route53Action("GetChange")
-GetCheckerIpRanges = Route53Action("GetCheckerIpRanges")
-GetGeoLocation = Route53Action("GetGeoLocation")
-GetHealthCheck = Route53Action("GetHealthCheck")
-GetHealthCheckCount = Route53Action("GetHealthCheckCount")
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AssociateVPCWithHostedZone = Action('AssociateVPCWithHostedZone')
+ChangeResourceRecordSets = Action('ChangeResourceRecordSets')
+ChangeTagsForResource = Action('ChangeTagsForResource')
+CreateHealthCheck = Action('CreateHealthCheck')
+CreateHostedZone = Action('CreateHostedZone')
+CreateReusableDelegationSet = Action('CreateReusableDelegationSet')
+CreateTrafficPolicy = Action('CreateTrafficPolicy')
+CreateTrafficPolicyInstance = Action('CreateTrafficPolicyInstance')
+CreateTrafficPolicyVersion = Action('CreateTrafficPolicyVersion')
+DeleteHealthCheck = Action('DeleteHealthCheck')
+DeleteHostedZone = Action('DeleteHostedZone')
+DeleteReusableDelegationSet = Action('DeleteReusableDelegationSet')
+DeleteTrafficPolicy = Action('DeleteTrafficPolicy')
+DeleteTrafficPolicyInstance = Action('DeleteTrafficPolicyInstance')
+DisableDomainAutoRenew = Action('DisableDomainAutoRenew')
+DisassociateVPCFromHostedZone = Action('DisassociateVPCFromHostedZone')
+EnableDomainAutoRenew = Action('EnableDomainAutoRenew')
+GetChange = Action('GetChange')
+GetCheckerIpRanges = Action('GetCheckerIpRanges')
+GetGeoLocation = Action('GetGeoLocation')
+GetHealthCheck = Action('GetHealthCheck')
+GetHealthCheckCount = Action('GetHealthCheckCount')
 GetHealthCheckLastFailureReason = \
-    Route53Action("GetHealthCheckLastFailureReason")
-GetHealthCheckStatus = Route53Action("GetHealthCheckStatus")
-GetHostedZone = Route53Action("GetHostedZone")
-GetHostedZoneCount = Route53Action("GetHostedZoneCount")
-GetReusableDelegationSet = Route53Action("GetReusableDelegationSet")
-ListGeoLocations = Route53Action("ListGeoLocations")
-ListHealthChecks = Route53Action("ListHealthChecks")
-ListHostedZones = Route53Action("ListHostedZones")
-ListHostedZonesByName = Route53Action("ListHostedZonesByName")
-ListOperations = Route53Action("ListOperations")
-ListResourceRecordSets = Route53Action("ListResourceRecordSets")
-ListReusableDelegationSets = Route53Action("ListReusableDelegationSets")
-ListTagsForResource = Route53Action("ListTagsForResource")
-ListTagsForResources = Route53Action("ListTagsForResources")
-UpdateHealthCheck = Route53Action("UpdateHealthCheck")
-UpdateHostedZoneComment = Route53Action("UpdateHostedZoneComment")
+    Action('GetHealthCheckLastFailureReason')
+GetHealthCheckStatus = Action('GetHealthCheckStatus')
+GetHostedZone = Action('GetHostedZone')
+GetHostedZoneCount = Action('GetHostedZoneCount')
+GetReusableDelegationSet = Action('GetReusableDelegationSet')
+GetTrafficPolicy = Action('GetTrafficPolicy')
+GetTrafficPolicyInstance = Action('GetTrafficPolicyInstance')
+GetTrafficPolicyInstanceCount = Action('GetTrafficPolicyInstanceCount')
+ListGeoLocations = Action('ListGeoLocations')
+ListHealthChecks = Action('ListHealthChecks')
+ListHostedZones = Action('ListHostedZones')
+ListHostedZonesByName = Action('ListHostedZonesByName')
+ListResourceRecordSets = Action('ListResourceRecordSets')
+ListReusableDelegationSets = Action('ListReusableDelegationSets')
+ListTagsForResource = Action('ListTagsForResource')
+ListTagsForResources = Action('ListTagsForResources')
+ListTrafficPolicies = Action('ListTrafficPolicies')
+ListTrafficPolicyInstances = Action('ListTrafficPolicyInstances')
+ListTrafficPolicyInstancesByHostedZone = \
+    Action('ListTrafficPolicyInstancesByHostedZone')
+ListTrafficPolicyInstancesByPolicy = \
+    Action('ListTrafficPolicyInstancesByPolicy')
+ListTrafficPolicyVersions = Action('ListTrafficPolicyVersions')
+UpdateHealthCheck = Action('UpdateHealthCheck')
+UpdateHostedZoneComment = Action('UpdateHostedZoneComment')
+UpdateTrafficPolicyComment = Action('UpdateTrafficPolicyComment')
+UpdateTrafficPolicyInstance = Action('UpdateTrafficPolicyInstance')

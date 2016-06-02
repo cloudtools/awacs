@@ -3,33 +3,40 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Route53 Domains'
 prefix = 'route53domains'
 
 
-class Route53DomainsAction(Action):
+class Action(BaseAction):
     def __init__(self, action=None):
-        self.prefix = prefix
-        self.action = action
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
 
 
-CheckDomainAvailability = Route53DomainsAction("CheckDomainAvailability")
-DeleteTagsForDomain = Route53DomainsAction("DeleteTagsForDomain")
-DisableDomainAutoRenew = Route53DomainsAction("DisableDomainAutoRenew")
-DisableDomainTransferLock = Route53DomainsAction("DisableDomainTransferLock")
-EnableDomainAutoRenew = Route53DomainsAction("EnableDomainAutoRenew")
-EnableDomainTransferLock = Route53DomainsAction("EnableDomainTransferLock")
-GetDomainDetail = Route53DomainsAction("GetDomainDetail")
-GetOperationDetail = Route53DomainsAction("GetOperationDetail")
-ListDomains = Route53DomainsAction("ListDomains")
-ListOperations = Route53DomainsAction("ListOperations")
-ListTagsForDomain = Route53DomainsAction("ListTagsForDomain")
-RegisterDomain = Route53DomainsAction("RegisterDomain")
-RetrieveDomainAuthCode = Route53DomainsAction("RetrieveDomainAuthCode")
-TransferDomain = Route53DomainsAction("TransferDomain")
-UpdateDomainContact = Route53DomainsAction("UpdateDomainContact")
-UpdateDomainContactPrivacy = Route53DomainsAction("UpdateDomainContactPrivacy")
-UpdateDomainNameservers = Route53DomainsAction("UpdateDomainNameservers")
-UpdateTagsForDomains = Route53DomainsAction("UpdateTagsForDomains")
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CheckDomainAvailability = Action('CheckDomainAvailability')
+DeleteDomain = Action('DeleteDomain')
+DeleteTagsForDomain = Action('DeleteTagsForDomain')
+DisableDomainTransferLock = Action('DisableDomainTransferLock')
+EnableDomainTransferLock = Action('EnableDomainTransferLock')
+GetDomainDetail = Action('GetDomainDetail')
+GetOperationDetail = Action('GetOperationDetail')
+ListDomains = Action('ListDomains')
+ListOperations = Action('ListOperations')
+ListTagsForDomain = Action('ListTagsForDomain')
+RegisterDomain = Action('RegisterDomain')
+RetrieveDomainAuthCode = Action('RetrieveDomainAuthCode')
+TransferDomain = Action('TransferDomain')
+UpdateDomainContact = Action('UpdateDomainContact')
+UpdateDomainContactPrivacy = Action('UpdateDomainContactPrivacy')
+UpdateDomainNameservers = Action('UpdateDomainNameservers')
+UpdateTagsForDomain = Action('UpdateTagsForDomain')

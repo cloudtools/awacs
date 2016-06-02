@@ -3,74 +3,113 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon RDS'
 prefix = 'rds'
 
-AuthorizeDBSecurityGroupIngress = \
-    Action(prefix, 'AuthorizeDBSecurityGroupIngress')
-AddTagsToResource = Action(prefix, 'AddTagsToResource')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AddTagsToResource = Action('AddTagsToResource')
 AddSourceIdentifierToSubscription = \
-    Action(prefix, 'AddSourceIdentifierToSubscription')
-CopyDBSnapshot = Action(prefix, 'CopyDBSnapshot')
-CreateDBInstance = Action(prefix, 'CreateDBInstance')
-CreateDBInstanceReadReplica = \
-    Action(prefix, 'CreateDBInstanceReadReplica')
-CreateDBParameterGroup = Action(prefix, 'CreateDBParameterGroup')
-CreateDBSecurityGroup = Action(prefix, 'CreateDBSecurityGroup')
-CreateDBSnapshot = Action(prefix, 'CreateDBSnapshot')
-CreateDBSubnetGroup = Action(prefix, 'CreateDBSubnetGroup')
-CreateEventSubscription = Action(prefix, 'CreateEventSubscription')
-CreateOptionGroup = Action(prefix, 'CreateOptionGroup')
-DeleteDBInstance = Action(prefix, 'DeleteDBInstance')
-DeleteDBParameterGroup = Action(prefix, 'DeleteDBParameterGroup')
-DeleteDBSecurityGroup = Action(prefix, 'DeleteDBSecurityGroup')
-DeleteDBSnapshot = Action(prefix, 'DeleteDBSnapshot')
-DeleteDBSubnetGroup = Action(prefix, 'DeleteDBSubnetGroup')
-DeleteEventSubscription = Action(prefix, 'DeleteEventSubscription')
-DeleteOptionGroup = Action(prefix, 'DeleteOptionGroup')
+    Action('AddSourceIdentifierToSubscription')
+ApplyPendingMaintenanceAction = Action('ApplyPendingMaintenanceAction')
+AuthorizeDBSecurityGroupIngress = \
+    Action('AuthorizeDBSecurityGroupIngress')
+CopyDBClusterSnapshot = Action('CopyDBClusterSnapshot')
+CopyDBParameterGroup = Action('CopyDBParameterGroup')
+CopyDBSnapshot = Action('CopyDBSnapshot')
+CopyOptionGroup = Action('CopyOptionGroup')
+CreateDBClusterParameterGroup = Action('CreateDBClusterParameterGroup')
+CreateDBClusterSnapshot = Action('CreateDBClusterSnapshot')
+CreateDBCluster = Action('CreateDBCluster')
+CreateDBInstance = Action('CreateDBInstance')
+CreateDBInstanceReadReplica = Action('CreateDBInstanceReadReplica')
+CreateDBParameterGroup = Action('CreateDBParameterGroup')
+CreateDBSecurityGroup = Action('CreateDBSecurityGroup')
+CreateDBSnapshot = Action('CreateDBSnapshot')
+CreateDBSubnetGroup = Action('CreateDBSubnetGroup')
+CreateEventSubscription = Action('CreateEventSubscription')
+CreateOptionGroup = Action('CreateOptionGroup')
+DeleteDBClusterParameterGroup = Action('DeleteDBClusterParameterGroup')
+DeleteDBClusterSnapshot = Action('DeleteDBClusterSnapshot')
+DeleteDBCluster = Action('DeleteDBCluster')
+DeleteDBInstance = Action('DeleteDBInstance')
+DeleteDBParameterGroup = Action('DeleteDBParameterGroup')
+DeleteDBSecurityGroup = Action('DeleteDBSecurityGroup')
+DeleteDBSnapshot = Action('DeleteDBSnapshot')
+DeleteDBSubnetGroup = Action('DeleteDBSubnetGroup')
+DeleteEventSubscription = Action('DeleteEventSubscription')
+DeleteOptionGroup = Action('DeleteOptionGroup')
+DescribeAccountAttributes = Action('DescribeAccountAttributes')
+DescribeCertificates = Action('DescribeCertificates')
+DescribeEngineDefaultClusterParameters = \
+    Action('DescribeEngineDefaultClusterParameters')
 DescribeEngineDefaultParameters = \
-    Action(prefix, 'DescribeEngineDefaultParameters')
-DescribeDBInstances = Action(prefix, 'DescribeDBInstances')
-DescribeDBLogFiles = Action(prefix, 'DescribeDBLogFiles')
-DescribeDBParameterGroups = Action(prefix, 'DescribeDBParameterGroups')
-DescribeDBParameters = Action(prefix, 'DescribeDBParameters')
-DescribeDBSecurityGroups = Action(prefix, 'DescribeDBSecurityGroups')
-DescribeDBSnapshots = Action(prefix, 'DescribeDBSnapshots')
-DescribeDBEngineVersions = Action(prefix, 'DescribeDBEngineVersions')
-DescribeDBSubnetGroups = Action(prefix, 'DescribeDBSubnetGroups')
-DescribeEventCategories = Action(prefix, 'DescribeEventCategories')
-DescribeEvents = Action(prefix, 'DescribeEvents')
-DescribeEventSubscriptions = \
-    Action(prefix, 'DescribeEventSubscriptions')
-DescribeOptionGroups = Action(prefix, 'DescribeOptionGroups')
-DescribeOptionGroupOptions = \
-    Action(prefix, 'DescribeOptionGroupOptions')
+    Action('DescribeEngineDefaultParameters')
+DescribeDBClusterParameterGroups = \
+    Action('DescribeDBClusterParameterGroups')
+DescribeDBClusterParameters = Action('DescribeDBClusterParameters')
+DescribeDBClusterSnapshots = Action('DescribeDBClusterSnapshots')
+DescribeDBClusters = Action('DescribeDBClusters')
+DescribeDBInstances = Action('DescribeDBInstances')
+DescribeDBLogFiles = Action('DescribeDBLogFiles')
+DescribeDBParameterGroups = Action('DescribeDBParameterGroups')
+DescribeDBParameters = Action('DescribeDBParameters')
+DescribeDBSecurityGroups = Action('DescribeDBSecurityGroups')
+DescribeDBSnapshotAttributes = Action('DescribeDBSnapshotAttributes')
+DescribeDBSnapshots = Action('DescribeDBSnapshots')
+DescribeDBEngineVersions = Action('DescribeDBEngineVersions')
+DescribeDBSubnetGroups = Action('DescribeDBSubnetGroups')
+DescribeEventCategories = Action('DescribeEventCategories')
+DescribeEvents = Action('DescribeEvents')
+DescribeEventSubscriptions = Action('DescribeEventSubscriptions')
+DescribeOptionGroups = Action('DescribeOptionGroups')
+DescribeOptionGroupOptions = Action('DescribeOptionGroupOptions')
 DescribeOrderableDBInstanceOptions = \
-    Action(prefix, 'DescribeOrderableDBInstanceOptions')
-DescribeReservedDBInstances = \
-    Action(prefix, 'DescribeReservedDBInstances')
+    Action('DescribeOrderableDBInstanceOptions')
+DescribePendingMaintenanceActions = \
+    Action('DescribePendingMaintenanceActions')
+DescribeReservedDBInstances = Action('DescribeReservedDBInstances')
 DescribeReservedDBInstancesOfferings = \
-    Action(prefix, 'DescribeReservedDBInstancesOfferings')
-DownloadDBLogFilePortion = Action(prefix, 'DownloadDBLogFilePortion')
-ListTagsForResource = Action(prefix, 'ListTagsForResource')
-ModifyDBInstance = Action(prefix, 'ModifyDBInstance')
-ModifyDBParameterGroup = Action(prefix, 'ModifyDBParameterGroup')
-ModifyDBSubnetGroup = Action(prefix, 'ModifyDBSubnetGroup')
-ModifyEventSubscription = Action(prefix, 'ModifyEventSubscription')
-ModifyOptionGroup = Action(prefix, 'ModifyOptionGroup')
-PromoteReadReplica = Action(prefix, 'PromoteReadReplica')
+    Action('DescribeReservedDBInstancesOfferings')
+DownloadCompleteDBLogFile = Action('DownloadCompleteDBLogFile')
+DownloadDBLogFilePortion = Action('DownloadDBLogFilePortion')
+FailoverDBCluster = Action('FailoverDBCluster')
+ListTagsForResource = Action('ListTagsForResource')
+ModifyDBClusterParameterGroup = Action('ModifyDBClusterParameterGroup')
+ModifyDBCluster = Action('ModifyDBCluster')
+ModifyDBInstance = Action('ModifyDBInstance')
+ModifyDBParameterGroup = Action('ModifyDBParameterGroup')
+ModifyDBSnapshotAttribute = Action('ModifyDBSnapshotAttribute')
+ModifyDBSubnetGroup = Action('ModifyDBSubnetGroup')
+ModifyEventSubscription = Action('ModifyEventSubscription')
+ModifyOptionGroup = Action('ModifyOptionGroup')
+PromoteReadReplica = Action('PromoteReadReplica')
 PurchaseReservedDBInstancesOffering = \
-    Action(prefix, 'PurchaseReservedDBInstancesOffering')
-RebootDBInstance = Action(prefix, 'RebootDBInstance')
+    Action('PurchaseReservedDBInstancesOffering')
+RebootDBInstance = Action('RebootDBInstance')
 RemoveSourceIdentifierFromSubscription = \
-    Action(prefix, 'RemoveSourceIdentifierFromSubscription')
-RemoveTagsFromResource = Action(prefix, 'RemoveTagsFromResource')
+    Action('RemoveSourceIdentifierFromSubscription')
+RemoveTagsFromResource = Action('RemoveTagsFromResource')
+RestoreDBClusterFromSnapshot = Action('RestoreDBClusterFromSnapshot')
+RestoreDBClusterToPointInTime = Action('RestoreDBClusterToPointInTime')
 RestoreDBInstanceFromDBSnapshot = \
-    Action(prefix, 'RestoreDBInstanceFromDBSnapshot')
-RestoreDBInstanceToPointInTime = \
-    Action(prefix, 'RestoreDBInstanceToPointInTime')
-ResetDBParameterGroup = Action(prefix, 'ResetDBParameterGroup')
-RevokeDBSecurityGroupIngress = \
-    Action(prefix, 'RevokeDBSecurityGroupIngress')
+    Action('RestoreDBInstanceFromDBSnapshot')
+RestoreDBInstanceToPointInTime = Action('RestoreDBInstanceToPointInTime')
+ResetDBClusterParameterGroup = Action('ResetDBClusterParameterGroup')
+ResetDBParameterGroup = Action('ResetDBParameterGroup')
+RevokeDBSecurityGroupIngress = Action('RevokeDBSecurityGroupIngress')

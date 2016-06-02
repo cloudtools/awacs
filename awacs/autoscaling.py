@@ -3,72 +3,76 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Auto Scaling'
 prefix = 'autoscaling'
 
-AttachInstances = Action(prefix, 'AttachInstances')
-CompleteLifecycleAction = Action(prefix, 'CompleteLifecycleAction')
-CreateAutoScalingGroup = Action(prefix, 'CreateAutoScalingGroup')
-CreateLaunchConfiguration = Action(prefix, 'CreateLaunchConfiguration')
-CreateOrUpdateScalingTrigger = \
-    Action(prefix, 'CreateOrUpdateScalingTrigger')
-CreateOrUpdateTags = Action(prefix, 'CreateOrUpdateTags')
-DeleteAutoScalingGroup = Action(prefix, 'DeleteAutoScalingGroup')
-DeleteLaunchConfiguration = Action(prefix, 'DeleteLaunchConfiguration')
-DeleteLifecycleHook = Action(prefix, 'DeleteLifecycleHook')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AttachInstances = Action('AttachInstances')
+AttachLoadBalancers = Action('AttachLoadBalancers')
+CompleteLifecycleAction = Action('CompleteLifecycleAction')
+CreateAutoScalingGroup = Action('CreateAutoScalingGroup')
+CreateLaunchConfiguration = Action('CreateLaunchConfiguration')
+CreateOrUpdateTags = Action('CreateOrUpdateTags')
+DeleteAutoScalingGroup = Action('DeleteAutoScalingGroup')
+DeleteLaunchConfiguration = Action('DeleteLaunchConfiguration')
+DeleteLifecycleHook = Action('DeleteLifecycleHook')
 DeleteNotificationConfiguration = \
-    Action(prefix, 'DeleteNotificationConfiguration')
-DeletePolicy = Action(prefix, 'DeletePolicy')
-DeleteScheduledAction = Action(prefix, 'DeleteScheduledAction')
-DeleteTags = Action(prefix, 'DeleteTags')
-DeleteTrigger = Action(prefix, 'DeleteTrigger')
-DescribeAccountLimits = Action(prefix, 'DescribeAccountLimits')
-DescribeAdjustmentTypes = Action(prefix, 'DescribeAdjustmentTypes')
-DescribeAutoScalingGroups = Action(prefix, 'DescribeAutoScalingGroups')
-DescribeAutoScalingInstances = \
-    Action(prefix, 'DescribeAutoScalingInstances')
+    Action('DeleteNotificationConfiguration')
+DeletePolicy = Action('DeletePolicy')
+DeleteScheduledAction = Action('DeleteScheduledAction')
+DeleteTags = Action('DeleteTags')
+DescribeAccountLimits = Action('DescribeAccountLimits')
+DescribeAdjustmentTypes = Action('DescribeAdjustmentTypes')
+DescribeAutoScalingGroups = Action('DescribeAutoScalingGroups')
+DescribeAutoScalingInstances = Action('DescribeAutoScalingInstances')
 DescribeAutoScalingNotificationTypes = \
-    Action(prefix, 'DescribeAutoScalingNotificationTypes')
-DescribeLaunchConfigurations = \
-    Action(prefix, 'DescribeLaunchConfigurations')
-DescribeLifecycleHookTypes = \
-    Action(prefix, 'DescribeLifecycleHookTypes')
-DescribeLifecycleHooks = Action(prefix, 'DescribeLifecycleHooks')
-DescribeMetricCollectionTypes = \
-    Action(prefix, 'DescribeMetricCollectionTypes')
+    Action('DescribeAutoScalingNotificationTypes')
+DescribeLaunchConfigurations = Action('DescribeLaunchConfigurations')
+DescribeLifecycleHookTypes = Action('DescribeLifecycleHookTypes')
+DescribeLifecycleHooks = Action('DescribeLifecycleHooks')
+DescribeLoadBalancers = Action('DescribeLoadBalancers')
+DescribeMetricCollectionTypes = Action('DescribeMetricCollectionTypes')
 DescribeNotificationConfigurations = \
-    Action(prefix, 'DescribeNotificationConfigurations')
-DescribePolicies = Action(prefix, 'DescribePolicies')
-DescribeScalingActivities = Action(prefix, 'DescribeScalingActivities')
-DescribeScalingProcessTypes = \
-    Action(prefix, 'DescribeScalingProcessTypes')
-DescribeScheduledActions = Action(prefix, 'DescribeScheduledActions')
-DescribeTags = Action(prefix, 'DescribeTags')
-DescribeTerminationPolicyTypes = \
-    Action(prefix, 'DescribeTerminationPolicyTypes')
-DescribeTriggers = Action(prefix, 'DescribeTriggers')
-DetachInstances = Action(prefix, 'DetachInstances')
-DisableMetricsCollection = Action(prefix, 'DisableMetricsCollection')
-EnableMetricsCollection = Action(prefix, 'EnableMetricsCollection')
-EnterPolicy = Action(prefix, 'EnterPolicy')
-EnterStandby = Action(prefix, 'EnterStandby')
-ExecutePolicy = Action(prefix, 'ExecutePolicy')
-ExitPolicy = Action(prefix, 'ExitPolicy')
-ExitStandby = Action(prefix, 'ExitStandby')
-PutLifecycleHook = Action(prefix, 'PutLifecycleHook')
-PutNotificationConfiguration = \
-    Action(prefix, 'PutNotificationConfiguration')
-PutScalingPolicy = Action(prefix, 'PutScalingPolicy')
-PutScheduledUpdateGroupAction = \
-    Action(prefix, 'PutScheduledUpdateGroupAction')
-RecordLifecycleActionHeartbeat = \
-    Action(prefix, 'RecordLifecycleActionHeartbeat')
-ResumeProcesses = Action(prefix, 'ResumeProcesses')
-SetDesiredCapacity = Action(prefix, 'SetDesiredCapacity')
-SetInstanceHealth = Action(prefix, 'SetInstanceHealth')
-SuspendProcesses = Action(prefix, 'SuspendProcesses')
+    Action('DescribeNotificationConfigurations')
+DescribePolicies = Action('DescribePolicies')
+DescribeScalingActivities = Action('DescribeScalingActivities')
+DescribeScalingProcessTypes = Action('DescribeScalingProcessTypes')
+DescribeScheduledActions = Action('DescribeScheduledActions')
+DescribeTags = Action('DescribeTags')
+DescribeTerminationPolicyTypes = Action('DescribeTerminationPolicyTypes')
+DetachInstances = Action('DetachInstances')
+DetachLoadBalancers = Action('DetachLoadBalancers')
+DisableMetricsCollection = Action('DisableMetricsCollection')
+EnableMetricsCollection = Action('EnableMetricsCollection')
+EnterStandby = Action('EnterStandby')
+ExecutePolicy = Action('ExecutePolicy')
+ExitStandby = Action('ExitStandby')
+PutLifecycleHook = Action('PutLifecycleHook')
+PutNotificationConfiguration = Action('PutNotificationConfiguration')
+PutScalingPolicy = Action('PutScalingPolicy')
+PutScheduledUpdateGroupAction = Action('PutScheduledUpdateGroupAction')
+RecordLifecycleActionHeartbeat = Action('RecordLifecycleActionHeartbeat')
+ResumeProcesses = Action('ResumeProcesses')
+SetDesiredCapacity = Action('SetDesiredCapacity')
+SetInstanceHealth = Action('SetInstanceHealth')
+SetInstanceProtection = Action('SetInstanceProtection')
+SuspendProcesses = Action('SuspendProcesses')
 TerminateInstanceInAutoScalingGroup = \
-    Action(prefix, 'TerminateInstanceInAutoScalingGroup')
-UpdateAutoScalingGroup = Action(prefix, 'UpdateAutoScalingGroup')
+    Action('TerminateInstanceInAutoScalingGroup')
+UpdateAutoScalingGroup = Action('UpdateAutoScalingGroup')

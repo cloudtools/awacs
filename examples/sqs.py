@@ -15,7 +15,7 @@ pd = Policy(
             Effect=Allow,
             Principal=AWSPrincipal("111122223333"),
             Action=[sqs.SendMessage],
-            Resource=[sqs.SQS_ARN(region, account, "queue1"), ],
+            Resource=[sqs.ARN(region, account, "queue1"), ],
             Condition=Condition([
                 DateGreaterThan("aws:CurrentTime", "2010-08-16T12:00:00Z"),
                 DateLessThan("aws:CurrentTime", "2010-08-16T15:00:00Z"),
