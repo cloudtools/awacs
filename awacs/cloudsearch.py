@@ -3,35 +3,51 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon CloudSearch'
 prefix = 'cloudsearch'
 
-BuildSuggesters = Action(prefix, 'BuildSuggesters')
-CreateDomain = Action(prefix, 'CreateDomain')
-DefineAnalysisScheme = Action(prefix, 'DefineAnalysisScheme')
-DefineExpression = Action(prefix, 'DefineExpression')
-DefineIndexField = Action(prefix, 'DefineIndexField')
-DefineSuggester = Action(prefix, 'DefineSuggester')
-DeleteAnalysisScheme = Action(prefix, 'DeleteAnalysisScheme')
-DeleteDomain = Action(prefix, 'DeleteDomain')
-DeleteExpression = Action(prefix, 'DeleteExpression')
-DeleteIndexField = Action(prefix, 'DeleteIndexField')
-DeleteSuggester = Action(prefix, 'DeleteSuggester')
-DescribeAnalysisSchemes = Action(prefix, 'DescribeAnalysisSchemes')
-DescribeAvailabilityOptions = \
-    Action(prefix, 'DescribeAvailabilityOptions')
-DescribeDomains = Action(prefix, 'DescribeDomains')
-DescribeExpressions = Action(prefix, 'DescribeExpressions')
-DescribeIndexFields = Action(prefix, 'DescribeIndexFields')
-DescribeScalingParameters = Action(prefix, 'DescribeScalingParameters')
-DescribeServiceAccessPolicies = \
-    Action(prefix, 'DescribeServiceAccessPolicies')
-DescribeSuggesters = Action(prefix, 'DescribeSuggesters')
-IndexDocuments = Action(prefix, 'IndexDocuments')
-ListDomainNames = Action(prefix, 'ListDomainNames')
-UpdateAvailabilityOptions = Action(prefix, 'UpdateAvailabilityOptions')
-UpdateScalingParameters = Action(prefix, 'UpdateScalingParameters')
-UpdateServiceAccessPolicies = \
-    Action(prefix, 'UpdateServiceAccessPolicies')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+BuildSuggesters = Action('BuildSuggesters')
+CreateDomain = Action('CreateDomain')
+DefineAnalysisScheme = Action('DefineAnalysisScheme')
+DefineExpression = Action('DefineExpression')
+DefineIndexField = Action('DefineIndexField')
+DefineIndexFields = Action('DefineIndexFields')
+DefineSuggester = Action('DefineSuggester')
+DeleteAnalysisScheme = Action('DeleteAnalysisScheme')
+DeleteDomain = Action('DeleteDomain')
+DeleteExpression = Action('DeleteExpression')
+DeleteIndexField = Action('DeleteIndexField')
+DeleteSuggester = Action('DeleteSuggester')
+DescribeAnalysisSchemes = Action('DescribeAnalysisSchemes')
+DescribeAvailabilityOptions = Action('DescribeAvailabilityOptions')
+DescribeDomains = Action('DescribeDomains')
+DescribeExpressions = Action('DescribeExpressions')
+DescribeIndexFields = Action('DescribeIndexFields')
+DescribeScalingParameters = Action('DescribeScalingParameters')
+DescribeServiceAccessPolicies = Action('DescribeServiceAccessPolicies')
+DescribeSuggesters = Action('DescribeSuggesters')
+document = Action('document')
+IndexDocuments = Action('IndexDocuments')
+ListDomainNames = Action('ListDomainNames')
+search = Action('search')
+suggest = Action('suggest')
+UpdateAvailabilityOptions = Action('UpdateAvailabilityOptions')
+UpdateScalingParameters = Action('UpdateScalingParameters')
+UpdateServiceAccessPolicies = Action('UpdateServiceAccessPolicies')

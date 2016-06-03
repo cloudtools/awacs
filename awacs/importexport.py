@@ -3,13 +3,29 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS Import Export'
 prefix = 'importexport'
 
-CreateJob = Action(prefix, 'CreateJob')
-UpdateJob = Action(prefix, 'UpdateJob')
-CancelJob = Action(prefix, 'CancelJob')
-ListJobs = Action(prefix, 'ListJobs')
-GetStatus = Action(prefix, 'GetStatus')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CreateJob = Action('CreateJob')
+UpdateJob = Action('UpdateJob')
+CancelJob = Action('CancelJob')
+ListJobs = Action('ListJobs')
+GetStatus = Action('GetStatus')
+GetShippingLabel = Action('GetShippingLabel')

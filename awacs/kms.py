@@ -1,42 +1,52 @@
-from aws import Action, BaseARN
+# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# All rights reserved.
+#
+# See LICENSE file for full license.
 
-service_name = 'Amazon Key Management Service'
+from aws import Action as BaseAction
+from aws import BaseARN
+
+service_name = 'AWS Key Management Service'
 prefix = 'kms'
 
 
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
 class ARN(BaseARN):
-    def __init__(self, resource, region='', account=''):
+    def __init__(self, resource='', region='', account=''):
         sup = super(ARN, self)
         sup.__init__(service=prefix, resource=resource, region=region,
                      account=account)
 
-CancelKeyDeletion = Action(prefix, 'CancelKeyDeletion')
-CreateAlias = Action(prefix, 'CreateAlias')
-CreateGrant = Action(prefix, 'CreateGrant')
-CreateKey = Action(prefix, 'CreateKey')
-Decrypt = Action(prefix, 'Decrypt')
-DeleteAlias = Action(prefix, 'DeleteAlias')
-DescribeKey = Action(prefix, 'DescribeKey')
-DisableKey = Action(prefix, 'DisableKey')
-DisableKeyRotation = Action(prefix, 'DisableKeyRotation')
-EnableKey = Action(prefix, 'EnableKey')
-EnableKeyRotation = Action(prefix, 'EnableKeyRotation')
-Encrypt = Action(prefix, 'Encrypt')
-GenerateDataKey = Action(prefix, 'GenerateDataKey')
+
+CreateAlias = Action('CreateAlias')
+CreateGrant = Action('CreateGrant')
+CreateKey = Action('CreateKey')
+Decrypt = Action('Decrypt')
+DeleteAlias = Action('DeleteAlias')
+DescribeKey = Action('DescribeKey')
+DisableKey = Action('DisableKey')
+DisableKeyRotation = Action('DisableKeyRotation')
+EnableKey = Action('EnableKey')
+EnableKeyRotation = Action('EnableKeyRotation')
+Encrypt = Action('Encrypt')
+GenerateRandom = Action('GenerateRandom')
+GenerateDataKey = Action('GenerateDataKey')
 GenerateDataKeyWithoutPlaintext = \
-    Action(prefix, 'GenerateDataKeyWithoutPlaintext')
-GenerateRandom = Action(prefix, 'GenerateRandom')
-GetKeyPolicy = Action(prefix, 'GetKeyPolicy')
-GetKeyRotationStatus = Action(prefix, 'GetKeyRotationStatus')
-ListAliases = Action(prefix, 'ListAliases')
-ListGrants = Action(prefix, 'ListGrants')
-ListKeyPolicies = Action(prefix, 'ListKeyPolicies')
-ListKeys = Action(prefix, 'ListKeys')
-ListRetirableGrants = Action(prefix, 'ListRetirableGrants')
-PutKeyPolicy = Action(prefix, 'PutKeyPolicy')
-ReEncrypt = Action(prefix, 'ReEncrypt')
-RetireGrant = Action(prefix, 'RetireGrant')
-RevokeGrant = Action(prefix, 'RevokeGrant')
-ScheduleKeyDeletion = Action(prefix, 'ScheduleKeyDeletion')
-UpdateAlias = Action(prefix, 'UpdateAlias')
-UpdateKeyDescription = Action(prefix, 'UpdateKeyDescription')
+    Action('GenerateDataKeyWithoutPlaintext')
+GetKeyPolicy = Action('GetKeyPolicy')
+GetKeyRotationStatus = Action('GetKeyRotationStatus')
+ListAliases = Action('ListAliases')
+ListGrants = Action('ListGrants')
+ListKeyPolicies = Action('ListKeyPolicies')
+ListKeys = Action('ListKeys')
+PutKeyPolicy = Action('PutKeyPolicy')
+ReEncrypt = Action('ReEncrypt')
+RetireGrant = Action('RetireGrant')
+RevokeGrant = Action('RevokeGrant')
+UpdateAlias = Action('UpdateAlias')
+UpdateKeyDescription = Action('UpdateKeyDescription')

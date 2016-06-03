@@ -3,10 +3,29 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS Security Token Service'
 prefix = 'sts'
 
-GetFederationToken = Action(prefix, 'GetFederationToken')
-AssumeRole = Action(prefix, 'AssumeRole')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AssumeRole = Action('AssumeRole')
+AssumeRoleWithSAML = Action('AssumeRoleWithSAML')
+AssumeRoleWithWebIdentity = Action('AssumeRoleWithWebIdentity')
+DecodeAuthorizationMessage = Action('DecodeAuthorizationMessage')
+GetFederationToken = Action('GetFederationToken')
+GetSessionToken = Action('GetSessionToken')

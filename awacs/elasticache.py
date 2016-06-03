@@ -3,55 +3,67 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
-service_name = 'AWS ElastiCache'
+service_name = 'Amazon ElastiCache'
 prefix = 'elasticache'
 
-AddTagsToResource = Action(prefix, 'AddTagsToResource')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AddTagsToResource = Action('AddTagsToResource')
 AuthorizeCacheSecurityGroupIngress = \
-    Action(prefix, 'AuthorizeCacheSecurityGroupIngress')
-CopySnapshot = Action(prefix, 'CopySnapshot')
-CreateCacheCluster = Action(prefix, 'CreateCacheCluster')
-CreateCacheParameterGroup = Action(prefix, 'CreateCacheParameterGroup')
-CreateCacheSecurityGroup = Action(prefix, 'CreateCacheSecurityGroup')
-CreateCacheSubnetGroup = Action(prefix, 'CreateCacheSubnetGroup')
-CreateReplicationGroup = Action(prefix, 'CreateReplicationGroup')
-CreateSnapshot = Action(prefix, 'CreateSnapshot')
-DeleteCacheCluster = Action(prefix, 'DeleteCacheCluster')
-DeleteCacheParameterGroup = Action(prefix, 'DeleteCacheParameterGroup')
-DeleteCacheSecurityGroup = Action(prefix, 'DeleteCacheSecurityGroup')
-DeleteCacheSubnetGroup = Action(prefix, 'DeleteCacheSubnetGroup')
-DeleteReplicationGroup = Action(prefix, 'DeleteReplicationGroup')
-DeleteSnapshot = Action(prefix, 'DeleteSnapshot')
-DescribeCacheClusters = Action(prefix, 'DescribeCacheClusters')
-DescribeCacheEngineVersions = \
-    Action(prefix, 'DescribeCacheEngineVersions')
-DescribeCacheParameterGroups = \
-    Action(prefix, 'DescribeCacheParameterGroups')
-DescribeCacheParameters = Action(prefix, 'DescribeCacheParameters')
-DescribeCacheSecurityGroups = \
-    Action(prefix, 'DescribeCacheSecurityGroups')
-DescribeCacheSubnetGroups = \
-    Action(prefix, 'DescribeCacheSubnetGroups')
+    Action('AuthorizeCacheSecurityGroupIngress')
+CopySnapshot = Action('CopySnapshot')
+CreateCacheCluster = Action('CreateCacheCluster')
+CreateCacheParameterGroup = Action('CreateCacheParameterGroup')
+CreateCacheSecurityGroup = Action('CreateCacheSecurityGroup')
+CreateCacheSubnetGroup = Action('CreateCacheSubnetGroup')
+CreateReplicationGroup = Action('CreateReplicationGroup')
+CreateSnapshot = Action('CreateSnapshot')
+DeleteCacheCluster = Action('DeleteCacheCluster')
+DeleteCacheParameterGroup = Action('DeleteCacheParameterGroup')
+DeleteCacheSecurityGroup = Action('DeleteCacheSecurityGroup')
+DeleteCacheSubnetGroup = Action('DeleteCacheSubnetGroup')
+DeleteReplicationGroup = Action('DeleteReplicationGroup')
+DeleteSnapshot = Action('DeleteSnapshot')
+DescribeCacheClusters = Action('DescribeCacheClusters')
+DescribeCacheEngineVersions = Action('DescribeCacheEngineVersions')
+DescribeCacheParameterGroups = Action('DescribeCacheParameterGroups')
+DescribeCacheParameters = Action('DescribeCacheParameters')
+DescribeCacheSecurityGroups = Action('DescribeCacheSecurityGroups')
+DescribeCacheSubnetGroups = Action('DescribeCacheSubnetGroups')
 DescribeEngineDefaultParameters = \
-    Action(prefix, 'DescribeEngineDefaultParameters')
-DescribeEvents = Action(prefix, 'DescribeEvents')
-DescribeReplicationGroups = Action(prefix, 'DescribeReplicationGroups')
-DescribeReservedCacheNodes = \
-    Action(prefix, 'DescribeReservedCacheNodes')
+    Action('DescribeEngineDefaultParameters')
+DescribeEvents = Action('DescribeEvents')
+DescribeReplicationGroups = Action('DescribeReplicationGroups')
+DescribeReservedCacheNodes = Action('DescribeReservedCacheNodes')
 DescribeReservedCacheNodesOfferings = \
-    Action(prefix, 'DescribeReservedCacheNodesOfferings')
-DescribeSnapshots = Action(prefix, 'DescribeSnapshots')
-ListTagsForResource = Action(prefix, 'ListTagsForResource')
-ModifyCacheCluster = Action(prefix, 'ModifyCacheCluster')
-ModifyCacheParameterGroup = Action(prefix, 'ModifyCacheParameterGroup')
-ModifyCacheSubnetGroup = Action(prefix, 'ModifyCacheSubnetGroup')
-ModifyReplicationGroup = Action(prefix, 'ModifyReplicationGroup')
+    Action('DescribeReservedCacheNodesOfferings')
+DescribeSnapshots = Action('DescribeSnapshots')
+ListAllowedNodeTypeModifications = \
+    Action('ListAllowedNodeTypeModifications')
+ListTagsForResource = Action('ListTagsForResource')
+ModifyCacheCluster = Action('ModifyCacheCluster')
+ModifyCacheParameterGroup = Action('ModifyCacheParameterGroup')
+ModifyCacheSubnetGroup = Action('ModifyCacheSubnetGroup')
+ModifyReplicationGroup = Action('ModifyReplicationGroup')
 PurchaseReservedCacheNodesOffering = \
-    Action(prefix, 'PurchaseReservedCacheNodesOffering')
-RebootCacheCluster = Action(prefix, 'RebootCacheCluster')
-RemoveTagsFromResource = Action(prefix, 'RemoveTagsFromResource')
-ResetCacheParameterGroup = Action(prefix, 'ResetCacheParameterGroup')
+    Action('PurchaseReservedCacheNodesOffering')
+RebootCacheCluster = Action('RebootCacheCluster')
+RemoveTagsFromResource = Action('RemoveTagsFromResource')
+ResetCacheParameterGroup = Action('ResetCacheParameterGroup')
 RevokeCacheSecurityGroupIngress = \
-    Action(prefix, 'RevokeCacheSecurityGroupIngress')
+    Action('RevokeCacheSecurityGroupIngress')

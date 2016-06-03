@@ -3,63 +3,72 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Storage Gateway'
 prefix = 'storagegateway'
 
-ActivateGateway = Action(prefix, 'ActivateGateway')
-AddCache = Action(prefix, 'AddCache')
-AddUploadBuffer = Action(prefix, 'AddUploadBuffer')
-AddWorkingStorage = Action(prefix, 'AddWorkingStorage')
-CancelArchival = Action(prefix, 'CancelArchival')
-CancelRetrieval = Action(prefix, 'CancelRetrieval')
-CreateCachediSCSIVolume = Action(prefix, 'CreateCachediSCSIVolume')
-CreateSnapshot = Action(prefix, 'CreateSnapshot')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+ActivateGateway = Action('ActivateGateway')
+AddCache = Action('AddCache')
+AddUploadBuffer = Action('AddUploadBuffer')
+AddWorkingStorage = Action('AddWorkingStorage')
+CancelArchival = Action('CancelArchival')
+CancelRetrieval = Action('CancelRetrieval')
+CreateCachediSCSIVolume = Action('CreateCachediSCSIVolume')
+CreateSnapshot = Action('CreateSnapshot')
 CreateSnapshotFromVolumeRecoveryPoint = \
-    Action(prefix, 'CreateSnapshotFromVolumeRecoveryPoint')
-CreateStorediSCSIVolume = Action(prefix, 'CreateStorediSCSIVolume')
-CreateTapes = Action(prefix, 'CreateTapes')
-DeleteBandwidthRateLimit = Action(prefix, 'DeleteBandwidthRateLimit')
-DeleteChapCredentials = Action(prefix, 'DeleteChapCredentials')
-DeleteGateway = Action(prefix, 'DeleteGateway')
-DeleteSnapshotSchedule = Action(prefix, 'DeleteSnapshotSchedule')
-DeleteTape = Action(prefix, 'DeleteTape')
-DeleteTapeArchive = Action(prefix, 'DeleteTapeArchive')
-DeleteVolume = Action(prefix, 'DeleteVolume')
-DescribeBandwidthRateLimit = \
-    Action(prefix, 'DescribeBandwidthRateLimit')
-DescribeCache = Action(prefix, 'DescribeCache')
-DescribeCachediSCSIVolumes = \
-    Action(prefix, 'DescribeCachediSCSIVolumes')
-DescribeChapCredentials = Action(prefix, 'DescribeChapCredentials')
-DescribeGatewayInformation = \
-    Action(prefix, 'DescribeGatewayInformation')
-DescribeMaintenanceStartTime = \
-    Action(prefix, 'DescribeMaintenanceStartTime')
-DescribeSnapshotSchedule = Action(prefix, 'DescribeSnapshotSchedule')
-DescribeStorediSCSIVolumes = \
-    Action(prefix, 'DescribeStorediSCSIVolumes')
-DescribeTapeArchives = Action(prefix, 'DescribeTapeArchives')
-DescribeTapeRecoveryPoints = \
-    Action(prefix, 'DescribeTapeRecoveryPoints')
-DescribeTapes = Action(prefix, 'DescribeTapes')
-DescribeUploadBuffer = Action(prefix, 'DescribeUploadBuffer')
-DescribeVTLDevices = Action(prefix, 'DescribeVTLDevices')
-DescribeWorkingStorage = Action(prefix, 'DescribeWorkingStorage')
-DisableGateway = Action(prefix, 'DisableGateway')
-ListGateways = Action(prefix, 'ListGateways')
-ListLocalDisks = Action(prefix, 'ListLocalDisks')
-ListVolumeRecoveryPoints = Action(prefix, 'ListVolumeRecoveryPoints')
-ListVolumes = Action(prefix, 'ListVolumes')
-RetrieveTapeArchive = Action(prefix, 'RetrieveTapeArchive')
-RetrieveTapeRecoveryPoint = Action(prefix, 'RetrieveTapeRecoveryPoint')
-ShutdownGateway = Action(prefix, 'ShutdownGateway')
-StartGateway = Action(prefix, 'StartGateway')
-UpdateBandwidthRateLimit = Action(prefix, 'UpdateBandwidthRateLimit')
-UpdateChapCredentials = Action(prefix, 'UpdateChapCredentials')
-UpdateGatewayInformation = Action(prefix, 'UpdateGatewayInformation')
-UpdateGatewaySoftwareNow = Action(prefix, 'UpdateGatewaySoftwareNow')
-UpdateMaintenanceStartTime = \
-    Action(prefix, 'UpdateMaintenanceStartTime')
-UpdateSnapshotSchedule = Action(prefix, 'UpdateSnapshotSchedule')
+    Action('CreateSnapshotFromVolumeRecoveryPoint')
+CreateStorediSCSIVolume = Action('CreateStorediSCSIVolume')
+CreateTapes = Action('CreateTapes')
+DeleteBandwidthRateLimit = Action('DeleteBandwidthRateLimit')
+DeleteChapCredentials = Action('DeleteChapCredentials')
+DeleteGateway = Action('DeleteGateway')
+DeleteSnapshotSchedule = Action('DeleteSnapshotSchedule')
+DeleteTape = Action('DeleteTape')
+DeleteTapeArchive = Action('DeleteTapeArchive')
+DeleteVolume = Action('DeleteVolume')
+DescribeBandwidthRateLimit = Action('DescribeBandwidthRateLimit')
+DescribeCache = Action('DescribeCache')
+DescribeCachediSCSIVolumes = Action('DescribeCachediSCSIVolumes')
+DescribeChapCredentials = Action('DescribeChapCredentials')
+DescribeGatewayInformation = Action('DescribeGatewayInformation')
+DescribeMaintenanceStartTime = Action('DescribeMaintenanceStartTime')
+DescribeSnapshotSchedule = Action('DescribeSnapshotSchedule')
+DescribeStorediSCSIVolumes = Action('DescribeStorediSCSIVolumes')
+DescribeTapeArchives = Action('DescribeTapeArchives')
+DescribeTapeRecoveryPoints = Action('DescribeTapeRecoveryPoints')
+DescribeTapes = Action('DescribeTapes')
+DescribeUploadBuffer = Action('DescribeUploadBuffer')
+DescribeVTLDevices = Action('DescribeVTLDevices')
+DescribeWorkingStorage = Action('DescribeWorkingStorage')
+DisableGateway = Action('DisableGateway')
+ListGateways = Action('ListGateways')
+ListLocalDisks = Action('ListLocalDisks')
+ListTagsForResource = Action('ListTagsForResource')
+ListVolumeRecoveryPoints = Action('ListVolumeRecoveryPoints')
+ListVolumes = Action('ListVolumes')
+RetrieveTapeArchive = Action('RetrieveTapeArchive')
+RetrieveTapeRecoveryPoint = Action('RetrieveTapeRecoveryPoint')
+ShutdownGateway = Action('ShutdownGateway')
+StartGateway = Action('StartGateway')
+UpdateBandwidthRateLimit = Action('UpdateBandwidthRateLimit')
+UpdateChapCredentials = Action('UpdateChapCredentials')
+UpdateGatewayInformation = Action('UpdateGatewayInformation')
+UpdateGatewaySoftwareNow = Action('UpdateGatewaySoftwareNow')
+UpdateMaintenanceStartTime = Action('UpdateMaintenanceStartTime')
+UpdateSnapshotSchedule = Action('UpdateSnapshotSchedule')

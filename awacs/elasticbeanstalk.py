@@ -3,47 +3,54 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS Elastic Beanstalk'
 prefix = 'elasticbeanstalk'
 
-CheckDNSAvailability = Action(prefix, 'CheckDNSAvailability')
-CreateApplication = Action(prefix, 'CreateApplication')
-CreateApplicationVersion = Action(prefix, 'CreateApplicationVersion')
-CreateConfigurationTemplate = \
-    Action(prefix, 'CreateConfigurationTemplate')
-CreateEnvironment = Action(prefix, 'CreateEnvironment')
-CreateStorageLocation = Action(prefix, 'CreateStorageLocation')
-DeleteApplication = Action(prefix, 'DeleteApplication')
-DeleteApplicationVersion = Action(prefix, 'DeleteApplicationVersion')
-DeleteConfigurationTemplate = \
-    Action(prefix, 'DeleteConfigurationTemplate')
-DeleteEnvironmentConfiguration = \
-    Action(prefix, 'DeleteEnvironmentConfiguration')
-DescribeApplicationVersions = \
-    Action(prefix, 'DescribeApplicationVersions')
-DescribeApplications = Action(prefix, 'DescribeApplications')
-DescribeConfigurationOptions = \
-    Action(prefix, 'DescribeConfigurationOptions')
-DescribeConfigurationSettings = \
-    Action(prefix, 'DescribeConfigurationSettings')
-DescribeEnvironmentResources = \
-    Action(prefix, 'DescribeEnvironmentResources')
-DescribeEnvironments = Action(prefix, 'DescribeEnvironments')
-DescribeEvents = Action(prefix, 'DescribeEvents')
-ListAvailableSolutionStacks = \
-    Action(prefix, 'ListAvailableSolutionStacks')
-RebuildEnvironment = Action(prefix, 'RebuildEnvironment')
-RequestEnvironmentInfo = Action(prefix, 'RequestEnvironmentInfo')
-RestartAppServer = Action(prefix, 'RestartAppServer')
-RetrieveEnvironmentInfo = Action(prefix, 'RetrieveEnvironmentInfo')
-SwapEnvironmentCNAMEs = Action(prefix, 'SwapEnvironmentCNAMEs')
-TerminateEnvironment = Action(prefix, 'TerminateEnvironment')
-UpdateApplication = Action(prefix, 'UpdateApplication')
-UpdateApplicationVersion = Action(prefix, 'UpdateApplicationVersion')
-UpdateConfigurationTemplate = \
-    Action(prefix, 'UpdateConfigurationTemplate')
-UpdateEnvironment = Action(prefix, 'UpdateEnvironment')
-ValidateConfigurationSettings = \
-    Action(prefix, 'ValidateConfigurationSettings')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CheckDNSAvailability = Action('CheckDNSAvailability')
+CreateApplication = Action('CreateApplication')
+CreateApplicationVersion = Action('CreateApplicationVersion')
+CreateConfigurationTemplate = Action('CreateConfigurationTemplate')
+CreateEnvironment = Action('CreateEnvironment')
+CreateStorageLocation = Action('CreateStorageLocation')
+DeleteApplication = Action('DeleteApplication')
+DeleteApplicationVersion = Action('DeleteApplicationVersion')
+DeleteConfigurationTemplate = Action('DeleteConfigurationTemplate')
+DeleteEnvironmentConfiguration = Action('DeleteEnvironmentConfiguration')
+DescribeApplicationVersions = Action('DescribeApplicationVersions')
+DescribeApplications = Action('DescribeApplications')
+DescribeConfigurationOptions = Action('DescribeConfigurationOptions')
+DescribeConfigurationSettings = Action('DescribeConfigurationSettings')
+DescribeEnvironmentHealth = Action('DescribeEnvironmentHealth')
+DescribeEnvironmentResources = Action('DescribeEnvironmentResources')
+DescribeEnvironments = Action('DescribeEnvironments')
+DescribeEvents = Action('DescribeEvents')
+DescribeInstancesHealth = Action('DescribeInstancesHealth')
+ListAvailableSolutionStacks = Action('ListAvailableSolutionStacks')
+RebuildEnvironment = Action('RebuildEnvironment')
+RequestEnvironmentInfo = Action('RequestEnvironmentInfo')
+RestartAppServer = Action('RestartAppServer')
+RetrieveEnvironmentInfo = Action('RetrieveEnvironmentInfo')
+SwapEnvironmentCNAMEs = Action('SwapEnvironmentCNAMEs')
+TerminateEnvironment = Action('TerminateEnvironment')
+UpdateApplication = Action('UpdateApplication')
+UpdateApplicationVersion = Action('UpdateApplicationVersion')
+UpdateConfigurationTemplate = Action('UpdateConfigurationTemplate')
+UpdateEnvironment = Action('UpdateEnvironment')
+ValidateConfigurationSettings = Action('ValidateConfigurationSettings')

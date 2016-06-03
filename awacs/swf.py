@@ -3,66 +3,68 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Simple Workflow Service'
 prefix = 'swf'
 
-CancelTimer = Action(prefix, 'CancelTimer')
-CancelWorkflowExecution = Action(prefix, 'CancelWorkflowExecution')
-CompleteWorkflowExecution = Action(prefix, 'CompleteWorkflowExecution')
-ContinueAsNewWorkflowExecution = \
-    Action(prefix, 'ContinueAsNewWorkflowExecution')
-CountClosedWorkflowExecutions = \
-    Action(prefix, 'CountClosedWorkflowExecutions')
-CountOpenWorkflowExecutions = \
-    Action(prefix, 'CountOpenWorkflowExecutions')
-CountPendingActivityTasks = Action(prefix, 'CountPendingActivityTasks')
-CountPendingDecisionTasks = Action(prefix, 'CountPendingDecisionTasks')
-DeprecateActivityType = Action(prefix, 'DeprecateActivityType')
-DeprecateDomain = Action(prefix, 'DeprecateDomain')
-DeprecateWorkflowType = Action(prefix, 'DeprecateWorkflowType')
-DescribeActivityType = Action(prefix, 'DescribeActivityType')
-DescribeDomain = Action(prefix, 'DescribeDomain')
-DescribeWorkflowExecution = Action(prefix, 'DescribeWorkflowExecution')
-DescribeWorkflowType = Action(prefix, 'DescribeWorkflowType')
-FailWorkflowExecution = Action(prefix, 'FailWorkflowExecution')
-GetWorkflowExecutionHistory = \
-    Action(prefix, 'GetWorkflowExecutionHistory')
-ListActivityTypes = Action(prefix, 'ListActivityTypes')
-ListClosedWorkflowExecutions = \
-    Action(prefix, 'ListClosedWorkflowExecutions')
-ListDomains = Action(prefix, 'ListDomains')
-ListOpenWorkflowExecutions = \
-    Action(prefix, 'ListOpenWorkflowExecutions')
-ListWorkflowTypes = Action(prefix, 'ListWorkflowTypes')
-PollForActivityTask = Action(prefix, 'PollForActivityTask')
-PollForDecisionTask = Action(prefix, 'PollForDecisionTask')
-RecordActivityTaskHeartbeat = \
-    Action(prefix, 'RecordActivityTaskHeartbeat')
-RecordMarker = Action(prefix, 'RecordMarker')
-RegisterActivityType = Action(prefix, 'RegisterActivityType')
-RegisterDomain = Action(prefix, 'RegisterDomain')
-RegisterWorkflowType = Action(prefix, 'RegisterWorkflowType')
-RequestCancelActivityTask = Action(prefix, 'RequestCancelActivityTask')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CancelTimer = Action('CancelTimer')
+CancelWorkflowExecution = Action('CancelWorkflowExecution')
+CompleteWorkflowExecution = Action('CompleteWorkflowExecution')
+ContinueAsNewWorkflowExecution = Action('ContinueAsNewWorkflowExecution')
+CountClosedWorkflowExecutions = Action('CountClosedWorkflowExecutions')
+CountOpenWorkflowExecutions = Action('CountOpenWorkflowExecutions')
+CountPendingActivityTasks = Action('CountPendingActivityTasks')
+CountPendingDecisionTasks = Action('CountPendingDecisionTasks')
+DeprecateActivityType = Action('DeprecateActivityType')
+DeprecateDomain = Action('DeprecateDomain')
+DeprecateWorkflowType = Action('DeprecateWorkflowType')
+DescribeActivityType = Action('DescribeActivityType')
+DescribeDomain = Action('DescribeDomain')
+DescribeWorkflowExecution = Action('DescribeWorkflowExecution')
+DescribeWorkflowType = Action('DescribeWorkflowType')
+FailWorkflowExecution = Action('FailWorkflowExecution')
+GetWorkflowExecutionHistory = Action('GetWorkflowExecutionHistory')
+ListActivityTypes = Action('ListActivityTypes')
+ListClosedWorkflowExecutions = Action('ListClosedWorkflowExecutions')
+ListDomains = Action('ListDomains')
+ListOpenWorkflowExecutions = Action('ListOpenWorkflowExecutions')
+ListWorkflowTypes = Action('ListWorkflowTypes')
+PollForActivityTask = Action('PollForActivityTask')
+PollForDecisionTask = Action('PollForDecisionTask')
+RecordActivityTaskHeartbeat = Action('RecordActivityTaskHeartbeat')
+RecordMarker = Action('RecordMarker')
+RegisterActivityType = Action('RegisterActivityType')
+RegisterDomain = Action('RegisterDomain')
+RegisterWorkflowType = Action('RegisterWorkflowType')
+RequestCancelActivityTask = Action('RequestCancelActivityTask')
 RequestCancelExternalWorkflowExecution = \
-    Action(prefix, 'RequestCancelExternalWorkflowExecution')
-RequestCancelWorkflowExecution = \
-    Action(prefix, 'RequestCancelWorkflowExecution')
-RespondActivityTaskCanceled = \
-    Action(prefix, 'RespondActivityTaskCanceled')
-RespondActivityTaskCompleted = \
-    Action(prefix, 'RespondActivityTaskCompleted')
-RespondActivityTaskFailed = Action(prefix, 'RespondActivityTaskFailed')
-RespondDecisionTaskCompleted = \
-    Action(prefix, 'RespondDecisionTaskCompleted')
-ScheduleActivityTask = Action(prefix, 'ScheduleActivityTask')
+    Action('RequestCancelExternalWorkflowExecution')
+RequestCancelWorkflowExecution = Action('RequestCancelWorkflowExecution')
+RespondActivityTaskCanceled = Action('RespondActivityTaskCanceled')
+RespondActivityTaskCompleted = Action('RespondActivityTaskCompleted')
+RespondActivityTaskFailed = Action('RespondActivityTaskFailed')
+RespondDecisionTaskCompleted = Action('RespondDecisionTaskCompleted')
+ScheduleActivityTask = Action('ScheduleActivityTask')
 SignalExternalWorkflowExecution = \
-    Action(prefix, 'SignalExternalWorkflowExecution')
-SignalWorkflowExecution = Action(prefix, 'SignalWorkflowExecution')
-StartChildWorkflowExecution = \
-    Action(prefix, 'StartChildWorkflowExecution')
-StartTimer = Action(prefix, 'StartTimer')
-StartWorkflowExecution = Action(prefix, 'StartWorkflowExecution')
-TerminateWorkflowExecution = \
-    Action(prefix, 'TerminateWorkflowExecution')
+    Action('SignalExternalWorkflowExecution')
+SignalWorkflowExecution = Action('SignalWorkflowExecution')
+StartChildWorkflowExecution = Action('StartChildWorkflowExecution')
+StartTimer = Action('StartTimer')
+StartWorkflowExecution = Action('StartWorkflowExecution')
+TerminateWorkflowExecution = Action('TerminateWorkflowExecution')

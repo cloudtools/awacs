@@ -3,27 +3,38 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Kinesis'
 prefix = 'kinesis'
 
 
-class KinesisAction(Action):
+class Action(BaseAction):
     def __init__(self, action=None):
-        self.prefix = prefix
-        self.action = action
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
 
-AddTagsToStream = KinesisAction('AddTagsToStream')
-CreateStream = KinesisAction('CreateStream')
-DeleteStream = KinesisAction('DeleteStream')
-DescribeStream = KinesisAction('DescribeStream')
-GetShardIterator = KinesisAction('GetShardIterator')
-GetRecords = KinesisAction('GetRecords')
-ListStreams = KinesisAction('ListStreams')
-ListTagsForStream = KinesisAction('ListTagsForStream')
-MergeShards = KinesisAction('MergeShards')
-PutRecord = KinesisAction('PutRecord')
-PutRecords = KinesisAction('PutRecords')
-RemoveTagsFromStream = KinesisAction('RemoveTagsFromStream')
-SplitShard = KinesisAction('SplitShard')
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AddTagsToStream = Action('AddTagsToStream')
+CreateStream = Action('CreateStream')
+DecreaseStreamRetentionPeriod = Action('DecreaseStreamRetentionPeriod')
+DeleteStream = Action('DeleteStream')
+DescribeStream = Action('DescribeStream')
+GetShardIterator = Action('GetShardIterator')
+GetRecords = Action('GetRecords')
+IncreaseStreamRetentionPeriod = Action('IncreaseStreamRetentionPeriod')
+ListStreams = Action('ListStreams')
+ListTagsForStream = Action('ListTagsForStream')
+MergeShards = Action('MergeShards')
+PutRecord = Action('PutRecord')
+PutRecords = Action('PutRecords')
+RemoveTagsFromStream = Action('RemoveTagsFromStream')
+SplitShard = Action('SplitShard')

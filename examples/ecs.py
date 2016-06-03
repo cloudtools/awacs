@@ -12,7 +12,7 @@ pd = Policy(
             Effect=Allow,
             Action=[ecs.CreateCluster, ecs.RegisterContainerInstance,
                     ecs.DeregisterContainerInstance, ecs.DiscoverPollEndpoint,
-                    ecs.ECSAction("Submit*"), ecs.Poll],
+                    ecs.Action("Submit*"), ecs.Poll],
             Resource=["*"]
         )
     ]

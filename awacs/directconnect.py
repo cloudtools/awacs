@@ -3,38 +3,45 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS Direct Connect'
 prefix = 'directconnect'
 
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
 AllocateConnectionOnInterconnect = \
-    Action(prefix, 'AllocateConnectionOnInterconnect')
+    Action('AllocateConnectionOnInterconnect')
 AllocatePrivateVirtualInterface = \
-    Action(prefix, 'AllocatePrivateVirtualInterface')
-AllocatePublicVirtualInterface = \
-    Action(prefix, 'AllocatePublicVirtualInterface')
-ConfirmConnection = Action(prefix, 'ConfirmConnection')
-ConfirmPrivateVirtualInterface = \
-    Action(prefix, 'ConfirmPrivateVirtualInterface')
-ConfirmPublicVirtualInterface = \
-    Action(prefix, 'ConfirmPublicVirtualInterface')
-CreateConnection = Action(prefix, 'CreateConnection')
-CreateInterconnect = Action(prefix, 'CreateInterconnect')
-CreatePrivateVirtualInterface = \
-    Action(prefix, 'CreatePrivateVirtualInterface')
-CreatePublicVirtualInterface = \
-    Action(prefix, 'CreatePublicVirtualInterface')
-DeleteConnection = Action(prefix, 'DeleteConnection')
-DeleteInterconnect = Action(prefix, 'DeleteInterconnect')
-DeleteVirtualInterface = Action(prefix, 'DeleteVirtualInterface')
-DescribeConnectionDetail = Action(prefix, 'DescribeConnectionDetail')
-DescribeConnections = Action(prefix, 'DescribeConnections')
-DescribeOfferingDetail = Action(prefix, 'DescribeOfferingDetail')
-DescribeOfferings = Action(prefix, 'DescribeOfferings')
+    Action('AllocatePrivateVirtualInterface')
+AllocatePublicVirtualInterface = Action('AllocatePublicVirtualInterface')
+ConfirmConnection = Action('ConfirmConnection')
+ConfirmPrivateVirtualInterface = Action('ConfirmPrivateVirtualInterface')
+ConfirmPublicVirtualInterface = Action('ConfirmPublicVirtualInterface')
+CreateConnection = Action('CreateConnection')
+CreateInterconnect = Action('CreateInterconnect')
+CreatePrivateVirtualInterface = Action('CreatePrivateVirtualInterface')
+CreatePublicVirtualInterface = Action('CreatePublicVirtualInterface')
+DeleteConnection = Action('DeleteConnection')
+DeleteInterconnect = Action('DeleteInterconnect')
+DeleteVirtualInterface = Action('DeleteVirtualInterface')
+DescribeConnections = Action('DescribeConnections')
 DescribeConnectionsOnInterconnect = \
-    Action(prefix, 'DescribeConnectionsOnInterconnect')
-DescribeInterconnects = Action(prefix, 'DescribeInterconnects')
-DescribeLocations = Action(prefix, 'DescribeLocations')
-DescribeVirtualGateways = Action(prefix, 'DescribeVirtualGateways')
-DescribeVirtualInterfaces = Action(prefix, 'DescribeVirtualInterfaces')
+    Action('DescribeConnectionsOnInterconnect')
+DescribeInterconnects = Action('DescribeInterconnects')
+DescribeLocations = Action('DescribeLocations')
+DescribeVirtualGateways = Action('DescribeVirtualGateways')
+DescribeVirtualInterfaces = Action('DescribeVirtualInterfaces')

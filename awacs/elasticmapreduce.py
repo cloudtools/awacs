@@ -3,24 +3,40 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'Amazon Elastic MapReduce'
 prefix = 'elasticmapreduce'
 
-AddInstanceGroups = Action(prefix, 'AddInstanceGroups')
-AddTags = Action(prefix, 'AddTags')
-AddJobFlowSteps = Action(prefix, 'AddJobFlowSteps')
-DescribeCluster = Action(prefix, 'DescribeCluster')
-DescribeJobFlows = Action(prefix, 'DescribeJobFlows')
-DescribeStep = Action(prefix, 'DescribeStep')
-ListBootstrapActions = Action(prefix, 'ListBootstrapActions')
-ListClusters = Action(prefix, 'ListClusters')
-ListInstanceGroups = Action(prefix, 'ListInstanceGroups')
-ListInstances = Action(prefix, 'ListInstances')
-ListSteps = Action(prefix, 'ListSteps')
-ModifyInstanceGroups = Action(prefix, 'ModifyInstanceGroups')
-RemoveTags = Action(prefix, 'RemoveTags')
-RunJobFlow = Action(prefix, 'RunJobFlow')
-SetTerminationProtection = Action(prefix, 'SetTerminationProtection')
-TerminateJobFlows = Action(prefix, 'TerminateJobFlows')
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+AddInstanceGroups = Action('AddInstanceGroups')
+AddTags = Action('AddTags')
+AddJobFlowSteps = Action('AddJobFlowSteps')
+DescribeCluster = Action('DescribeCluster')
+DescribeJobFlows = Action('DescribeJobFlows')
+DescribeStep = Action('DescribeStep')
+ListBootstrapActions = Action('ListBootstrapActions')
+ListClusters = Action('ListClusters')
+ListInstanceGroups = Action('ListInstanceGroups')
+ListInstances = Action('ListInstances')
+ListSteps = Action('ListSteps')
+ModifyInstanceGroups = Action('ModifyInstanceGroups')
+RemoveTags = Action('RemoveTags')
+RunJobFlow = Action('RunJobFlow')
+SetTerminationProtection = Action('SetTerminationProtection')
+SetVisibleToAllUsers = Action('SetVisibleToAllUsers')
+TerminateJobFlows = Action('TerminateJobFlows')

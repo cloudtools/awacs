@@ -3,49 +3,56 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action, BaseARN
+from aws import Action as BaseAction
+from aws import BaseARN
 
 service_name = 'AWS CodeDeploy'
 prefix = 'codedeploy'
 
 
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
 class ARN(BaseARN):
-    def __init__(self, region, account, resource):
+    def __init__(self, resource='', region='', account=''):
         sup = super(ARN, self)
-        sup.__init__(prefix, region=region, account=account,
-                     resource=resource)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
 
 
-AddTagsToOnPremisesInstances = Action(prefix, 'AddTagsToOnPremisesInstance')
-BatchGetApplications = Action(prefix, 'BatchGetApplications')
-BatchGetDeployments = Action(prefix, 'BatchGetDeployments')
-BatchGetOnPremisesInstances = Action(prefix, 'BatchGetOnPremisesInstances')
-CreateApplication = Action(prefix, 'CreateApplication')
-CreateDeployment = Action(prefix, 'CreateDeployment')
-CreateDeploymentConfig = Action(prefix, 'CreateDeploymentConfig')
-CreateDeploymentGroup = Action(prefix, 'CreateDeploymentGroup')
-DeleteApplication = Action(prefix, 'DeleteApplication')
-DeleteDeploymentConfig = Action(prefix, 'DeleteDeploymentConfig')
-DeleteDeploymentGroup = Action(prefix, 'DeleteDeploymentGroup')
-DeregisterOnPremisesInstance = Action(prefix, 'DeregisterOnPremisesInstance')
-GetApplication = Action(prefix, 'GetApplication')
-GetApplicationRevision = Action(prefix, 'GetApplicationRevision')
-GetDeployment = Action(prefix, 'GetDeployment')
-GetDeploymentConfig = Action(prefix, 'GetDeploymentConfig')
-GetDeploymentGroup = Action(prefix, 'GetDeploymentGroup')
-GetDeploymentInstance = Action(prefix, 'GetDeploymentInstance')
-GetOnPremisesInstance = Action(prefix, 'GetOnPremisesInstance')
-ListApplicationRevisions = Action(prefix, 'ListApplicationRevisions')
-ListApplications = Action(prefix, 'ListApplications')
-ListDeploymentConfigs = Action(prefix, 'ListDeploymentConfigs')
-ListDeploymentGroups = Action(prefix, 'ListDeploymentGroups')
-ListDeploymentInstances = Action(prefix, 'ListDeploymentInstances')
-ListDeployments = Action(prefix, 'ListDeployments')
-ListOnPremisesInstances = Action(prefix, 'ListOnPremisesInstances')
-RegisterApplicationRevision = Action(prefix, 'RegisterApplicationRevision')
-RegisterOnPremisesInstance = Action(prefix, 'RegisterOnPremisesInstance')
+AddTagsToOnPremisesInstances = Action('AddTagsToOnPremisesInstances')
+BatchGetApplications = Action('BatchGetApplications')
+BatchGetDeployments = Action('BatchGetDeployments')
+BatchGetOnPremisesInstances = Action('BatchGetOnPremisesInstances')
+CreateApplication = Action('CreateApplication')
+CreateDeployment = Action('CreateDeployment')
+CreateDeploymentConfig = Action('CreateDeploymentConfig')
+CreateDeploymentGroup = Action('CreateDeploymentGroup')
+DeleteApplication = Action('DeleteApplication')
+DeleteDeploymentConfig = Action('DeleteDeploymentConfig')
+DeleteDeploymentGroup = Action('DeleteDeploymentGroup')
+DeregisterOnPremisesInstance = Action('DeregisterOnPremisesInstance')
+GetApplication = Action('GetApplication')
+GetApplicationRevision = Action('GetApplicationRevision')
+GetDeployment = Action('GetDeployment')
+GetDeploymentConfig = Action('GetDeploymentConfig')
+GetDeploymentGroup = Action('GetDeploymentGroup')
+GetDeploymentInstance = Action('GetDeploymentInstance')
+GetOnPremisesInstance = Action('GetOnPremisesInstance')
+ListApplicationRevisions = Action('ListApplicationRevisions')
+ListApplications = Action('ListApplications')
+ListDeploymentConfigs = Action('ListDeploymentConfigs')
+ListDeploymentGroups = Action('ListDeploymentGroups')
+ListDeploymentInstances = Action('ListDeploymentInstances')
+ListDeployments = Action('ListDeployments')
+ListOnPremisesInstances = Action('ListOnPremisesInstances')
+RegisterApplicationRevision = Action('RegisterApplicationRevision')
+RegisterOnPremisesInstance = Action('RegisterOnPremisesInstance')
 RemoveTagsFromOnPremisesInstances = \
-    Action(prefix, 'RemoveTagsFromOnPremisesInstances')
-StopDeployment = Action(prefix, 'StopDeployment')
-UpdateApplication = Action(prefix, 'UpdateApplication')
-UpdateDeploymentGroup = Action(prefix, 'UpdateDeploymentGroup')
+    Action('RemoveTagsFromOnPremisesInstances')
+StopDeployment = Action('StopDeployment')
+UpdateApplication = Action('UpdateApplication')
+UpdateDeploymentGroup = Action('UpdateDeploymentGroup')

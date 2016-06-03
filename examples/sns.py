@@ -13,11 +13,11 @@ pd = Policy(
             Effect=Allow,
             Principal=AWSPrincipal("210987654321"),
             Action=[sqs.SendMessage],
-            Resource=[sqs.SQS_ARN(region, account, "your_queue_xyz"), ],
+            Resource=[sqs.ARN(region, account, "your_queue_xyz"), ],
             Condition=Condition(
                 ArnEquals(
                     "aws:SourceArn",
-                    sns.SNS_ARN(region, '123456789012', 'your_special_topic_1')
+                    sns.ARN(region, '123456789012', 'your_special_topic_1')
                 ),
             ),
         ),
