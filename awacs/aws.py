@@ -175,6 +175,7 @@ _condition_strings = [
     "DateGreaterThanEquals",
     "IpAddress",
     "NotIpAddress",
+    "Null",
     "NumericEquals",
     "NumericNotEquals",
     "NumericLessThan",
