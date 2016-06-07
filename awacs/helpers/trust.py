@@ -9,6 +9,17 @@ def make_simple_assume_statement(principal):
         Action=[sts.AssumeRole])
 
 
+def get_codedeploy_assumerole_policy():
+    """ Helper function for building the AWS CodeDeploy AssumeRole Policy
+    """
+
+    service = 'codedeploy.amazonaws.com'
+    policy = Policy(
+        Statement=[make_simple_assume_statement(service)]
+    )
+    return policy
+
+
 def get_default_assumerole_policy(region=''):
     """ Helper function for building the Default AssumeRole Policy
 
