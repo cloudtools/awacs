@@ -38,7 +38,7 @@ def get_ecs_assumerole_policy(region=''):
 
 
 def get_lambda_assumerole_policy(region=''):
-    """ Helper function for building the ECS AssumeRole Policy
+    """ Helper function for building the AWS Lambda AssumeRole Policy
     """
 
     service = 'lambda.amazonaws.com'
