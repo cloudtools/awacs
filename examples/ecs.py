@@ -12,11 +12,18 @@ pd = Policy(
     Statement=[
         Statement(
             Effect=Allow,
-            Action=[aecs.CreateCluster, aecs.DeregisterContainerInstance,
-                    aecs.DiscoverPollEndpoint, aecs.Poll, aecs.RegisterContainerInstance,
-                    aecs.StartTelemetrySession, aecr.GetAuthorizationToken,
-                    aecr.BatchCheckLayerAvailability, aecr.GetDownloadUrlForLayer,
-                    aecr.BatchGetImage, alogs.CreateLogStream, alogs.PutLogEvents,
+            Action=[aecs.CreateCluster,
+                    aecs.DeregisterContainerInstance,
+                    aecs.DiscoverPollEndpoint,
+                    aecs.Poll,
+                    aecs.RegisterContainerInstance,
+                    aecs.StartTelemetrySession,
+                    aecr.GetAuthorizationToken,
+                    aecr.BatchCheckLayerAvailability,
+                    aecr.GetDownloadUrlForLayer,
+                    aecr.BatchGetImage,
+                    alogs.CreateLogStream,
+                    alogs.PutLogEvents,
                     aecs.Action("Submit*")],
             Resource=["*"]
         )
