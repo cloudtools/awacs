@@ -23,11 +23,15 @@ class ARN(BaseARN):
                      account=account)
 
 
+AddTags = Action('AddTags')
 CreateTrail = Action('CreateTrail')
 DeleteTrail = Action('DeleteTrail')
 DescribeTrails = Action('DescribeTrails')
 GetTrailStatus = Action('GetTrailStatus')
+ListPublicKeys = Action('ListPublicKeys')
+ListTags = Action('ListTags')
 LookupEvents = Action('LookupEvents')
+RemoveTags = Action('RemoveTags')
 StartLogging = Action('StartLogging')
 StopLogging = Action('StopLogging')
 UpdateTrail = Action('UpdateTrail')

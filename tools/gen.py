@@ -97,6 +97,8 @@ for serviceName, serviceValue in d['serviceMap'].items():
     # Handle prefix such as "directconnect:"
     if prefix[-1] == ':':
         filename = prefix[:-1]
+    if filename == 'lambda':
+        filename = 'awslambda'
     filename = filename.replace("-", "_")
     filename = ''.join([basedir, "/", filename, ".py"])
     with open(filename, "a") as fp:
