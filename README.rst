@@ -5,11 +5,11 @@ awacs
 .. image:: https://img.shields.io/pypi/v/awacs.svg
     :target: https://pypi.python.org/pypi/awacs
 
- .. image:: https://travis-ci.org/cloudtools/awacs.png?branch=master
-     :target: https://travis-ci.org/cloudtools/awacs
+.. image:: https://travis-ci.org/cloudtools/awacs.png?branch=master
+    :target: https://travis-ci.org/cloudtools/awacs
 
-  .. image:: https://img.shields.io/pypi/l/awacs.svg
-      :target: https://opensource.org/licenses/BSD-2-Clause
+.. image:: https://img.shields.io/pypi/l/awacs.svg
+    :target: https://opensource.org/licenses/BSD-2-Clause
 
 About
 =====
