@@ -1,4 +1,12 @@
-## pending
+## 0.6.0 (2016-07-07)
+- Add Null Condition operator (#42)
+- Update services (#47)
+   - Update services to latest IAM policies
+   - Add Action helper to each service
+   - Update generator tool for new ARN and input workarounds
+   - Make sure filenames don't use illegal "-"
+   - Remove renamed zocalo and deprecated whispersync
+- Rename lambda to awslambda and update services (Fixes #44) (#51)
 
 ## 0.5.4 (2016-03-01)
 - Add Elasticsearch Service [GH-29]
