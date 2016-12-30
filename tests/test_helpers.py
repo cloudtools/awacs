@@ -19,5 +19,6 @@ class TestTrustHelpers(unittest.TestCase):
         self.assertEqual(get_policy_service(cn_policy),
                          ['ec2.amazonaws.com.cn'])
 
+
 if __name__ == '__main__':
     unittest.main()

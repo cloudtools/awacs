@@ -37,6 +37,7 @@ def add_tests():
         testfunc.__doc__ = None
         setattr(TestExamples, testname, testfunc)
 
+
 add_tests()
 
 if __name__ == '__main__':
