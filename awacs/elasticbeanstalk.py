@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+ApplyEnvironmentManagedAction = Action('ApplyEnvironmentManagedAction')
 CheckDNSAvailability = Action('CheckDNSAvailability')
 CreateApplication = Action('CreateApplication')
 CreateApplicationVersion = Action('CreateApplicationVersion')
@@ -38,6 +39,10 @@ DescribeApplications = Action('DescribeApplications')
 DescribeConfigurationOptions = Action('DescribeConfigurationOptions')
 DescribeConfigurationSettings = Action('DescribeConfigurationSettings')
 DescribeEnvironmentHealth = Action('DescribeEnvironmentHealth')
+DescribeEnvironmentManagedActions = \
+    Action('DescribeEnvironmentManagedActions')
+DescribeEnvironmentManagedActionHistory = \
+    Action('DescribeEnvironmentManagedActionHistory')
 DescribeEnvironmentResources = Action('DescribeEnvironmentResources')
 DescribeEnvironments = Action('DescribeEnvironments')
 DescribeEvents = Action('DescribeEvents')

@@ -32,6 +32,7 @@ class SNS_ARN(ARN):
 
 
 AddPermission = Action('AddPermission')
+CheckIfPhoneNumberIsOptedOut = Action('CheckIfPhoneNumberIsOptedOut')
 ConfirmSubscription = Action('ConfirmSubscription')
 CreatePlatformApplication = Action('CreatePlatformApplication')
 CreatePlatformEndpoint = Action('CreatePlatformEndpoint')
@@ -42,19 +43,23 @@ DeleteTopic = Action('DeleteTopic')
 GetEndpointAttributes = Action('GetEndpointAttributes')
 GetPlatformApplicationAttributes = \
     Action('GetPlatformApplicationAttributes')
+GetSMSAttributes = Action('GetSMSAttributes')
 GetSubscriptionAttributes = Action('GetSubscriptionAttributes')
 GetTopicAttributes = Action('GetTopicAttributes')
 ListEndpointsByPlatformApplication = \
     Action('ListEndpointsByPlatformApplication')
+ListPhoneNumbersOptedOut = Action('ListPhoneNumbersOptedOut')
 ListPlatformApplications = Action('ListPlatformApplications')
 ListSubscriptions = Action('ListSubscriptions')
 ListSubscriptionsByTopic = Action('ListSubscriptionsByTopic')
 ListTopics = Action('ListTopics')
+OptInPhoneNumber = Action('OptInPhoneNumber')
 Publish = Action('Publish')
 RemovePermission = Action('RemovePermission')
 SetEndpointAttributes = Action('SetEndpointAttributes')
 SetPlatformApplicationAttributes = \
     Action('SetPlatformApplicationAttributes')
+SetSMSAttributes = Action('SetSMSAttributes')
 SetSubscriptionAttributes = Action('SetSubscriptionAttributes')
 SetTopicAttributes = Action('SetTopicAttributes')
 Subscribe = Action('Subscribe')

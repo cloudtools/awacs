@@ -23,9 +23,12 @@ class ARN(BaseARN):
                      account=account)
 
 
+AddTagsToCertificate = Action('AddTagsToCertificate')
 DeleteCertificate = Action('DeleteCertificate')
 DescribeCertificate = Action('DescribeCertificate')
 GetCertificate = Action('GetCertificate')
 ListCertificates = Action('ListCertificates')
+ListTagsForCertificate = Action('ListTagsForCertificate')
+RemoveTagsFromCertificate = Action('RemoveTagsFromCertificate')
 RequestCertificate = Action('RequestCertificate')
 ResendValidationEmail = Action('ResendValidationEmail')

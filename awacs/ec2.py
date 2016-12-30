@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon EC2'
+service_name = 'Amazon EC2 Spot Fleet'
 prefix = 'ec2'
 
 
@@ -23,11 +23,22 @@ class ARN(BaseARN):
                      account=account)
 
 
+CancelSpotFleetRequests = Action('CancelSpotFleetRequests')
+DescribeSpotFleetInstances = Action('DescribeSpotFleetInstances')
+DescribeSpotFleetRequests = Action('DescribeSpotFleetRequests')
+DescribeSpotFleetRequestHistory = \
+    Action('DescribeSpotFleetRequestHistory')
+ModifySpotFleetRequest = Action('ModifySpotFleetRequest')
+RequestSpotFleet = Action('RequestSpotFleet')
+AcceptReservedInstancesExchangeQuote = \
+    Action('AcceptReservedInstancesExchangeQuote')
 AcceptVpcPeeringConnection = Action('AcceptVpcPeeringConnection')
 AllocateAddress = Action('AllocateAddress')
+AllocateHosts = Action('AllocateHosts')
 AssignPrivateIpAddresses = Action('AssignPrivateIpAddresses')
 AssociateAddress = Action('AssociateAddress')
 AssociateDhcpOptions = Action('AssociateDhcpOptions')
+AssociateFpgaImage = Action('AssociateFpgaImage')
 AssociateRouteTable = Action('AssociateRouteTable')
 AttachClassicLinkVpc = Action('AttachClassicLinkVpc')
 AttachInternetGateway = Action('AttachInternetGateway')
@@ -110,6 +121,13 @@ DescribeDhcpOptions = Action('DescribeDhcpOptions')
 DescribeExportTasks = Action('DescribeExportTasks')
 DescribeFlowLogs = Action('DescribeFlowLogs')
 DescribeHosts = Action('DescribeHosts')
+DescribeHostReservations = Action('DescribeHostReservations')
+DescribeHostReservationOfferings = \
+    Action('DescribeHostReservationOfferings')
+GetHostReservationPurchasePreview = \
+    Action('GetHostReservationPurchasePreview')
+DescribeIdentityIdFormat = Action('DescribeIdentityIdFormat')
+DescribeIdFormat = Action('DescribeIdFormat')
 DescribeImageAttribute = Action('DescribeImageAttribute')
 DescribeImages = Action('DescribeImages')
 DescribeImportImageTasks = Action('DescribeImportImageTasks')
@@ -168,19 +186,29 @@ DetachVolume = Action('DetachVolume')
 DetachVpnGateway = Action('DetachVpnGateway')
 DisableVgwRoutePropagation = Action('DisableVgwRoutePropagation')
 DisableVpcClassicLink = Action('DisableVpcClassicLink')
+DisableVpcClassicLinkDnsSupport = \
+    Action('DisableVpcClassicLinkDnsSupport')
+DescribeVpcClassicLinkDnsSupport = \
+    Action('DescribeVpcClassicLinkDnsSupport')
 DisassociateAddress = Action('DisassociateAddress')
+DisassociateFpgaImage = Action('DisassociateFpgaImage')
 DisassociateRouteTable = Action('DisassociateRouteTable')
 EnableVgwRoutePropagation = Action('EnableVgwRoutePropagation')
 EnableVolumeIO = Action('EnableVolumeIO')
 EnableVpcClassicLink = Action('EnableVpcClassicLink')
+EnableVpcClassicLinkDnsSupport = Action('EnableVpcClassicLinkDnsSupport')
 GetConsoleOutput = Action('GetConsoleOutput')
+GetConsoleScreenshot = Action('GetConsoleScreenshot')
 GetPasswordData = Action('GetPasswordData')
+GetReservedInstancesExchangeQuote = \
+    Action('GetReservedInstancesExchangeQuote')
 ImportImage = Action('ImportImage')
 ImportInstance = Action('ImportInstance')
 ImportKeyPair = Action('ImportKeyPair')
 ImportSnapshot = Action('ImportSnapshot')
 ImportVolume = Action('ImportVolume')
 ModifyHosts = Action('ModifyHosts')
+ModifyIdentityIdFormat = Action('ModifyIdentityIdFormat')
 ModifyIdFormat = Action('ModifyIdFormat')
 ModifyImageAttribute = Action('ModifyImageAttribute')
 ModifyInstanceAttribute = Action('ModifyInstanceAttribute')
@@ -198,8 +226,10 @@ ModifyVpcPeeringConnectionOptions = \
     Action('ModifyVpcPeeringConnectionOptions')
 MonitorInstances = Action('MonitorInstances')
 MoveAddressToVpc = Action('MoveAddressToVpc')
+PurchaseHostReservation = Action('PurchaseHostReservation')
 PurchaseReservedInstancesOffering = \
     Action('PurchaseReservedInstancesOffering')
+PurchaseScheduledInstances = Action('PurchaseScheduledInstances')
 RebootInstances = Action('RebootInstances')
 RegisterImage = Action('RegisterImage')
 RejectVpcPeeringConnection = Action('RejectVpcPeeringConnection')
@@ -220,14 +250,9 @@ RestoreAddressToClassic = Action('RestoreAddressToClassic')
 RevokeSecurityGroupEgress = Action('RevokeSecurityGroupEgress')
 RevokeSecurityGroupIngress = Action('RevokeSecurityGroupIngress')
 RunInstances = Action('RunInstances')
+RunScheduledInstances = Action('RunScheduledInstances')
 StartInstances = Action('StartInstances')
 StopInstances = Action('StopInstances')
 TerminateInstances = Action('TerminateInstances')
 UnassignPrivateIpAddresses = Action('UnassignPrivateIpAddresses')
 UnmonitorInstances = Action('UnmonitorInstances')
-CancelSpotFleetRequests = Action('CancelSpotFleetRequests')
-DescribeSpotFleetInstances = Action('DescribeSpotFleetInstances')
-DescribeSpotFleetRequests = Action('DescribeSpotFleetRequests')
-DescribeSpotFleetRequestHistory = \
-    Action('DescribeSpotFleetRequestHistory')
-RequestSpotFleet = Action('RequestSpotFleet')

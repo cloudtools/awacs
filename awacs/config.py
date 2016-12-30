@@ -24,7 +24,9 @@ class ARN(BaseARN):
 
 
 DeleteConfigRule = Action('DeleteConfigRule')
+DeleteConfigurationRecorder = Action('DeleteConfigurationRecorder')
 DeleteDeliveryChannel = Action('DeleteDeliveryChannel')
+DeleteEvaluationResults = Action('DeleteEvaluationResults')
 DeliverConfigSnapshot = Action('DeliverConfigSnapshot')
 DescribeComplianceByConfigRule = Action('DescribeComplianceByConfigRule')
 DescribeComplianceByResource = Action('DescribeComplianceByResource')
@@ -51,5 +53,6 @@ PutConfigRule = Action('PutConfigRule')
 PutConfigurationRecorder = Action('PutConfigurationRecorder')
 PutDeliveryChannel = Action('PutDeliveryChannel')
 PutEvaluations = Action('PutEvaluations')
+StartConfigRulesEvaluation = Action('StartConfigRulesEvaluation')
 StartConfigurationRecorder = Action('StartConfigurationRecorder')
 StopConfigurationRecorder = Action('StopConfigurationRecorder')

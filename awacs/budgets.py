@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Trusted Advisor'
-prefix = 'trustedadvisor'
+service_name = 'AWS Budgets'
+prefix = 'budgets'
 
 
 class Action(BaseAction):
@@ -23,12 +23,5 @@ class ARN(BaseARN):
                      account=account)
 
 
-DescribeCheckItems = Action('DescribeCheckItems')
-DescribeCheckRefreshStatuses = Action('DescribeCheckRefreshStatuses')
-DescribeCheckSummaries = Action('DescribeCheckSummaries')
-DescribeNotificationPreferences = \
-    Action('DescribeNotificationPreferences')
-ExcludeCheckItems = Action('ExcludeCheckItems')
-IncludeCheckItems = Action('IncludeCheckItems')
-RefreshCheck = Action('RefreshCheck')
-UpdateNotificationPreferences = Action('UpdateNotificationPreferences')
+ViewBudget = Action('ViewBudget')
+ModifyBudget = Action('ModifyBudget')

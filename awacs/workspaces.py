@@ -23,10 +23,18 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateTags = Action('CreateTags')
 CreateWorkspaces = Action('CreateWorkspaces')
+DeleteTags = Action('DeleteTags')
+DescribeTags = Action('DescribeTags')
 DescribeWorkspaceBundles = Action('DescribeWorkspaceBundles')
+DescribeWorkspacesConnectionStatus = \
+    Action('DescribeWorkspacesConnectionStatus')
 DescribeWorkspaceDirectories = Action('DescribeWorkspaceDirectories')
 DescribeWorkspaces = Action('DescribeWorkspaces')
+ModifyWorkspaceProperties = Action('ModifyWorkspaceProperties')
+StartWorkspaces = Action('StartWorkspaces')
+StopWorkspaces = Action('StopWorkspaces')
 RebootWorkspaces = Action('RebootWorkspaces')
 RebuildWorkspaces = Action('RebuildWorkspaces')
 TerminateWorkspaces = Action('TerminateWorkspaces')

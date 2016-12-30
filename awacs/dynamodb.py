@@ -28,6 +28,7 @@ BatchWriteItem = Action('BatchWriteItem')
 CreateTable = Action('CreateTable')
 DeleteItem = Action('DeleteItem')
 DeleteTable = Action('DeleteTable')
+DescribeLimits = Action('DescribeLimits')
 DescribeReservedCapacity = Action('DescribeReservedCapacity')
 DescribeReservedCapacityOfferings = \
     Action('DescribeReservedCapacityOfferings')

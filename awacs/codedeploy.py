@@ -24,7 +24,10 @@ class ARN(BaseARN):
 
 
 AddTagsToOnPremisesInstances = Action('AddTagsToOnPremisesInstances')
+BatchGetApplicationRevisions = Action('BatchGetApplicationRevisions')
 BatchGetApplications = Action('BatchGetApplications')
+BatchGetDeploymentGroups = Action('BatchGetDeploymentGroups')
+BatchGetDeploymentInstances = Action('BatchGetDeploymentInstances')
 BatchGetDeployments = Action('BatchGetDeployments')
 BatchGetOnPremisesInstances = Action('BatchGetOnPremisesInstances')
 CreateApplication = Action('CreateApplication')

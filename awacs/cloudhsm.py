@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+AddTagsToResource = Action('AddTagsToResource')
 CreateLunaClient = Action('CreateLunaClient')
 CreateHapg = Action('CreateHapg')
 CreateHsm = Action('CreateHsm')
@@ -37,6 +38,8 @@ ListAvailableZones = Action('ListAvailableZones')
 ListLunaClients = Action('ListLunaClients')
 ListHapgs = Action('ListHapgs')
 ListHsms = Action('ListHsms')
+ListTagsForResource = Action('ListTagsForResource')
 ModifyLunaClient = Action('ModifyLunaClient')
 ModifyHapg = Action('ModifyHapg')
 ModifyHsm = Action('ModifyHsm')
+RemoveTagsFromResource = Action('RemoveTagsFromResource')

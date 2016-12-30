@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Trusted Advisor'
-prefix = 'trustedadvisor'
+service_name = 'Amazon Rekognition'
+prefix = 'rekognition'
 
 
 class Action(BaseAction):
@@ -23,12 +23,14 @@ class ARN(BaseARN):
                      account=account)
 
 
-DescribeCheckItems = Action('DescribeCheckItems')
-DescribeCheckRefreshStatuses = Action('DescribeCheckRefreshStatuses')
-DescribeCheckSummaries = Action('DescribeCheckSummaries')
-DescribeNotificationPreferences = \
-    Action('DescribeNotificationPreferences')
-ExcludeCheckItems = Action('ExcludeCheckItems')
-IncludeCheckItems = Action('IncludeCheckItems')
-RefreshCheck = Action('RefreshCheck')
-UpdateNotificationPreferences = Action('UpdateNotificationPreferences')
+CompareFaces = Action('CompareFaces')
+CreateCollection = Action('CreateCollection')
+DeleteCollection = Action('DeleteCollection')
+DeleteFaces = Action('DeleteFaces')
+DetectFaces = Action('DetectFaces')
+DetectLabels = Action('DetectLabels')
+IndexFaces = Action('IndexFaces')
+ListCollections = Action('ListCollections')
+ListFaces = Action('ListFaces')
+SearchFaces = Action('SearchFaces')
+SearchFacesByImage = Action('SearchFacesByImage')
