@@ -1,3 +1,11 @@
+## 0.6.1 (2016-12-30)
+- Service updates
+  - Update all services
+  - Add new services:
+    application_autoscaling, budgets, codebuild, health, kinesisanalytics,
+    lightsail, opsworks_cm, polly, rekognition, servicecatalog, shield, xray
+- Fix pycodestyle issues with tests
+
 ## 0.6.0 (2016-07-07)
 - Add Null Condition operator (#42)
 - Update services (#47)
