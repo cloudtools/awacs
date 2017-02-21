@@ -1,3 +1,9 @@
+## 0.6.2 (2017-02-20)
+- Service updates
+  - Update all services
+  - Add new services: batch, cognito_idp, cur, mobiletargeting, waf_regional
+- Add update of github Releases page to RELEASE doc
+
 ## 0.6.1 (2016-12-30)
 - Service updates
   - Update all services
