@@ -55,6 +55,8 @@ RetrieveEnvironmentInfo = Action('RetrieveEnvironmentInfo')
 SwapEnvironmentCNAMEs = Action('SwapEnvironmentCNAMEs')
 TerminateEnvironment = Action('TerminateEnvironment')
 UpdateApplication = Action('UpdateApplication')
+UpdateApplicationResourceLifecycle = \
+    Action('UpdateApplicationResourceLifecycle')
 UpdateApplicationVersion = Action('UpdateApplicationVersion')
 UpdateConfigurationTemplate = Action('UpdateConfigurationTemplate')
 UpdateEnvironment = Action('UpdateEnvironment')

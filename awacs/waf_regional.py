@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS WAF'
-prefix = 'waf'
+service_name = 'AWS WAF Regional'
+prefix = 'waf-regional'
 
 
 class Action(BaseAction):
@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+AssociateWebACL = Action('AssociateWebACL')
 CreateByteMatchSet = Action('CreateByteMatchSet')
 CreateIPSet = Action('CreateIPSet')
 CreateRule = Action('CreateRule')
@@ -37,6 +38,7 @@ DeleteSizeConstraintSet = Action('DeleteSizeConstraintSet')
 DeleteSqlInjectionMatchSet = Action('DeleteSqlInjectionMatchSet')
 DeleteWebACL = Action('DeleteWebACL')
 DeleteXssMatchSet = Action('DeleteXssMatchSet')
+DisassociateWebACL = Action('DisassociateWebACL')
 GetByteMatchSet = Action('GetByteMatchSet')
 GetChangeToken = Action('GetChangeToken')
 GetChangeTokenStatus = Action('GetChangeTokenStatus')
@@ -46,9 +48,11 @@ GetSampledRequests = Action('GetSampledRequests')
 GetSizeConstraintSet = Action('GetSizeConstraintSet')
 GetSqlInjectionMatchSet = Action('GetSqlInjectionMatchSet')
 GetWebACL = Action('GetWebACL')
+GetWebACLForResource = Action('GetWebACLForResource')
 GetXssMatchSet = Action('GetXssMatchSet')
 ListByteMatchSets = Action('ListByteMatchSets')
 ListIPSets = Action('ListIPSets')
+ListResourcesForWebACL = Action('ListResourcesForWebACL')
 ListRules = Action('ListRules')
 ListSizeConstraintSets = Action('ListSizeConstraintSets')
 ListSqlInjectionMatchSets = Action('ListSqlInjectionMatchSets')

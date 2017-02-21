@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Marketplace Metering Service'
-prefix = 'aws-marketplace'
+service_name = 'AWS Cost and Usage Report'
+prefix = 'cur'
 
 
 class Action(BaseAction):
@@ -23,9 +23,6 @@ class ARN(BaseARN):
                      account=account)
 
 
-MeterUsage = Action('MeterUsage')
-BatchMeterUsage = Action('BatchMeterUsage')
-ResolveCustomer = Action('ResolveCustomer')
-Subscribe = Action('Subscribe')
-Unsubscribe = Action('Unsubscribe')
-ViewSubscriptions = Action('ViewSubscriptions')
+DeleteReportDefinition = Action('DeleteReportDefinition')
+DescribeReportDefinitions = Action('DescribeReportDefinitions')
+PutReportDefinition = Action('PutReportDefinition')

@@ -30,12 +30,16 @@ CreateAssociation = Action('CreateAssociation')
 CreateAssociationBatch = Action('CreateAssociationBatch')
 CreateDocument = Action('CreateDocument')
 CreateMaintenanceWindow = Action('CreateMaintenanceWindow')
+CreatePatchBaseline = Action('CreatePatchBaseline')
 DeleteActivation = Action('DeleteActivation')
 DeleteAssociation = Action('DeleteAssociation')
 DeleteDocument = Action('DeleteDocument')
 DeleteMaintenanceWindow = Action('DeleteMaintenanceWindow')
 DeleteParameter = Action('DeleteParameter')
+DeletePatchBaseline = Action('DeletePatchBaseline')
 DeregisterManagedInstance = Action('DeregisterManagedInstance')
+DeregisterPatchBaselineForPatchGroup = \
+    Action('DeregisterPatchBaselineForPatchGroup')
 DeregisterTargetFromMaintenanceWindow = \
     Action('DeregisterTargetFromMaintenanceWindow')
 DeregisterTaskFromMaintenanceWindow = \
@@ -44,13 +48,20 @@ DescribeActivations = Action('DescribeActivations')
 DescribeAssociation = Action('DescribeAssociation')
 DescribeAutomationActions = Action('DescribeAutomationActions')
 DescribeAutomationExecutions = Action('DescribeAutomationExecutions')
+DescribeAvailablePatches = Action('DescribeAvailablePatches')
 DescribeDocument = Action('DescribeDocument')
 DescribeDocumentPermission = Action('DescribeDocumentPermission')
 DescribeEffectiveInstanceAssociations = \
     Action('DescribeEffectiveInstanceAssociations')
+DescribeEffectivePatchesForPatchBaseline = \
+    Action('DescribeEffectivePatchesForPatchBaseline')
 DescribeInstanceAssociationsStatus = \
     Action('DescribeInstanceAssociationsStatus')
 DescribeInstanceInformation = Action('DescribeInstanceInformation')
+DescribeInstancePatches = Action('DescribeInstancePatches')
+DescribeInstancePatchStates = Action('DescribeInstancePatchStates')
+DescribeInstancePatchStatesForPatchGroup = \
+    Action('DescribeInstancePatchStatesForPatchGroup')
 DescribeMaintenanceWindowExecutions = \
     Action('DescribeMaintenanceWindowExecutions')
 DescribeMaintenanceWindowExecutionTaskInvocations = \
@@ -62,7 +73,13 @@ DescribeMaintenanceWindowTargets = \
     Action('DescribeMaintenanceWindowTargets')
 DescribeMaintenanceWindowTasks = Action('DescribeMaintenanceWindowTasks')
 DescribeParameters = Action('DescribeParameters')
+DescribePatchBaselines = Action('DescribePatchBaselines')
+DescribePatchGroups = Action('DescribePatchGroups')
+DescribePatchGroupState = Action('DescribePatchGroupState')
 GetCommandInvocation = Action('GetCommandInvocation')
+GetDefaultPatchBaseline = Action('GetDefaultPatchBaseline')
+GetDeployablePatchSnapshotForInstance = \
+    Action('GetDeployablePatchSnapshotForInstance')
 GetInventory = Action('GetInventory')
 GetInventorySchema = Action('GetInventorySchema')
 GetDocument = Action('GetDocument')
@@ -72,6 +89,8 @@ GetMaintenanceWindowExecutionTask = \
     Action('GetMaintenanceWindowExecutionTask')
 GetParameterHistory = Action('GetParameterHistory')
 GetParameters = Action('GetParameters')
+GetPatchBaseline = Action('GetPatchBaseline')
+GetPatchBaselineForPatchGroup = Action('GetPatchBaselineForPatchGroup')
 ListAssociations = Action('ListAssociations')
 ListCommandInvocations = Action('ListCommandInvocations')
 ListCommands = Action('ListCommands')
@@ -83,6 +102,9 @@ ListTagsForResource = Action('ListTagsForResource')
 ModifyDocumentPermission = Action('ModifyDocumentPermission')
 PutInventory = Action('PutInventory')
 PutParameter = Action('PutParameter')
+RegisterDefaultPatchBaseline = Action('RegisterDefaultPatchBaseline')
+RegisterPatchBaselineForPatchGroup = \
+    Action('RegisterPatchBaselineForPatchGroup')
 RegisterTargetWithMaintenanceWindow = \
     Action('RegisterTargetWithMaintenanceWindow')
 RegisterTaskWithMaintenanceWindow = \
@@ -98,3 +120,4 @@ UpdateInstanceAssociationStatus = \
     Action('UpdateInstanceAssociationStatus')
 UpdateMaintenanceWindow = Action('UpdateMaintenanceWindow')
 UpdateManagedInstanceRole = Action('UpdateManagedInstanceRole')
+UpdatePatchBaseline = Action('UpdatePatchBaseline')
