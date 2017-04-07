@@ -194,13 +194,19 @@ _condition_qualifier_strings = [
     "ForAllValues"
 ]
 
+
 def make_condition(type_name, condition_name):
-    globals()[type_name] = type(type_name, (ConditionElement,), dict(condition=condition_name))
-    globals()[type_name + "IfExists"] = type(type_name + "IfExists", (ConditionElement,), dict(condition=condition_name + "IfExists"))
+    globals()[type_name] = type(type_name, (ConditionElement,),
+                                dict(condition=condition_name))
+    globals()[type_name + "IfExists"] = type(type_name + "IfExists",
+                                             (ConditionElement,),
+                                             dict(
+                                                  condition=condition_name +
+                                                  "IfExists"))
 
 # Create condition classes
 for i in _condition_strings:
     make_condition(i, i)
 
     for qual in _condition_qualifier_strings:
-        make_condition(qual+i, "%s:%s"%(qual,i))
+        make_condition(qual+i, "%s:%s" % (qual, i))
