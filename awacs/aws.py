@@ -189,8 +189,18 @@ _condition_strings = [
     "StringNotLike",
 ]
 
+_condition_qualifier_strings = [
+    "ForAnyValue",
+    "ForAllValues"
+]
+
+def make_condition(type_name, condition_name):
+    globals()[type_name] = type(type_name, (ConditionElement,), dict(condition=condition_name))
+    globals()[type_name + "IfExists"] = type(type_name + "IfExists", (ConditionElement,), dict(condition=condition_name + "IfExists"))
+
 # Create condition classes
 for i in _condition_strings:
-    globals()[i] = type(i, (ConditionElement,), dict(condition=i))
-    i = i + "IfExists"
-    globals()[i] = type(i, (ConditionElement,), dict(condition=i))
+    make_condition(i, i)
+
+    for qual in _condition_qualifier_strings:
+        make_condition(qual+i, "%s:%s"%(qual,i))
