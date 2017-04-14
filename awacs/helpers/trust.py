@@ -2,11 +2,20 @@ from awacs.aws import Statement, Principal, Allow, Policy
 from awacs import sts
 
 
-def make_simple_assume_statement(principal):
+def make_simple_assume_statement(*principals):
     return Statement(
-        Principal=Principal('Service', [principal]),
+        Principal=Principal('Service', principals),
         Effect=Allow,
-        Action=[sts.AssumeRole])
+        Action=[sts.AssumeRole]
+    )
+
+
+def make_simple_assume_policy(*principals):
+    return Policy(
+        Statement=[
+            make_simple_assume_statement(*principals)
+        ]
+    )
 
 
 def get_default_assumerole_policy(region=''):
@@ -20,10 +29,8 @@ def get_default_assumerole_policy(region=''):
     service = 'ec2.amazonaws.com'
     if region == 'cn-north-1':
         service = 'ec2.amazonaws.com.cn'
-    policy = Policy(
-        Statement=[make_simple_assume_statement(service)]
-    )
-    return policy
+
+    return make_simple_assume_policy(service)
 
 
 def get_ecs_assumerole_policy(region=''):
@@ -31,10 +38,7 @@ def get_ecs_assumerole_policy(region=''):
     """
 
     service = 'ecs.amazonaws.com'
-    policy = Policy(
-        Statement=[make_simple_assume_statement(service)]
-    )
-    return policy
+    return make_simple_assume_policy(service)
 
 
 def get_lambda_assumerole_policy(region=''):
@@ -42,7 +46,4 @@ def get_lambda_assumerole_policy(region=''):
     """
 
     service = 'lambda.amazonaws.com'
-    policy = Policy(
-        Statement=[make_simple_assume_statement(service)]
-    )
-    return policy
+    return make_simple_assume_policy(service)
