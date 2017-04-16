@@ -43,8 +43,14 @@ class Action(AWSHelperFn):
 
 class BaseARN(AWSHelperFn):
     def __init__(self, service, resource, region='', account=''):
-        self.data = "arn:aws:%s:%s:%s:%s" % (
-            service, region, account, resource)
+        data = (service, region, account, resource)
+        parts = []
+        for d in data:
+            v = d
+            if hasattr(d, 'JSONrepr'):
+                v = d.JSONrepr()
+            parts.append(v)
+        self.data = "arn:aws:%s:%s:%s:%s" % tuple(parts)
 
     def JSONrepr(self):
         return self.data
