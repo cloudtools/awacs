@@ -38,7 +38,9 @@ Examples
 ========
 
 An example to use this comes from the `AWS IAM`_ documentation.
-This shows creating policy attached to an Amazon S3 bucket::
+This shows creating policy attached to an Amazon S3 bucket:
+
+.. code-block:: python
 
   from awacs.aws import Action, Allow, Policy, Principal, Statement
   from awacs.iam import ARN as IAM_ARN
@@ -62,7 +64,9 @@ This shows creating policy attached to an Amazon S3 bucket::
   )
   print(pd.to_json())
 
-would produce this json policy::
+would produce this json policy:
+
+.. code-block:: json
 
   {
       "Id": "S3-Account-Permissions", 
