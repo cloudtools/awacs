@@ -32,11 +32,15 @@ CreateReusableDelegationSet = Action('CreateReusableDelegationSet')
 CreateTrafficPolicy = Action('CreateTrafficPolicy')
 CreateTrafficPolicyInstance = Action('CreateTrafficPolicyInstance')
 CreateTrafficPolicyVersion = Action('CreateTrafficPolicyVersion')
+CreateVPCAssociationAuthorization = \
+    Action('CreateVPCAssociationAuthorization')
 DeleteHealthCheck = Action('DeleteHealthCheck')
 DeleteHostedZone = Action('DeleteHostedZone')
 DeleteReusableDelegationSet = Action('DeleteReusableDelegationSet')
 DeleteTrafficPolicy = Action('DeleteTrafficPolicy')
 DeleteTrafficPolicyInstance = Action('DeleteTrafficPolicyInstance')
+DeleteVPCAssociationAuthorization = \
+    Action('DeleteVPCAssociationAuthorization')
 DisableDomainAutoRenew = Action('DisableDomainAutoRenew')
 DisassociateVPCFromHostedZone = Action('DisassociateVPCFromHostedZone')
 EnableDomainAutoRenew = Action('EnableDomainAutoRenew')
@@ -69,6 +73,9 @@ ListTrafficPolicyInstancesByHostedZone = \
 ListTrafficPolicyInstancesByPolicy = \
     Action('ListTrafficPolicyInstancesByPolicy')
 ListTrafficPolicyVersions = Action('ListTrafficPolicyVersions')
+ListVPCAssociationAuthorizations = \
+    Action('ListVPCAssociationAuthorizations')
+TestDNSAnswer = Action('TestDNSAnswer')
 UpdateHealthCheck = Action('UpdateHealthCheck')
 UpdateHostedZoneComment = Action('UpdateHostedZoneComment')
 UpdateTrafficPolicyComment = Action('UpdateTrafficPolicyComment')
