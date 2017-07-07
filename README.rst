@@ -56,7 +56,7 @@ This shows creating policy attached to an Amazon S3 bucket:
           Statement(
               Sid="1",
               Effect=Allow,
-              Principal=Principal("AWS", [IAM_ARN(account, user)]),
+              Principal=Principal("AWS", [IAM_ARN(user, '', account)]),
               Action=[Action("s3", "*")],
               Resource=[S3_ARN("my_corporate_bucket/*"),],
           ),
@@ -79,12 +79,12 @@ would produce this json policy:
               "Principal": [
                   {
                       "AWS": [
-                          "arn:aws:iam:123456789012:user/Bob:"
+                          "arn:aws:iam::123456789012:user/Bob"
                       ]
                   }
               ], 
               "Resource": [
-                  "arn:aws:s3::my_corporate_bucket/*:"
+                  "arn:aws:s3:::my_corporate_bucket/*"
               ], 
               "Sid": "1"
           }
