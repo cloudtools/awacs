@@ -90,17 +90,32 @@ try:
 except OSError:
     pass
 
+extra_actions = {
+    'awslambda': [
+        'ListTags', 'TagResource', 'UntagResource',
+    ],
+    'codecommit': [
+        'CancelUploadArchive', 'GetUploadArchiveStatus', 'UploadArchive',
+    ],
+    'cloudformation': [
+        'DeleteChangeSet',
+    ],
+    'es': [
+        'ESHttpDelete', 'ESHttpGet', 'ESHttpHead', 'ESHttpPost', 'ESHttpPut',
+    ],
+}
+
 filename_seen = {}
 for serviceName, serviceValue in d['serviceMap'].items():
     prefix = serviceValue['StringPrefix']
-    filename = prefix
+    service = prefix
     # Handle prefix such as "directconnect:"
     if prefix[-1] == ':':
-        filename = prefix[:-1]
-    if filename == 'lambda':
-        filename = 'awslambda'
-    filename = filename.replace("-", "_")
-    filename = ''.join([basedir, "/", filename, ".py"])
+        service = prefix[:-1]
+    if service == 'lambda':
+        service = 'awslambda'
+    service = service.replace("-", "_")
+    filename = ''.join([basedir, "/", service, ".py"])
     with open(filename, "a") as fp:
         if filename not in filename_seen:
             filename_seen[filename] = True
@@ -119,6 +134,14 @@ for serviceName, serviceValue in d['serviceMap'].items():
                     'upper': prefix.upper(),
                 })
                 fp.write("\n\n")
+
+        # Add actions AWS hasn't added yet
+        if service in extra_actions:
+            serviceValue['Actions'].extend(extra_actions[service])
+
+        # Make the set sorted and unique
+        serviceValue['Actions'] = sorted(set(serviceValue['Actions']))
+
         for action in serviceValue['Actions']:
             action = action.strip()
             # Handle action such as "ReEncrypt*"
