@@ -48,6 +48,17 @@ def get_ecs_assumerole_policy(region=''):
     return policy
 
 
+def get_ecs_task_assumerole_policy(region=''):
+    """ Helper function for building the AssumeRole Policy for ECS Tasks
+    """
+
+    service = 'ecs-tasks.amazonaws.com'
+    policy = Policy(
+        Statement=[make_simple_assume_statement(service)]
+    )
+    return policy
+
+
 def get_lambda_assumerole_policy(region=''):
     """ Helper function for building the AWS Lambda AssumeRole Policy
     """
