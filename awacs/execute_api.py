@@ -23,5 +23,5 @@ class ARN(BaseARN):
                      account=account)
 
 
-Invoke = Action('Invoke')
 InvalidateCache = Action('InvalidateCache')
+Invoke = Action('Invoke')

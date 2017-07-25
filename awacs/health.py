@@ -26,6 +26,6 @@ class ARN(BaseARN):
 DescribeAffectedEntities = Action('DescribeAffectedEntities')
 DescribeEntityAggregates = Action('DescribeEntityAggregates')
 DescribeEventAggregates = Action('DescribeEventAggregates')
-DescribeEvents = Action('DescribeEvents')
 DescribeEventDetails = Action('DescribeEventDetails')
 DescribeEventTypes = Action('DescribeEventTypes')
+DescribeEvents = Action('DescribeEvents')

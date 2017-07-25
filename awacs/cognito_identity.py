@@ -24,8 +24,8 @@ class ARN(BaseARN):
 
 
 CreateIdentityPool = Action('CreateIdentityPool')
-DeleteIdentityPool = Action('DeleteIdentityPool')
 DeleteIdentities = Action('DeleteIdentities')
+DeleteIdentityPool = Action('DeleteIdentityPool')
 DescribeIdentity = Action('DescribeIdentity')
 DescribeIdentityPool = Action('DescribeIdentityPool')
 GetIdentityPoolRoles = Action('GetIdentityPoolRoles')

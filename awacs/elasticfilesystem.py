@@ -24,15 +24,15 @@ class ARN(BaseARN):
 
 
 CreateFileSystem = Action('CreateFileSystem')
-CreateTags = Action('CreateTags')
-DescribeTags = Action('DescribeTags')
-DeleteTags = Action('DeleteTags')
 CreateMountTarget = Action('CreateMountTarget')
-ModifyMountTargetSecurityGroups = \
-    Action('ModifyMountTargetSecurityGroups')
+CreateTags = Action('CreateTags')
+DeleteFileSystem = Action('DeleteFileSystem')
+DeleteMountTarget = Action('DeleteMountTarget')
+DeleteTags = Action('DeleteTags')
+DescribeFileSystems = Action('DescribeFileSystems')
 DescribeMountTargetSecurityGroups = \
     Action('DescribeMountTargetSecurityGroups')
-DescribeFileSystems = Action('DescribeFileSystems')
 DescribeMountTargets = Action('DescribeMountTargets')
-DeleteMountTarget = Action('DeleteMountTarget')
-DeleteFileSystem = Action('DeleteFileSystem')
+DescribeTags = Action('DescribeTags')
+ModifyMountTargetSecurityGroups = \
+    Action('ModifyMountTargetSecurityGroups')

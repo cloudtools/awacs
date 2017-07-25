@@ -23,9 +23,9 @@ class ARN(BaseARN):
                      account=account)
 
 
-CreateJob = Action('CreateJob')
-UpdateJob = Action('UpdateJob')
 CancelJob = Action('CancelJob')
-ListJobs = Action('ListJobs')
-GetStatus = Action('GetStatus')
+CreateJob = Action('CreateJob')
 GetShippingLabel = Action('GetShippingLabel')
+GetStatus = Action('GetStatus')
+ListJobs = Action('ListJobs')
+UpdateJob = Action('UpdateJob')

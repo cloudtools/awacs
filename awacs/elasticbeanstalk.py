@@ -39,10 +39,10 @@ DescribeApplications = Action('DescribeApplications')
 DescribeConfigurationOptions = Action('DescribeConfigurationOptions')
 DescribeConfigurationSettings = Action('DescribeConfigurationSettings')
 DescribeEnvironmentHealth = Action('DescribeEnvironmentHealth')
-DescribeEnvironmentManagedActions = \
-    Action('DescribeEnvironmentManagedActions')
 DescribeEnvironmentManagedActionHistory = \
     Action('DescribeEnvironmentManagedActionHistory')
+DescribeEnvironmentManagedActions = \
+    Action('DescribeEnvironmentManagedActions')
 DescribeEnvironmentResources = Action('DescribeEnvironmentResources')
 DescribeEnvironments = Action('DescribeEnvironments')
 DescribeEvents = Action('DescribeEvents')

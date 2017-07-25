@@ -58,31 +58,31 @@ DescribeEffectivePatchesForPatchBaseline = \
 DescribeInstanceAssociationsStatus = \
     Action('DescribeInstanceAssociationsStatus')
 DescribeInstanceInformation = Action('DescribeInstanceInformation')
-DescribeInstancePatches = Action('DescribeInstancePatches')
 DescribeInstancePatchStates = Action('DescribeInstancePatchStates')
 DescribeInstancePatchStatesForPatchGroup = \
     Action('DescribeInstancePatchStatesForPatchGroup')
-DescribeMaintenanceWindowExecutions = \
-    Action('DescribeMaintenanceWindowExecutions')
+DescribeInstancePatches = Action('DescribeInstancePatches')
 DescribeMaintenanceWindowExecutionTaskInvocations = \
     Action('DescribeMaintenanceWindowExecutionTaskInvocations')
 DescribeMaintenanceWindowExecutionTasks = \
     Action('DescribeMaintenanceWindowExecutionTasks')
-DescribeMaintenanceWindows = Action('DescribeMaintenanceWindows')
+DescribeMaintenanceWindowExecutions = \
+    Action('DescribeMaintenanceWindowExecutions')
 DescribeMaintenanceWindowTargets = \
     Action('DescribeMaintenanceWindowTargets')
 DescribeMaintenanceWindowTasks = Action('DescribeMaintenanceWindowTasks')
+DescribeMaintenanceWindows = Action('DescribeMaintenanceWindows')
 DescribeParameters = Action('DescribeParameters')
 DescribePatchBaselines = Action('DescribePatchBaselines')
-DescribePatchGroups = Action('DescribePatchGroups')
 DescribePatchGroupState = Action('DescribePatchGroupState')
+DescribePatchGroups = Action('DescribePatchGroups')
 GetCommandInvocation = Action('GetCommandInvocation')
 GetDefaultPatchBaseline = Action('GetDefaultPatchBaseline')
 GetDeployablePatchSnapshotForInstance = \
     Action('GetDeployablePatchSnapshotForInstance')
+GetDocument = Action('GetDocument')
 GetInventory = Action('GetInventory')
 GetInventorySchema = Action('GetInventorySchema')
-GetDocument = Action('GetDocument')
 GetMaintenanceWindow = Action('GetMaintenanceWindow')
 GetMaintenanceWindowExecution = Action('GetMaintenanceWindowExecution')
 GetMaintenanceWindowExecutionTask = \
@@ -94,8 +94,8 @@ GetPatchBaselineForPatchGroup = Action('GetPatchBaselineForPatchGroup')
 ListAssociations = Action('ListAssociations')
 ListCommandInvocations = Action('ListCommandInvocations')
 ListCommands = Action('ListCommands')
-ListDocuments = Action('ListDocuments')
 ListDocumentVersions = Action('ListDocumentVersions')
+ListDocuments = Action('ListDocuments')
 ListInstanceAssociations = Action('ListInstanceAssociations')
 ListInventoryEntries = Action('ListInventoryEntries')
 ListTagsForResource = Action('ListTagsForResource')

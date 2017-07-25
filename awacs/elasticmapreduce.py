@@ -24,8 +24,8 @@ class ARN(BaseARN):
 
 
 AddInstanceGroups = Action('AddInstanceGroups')
-AddTags = Action('AddTags')
 AddJobFlowSteps = Action('AddJobFlowSteps')
+AddTags = Action('AddTags')
 CreateSecurityConfiguration = Action('CreateSecurityConfiguration')
 DeleteSecurityConfiguration = Action('DeleteSecurityConfiguration')
 DescribeCluster = Action('DescribeCluster')

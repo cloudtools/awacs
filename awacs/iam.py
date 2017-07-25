@@ -31,10 +31,10 @@ class IAM_ARN(ARN):
                       FutureWarning)
 
 
-AddRoleToInstanceProfile = Action('AddRoleToInstanceProfile')
-AddUserToGroup = Action('AddUserToGroup')
 AddClientIDToOpenIDConnectProvider = \
     Action('AddClientIDToOpenIDConnectProvider')
+AddRoleToInstanceProfile = Action('AddRoleToInstanceProfile')
+AddUserToGroup = Action('AddUserToGroup')
 AttachGroupPolicy = Action('AttachGroupPolicy')
 AttachRolePolicy = Action('AttachRolePolicy')
 AttachUserPolicy = Action('AttachUserPolicy')

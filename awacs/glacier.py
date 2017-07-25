@@ -23,9 +23,9 @@ class ARN(BaseARN):
                      account=account)
 
 
+AbortMultipartUpload = Action('AbortMultipartUpload')
 AbortVaultLock = Action('AbortVaultLock')
 AddTagsToVault = Action('AddTagsToVault')
-AbortMultipartUpload = Action('AbortMultipartUpload')
 CompleteMultipartUpload = Action('CompleteMultipartUpload')
 CompleteVaultLock = Action('CompleteVaultLock')
 CreateVault = Action('CreateVault')

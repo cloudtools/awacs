@@ -23,6 +23,6 @@ class ARN(BaseARN):
                      account=account)
 
 
-PutEvents = Action('PutEvents')
-GetReports = Action('GetReports')
 GetFinancialReports = Action('GetFinancialReports')
+GetReports = Action('GetReports')
+PutEvents = Action('PutEvents')

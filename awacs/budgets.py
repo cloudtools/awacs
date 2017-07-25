@@ -23,5 +23,5 @@ class ARN(BaseARN):
                      account=account)
 
 
-ViewBudget = Action('ViewBudget')
 ModifyBudget = Action('ModifyBudget')
+ViewBudget = Action('ViewBudget')

@@ -23,8 +23,8 @@ class ARN(BaseARN):
                      account=account)
 
 
-MeterUsage = Action('MeterUsage')
 BatchMeterUsage = Action('BatchMeterUsage')
+MeterUsage = Action('MeterUsage')
 ResolveCustomer = Action('ResolveCustomer')
 Subscribe = Action('Subscribe')
 Unsubscribe = Action('Unsubscribe')
