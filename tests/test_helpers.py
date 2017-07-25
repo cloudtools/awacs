@@ -6,7 +6,7 @@ from awacs.helpers.trust import get_default_assumerole_policy
 def get_policy_service(policy):
     statement = policy.properties['Statement'][0]
     principal = statement.properties['Principal']
-    return principal.data['Service']
+    return principal.data['Service'][0]
 
 
 class TestTrustHelpers(unittest.TestCase):
@@ -15,9 +15,9 @@ class TestTrustHelpers(unittest.TestCase):
         cn_policy = get_default_assumerole_policy('cn-north-1')
 
         self.assertEqual(get_policy_service(default_policy),
-                         ['ec2.amazonaws.com'])
+                         'ec2.amazonaws.com')
         self.assertEqual(get_policy_service(cn_policy),
-                         ['ec2.amazonaws.com.cn'])
+                         'ec2.amazonaws.com.cn')
 
 
 if __name__ == '__main__':
