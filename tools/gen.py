@@ -107,6 +107,7 @@ extra_actions = {
         'CreateServiceSpecificCredential', 'DeleteServiceSpecificCredential',
         'ListServiceSpecificCredentials', 'ResetServiceSpecificCredential',
         'UpdateServiceSpecificCredential',
+        'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
 }
 
