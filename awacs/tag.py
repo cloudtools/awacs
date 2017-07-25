@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Polly'
-prefix = 'polly'
+service_name = 'Amazon Resource Group Tagging API'
+prefix = 'tag'
 
 
 class Action(BaseAction):
@@ -23,9 +23,10 @@ class ARN(BaseARN):
                      account=account)
 
 
-DeleteLexicon = Action('DeleteLexicon')
-DescribeVoices = Action('DescribeVoices')
-GetLexicon = Action('GetLexicon')
-ListLexicons = Action('ListLexicons')
-PutLexicon = Action('PutLexicon')
-SynthesizeSpeech = Action('SynthesizeSpeech')
+AddResourceTags = Action('AddResourceTags')
+GetResources = Action('GetResources')
+GetTagKeys = Action('GetTagKeys')
+GetTagValues = Action('GetTagValues')
+RemoveResourceTags = Action('RemoveResourceTags')
+TagResources = Action('TagResources')
+UntagResources = Action('UntagResources')

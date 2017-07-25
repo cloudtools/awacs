@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon AppStream'
+service_name = 'Amazon AppStream 2.0'
 prefix = 'appstream'
 
 
@@ -23,18 +23,21 @@ class ARN(BaseARN):
                      account=account)
 
 
-CreateApplication = Action('CreateApplication')
-CreateSession = Action('CreateSession')
-DeleteApplication = Action('DeleteApplication')
-GetApiRoot = Action('GetApiRoot')
-GetApplication = Action('GetApplication')
-GetApplications = Action('GetApplications')
-GetApplicationError = Action('GetApplicationError')
-GetApplicationErrors = Action('GetApplicationErrors')
-GetApplicationStatus = Action('GetApplicationStatus')
-GetSession = Action('GetSession')
-GetSessions = Action('GetSessions')
-GetSessionStatus = Action('GetSessionStatus')
-UpdateApplication = Action('UpdateApplication')
-UpdateApplicationState = Action('UpdateApplicationState')
-UpdateSessionState = Action('UpdateSessionState')
+AssociateFleet = Action('AssociateFleet')
+CreateFleet = Action('CreateFleet')
+CreateStack = Action('CreateStack')
+CreateStreamingURL = Action('CreateStreamingURL')
+DeleteFleet = Action('DeleteFleet')
+DeleteStack = Action('DeleteStack')
+DescribeFleets = Action('DescribeFleets')
+DescribeImages = Action('DescribeImages')
+DescribeSessions = Action('DescribeSessions')
+DescribeStacks = Action('DescribeStacks')
+DisassociateFleet = Action('DisassociateFleet')
+ExpireSession = Action('ExpireSession')
+ListAssociatedFleets = Action('ListAssociatedFleets')
+ListAssociatedStacks = Action('ListAssociatedStacks')
+StartFleet = Action('StartFleet')
+StopFleet = Action('StopFleet')
+UpdateFleet = Action('UpdateFleet')
+UpdateStack = Action('UpdateStack')

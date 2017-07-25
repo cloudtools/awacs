@@ -44,3 +44,5 @@ RunJobFlow = Action('RunJobFlow')
 SetTerminationProtection = Action('SetTerminationProtection')
 SetVisibleToAllUsers = Action('SetVisibleToAllUsers')
 TerminateJobFlows = Action('TerminateJobFlows')
+ViewEventsFromAllClustersInConsole = \
+    Action('ViewEventsFromAllClustersInConsole')
