@@ -26,6 +26,6 @@ class ARN(BaseARN):
 DeleteLexicon = Action('DeleteLexicon')
 DescribeVoices = Action('DescribeVoices')
 GetLexicon = Action('GetLexicon')
-ListLexicon = Action('ListLexicon')
+ListLexicons = Action('ListLexicons')
 PutLexicon = Action('PutLexicon')
 SynthesizeSpeech = Action('SynthesizeSpeech')
