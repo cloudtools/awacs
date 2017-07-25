@@ -103,6 +103,11 @@ extra_actions = {
     'es': [
         'ESHttpDelete', 'ESHttpGet', 'ESHttpHead', 'ESHttpPost', 'ESHttpPut',
     ],
+    'iam': [
+        'CreateServiceSpecificCredential', 'DeleteServiceSpecificCredential',
+        'ListServiceSpecificCredentials', 'ResetServiceSpecificCredential',
+        'UpdateServiceSpecificCredential',
+    ],
 }
 
 filename_seen = {}
