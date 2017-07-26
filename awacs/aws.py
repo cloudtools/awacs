@@ -212,6 +212,7 @@ def make_condition(type_name, condition_name):
                                                   condition=condition_name +
                                                   "IfExists"))
 
+
 # Create condition classes
 for i in _condition_strings:
     make_condition(i, i)
