@@ -107,6 +107,8 @@ class Condition(AWSHelperFn):
 
 
 class Principal(AWSHelperFn):
+    VALID_PRINCIPALS = ["AWS", "Federated", "Service"]
+
     def __init__(self, principal, resources=None):
         if principal == "*":
             if resources:
@@ -116,6 +118,10 @@ class Principal(AWSHelperFn):
         else:
             if not resources:
                 raise ValueError("Must provide resources with principal.")
+            if principal not in self.VALID_PRINCIPALS:
+                raise ValueError("Principal must be one of: %s" % (
+                    ', '.join(self.VALID_PRINCIPALS))
+                )
             self.data = {principal: resources}
 
     def JSONrepr(self):

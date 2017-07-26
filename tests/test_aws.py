@@ -18,3 +18,7 @@ class TestPrincipal(unittest.TestCase):
         )
         with self.assertRaises(ValueError):
             p = Principal("AWS")
+
+    def test_invalid_principal_string(self):
+        with self.assertRaises(ValueError):
+            Principal("aws", "arn:aws:iam::AccountNumber-WithoutHyphens:root")
