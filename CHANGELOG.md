@@ -1,3 +1,28 @@
+## 0.7.0 (2017-07-25)
+- Create generic assume role policy generator (#64)
+- Create CODE_OF_CONDUCT.md (#69)
+- Update example in README (#71)
+- Add kms tagresource/untagresource actions (#73)
+- Add actions for HTTP methods in ES (#74)
+- Add helper for get_ecs_task_assumerole_policy (#76)
+- Adding in missing lambda actions (#77)
+- Enable early validation of Principal strings (#78)
+- Don't try to use `type` since it is never set (#79)
+- Add support for ForAllValues and ForAnyValues
+- Add MultiFactorAuthPresent policy condition constant
+- Add SourceAccount constant
+- Add codedeploy trust helper
+- Colorize README.rst
+- Add extra actions missing from AWS policies.js via gen.py
+- Update actions
+  - Added new codecommit and cloudformation actions
+  - Sorted the action lists
+- Update services
+  - Update all services
+  - Add new services:
+    - athena, clouddirectory, codestar, dax, lex, organizations
+    - snowball, states, tag
+
 ## 0.6.2 (2017-02-20)
 - Service updates
   - Update all services
