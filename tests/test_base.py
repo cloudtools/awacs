@@ -10,6 +10,6 @@ class TestAWSObject(unittest.TestCase):
             Policy(Version='2012-10-17', statement=[])
 
         self.assertEqual(
-            exc.exception.message,
+            exc.exception.args[0],
             "'awacs.aws.Policy' object does not support attribute 'statement'"
         )
