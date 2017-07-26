@@ -107,7 +107,7 @@ class Condition(AWSHelperFn):
 
 
 class Principal(AWSHelperFn):
-    VALID_PRINCIPALS = ["AWS", "Federated", "Service"]
+    VALID_PRINCIPALS = ["AWS", "CanonicalUser", "Federated", "Service"]
 
     def __init__(self, principal, resources=None):
         if principal == "*":
