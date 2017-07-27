@@ -21,6 +21,12 @@ Language JSON by writing Python code to describe the AWS policies.
 To facilitate catching  policy format or JSON errors early the
 library has property and type checking built into the classes.
 
+**NOTE:** The old *awacs.aws.Policy* object is going to be deprecated in the
+future, in preference for the *awacs.aws.PolicyDocument* class. This is due
+to confusion that arises between the old object and *troposphere.iam.Policy*
+objects.
+
+
 Installation
 ============
 
@@ -42,14 +48,14 @@ This shows creating policy attached to an Amazon S3 bucket:
 
 .. code-block:: python
 
-  from awacs.aws import Action, Allow, Policy, Principal, Statement
+  from awacs.aws import Action, Allow, PolicyDocument, Principal, Statement
   from awacs.iam import ARN as IAM_ARN
   from awacs.s3  import ARN as S3_ARN
 
   account = "123456789012"
   user = "user/Bob"
 
-  pd = Policy(
+  pd = PolicyDocument(
       Version="2012-10-17",
       Id="S3-Account-Permissions",
       Statement=[

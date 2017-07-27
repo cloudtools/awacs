@@ -13,7 +13,7 @@ class TestConditions(unittest.TestCase):
                 "Message",
                 "Tags"
             ]))
-        pd = aws.Policy(
+        pd = aws.PolicyDocument(
             Statement=[
                 aws.Statement(
                     Action=[s3.ListBucket],
