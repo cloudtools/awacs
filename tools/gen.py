@@ -109,6 +109,9 @@ extra_actions = {
         'UpdateServiceSpecificCredential',
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
+    'ssm': [
+        'GetParametersByPath',
+    ],
 }
 
 filename_seen = {}
