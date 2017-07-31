@@ -89,6 +89,7 @@ GetMaintenanceWindowExecutionTask = \
     Action('GetMaintenanceWindowExecutionTask')
 GetParameterHistory = Action('GetParameterHistory')
 GetParameters = Action('GetParameters')
+GetParametersByPath = Action('GetParametersByPath')
 GetPatchBaseline = Action('GetPatchBaseline')
 GetPatchBaselineForPatchGroup = Action('GetPatchBaselineForPatchGroup')
 ListAssociations = Action('ListAssociations')
