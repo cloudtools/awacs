@@ -101,3 +101,21 @@ welcome!
 
 .. _`AWS IAM`: http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html
 .. _cloudtools-dev: https://groups.google.com/forum/#!forum/cloudtools-dev
+
+Contributing new actions
+========================
+
+To update actions there is a generator tool which will pull policies from
+an AWS resource and auto-generate new files.
+The following commands can be run to update the repo:
+
+.. code-block:: sh
+
+  % rm -rf generated/
+  % python tools/gen.py
+  % diff -u awacs generated
+  % mv generated/*.py awacs
+  % git diff
+
+Since not all of the actions appear in the AWS policy file it is sometimes
+required to add these extra actions to the tools/gen.py file.
