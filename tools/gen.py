@@ -110,6 +110,7 @@ extra_actions = {
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
     'ssm': [
+        'GetParameter',
         'GetParametersByPath',
     ],
 }
