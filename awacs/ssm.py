@@ -87,6 +87,7 @@ GetMaintenanceWindow = Action('GetMaintenanceWindow')
 GetMaintenanceWindowExecution = Action('GetMaintenanceWindowExecution')
 GetMaintenanceWindowExecutionTask = \
     Action('GetMaintenanceWindowExecutionTask')
+GetParameter = Action('GetParameter')
 GetParameterHistory = Action('GetParameterHistory')
 GetParameters = Action('GetParameters')
 GetParametersByPath = Action('GetParametersByPath')
