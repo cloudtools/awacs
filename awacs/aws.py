@@ -169,6 +169,10 @@ class Policy(AWSProperty):
         return self.properties
 
 
+class PolicyDocument(Policy):
+    pass
+
+
 _condition_strings = [
     "ArnEquals",
     "ArnNotEquals",
