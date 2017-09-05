@@ -45,7 +45,15 @@ class Action(AWSHelperFn):
 
 class BaseARN(AWSHelperFn):
     def __init__(self, service, resource, region='', account=''):
-        self.data = "arn:aws:%s:%s:%s:%s" % (
+        region_string = region.lower()
+        if region_string.startswith("cn-"):
+             aws_partition = "aws-cn"
+        elif region_string.startswith("us-gov"):
+            aws_partition = "aws-us-gov"
+        else:
+            aws_partition = "aws"
+
+        self.data = "arn:" + aws_partition + ":%s:%s:%s:%s" % (
             service, region, account, resource)
 
     def JSONrepr(self):
