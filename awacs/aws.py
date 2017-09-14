@@ -53,8 +53,8 @@ class BaseARN(AWSHelperFn):
         else:
             aws_partition = "aws"
 
-        self.data = "arn:" + aws_partition + ":%s:%s:%s:%s" % (
-            service, region, account, resource)
+        self.data = "arn:%s:%s:%s:%s:%s" % (
+            aws_partition, service, region, account, resource)
 
     def JSONrepr(self):
         return self.data
