@@ -1,3 +1,15 @@
+## 0.7.1 (2017-09-23)
+- Update services
+- Add instructions for adding new actions
+- Tweak ARN partition method and add tests
+- Allow CanonicalUser for  Principal (Fixes #80)
+- Introduce PolicyDocument class (#81)
+- Update actions to include GetParametersByPath (#82)
+- Update gen.py (#83)
+- Generate valid ARNs for GovCloud and CN partitions of AWS in BaseARN (#85)
+- Add SSM GetParameter
+- Add ssm GetParametersByPath override
+
 ## 0.7.0 (2017-07-25)
 - Create generic assume role policy generator (#64)
 - Create CODE_OF_CONDUCT.md (#69)
