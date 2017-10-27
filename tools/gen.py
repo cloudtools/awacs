@@ -91,27 +91,17 @@ except OSError:
     pass
 
 extra_actions = {
-    'awslambda': [
-        'ListTags', 'TagResource', 'UntagResource',
+    'cloudformation': [
+        'DeleteChangeSet',
     ],
     'codecommit': [
         'CancelUploadArchive', 'GetUploadArchiveStatus', 'UploadArchive',
-    ],
-    'cloudformation': [
-        'DeleteChangeSet',
     ],
     'es': [
         'ESHttpDelete', 'ESHttpGet', 'ESHttpHead', 'ESHttpPost', 'ESHttpPut',
     ],
     'iam': [
-        'CreateServiceSpecificCredential', 'DeleteServiceSpecificCredential',
-        'ListServiceSpecificCredentials', 'ResetServiceSpecificCredential',
-        'UpdateServiceSpecificCredential',
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
-    ],
-    'ssm': [
-        'GetParameter',
-        'GetParametersByPath',
     ],
 }
 
