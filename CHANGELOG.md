@@ -1,3 +1,7 @@
+## 0.7.2 (2017-10-27)
+- Update actions as of 10-26-17 (#86)
+- Update extra_actions list to relect policies.js updates
+
 ## 0.7.1 (2017-09-23)
 - Update services
 - Add instructions for adding new actions
