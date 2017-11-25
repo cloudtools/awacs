@@ -169,10 +169,6 @@ class Policy(AWSProperty):
         'Version': (basestring, False),
     }
 
-    def to_json(self, indent=4, sort_keys=True):
-        p = self.properties
-        return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
-
     def JSONrepr(self):
         return self.properties
 
