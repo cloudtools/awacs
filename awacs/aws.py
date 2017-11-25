@@ -3,10 +3,9 @@
 #
 # See LICENSE file for full license.
 
-import json
 import warnings
-from . import AWSHelperFn, AWSProperty, awsencode
 
+from . import AWSHelperFn, AWSProperty
 
 # Policy effect constants.
 Allow = "Allow"

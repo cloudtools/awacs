@@ -136,7 +136,8 @@ class AWSHelperFn(object):
             return data
 
     def to_json(self, indent=4, sort_keys=True):
-        return json.dumps(self, cls=awsencode, indent=indent, sort_keys=sort_keys)
+        p = self
+        return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
