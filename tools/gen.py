@@ -103,6 +103,9 @@ extra_actions = {
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
+    'dynamodb': [
+        'DescribeTimeToLive', 'UpdateTimeToLive',
+    ],
 }
 
 filename_seen = {}
