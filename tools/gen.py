@@ -109,6 +109,9 @@ extra_actions = {
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
+    's3': [
+        'ObjectOwnerOverrideToBucketOwner', 'ReplicateTags',
+    ],
     'ssm': [
         'UpdateInstanceInformation',
     ],
