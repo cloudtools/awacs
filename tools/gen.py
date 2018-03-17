@@ -100,14 +100,17 @@ extra_actions = {
     'codecommit': [
         'CancelUploadArchive', 'GetUploadArchiveStatus', 'UploadArchive',
     ],
+    'dynamodb': [
+        'DescribeTimeToLive', 'UpdateTimeToLive',
+    ],
     'es': [
         'ESHttpDelete', 'ESHttpGet', 'ESHttpHead', 'ESHttpPost', 'ESHttpPut',
     ],
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
-    'dynamodb': [
-        'DescribeTimeToLive', 'UpdateTimeToLive',
+    'ssm': [
+        'UpdateInstanceInformation',
     ],
 }
 

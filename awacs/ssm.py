@@ -125,6 +125,7 @@ UpdateDocument = Action('UpdateDocument')
 UpdateDocumentDefaultVersion = Action('UpdateDocumentDefaultVersion')
 UpdateInstanceAssociationStatus = \
     Action('UpdateInstanceAssociationStatus')
+UpdateInstanceInformation = Action('UpdateInstanceInformation')
 UpdateMaintenanceWindow = Action('UpdateMaintenanceWindow')
 UpdateMaintenanceWindowTarget = Action('UpdateMaintenanceWindowTarget')
 UpdateMaintenanceWindowTask = Action('UpdateMaintenanceWindowTask')
