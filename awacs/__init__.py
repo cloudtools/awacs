@@ -10,7 +10,6 @@ import types
 
 __version__ = "0.7.2"
 
-
 valid_names = re.compile(r'^[a-zA-Z0-9]+$')
 
 
@@ -100,6 +99,22 @@ class AWSObject(object):
         self.validate()
         return self.resource
 
+    def to_json(self, indent=4, sort_keys=True):
+        p = self.properties
+        return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.to_json() == other.to_json()
+        else:
+            return False
+
+    def __ne__(self, other):
+        return not self == other
+
+    def __hash__(self):
+        return hash(self.to_json())
+
 
 class AWSProperty(AWSObject):
     """
@@ -119,6 +134,22 @@ class AWSHelperFn(object):
             return data.name
         else:
             return data
+
+    def to_json(self, indent=4, sort_keys=True):
+        p = self
+        return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.to_json() == other.to_json()
+        else:
+            return False
+
+    def __ne__(self, other):
+        return not self == other
+
+    def __hash__(self):
+        return hash(self.to_json())
 
 
 class awsencode(json.JSONEncoder):
