@@ -94,6 +94,9 @@ extra_actions = {
     'cloudformation': [
         'DeleteChangeSet',
     ],
+    'cloudwatch': [
+        'DeleteDashboards', 'GetDashboard', 'ListDashboards', 'PutDashboard',
+    ],
     'codecommit': [
         'CancelUploadArchive', 'GetUploadArchiveStatus', 'UploadArchive',
     ],

@@ -24,14 +24,18 @@ class ARN(BaseARN):
 
 
 DeleteAlarms = Action('DeleteAlarms')
+DeleteDashboards = Action('DeleteDashboards')
 DescribeAlarmHistory = Action('DescribeAlarmHistory')
 DescribeAlarms = Action('DescribeAlarms')
 DescribeAlarmsForMetric = Action('DescribeAlarmsForMetric')
 DisableAlarmActions = Action('DisableAlarmActions')
 EnableAlarmActions = Action('EnableAlarmActions')
+GetDashboard = Action('GetDashboard')
 GetMetricData = Action('GetMetricData')
 GetMetricStatistics = Action('GetMetricStatistics')
+ListDashboards = Action('ListDashboards')
 ListMetrics = Action('ListMetrics')
+PutDashboard = Action('PutDashboard')
 PutMetricAlarm = Action('PutMetricAlarm')
 PutMetricData = Action('PutMetricData')
 SetAlarmState = Action('SetAlarmState')
