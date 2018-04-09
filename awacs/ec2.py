@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon EC2 Spot Fleet'
+service_name = 'Amazon EC2'
 prefix = 'ec2'
 
 
@@ -23,15 +23,9 @@ class ARN(BaseARN):
                      account=account)
 
 
-CancelSpotFleetRequests = Action('CancelSpotFleetRequests')
-DescribeSpotFleetInstances = Action('DescribeSpotFleetInstances')
-DescribeSpotFleetRequestHistory = \
-    Action('DescribeSpotFleetRequestHistory')
-DescribeSpotFleetRequests = Action('DescribeSpotFleetRequests')
-ModifySpotFleetRequest = Action('ModifySpotFleetRequest')
-RequestSpotFleet = Action('RequestSpotFleet')
 AcceptReservedInstancesExchangeQuote = \
     Action('AcceptReservedInstancesExchangeQuote')
+AcceptVpcEndpointConnections = Action('AcceptVpcEndpointConnections')
 AcceptVpcPeeringConnection = Action('AcceptVpcPeeringConnection')
 AllocateAddress = Action('AllocateAddress')
 AllocateHosts = Action('AllocateHosts')
@@ -59,9 +53,12 @@ CancelReservedInstancesListing = Action('CancelReservedInstancesListing')
 CancelSpotFleetRequests = Action('CancelSpotFleetRequests')
 CancelSpotInstanceRequests = Action('CancelSpotInstanceRequests')
 ConfirmProductInstance = Action('ConfirmProductInstance')
+CopyFpgaImage = Action('CopyFpgaImage')
 CopyImage = Action('CopyImage')
 CopySnapshot = Action('CopySnapshot')
 CreateCustomerGateway = Action('CreateCustomerGateway')
+CreateDefaultSubnet = Action('CreateDefaultSubnet')
+CreateDefaultVpc = Action('CreateDefaultVpc')
 CreateDhcpOptions = Action('CreateDhcpOptions')
 CreateEgressOnlyInternetGateway = \
     Action('CreateEgressOnlyInternetGateway')
@@ -71,6 +68,8 @@ CreateImage = Action('CreateImage')
 CreateInstanceExportTask = Action('CreateInstanceExportTask')
 CreateInternetGateway = Action('CreateInternetGateway')
 CreateKeyPair = Action('CreateKeyPair')
+CreateLaunchTemplate = Action('CreateLaunchTemplate')
+CreateLaunchTemplateVersion = Action('CreateLaunchTemplateVersion')
 CreateNatGateway = Action('CreateNatGateway')
 CreateNetworkAcl = Action('CreateNetworkAcl')
 CreateNetworkAclEntry = Action('CreateNetworkAclEntry')
@@ -89,6 +88,10 @@ CreateTags = Action('CreateTags')
 CreateVolume = Action('CreateVolume')
 CreateVpc = Action('CreateVpc')
 CreateVpcEndpoint = Action('CreateVpcEndpoint')
+CreateVpcEndpointConnectionNotification = \
+    Action('CreateVpcEndpointConnectionNotification')
+CreateVpcEndpointServiceConfiguration = \
+    Action('CreateVpcEndpointServiceConfiguration')
 CreateVpcPeeringConnection = Action('CreateVpcPeeringConnection')
 CreateVpnConnection = Action('CreateVpnConnection')
 CreateVpnConnectionRoute = Action('CreateVpnConnectionRoute')
@@ -98,12 +101,17 @@ DeleteDhcpOptions = Action('DeleteDhcpOptions')
 DeleteEgressOnlyInternetGateway = \
     Action('DeleteEgressOnlyInternetGateway')
 DeleteFlowLogs = Action('DeleteFlowLogs')
+DeleteFpgaImage = Action('DeleteFpgaImage')
 DeleteInternetGateway = Action('DeleteInternetGateway')
 DeleteKeyPair = Action('DeleteKeyPair')
+DeleteLaunchTemplate = Action('DeleteLaunchTemplate')
+DeleteLaunchTemplateVersions = Action('DeleteLaunchTemplateVersions')
 DeleteNatGateway = Action('DeleteNatGateway')
 DeleteNetworkAcl = Action('DeleteNetworkAcl')
 DeleteNetworkAclEntry = Action('DeleteNetworkAclEntry')
 DeleteNetworkInterface = Action('DeleteNetworkInterface')
+DeleteNetworkInterfacePermission = \
+    Action('DeleteNetworkInterfacePermission')
 DeletePlacementGroup = Action('DeletePlacementGroup')
 DeleteRoute = Action('DeleteRoute')
 DeleteRouteTable = Action('DeleteRouteTable')
@@ -114,6 +122,10 @@ DeleteSubnet = Action('DeleteSubnet')
 DeleteTags = Action('DeleteTags')
 DeleteVolume = Action('DeleteVolume')
 DeleteVpc = Action('DeleteVpc')
+DeleteVpcEndpointConnectionNotifications = \
+    Action('DeleteVpcEndpointConnectionNotifications')
+DeleteVpcEndpointServiceConfigurations = \
+    Action('DeleteVpcEndpointServiceConfigurations')
 DeleteVpcEndpoints = Action('DeleteVpcEndpoints')
 DeleteVpcPeeringConnection = Action('DeleteVpcPeeringConnection')
 DeleteVpnConnection = Action('DeleteVpnConnection')
@@ -130,8 +142,10 @@ DescribeCustomerGateways = Action('DescribeCustomerGateways')
 DescribeDhcpOptions = Action('DescribeDhcpOptions')
 DescribeEgressOnlyInternetGateways = \
     Action('DescribeEgressOnlyInternetGateways')
+DescribeElasticGpus = Action('DescribeElasticGpus')
 DescribeExportTasks = Action('DescribeExportTasks')
 DescribeFlowLogs = Action('DescribeFlowLogs')
+DescribeFpgaImageAttribute = Action('DescribeFpgaImageAttribute')
 DescribeFpgaImages = Action('DescribeFpgaImages')
 DescribeHostReservationOfferings = \
     Action('DescribeHostReservationOfferings')
@@ -146,15 +160,21 @@ DescribeImages = Action('DescribeImages')
 DescribeImportImageTasks = Action('DescribeImportImageTasks')
 DescribeImportSnapshotTasks = Action('DescribeImportSnapshotTasks')
 DescribeInstanceAttribute = Action('DescribeInstanceAttribute')
+DescribeInstanceCreditSpecifications = \
+    Action('DescribeInstanceCreditSpecifications')
 DescribeInstanceStatus = Action('DescribeInstanceStatus')
 DescribeInstances = Action('DescribeInstances')
 DescribeInternetGateways = Action('DescribeInternetGateways')
 DescribeKeyPairs = Action('DescribeKeyPairs')
+DescribeLaunchTemplateVersions = Action('DescribeLaunchTemplateVersions')
+DescribeLaunchTemplates = Action('DescribeLaunchTemplates')
 DescribeMovingAddresses = Action('DescribeMovingAddresses')
 DescribeNatGateways = Action('DescribeNatGateways')
 DescribeNetworkAcls = Action('DescribeNetworkAcls')
 DescribeNetworkInterfaceAttribute = \
     Action('DescribeNetworkInterfaceAttribute')
+DescribeNetworkInterfacePermissions = \
+    Action('DescribeNetworkInterfacePermissions')
 DescribeNetworkInterfaces = Action('DescribeNetworkInterfaces')
 DescribePlacementGroups = Action('DescribePlacementGroups')
 DescribePrefixLists = Action('DescribePrefixLists')
@@ -167,6 +187,11 @@ DescribeReservedInstancesModifications = \
 DescribeReservedInstancesOfferings = \
     Action('DescribeReservedInstancesOfferings')
 DescribeRouteTables = Action('DescribeRouteTables')
+DescribeScheduledInstanceAvailability = \
+    Action('DescribeScheduledInstanceAvailability')
+DescribeScheduledInstances = Action('DescribeScheduledInstances')
+DescribeSecurityGroupReferences = \
+    Action('DescribeSecurityGroupReferences')
 DescribeSecurityGroups = Action('DescribeSecurityGroups')
 DescribeSnapshotAttribute = Action('DescribeSnapshotAttribute')
 DescribeSnapshots = Action('DescribeSnapshots')
@@ -189,6 +214,13 @@ DescribeVpcAttribute = Action('DescribeVpcAttribute')
 DescribeVpcClassicLink = Action('DescribeVpcClassicLink')
 DescribeVpcClassicLinkDnsSupport = \
     Action('DescribeVpcClassicLinkDnsSupport')
+DescribeVpcEndpointConnectionNotifications = \
+    Action('DescribeVpcEndpointConnectionNotifications')
+DescribeVpcEndpointConnections = Action('DescribeVpcEndpointConnections')
+DescribeVpcEndpointServiceConfigurations = \
+    Action('DescribeVpcEndpointServiceConfigurations')
+DescribeVpcEndpointServicePermissions = \
+    Action('DescribeVpcEndpointServicePermissions')
 DescribeVpcEndpointServices = Action('DescribeVpcEndpointServices')
 DescribeVpcEndpoints = Action('DescribeVpcEndpoints')
 DescribeVpcPeeringConnections = Action('DescribeVpcPeeringConnections')
@@ -217,6 +249,7 @@ GetConsoleOutput = Action('GetConsoleOutput')
 GetConsoleScreenshot = Action('GetConsoleScreenshot')
 GetHostReservationPurchasePreview = \
     Action('GetHostReservationPurchasePreview')
+GetLaunchTemplateData = Action('GetLaunchTemplateData')
 GetPasswordData = Action('GetPasswordData')
 GetReservedInstancesExchangeQuote = \
     Action('GetReservedInstancesExchangeQuote')
@@ -225,12 +258,16 @@ ImportInstance = Action('ImportInstance')
 ImportKeyPair = Action('ImportKeyPair')
 ImportSnapshot = Action('ImportSnapshot')
 ImportVolume = Action('ImportVolume')
+ModifyFpgaImageAttribute = Action('ModifyFpgaImageAttribute')
 ModifyHosts = Action('ModifyHosts')
 ModifyIdFormat = Action('ModifyIdFormat')
 ModifyIdentityIdFormat = Action('ModifyIdentityIdFormat')
 ModifyImageAttribute = Action('ModifyImageAttribute')
 ModifyInstanceAttribute = Action('ModifyInstanceAttribute')
+ModifyInstanceCreditSpecification = \
+    Action('ModifyInstanceCreditSpecification')
 ModifyInstancePlacement = Action('ModifyInstancePlacement')
+ModifyLaunchTemplate = Action('ModifyLaunchTemplate')
 ModifyNetworkInterfaceAttribute = \
     Action('ModifyNetworkInterfaceAttribute')
 ModifyReservedInstances = Action('ModifyReservedInstances')
@@ -241,8 +278,15 @@ ModifyVolume = Action('ModifyVolume')
 ModifyVolumeAttribute = Action('ModifyVolumeAttribute')
 ModifyVpcAttribute = Action('ModifyVpcAttribute')
 ModifyVpcEndpoint = Action('ModifyVpcEndpoint')
+ModifyVpcEndpointConnectionNotification = \
+    Action('ModifyVpcEndpointConnectionNotification')
+ModifyVpcEndpointServiceConfiguration = \
+    Action('ModifyVpcEndpointServiceConfiguration')
+ModifyVpcEndpointServicePermissions = \
+    Action('ModifyVpcEndpointServicePermissions')
 ModifyVpcPeeringConnectionOptions = \
     Action('ModifyVpcPeeringConnectionOptions')
+ModifyVpcTenancy = Action('ModifyVpcTenancy')
 MonitorInstances = Action('MonitorInstances')
 MoveAddressToVpc = Action('MoveAddressToVpc')
 PurchaseHostReservation = Action('PurchaseHostReservation')
@@ -251,6 +295,7 @@ PurchaseReservedInstancesOffering = \
 PurchaseScheduledInstances = Action('PurchaseScheduledInstances')
 RebootInstances = Action('RebootInstances')
 RegisterImage = Action('RegisterImage')
+RejectVpcEndpointConnections = Action('RejectVpcEndpointConnections')
 RejectVpcPeeringConnection = Action('RejectVpcPeeringConnection')
 ReleaseAddress = Action('ReleaseAddress')
 ReleaseHosts = Action('ReleaseHosts')
@@ -263,6 +308,7 @@ ReplaceRouteTableAssociation = Action('ReplaceRouteTableAssociation')
 ReportInstanceStatus = Action('ReportInstanceStatus')
 RequestSpotFleet = Action('RequestSpotFleet')
 RequestSpotInstances = Action('RequestSpotInstances')
+ResetFpgaImageAttribute = Action('ResetFpgaImageAttribute')
 ResetImageAttribute = Action('ResetImageAttribute')
 ResetInstanceAttribute = Action('ResetInstanceAttribute')
 ResetNetworkInterfaceAttribute = Action('ResetNetworkInterfaceAttribute')

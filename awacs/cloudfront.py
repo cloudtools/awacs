@@ -26,8 +26,11 @@ class ARN(BaseARN):
 CreateCloudFrontOriginAccessIdentity = \
     Action('CreateCloudFrontOriginAccessIdentity')
 CreateDistribution = Action('CreateDistribution')
+CreateDistributionWithTags = Action('CreateDistributionWithTags')
 CreateInvalidation = Action('CreateInvalidation')
 CreateStreamingDistribution = Action('CreateStreamingDistribution')
+CreateStreamingDistributionWithTags = \
+    Action('CreateStreamingDistributionWithTags')
 DeleteCloudFrontOriginAccessIdentity = \
     Action('DeleteCloudFrontOriginAccessIdentity')
 DeleteDistribution = Action('DeleteDistribution')
@@ -47,6 +50,9 @@ ListDistributions = Action('ListDistributions')
 ListDistributionsByWebACLId = Action('ListDistributionsByWebACLId')
 ListInvalidations = Action('ListInvalidations')
 ListStreamingDistributions = Action('ListStreamingDistributions')
+ListTagsForResource = Action('ListTagsForResource')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
 UpdateCloudFrontOriginAccessIdentity = \
     Action('UpdateCloudFrontOriginAccessIdentity')
 UpdateDistribution = Action('UpdateDistribution')

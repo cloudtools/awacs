@@ -34,7 +34,6 @@ DeleteApplicationReferenceDataSource = \
     Action('DeleteApplicationReferenceDataSource')
 DescribeApplication = Action('DescribeApplication')
 DiscoverInputSchema = Action('DiscoverInputSchema')
-GetApplicationState = Action('GetApplicationState')
 ListApplications = Action('ListApplications')
 StartApplication = Action('StartApplication')
 StopApplication = Action('StopApplication')

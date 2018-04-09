@@ -39,6 +39,10 @@ CreateGroupCertificateAuthority = \
 CreateGroupVersion = Action('CreateGroupVersion')
 CreateLoggerDefinition = Action('CreateLoggerDefinition')
 CreateLoggerDefinitionVersion = Action('CreateLoggerDefinitionVersion')
+CreateResourceDefinition = Action('CreateResourceDefinition')
+CreateResourceDefinitionVersion = \
+    Action('CreateResourceDefinitionVersion')
+CreateSoftwareUpdateJob = Action('CreateSoftwareUpdateJob')
 CreateSubscriptionDefinition = Action('CreateSubscriptionDefinition')
 CreateSubscriptionDefinitionVersion = \
     Action('CreateSubscriptionDefinitionVersion')
@@ -47,6 +51,7 @@ DeleteDeviceDefinition = Action('DeleteDeviceDefinition')
 DeleteFunctionDefinition = Action('DeleteFunctionDefinition')
 DeleteGroup = Action('DeleteGroup')
 DeleteLoggerDefinition = Action('DeleteLoggerDefinition')
+DeleteResourceDefinition = Action('DeleteResourceDefinition')
 DeleteSubscriptionDefinition = Action('DeleteSubscriptionDefinition')
 DisassociateRoleFromGroup = Action('DisassociateRoleFromGroup')
 DisassociateServiceRoleFromAccount = \
@@ -67,6 +72,8 @@ GetGroupCertificateConfiguration = \
 GetGroupVersion = Action('GetGroupVersion')
 GetLoggerDefinition = Action('GetLoggerDefinition')
 GetLoggerDefinitionVersion = Action('GetLoggerDefinitionVersion')
+GetResourceDefinition = Action('GetResourceDefinition')
+GetResourceDefinitionVersion = Action('GetResourceDefinitionVersion')
 GetServiceRoleForAccount = Action('GetServiceRoleForAccount')
 GetSubscriptionDefinition = Action('GetSubscriptionDefinition')
 GetSubscriptionDefinitionVersion = \
@@ -84,6 +91,8 @@ ListGroupVersions = Action('ListGroupVersions')
 ListGroups = Action('ListGroups')
 ListLoggerDefinitionVersions = Action('ListLoggerDefinitionVersions')
 ListLoggerDefinitions = Action('ListLoggerDefinitions')
+ListResourceDefinitionVersions = Action('ListResourceDefinitionVersions')
+ListResourceDefinitions = Action('ListResourceDefinitions')
 ListSubscriptionDefinitionVersions = \
     Action('ListSubscriptionDefinitionVersions')
 ListSubscriptionDefinitions = Action('ListSubscriptionDefinitions')
@@ -96,4 +105,5 @@ UpdateGroup = Action('UpdateGroup')
 UpdateGroupCertificateConfiguration = \
     Action('UpdateGroupCertificateConfiguration')
 UpdateLoggerDefinition = Action('UpdateLoggerDefinition')
+UpdateResourceDefinition = Action('UpdateResourceDefinition')
 UpdateSubscriptionDefinition = Action('UpdateSubscriptionDefinition')
