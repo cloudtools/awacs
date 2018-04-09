@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+AddRoleToDBCluster = Action('AddRoleToDBCluster')
 AddSourceIdentifierToSubscription = \
     Action('AddSourceIdentifierToSubscription')
 AddTagsToResource = Action('AddTagsToResource')
@@ -59,6 +60,8 @@ DescribeCertificates = Action('DescribeCertificates')
 DescribeDBClusterParameterGroups = \
     Action('DescribeDBClusterParameterGroups')
 DescribeDBClusterParameters = Action('DescribeDBClusterParameters')
+DescribeDBClusterSnapshotAttributes = \
+    Action('DescribeDBClusterSnapshotAttributes')
 DescribeDBClusterSnapshots = Action('DescribeDBClusterSnapshots')
 DescribeDBClusters = Action('DescribeDBClusters')
 DescribeDBEngineVersions = Action('DescribeDBEngineVersions')
@@ -92,6 +95,8 @@ FailoverDBCluster = Action('FailoverDBCluster')
 ListTagsForResource = Action('ListTagsForResource')
 ModifyDBCluster = Action('ModifyDBCluster')
 ModifyDBClusterParameterGroup = Action('ModifyDBClusterParameterGroup')
+ModifyDBClusterSnapshotAttribute = \
+    Action('ModifyDBClusterSnapshotAttribute')
 ModifyDBInstance = Action('ModifyDBInstance')
 ModifyDBParameterGroup = Action('ModifyDBParameterGroup')
 ModifyDBSnapshotAttribute = Action('ModifyDBSnapshotAttribute')
@@ -113,3 +118,5 @@ RestoreDBInstanceFromDBSnapshot = \
     Action('RestoreDBInstanceFromDBSnapshot')
 RestoreDBInstanceToPointInTime = Action('RestoreDBInstanceToPointInTime')
 RevokeDBSecurityGroupIngress = Action('RevokeDBSecurityGroupIngress')
+StartDBInstance = Action('StartDBInstance')
+StopDBInstance = Action('StopDBInstance')

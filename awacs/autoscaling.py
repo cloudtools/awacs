@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 AttachInstances = Action('AttachInstances')
+AttachLoadBalancerTargetGroups = Action('AttachLoadBalancerTargetGroups')
 AttachLoadBalancers = Action('AttachLoadBalancers')
 CompleteLifecycleAction = Action('CompleteLifecycleAction')
 CreateAutoScalingGroup = Action('CreateAutoScalingGroup')
@@ -46,6 +47,8 @@ DescribeAutoScalingNotificationTypes = \
 DescribeLaunchConfigurations = Action('DescribeLaunchConfigurations')
 DescribeLifecycleHookTypes = Action('DescribeLifecycleHookTypes')
 DescribeLifecycleHooks = Action('DescribeLifecycleHooks')
+DescribeLoadBalancerTargetGroups = \
+    Action('DescribeLoadBalancerTargetGroups')
 DescribeLoadBalancers = Action('DescribeLoadBalancers')
 DescribeMetricCollectionTypes = Action('DescribeMetricCollectionTypes')
 DescribeNotificationConfigurations = \
@@ -57,6 +60,7 @@ DescribeScheduledActions = Action('DescribeScheduledActions')
 DescribeTags = Action('DescribeTags')
 DescribeTerminationPolicyTypes = Action('DescribeTerminationPolicyTypes')
 DetachInstances = Action('DetachInstances')
+DetachLoadBalancerTargetGroups = Action('DetachLoadBalancerTargetGroups')
 DetachLoadBalancers = Action('DetachLoadBalancers')
 DisableMetricsCollection = Action('DisableMetricsCollection')
 EnableMetricsCollection = Action('EnableMetricsCollection')

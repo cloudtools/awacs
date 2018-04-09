@@ -24,7 +24,6 @@ class ARN(BaseARN):
 
 
 CheckDomainAvailability = Action('CheckDomainAvailability')
-DeleteDomain = Action('DeleteDomain')
 DeleteTagsForDomain = Action('DeleteTagsForDomain')
 DisableDomainAutoRenew = Action('DisableDomainAutoRenew')
 DisableDomainTransferLock = Action('DisableDomainTransferLock')

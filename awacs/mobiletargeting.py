@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Mobile Targeting'
+service_name = 'Amazon Pinpoint'
 prefix = 'mobiletargeting'
 
 
@@ -26,15 +26,11 @@ class ARN(BaseARN):
 CreateCampaign = Action('CreateCampaign')
 CreateImportJob = Action('CreateImportJob')
 CreateSegment = Action('CreateSegment')
-DeleteAdmChannel = Action('DeleteAdmChannel')
 DeleteApnsChannel = Action('DeleteApnsChannel')
-DeleteApnsSandboxChannel = Action('DeleteApnsSandboxChannel')
 DeleteCampaign = Action('DeleteCampaign')
 DeleteGcmChannel = Action('DeleteGcmChannel')
 DeleteSegment = Action('DeleteSegment')
-GetAdmChannel = Action('GetAdmChannel')
 GetApnsChannel = Action('GetApnsChannel')
-GetApnsSandboxChannel = Action('GetApnsSandboxChannel')
 GetApplicationSettings = Action('GetApplicationSettings')
 GetCampaign = Action('GetCampaign')
 GetCampaignActivities = Action('GetCampaignActivities')
@@ -51,9 +47,7 @@ GetSegmentImportJobs = Action('GetSegmentImportJobs')
 GetSegmentVersion = Action('GetSegmentVersion')
 GetSegmentVersions = Action('GetSegmentVersions')
 GetSegments = Action('GetSegments')
-UpdateAdmChannel = Action('UpdateAdmChannel')
 UpdateApnsChannel = Action('UpdateApnsChannel')
-UpdateApnsSandboxChannel = Action('UpdateApnsSandboxChannel')
 UpdateApplicationSettings = Action('UpdateApplicationSettings')
 UpdateCampaign = Action('UpdateCampaign')
 UpdateEndpoint = Action('UpdateEndpoint')

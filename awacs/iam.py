@@ -7,7 +7,7 @@ import warnings
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Identity and Access Management'
+service_name = 'Identity And Access Management'
 prefix = 'iam'
 
 

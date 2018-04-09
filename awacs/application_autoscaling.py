@@ -24,9 +24,12 @@ class ARN(BaseARN):
 
 
 DeleteScalingPolicy = Action('DeleteScalingPolicy')
+DeleteScheduledAction = Action('DeleteScheduledAction')
 DeregisterScalableTarget = Action('DeregisterScalableTarget')
 DescribeScalableTargets = Action('DescribeScalableTargets')
 DescribeScalingActivities = Action('DescribeScalingActivities')
 DescribeScalingPolicies = Action('DescribeScalingPolicies')
+DescribeScheduledActions = Action('DescribeScheduledActions')
 PutScalingPolicy = Action('PutScalingPolicy')
+PutScheduledAction = Action('PutScheduledAction')
 RegisterScalableTarget = Action('RegisterScalableTarget')
