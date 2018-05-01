@@ -95,7 +95,7 @@ class AWSObject(object):
         for k, v in self.props.items():
             if v[1] and k not in self.properties:
                 raise ValueError("Resource %s required in type %s" %
-                                 (k, self.type))
+                                 (k, type(self)))
         self.validate()
         return self.resource
 
