@@ -3,14 +3,19 @@ import unittest
 from awacs.helpers.trust import (
     get_default_assumerole_policy,
     get_application_autoscaling_assumerole_policy,
+    get_lambda_edge_assumerole_policy,
     make_service_domain_name,
 )
 
 
-def get_policy_service(policy):
+def get_policy_services(policy):
     statement = policy.properties['Statement'][0]
     principal = statement.properties['Principal']
-    return principal.data['Service'][0]
+    return principal.data['Service']
+
+
+def get_policy_service(policy):
+    return get_policy_services(policy)[0]
 
 
 class TestTrustHelpers(unittest.TestCase):
@@ -44,6 +49,14 @@ class TestTrustHelpers(unittest.TestCase):
         self.assertEqual(
             'application-autoscaling.amazonaws.com',
             get_policy_service(assumerole_policy)
+        )
+
+    def test_get_lambda_edge_assumerole_policy(self):
+        assumerole_policy = get_lambda_edge_assumerole_policy()
+        services = get_policy_services(assumerole_policy)
+        self.assertEqual(
+            services,
+            ('lambda.amazonaws.com', 'edgelambda.amazonaws.com'),
         )
 
 
