@@ -14,7 +14,8 @@ def make_simple_assume_policy(*principals):
     return Policy(
         Statement=[
             make_simple_assume_statement(*principals)
-        ]
+        ],
+        Version="2012-10-17"
     )
 
 
