@@ -41,8 +41,8 @@ class AWSObject(object):
     def __getattr__(self, name):
         try:
             return self.properties.__getitem__(name)
-        except KeyError:
-            raise AttributeError(name)
+        except KeyError as exc:
+            raise AttributeError(name) from exc
 
     def __setattr__(self, name, value):
         if '_AWSObject__initialized' not in self.__dict__:
