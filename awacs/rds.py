@@ -60,6 +60,8 @@ DescribeDBClusterParameterGroups = \
     Action('DescribeDBClusterParameterGroups')
 DescribeDBClusterParameters = Action('DescribeDBClusterParameters')
 DescribeDBClusterSnapshots = Action('DescribeDBClusterSnapshots')
+DescribeDBClusterSnapshotsAttributes = \
+    Action('DescribeDBClusterSnapshotAttributes')
 DescribeDBClusters = Action('DescribeDBClusters')
 DescribeDBEngineVersions = Action('DescribeDBEngineVersions')
 DescribeDBInstances = Action('DescribeDBInstances')
