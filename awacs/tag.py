@@ -23,10 +23,8 @@ class ARN(BaseARN):
                      account=account)
 
 
-AddResourceTags = Action('AddResourceTags')
 GetResources = Action('GetResources')
 GetTagKeys = Action('GetTagKeys')
 GetTagValues = Action('GetTagValues')
-RemoveResourceTags = Action('RemoveResourceTags')
 TagResources = Action('TagResources')
 UntagResources = Action('UntagResources')

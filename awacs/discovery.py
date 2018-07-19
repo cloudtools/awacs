@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Application Discovery Service'
+service_name = 'Application Discovery'
 prefix = 'discovery'
 
 
@@ -23,13 +23,23 @@ class ARN(BaseARN):
                      account=account)
 
 
+AssociateConfigurationItemsToApplication = \
+    Action('AssociateConfigurationItemsToApplication')
+CreateApplication = Action('CreateApplication')
 CreateTags = Action('CreateTags')
+DeleteApplications = Action('DeleteApplications')
 DeleteTags = Action('DeleteTags')
 DescribeAgents = Action('DescribeAgents')
 DescribeConfigurations = Action('DescribeConfigurations')
 DescribeExportConfigurations = Action('DescribeExportConfigurations')
 DescribeTags = Action('DescribeTags')
+DisassociateConfigurationItemsFromApplication = \
+    Action('DisassociateConfigurationItemsFromApplication')
 ExportConfigurations = Action('ExportConfigurations')
+GetDiscoverySummary = Action('GetDiscoverySummary')
 ListConfigurations = Action('ListConfigurations')
+ListServerNeighbors = Action('ListServerNeighbors')
 StartDataCollectionByAgentIds = Action('StartDataCollectionByAgentIds')
+StartExportTask = Action('StartExportTask')
 StopDataCollectionByAgentIds = Action('StopDataCollectionByAgentIds')
+UpdateApplication = Action('UpdateApplication')
