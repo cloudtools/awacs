@@ -14,7 +14,8 @@ def make_simple_assume_policy(*principals):
     return Policy(
         Statement=[
             make_simple_assume_statement(*principals)
-        ]
+        ],
+        Version="2012-10-17"
     )
 
 
@@ -57,6 +58,14 @@ def get_lambda_assumerole_policy(region=''):
     """ Helper function for building the AWS Lambda AssumeRole Policy. """
     service = make_service_domain_name('lambda', region)
     return make_simple_assume_policy(service)
+
+
+def get_lambda_edge_assumerole_policy(region=''):
+    """ Helper function for building the AWS Lambda@Edge AssumeRole Policy. """
+    return make_simple_assume_policy(*[
+        make_service_domain_name(service, region)
+        for service in ('lambda', 'edgelambda')
+    ])
 
 
 def get_application_autoscaling_assumerole_policy(region=''):
