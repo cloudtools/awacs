@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Manage - Amazon API Gateway'
+service_name = 'Manage Amazon API Gateway'
 prefix = 'apigateway'
 
 

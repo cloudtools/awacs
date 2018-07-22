@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS OpsWorks for Chef Automate'
+service_name = 'AWS OpsWorks Configuration Management'
 prefix = 'opsworks-cm'
 
 

@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Import Export Snowball'
+service_name = 'AWS Snowball'
 prefix = 'snowball'
 
 

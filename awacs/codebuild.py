@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS CodeBuild '
+service_name = 'AWS CodeBuild'
 prefix = 'codebuild'
 
 
@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+BatchDeleteBuilds = Action('BatchDeleteBuilds')
 BatchGetBuilds = Action('BatchGetBuilds')
 BatchGetProjects = Action('BatchGetProjects')
 CreateProject = Action('CreateProject')
@@ -30,6 +31,7 @@ DeleteProject = Action('DeleteProject')
 ListBuilds = Action('ListBuilds')
 ListBuildsForProject = Action('ListBuildsForProject')
 ListConnectedOAuthAccounts = Action('ListConnectedOAuthAccounts')
+ListCuratedEnvironmentImages = Action('ListCuratedEnvironmentImages')
 ListProjects = Action('ListProjects')
 ListRepositories = Action('ListRepositories')
 PersistOAuthToken = Action('PersistOAuthToken')
