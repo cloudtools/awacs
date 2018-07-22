@@ -117,6 +117,72 @@ extra_actions = {
     ],
 }
 
+
+# Some actions appear to be deleted but still in the docs. This grouping
+# will keep them available as it gets sorted out.
+
+deleted_actions = {
+    'cloudsearch': [
+        'DefineIndexFields',
+    ],
+    'cognito-idp': [
+        'ListUserPools', 'ListUsers',
+    ],
+    'dax': [
+        'DefineAttributeList', 'DefineAttributeListId', 'DefineKeySchema',
+    ],
+    'ec2': [
+        'ModifySpotFleetRequest',
+    ],
+    'elasticbeanstalk': [
+        'AddTags', 'ListTagsForResource', 'RemoveTags',
+    ],
+    'kinesis': [
+        'StartStreamEncryption', 'StopStreamEncryption',
+    ],
+    'kinesisanalytics': [
+        'GetApplicationState',
+    ],
+    'kms': [
+        'ReEncrypt',
+    ],
+    'mechanicalturk': [
+        'AcceptQualificationRequest', 'AssociateQualificationWithWorker',
+        'CreateHITType', 'CreateHITWithHITType', 'CreateWorkerBlock',
+        'DeleteHIT', 'DeleteQualificationType', 'DeleteWorkerBlock',
+        'DisassociateQualificationFromWorker', 'ListAssignmentsForHIT',
+        'ListBonusPayments', 'ListHITs', 'ListHITsForQualificationType',
+        'ListQualificationRequests', 'ListQualificationTypes',
+        'ListReviewPolicyResultsForHIT', 'ListReviewableHITs',
+        'ListWorkerBlocks', 'ListWorkersWithQualificationType',
+        'SendBonus', 'UpdateExpirationForHIT', 'UpdateHITReviewStatus',
+        'UpdateHITTypeOfHIT', 'UpdateNotificationSettings',
+
+    ],
+    'mobilehub': [
+        'ValidateProject',
+    ],
+    'mobilehub': [
+        'ValidateProject',
+    ],
+    'mobiletargeting': [
+        'DeleteAdmChannel', 'DeleteAdmChannel', 'DeleteApnsSandboxChannel',
+        'GetAdmChannel', 'GetApnsSandboxChannel', 'UpdateAdmChannel',
+        'UpdateApnsSandboxChannel',
+    ],
+    'route53': [
+        'CreateVPCAssociationAuthorization',
+        'DeleteVPCAssociationAuthorization',
+        'ListVPCAssociationAuthorizations',
+    ],
+    'route53domain': [
+        'DeleteDomain',
+    ],
+    'tag': [
+        'AddResourceTags', 'RemoveResourceTags',
+    ],
+}
+
 filename_seen = {}
 for serviceName, serviceValue in d['serviceMap'].items():
     prefix = serviceValue['StringPrefix']
@@ -150,6 +216,10 @@ for serviceName, serviceValue in d['serviceMap'].items():
         # Add actions AWS hasn't added yet
         if service in extra_actions:
             serviceValue['Actions'].extend(extra_actions[service])
+
+        # Add actions AWS may have inadvertantly deleted
+        if service in deleted_actions:
+            serviceValue['Actions'].extend(deleted_actions[service])
 
         # Make the set sorted and unique
         serviceValue['Actions'] = sorted(set(serviceValue['Actions']))

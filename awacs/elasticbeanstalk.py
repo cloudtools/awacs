@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 AbortEnvironmentUpdate = Action('AbortEnvironmentUpdate')
+AddTags = Action('AddTags')
 ApplyEnvironmentManagedAction = Action('ApplyEnvironmentManagedAction')
 CheckDNSAvailability = Action('CheckDNSAvailability')
 ComposeEnvironments = Action('ComposeEnvironments')
@@ -54,7 +55,9 @@ DescribeInstancesHealth = Action('DescribeInstancesHealth')
 DescribePlatformVersion = Action('DescribePlatformVersion')
 ListAvailableSolutionStacks = Action('ListAvailableSolutionStacks')
 ListPlatformVersions = Action('ListPlatformVersions')
+ListTagsForResource = Action('ListTagsForResource')
 RebuildEnvironment = Action('RebuildEnvironment')
+RemoveTags = Action('RemoveTags')
 RequestEnvironmentInfo = Action('RequestEnvironmentInfo')
 RestartAppServer = Action('RestartAppServer')
 RetrieveEnvironmentInfo = Action('RetrieveEnvironmentInfo')
