@@ -162,9 +162,6 @@ deleted_actions = {
     'mobilehub': [
         'ValidateProject',
     ],
-    'mobilehub': [
-        'ValidateProject',
-    ],
     'mobiletargeting': [
         'DeleteAdmChannel', 'DeleteAdmChannel', 'DeleteApnsSandboxChannel',
         'GetAdmChannel', 'GetApnsSandboxChannel', 'UpdateAdmChannel',
