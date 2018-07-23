@@ -1,3 +1,17 @@
+## 0.8.0 (2018-07-22)
+- Define hash and equality (#87)
+- Add ObjectOwnerOverrideToBucketOwner and ReplicateTags to S3 (Replaces #88)
+- Add UpdateInstanceInformation to SSM (Replaces #89)
+- Add CloudWatch dashboard actions (Fixes #91)
+- Updating actions (#102)
+- Emit proper ARN's for regionless services (#103)
+- Add overrides to include dynamodb DescribeTimeToLive and UpdateTimeToLive
+- refactor awacs/helpers/trust.py
+- Output type error correctly
+- Added support for Lambda@Edge execution role
+- Added version
+- Remove deprecated 3.3
+
 ## 0.7.2 (2017-10-27)
 - Update actions as of 10-26-17 (#86)
 - Update extra_actions list to relect policies.js updates
