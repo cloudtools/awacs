@@ -20,6 +20,8 @@ class Action(BaseAction):
 class ARN(BaseARN):
     def __init__(self, resource='', region='', account=''):
         sup = super(ARN, self)
+        # account is empty for S3
+        account = ''
         sup.__init__(service=prefix, resource=resource, region=region,
                      account=account)
 
