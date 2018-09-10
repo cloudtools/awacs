@@ -35,6 +35,22 @@ class ARN(BaseARN):
                      account=account)
 """
 
+extra_classes_s3 = """\
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        # account is empty for S3
+        account = ''
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+"""
+
 arn = """\
 class %(upper)s_ARN(ARN):
     def __init__(self, *args, **kwargs):
@@ -137,6 +153,11 @@ deleted_actions = {
     'elasticbeanstalk': [
         'AddTags', 'ListTagsForResource', 'RemoveTags',
     ],
+    'glue': [
+        'GetDataCatalogEncryptionSettings', 'PutDataCatalogEncryptionSettings',
+        'CreateSecurityConfiguration', 'GetSecurityConfiguration',
+        'GetSecurityConfigurations', 'DeleteSecurityConfiguration',
+    ],
     'kinesis': [
         'StartStreamEncryption', 'StopStreamEncryption',
     ],
@@ -201,7 +222,10 @@ for serviceName, serviceValue in d['serviceMap'].items():
             fp.write("service_name = '%s'\n" % (serviceName,))
             fp.write("prefix = '%s'\n" % (prefix,))
             fp.write("\n\n")
-            fp.write(extra_classes)
+            if service == "s3":
+                fp.write(extra_classes_s3)
+            else:
+                fp.write(extra_classes)
             fp.write("\n\n")
             if prefix in legacy_arns:
                 fp.write(arn % {
