@@ -1,3 +1,6 @@
+## 0.8.1 (2018-09-10)
+- Add new glue actions
+
 ## 0.8.0 (2018-07-22)
 - Define hash and equality (#87)
 - Add ObjectOwnerOverrideToBucketOwner and ReplicateTags to S3 (Replaces #88)
