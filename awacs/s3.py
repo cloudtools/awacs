@@ -75,7 +75,6 @@ ListBucketByTags = Action('ListBucketByTags')
 ListBucketMultipartUploads = Action('ListBucketMultipartUploads')
 ListBucketVersions = Action('ListBucketVersions')
 ListMultipartUploadParts = Action('ListMultipartUploadParts')
-ListObjects = Action('ListObjects')
 ObjectOwnerOverrideToBucketOwner = \
     Action('ObjectOwnerOverrideToBucketOwner')
 PutAccelerateConfiguration = Action('PutAccelerateConfiguration')
