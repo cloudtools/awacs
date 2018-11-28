@@ -219,8 +219,21 @@ missing_services = {
             'TagResource', 'UntagResource', 'UpdateSecret',
             'UpdateSecretVersionStage'
         ],
-        'HasResource': '1',
-        'StringPrefix': 'secretsmanager'
+        'HasResource': '!0',
+        'StringPrefix': 'secretsmanager',
+        'conditionKeys': [
+            'secretsmanager:Resource/AllowRotationLambdaArn',
+            'secretsmanager:Description',
+            'secretsmanager:ForceDeleteWithoutRecovery',
+            'secretsmanager:KmsKeyId',
+            'secretsmanager:Name',
+            'secretsmanager:RecoveryWindowInDays',
+            'secretsmanager:ResourceTag/<tagname>',
+            'secretsmanager:RotationLambdaArn',
+            'secretsmanager:SecretId',
+            'secretsmanager:VersionId',
+            'secretsmanager:VersionStage'
+        ]
     }
 }
 
