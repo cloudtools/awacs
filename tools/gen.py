@@ -4,7 +4,10 @@
 #
 import json
 import os
-import urllib2
+try:
+    from urllib2 import urlopen
+except ImportError:
+    from urllib.request import urlopen
 from slimit.parser import Parser
 from slimit.visitors import nodevisitor
 from slimit.visitors.ecmavisitor import ECMAVisitor
@@ -66,7 +69,7 @@ aws_url = \
 
 basedir = 'generated'
 
-response = urllib2.urlopen(aws_url)
+response = urlopen(aws_url)
 config = response.read()
 
 
@@ -87,7 +90,7 @@ class JSONVisitor(ECMAVisitor):
 
 visitor = JSONVisitor()
 parser = Parser()
-tree = parser.parse(config)
+tree = parser.parse(config.decode('utf-8'))
 
 flag = False
 policy_editor_config = ""
@@ -200,6 +203,31 @@ deleted_actions = {
         'AddResourceTags', 'RemoveResourceTags',
     ],
 }
+
+missing_services = {
+    'AWS Secrets Manager': {
+        'ARNFormat': 'arn:aws:secretsmanager:'
+                     '<region>:<account>'
+                     ':secret:<resourceType>/<resourcePath>',
+        'ARNRegex': '^arn:aws:secretsmanager:.+',
+        'Actions': [
+            'CancelRotateSecret', 'CreateSecret', 'DeleteResourcePolicy',
+            'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
+            'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
+            'ListSecretVersionIds', 'PutResourcePolicy',
+            'PutSecretValue', 'RestoreSecret', 'RotateSecre',
+            'TagResource', 'UntagResource', 'UpdateSecret',
+            'UpdateSecretVersionStage'
+        ],
+        'HasResource': '1',
+        'StringPrefix': 'secretsmanager'
+    }
+}
+
+for service_name in missing_services:
+    if not d['serviceMap'].get(service_name):
+        d['serviceMap'][service_name] = missing_services[service_name]
+
 
 filename_seen = {}
 for serviceName, serviceValue in d['serviceMap'].items():

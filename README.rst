@@ -116,7 +116,7 @@ an AWS resource and auto-generate new files.
 The following commands can be run to update the repo:
 
 .. code-block:: sh
-
+  % pip install -r tools/requirements.txt
   % rm -rf generated/
   % python tools/gen.py
   % diff -u awacs generated
