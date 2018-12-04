@@ -36,3 +36,6 @@ nosetests.xml
 
 # Ignore vim swap files
 .*.sw*
+
+# Ignore virtualenv
+env/
