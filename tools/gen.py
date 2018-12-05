@@ -110,9 +110,11 @@ except OSError:
     pass
 
 
-# Extra services are for those not advertised in policies.js, but are available to be called via AWS apis.
-# If/When these services are added to policies.js, these entries will be ignored.
-# IE, policies.js take priority over the entries here.
+# Extra services are for those not advertised in policies.js,
+# but are available to be called via AWS apis. If/When these
+# services are added to policies.js, the entry in extra_services
+# will be ignored. IE, policies.js takes priority over
+# extra_services entries.
 
 extra_services = {
     'SMM Messages': {
