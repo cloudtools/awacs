@@ -109,6 +109,18 @@ try:
 except OSError:
     pass
 
+extra_services = [
+    ('SMM Messages', {
+        'StringPrefix': 'ssmmessages',
+        'Actions': [
+            'CreateControlChannel',
+            'CreateDataChannel',
+            'OpenControlChannel',
+            'OpenDataChannel',
+        ],
+    },),
+]
+
 extra_actions = {
     'cloudformation': [
         'DeleteChangeSet',
@@ -243,7 +255,7 @@ for service_name in missing_services:
 
 
 filename_seen = {}
-for serviceName, serviceValue in d['serviceMap'].items():
+for serviceName, serviceValue in d['serviceMap'].items() + extra_services:
     prefix = serviceValue['StringPrefix']
     service = prefix
     # Handle prefix such as "directconnect:"

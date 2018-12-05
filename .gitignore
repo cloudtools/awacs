@@ -39,3 +39,6 @@ nosetests.xml
 
 # Ignore intellij
 .idea/
+
+# Ignore virtualenv
+env/
