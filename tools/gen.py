@@ -109,8 +109,13 @@ try:
 except OSError:
     pass
 
-extra_services = [
-    ('SMM Messages', {
+
+# Extra services are for those not advertised in policies.js, but are available to be called via AWS apis.
+# If/When these services are added to policies.js, these entries will be ignored.
+# IE, policies.js take priority over the entries here.
+
+extra_services = {
+    'SMM Messages': {
         'StringPrefix': 'ssmmessages',
         'Actions': [
             'CreateControlChannel',
@@ -118,8 +123,39 @@ extra_services = [
             'OpenControlChannel',
             'OpenDataChannel',
         ],
-    },),
-]
+    },
+    'AWS Secrets Manager': {
+        'ARNFormat': 'arn:aws:secretsmanager:'
+                     '<region>:<account>'
+                     ':secret:<resourceType>/<resourcePath>',
+        'ARNRegex': '^arn:aws:secretsmanager:.+',
+        'Actions': [
+            'CancelRotateSecret', 'CreateSecret', 'DeleteResourcePolicy',
+            'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
+            'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
+            'ListSecretVersionIds', 'PutResourcePolicy',
+            'PutSecretValue', 'RestoreSecret', 'RotateSecre',
+            'TagResource', 'UntagResource', 'UpdateSecret',
+            'UpdateSecretVersionStage'
+        ],
+        'HasResource': '!0',
+        'StringPrefix': 'secretsmanager',
+        'conditionKeys': [
+            'secretsmanager:Resource/AllowRotationLambdaArn',
+            'secretsmanager:Description',
+            'secretsmanager:ForceDeleteWithoutRecovery',
+            'secretsmanager:KmsKeyId',
+            'secretsmanager:Name',
+            'secretsmanager:RecoveryWindowInDays',
+            'secretsmanager:ResourceTag/<tagname>',
+            'secretsmanager:RotationLambdaArn',
+            'secretsmanager:SecretId',
+            'secretsmanager:VersionId',
+            'secretsmanager:VersionStage'
+        ],
+    },
+}
+
 
 extra_actions = {
     'cloudformation': [
@@ -216,46 +252,14 @@ deleted_actions = {
     ],
 }
 
-missing_services = {
-    'AWS Secrets Manager': {
-        'ARNFormat': 'arn:aws:secretsmanager:'
-                     '<region>:<account>'
-                     ':secret:<resourceType>/<resourcePath>',
-        'ARNRegex': '^arn:aws:secretsmanager:.+',
-        'Actions': [
-            'CancelRotateSecret', 'CreateSecret', 'DeleteResourcePolicy',
-            'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
-            'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
-            'ListSecretVersionIds', 'PutResourcePolicy',
-            'PutSecretValue', 'RestoreSecret', 'RotateSecre',
-            'TagResource', 'UntagResource', 'UpdateSecret',
-            'UpdateSecretVersionStage'
-        ],
-        'HasResource': '!0',
-        'StringPrefix': 'secretsmanager',
-        'conditionKeys': [
-            'secretsmanager:Resource/AllowRotationLambdaArn',
-            'secretsmanager:Description',
-            'secretsmanager:ForceDeleteWithoutRecovery',
-            'secretsmanager:KmsKeyId',
-            'secretsmanager:Name',
-            'secretsmanager:RecoveryWindowInDays',
-            'secretsmanager:ResourceTag/<tagname>',
-            'secretsmanager:RotationLambdaArn',
-            'secretsmanager:SecretId',
-            'secretsmanager:VersionId',
-            'secretsmanager:VersionStage'
-        ]
-    }
-}
-
-for service_name in missing_services:
+# patch in the extra_services if they are not present in policies.js
+for service_name in extra_services:
     if not d['serviceMap'].get(service_name):
-        d['serviceMap'][service_name] = missing_services[service_name]
+        d['serviceMap'][service_name] = extra_services[service_name]
 
 
 filename_seen = {}
-for serviceName, serviceValue in d['serviceMap'].items() + extra_services:
+for serviceName, serviceValue in d['serviceMap'].items():
     prefix = serviceValue['StringPrefix']
     service = prefix
     # Handle prefix such as "directconnect:"
