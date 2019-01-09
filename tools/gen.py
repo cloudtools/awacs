@@ -136,7 +136,7 @@ extra_services = {
             'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
             'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
             'ListSecretVersionIds', 'PutResourcePolicy',
-            'PutSecretValue', 'RestoreSecret', 'RotateSecre',
+            'PutSecretValue', 'RestoreSecret', 'RotateSecret',
             'TagResource', 'UntagResource', 'UpdateSecret',
             'UpdateSecretVersionStage'
         ],
