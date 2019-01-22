@@ -156,6 +156,18 @@ extra_services = {
             'secretsmanager:VersionStage'
         ],
     },
+    'QuickSight': {
+        'StringPrefix': 'quicksight',
+        'Actions': [
+            'ListGroupMemberships', 'ListGroups', 'ListUserGroups',
+            'ListUsers', 'DescribeGroup', 'DescribeUser', 'CreateAdmin',
+            'CreateGroup', 'CreateGroupMembership', 'CreateReader',
+            'CreateUser', 'DeleteGroup', 'DeleteGroupMembership',
+            'DeleteUser', 'GetGroupMapping', 'RegisterUser',
+            'SearchDirectoryGroups', 'SetGroupMapping', 'Subscribe',
+            'Unsubscribe', 'UpdateGroup'
+        ]
+    }
 }
 
 
