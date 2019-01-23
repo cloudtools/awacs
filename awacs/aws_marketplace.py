@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Marketplace'
+service_name = 'AWS Marketplace Metering Service'
 prefix = 'aws-marketplace'
 
 
@@ -23,9 +23,9 @@ class ARN(BaseARN):
                      account=account)
 
 
-Subscribe = Action('Subscribe')
-Unsubscribe = Action('Unsubscribe')
-ViewSubscriptions = Action('ViewSubscriptions')
 BatchMeterUsage = Action('BatchMeterUsage')
 MeterUsage = Action('MeterUsage')
 ResolveCustomer = Action('ResolveCustomer')
+Subscribe = Action('Subscribe')
+Unsubscribe = Action('Unsubscribe')
+ViewSubscriptions = Action('ViewSubscriptions')
