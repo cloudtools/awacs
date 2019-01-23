@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='awacs',
-    version='0.8.1',
+    version='0.8.2',
     description="AWS Access Policy Language creation library",
     author="Mark Peek",
     author_email="mark@peek.org",

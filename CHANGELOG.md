@@ -1,3 +1,11 @@
+## 0.8.2 (2019-01-22)
+- Update actions to kinesis (#106)
+- Adding missing ssmmessages (#107)
+- Add secrets manager  (#108)
+- Add actions for QuickSight (#109)
+- Fix a typo in tools/gen.py (#110)
+- Misc changes from running gen.py
+
 ## 0.8.1 (2018-09-10)
 - Add new glue actions
 
