@@ -190,6 +190,11 @@ extra_actions = {
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
+    'kinesis': [
+        'DeregisterStreamConsumer', 'DescribeStreamConsumer',
+        'DescribeStreamSummary', 'ListShards', 'ListStreamConsumers',
+        'RegisterStreamConsumer', 'SubscribeToShard',
+    ],
     's3': [
         'ObjectOwnerOverrideToBucketOwner', 'ReplicateTags',
     ],
