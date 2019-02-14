@@ -203,7 +203,8 @@ _condition_strings = [
     "NumericGreaterThanEquals",
     "StringEquals",
     "StringNotEquals",
-    "StringEqualsIgnoresCase",
+    "StringEqualsIgnoreCase",
+    "StringNotEqualsIgnoreCase",
     "StringLike",
     "StringNotLike",
 ]
