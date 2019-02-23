@@ -187,6 +187,11 @@ extra_actions = {
     'es': [
         'ESHttpDelete', 'ESHttpGet', 'ESHttpHead', 'ESHttpPost', 'ESHttpPut',
     ],
+    'firehose': [
+        'ListTagsForDeliveryStream', 'StartDeliveryStreamEncryption',
+        'StopDeliveryStreamEncryption', 'TagDeliveryStream',
+        'UntagDeliveryStream',
+    ],
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
