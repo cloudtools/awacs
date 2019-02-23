@@ -1,3 +1,8 @@
+## 0.8.3 (2019-02-23)
+- Fix condition string spelling (#112)
+- Add missing actions for Firehose (#113)
+- Unify shell prompt and add missing newline in README (#114)
+
 ## 0.8.2 (2019-01-22)
 - Update actions to kinesis (#106)
 - Adding missing ssmmessages (#107)
