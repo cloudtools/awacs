@@ -31,14 +31,18 @@ Installation
 ============
 
 awacs can be installed using the pip distribution system for python by
-issuing::
+issuing:
+
+.. code-block:: sh
 
   $ pip install awacs
 
 Alternatively, you can run use setup.py to install by cloning this repository
-and issuing::
+and issuing:
 
-    # python setup.py install
+.. code-block:: sh
+
+  $ python setup.py install
 
 Examples
 ========
@@ -116,12 +120,13 @@ an AWS resource and auto-generate new files.
 The following commands can be run to update the repo:
 
 .. code-block:: sh
-  % pip install -r tools/requirements.txt
-  % rm -rf generated/
-  % python tools/gen.py
-  % diff -u awacs generated
-  % mv generated/*.py awacs
-  % git diff
+
+  $ pip install -r tools/requirements.txt
+  $ rm -rf generated/
+  $ python tools/gen.py
+  $ diff -u awacs generated
+  $ mv generated/*.py awacs
+  $ git diff
 
 Since not all of the actions appear in the AWS policy file it is sometimes
 required to add these extra actions to the tools/gen.py file.
