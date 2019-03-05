@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 DeleteRule = Action('DeleteRule')
+DescribeEventBus = Action('DescribeEventBus')
 DescribeRule = Action('DescribeRule')
 DisableRule = Action('DisableRule')
 EnableRule = Action('EnableRule')
@@ -31,7 +32,9 @@ ListRuleNamesByTarget = Action('ListRuleNamesByTarget')
 ListRules = Action('ListRules')
 ListTargetsByRule = Action('ListTargetsByRule')
 PutEvents = Action('PutEvents')
+PutPermission = Action('PutPermission')
 PutRule = Action('PutRule')
 PutTargets = Action('PutTargets')
+RemovePermission = Action('RemovePermission')
 RemoveTargets = Action('RemoveTargets')
 TestEventPattern = Action('TestEventPattern')

@@ -23,12 +23,21 @@ class ARN(BaseARN):
                      account=account)
 
 
+AssociateDRTLogBucket = Action('AssociateDRTLogBucket')
+AssociateDRTRole = Action('AssociateDRTRole')
 CreateProtection = Action('CreateProtection')
 CreateSubscription = Action('CreateSubscription')
 DeleteProtection = Action('DeleteProtection')
 DeleteSubscription = Action('DeleteSubscription')
 DescribeAttack = Action('DescribeAttack')
+DescribeDRTAccess = Action('DescribeDRTAccess')
+DescribeEmergencyContactSettings = \
+    Action('DescribeEmergencyContactSettings')
 DescribeProtection = Action('DescribeProtection')
 DescribeSubscription = Action('DescribeSubscription')
+DisassociateDRTLogBucket = Action('DisassociateDRTLogBucket')
+DisassociateDRTRole = Action('DisassociateDRTRole')
+GetSubscriptionState = Action('GetSubscriptionState')
 ListAttacks = Action('ListAttacks')
 ListProtections = Action('ListProtections')
+UpdateEmergencyContactSettings = Action('UpdateEmergencyContactSettings')

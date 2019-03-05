@@ -26,4 +26,5 @@ class ARN(BaseARN):
 uploadFiles = Action('uploadFiles')
 viewMarketing = Action('viewMarketing')
 viewReports = Action('viewReports')
+viewSettings = Action('viewSettings')
 viewSupport = Action('viewSupport')

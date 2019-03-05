@@ -26,6 +26,9 @@ class ARN(BaseARN):
 AttachInstances = Action('AttachInstances')
 AttachLoadBalancerTargetGroups = Action('AttachLoadBalancerTargetGroups')
 AttachLoadBalancers = Action('AttachLoadBalancers')
+BatchDeleteScheduledAction = Action('BatchDeleteScheduledAction')
+BatchPutScheduledUpdateGroupAction = \
+    Action('BatchPutScheduledUpdateGroupAction')
 CompleteLifecycleAction = Action('CompleteLifecycleAction')
 CreateAutoScalingGroup = Action('CreateAutoScalingGroup')
 CreateLaunchConfiguration = Action('CreateLaunchConfiguration')

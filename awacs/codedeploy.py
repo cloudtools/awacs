@@ -53,6 +53,8 @@ ListDeploymentGroups = Action('ListDeploymentGroups')
 ListDeploymentInstances = Action('ListDeploymentInstances')
 ListDeployments = Action('ListDeployments')
 ListOnPremisesInstances = Action('ListOnPremisesInstances')
+PutLifecycleEventHookExecutionStatus = \
+    Action('PutLifecycleEventHookExecutionStatus')
 RegisterApplicationRevision = Action('RegisterApplicationRevision')
 RegisterOnPremisesInstance = Action('RegisterOnPremisesInstance')
 RemoveTagsFromOnPremisesInstances = \
