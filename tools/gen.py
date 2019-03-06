@@ -546,6 +546,18 @@ extra_services = {
             'GetResourceMetrics',
         ],
     },
+    'QuickSight': {
+        'StringPrefix': 'quicksight',
+        'Actions': [
+            'ListGroupMemberships', 'ListGroups', 'ListUserGroups',
+            'ListUsers', 'DescribeGroup', 'DescribeUser', 'CreateAdmin',
+            'CreateGroup', 'CreateGroupMembership', 'CreateReader',
+            'CreateUser', 'DeleteGroup', 'DeleteGroupMembership',
+            'DeleteUser', 'GetGroupMapping', 'RegisterUser',
+            'SearchDirectoryGroups', 'SetGroupMapping', 'Subscribe',
+            'Unsubscribe', 'UpdateGroup'
+        ]
+    },
     'AWS Resource Access Manager': {
         'StringPrefix': 'ram',
         'Actions': [
@@ -629,6 +641,36 @@ extra_services = {
             'UpdateResolverRule',
         ],
     },
+    'AWS Secrets Manager': {
+        'ARNFormat': 'arn:aws:secretsmanager:'
+                     '<region>:<account>'
+                     ':secret:<resourceType>/<resourcePath>',
+        'ARNRegex': '^arn:aws:secretsmanager:.+',
+        'Actions': [
+            'CancelRotateSecret', 'CreateSecret', 'DeleteResourcePolicy',
+            'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
+            'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
+            'ListSecretVersionIds', 'PutResourcePolicy',
+            'PutSecretValue', 'RestoreSecret', 'RotateSecret',
+            'TagResource', 'UntagResource', 'UpdateSecret',
+            'UpdateSecretVersionStage'
+        ],
+        'HasResource': '!0',
+        'StringPrefix': 'secretsmanager',
+        'conditionKeys': [
+            'secretsmanager:Resource/AllowRotationLambdaArn',
+            'secretsmanager:Description',
+            'secretsmanager:ForceDeleteWithoutRecovery',
+            'secretsmanager:KmsKeyId',
+            'secretsmanager:Name',
+            'secretsmanager:RecoveryWindowInDays',
+            'secretsmanager:ResourceTag/<tagname>',
+            'secretsmanager:RotationLambdaArn',
+            'secretsmanager:SecretId',
+            'secretsmanager:VersionId',
+            'secretsmanager:VersionStage'
+        ],
+    },
     'AWS Security Hub': {
         'StringPrefix': 'securityhub',
         'Actions': [
@@ -707,6 +749,15 @@ extra_services = {
             'ListConfigurationSets',
             'SendVoiceMessage',
             'UpdateConfigurationSetEventDestination',
+        ],
+    },
+    'SMM Messages': {
+        'StringPrefix': 'ssmmessages',
+        'Actions': [
+            'CreateControlChannel',
+            'CreateDataChannel',
+            'OpenControlChannel',
+            'OpenDataChannel',
         ],
     },
     'AWS SSO Directory': {
@@ -804,57 +855,6 @@ extra_services = {
             'UpdateIdentityProviderConfiguration',
         ],
     },
-    'SMM Messages': {
-        'StringPrefix': 'ssmmessages',
-        'Actions': [
-            'CreateControlChannel',
-            'CreateDataChannel',
-            'OpenControlChannel',
-            'OpenDataChannel',
-        ],
-    },
-    'AWS Secrets Manager': {
-        'ARNFormat': 'arn:aws:secretsmanager:'
-                     '<region>:<account>'
-                     ':secret:<resourceType>/<resourcePath>',
-        'ARNRegex': '^arn:aws:secretsmanager:.+',
-        'Actions': [
-            'CancelRotateSecret', 'CreateSecret', 'DeleteResourcePolicy',
-            'DeleteSecret', 'DescribeSecret', 'GetRandomPassword',
-            'GetResourcePolicy', 'GetSecretValue', 'ListSecrets',
-            'ListSecretVersionIds', 'PutResourcePolicy',
-            'PutSecretValue', 'RestoreSecret', 'RotateSecret',
-            'TagResource', 'UntagResource', 'UpdateSecret',
-            'UpdateSecretVersionStage'
-        ],
-        'HasResource': '!0',
-        'StringPrefix': 'secretsmanager',
-        'conditionKeys': [
-            'secretsmanager:Resource/AllowRotationLambdaArn',
-            'secretsmanager:Description',
-            'secretsmanager:ForceDeleteWithoutRecovery',
-            'secretsmanager:KmsKeyId',
-            'secretsmanager:Name',
-            'secretsmanager:RecoveryWindowInDays',
-            'secretsmanager:ResourceTag/<tagname>',
-            'secretsmanager:RotationLambdaArn',
-            'secretsmanager:SecretId',
-            'secretsmanager:VersionId',
-            'secretsmanager:VersionStage'
-        ],
-    },
-    'QuickSight': {
-        'StringPrefix': 'quicksight',
-        'Actions': [
-            'ListGroupMemberships', 'ListGroups', 'ListUserGroups',
-            'ListUsers', 'DescribeGroup', 'DescribeUser', 'CreateAdmin',
-            'CreateGroup', 'CreateGroupMembership', 'CreateReader',
-            'CreateUser', 'DeleteGroup', 'DeleteGroupMembership',
-            'DeleteUser', 'GetGroupMapping', 'RegisterUser',
-            'SearchDirectoryGroups', 'SetGroupMapping', 'Subscribe',
-            'Unsubscribe', 'UpdateGroup'
-        ]
-    }
 }
 
 
