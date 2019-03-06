@@ -299,6 +299,15 @@ extra_actions = {
         'ListDashboards',
         'PutDashboard',
     ],
+    'codebuild': [
+        'CreateWebhook',
+        'DeleteSourceCredentials',
+        'DeleteWebhook',
+        'ImportSourceCredentials',
+        'InvalidateProjectCache',
+        'ListSourceCredentials',
+        'UpdateWebhook',
+    ],
     'codecommit': [
         'CancelUploadArchive',
         'DeleteFile',
