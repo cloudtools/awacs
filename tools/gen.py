@@ -172,6 +172,9 @@ extra_services = {
 
 
 extra_actions = {
+    'apigateway': [
+        'UpdateRestApiPolicy',
+    ],
     'cloudformation': [
         'DeleteChangeSet',
     ],
