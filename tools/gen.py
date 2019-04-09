@@ -553,9 +553,9 @@ extra_services = {
             'ListUsers', 'DescribeGroup', 'DescribeUser', 'CreateAdmin',
             'CreateGroup', 'CreateGroupMembership', 'CreateReader',
             'CreateUser', 'DeleteGroup', 'DeleteGroupMembership',
-            'DeleteUser', 'GetGroupMapping', 'RegisterUser',
-            'SearchDirectoryGroups', 'SetGroupMapping', 'Subscribe',
-            'Unsubscribe', 'UpdateGroup'
+            'DeleteUser', 'GetDashboardEmbedUrl', 'GetGroupMapping',
+            'RegisterUser', 'SearchDirectoryGroups', 'SetGroupMapping',
+            'Subscribe', 'Unsubscribe', 'UpdateGroup',
         ]
     },
     'AWS Resource Access Manager': {
