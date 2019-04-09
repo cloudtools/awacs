@@ -117,6 +117,14 @@ except OSError:
 # extra_services entries.
 
 extra_services = {
+    'AWS Accounts': {
+        'StringPrefix': 'account',
+        'Actions': [
+            'DisableRegion',
+            'EnableRegion',
+            'ListRegions',
+        ],
+    },
     'AWS Certificate Manager Private Certificate Authority': {
         'StringPrefix': 'acm-pca',
         'Actions': [
@@ -162,6 +170,39 @@ extra_services = {
             'UpdateApp',
             'UpdateBranch',
             'UpdateDomainAssociation',
+        ],
+    },
+    'AWS App Mesh': {
+        'StringPrefix': 'appmesh',
+        'Actions': [
+            'CreateMesh',
+            'CreateRoute',
+            'CreateVirtualNode',
+            'CreateVirtualRouter',
+            'CreateVirtualService',
+            'DeleteMesh',
+            'DeleteRoute',
+            'DeleteVirtualNode',
+            'DeleteVirtualRouter',
+            'DeleteVirtualService',
+            'DescribeMesh',
+            'DescribeRoute',
+            'DescribeVirtualNode',
+            'DescribeVirtualRouter',
+            'DescribeVirtualService',
+            'ListMeshes',
+            'ListRoutes',
+            'ListTagsForResource',
+            'ListVirtualNodes',
+            'ListVirtualRouters',
+            'ListVirtualServices',
+            'TagResource',
+            'UntagResource',
+            'UpdateMesh',
+            'UpdateRoute',
+            'UpdateVirtualNode',
+            'UpdateVirtualRouter',
+            'UpdateVirtualService',
         ],
     },
     'AWS Backup': {
@@ -531,6 +572,18 @@ extra_services = {
             'UpdateFlowEntitlement',
             'UpdateFlowOutput',
             'UpdateFlowSource',
+        ],
+    },
+    'AWS Elemental MediaTailor': {
+        'StringPrefix': 'mediatailor',
+        'Actions': [
+            'DeletePlaybackConfiguration',
+            'GetPlaybackConfiguration',
+            'ListPlaybackConfigurations',
+            'ListTagsForResource',
+            'PutPlaybackConfiguration',
+            'TagResource',
+            'UntagResource',
         ],
     },
     'Amazon Neptune': {
