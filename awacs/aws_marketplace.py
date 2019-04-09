@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+RegisterUsage = Action('RegisterUsage')
 Subscribe = Action('Subscribe')
 Unsubscribe = Action('Unsubscribe')
 ViewSubscriptions = Action('ViewSubscriptions')

@@ -318,6 +318,7 @@ ModifyInstanceCapacityReservationAttributes = \
     Action('ModifyInstanceCapacityReservationAttributes')
 ModifyInstanceCreditSpecification = \
     Action('ModifyInstanceCreditSpecification')
+ModifyInstanceEventStartTime = Action('ModifyInstanceEventStartTime')
 ModifyInstancePlacement = Action('ModifyInstancePlacement')
 ModifyLaunchTemplate = Action('ModifyLaunchTemplate')
 ModifyNetworkInterfaceAttribute = \

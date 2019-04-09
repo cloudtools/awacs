@@ -23,6 +23,13 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateVocabulary = Action('CreateVocabulary')
+DeleteTranscriptionJob = Action('DeleteTranscriptionJob')
+DeleteVocabulary = Action('DeleteVocabulary')
 GetTranscriptionJob = Action('GetTranscriptionJob')
+GetVocabulary = Action('GetVocabulary')
 ListTranscriptionJobs = Action('ListTranscriptionJobs')
+ListVocabularies = Action('ListVocabularies')
+StartStreamTranscription = Action('StartStreamTranscription')
 StartTranscriptionJob = Action('StartTranscriptionJob')
+UpdateVocabulary = Action('UpdateVocabulary')
