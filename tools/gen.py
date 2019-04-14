@@ -167,6 +167,14 @@ extra_services = {
             'SearchDirectoryGroups', 'SetGroupMapping', 'Subscribe',
             'Unsubscribe', 'UpdateGroup'
         ]
+    },
+    'Amazon Elastic Container Service for Kubernetes': {
+        'StringPrefix': 'eks',
+        'Actions': [
+            'CreateCluster', 'DeleteCluster', 'DescribeCluster',
+            'DescribeUpdate', 'ListClusters', 'ListUpdates',
+            'UpdateClusterVersion'
+        ]
     }
 }
 
