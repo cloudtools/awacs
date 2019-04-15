@@ -192,6 +192,14 @@ extra_actions = {
         'StopDeliveryStreamEncryption', 'TagDeliveryStream',
         'UntagDeliveryStream',
     ],
+    'glue': [
+        'BatchDeleteTableVersion', 'BatchGetCrawlers', 'BatchGetDevEndpoints',
+        'BatchGetJobs', 'BatchGetTriggers', 'BatchStopJobRun',
+        'DeleteResourcePolicy', 'DeleteTableVersion', 'GetResourcePolicy',
+        'GetTableVersion', 'GetTags', 'ListCrawlers', 'ListDevEndpoints',
+        'ListJobs', 'ListTriggers', 'PutResourcePolicy', 'TagResource',
+        'UntagResource', 'UpdateCrawlerSchedule',
+    ],
     'iam': [
         'FinalizeSmsMfaRegistration', 'RequestSmsMfaRegistration',
     ],
