@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 BatchGetItem = Action('BatchGetItem')
 BatchWriteItem = Action('BatchWriteItem')
+ConditionCheckItem = Action('ConditionCheckItem')
 CreateCluster = Action('CreateCluster')
 CreateParameterGroup = Action('CreateParameterGroup')
 CreateSubnetGroup = Action('CreateSubnetGroup')

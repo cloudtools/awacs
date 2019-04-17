@@ -27,3 +27,6 @@ CreateScalingPlan = Action('CreateScalingPlan')
 DeleteScalingPlan = Action('DeleteScalingPlan')
 DescribeScalingPlanResources = Action('DescribeScalingPlanResources')
 DescribeScalingPlans = Action('DescribeScalingPlans')
+GetScalingPlanResourceForecastData = \
+    Action('GetScalingPlanResourceForecastData')
+UpdateScalingPlan = Action('UpdateScalingPlan')
