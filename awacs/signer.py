@@ -23,6 +23,12 @@ class ARN(BaseARN):
                      account=account)
 
 
+CancelSigningProfile = Action('CancelSigningProfile')
 DescribeSigningJob = Action('DescribeSigningJob')
+GetSigningPlatform = Action('GetSigningPlatform')
+GetSigningProfile = Action('GetSigningProfile')
 ListSigningJobs = Action('ListSigningJobs')
+ListSigningPlatforms = Action('ListSigningPlatforms')
+ListSigningProfiles = Action('ListSigningProfiles')
+PutSigningProfile = Action('PutSigningProfile')
 StartSigningJob = Action('StartSigningJob')

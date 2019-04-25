@@ -23,4 +23,8 @@ class ARN(BaseARN):
                      account=account)
 
 
+DeleteTerminology = Action('DeleteTerminology')
+GetTerminology = Action('GetTerminology')
+ImportTerminology = Action('ImportTerminology')
+ListTerminologies = Action('ListTerminologies')
 TranslateText = Action('TranslateText')
