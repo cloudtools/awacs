@@ -23,12 +23,14 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateHttpNamespace = Action('CreateHttpNamespace')
 CreatePrivateDnsNamespace = Action('CreatePrivateDnsNamespace')
 CreatePublicDnsNamespace = Action('CreatePublicDnsNamespace')
 CreateService = Action('CreateService')
 DeleteNamespace = Action('DeleteNamespace')
 DeleteService = Action('DeleteService')
 DeregisterInstance = Action('DeregisterInstance')
+DiscoverInstances = Action('DiscoverInstances')
 GetInstance = Action('GetInstance')
 GetInstancesHealthStatus = Action('GetInstancesHealthStatus')
 GetNamespace = Action('GetNamespace')

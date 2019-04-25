@@ -30,9 +30,12 @@ DeleteFileSystem = Action('DeleteFileSystem')
 DeleteMountTarget = Action('DeleteMountTarget')
 DeleteTags = Action('DeleteTags')
 DescribeFileSystems = Action('DescribeFileSystems')
+DescribeLifecycleConfiguration = Action('DescribeLifecycleConfiguration')
 DescribeMountTargetSecurityGroups = \
     Action('DescribeMountTargetSecurityGroups')
 DescribeMountTargets = Action('DescribeMountTargets')
 DescribeTags = Action('DescribeTags')
 ModifyMountTargetSecurityGroups = \
     Action('ModifyMountTargetSecurityGroups')
+PutLifecycleConfiguration = Action('PutLifecycleConfiguration')
+UpdateFileSystem = Action('UpdateFileSystem')

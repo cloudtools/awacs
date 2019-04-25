@@ -1,3 +1,7 @@
+## 0.9.0 (2019-04-16)
+* Add missing actions (#115)
+* Add missing services (#116)
+
 ## 0.8.3 (2019-02-23)
 - Fix condition string spelling (#112)
 - Add missing actions for Firehose (#113)

@@ -24,6 +24,10 @@ class ARN(BaseARN):
 
 
 GetCostAndUsage = Action('GetCostAndUsage')
+GetCostForecast = Action('GetCostForecast')
 GetDimensionValues = Action('GetDimensionValues')
+GetReservationCoverage = Action('GetReservationCoverage')
+GetReservationPurchaseRecommendation = \
+    Action('GetReservationPurchaseRecommendation')
 GetReservationUtilization = Action('GetReservationUtilization')
 GetTags = Action('GetTags')

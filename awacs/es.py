@@ -26,17 +26,33 @@ class ARN(BaseARN):
 AddTags = Action('AddTags')
 CreateElasticsearchDomain = Action('CreateElasticsearchDomain')
 DeleteElasticsearchDomain = Action('DeleteElasticsearchDomain')
+DeleteElasticsearchServiceRole = Action('DeleteElasticsearchServiceRole')
 DescribeElasticsearchDomain = Action('DescribeElasticsearchDomain')
 DescribeElasticsearchDomainConfig = \
     Action('DescribeElasticsearchDomainConfig')
 DescribeElasticsearchDomains = Action('DescribeElasticsearchDomains')
+DescribeElasticsearchInstanceTypeLimits = \
+    Action('DescribeElasticsearchInstanceTypeLimits')
+DescribeReservedElasticsearchInstanceOfferings = \
+    Action('DescribeReservedElasticsearchInstanceOfferings')
+DescribeReservedElasticsearchInstances = \
+    Action('DescribeReservedElasticsearchInstances')
 ESHttpDelete = Action('ESHttpDelete')
 ESHttpGet = Action('ESHttpGet')
 ESHttpHead = Action('ESHttpHead')
 ESHttpPost = Action('ESHttpPost')
 ESHttpPut = Action('ESHttpPut')
+GetCompatibleElasticsearchVersions = \
+    Action('GetCompatibleElasticsearchVersions')
+GetUpgradeHistory = Action('GetUpgradeHistory')
+GetUpgradeStatus = Action('GetUpgradeStatus')
 ListDomainNames = Action('ListDomainNames')
+ListElasticsearchInstanceTypes = Action('ListElasticsearchInstanceTypes')
+ListElasticsearchVersions = Action('ListElasticsearchVersions')
 ListTags = Action('ListTags')
+PurchaseReservedElasticsearchInstance = \
+    Action('PurchaseReservedElasticsearchInstance')
 RemoveTags = Action('RemoveTags')
 UpdateElasticsearchDomainConfig = \
     Action('UpdateElasticsearchDomainConfig')
+UpgradeElasticsearchDomain = Action('UpgradeElasticsearchDomain')

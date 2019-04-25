@@ -89,10 +89,13 @@ DescribePendingMaintenanceActions = \
 DescribeReservedDBInstances = Action('DescribeReservedDBInstances')
 DescribeReservedDBInstancesOfferings = \
     Action('DescribeReservedDBInstancesOfferings')
+DescribeValidDBInstanceModifications = \
+    Action('DescribeValidDBInstanceModifications')
 DownloadCompleteDBLogFile = Action('DownloadCompleteDBLogFile')
 DownloadDBLogFilePortion = Action('DownloadDBLogFilePortion')
 FailoverDBCluster = Action('FailoverDBCluster')
 ListTagsForResource = Action('ListTagsForResource')
+ModifyCurrentDBClusterCapacity = Action('ModifyCurrentDBClusterCapacity')
 ModifyDBCluster = Action('ModifyDBCluster')
 ModifyDBClusterParameterGroup = Action('ModifyDBClusterParameterGroup')
 ModifyDBClusterSnapshotAttribute = \
@@ -118,5 +121,7 @@ RestoreDBInstanceFromDBSnapshot = \
     Action('RestoreDBInstanceFromDBSnapshot')
 RestoreDBInstanceToPointInTime = Action('RestoreDBInstanceToPointInTime')
 RevokeDBSecurityGroupIngress = Action('RevokeDBSecurityGroupIngress')
+StartDBCluster = Action('StartDBCluster')
 StartDBInstance = Action('StartDBInstance')
+StopDBCluster = Action('StopDBCluster')
 StopDBInstance = Action('StopDBInstance')
