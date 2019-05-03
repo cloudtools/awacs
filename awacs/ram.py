@@ -30,6 +30,7 @@ DeleteResourceShare = Action('DeleteResourceShare')
 DisassociateResourceShare = Action('DisassociateResourceShare')
 EnableSharingWithAwsOrganization = \
     Action('EnableSharingWithAwsOrganization')
+GetResourcePolicies = Action('GetResourcePolicies')
 GetResourceShareAssociations = Action('GetResourceShareAssociations')
 GetResourceShareInvitations = Action('GetResourceShareInvitations')
 GetResourceShares = Action('GetResourceShares')

@@ -41,5 +41,7 @@ ListNamespaces = Action('ListNamespaces')
 ListOperations = Action('ListOperations')
 ListServices = Action('ListServices')
 RegisterInstance = Action('RegisterInstance')
+UpdateInstanceCustomHealthStatus = \
+    Action('UpdateInstanceCustomHealthStatus')
 UpdateInstanceHeartbeatStatus = Action('UpdateInstanceHeartbeatStatus')
 UpdateService = Action('UpdateService')
