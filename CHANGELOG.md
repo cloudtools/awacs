@@ -1,6 +1,11 @@
+## 0.9.1 (2019-05-05)
+- Add missing glue actions using the official latest docs (#120)
+- Support Python 3.6 and 3.7; discourage usage of 3.4 (#122)
+- Add new actions (#123)
+
 ## 0.9.0 (2019-04-16)
-* Add missing actions (#115)
-* Add missing services (#116)
+- Add missing actions (#115)
+- Add missing services (#116)
 
 ## 0.8.3 (2019-02-23)
 - Fix condition string spelling (#112)
