@@ -1488,9 +1488,12 @@ extra_actions = {
         'UntagDeliveryStream',
     ],
     'glue': [
-        'DeleteResourcePolicy',
-        'GetResourcePolicy',
-        'PutResourcePolicy',
+        'BatchDeleteTableVersion', 'BatchGetCrawlers', 'BatchGetDevEndpoints',
+        'BatchGetJobs', 'BatchGetTriggers', 'BatchStopJobRun',
+        'DeleteResourcePolicy', 'DeleteTableVersion', 'GetResourcePolicy',
+        'GetTableVersion', 'GetTags', 'ListCrawlers', 'ListDevEndpoints',
+        'ListJobs', 'ListTriggers', 'PutResourcePolicy', 'TagResource',
+        'UntagResource', 'UpdateCrawlerSchedule',
     ],
     'greengrass': [
         'CreateConnectorDefinition',
