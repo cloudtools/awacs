@@ -157,6 +157,8 @@ RequestSmsMfaRegistration = Action('RequestSmsMfaRegistration')
 ResetServiceSpecificCredential = Action('ResetServiceSpecificCredential')
 ResyncMFADevice = Action('ResyncMFADevice')
 SetDefaultPolicyVersion = Action('SetDefaultPolicyVersion')
+SetSecurityTokenServicePreferences = \
+    Action('SetSecurityTokenServicePreferences')
 SimulateCustomPolicy = Action('SimulateCustomPolicy')
 SimulatePrincipalPolicy = Action('SimulatePrincipalPolicy')
 TagRole = Action('TagRole')

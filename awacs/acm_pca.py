@@ -26,7 +26,9 @@ class ARN(BaseARN):
 CreateCertificateAuthority = Action('CreateCertificateAuthority')
 CreateCertificateAuthorityAuditReport = \
     Action('CreateCertificateAuthorityAuditReport')
+CreatePermission = Action('CreatePermission')
 DeleteCertificateAuthority = Action('DeleteCertificateAuthority')
+DeletePermission = Action('DeletePermission')
 DescribeCertificateAuthority = Action('DescribeCertificateAuthority')
 DescribeCertificateAuthorityAuditReport = \
     Action('DescribeCertificateAuthorityAuditReport')
@@ -38,6 +40,7 @@ ImportCertificateAuthorityCertificate = \
     Action('ImportCertificateAuthorityCertificate')
 IssueCertificate = Action('IssueCertificate')
 ListCertificateAuthorities = Action('ListCertificateAuthorities')
+ListPermissions = Action('ListPermissions')
 ListTags = Action('ListTags')
 RestoreCertificateAuthority = Action('RestoreCertificateAuthority')
 RevokeCertificate = Action('RevokeCertificate')
