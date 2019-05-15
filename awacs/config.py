@@ -34,6 +34,7 @@ DeleteDeliveryChannel = Action('DeleteDeliveryChannel')
 DeleteEvaluationResults = Action('DeleteEvaluationResults')
 DeletePendingAggregationRequest = \
     Action('DeletePendingAggregationRequest')
+DeleteRemediationConfiguration = Action('DeleteRemediationConfiguration')
 DeleteRetentionConfiguration = Action('DeleteRetentionConfiguration')
 DeliverConfigSnapshot = Action('DeliverConfigSnapshot')
 DescribeAggregateComplianceByConfigRules = \
@@ -56,6 +57,10 @@ DescribeDeliveryChannelStatus = Action('DescribeDeliveryChannelStatus')
 DescribeDeliveryChannels = Action('DescribeDeliveryChannels')
 DescribePendingAggregationRequests = \
     Action('DescribePendingAggregationRequests')
+DescribeRemediationConfigurations = \
+    Action('DescribeRemediationConfigurations')
+DescribeRemediationExecutionStatus = \
+    Action('DescribeRemediationExecutionStatus')
 DescribeRetentionConfigurations = \
     Action('DescribeRetentionConfigurations')
 GetAggregateComplianceDetailsByConfigRule = \
@@ -79,13 +84,19 @@ GetTagKeys = Action('GetTagKeys')
 ListAggregateDiscoveredResources = \
     Action('ListAggregateDiscoveredResources')
 ListDiscoveredResources = Action('ListDiscoveredResources')
+ListTagsForResource = Action('ListTagsForResource')
 PutAggregationAuthorization = Action('PutAggregationAuthorization')
 PutConfigRule = Action('PutConfigRule')
 PutConfigurationAggregator = Action('PutConfigurationAggregator')
 PutConfigurationRecorder = Action('PutConfigurationRecorder')
 PutDeliveryChannel = Action('PutDeliveryChannel')
 PutEvaluations = Action('PutEvaluations')
+PutRemediationConfigurations = Action('PutRemediationConfigurations')
 PutRetentionConfiguration = Action('PutRetentionConfiguration')
+SelectResourceConfig = Action('SelectResourceConfig')
 StartConfigRulesEvaluation = Action('StartConfigRulesEvaluation')
 StartConfigurationRecorder = Action('StartConfigurationRecorder')
+StartRemediationExecution = Action('StartRemediationExecution')
 StopConfigurationRecorder = Action('StopConfigurationRecorder')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
