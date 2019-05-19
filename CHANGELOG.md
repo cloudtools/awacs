@@ -1,3 +1,8 @@
+## 0.9.2 (2019-05-19)
+- Add missing glue actions using the official latest docs (#120)
+- Support Python 3.6 and 3.7; discourage usage of 3.4 (#122)
+- Add new actions (#123)
+
 ## 0.9.1 (2019-05-05)
 - Add missing glue actions using the official latest docs (#120)
 - Support Python 3.6 and 3.7; discourage usage of 3.4 (#122)
