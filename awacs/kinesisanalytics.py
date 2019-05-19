@@ -39,3 +39,16 @@ ListApplications = Action('ListApplications')
 StartApplication = Action('StartApplication')
 StopApplication = Action('StopApplication')
 UpdateApplication = Action('UpdateApplication')
+AddApplicationCloudWatchLoggingOption = \
+    Action('AddApplicationCloudWatchLoggingOption')
+AddApplicationInputProcessingConfiguration = \
+    Action('AddApplicationInputProcessingConfiguration')
+CreateApplicationSnapshot = Action('CreateApplicationSnapshot')
+DeleteApplicationCloudWatchLoggingOption = \
+    Action('DeleteApplicationCloudWatchLoggingOption')
+DeleteApplicationInputProcessingConfiguration = \
+    Action('DeleteApplicationInputProcessingConfiguration')
+DeleteApplicationSnapshot = Action('DeleteApplicationSnapshot')
+DescribeApplicationSnapshot = Action('DescribeApplicationSnapshot')
+GetApplicationState = Action('GetApplicationState')
+ListApplicationSnapshots = Action('ListApplicationSnapshots')
