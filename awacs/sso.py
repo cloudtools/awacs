@@ -94,6 +94,7 @@ UpdateApplicationInstanceStatus = \
     Action('UpdateApplicationInstanceStatus')
 UpdateDirectoryAssociation = Action('UpdateDirectoryAssociation')
 UpdateGroup = Action('UpdateGroup')
+UpdatePermissionSet = Action('UpdatePermissionSet')
 UpdateProfile = Action('UpdateProfile')
 UpdateSSOConfiguration = Action('UpdateSSOConfiguration')
 UpdateTrust = Action('UpdateTrust')
