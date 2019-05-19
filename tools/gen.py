@@ -535,8 +535,8 @@ extra_services = {
         'StringPrefix': 'kinesisanalytics',
         'Actions': [
             # V1 and V2 share the same prefix.  To avoid duplicates in
-            # kinesisanalytics.py, actions that are available in both versions are
-            # commented out in this list.
+            # kinesisanalytics.py, actions that are available in both
+            # versions are commented out in this list.
             'AddApplicationCloudWatchLoggingOption',
             # 'AddApplicationInput',
             'AddApplicationInputProcessingConfiguration',
