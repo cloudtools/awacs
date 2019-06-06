@@ -910,7 +910,11 @@ extra_services = {
     },
 }
 
-
+# Extra actions are for services that are advertised in the policies.js,
+# but have one or more individual actions that are missing. Actions specified here will be patched
+# with the advertised ones, creating a union of both.
+# Actions should be added alphabetically under their appropriate awacs prefix.
+# Note: If the prefix contains a '-' (dash) character, replace it with an '_' (underscore).
 extra_actions = {
     'a4b': [
         'ApproveSkill',
@@ -1178,8 +1182,6 @@ extra_actions = {
         'ListIdentityProviders',
         'ListResourceServers',
         'ListTagsForResource',
-        'ListUserPools',
-        'ListUsers',
         'SetUICustomization',
         'TagResource',
         'UntagResource',
@@ -1481,6 +1483,9 @@ extra_actions = {
         'RemovePermission',
         'TagResource',
         'UntagResource',
+    ],
+    'execute_api': [
+        'ManageConnections',
     ],
     'firehose': [
         'ListTagsForDeliveryStream', 'StartDeliveryStreamEncryption',
@@ -2013,12 +2018,13 @@ extra_actions = {
 
 # Some actions appear to be deleted but still in the docs. This grouping
 # will keep them available as it gets sorted out.
-
+# Actions should be added alphabetically under their appropriate awacs prefix.
+# Note: If the prefix contains a '-' (dash) character, replace it with an '_' (underscore).
 deleted_actions = {
     'cloudsearch': [
         'DefineIndexFields',
     ],
-    'cognito-idp': [
+    'cognito_idp': [
         'ListUserPools', 'ListUsers',
     ],
     'dax': [
@@ -2116,6 +2122,13 @@ for serviceName, serviceValue in d['serviceMap'].items():
                     'upper': prefix.upper(),
                 })
                 fp.write("\n\n")
+
+        # Make sure there are no actions in both the extra_actions and deleted_actions
+        if service in extra_actions and service in deleted_actions:
+            intersection = set(extra_actions[service]) & set(deleted_actions[service])
+            if intersection:
+                raise RuntimeError('Actions found that appear in both `extra_actions` and `deleted_actions` '
+                                   'for the aws service `{}`: {}'.format(service, intersection))
 
         # Add actions AWS hasn't added yet
         if service in extra_actions:

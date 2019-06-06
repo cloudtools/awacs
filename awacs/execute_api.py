@@ -25,3 +25,4 @@ class ARN(BaseARN):
 
 InvalidateCache = Action('InvalidateCache')
 Invoke = Action('Invoke')
+ManageConnections = Action('ManageConnections')
