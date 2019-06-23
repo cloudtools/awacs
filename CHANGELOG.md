@@ -1,3 +1,7 @@
+## 0.9.3 (2019-06-23)
+* Include 'Periodic update - 05/28/19-10:23am PDT' (#128)
+* Bugfix cognito_idp deleted actions, and add 'ManageConnections' to execute_api: (#129)
+
 ## 0.9.2 (2019-05-19)
 - Add missing glue actions using the official latest docs (#120)
 - Support Python 3.6 and 3.7; discourage usage of 3.4 (#122)
