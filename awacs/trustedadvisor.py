@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+DescribeAccountAccess = Action('DescribeAccountAccess')
 DescribeCheckItems = Action('DescribeCheckItems')
 DescribeCheckRefreshStatuses = Action('DescribeCheckRefreshStatuses')
 DescribeCheckSummaries = Action('DescribeCheckSummaries')
@@ -31,4 +32,5 @@ DescribeNotificationPreferences = \
 ExcludeCheckItems = Action('ExcludeCheckItems')
 IncludeCheckItems = Action('IncludeCheckItems')
 RefreshCheck = Action('RefreshCheck')
+SetAccountAccess = Action('SetAccountAccess')
 UpdateNotificationPreferences = Action('UpdateNotificationPreferences')

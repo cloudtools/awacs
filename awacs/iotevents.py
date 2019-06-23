@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 BatchPutMessage = Action('BatchPutMessage')
+BatchUpdateDetector = Action('BatchUpdateDetector')
 CreateDetectorModel = Action('CreateDetectorModel')
 CreateInput = Action('CreateInput')
 DeleteDetectorModel = Action('DeleteDetectorModel')
@@ -36,6 +37,10 @@ ListDetectorModelVersions = Action('ListDetectorModelVersions')
 ListDetectorModels = Action('ListDetectorModels')
 ListDetectors = Action('ListDetectors')
 ListInputs = Action('ListInputs')
+ListTagsForResource = Action('ListTagsForResource')
 PutLoggingOptions = Action('PutLoggingOptions')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
 UpdateDetectorModel = Action('UpdateDetectorModel')
 UpdateInput = Action('UpdateInput')
+UpdateInputRouting = Action('UpdateInputRouting')
