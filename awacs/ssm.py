@@ -25,6 +25,8 @@ class ARN(BaseARN):
 
 AddTagsToResource = Action('AddTagsToResource')
 CancelCommand = Action('CancelCommand')
+CancelMaintenanceWindowExecution = \
+    Action('CancelMaintenanceWindowExecution')
 CreateActivation = Action('CreateActivation')
 CreateAssociation = Action('CreateAssociation')
 CreateAssociationBatch = Action('CreateAssociationBatch')
@@ -35,6 +37,7 @@ CreateResourceDataSync = Action('CreateResourceDataSync')
 DeleteActivation = Action('DeleteActivation')
 DeleteAssociation = Action('DeleteAssociation')
 DeleteDocument = Action('DeleteDocument')
+DeleteInventory = Action('DeleteInventory')
 DeleteMaintenanceWindow = Action('DeleteMaintenanceWindow')
 DeleteParameter = Action('DeleteParameter')
 DeleteParameters = Action('DeleteParameters')
@@ -71,16 +74,21 @@ DescribeInstancePatchStatesForPatchGroup = \
     Action('DescribeInstancePatchStatesForPatchGroup')
 DescribeInstancePatches = Action('DescribeInstancePatches')
 DescribeInstanceProperties = Action('DescribeInstanceProperties')
+DescribeInventoryDeletions = Action('DescribeInventoryDeletions')
 DescribeMaintenanceWindowExecutionTaskInvocations = \
     Action('DescribeMaintenanceWindowExecutionTaskInvocations')
 DescribeMaintenanceWindowExecutionTasks = \
     Action('DescribeMaintenanceWindowExecutionTasks')
 DescribeMaintenanceWindowExecutions = \
     Action('DescribeMaintenanceWindowExecutions')
+DescribeMaintenanceWindowSchedule = \
+    Action('DescribeMaintenanceWindowSchedule')
 DescribeMaintenanceWindowTargets = \
     Action('DescribeMaintenanceWindowTargets')
 DescribeMaintenanceWindowTasks = Action('DescribeMaintenanceWindowTasks')
 DescribeMaintenanceWindows = Action('DescribeMaintenanceWindows')
+DescribeMaintenanceWindowsForTarget = \
+    Action('DescribeMaintenanceWindowsForTarget')
 DescribeParameters = Action('DescribeParameters')
 DescribePatchBaselines = Action('DescribePatchBaselines')
 DescribePatchGroupState = Action('DescribePatchGroupState')
@@ -109,6 +117,7 @@ GetParameters = Action('GetParameters')
 GetParametersByPath = Action('GetParametersByPath')
 GetPatchBaseline = Action('GetPatchBaseline')
 GetPatchBaselineForPatchGroup = Action('GetPatchBaselineForPatchGroup')
+LabelParameterVersion = Action('LabelParameterVersion')
 ListAssociationVersions = Action('ListAssociationVersions')
 ListAssociations = Action('ListAssociations')
 ListCommandInvocations = Action('ListCommandInvocations')
