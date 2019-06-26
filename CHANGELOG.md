@@ -1,3 +1,6 @@
+## 0.9.4 (2019-06-25)
+* Add 52 new actions from June updates (#130)
+
 ## 0.9.3 (2019-06-23)
 * Include 'Periodic update - 05/28/19-10:23am PDT' (#128)
 * Bugfix cognito_idp deleted actions, and add 'ManageConnections' to execute_api: (#129)
