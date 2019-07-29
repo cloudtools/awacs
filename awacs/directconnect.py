@@ -23,32 +23,42 @@ class ARN(BaseARN):
                      account=account)
 
 
+AcceptDirectConnectGatewayAssociationProposal = \
+    Action('AcceptDirectConnectGatewayAssociationProposal')
 AllocateConnectionOnInterconnect = \
     Action('AllocateConnectionOnInterconnect')
 AllocateHostedConnection = Action('AllocateHostedConnection')
 AllocatePrivateVirtualInterface = \
     Action('AllocatePrivateVirtualInterface')
 AllocatePublicVirtualInterface = Action('AllocatePublicVirtualInterface')
+AllocateTransitVirtualInterface = \
+    Action('AllocateTransitVirtualInterface')
 AssociateConnectionWithLag = Action('AssociateConnectionWithLag')
 AssociateHostedConnection = Action('AssociateHostedConnection')
 AssociateVirtualInterface = Action('AssociateVirtualInterface')
 ConfirmConnection = Action('ConfirmConnection')
 ConfirmPrivateVirtualInterface = Action('ConfirmPrivateVirtualInterface')
 ConfirmPublicVirtualInterface = Action('ConfirmPublicVirtualInterface')
+ConfirmTransitVirtualInterface = Action('ConfirmTransitVirtualInterface')
 CreateBGPPeer = Action('CreateBGPPeer')
 CreateConnection = Action('CreateConnection')
 CreateDirectConnectGateway = Action('CreateDirectConnectGateway')
 CreateDirectConnectGatewayAssociation = \
     Action('CreateDirectConnectGatewayAssociation')
+CreateDirectConnectGatewayAssociationProposal = \
+    Action('CreateDirectConnectGatewayAssociationProposal')
 CreateInterconnect = Action('CreateInterconnect')
 CreateLag = Action('CreateLag')
 CreatePrivateVirtualInterface = Action('CreatePrivateVirtualInterface')
 CreatePublicVirtualInterface = Action('CreatePublicVirtualInterface')
+CreateTransitVirtualInterface = Action('CreateTransitVirtualInterface')
 DeleteBGPPeer = Action('DeleteBGPPeer')
 DeleteConnection = Action('DeleteConnection')
 DeleteDirectConnectGateway = Action('DeleteDirectConnectGateway')
 DeleteDirectConnectGatewayAssociation = \
     Action('DeleteDirectConnectGatewayAssociation')
+DeleteDirectConnectGatewayAssociationProposal = \
+    Action('DeleteDirectConnectGatewayAssociationProposal')
 DeleteInterconnect = Action('DeleteInterconnect')
 DeleteLag = Action('DeleteLag')
 DeleteVirtualInterface = Action('DeleteVirtualInterface')
@@ -56,6 +66,8 @@ DescribeConnectionLoa = Action('DescribeConnectionLoa')
 DescribeConnections = Action('DescribeConnections')
 DescribeConnectionsOnInterconnect = \
     Action('DescribeConnectionsOnInterconnect')
+DescribeDirectConnectGatewayAssociationProposals = \
+    Action('DescribeDirectConnectGatewayAssociationProposals')
 DescribeDirectConnectGatewayAssociations = \
     Action('DescribeDirectConnectGatewayAssociations')
 DescribeDirectConnectGatewayAttachments = \
@@ -73,6 +85,8 @@ DescribeVirtualInterfaces = Action('DescribeVirtualInterfaces')
 DisassociateConnectionFromLag = Action('DisassociateConnectionFromLag')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
+UpdateDirectConnectGatewayAssociation = \
+    Action('UpdateDirectConnectGatewayAssociation')
 UpdateLag = Action('UpdateLag')
 UpdateVirtualInterfaceAttributes = \
     Action('UpdateVirtualInterfaceAttributes')

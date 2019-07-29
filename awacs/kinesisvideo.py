@@ -26,6 +26,7 @@ class ARN(BaseARN):
 CreateStream = Action('CreateStream')
 DeleteStream = Action('DeleteStream')
 DescribeStream = Action('DescribeStream')
+GetDASHStreamingSessionURL = Action('GetDASHStreamingSessionURL')
 GetDataEndpoint = Action('GetDataEndpoint')
 GetHLSStreamingSessionURL = Action('GetHLSStreamingSessionURL')
 GetMedia = Action('GetMedia')
