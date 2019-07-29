@@ -24,5 +24,6 @@ class ARN(BaseARN):
 
 
 CreateWorkload = Action('CreateWorkload')
+DeleteWorkload = Action('DeleteWorkload')
 GetWorkload = Action('GetWorkload')
 ListWorkloads = Action('ListWorkloads')

@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 AcceptPortfolioShare = Action('AcceptPortfolioShare')
+AssociateBudgetWithResource = Action('AssociateBudgetWithResource')
 AssociatePrincipalWithPortfolio = \
     Action('AssociatePrincipalWithPortfolio')
 AssociateProductWithPortfolio = Action('AssociateProductWithPortfolio')
@@ -64,8 +65,11 @@ DescribeProvisioningArtifact = Action('DescribeProvisioningArtifact')
 DescribeProvisioningParameters = Action('DescribeProvisioningParameters')
 DescribeRecord = Action('DescribeRecord')
 DescribeServiceAction = Action('DescribeServiceAction')
+DescribeServiceActionExecutionParameters = \
+    Action('DescribeServiceActionExecutionParameters')
 DescribeTagOption = Action('DescribeTagOption')
 DisableAWSOrganizationsAccess = Action('DisableAWSOrganizationsAccess')
+DisassociateBudgetFromResource = Action('DisassociateBudgetFromResource')
 DisassociatePrincipalFromPortfolio = \
     Action('DisassociatePrincipalFromPortfolio')
 DisassociateProductFromPortfolio = \
@@ -81,6 +85,7 @@ ExecuteProvisionedProductServiceAction = \
 GetAWSOrganizationsAccessStatus = \
     Action('GetAWSOrganizationsAccessStatus')
 ListAcceptedPortfolioShares = Action('ListAcceptedPortfolioShares')
+ListBudgetsForResource = Action('ListBudgetsForResource')
 ListConstraintsForPortfolio = Action('ListConstraintsForPortfolio')
 ListLaunchPaths = Action('ListLaunchPaths')
 ListOrganizationPortfolioAccess = \
@@ -98,6 +103,8 @@ ListResourcesForTagOption = Action('ListResourcesForTagOption')
 ListServiceActions = Action('ListServiceActions')
 ListServiceActionsForProvisioningArtifact = \
     Action('ListServiceActionsForProvisioningArtifact')
+ListStackInstancesForProvisionedProduct = \
+    Action('ListStackInstancesForProvisionedProduct')
 ListTagOptions = Action('ListTagOptions')
 ProvisionProduct = Action('ProvisionProduct')
 RejectPortfolioShare = Action('RejectPortfolioShare')
@@ -110,6 +117,8 @@ UpdateConstraint = Action('UpdateConstraint')
 UpdatePortfolio = Action('UpdatePortfolio')
 UpdateProduct = Action('UpdateProduct')
 UpdateProvisionedProduct = Action('UpdateProvisionedProduct')
+UpdateProvisionedProductProperties = \
+    Action('UpdateProvisionedProductProperties')
 UpdateProvisioningArtifact = Action('UpdateProvisioningArtifact')
 UpdateServiceAction = Action('UpdateServiceAction')
 UpdateTagOption = Action('UpdateTagOption')
