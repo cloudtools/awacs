@@ -23,31 +23,47 @@ class ARN(BaseARN):
                      account=account)
 
 
+AssociateDomain = Action('AssociateDomain')
+AssociateWebsiteAuthorizationProvider = \
+    Action('AssociateWebsiteAuthorizationProvider')
 AssociateWebsiteCertificateAuthority = \
     Action('AssociateWebsiteCertificateAuthority')
 CreateFleet = Action('CreateFleet')
 DeleteFleet = Action('DeleteFleet')
+DescribeAuditStreamConfiguration = \
+    Action('DescribeAuditStreamConfiguration')
 DescribeCompanyNetworkConfiguration = \
     Action('DescribeCompanyNetworkConfiguration')
 DescribeDevice = Action('DescribeDevice')
 DescribeDevicePolicyConfiguration = \
     Action('DescribeDevicePolicyConfiguration')
+DescribeDomain = Action('DescribeDomain')
 DescribeFleetMetadata = Action('DescribeFleetMetadata')
 DescribeIdentityProviderConfiguration = \
     Action('DescribeIdentityProviderConfiguration')
 DescribeWebsiteCertificateAuthority = \
     Action('DescribeWebsiteCertificateAuthority')
+DisassociateDomain = Action('DisassociateDomain')
+DisassociateWebsiteAuthorizationProvider = \
+    Action('DisassociateWebsiteAuthorizationProvider')
 DisassociateWebsiteCertificateAuthority = \
     Action('DisassociateWebsiteCertificateAuthority')
 ListDevices = Action('ListDevices')
+ListDomains = Action('ListDomains')
 ListFleets = Action('ListFleets')
+ListWebsiteAuthorizationProviders = \
+    Action('ListWebsiteAuthorizationProviders')
 ListWebsiteCertificateAuthorities = \
     Action('ListWebsiteCertificateAuthorities')
+RestoreDomainAccess = Action('RestoreDomainAccess')
+RevokeDomainAccess = Action('RevokeDomainAccess')
 SignOutUser = Action('SignOutUser')
+UpdateAuditStreamConfiguration = Action('UpdateAuditStreamConfiguration')
 UpdateCompanyNetworkConfiguration = \
     Action('UpdateCompanyNetworkConfiguration')
 UpdateDevicePolicyConfiguration = \
     Action('UpdateDevicePolicyConfiguration')
+UpdateDomainMetadata = Action('UpdateDomainMetadata')
 UpdateFleetMetadata = Action('UpdateFleetMetadata')
 UpdateIdentityProviderConfiguration = \
     Action('UpdateIdentityProviderConfiguration')
