@@ -1,3 +1,6 @@
+## 0.9.6 (2019-08-25)
+* Add 95 new actions from updates in first half of August (#133)
+
 ## 0.9.5 (2019-07-29)
 * Add 60 new actions from July updates (#132)
 
