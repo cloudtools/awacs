@@ -25,4 +25,5 @@ class ARN(BaseARN):
 
 DeleteReportDefinition = Action('DeleteReportDefinition')
 DescribeReportDefinitions = Action('DescribeReportDefinitions')
+ModifyReportDefinition = Action('ModifyReportDefinition')
 PutReportDefinition = Action('PutReportDefinition')

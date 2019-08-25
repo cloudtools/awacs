@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 
 BatchDescribeMergeConflicts = Action('BatchDescribeMergeConflicts')
+BatchGetCommits = Action('BatchGetCommits')
 BatchGetPullRequests = Action('BatchGetPullRequests')
 BatchGetRepositories = Action('BatchGetRepositories')
 CancelUploadArchive = Action('CancelUploadArchive')
