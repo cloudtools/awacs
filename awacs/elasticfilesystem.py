@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+Backup = Action('Backup')
 CreateFileSystem = Action('CreateFileSystem')
 CreateMountTarget = Action('CreateMountTarget')
 CreateTags = Action('CreateTags')
@@ -38,4 +39,5 @@ DescribeTags = Action('DescribeTags')
 ModifyMountTargetSecurityGroups = \
     Action('ModifyMountTargetSecurityGroups')
 PutLifecycleConfiguration = Action('PutLifecycleConfiguration')
+Restore = Action('Restore')
 UpdateFileSystem = Action('UpdateFileSystem')
