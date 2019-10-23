@@ -31,6 +31,8 @@ AssociateQualificationWithWorker = \
     Action('AssociateQualificationWithWorker')
 BlockWorker = Action('BlockWorker')
 ChangeHITTypeOfHIT = Action('ChangeHITTypeOfHIT')
+CreateAdditionalAssignmentsForHIT = \
+    Action('CreateAdditionalAssignmentsForHIT')
 CreateHIT = Action('CreateHIT')
 CreateHITType = Action('CreateHITType')
 CreateHITWithHITType = Action('CreateHITWithHITType')

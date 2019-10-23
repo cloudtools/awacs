@@ -76,6 +76,8 @@ DescribeEvents = Action('DescribeEvents')
 DescribeHsmClientCertificates = Action('DescribeHsmClientCertificates')
 DescribeHsmConfigurations = Action('DescribeHsmConfigurations')
 DescribeLoggingStatus = Action('DescribeLoggingStatus')
+DescribeNodeConfigurationOptions = \
+    Action('DescribeNodeConfigurationOptions')
 DescribeOrderableClusterOptions = \
     Action('DescribeOrderableClusterOptions')
 DescribeQuery = Action('DescribeQuery')
