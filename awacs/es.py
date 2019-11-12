@@ -52,6 +52,8 @@ ListElasticsearchVersions = Action('ListElasticsearchVersions')
 ListTags = Action('ListTags')
 PurchaseReservedElasticsearchInstance = \
     Action('PurchaseReservedElasticsearchInstance')
+PurchaseReservedElasticsearchInstanceOffering = \
+    Action('PurchaseReservedElasticsearchInstanceOffering')
 RemoveTags = Action('RemoveTags')
 UpdateElasticsearchDomainConfig = \
     Action('UpdateElasticsearchDomainConfig')
