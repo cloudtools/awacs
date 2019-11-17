@@ -31,5 +31,11 @@ GetReservationPurchaseRecommendation = \
     Action('GetReservationPurchaseRecommendation')
 GetReservationUtilization = Action('GetReservationUtilization')
 GetRightsizingRecommendation = Action('GetRightsizingRecommendation')
+GetSavingsPlansCoverage = Action('GetSavingsPlansCoverage')
+GetSavingsPlansPurchaseRecommendation = \
+    Action('GetSavingsPlansPurchaseRecommendation')
+GetSavingsPlansUtilization = Action('GetSavingsPlansUtilization')
+GetSavingsPlansUtilizationDetails = \
+    Action('GetSavingsPlansUtilizationDetails')
 GetTags = Action('GetTags')
 GetUsageForecast = Action('GetUsageForecast')

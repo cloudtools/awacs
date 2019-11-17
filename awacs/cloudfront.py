@@ -27,13 +27,23 @@ CreateCloudFrontOriginAccessIdentity = \
     Action('CreateCloudFrontOriginAccessIdentity')
 CreateDistribution = Action('CreateDistribution')
 CreateDistributionWithTags = Action('CreateDistributionWithTags')
+CreateFieldLevelEncryptionConfig = \
+    Action('CreateFieldLevelEncryptionConfig')
+CreateFieldLevelEncryptionProfile = \
+    Action('CreateFieldLevelEncryptionProfile')
 CreateInvalidation = Action('CreateInvalidation')
+CreatePublicKey = Action('CreatePublicKey')
 CreateStreamingDistribution = Action('CreateStreamingDistribution')
 CreateStreamingDistributionWithTags = \
     Action('CreateStreamingDistributionWithTags')
 DeleteCloudFrontOriginAccessIdentity = \
     Action('DeleteCloudFrontOriginAccessIdentity')
 DeleteDistribution = Action('DeleteDistribution')
+DeleteFieldLevelEncryptionConfig = \
+    Action('DeleteFieldLevelEncryptionConfig')
+DeleteFieldLevelEncryptionProfile = \
+    Action('DeleteFieldLevelEncryptionProfile')
+DeletePublicKey = Action('DeletePublicKey')
 DeleteStreamingDistribution = Action('DeleteStreamingDistribution')
 GetCloudFrontOriginAccessIdentity = \
     Action('GetCloudFrontOriginAccessIdentity')
@@ -41,14 +51,26 @@ GetCloudFrontOriginAccessIdentityConfig = \
     Action('GetCloudFrontOriginAccessIdentityConfig')
 GetDistribution = Action('GetDistribution')
 GetDistributionConfig = Action('GetDistributionConfig')
+GetFieldLevelEncryption = Action('GetFieldLevelEncryption')
+GetFieldLevelEncryptionConfig = Action('GetFieldLevelEncryptionConfig')
+GetFieldLevelEncryptionProfile = Action('GetFieldLevelEncryptionProfile')
+GetFieldLevelEncryptionProfileConfig = \
+    Action('GetFieldLevelEncryptionProfileConfig')
 GetInvalidation = Action('GetInvalidation')
+GetPublicKey = Action('GetPublicKey')
+GetPublicKeyConfig = Action('GetPublicKeyConfig')
 GetStreamingDistribution = Action('GetStreamingDistribution')
 GetStreamingDistributionConfig = Action('GetStreamingDistributionConfig')
 ListCloudFrontOriginAccessIdentities = \
     Action('ListCloudFrontOriginAccessIdentities')
 ListDistributions = Action('ListDistributions')
 ListDistributionsByWebACLId = Action('ListDistributionsByWebACLId')
+ListFieldLevelEncryptionConfigs = \
+    Action('ListFieldLevelEncryptionConfigs')
+ListFieldLevelEncryptionProfiles = \
+    Action('ListFieldLevelEncryptionProfiles')
 ListInvalidations = Action('ListInvalidations')
+ListPublicKeys = Action('ListPublicKeys')
 ListStreamingDistributions = Action('ListStreamingDistributions')
 ListTagsForResource = Action('ListTagsForResource')
 TagResource = Action('TagResource')
@@ -56,4 +78,9 @@ UntagResource = Action('UntagResource')
 UpdateCloudFrontOriginAccessIdentity = \
     Action('UpdateCloudFrontOriginAccessIdentity')
 UpdateDistribution = Action('UpdateDistribution')
+UpdateFieldLevelEncryptionConfig = \
+    Action('UpdateFieldLevelEncryptionConfig')
+UpdateFieldLevelEncryptionProfile = \
+    Action('UpdateFieldLevelEncryptionProfile')
+UpdatePublicKey = Action('UpdatePublicKey')
 UpdateStreamingDistribution = Action('UpdateStreamingDistribution')
