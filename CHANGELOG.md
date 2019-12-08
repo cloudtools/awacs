@@ -1,3 +1,8 @@
+## 0.9.7 (2019-12-08)
+* Make Python 3.8 support official (#136)
+* Add 98 new actions from updates in August/September (#134)
+* Add 121 new actions from updates in October and 1/3 November (#138)
+
 ## 0.9.6 (2019-08-25)
 * Add 95 new actions from updates in first half of August (#133)
 
