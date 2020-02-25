@@ -23,9 +23,22 @@ class ARN(BaseARN):
                      account=account)
 
 
+DescribeAffectedAccountsForOrganization = \
+    Action('DescribeAffectedAccountsForOrganization')
 DescribeAffectedEntities = Action('DescribeAffectedEntities')
+DescribeAffectedEntitiesForOrganization = \
+    Action('DescribeAffectedEntitiesForOrganization')
 DescribeEntityAggregates = Action('DescribeEntityAggregates')
 DescribeEventAggregates = Action('DescribeEventAggregates')
 DescribeEventDetails = Action('DescribeEventDetails')
+DescribeEventDetailsForOrganization = \
+    Action('DescribeEventDetailsForOrganization')
 DescribeEventTypes = Action('DescribeEventTypes')
 DescribeEvents = Action('DescribeEvents')
+DescribeEventsForOrganization = Action('DescribeEventsForOrganization')
+DescribeHealthServiceStatusForOrganization = \
+    Action('DescribeHealthServiceStatusForOrganization')
+DisableHealthServiceAccessForOrganization = \
+    Action('DisableHealthServiceAccessForOrganization')
+EnableHealthServiceAccessForOrganization = \
+    Action('EnableHealthServiceAccessForOrganization')

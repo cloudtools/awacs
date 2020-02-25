@@ -40,6 +40,7 @@ DescribeReservedElasticsearchInstances = \
 ESHttpDelete = Action('ESHttpDelete')
 ESHttpGet = Action('ESHttpGet')
 ESHttpHead = Action('ESHttpHead')
+ESHttpPatch = Action('ESHttpPatch')
 ESHttpPost = Action('ESHttpPost')
 ESHttpPut = Action('ESHttpPut')
 GetCompatibleElasticsearchVersions = \

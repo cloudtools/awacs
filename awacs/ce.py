@@ -23,7 +23,11 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateCostCategoryDefinition = Action('CreateCostCategoryDefinition')
+DeleteCostCategoryDefinition = Action('DeleteCostCategoryDefinition')
+DescribeCostCategoryDefinition = Action('DescribeCostCategoryDefinition')
 GetCostAndUsage = Action('GetCostAndUsage')
+GetCostAndUsageWithResources = Action('GetCostAndUsageWithResources')
 GetCostForecast = Action('GetCostForecast')
 GetDimensionValues = Action('GetDimensionValues')
 GetReservationCoverage = Action('GetReservationCoverage')
@@ -39,3 +43,5 @@ GetSavingsPlansUtilizationDetails = \
     Action('GetSavingsPlansUtilizationDetails')
 GetTags = Action('GetTags')
 GetUsageForecast = Action('GetUsageForecast')
+ListCostCategoryDefinitions = Action('ListCostCategoryDefinitions')
+UpdateCostCategoryDefinition = Action('UpdateCostCategoryDefinition')

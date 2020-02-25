@@ -24,9 +24,12 @@ class ARN(BaseARN):
 
 
 AddResourceTags = Action('AddResourceTags')
+DescribeReportCreation = Action('DescribeReportCreation')
+GetComplianceSummary = Action('GetComplianceSummary')
 GetResources = Action('GetResources')
 GetTagKeys = Action('GetTagKeys')
 GetTagValues = Action('GetTagValues')
 RemoveResourceTags = Action('RemoveResourceTags')
+StartReportCreation = Action('StartReportCreation')
 TagResources = Action('TagResources')
 UntagResources = Action('UntagResources')
