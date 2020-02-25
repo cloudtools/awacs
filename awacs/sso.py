@@ -31,6 +31,8 @@ CreateApplicationInstance = Action('CreateApplicationInstance')
 CreateApplicationInstanceCertificate = \
     Action('CreateApplicationInstanceCertificate')
 CreateGroup = Action('CreateGroup')
+CreateManagedApplicationInstance = \
+    Action('CreateManagedApplicationInstance')
 CreatePermissionSet = Action('CreatePermissionSet')
 CreateProfile = Action('CreateProfile')
 CreateTrust = Action('CreateTrust')
@@ -39,6 +41,8 @@ DeleteApplicationInstance = Action('DeleteApplicationInstance')
 DeleteApplicationInstanceCertificate = \
     Action('DeleteApplicationInstanceCertificate')
 DeleteGroup = Action('DeleteGroup')
+DeleteManagedApplicationInstance = \
+    Action('DeleteManagedApplicationInstance')
 DeletePermissionSet = Action('DeletePermissionSet')
 DeletePermissionsPolicy = Action('DeletePermissionsPolicy')
 DeleteProfile = Action('DeleteProfile')
@@ -52,6 +56,7 @@ DisassociateProfile = Action('DisassociateProfile')
 EnableUser = Action('EnableUser')
 GetApplicationInstance = Action('GetApplicationInstance')
 GetApplicationTemplate = Action('GetApplicationTemplate')
+GetManagedApplicationInstance = Action('GetManagedApplicationInstance')
 GetMfaDeviceManagementForDirectory = \
     Action('GetMfaDeviceManagementForDirectory')
 GetPermissionSet = Action('GetPermissionSet')
@@ -59,6 +64,8 @@ GetPermissionsPolicy = Action('GetPermissionsPolicy')
 GetProfile = Action('GetProfile')
 GetSSOConfiguration = Action('GetSSOConfiguration')
 GetSSOStatus = Action('GetSSOStatus')
+GetSharedSsoConfiguration = Action('GetSharedSsoConfiguration')
+GetSsoConfiguration = Action('GetSsoConfiguration')
 GetTrust = Action('GetTrust')
 GetUserPoolInfo = Action('GetUserPoolInfo')
 ImportApplicationInstanceServiceProviderMetadata = \
@@ -98,6 +105,8 @@ UpdateApplicationInstanceStatus = \
     Action('UpdateApplicationInstanceStatus')
 UpdateDirectoryAssociation = Action('UpdateDirectoryAssociation')
 UpdateGroup = Action('UpdateGroup')
+UpdateManagedApplicationInstanceStatus = \
+    Action('UpdateManagedApplicationInstanceStatus')
 UpdatePermissionSet = Action('UpdatePermissionSet')
 UpdateProfile = Action('UpdateProfile')
 UpdateSSOConfiguration = Action('UpdateSSOConfiguration')

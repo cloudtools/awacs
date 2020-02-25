@@ -30,11 +30,16 @@ DeleteAggregationAuthorization = Action('DeleteAggregationAuthorization')
 DeleteConfigRule = Action('DeleteConfigRule')
 DeleteConfigurationAggregator = Action('DeleteConfigurationAggregator')
 DeleteConfigurationRecorder = Action('DeleteConfigurationRecorder')
+DeleteConformancePack = Action('DeleteConformancePack')
 DeleteDeliveryChannel = Action('DeleteDeliveryChannel')
 DeleteEvaluationResults = Action('DeleteEvaluationResults')
+DeleteOrganizationConfigRule = Action('DeleteOrganizationConfigRule')
+DeleteOrganizationConformancePack = \
+    Action('DeleteOrganizationConformancePack')
 DeletePendingAggregationRequest = \
     Action('DeletePendingAggregationRequest')
 DeleteRemediationConfiguration = Action('DeleteRemediationConfiguration')
+DeleteRemediationExceptions = Action('DeleteRemediationExceptions')
 DeleteRetentionConfiguration = Action('DeleteRetentionConfiguration')
 DeliverConfigSnapshot = Action('DeliverConfigSnapshot')
 DescribeAggregateComplianceByConfigRules = \
@@ -53,12 +58,25 @@ DescribeConfigurationAggregators = \
 DescribeConfigurationRecorderStatus = \
     Action('DescribeConfigurationRecorderStatus')
 DescribeConfigurationRecorders = Action('DescribeConfigurationRecorders')
+DescribeConformancePackCompliance = \
+    Action('DescribeConformancePackCompliance')
+DescribeConformancePackStatus = Action('DescribeConformancePackStatus')
+DescribeConformancePacks = Action('DescribeConformancePacks')
 DescribeDeliveryChannelStatus = Action('DescribeDeliveryChannelStatus')
 DescribeDeliveryChannels = Action('DescribeDeliveryChannels')
+DescribeOrganizationConfigRuleStatuses = \
+    Action('DescribeOrganizationConfigRuleStatuses')
+DescribeOrganizationConfigRules = \
+    Action('DescribeOrganizationConfigRules')
+DescribeOrganizationConformancePackStatuses = \
+    Action('DescribeOrganizationConformancePackStatuses')
+DescribeOrganizationConformancePacks = \
+    Action('DescribeOrganizationConformancePacks')
 DescribePendingAggregationRequests = \
     Action('DescribePendingAggregationRequests')
 DescribeRemediationConfigurations = \
     Action('DescribeRemediationConfigurations')
+DescribeRemediationExceptions = Action('DescribeRemediationExceptions')
 DescribeRemediationExecutionStatus = \
     Action('DescribeRemediationExecutionStatus')
 DescribeRetentionConfigurations = \
@@ -77,7 +95,15 @@ GetComplianceSummaryByConfigRule = \
     Action('GetComplianceSummaryByConfigRule')
 GetComplianceSummaryByResourceType = \
     Action('GetComplianceSummaryByResourceType')
+GetConformancePackComplianceDetails = \
+    Action('GetConformancePackComplianceDetails')
+GetConformancePackComplianceSummary = \
+    Action('GetConformancePackComplianceSummary')
 GetDiscoveredResourceCounts = Action('GetDiscoveredResourceCounts')
+GetOrganizationConfigRuleDetailedStatus = \
+    Action('GetOrganizationConfigRuleDetailedStatus')
+GetOrganizationConformancePackDetailedStatus = \
+    Action('GetOrganizationConformancePackDetailedStatus')
 GetResourceConfigHistory = Action('GetResourceConfigHistory')
 GetResources = Action('GetResources')
 GetTagKeys = Action('GetTagKeys')
@@ -89,9 +115,13 @@ PutAggregationAuthorization = Action('PutAggregationAuthorization')
 PutConfigRule = Action('PutConfigRule')
 PutConfigurationAggregator = Action('PutConfigurationAggregator')
 PutConfigurationRecorder = Action('PutConfigurationRecorder')
+PutConformancePack = Action('PutConformancePack')
 PutDeliveryChannel = Action('PutDeliveryChannel')
 PutEvaluations = Action('PutEvaluations')
+PutOrganizationConfigRule = Action('PutOrganizationConfigRule')
+PutOrganizationConformancePack = Action('PutOrganizationConformancePack')
 PutRemediationConfigurations = Action('PutRemediationConfigurations')
+PutRemediationExceptions = Action('PutRemediationExceptions')
 PutRetentionConfiguration = Action('PutRetentionConfiguration')
 SelectResourceConfig = Action('SelectResourceConfig')
 StartConfigRulesEvaluation = Action('StartConfigRulesEvaluation')

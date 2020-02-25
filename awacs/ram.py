@@ -25,17 +25,24 @@ class ARN(BaseARN):
 
 AcceptResourceShareInvitation = Action('AcceptResourceShareInvitation')
 AssociateResourceShare = Action('AssociateResourceShare')
+AssociateResourceSharePermission = \
+    Action('AssociateResourceSharePermission')
 CreateResourceShare = Action('CreateResourceShare')
 DeleteResourceShare = Action('DeleteResourceShare')
 DisassociateResourceShare = Action('DisassociateResourceShare')
+DisassociateResourceSharePermission = \
+    Action('DisassociateResourceSharePermission')
 EnableSharingWithAwsOrganization = \
     Action('EnableSharingWithAwsOrganization')
+GetPermission = Action('GetPermission')
 GetResourcePolicies = Action('GetResourcePolicies')
 GetResourceShareAssociations = Action('GetResourceShareAssociations')
 GetResourceShareInvitations = Action('GetResourceShareInvitations')
 GetResourceShares = Action('GetResourceShares')
 ListPendingInvitationResources = Action('ListPendingInvitationResources')
+ListPermissions = Action('ListPermissions')
 ListPrincipals = Action('ListPrincipals')
+ListResourceSharePermissions = Action('ListResourceSharePermissions')
 ListResources = Action('ListResources')
 RejectResourceShareInvitation = Action('RejectResourceShareInvitation')
 TagResource = Action('TagResource')

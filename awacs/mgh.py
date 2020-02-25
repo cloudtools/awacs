@@ -25,9 +25,11 @@ class ARN(BaseARN):
 
 AssociateCreatedArtifact = Action('AssociateCreatedArtifact')
 AssociateDiscoveredResource = Action('AssociateDiscoveredResource')
+CreateHomeRegionControl = Action('CreateHomeRegionControl')
 CreateProgressUpdateStream = Action('CreateProgressUpdateStream')
 DeleteProgressUpdateStream = Action('DeleteProgressUpdateStream')
 DescribeApplicationState = Action('DescribeApplicationState')
+DescribeHomeRegionControls = Action('DescribeHomeRegionControls')
 DescribeMigrationTask = Action('DescribeMigrationTask')
 DisassociateCreatedArtifact = Action('DisassociateCreatedArtifact')
 DisassociateDiscoveredResource = Action('DisassociateDiscoveredResource')

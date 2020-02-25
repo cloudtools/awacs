@@ -23,12 +23,15 @@ class ARN(BaseARN):
                      account=account)
 
 
+CancelDataRepositoryTask = Action('CancelDataRepositoryTask')
 CreateBackup = Action('CreateBackup')
+CreateDataRepositoryTask = Action('CreateDataRepositoryTask')
 CreateFileSystem = Action('CreateFileSystem')
 CreateFileSystemFromBackup = Action('CreateFileSystemFromBackup')
 DeleteBackup = Action('DeleteBackup')
 DeleteFileSystem = Action('DeleteFileSystem')
 DescribeBackups = Action('DescribeBackups')
+DescribeDataRepositoryTasks = Action('DescribeDataRepositoryTasks')
 DescribeFileSystems = Action('DescribeFileSystems')
 ListTagsForResource = Action('ListTagsForResource')
 TagResource = Action('TagResource')

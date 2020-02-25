@@ -24,7 +24,11 @@ class ARN(BaseARN):
 
 
 DeleteTerminology = Action('DeleteTerminology')
+DescribeTextTranslationJob = Action('DescribeTextTranslationJob')
 GetTerminology = Action('GetTerminology')
 ImportTerminology = Action('ImportTerminology')
 ListTerminologies = Action('ListTerminologies')
+ListTextTranslationJobs = Action('ListTextTranslationJobs')
+StartTextTranslationJob = Action('StartTextTranslationJob')
+StopTextTranslationJob = Action('StopTextTranslationJob')
 TranslateText = Action('TranslateText')

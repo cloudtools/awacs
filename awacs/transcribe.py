@@ -24,12 +24,17 @@ class ARN(BaseARN):
 
 
 CreateVocabulary = Action('CreateVocabulary')
+CreateVocabularyFilter = Action('CreateVocabularyFilter')
 DeleteTranscriptionJob = Action('DeleteTranscriptionJob')
 DeleteVocabulary = Action('DeleteVocabulary')
+DeleteVocabularyFilter = Action('DeleteVocabularyFilter')
 GetTranscriptionJob = Action('GetTranscriptionJob')
 GetVocabulary = Action('GetVocabulary')
+GetVocabularyFilter = Action('GetVocabularyFilter')
 ListTranscriptionJobs = Action('ListTranscriptionJobs')
 ListVocabularies = Action('ListVocabularies')
+ListVocabularyFilters = Action('ListVocabularyFilters')
 StartStreamTranscription = Action('StartStreamTranscription')
 StartTranscriptionJob = Action('StartTranscriptionJob')
 UpdateVocabulary = Action('UpdateVocabulary')
+UpdateVocabularyFilter = Action('UpdateVocabularyFilter')
