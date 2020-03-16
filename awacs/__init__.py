@@ -3,7 +3,7 @@
 #
 # See LICENSE file for full license.
 
-
+import inspect
 import json
 import re
 import types
@@ -72,9 +72,12 @@ class AWSObject(object):
                 return self.properties.__setitem__(name, value)
 
             # Single type so check the type of the object and compare against
-            # what we were expecting. Special case AWS helper functions.
+            # what we were expecting. Special case AWS helper functions and its
+            # sub classes. Also handles AWS helper functions from other
+            # libraries like cloudtools/troposphere.
             elif isinstance(value, expected_type) or \
-                    isinstance(value, AWSHelperFn):
+                    'AWSHelperFn' in [c.__name__
+                                      for c in inspect.getmro(type(value))]:
                 return self.properties.__setitem__(name, value)
             else:
                 self._raise_type(name, value, expected_type)
