@@ -72,7 +72,7 @@ class TestAWSProperty(unittest.TestCase):
                 TypeValidationObject(ExpectList=val)
             self.assertEqual(
                 exc.exception.args[0],
-                "ExpectList is %s, expected <type 'list'>" % type(val)
+                "ExpectList is %s, expected %s" % (type(val), type(list()))
             )
 
     def test_prop_value_type_expect_list(self):
