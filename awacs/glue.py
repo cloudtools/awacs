@@ -113,6 +113,7 @@ ImportCatalogToGlue = Action('ImportCatalogToGlue')
 ListCrawlers = Action('ListCrawlers')
 ListDevEndpoints = Action('ListDevEndpoints')
 ListJobs = Action('ListJobs')
+ListMLTransforms = Action('ListMLTransforms')
 ListTriggers = Action('ListTriggers')
 ListWorkflows = Action('ListWorkflows')
 PutDataCatalogEncryptionSettings = \

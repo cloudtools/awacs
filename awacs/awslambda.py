@@ -47,6 +47,7 @@ GetFunctionConcurrency = Action('GetFunctionConcurrency')
 GetFunctionConfiguration = Action('GetFunctionConfiguration')
 GetFunctionEventInvokeConfig = Action('GetFunctionEventInvokeConfig')
 GetLayerVersion = Action('GetLayerVersion')
+GetLayerVersionByArn = Action('GetLayerVersionByArn')
 GetLayerVersionPolicy = Action('GetLayerVersionPolicy')
 GetPolicy = Action('GetPolicy')
 GetProvisionedConcurrencyConfig = \

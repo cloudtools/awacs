@@ -122,6 +122,7 @@ ModifyScheduledAction = Action('ModifyScheduledAction')
 ModifySnapshotCopyRetentionPeriod = \
     Action('ModifySnapshotCopyRetentionPeriod')
 ModifySnapshotSchedule = Action('ModifySnapshotSchedule')
+PauseCluster = Action('PauseCluster')
 PurchaseReservedNodeOffering = Action('PurchaseReservedNodeOffering')
 RebootCluster = Action('RebootCluster')
 ResetClusterParameterGroup = Action('ResetClusterParameterGroup')
@@ -129,6 +130,7 @@ ResizeCluster = Action('ResizeCluster')
 RestoreFromClusterSnapshot = Action('RestoreFromClusterSnapshot')
 RestoreTableFromClusterSnapshot = \
     Action('RestoreTableFromClusterSnapshot')
+ResumeCluster = Action('ResumeCluster')
 RevokeClusterSecurityGroupIngress = \
     Action('RevokeClusterSecurityGroupIngress')
 RevokeSnapshotAccess = Action('RevokeSnapshotAccess')
