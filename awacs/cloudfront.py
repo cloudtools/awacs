@@ -64,6 +64,8 @@ GetStreamingDistributionConfig = Action('GetStreamingDistributionConfig')
 ListCloudFrontOriginAccessIdentities = \
     Action('ListCloudFrontOriginAccessIdentities')
 ListDistributions = Action('ListDistributions')
+ListDistributionsByLambdaFunction = \
+    Action('ListDistributionsByLambdaFunction')
 ListDistributionsByWebACLId = Action('ListDistributionsByWebACLId')
 ListFieldLevelEncryptionConfigs = \
     Action('ListFieldLevelEncryptionConfigs')

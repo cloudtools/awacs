@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 AddTags = Action('AddTags')
 CreateElasticsearchDomain = Action('CreateElasticsearchDomain')
+CreateElasticsearchServiceRole = Action('CreateElasticsearchServiceRole')
 DeleteElasticsearchDomain = Action('DeleteElasticsearchDomain')
 DeleteElasticsearchServiceRole = Action('DeleteElasticsearchServiceRole')
 DescribeElasticsearchDomain = Action('DescribeElasticsearchDomain')
@@ -48,6 +49,8 @@ GetCompatibleElasticsearchVersions = \
 GetUpgradeHistory = Action('GetUpgradeHistory')
 GetUpgradeStatus = Action('GetUpgradeStatus')
 ListDomainNames = Action('ListDomainNames')
+ListElasticsearchInstanceTypeDetails = \
+    Action('ListElasticsearchInstanceTypeDetails')
 ListElasticsearchInstanceTypes = Action('ListElasticsearchInstanceTypes')
 ListElasticsearchVersions = Action('ListElasticsearchVersions')
 ListTags = Action('ListTags')
