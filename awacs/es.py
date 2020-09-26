@@ -23,21 +23,34 @@ class ARN(BaseARN):
                      account=account)
 
 
+AcceptInboundCrossClusterSearchConnection = \
+    Action('AcceptInboundCrossClusterSearchConnection')
 AddTags = Action('AddTags')
 CreateElasticsearchDomain = Action('CreateElasticsearchDomain')
 CreateElasticsearchServiceRole = Action('CreateElasticsearchServiceRole')
+CreateOutboundCrossClusterSearchConnection = \
+    Action('CreateOutboundCrossClusterSearchConnection')
 DeleteElasticsearchDomain = Action('DeleteElasticsearchDomain')
 DeleteElasticsearchServiceRole = Action('DeleteElasticsearchServiceRole')
+DeleteInboundCrossClusterSearchConnection = \
+    Action('DeleteInboundCrossClusterSearchConnection')
+DeleteOutboundCrossClusterSearchConnection = \
+    Action('DeleteOutboundCrossClusterSearchConnection')
 DescribeElasticsearchDomain = Action('DescribeElasticsearchDomain')
 DescribeElasticsearchDomainConfig = \
     Action('DescribeElasticsearchDomainConfig')
 DescribeElasticsearchDomains = Action('DescribeElasticsearchDomains')
 DescribeElasticsearchInstanceTypeLimits = \
     Action('DescribeElasticsearchInstanceTypeLimits')
+DescribeInboundCrossClusterSearchConnections = \
+    Action('DescribeInboundCrossClusterSearchConnections')
+DescribeOutboundCrossClusterSearchConnections = \
+    Action('DescribeOutboundCrossClusterSearchConnections')
 DescribeReservedElasticsearchInstanceOfferings = \
     Action('DescribeReservedElasticsearchInstanceOfferings')
 DescribeReservedElasticsearchInstances = \
     Action('DescribeReservedElasticsearchInstances')
+ESCrossClusterGet = Action('ESCrossClusterGet')
 ESHttpDelete = Action('ESHttpDelete')
 ESHttpGet = Action('ESHttpGet')
 ESHttpHead = Action('ESHttpHead')
@@ -58,6 +71,8 @@ PurchaseReservedElasticsearchInstance = \
     Action('PurchaseReservedElasticsearchInstance')
 PurchaseReservedElasticsearchInstanceOffering = \
     Action('PurchaseReservedElasticsearchInstanceOffering')
+RejectInboundCrossClusterSearchConnection = \
+    Action('RejectInboundCrossClusterSearchConnection')
 RemoveTags = Action('RemoveTags')
 UpdateElasticsearchDomainConfig = \
     Action('UpdateElasticsearchDomainConfig')

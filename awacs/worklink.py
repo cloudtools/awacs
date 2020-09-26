@@ -51,6 +51,7 @@ DisassociateWebsiteCertificateAuthority = \
 ListDevices = Action('ListDevices')
 ListDomains = Action('ListDomains')
 ListFleets = Action('ListFleets')
+ListTagsForResource = Action('ListTagsForResource')
 ListWebsiteAuthorizationProviders = \
     Action('ListWebsiteAuthorizationProviders')
 ListWebsiteCertificateAuthorities = \
@@ -58,6 +59,8 @@ ListWebsiteCertificateAuthorities = \
 RestoreDomainAccess = Action('RestoreDomainAccess')
 RevokeDomainAccess = Action('RevokeDomainAccess')
 SignOutUser = Action('SignOutUser')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
 UpdateAuditStreamConfiguration = Action('UpdateAuditStreamConfiguration')
 UpdateCompanyNetworkConfiguration = \
     Action('UpdateCompanyNetworkConfiguration')

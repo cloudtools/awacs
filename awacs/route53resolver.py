@@ -25,24 +25,40 @@ class ARN(BaseARN):
 
 AssociateResolverEndpointIpAddress = \
     Action('AssociateResolverEndpointIpAddress')
+AssociateResolverQueryLogConfig = \
+    Action('AssociateResolverQueryLogConfig')
 AssociateResolverRule = Action('AssociateResolverRule')
 CreateResolverEndpoint = Action('CreateResolverEndpoint')
+CreateResolverQueryLogConfig = Action('CreateResolverQueryLogConfig')
 CreateResolverRule = Action('CreateResolverRule')
 DeleteResolverEndpoint = Action('DeleteResolverEndpoint')
+DeleteResolverQueryLogConfig = Action('DeleteResolverQueryLogConfig')
 DeleteResolverRule = Action('DeleteResolverRule')
 DisassociateResolverEndpointIpAddress = \
     Action('DisassociateResolverEndpointIpAddress')
+DisassociateResolverQueryLogConfig = \
+    Action('DisassociateResolverQueryLogConfig')
 DisassociateResolverRule = Action('DisassociateResolverRule')
 GetResolverEndpoint = Action('GetResolverEndpoint')
+GetResolverQueryLogConfig = Action('GetResolverQueryLogConfig')
+GetResolverQueryLogConfigAssociation = \
+    Action('GetResolverQueryLogConfigAssociation')
+GetResolverQueryLogConfigPolicy = \
+    Action('GetResolverQueryLogConfigPolicy')
 GetResolverRule = Action('GetResolverRule')
 GetResolverRuleAssociation = Action('GetResolverRuleAssociation')
 GetResolverRulePolicy = Action('GetResolverRulePolicy')
 ListResolverEndpointIpAddresses = \
     Action('ListResolverEndpointIpAddresses')
 ListResolverEndpoints = Action('ListResolverEndpoints')
+ListResolverQueryLogConfigAssociations = \
+    Action('ListResolverQueryLogConfigAssociations')
+ListResolverQueryLogConfigs = Action('ListResolverQueryLogConfigs')
 ListResolverRuleAssociations = Action('ListResolverRuleAssociations')
 ListResolverRules = Action('ListResolverRules')
 ListTagsForResource = Action('ListTagsForResource')
+PutResolverQueryLogConfigPolicy = \
+    Action('PutResolverQueryLogConfigPolicy')
 PutResolverRulePolicy = Action('PutResolverRulePolicy')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')

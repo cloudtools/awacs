@@ -83,6 +83,10 @@ DescribeTags = Action('DescribeTags')
 DescribeVirtualGateways = Action('DescribeVirtualGateways')
 DescribeVirtualInterfaces = Action('DescribeVirtualInterfaces')
 DisassociateConnectionFromLag = Action('DisassociateConnectionFromLag')
+ListVirtualInterfaceTestHistory = \
+    Action('ListVirtualInterfaceTestHistory')
+StartBgpFailoverTest = Action('StartBgpFailoverTest')
+StopBgpFailoverTest = Action('StopBgpFailoverTest')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
 UpdateDirectConnectGatewayAssociation = \

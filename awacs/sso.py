@@ -26,6 +26,9 @@ class ARN(BaseARN):
 AddMemberToGroup = Action('AddMemberToGroup')
 AssociateDirectory = Action('AssociateDirectory')
 AssociateProfile = Action('AssociateProfile')
+AttachManagedPolicyToPermissionSet = \
+    Action('AttachManagedPolicyToPermissionSet')
+CreateAccountAssignment = Action('CreateAccountAssignment')
 CreateAlias = Action('CreateAlias')
 CreateApplicationInstance = Action('CreateApplicationInstance')
 CreateApplicationInstanceCertificate = \
@@ -37,26 +40,40 @@ CreatePermissionSet = Action('CreatePermissionSet')
 CreateProfile = Action('CreateProfile')
 CreateTrust = Action('CreateTrust')
 CreateUser = Action('CreateUser')
+DeleteAccountAssignment = Action('DeleteAccountAssignment')
 DeleteApplicationInstance = Action('DeleteApplicationInstance')
 DeleteApplicationInstanceCertificate = \
     Action('DeleteApplicationInstanceCertificate')
 DeleteGroup = Action('DeleteGroup')
+DeleteInlinePolicyFromPermissionSet = \
+    Action('DeleteInlinePolicyFromPermissionSet')
 DeleteManagedApplicationInstance = \
     Action('DeleteManagedApplicationInstance')
 DeletePermissionSet = Action('DeletePermissionSet')
 DeletePermissionsPolicy = Action('DeletePermissionsPolicy')
 DeleteProfile = Action('DeleteProfile')
 DeleteUser = Action('DeleteUser')
+DescribeAccountAssignmentCreationStatus = \
+    Action('DescribeAccountAssignmentCreationStatus')
+DescribeAccountAssignmentDeletionStatus = \
+    Action('DescribeAccountAssignmentDeletionStatus')
 DescribeGroups = Action('DescribeGroups')
+DescribePermissionSet = Action('DescribePermissionSet')
+DescribePermissionSetProvisioningStatus = \
+    Action('DescribePermissionSetProvisioningStatus')
 DescribePermissionsPolicies = Action('DescribePermissionsPolicies')
 DescribeRegisteredRegions = Action('DescribeRegisteredRegions')
 DescribeUsers = Action('DescribeUsers')
+DetachManagedPolicyFromPermissionSet = \
+    Action('DetachManagedPolicyFromPermissionSet')
 DisableUser = Action('DisableUser')
 DisassociateDirectory = Action('DisassociateDirectory')
 DisassociateProfile = Action('DisassociateProfile')
 EnableUser = Action('EnableUser')
 GetApplicationInstance = Action('GetApplicationInstance')
 GetApplicationTemplate = Action('GetApplicationTemplate')
+GetInlinePolicyForPermissionSet = \
+    Action('GetInlinePolicyForPermissionSet')
 GetManagedApplicationInstance = Action('GetManagedApplicationInstance')
 GetMfaDeviceManagementForDirectory = \
     Action('GetMfaDeviceManagementForDirectory')
@@ -71,6 +88,13 @@ GetTrust = Action('GetTrust')
 GetUserPoolInfo = Action('GetUserPoolInfo')
 ImportApplicationInstanceServiceProviderMetadata = \
     Action('ImportApplicationInstanceServiceProviderMetadata')
+ListAccountAssignmentCreationStatus = \
+    Action('ListAccountAssignmentCreationStatus')
+ListAccountAssignmentDeletionStatus = \
+    Action('ListAccountAssignmentDeletionStatus')
+ListAccountAssignments = Action('ListAccountAssignments')
+ListAccountsForProvisionedPermissionSet = \
+    Action('ListAccountsForProvisionedPermissionSet')
 ListApplicationInstanceCertificates = \
     Action('ListApplicationInstanceCertificates')
 ListApplicationInstances = Action('ListApplicationInstances')
@@ -78,10 +102,20 @@ ListApplicationTemplates = Action('ListApplicationTemplates')
 ListApplications = Action('ListApplications')
 ListDirectoryAssociations = Action('ListDirectoryAssociations')
 ListGroupsForUser = Action('ListGroupsForUser')
+ListInstances = Action('ListInstances')
+ListManagedPoliciesInPermissionSet = \
+    Action('ListManagedPoliciesInPermissionSet')
 ListMembersInGroup = Action('ListMembersInGroup')
+ListPermissionSetProvisioningStatus = \
+    Action('ListPermissionSetProvisioningStatus')
 ListPermissionSets = Action('ListPermissionSets')
+ListPermissionSetsProvisionedToAccount = \
+    Action('ListPermissionSetsProvisionedToAccount')
 ListProfileAssociations = Action('ListProfileAssociations')
 ListProfiles = Action('ListProfiles')
+ListTagsForResource = Action('ListTagsForResource')
+ProvisionPermissionSet = Action('ProvisionPermissionSet')
+PutInlinePolicyToPermissionSet = Action('PutInlinePolicyToPermissionSet')
 PutMfaDeviceManagementForDirectory = \
     Action('PutMfaDeviceManagementForDirectory')
 PutPermissionsPolicy = Action('PutPermissionsPolicy')
@@ -90,6 +124,8 @@ SearchGroups = Action('SearchGroups')
 SearchUsers = Action('SearchUsers')
 SetTemporaryPassword = Action('SetTemporaryPassword')
 StartSSO = Action('StartSSO')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
 UpdateApplicationInstanceActiveCertificate = \
     Action('UpdateApplicationInstanceActiveCertificate')
 UpdateApplicationInstanceDisplayData = \
