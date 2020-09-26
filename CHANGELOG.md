@@ -1,3 +1,9 @@
+## 0.9.9 (2020-09-26)
+* Add 291 new actions (#142)
+* Add codeartifact actions (#145)
+* Add 380 new actions (#148)
+* change isinstance AWSHelperFn to inspect class names (#141)
+
 ## 0.9.8 (2020-02-25)
 * Add 375 new actions (#140)
 
