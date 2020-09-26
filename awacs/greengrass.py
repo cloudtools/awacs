@@ -60,6 +60,7 @@ DeleteSubscriptionDefinition = Action('DeleteSubscriptionDefinition')
 DisassociateRoleFromGroup = Action('DisassociateRoleFromGroup')
 DisassociateServiceRoleFromAccount = \
     Action('DisassociateServiceRoleFromAccount')
+Discover = Action('Discover')
 GetAssociatedRole = Action('GetAssociatedRole')
 GetBulkDeploymentStatus = Action('GetBulkDeploymentStatus')
 GetConnectivityInfo = Action('GetConnectivityInfo')

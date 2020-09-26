@@ -29,6 +29,7 @@ CreateCertificateAuthorityAuditReport = \
 CreatePermission = Action('CreatePermission')
 DeleteCertificateAuthority = Action('DeleteCertificateAuthority')
 DeletePermission = Action('DeletePermission')
+DeletePolicy = Action('DeletePolicy')
 DescribeCertificateAuthority = Action('DescribeCertificateAuthority')
 DescribeCertificateAuthorityAuditReport = \
     Action('DescribeCertificateAuthorityAuditReport')
@@ -36,12 +37,14 @@ GetCertificate = Action('GetCertificate')
 GetCertificateAuthorityCertificate = \
     Action('GetCertificateAuthorityCertificate')
 GetCertificateAuthorityCsr = Action('GetCertificateAuthorityCsr')
+GetPolicy = Action('GetPolicy')
 ImportCertificateAuthorityCertificate = \
     Action('ImportCertificateAuthorityCertificate')
 IssueCertificate = Action('IssueCertificate')
 ListCertificateAuthorities = Action('ListCertificateAuthorities')
 ListPermissions = Action('ListPermissions')
 ListTags = Action('ListTags')
+PutPolicy = Action('PutPolicy')
 RestoreCertificateAuthority = Action('RestoreCertificateAuthority')
 RevokeCertificate = Action('RevokeCertificate')
 TagCertificateAuthority = Action('TagCertificateAuthority')

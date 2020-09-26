@@ -72,6 +72,7 @@ CopyFpgaImage = Action('CopyFpgaImage')
 CopyImage = Action('CopyImage')
 CopySnapshot = Action('CopySnapshot')
 CreateCapacityReservation = Action('CreateCapacityReservation')
+CreateCarrierGateway = Action('CreateCarrierGateway')
 CreateClientVpnEndpoint = Action('CreateClientVpnEndpoint')
 CreateClientVpnRoute = Action('CreateClientVpnRoute')
 CreateCustomerGateway = Action('CreateCustomerGateway')
@@ -92,6 +93,7 @@ CreateLaunchTemplateVersion = Action('CreateLaunchTemplateVersion')
 CreateLocalGatewayRoute = Action('CreateLocalGatewayRoute')
 CreateLocalGatewayRouteTableVpcAssociation = \
     Action('CreateLocalGatewayRouteTableVpcAssociation')
+CreateManagedPrefixList = Action('CreateManagedPrefixList')
 CreateNatGateway = Action('CreateNatGateway')
 CreateNetworkAcl = Action('CreateNetworkAcl')
 CreateNetworkAclEntry = Action('CreateNetworkAclEntry')
@@ -117,6 +119,8 @@ CreateTransitGatewayMulticastDomain = \
     Action('CreateTransitGatewayMulticastDomain')
 CreateTransitGatewayPeeringAttachment = \
     Action('CreateTransitGatewayPeeringAttachment')
+CreateTransitGatewayPrefixListReference = \
+    Action('CreateTransitGatewayPrefixListReference')
 CreateTransitGatewayRoute = Action('CreateTransitGatewayRoute')
 CreateTransitGatewayRouteTable = Action('CreateTransitGatewayRouteTable')
 CreateTransitGatewayVpcAttachment = \
@@ -132,6 +136,7 @@ CreateVpcPeeringConnection = Action('CreateVpcPeeringConnection')
 CreateVpnConnection = Action('CreateVpnConnection')
 CreateVpnConnectionRoute = Action('CreateVpnConnectionRoute')
 CreateVpnGateway = Action('CreateVpnGateway')
+DeleteCarrierGateway = Action('DeleteCarrierGateway')
 DeleteClientVpnEndpoint = Action('DeleteClientVpnEndpoint')
 DeleteClientVpnRoute = Action('DeleteClientVpnRoute')
 DeleteCustomerGateway = Action('DeleteCustomerGateway')
@@ -148,6 +153,7 @@ DeleteLaunchTemplateVersions = Action('DeleteLaunchTemplateVersions')
 DeleteLocalGatewayRoute = Action('DeleteLocalGatewayRoute')
 DeleteLocalGatewayRouteTableVpcAssociation = \
     Action('DeleteLocalGatewayRouteTableVpcAssociation')
+DeleteManagedPrefixList = Action('DeleteManagedPrefixList')
 DeleteNatGateway = Action('DeleteNatGateway')
 DeleteNetworkAcl = Action('DeleteNetworkAcl')
 DeleteNetworkAclEntry = Action('DeleteNetworkAclEntry')
@@ -171,6 +177,8 @@ DeleteTransitGatewayMulticastDomain = \
     Action('DeleteTransitGatewayMulticastDomain')
 DeleteTransitGatewayPeeringAttachment = \
     Action('DeleteTransitGatewayPeeringAttachment')
+DeleteTransitGatewayPrefixListReference = \
+    Action('DeleteTransitGatewayPrefixListReference')
 DeleteTransitGatewayRoute = Action('DeleteTransitGatewayRoute')
 DeleteTransitGatewayRouteTable = Action('DeleteTransitGatewayRouteTable')
 DeleteTransitGatewayVpcAttachment = \
@@ -188,6 +196,8 @@ DeleteVpnConnectionRoute = Action('DeleteVpnConnectionRoute')
 DeleteVpnGateway = Action('DeleteVpnGateway')
 DeprovisionByoipCidr = Action('DeprovisionByoipCidr')
 DeregisterImage = Action('DeregisterImage')
+DeregisterInstanceEventNotificationAttributes = \
+    Action('DeregisterInstanceEventNotificationAttributes')
 DeregisterTransitGatewayMulticastGroupMembers = \
     Action('DeregisterTransitGatewayMulticastGroupMembers')
 DeregisterTransitGatewayMulticastGroupSources = \
@@ -199,6 +209,7 @@ DescribeAvailabilityZones = Action('DescribeAvailabilityZones')
 DescribeBundleTasks = Action('DescribeBundleTasks')
 DescribeByoipCidrs = Action('DescribeByoipCidrs')
 DescribeCapacityReservations = Action('DescribeCapacityReservations')
+DescribeCarrierGateways = Action('DescribeCarrierGateways')
 DescribeClassicLinkInstances = Action('DescribeClassicLinkInstances')
 DescribeClientVpnAuthorizationRules = \
     Action('DescribeClientVpnAuthorizationRules')
@@ -207,6 +218,7 @@ DescribeClientVpnEndpoints = Action('DescribeClientVpnEndpoints')
 DescribeClientVpnRoutes = Action('DescribeClientVpnRoutes')
 DescribeClientVpnTargetNetworks = \
     Action('DescribeClientVpnTargetNetworks')
+DescribeCoipPools = Action('DescribeCoipPools')
 DescribeConversionTasks = Action('DescribeConversionTasks')
 DescribeCustomerGateways = Action('DescribeCustomerGateways')
 DescribeDhcpOptions = Action('DescribeDhcpOptions')
@@ -237,7 +249,10 @@ DescribeImportSnapshotTasks = Action('DescribeImportSnapshotTasks')
 DescribeInstanceAttribute = Action('DescribeInstanceAttribute')
 DescribeInstanceCreditSpecifications = \
     Action('DescribeInstanceCreditSpecifications')
+DescribeInstanceEventNotificationAttributes = \
+    Action('DescribeInstanceEventNotificationAttributes')
 DescribeInstanceStatus = Action('DescribeInstanceStatus')
+DescribeInstanceTypeOfferings = Action('DescribeInstanceTypeOfferings')
 DescribeInstanceTypes = Action('DescribeInstanceTypes')
 DescribeInstances = Action('DescribeInstances')
 DescribeInternetGateways = Action('DescribeInternetGateways')
@@ -255,6 +270,7 @@ DescribeLocalGatewayVirtualInterfaceGroups = \
 DescribeLocalGatewayVirtualInterfaces = \
     Action('DescribeLocalGatewayVirtualInterfaces')
 DescribeLocalGateways = Action('DescribeLocalGateways')
+DescribeManagedPrefixLists = Action('DescribeManagedPrefixLists')
 DescribeMovingAddresses = Action('DescribeMovingAddresses')
 DescribeNatGateways = Action('DescribeNatGateways')
 DescribeNetworkAcls = Action('DescribeNetworkAcls')
@@ -369,6 +385,7 @@ ExportClientVpnClientConfiguration = \
 ExportImage = Action('ExportImage')
 ExportTransitGatewayRoutes = Action('ExportTransitGatewayRoutes')
 GetCapacityReservationUsage = Action('GetCapacityReservationUsage')
+GetCoipPoolUsage = Action('GetCoipPoolUsage')
 GetConsoleOutput = Action('GetConsoleOutput')
 GetConsoleScreenshot = Action('GetConsoleScreenshot')
 GetDefaultCreditSpecification = Action('GetDefaultCreditSpecification')
@@ -377,6 +394,9 @@ GetEbsEncryptionByDefault = Action('GetEbsEncryptionByDefault')
 GetHostReservationPurchasePreview = \
     Action('GetHostReservationPurchasePreview')
 GetLaunchTemplateData = Action('GetLaunchTemplateData')
+GetManagedPrefixListAssociations = \
+    Action('GetManagedPrefixListAssociations')
+GetManagedPrefixListEntries = Action('GetManagedPrefixListEntries')
 GetPasswordData = Action('GetPasswordData')
 GetReservedInstancesExchangeQuote = \
     Action('GetReservedInstancesExchangeQuote')
@@ -384,6 +404,8 @@ GetTransitGatewayAttachmentPropagations = \
     Action('GetTransitGatewayAttachmentPropagations')
 GetTransitGatewayMulticastDomainAssociations = \
     Action('GetTransitGatewayMulticastDomainAssociations')
+GetTransitGatewayPrefixListReferences = \
+    Action('GetTransitGatewayPrefixListReferences')
 GetTransitGatewayRouteTableAssociations = \
     Action('GetTransitGatewayRouteTableAssociations')
 GetTransitGatewayRouteTablePropagations = \
@@ -415,6 +437,7 @@ ModifyInstanceEventStartTime = Action('ModifyInstanceEventStartTime')
 ModifyInstanceMetadataOptions = Action('ModifyInstanceMetadataOptions')
 ModifyInstancePlacement = Action('ModifyInstancePlacement')
 ModifyLaunchTemplate = Action('ModifyLaunchTemplate')
+ModifyManagedPrefixList = Action('ModifyManagedPrefixList')
 ModifyNetworkInterfaceAttribute = \
     Action('ModifyNetworkInterfaceAttribute')
 ModifyReservedInstances = Action('ModifyReservedInstances')
@@ -425,6 +448,9 @@ ModifyTrafficMirrorFilterNetworkServices = \
     Action('ModifyTrafficMirrorFilterNetworkServices')
 ModifyTrafficMirrorFilterRule = Action('ModifyTrafficMirrorFilterRule')
 ModifyTrafficMirrorSession = Action('ModifyTrafficMirrorSession')
+ModifyTransitGateway = Action('ModifyTransitGateway')
+ModifyTransitGatewayPrefixListReference = \
+    Action('ModifyTransitGatewayPrefixListReference')
 ModifyTransitGatewayVpcAttachment = \
     Action('ModifyTransitGatewayVpcAttachment')
 ModifyVolume = Action('ModifyVolume')
@@ -452,6 +478,8 @@ PurchaseReservedInstancesOffering = \
 PurchaseScheduledInstances = Action('PurchaseScheduledInstances')
 RebootInstances = Action('RebootInstances')
 RegisterImage = Action('RegisterImage')
+RegisterInstanceEventNotificationAttributes = \
+    Action('RegisterInstanceEventNotificationAttributes')
 RegisterTransitGatewayMulticastGroupMembers = \
     Action('RegisterTransitGatewayMulticastGroupMembers')
 RegisterTransitGatewayMulticastGroupSources = \
@@ -481,6 +509,8 @@ ResetInstanceAttribute = Action('ResetInstanceAttribute')
 ResetNetworkInterfaceAttribute = Action('ResetNetworkInterfaceAttribute')
 ResetSnapshotAttribute = Action('ResetSnapshotAttribute')
 RestoreAddressToClassic = Action('RestoreAddressToClassic')
+RestoreManagedPrefixListVersion = \
+    Action('RestoreManagedPrefixListVersion')
 RevokeClientVpnIngress = Action('RevokeClientVpnIngress')
 RevokeSecurityGroupEgress = Action('RevokeSecurityGroupEgress')
 RevokeSecurityGroupIngress = Action('RevokeSecurityGroupIngress')
