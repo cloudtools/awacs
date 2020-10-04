@@ -1,0 +1,5 @@
+aiofiles>=0.5.0
+beautifulsoup4>=4.9.3
+httpx[http2]>=0.15.5
+lxml>=4.5.2
+wheel>=0.35.1

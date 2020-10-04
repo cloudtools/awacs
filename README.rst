@@ -115,18 +115,13 @@ welcome!
 Contributing new actions
 ========================
 
-To update actions there is a generator tool which will pull policies from
-an AWS resource and auto-generate new files.
-The following commands can be run to update the repo:
+To update actions there is a generator tool which will scrape policies from
+AWS's documentation resource and auto-generate new files.
+The following commands can be run (with Python 3.7+) to update the repo:
 
 .. code-block:: sh
 
-  $ pip install -r tools/requirements.txt
-  $ rm -rf generated/
-  $ python tools/gen.py
-  $ diff -u awacs generated
-  $ mv generated/*.py awacs
+  $ python3 -m pip install -r scrape/requirements.txt
+  $ python3 -m pip install .
+  $ python3 ./scrape/scrape.py
   $ git diff
-
-Since not all of the actions appear in the AWS policy file it is sometimes
-required to add these extra actions to the tools/gen.py file.
