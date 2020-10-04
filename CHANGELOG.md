@@ -1,3 +1,11 @@
+## 1.0.0 (2020-10-04)
+* Big thanks to @michael-k for the greatly improved code generation!
+* Replace the generator tool
+* Add all missing actions, fix service names, and remove duplicates
+* Add a GitHub Action that regularly updates the IAM actions
+* Drop support for Python 3.5
+* [travis] Remove `./scrape` if Python <3.6 to avoid invalid syntax errors
+
 ## 0.9.9 (2020-09-26)
 * Add 291 new actions (#142)
 * Add codeartifact actions (#145)
