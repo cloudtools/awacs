@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Macie'
+service_name = 'Amazon Macie Classic'
 prefix = 'macie'
 
 

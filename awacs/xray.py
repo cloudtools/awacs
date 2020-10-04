@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS XRay'
+service_name = 'AWS X-Ray'
 prefix = 'xray'
 
 

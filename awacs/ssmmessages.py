@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'SMM Messages'
+service_name = 'Amazon Session Manager Message Gateway Service'
 prefix = 'ssmmessages'
 
 

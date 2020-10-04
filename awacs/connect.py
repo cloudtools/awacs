@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon AWS Cloud Contact Center'
+service_name = 'Amazon Connect'
 prefix = 'connect'
 
 

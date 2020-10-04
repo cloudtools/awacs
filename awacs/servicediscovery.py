@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Route 53 Auto Naming'
+service_name = 'AWS Cloud Map'
 prefix = 'servicediscovery'
 
 

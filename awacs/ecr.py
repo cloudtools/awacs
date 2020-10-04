@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon EC2 Container Registry'
+service_name = 'Amazon Elastic Container Registry'
 prefix = 'ecr'
 
 

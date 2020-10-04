@@ -31,6 +31,9 @@ CreateConfigurationSetTrackingOptions = \
     Action('CreateConfigurationSetTrackingOptions')
 CreateCustomVerificationEmailTemplate = \
     Action('CreateCustomVerificationEmailTemplate')
+CreateDedicatedIpPool = Action('CreateDedicatedIpPool')
+CreateDeliverabilityTestReport = Action('CreateDeliverabilityTestReport')
+CreateEmailIdentity = Action('CreateEmailIdentity')
 CreateReceiptFilter = Action('CreateReceiptFilter')
 CreateReceiptRule = Action('CreateReceiptRule')
 CreateReceiptRuleSet = Action('CreateReceiptRuleSet')
@@ -42,6 +45,8 @@ DeleteConfigurationSetTrackingOptions = \
     Action('DeleteConfigurationSetTrackingOptions')
 DeleteCustomVerificationEmailTemplate = \
     Action('DeleteCustomVerificationEmailTemplate')
+DeleteDedicatedIpPool = Action('DeleteDedicatedIpPool')
+DeleteEmailIdentity = Action('DeleteEmailIdentity')
 DeleteIdentity = Action('DeleteIdentity')
 DeleteIdentityPolicy = Action('DeleteIdentityPolicy')
 DeleteReceiptFilter = Action('DeleteReceiptFilter')
@@ -53,9 +58,21 @@ DescribeActiveReceiptRuleSet = Action('DescribeActiveReceiptRuleSet')
 DescribeConfigurationSet = Action('DescribeConfigurationSet')
 DescribeReceiptRule = Action('DescribeReceiptRule')
 DescribeReceiptRuleSet = Action('DescribeReceiptRuleSet')
+GetAccount = Action('GetAccount')
 GetAccountSendingEnabled = Action('GetAccountSendingEnabled')
+GetBlacklistReports = Action('GetBlacklistReports')
+GetConfigurationSet = Action('GetConfigurationSet')
+GetConfigurationSetEventDestinations = \
+    Action('GetConfigurationSetEventDestinations')
 GetCustomVerificationEmailTemplate = \
     Action('GetCustomVerificationEmailTemplate')
+GetDedicatedIp = Action('GetDedicatedIp')
+GetDedicatedIps = Action('GetDedicatedIps')
+GetDeliverabilityDashboardOptions = \
+    Action('GetDeliverabilityDashboardOptions')
+GetDeliverabilityTestReport = Action('GetDeliverabilityTestReport')
+GetDomainStatisticsReport = Action('GetDomainStatisticsReport')
+GetEmailIdentity = Action('GetEmailIdentity')
 GetIdentityDkimAttributes = Action('GetIdentityDkimAttributes')
 GetIdentityMailFromDomainAttributes = \
     Action('GetIdentityMailFromDomainAttributes')
@@ -70,12 +87,36 @@ GetTemplate = Action('GetTemplate')
 ListConfigurationSets = Action('ListConfigurationSets')
 ListCustomVerificationEmailTemplates = \
     Action('ListCustomVerificationEmailTemplates')
+ListDedicatedIpPools = Action('ListDedicatedIpPools')
+ListDeliverabilityTestReports = Action('ListDeliverabilityTestReports')
+ListEmailIdentities = Action('ListEmailIdentities')
 ListIdentities = Action('ListIdentities')
 ListIdentityPolicies = Action('ListIdentityPolicies')
 ListReceiptFilters = Action('ListReceiptFilters')
 ListReceiptRuleSets = Action('ListReceiptRuleSets')
+ListTagsForResource = Action('ListTagsForResource')
 ListTemplates = Action('ListTemplates')
 ListVerifiedEmailAddresses = Action('ListVerifiedEmailAddresses')
+PutAccountDedicatedIpWarmupAttributes = \
+    Action('PutAccountDedicatedIpWarmupAttributes')
+PutAccountSendingAttributes = Action('PutAccountSendingAttributes')
+PutConfigurationSetDeliveryOptions = \
+    Action('PutConfigurationSetDeliveryOptions')
+PutConfigurationSetReputationOptions = \
+    Action('PutConfigurationSetReputationOptions')
+PutConfigurationSetSendingOptions = \
+    Action('PutConfigurationSetSendingOptions')
+PutConfigurationSetTrackingOptions = \
+    Action('PutConfigurationSetTrackingOptions')
+PutDedicatedIpInPool = Action('PutDedicatedIpInPool')
+PutDedicatedIpWarmupAttributes = Action('PutDedicatedIpWarmupAttributes')
+PutDeliverabilityDashboardOption = \
+    Action('PutDeliverabilityDashboardOption')
+PutEmailIdentityDkimAttributes = Action('PutEmailIdentityDkimAttributes')
+PutEmailIdentityFeedbackAttributes = \
+    Action('PutEmailIdentityFeedbackAttributes')
+PutEmailIdentityMailFromAttributes = \
+    Action('PutEmailIdentityMailFromAttributes')
 PutIdentityPolicy = Action('PutIdentityPolicy')
 ReorderReceiptRuleSet = Action('ReorderReceiptRuleSet')
 SendBounce = Action('SendBounce')
@@ -93,7 +134,9 @@ SetIdentityHeadersInNotificationsEnabled = \
 SetIdentityMailFromDomain = Action('SetIdentityMailFromDomain')
 SetIdentityNotificationTopic = Action('SetIdentityNotificationTopic')
 SetReceiptRulePosition = Action('SetReceiptRulePosition')
+TagResource = Action('TagResource')
 TestRenderTemplate = Action('TestRenderTemplate')
+UntagResource = Action('UntagResource')
 UpdateAccountSendingEnabled = Action('UpdateAccountSendingEnabled')
 UpdateConfigurationSetEventDestination = \
     Action('UpdateConfigurationSetEventDestination')

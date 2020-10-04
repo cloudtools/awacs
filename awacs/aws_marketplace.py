@@ -24,32 +24,65 @@ class ARN(BaseARN):
 
 
 AcceptAgreementApprovalRequest = Action('AcceptAgreementApprovalRequest')
-CancelAgreementRequest = Action('CancelAgreementRequest')
-DescribeAgreement = Action('DescribeAgreement')
-GetAgreementApprovalRequest = Action('GetAgreementApprovalRequest')
-GetAgreementRequest = Action('GetAgreementRequest')
-GetAgreementTerms = Action('GetAgreementTerms')
-ListAgreementApprovalRequests = Action('ListAgreementApprovalRequests')
-ListAgreementRequests = Action('ListAgreementRequests')
-RegisterUsage = Action('RegisterUsage')
-RejectAgreementApprovalRequest = Action('RejectAgreementApprovalRequest')
-SearchAgreements = Action('SearchAgreements')
-Subscribe = Action('Subscribe')
-Unsubscribe = Action('Unsubscribe')
-UpdateAgreementApprovalRequest = Action('UpdateAgreementApprovalRequest')
-ViewSubscriptions = Action('ViewSubscriptions')
-AcceptAgreementApprovalRequest = Action('AcceptAgreementApprovalRequest')
+AssociateProductsWithPrivateMarketplace = \
+    Action('AssociateProductsWithPrivateMarketplace')
 BatchMeterUsage = Action('BatchMeterUsage')
 CancelAgreementRequest = Action('CancelAgreementRequest')
+CancelChangeSet = Action('CancelChangeSet')
+CompleteTask = Action('CompleteTask')
+CreatePrivateMarketplace = Action('CreatePrivateMarketplace')
+CreatePrivateMarketplaceProfile = \
+    Action('CreatePrivateMarketplaceProfile')
+CreatePrivateMarketplaceRequests = \
+    Action('CreatePrivateMarketplaceRequests')
 DescribeAgreement = Action('DescribeAgreement')
+DescribeBuilds = Action('DescribeBuilds')
+DescribeChangeSet = Action('DescribeChangeSet')
+DescribeEntity = Action('DescribeEntity')
+DescribePrivateMarketplaceProducts = \
+    Action('DescribePrivateMarketplaceProducts')
+DescribePrivateMarketplaceProfile = \
+    Action('DescribePrivateMarketplaceProfile')
+DescribePrivateMarketplaceRequests = \
+    Action('DescribePrivateMarketplaceRequests')
+DescribePrivateMarketplaceSettings = \
+    Action('DescribePrivateMarketplaceSettings')
+DescribePrivateMarketplaceStatus = \
+    Action('DescribePrivateMarketplaceStatus')
+DescribeProcurementSystemConfiguration = \
+    Action('DescribeProcurementSystemConfiguration')
+DescribeTask = Action('DescribeTask')
+DisassociateProductsFromPrivateMarketplace = \
+    Action('DisassociateProductsFromPrivateMarketplace')
 GetAgreementApprovalRequest = Action('GetAgreementApprovalRequest')
 GetAgreementRequest = Action('GetAgreementRequest')
 GetAgreementTerms = Action('GetAgreementTerms')
+GetEntitlements = Action('GetEntitlements')
 ListAgreementApprovalRequests = Action('ListAgreementApprovalRequests')
 ListAgreementRequests = Action('ListAgreementRequests')
+ListBuilds = Action('ListBuilds')
+ListChangeSets = Action('ListChangeSets')
+ListEntities = Action('ListEntities')
+ListPrivateMarketplaceProducts = Action('ListPrivateMarketplaceProducts')
+ListPrivateMarketplaceRequests = Action('ListPrivateMarketplaceRequests')
+ListTasks = Action('ListTasks')
 MeterUsage = Action('MeterUsage')
+PutProcurementSystemConfiguration = \
+    Action('PutProcurementSystemConfiguration')
 RegisterUsage = Action('RegisterUsage')
 RejectAgreementApprovalRequest = Action('RejectAgreementApprovalRequest')
 ResolveCustomer = Action('ResolveCustomer')
 SearchAgreements = Action('SearchAgreements')
+StartBuild = Action('StartBuild')
+StartChangeSet = Action('StartChangeSet')
+StartPrivateMarketplace = Action('StartPrivateMarketplace')
+StopPrivateMarketplace = Action('StopPrivateMarketplace')
+Subscribe = Action('Subscribe')
+Unsubscribe = Action('Unsubscribe')
 UpdateAgreementApprovalRequest = Action('UpdateAgreementApprovalRequest')
+UpdatePrivateMarketplaceProfile = \
+    Action('UpdatePrivateMarketplaceProfile')
+UpdatePrivateMarketplaceSettings = \
+    Action('UpdatePrivateMarketplaceSettings')
+UpdateTask = Action('UpdateTask')
+ViewSubscriptions = Action('ViewSubscriptions')
