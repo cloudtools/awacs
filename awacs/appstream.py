@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon AppStream'
+service_name = 'Amazon AppStream 2.0'
 prefix = 'appstream'
 
 

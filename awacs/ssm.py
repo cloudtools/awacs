@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Simple Systems Manager'
+service_name = 'AWS Systems Manager'
 prefix = 'ssm'
 
 
@@ -98,6 +98,7 @@ DescribePatchGroups = Action('DescribePatchGroups')
 DescribePatchProperties = Action('DescribePatchProperties')
 DescribeSessions = Action('DescribeSessions')
 GetAutomationExecution = Action('GetAutomationExecution')
+GetCalendarState = Action('GetCalendarState')
 GetCommandInvocation = Action('GetCommandInvocation')
 GetConnectionStatus = Action('GetConnectionStatus')
 GetDefaultPatchBaseline = Action('GetDefaultPatchBaseline')

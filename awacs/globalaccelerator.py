@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Global Accelerator'
+service_name = 'AWS Global Accelerator'
 prefix = 'globalaccelerator'
 
 

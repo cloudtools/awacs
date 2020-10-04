@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Single Sign-On'
+service_name = 'AWS SSO'
 prefix = 'sso'
 
 

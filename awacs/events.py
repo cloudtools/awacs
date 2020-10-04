@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon CloudWatch Events'
+service_name = 'Amazon EventBridge'
 prefix = 'events'
 
 

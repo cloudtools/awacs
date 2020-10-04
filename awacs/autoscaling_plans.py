@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Auto Scaling Plans'
+service_name = 'AWS Auto Scaling'
 prefix = 'autoscaling-plans'
 
 
