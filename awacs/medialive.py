@@ -23,6 +23,9 @@ class ARN(BaseARN):
                      account=account)
 
 
+BatchDelete = Action('BatchDelete')
+BatchStart = Action('BatchStart')
+BatchStop = Action('BatchStop')
 BatchUpdateSchedule = Action('BatchUpdateSchedule')
 CreateChannel = Action('CreateChannel')
 CreateInput = Action('CreateInput')
