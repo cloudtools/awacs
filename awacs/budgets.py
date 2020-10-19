@@ -23,5 +23,14 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateBudgetAction = Action('CreateBudgetAction')
+DeleteBudgetAction = Action('DeleteBudgetAction')
+DescribeBudgetAction = Action('DescribeBudgetAction')
+DescribeBudgetActionHistories = Action('DescribeBudgetActionHistories')
+DescribeBudgetActionsForAccount = \
+    Action('DescribeBudgetActionsForAccount')
+DescribeBudgetActionsForBudget = Action('DescribeBudgetActionsForBudget')
+ExecuteBudgetAction = Action('ExecuteBudgetAction')
 ModifyBudget = Action('ModifyBudget')
+UpdateBudgetAction = Action('UpdateBudgetAction')
 ViewBudget = Action('ViewBudget')
