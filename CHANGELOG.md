@@ -1,3 +1,7 @@
+## 1.0.1 (2020-10-19)
+* Action Update 2020-42
+* Action Update 2020-43
+
 ## 1.0.0 (2020-10-04)
 * Big thanks to @michael-k for the greatly improved code generation!
 * Replace the generator tool
