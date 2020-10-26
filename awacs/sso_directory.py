@@ -34,6 +34,7 @@ CreateGroup = Action('CreateGroup')
 CreateProvisioningTenant = Action('CreateProvisioningTenant')
 CreateUser = Action('CreateUser')
 DeleteBearerToken = Action('DeleteBearerToken')
+DeleteExternalIdPCertificate = Action('DeleteExternalIdPCertificate')
 DeleteExternalIdPConfigurationForDirectory = \
     Action('DeleteExternalIdPConfigurationForDirectory')
 DeleteGroup = Action('DeleteGroup')
@@ -42,6 +43,7 @@ DeleteProvisioningTenant = Action('DeleteProvisioningTenant')
 DeleteUser = Action('DeleteUser')
 DescribeDirectory = Action('DescribeDirectory')
 DescribeGroups = Action('DescribeGroups')
+DescribeUser = Action('DescribeUser')
 DescribeUsers = Action('DescribeUsers')
 DisableExternalIdPConfigurationForDirectory = \
     Action('DisableExternalIdPConfigurationForDirectory')
@@ -51,7 +53,10 @@ EnableExternalIdPConfigurationForDirectory = \
 EnableUser = Action('EnableUser')
 GetAWSSPConfigurationForDirectory = \
     Action('GetAWSSPConfigurationForDirectory')
+ImportExternalIdPCertificate = Action('ImportExternalIdPCertificate')
+IsMemberInGroup = Action('IsMemberInGroup')
 ListBearerTokens = Action('ListBearerTokens')
+ListExternalIdPCertificates = Action('ListExternalIdPCertificates')
 ListExternalIdPConfigurationsForDirectory = \
     Action('ListExternalIdPConfigurationsForDirectory')
 ListGroupsForUser = Action('ListGroupsForUser')
