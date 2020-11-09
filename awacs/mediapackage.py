@@ -24,12 +24,15 @@ class ARN(BaseARN):
 
 
 CreateChannel = Action('CreateChannel')
+CreateHarvestJob = Action('CreateHarvestJob')
 CreateOriginEndpoint = Action('CreateOriginEndpoint')
 DeleteChannel = Action('DeleteChannel')
 DeleteOriginEndpoint = Action('DeleteOriginEndpoint')
 DescribeChannel = Action('DescribeChannel')
+DescribeHarvestJob = Action('DescribeHarvestJob')
 DescribeOriginEndpoint = Action('DescribeOriginEndpoint')
 ListChannels = Action('ListChannels')
+ListHarvestJobs = Action('ListHarvestJobs')
 ListOriginEndpoints = Action('ListOriginEndpoints')
 ListTagsForResource = Action('ListTagsForResource')
 RotateIngestEndpointCredentials = \

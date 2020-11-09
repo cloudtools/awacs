@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+ApplyArchiveRule = Action('ApplyArchiveRule')
 CreateAnalyzer = Action('CreateAnalyzer')
 CreateArchiveRule = Action('CreateArchiveRule')
 DeleteAnalyzer = Action('DeleteAnalyzer')
