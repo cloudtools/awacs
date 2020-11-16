@@ -29,6 +29,8 @@ GetLicenseConfiguration = Action('GetLicenseConfiguration')
 GetServiceSettings = Action('GetServiceSettings')
 ListAssociationsForLicenseConfiguration = \
     Action('ListAssociationsForLicenseConfiguration')
+ListFailuresForLicenseConfigurationOperations = \
+    Action('ListFailuresForLicenseConfigurationOperations')
 ListLicenseConfigurations = Action('ListLicenseConfigurations')
 ListLicenseSpecificationsForResource = \
     Action('ListLicenseSpecificationsForResource')
