@@ -24,10 +24,12 @@ class ARN(BaseARN):
 
 
 AcceptPortfolioShare = Action('AcceptPortfolioShare')
+AssociateAttributeGroup = Action('AssociateAttributeGroup')
 AssociateBudgetWithResource = Action('AssociateBudgetWithResource')
 AssociatePrincipalWithPortfolio = \
     Action('AssociatePrincipalWithPortfolio')
 AssociateProductWithPortfolio = Action('AssociateProductWithPortfolio')
+AssociateResource = Action('AssociateResource')
 AssociateServiceActionWithProvisioningArtifact = \
     Action('AssociateServiceActionWithProvisioningArtifact')
 AssociateTagOptionWithResource = Action('AssociateTagOptionWithResource')
@@ -36,6 +38,8 @@ BatchAssociateServiceActionWithProvisioningArtifact = \
 BatchDisassociateServiceActionFromProvisioningArtifact = \
     Action('BatchDisassociateServiceActionFromProvisioningArtifact')
 CopyProduct = Action('CopyProduct')
+CreateApplication = Action('CreateApplication')
+CreateAttributeGroup = Action('CreateAttributeGroup')
 CreateConstraint = Action('CreateConstraint')
 CreatePortfolio = Action('CreatePortfolio')
 CreatePortfolioShare = Action('CreatePortfolioShare')
@@ -44,6 +48,8 @@ CreateProvisionedProductPlan = Action('CreateProvisionedProductPlan')
 CreateProvisioningArtifact = Action('CreateProvisioningArtifact')
 CreateServiceAction = Action('CreateServiceAction')
 CreateTagOption = Action('CreateTagOption')
+DeleteApplication = Action('DeleteApplication')
+DeleteAttributeGroup = Action('DeleteAttributeGroup')
 DeleteConstraint = Action('DeleteConstraint')
 DeletePortfolio = Action('DeletePortfolio')
 DeletePortfolioShare = Action('DeletePortfolioShare')
@@ -69,11 +75,13 @@ DescribeServiceActionExecutionParameters = \
     Action('DescribeServiceActionExecutionParameters')
 DescribeTagOption = Action('DescribeTagOption')
 DisableAWSOrganizationsAccess = Action('DisableAWSOrganizationsAccess')
+DisassociateAttributeGroup = Action('DisassociateAttributeGroup')
 DisassociateBudgetFromResource = Action('DisassociateBudgetFromResource')
 DisassociatePrincipalFromPortfolio = \
     Action('DisassociatePrincipalFromPortfolio')
 DisassociateProductFromPortfolio = \
     Action('DisassociateProductFromPortfolio')
+DisassociateResource = Action('DisassociateResource')
 DisassociateServiceActionFromProvisioningArtifact = \
     Action('DisassociateServiceActionFromProvisioningArtifact')
 DisassociateTagOptionFromResource = \
@@ -84,7 +92,14 @@ ExecuteProvisionedProductServiceAction = \
     Action('ExecuteProvisionedProductServiceAction')
 GetAWSOrganizationsAccessStatus = \
     Action('GetAWSOrganizationsAccessStatus')
+GetApplication = Action('GetApplication')
+GetAttributeGroup = Action('GetAttributeGroup')
+ImportAsProvisionedProduct = Action('ImportAsProvisionedProduct')
 ListAcceptedPortfolioShares = Action('ListAcceptedPortfolioShares')
+ListApplications = Action('ListApplications')
+ListAssociatedAttributeGroups = Action('ListAssociatedAttributeGroups')
+ListAssociatedResources = Action('ListAssociatedResources')
+ListAttributeGroups = Action('ListAttributeGroups')
 ListBudgetsForResource = Action('ListBudgetsForResource')
 ListConstraintsForPortfolio = Action('ListConstraintsForPortfolio')
 ListLaunchPaths = Action('ListLaunchPaths')
@@ -113,6 +128,8 @@ SearchProducts = Action('SearchProducts')
 SearchProductsAsAdmin = Action('SearchProductsAsAdmin')
 SearchProvisionedProducts = Action('SearchProvisionedProducts')
 TerminateProvisionedProduct = Action('TerminateProvisionedProduct')
+UpdateApplication = Action('UpdateApplication')
+UpdateAttributeGroup = Action('UpdateAttributeGroup')
 UpdateConstraint = Action('UpdateConstraint')
 UpdatePortfolio = Action('UpdatePortfolio')
 UpdateProduct = Action('UpdateProduct')

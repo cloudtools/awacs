@@ -24,7 +24,9 @@ class ARN(BaseARN):
 
 
 ApproveTeamAssociation = Action('ApproveTeamAssociation')
+CreateTenant = Action('CreateTenant')
 GetScreenData = Action('GetScreenData')
 InvokeScreenAutomation = Action('InvokeScreenAutomation')
 ListTeamAssociations = Action('ListTeamAssociations')
+ListTenants = Action('ListTenants')
 RejectTeamAssociation = Action('RejectTeamAssociation')

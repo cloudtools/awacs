@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Outposts'
-prefix = 'outposts'
+service_name = 'AWS Activate'
+prefix = 'activate'
 
 
 class Action(BaseAction):
@@ -23,10 +23,11 @@ class ARN(BaseARN):
                      account=account)
 
 
-CreateOutpost = Action('CreateOutpost')
-DeleteOutpost = Action('DeleteOutpost')
-DeleteSite = Action('DeleteSite')
-GetOutpost = Action('GetOutpost')
-GetOutpostInstanceTypes = Action('GetOutpostInstanceTypes')
-ListOutposts = Action('ListOutposts')
-ListSites = Action('ListSites')
+CreateForm = Action('CreateForm')
+GetAccountContact = Action('GetAccountContact')
+GetContentInfo = Action('GetContentInfo')
+GetCosts = Action('GetCosts')
+GetCredits = Action('GetCredits')
+GetMemberInfo = Action('GetMemberInfo')
+GetProgram = Action('GetProgram')
+PutMemberInfo = Action('PutMemberInfo')

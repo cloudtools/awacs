@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Outposts'
-prefix = 'outposts'
+service_name = 'Elemental Support Content'
+prefix = 'elemental-support-content'
 
 
 class Action(BaseAction):
@@ -23,10 +23,4 @@ class ARN(BaseARN):
                      account=account)
 
 
-CreateOutpost = Action('CreateOutpost')
-DeleteOutpost = Action('DeleteOutpost')
-DeleteSite = Action('DeleteSite')
-GetOutpost = Action('GetOutpost')
-GetOutpostInstanceTypes = Action('GetOutpostInstanceTypes')
-ListOutposts = Action('ListOutposts')
-ListSites = Action('ListSites')
+Query = Action('Query')
