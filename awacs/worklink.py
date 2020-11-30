@@ -58,6 +58,7 @@ ListWebsiteCertificateAuthorities = \
     Action('ListWebsiteCertificateAuthorities')
 RestoreDomainAccess = Action('RestoreDomainAccess')
 RevokeDomainAccess = Action('RevokeDomainAccess')
+SearchEntity = Action('SearchEntity')
 SignOutUser = Action('SignOutUser')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')

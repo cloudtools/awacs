@@ -26,6 +26,8 @@ class ARN(BaseARN):
 AddMemberToGroup = Action('AddMemberToGroup')
 CompleteVirtualMfaDeviceRegistration = \
     Action('CompleteVirtualMfaDeviceRegistration')
+CompleteWebAuthnDeviceRegistration = \
+    Action('CompleteWebAuthnDeviceRegistration')
 CreateAlias = Action('CreateAlias')
 CreateBearerToken = Action('CreateBearerToken')
 CreateExternalIdPConfigurationForDirectory = \
@@ -68,9 +70,12 @@ SearchGroups = Action('SearchGroups')
 SearchUsers = Action('SearchUsers')
 StartVirtualMfaDeviceRegistration = \
     Action('StartVirtualMfaDeviceRegistration')
+StartWebAuthnDeviceRegistration = \
+    Action('StartWebAuthnDeviceRegistration')
 UpdateExternalIdPConfigurationForDirectory = \
     Action('UpdateExternalIdPConfigurationForDirectory')
 UpdateGroup = Action('UpdateGroup')
+UpdateMfaDeviceForUser = Action('UpdateMfaDeviceForUser')
 UpdatePassword = Action('UpdatePassword')
 UpdateUser = Action('UpdateUser')
 VerifyEmail = Action('VerifyEmail')

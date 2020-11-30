@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Code Signing for Amazon FreeRTOS'
+service_name = 'AWS Signer'
 prefix = 'signer'
 
 
@@ -23,15 +23,20 @@ class ARN(BaseARN):
                      account=account)
 
 
+AddProfilePermission = Action('AddProfilePermission')
 CancelSigningProfile = Action('CancelSigningProfile')
 DescribeSigningJob = Action('DescribeSigningJob')
 GetSigningPlatform = Action('GetSigningPlatform')
 GetSigningProfile = Action('GetSigningProfile')
+ListProfilePermissions = Action('ListProfilePermissions')
 ListSigningJobs = Action('ListSigningJobs')
 ListSigningPlatforms = Action('ListSigningPlatforms')
 ListSigningProfiles = Action('ListSigningProfiles')
 ListTagsForResource = Action('ListTagsForResource')
 PutSigningProfile = Action('PutSigningProfile')
+RemoveProfilePermission = Action('RemoveProfilePermission')
+RevokeSignature = Action('RevokeSignature')
+RevokeSigningProfile = Action('RevokeSigningProfile')
 StartSigningJob = Action('StartSigningJob')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')

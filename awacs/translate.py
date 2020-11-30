@@ -23,12 +23,17 @@ class ARN(BaseARN):
                      account=account)
 
 
+CreateParallelData = Action('CreateParallelData')
+DeleteParallelData = Action('DeleteParallelData')
 DeleteTerminology = Action('DeleteTerminology')
 DescribeTextTranslationJob = Action('DescribeTextTranslationJob')
+GetParallelData = Action('GetParallelData')
 GetTerminology = Action('GetTerminology')
 ImportTerminology = Action('ImportTerminology')
+ListParallelData = Action('ListParallelData')
 ListTerminologies = Action('ListTerminologies')
 ListTextTranslationJobs = Action('ListTextTranslationJobs')
 StartTextTranslationJob = Action('StartTextTranslationJob')
 StopTextTranslationJob = Action('StopTextTranslationJob')
 TranslateText = Action('TranslateText')
+UpdateParallelData = Action('UpdateParallelData')

@@ -42,6 +42,8 @@ AssociateAddress = Action('AssociateAddress')
 AssociateClientVpnTargetNetwork = \
     Action('AssociateClientVpnTargetNetwork')
 AssociateDhcpOptions = Action('AssociateDhcpOptions')
+AssociateEnclaveCertificateIamRole = \
+    Action('AssociateEnclaveCertificateIamRole')
 AssociateIamInstanceProfile = Action('AssociateIamInstanceProfile')
 AssociateRouteTable = Action('AssociateRouteTable')
 AssociateSubnetCidrBlock = Action('AssociateSubnetCidrBlock')
@@ -362,6 +364,8 @@ DisableVpcClassicLinkDnsSupport = \
 DisassociateAddress = Action('DisassociateAddress')
 DisassociateClientVpnTargetNetwork = \
     Action('DisassociateClientVpnTargetNetwork')
+DisassociateEnclaveCertificateIamRole = \
+    Action('DisassociateEnclaveCertificateIamRole')
 DisassociateIamInstanceProfile = Action('DisassociateIamInstanceProfile')
 DisassociateRouteTable = Action('DisassociateRouteTable')
 DisassociateSubnetCidrBlock = Action('DisassociateSubnetCidrBlock')
@@ -384,6 +388,8 @@ ExportClientVpnClientConfiguration = \
     Action('ExportClientVpnClientConfiguration')
 ExportImage = Action('ExportImage')
 ExportTransitGatewayRoutes = Action('ExportTransitGatewayRoutes')
+GetAssociatedEnclaveCertificateIamRoles = \
+    Action('GetAssociatedEnclaveCertificateIamRoles')
 GetCapacityReservationUsage = Action('GetCapacityReservationUsage')
 GetCoipPoolUsage = Action('GetCoipPoolUsage')
 GetConsoleOutput = Action('GetConsoleOutput')

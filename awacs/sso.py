@@ -34,6 +34,8 @@ CreateApplicationInstance = Action('CreateApplicationInstance')
 CreateApplicationInstanceCertificate = \
     Action('CreateApplicationInstanceCertificate')
 CreateGroup = Action('CreateGroup')
+CreateInstanceAccessControlAttributeConfiguration = \
+    Action('CreateInstanceAccessControlAttributeConfiguration')
 CreateManagedApplicationInstance = \
     Action('CreateManagedApplicationInstance')
 CreatePermissionSet = Action('CreatePermissionSet')
@@ -47,6 +49,8 @@ DeleteApplicationInstanceCertificate = \
 DeleteGroup = Action('DeleteGroup')
 DeleteInlinePolicyFromPermissionSet = \
     Action('DeleteInlinePolicyFromPermissionSet')
+DeleteInstanceAccessControlAttributeConfiguration = \
+    Action('DeleteInstanceAccessControlAttributeConfiguration')
 DeleteManagedApplicationInstance = \
     Action('DeleteManagedApplicationInstance')
 DeletePermissionSet = Action('DeletePermissionSet')
@@ -58,6 +62,8 @@ DescribeAccountAssignmentCreationStatus = \
 DescribeAccountAssignmentDeletionStatus = \
     Action('DescribeAccountAssignmentDeletionStatus')
 DescribeGroups = Action('DescribeGroups')
+DescribeInstanceAccessControlAttributeConfiguration = \
+    Action('DescribeInstanceAccessControlAttributeConfiguration')
 DescribePermissionSet = Action('DescribePermissionSet')
 DescribePermissionSetProvisioningStatus = \
     Action('DescribePermissionSetProvisioningStatus')
@@ -142,6 +148,8 @@ UpdateApplicationInstanceStatus = \
     Action('UpdateApplicationInstanceStatus')
 UpdateDirectoryAssociation = Action('UpdateDirectoryAssociation')
 UpdateGroup = Action('UpdateGroup')
+UpdateInstanceAccessControlAttributeConfiguration = \
+    Action('UpdateInstanceAccessControlAttributeConfiguration')
 UpdateManagedApplicationInstanceStatus = \
     Action('UpdateManagedApplicationInstanceStatus')
 UpdatePermissionSet = Action('UpdatePermissionSet')
