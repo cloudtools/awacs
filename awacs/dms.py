@@ -25,6 +25,8 @@ class ARN(BaseARN):
 
 AddTagsToResource = Action('AddTagsToResource')
 ApplyPendingMaintenanceAction = Action('ApplyPendingMaintenanceAction')
+CancelReplicationTaskAssessmentRun = \
+    Action('CancelReplicationTaskAssessmentRun')
 CreateEndpoint = Action('CreateEndpoint')
 CreateEventSubscription = Action('CreateEventSubscription')
 CreateReplicationInstance = Action('CreateReplicationInstance')
@@ -36,7 +38,11 @@ DeleteEventSubscription = Action('DeleteEventSubscription')
 DeleteReplicationInstance = Action('DeleteReplicationInstance')
 DeleteReplicationSubnetGroup = Action('DeleteReplicationSubnetGroup')
 DeleteReplicationTask = Action('DeleteReplicationTask')
+DeleteReplicationTaskAssessmentRun = \
+    Action('DeleteReplicationTaskAssessmentRun')
 DescribeAccountAttributes = Action('DescribeAccountAttributes')
+DescribeApplicableIndividualAssessments = \
+    Action('DescribeApplicableIndividualAssessments')
 DescribeCertificates = Action('DescribeCertificates')
 DescribeConnections = Action('DescribeConnections')
 DescribeEndpointTypes = Action('DescribeEndpointTypes')
@@ -54,6 +60,10 @@ DescribeReplicationSubnetGroups = \
     Action('DescribeReplicationSubnetGroups')
 DescribeReplicationTaskAssessmentResults = \
     Action('DescribeReplicationTaskAssessmentResults')
+DescribeReplicationTaskAssessmentRuns = \
+    Action('DescribeReplicationTaskAssessmentRuns')
+DescribeReplicationTaskIndividualAssessments = \
+    Action('DescribeReplicationTaskIndividualAssessments')
 DescribeReplicationTasks = Action('DescribeReplicationTasks')
 DescribeSchemas = Action('DescribeSchemas')
 DescribeTableStatistics = Action('DescribeTableStatistics')
@@ -70,5 +80,7 @@ ReloadTables = Action('ReloadTables')
 RemoveTagsFromResource = Action('RemoveTagsFromResource')
 StartReplicationTask = Action('StartReplicationTask')
 StartReplicationTaskAssessment = Action('StartReplicationTaskAssessment')
+StartReplicationTaskAssessmentRun = \
+    Action('StartReplicationTaskAssessmentRun')
 StopReplicationTask = Action('StopReplicationTask')
 TestConnection = Action('TestConnection')

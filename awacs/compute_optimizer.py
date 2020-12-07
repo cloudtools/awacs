@@ -31,6 +31,7 @@ ExportEC2InstanceRecommendations = \
     Action('ExportEC2InstanceRecommendations')
 GetAutoScalingGroupRecommendations = \
     Action('GetAutoScalingGroupRecommendations')
+GetEBSVolumeRecommendations = Action('GetEBSVolumeRecommendations')
 GetEC2InstanceRecommendations = Action('GetEC2InstanceRecommendations')
 GetEC2RecommendationProjectedMetrics = \
     Action('GetEC2RecommendationProjectedMetrics')

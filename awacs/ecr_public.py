@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Elastic Container Registry'
-prefix = 'ecr'
+service_name = 'Amazon Elastic Container Registry Public'
+prefix = 'ecr-public'
 
 
 class Action(BaseAction):
@@ -25,36 +25,21 @@ class ARN(BaseARN):
 
 BatchCheckLayerAvailability = Action('BatchCheckLayerAvailability')
 BatchDeleteImage = Action('BatchDeleteImage')
-BatchGetImage = Action('BatchGetImage')
 CompleteLayerUpload = Action('CompleteLayerUpload')
 CreateRepository = Action('CreateRepository')
-DeleteLifecyclePolicy = Action('DeleteLifecyclePolicy')
-DeleteRegistryPolicy = Action('DeleteRegistryPolicy')
 DeleteRepository = Action('DeleteRepository')
 DeleteRepositoryPolicy = Action('DeleteRepositoryPolicy')
-DescribeImageScanFindings = Action('DescribeImageScanFindings')
+DescribeImageTags = Action('DescribeImageTags')
 DescribeImages = Action('DescribeImages')
-DescribeRegistry = Action('DescribeRegistry')
+DescribeRegistries = Action('DescribeRegistries')
 DescribeRepositories = Action('DescribeRepositories')
 GetAuthorizationToken = Action('GetAuthorizationToken')
-GetDownloadUrlForLayer = Action('GetDownloadUrlForLayer')
-GetLifecyclePolicy = Action('GetLifecyclePolicy')
-GetLifecyclePolicyPreview = Action('GetLifecyclePolicyPreview')
-GetRegistryPolicy = Action('GetRegistryPolicy')
+GetRegistryCatalogData = Action('GetRegistryCatalogData')
+GetRepositoryCatalogData = Action('GetRepositoryCatalogData')
 GetRepositoryPolicy = Action('GetRepositoryPolicy')
 InitiateLayerUpload = Action('InitiateLayerUpload')
-ListImages = Action('ListImages')
-ListTagsForResource = Action('ListTagsForResource')
 PutImage = Action('PutImage')
-PutImageScanningConfiguration = Action('PutImageScanningConfiguration')
-PutImageTagMutability = Action('PutImageTagMutability')
-PutLifecyclePolicy = Action('PutLifecyclePolicy')
-PutRegistryPolicy = Action('PutRegistryPolicy')
-PutReplicationConfiguration = Action('PutReplicationConfiguration')
-ReplicateImage = Action('ReplicateImage')
+PutRegistryCatalogData = Action('PutRegistryCatalogData')
+PutRepositoryCatalogData = Action('PutRepositoryCatalogData')
 SetRepositoryPolicy = Action('SetRepositoryPolicy')
-StartImageScan = Action('StartImageScan')
-StartLifecyclePolicyPreview = Action('StartLifecyclePolicyPreview')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
 UploadLayerPart = Action('UploadLayerPart')
