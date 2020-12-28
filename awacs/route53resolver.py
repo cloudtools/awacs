@@ -39,6 +39,7 @@ DisassociateResolverEndpointIpAddress = \
 DisassociateResolverQueryLogConfig = \
     Action('DisassociateResolverQueryLogConfig')
 DisassociateResolverRule = Action('DisassociateResolverRule')
+GetResolverDnssecConfig = Action('GetResolverDnssecConfig')
 GetResolverEndpoint = Action('GetResolverEndpoint')
 GetResolverQueryLogConfig = Action('GetResolverQueryLogConfig')
 GetResolverQueryLogConfigAssociation = \
@@ -48,6 +49,7 @@ GetResolverQueryLogConfigPolicy = \
 GetResolverRule = Action('GetResolverRule')
 GetResolverRuleAssociation = Action('GetResolverRuleAssociation')
 GetResolverRulePolicy = Action('GetResolverRulePolicy')
+ListResolverDnssecConfigs = Action('ListResolverDnssecConfigs')
 ListResolverEndpointIpAddresses = \
     Action('ListResolverEndpointIpAddresses')
 ListResolverEndpoints = Action('ListResolverEndpoints')
@@ -62,5 +64,6 @@ PutResolverQueryLogConfigPolicy = \
 PutResolverRulePolicy = Action('PutResolverRulePolicy')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
+UpdateResolverDnssecConfig = Action('UpdateResolverDnssecConfig')
 UpdateResolverEndpoint = Action('UpdateResolverEndpoint')
 UpdateResolverRule = Action('UpdateResolverRule')

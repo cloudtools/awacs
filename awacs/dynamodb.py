@@ -40,6 +40,8 @@ DescribeContributorInsights = Action('DescribeContributorInsights')
 DescribeExport = Action('DescribeExport')
 DescribeGlobalTable = Action('DescribeGlobalTable')
 DescribeGlobalTableSettings = Action('DescribeGlobalTableSettings')
+DescribeKinesisStreamingDestination = \
+    Action('DescribeKinesisStreamingDestination')
 DescribeLimits = Action('DescribeLimits')
 DescribeReservedCapacity = Action('DescribeReservedCapacity')
 DescribeReservedCapacityOfferings = \
@@ -49,6 +51,10 @@ DescribeTable = Action('DescribeTable')
 DescribeTableReplicaAutoScaling = \
     Action('DescribeTableReplicaAutoScaling')
 DescribeTimeToLive = Action('DescribeTimeToLive')
+DisableKinesisStreamingDestination = \
+    Action('DisableKinesisStreamingDestination')
+EnableKinesisStreamingDestination = \
+    Action('EnableKinesisStreamingDestination')
 ExportTableToPointInTime = Action('ExportTableToPointInTime')
 GetItem = Action('GetItem')
 GetRecords = Action('GetRecords')

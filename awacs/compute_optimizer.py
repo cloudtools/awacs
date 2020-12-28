@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Compute Optimizer'
+service_name = 'AWS Compute Optimizer'
 prefix = 'compute-optimizer'
 
 
@@ -36,5 +36,7 @@ GetEC2InstanceRecommendations = Action('GetEC2InstanceRecommendations')
 GetEC2RecommendationProjectedMetrics = \
     Action('GetEC2RecommendationProjectedMetrics')
 GetEnrollmentStatus = Action('GetEnrollmentStatus')
+GetLambdaFunctionRecommendations = \
+    Action('GetLambdaFunctionRecommendations')
 GetRecommendationSummaries = Action('GetRecommendationSummaries')
 UpdateEnrollmentStatus = Action('UpdateEnrollmentStatus')

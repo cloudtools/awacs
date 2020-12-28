@@ -44,6 +44,9 @@ ListServiceQuotaIncreaseRequestsInTemplate = \
     Action('ListServiceQuotaIncreaseRequestsInTemplate')
 ListServiceQuotas = Action('ListServiceQuotas')
 ListServices = Action('ListServices')
+ListTagsForResource = Action('ListTagsForResource')
 PutServiceQuotaIncreaseRequestIntoTemplate = \
     Action('PutServiceQuotaIncreaseRequestIntoTemplate')
 RequestServiceQuotaIncrease = Action('RequestServiceQuotaIncrease')
+TagResource = Action('TagResource')
+UntagResource = Action('UntagResource')
