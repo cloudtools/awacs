@@ -55,6 +55,7 @@ ListLicenseSpecificationsForResource = \
 ListLicenseVersions = Action('ListLicenseVersions')
 ListLicenses = Action('ListLicenses')
 ListReceivedGrants = Action('ListReceivedGrants')
+ListReceivedLicenses = Action('ListReceivedLicenses')
 ListReceivedLicensess = Action('ListReceivedLicensess')
 ListResourceInventory = Action('ListResourceInventory')
 ListTagsForResource = Action('ListTagsForResource')
