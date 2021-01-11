@@ -23,9 +23,11 @@ class ARN(BaseARN):
                      account=account)
 
 
+CompleteFileUpload = Action('CompleteFileUpload')
 DownloadSoftware = Action('DownloadSoftware')
 GenerateLicenses = Action('GenerateLicenses')
 GetActivation = Action('GetActivation')
 ListTagsForResource = Action('ListTagsForResource')
+StartFileUpload = Action('StartFileUpload')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
