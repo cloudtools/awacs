@@ -68,6 +68,7 @@ ListFindingsFilters = Action('ListFindingsFilters')
 ListInvitations = Action('ListInvitations')
 ListMembers = Action('ListMembers')
 ListOrganizationAdminAccounts = Action('ListOrganizationAdminAccounts')
+ListTagsForResource = Action('ListTagsForResource')
 ListTagsForResources = Action('ListTagsForResources')
 PutClassificationExportConfiguration = \
     Action('PutClassificationExportConfiguration')

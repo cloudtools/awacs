@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS Timestream'
+service_name = 'Amazon Timestream'
 prefix = 'timestream'
 
 

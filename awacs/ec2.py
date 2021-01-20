@@ -25,6 +25,8 @@ class ARN(BaseARN):
 
 AcceptReservedInstancesExchangeQuote = \
     Action('AcceptReservedInstancesExchangeQuote')
+AcceptTransitGatewayMulticastDomainAssociations = \
+    Action('AcceptTransitGatewayMulticastDomainAssociations')
 AcceptTransitGatewayPeeringAttachment = \
     Action('AcceptTransitGatewayPeeringAttachment')
 AcceptTransitGatewayVpcAttachment = \
@@ -118,6 +120,9 @@ CreateTrafficMirrorFilterRule = Action('CreateTrafficMirrorFilterRule')
 CreateTrafficMirrorSession = Action('CreateTrafficMirrorSession')
 CreateTrafficMirrorTarget = Action('CreateTrafficMirrorTarget')
 CreateTransitGateway = Action('CreateTransitGateway')
+CreateTransitGatewayConnect = Action('CreateTransitGatewayConnect')
+CreateTransitGatewayConnectPeer = \
+    Action('CreateTransitGatewayConnectPeer')
 CreateTransitGatewayMulticastDomain = \
     Action('CreateTransitGatewayMulticastDomain')
 CreateTransitGatewayPeeringAttachment = \
@@ -284,6 +289,9 @@ DescribeManagedPrefixLists = Action('DescribeManagedPrefixLists')
 DescribeMovingAddresses = Action('DescribeMovingAddresses')
 DescribeNatGateways = Action('DescribeNatGateways')
 DescribeNetworkAcls = Action('DescribeNetworkAcls')
+DescribeNetworkInsightsAnalyses = \
+    Action('DescribeNetworkInsightsAnalyses')
+DescribeNetworkInsightsPaths = Action('DescribeNetworkInsightsPaths')
 DescribeNetworkInterfaceAttribute = \
     Action('DescribeNetworkInterfaceAttribute')
 DescribeNetworkInterfacePermissions = \
@@ -326,6 +334,9 @@ DescribeTrafficMirrorSessions = Action('DescribeTrafficMirrorSessions')
 DescribeTrafficMirrorTargets = Action('DescribeTrafficMirrorTargets')
 DescribeTransitGatewayAttachments = \
     Action('DescribeTransitGatewayAttachments')
+DescribeTransitGatewayConnectPeers = \
+    Action('DescribeTransitGatewayConnectPeers')
+DescribeTransitGatewayConnects = Action('DescribeTransitGatewayConnects')
 DescribeTransitGatewayMulticastDomains = \
     Action('DescribeTransitGatewayMulticastDomains')
 DescribeTransitGatewayPeeringAttachments = \
