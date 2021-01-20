@@ -1,3 +1,19 @@
+## 1.0.1 (2021-01-20)
+* Action Update 2020-44
+* Action Update 2020-45
+* Action Update 2020-46
+* Action Update 2020-47
+* Action Update 2020-48
+* Action Update 2020-49
+* Action Update 2020-50
+* Action Update 2020-51
+* Action Update 2020-52
+* Action Update 2020-53
+* Action Update 2021-01
+* Action Update 2021-02
+* Fix scrape script breakage
+* Action Update 2021-03
+
 ## 1.0.1 (2020-10-19)
 * Action Update 2020-42
 * Action Update 2020-43
