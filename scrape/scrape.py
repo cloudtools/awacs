@@ -67,6 +67,7 @@ BASEDIR = "awacs"
 IGNORED_SERVICE_ALIASES = {
     "Amazon Kinesis Analytics V2": "kinesisanalytics",
     "Amazon Pinpoint Email Service": "ses",
+    "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
     "AWS Marketplace Entitlement Service": "aws-marketplace",
     "AWS Marketplace Image Building Service": "aws-marketplace",
@@ -143,7 +144,7 @@ async def collect_existing_actions() -> Dict[str, Set[str]]:
 
 
 async def collect_service_info() -> List[httpx.Response]:
-    max_connections = 5
+    max_connections = 2
     async with httpx.AsyncClient(
         http2=True,
         limits=httpx.Limits(max_connections=max_connections),
