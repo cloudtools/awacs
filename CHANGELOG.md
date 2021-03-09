@@ -1,3 +1,12 @@
+## 1.0.3 (2021-03-08)
+* Fix typo in CHANGELOG
+* Action Update 2021-04
+* Update scrape requirements versions
+* Action Update 2021-05
+* Fix scrape breakage by mapping "Amazon Lex V2" to "lex"
+* Allow manual workflow via workflow_dispatch
+* Action Update 2021-10
+
 ## 1.0.2 (2021-01-20)
 * Action Update 2020-44
 * Action Update 2020-45
