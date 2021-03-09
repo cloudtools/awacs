@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'AWS CloudShell'
-prefix = 'cloudshell'
+service_name = 'AWS Tiros'
+prefix = 'tiros'
 
 
 class Action(BaseAction):
@@ -23,12 +23,6 @@ class ARN(BaseARN):
                      account=account)
 
 
-CreateEnvironment = Action('CreateEnvironment')
-CreateSession = Action('CreateSession')
-DeleteEnvironment = Action('DeleteEnvironment')
-GetEnvironmentStatus = Action('GetEnvironmentStatus')
-GetFileDownloadUrls = Action('GetFileDownloadUrls')
-GetFileUploadUrls = Action('GetFileUploadUrls')
-PutCredentials = Action('PutCredentials')
-StartEnvironment = Action('StartEnvironment')
-StopEnvironment = Action('StopEnvironment')
+CreateQuery = Action('CreateQuery')
+GetQueryAnswer = Action('GetQueryAnswer')
+GetQueryExplanation = Action('GetQueryExplanation')

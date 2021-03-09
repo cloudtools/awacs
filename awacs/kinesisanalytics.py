@@ -33,6 +33,7 @@ AddApplicationReferenceDataSource = \
     Action('AddApplicationReferenceDataSource')
 AddApplicationVpcConfiguration = Action('AddApplicationVpcConfiguration')
 CreateApplication = Action('CreateApplication')
+CreateApplicationPresignedUrl = Action('CreateApplicationPresignedUrl')
 CreateApplicationSnapshot = Action('CreateApplicationSnapshot')
 DeleteApplication = Action('DeleteApplication')
 DeleteApplicationCloudWatchLoggingOption = \

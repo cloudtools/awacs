@@ -6,8 +6,8 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Lookout for Vision'
-prefix = 'lookoutvision'
+service_name = 'Amazon Lookout for Equipment'
+prefix = 'lookoutequipment'
 
 
 class Action(BaseAction):
@@ -24,24 +24,24 @@ class ARN(BaseARN):
 
 
 CreateDataset = Action('CreateDataset')
+CreateInferenceScheduler = Action('CreateInferenceScheduler')
 CreateModel = Action('CreateModel')
-CreateProject = Action('CreateProject')
 DeleteDataset = Action('DeleteDataset')
+DeleteInferenceScheduler = Action('DeleteInferenceScheduler')
 DeleteModel = Action('DeleteModel')
-DeleteProject = Action('DeleteProject')
+DescribeDataIngestionJob = Action('DescribeDataIngestionJob')
 DescribeDataset = Action('DescribeDataset')
+DescribeInferenceScheduler = Action('DescribeInferenceScheduler')
 DescribeModel = Action('DescribeModel')
-DescribeProject = Action('DescribeProject')
-DescribeTrialDetection = Action('DescribeTrialDetection')
-DetectAnomalies = Action('DetectAnomalies')
-ListDatasetEntries = Action('ListDatasetEntries')
+ListDataIngestionJobs = Action('ListDataIngestionJobs')
+ListDatasets = Action('ListDatasets')
+ListInferenceExecutions = Action('ListInferenceExecutions')
+ListInferenceSchedulers = Action('ListInferenceSchedulers')
 ListModels = Action('ListModels')
-ListProjects = Action('ListProjects')
 ListTagsForResource = Action('ListTagsForResource')
-ListTrialDetections = Action('ListTrialDetections')
-StartModel = Action('StartModel')
-StartTrialDetection = Action('StartTrialDetection')
-StopModel = Action('StopModel')
+StartDataIngestionJob = Action('StartDataIngestionJob')
+StartInferenceScheduler = Action('StartInferenceScheduler')
+StopInferenceScheduler = Action('StopInferenceScheduler')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
-UpdateDatasetEntries = Action('UpdateDatasetEntries')
+UpdateInferenceScheduler = Action('UpdateInferenceScheduler')

@@ -118,6 +118,7 @@ DescribeValidDBInstanceModifications = \
 DownloadCompleteDBLogFile = Action('DownloadCompleteDBLogFile')
 DownloadDBLogFilePortion = Action('DownloadDBLogFilePortion')
 FailoverDBCluster = Action('FailoverDBCluster')
+FailoverGlobalCluster = Action('FailoverGlobalCluster')
 ListTagsForResource = Action('ListTagsForResource')
 ModifyCurrentDBClusterCapacity = Action('ModifyCurrentDBClusterCapacity')
 ModifyDBCluster = Action('ModifyDBCluster')

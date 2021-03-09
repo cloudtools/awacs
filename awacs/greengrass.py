@@ -94,6 +94,7 @@ GetServiceRoleForAccount = Action('GetServiceRoleForAccount')
 GetSubscriptionDefinition = Action('GetSubscriptionDefinition')
 GetSubscriptionDefinitionVersion = \
     Action('GetSubscriptionDefinitionVersion')
+GetThingRuntimeConfiguration = Action('GetThingRuntimeConfiguration')
 ListBulkDeploymentDetailedReports = \
     Action('ListBulkDeploymentDetailedReports')
 ListBulkDeployments = Action('ListBulkDeployments')
@@ -140,3 +141,5 @@ UpdateGroupCertificateConfiguration = \
 UpdateLoggerDefinition = Action('UpdateLoggerDefinition')
 UpdateResourceDefinition = Action('UpdateResourceDefinition')
 UpdateSubscriptionDefinition = Action('UpdateSubscriptionDefinition')
+UpdateThingRuntimeConfiguration = \
+    Action('UpdateThingRuntimeConfiguration')
