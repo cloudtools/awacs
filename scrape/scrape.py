@@ -66,6 +66,7 @@ BASEDIR = "awacs"
 
 IGNORED_SERVICE_ALIASES = {
     "Amazon Kinesis Analytics V2": "kinesisanalytics",
+    "Amazon Lex V2": "lex",
     "Amazon Pinpoint Email Service": "ses",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
