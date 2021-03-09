@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 5 * * 1'  # every monday at 5 am
 
+  # Allows for manually triggered actions
+  workflow_dispatch:
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
