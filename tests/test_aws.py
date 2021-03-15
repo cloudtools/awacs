@@ -40,3 +40,9 @@ class TestBaseARN(unittest.TestCase):
         self.assertEqual(
             arn.JSONrepr(),
             "arn:aws-us-gov:service:us-gov-west-1:account:resource")
+
+    def test_dynamic(self):
+        arn = BaseARN("service", "resource", "${AWS::Region}", "account")
+        self.assertEqual(
+            arn.JSONrepr(),
+            "arn:${AWS::Partition}:service:${AWS::Region}:account:resource")

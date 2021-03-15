@@ -56,7 +56,9 @@ class Action(AWSHelperFn):
 class BaseARN(AWSHelperFn):
     def __init__(self, service, resource, region='', account=''):
         region_string = region.lower()
-        if region_string.startswith("cn-"):
+        if region == "${AWS::Region}":
+            aws_partition = "${AWS::Partition}"
+        elif region_string.startswith("cn-"):
             aws_partition = "aws-cn"
         elif region_string.startswith("us-gov"):
             aws_partition = "aws-us-gov"
