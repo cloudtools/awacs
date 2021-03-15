@@ -58,6 +58,7 @@ ListPredictorBacktestExportJobs = \
 ListPredictors = Action('ListPredictors')
 ListTagsForResource = Action('ListTagsForResource')
 QueryForecast = Action('QueryForecast')
+StopResource = Action('StopResource')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
 UpdateDatasetGroup = Action('UpdateDatasetGroup')

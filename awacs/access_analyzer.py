@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'IAM Access Analyzer'
+service_name = 'AWS IAM Access Analyzer'
 prefix = 'access-analyzer'
 
 
@@ -24,14 +24,18 @@ class ARN(BaseARN):
 
 
 ApplyArchiveRule = Action('ApplyArchiveRule')
+CreateAccessPreview = Action('CreateAccessPreview')
 CreateAnalyzer = Action('CreateAnalyzer')
 CreateArchiveRule = Action('CreateArchiveRule')
 DeleteAnalyzer = Action('DeleteAnalyzer')
 DeleteArchiveRule = Action('DeleteArchiveRule')
+GetAccessPreview = Action('GetAccessPreview')
 GetAnalyzedResource = Action('GetAnalyzedResource')
 GetAnalyzer = Action('GetAnalyzer')
 GetArchiveRule = Action('GetArchiveRule')
 GetFinding = Action('GetFinding')
+ListAccessPreviewFindings = Action('ListAccessPreviewFindings')
+ListAccessPreviews = Action('ListAccessPreviews')
 ListAnalyzedResources = Action('ListAnalyzedResources')
 ListAnalyzers = Action('ListAnalyzers')
 ListArchiveRules = Action('ListArchiveRules')

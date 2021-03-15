@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'Amazon Elastic Container Service for Kubernetes'
+service_name = 'Amazon Elastic Kubernetes Service'
 prefix = 'eks'
 
 
@@ -24,6 +24,9 @@ class ARN(BaseARN):
 
 
 AccessKubernetesApi = Action('AccessKubernetesApi')
+AssociateEncryptionConfig = Action('AssociateEncryptionConfig')
+AssociateIdentityProviderConfig = \
+    Action('AssociateIdentityProviderConfig')
 CreateAddon = Action('CreateAddon')
 CreateCluster = Action('CreateCluster')
 CreateFargateProfile = Action('CreateFargateProfile')
@@ -36,11 +39,15 @@ DescribeAddon = Action('DescribeAddon')
 DescribeAddonVersions = Action('DescribeAddonVersions')
 DescribeCluster = Action('DescribeCluster')
 DescribeFargateProfile = Action('DescribeFargateProfile')
+DescribeIdentityProviderConfig = Action('DescribeIdentityProviderConfig')
 DescribeNodegroup = Action('DescribeNodegroup')
 DescribeUpdate = Action('DescribeUpdate')
+DisassociateIdentityProviderConfig = \
+    Action('DisassociateIdentityProviderConfig')
 ListAddons = Action('ListAddons')
 ListClusters = Action('ListClusters')
 ListFargateProfiles = Action('ListFargateProfiles')
+ListIdentityProviderConfigs = Action('ListIdentityProviderConfigs')
 ListNodegroups = Action('ListNodegroups')
 ListTagsForResource = Action('ListTagsForResource')
 ListUpdates = Action('ListUpdates')
