@@ -50,15 +50,6 @@ class ARN(BaseARN):
         sup.__init__(service=prefix, resource=resource, region=region, account=account)
 """
 
-LEGACY_ARN_CLASS = """\
-class {upper}_ARN(ARN):
-    def __init__(self, *args, **kwargs):
-        super({upper}_ARN, self).__init__(*args, **kwargs)
-        warnings.warn("This class is going away. Use {lower}.ARN instead.", FutureWarning)
-"""
-
-LEGACY_ARNS = ["iam", "s3", "sdb", "sns", "sqs"]
-
 BASEDIR = "awacs"
 
 IGNORED_SERVICE_ALIASES = {
@@ -209,9 +200,6 @@ async def write_service(
     service_prefix: str, service_name: str, actions: Set[str]
 ) -> None:
     content: List[str] = []
-    if service_prefix in LEGACY_ARNS:
-        content.append("import warnings")
-        content.append("")
     content.append(HEADER)
 
     content.append(f'service_name = "{service_name}"')
@@ -220,11 +208,6 @@ async def write_service(
     content.append("")
     content.append(CLASSES_S3 if service_prefix == "s3" else CLASSES)
     content.append("")
-    if service_prefix in LEGACY_ARNS:
-        content.append(
-            LEGACY_ARN_CLASS.format(lower=service_prefix, upper=service_prefix.upper())
-        )
-        content.append("")
 
     for action in sorted(actions):
         action = action.strip()
