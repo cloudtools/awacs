@@ -6,7 +6,7 @@
 from aws import Action as BaseAction
 from aws import BaseARN
 
-service_name = 'DataSync'
+service_name = 'AWSDataSync'
 prefix = 'datasync'
 
 
@@ -54,3 +54,4 @@ TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')
 UpdateAgent = Action('UpdateAgent')
 UpdateTask = Action('UpdateTask')
+UpdateTaskExecution = Action('UpdateTaskExecution')

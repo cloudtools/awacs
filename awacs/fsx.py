@@ -23,6 +23,7 @@ class ARN(BaseARN):
                      account=account)
 
 
+AssociateFileSystemAliases = Action('AssociateFileSystemAliases')
 CancelDataRepositoryTask = Action('CancelDataRepositoryTask')
 CreateBackup = Action('CreateBackup')
 CreateDataRepositoryTask = Action('CreateDataRepositoryTask')
@@ -32,7 +33,9 @@ DeleteBackup = Action('DeleteBackup')
 DeleteFileSystem = Action('DeleteFileSystem')
 DescribeBackups = Action('DescribeBackups')
 DescribeDataRepositoryTasks = Action('DescribeDataRepositoryTasks')
+DescribeFileSystemAliases = Action('DescribeFileSystemAliases')
 DescribeFileSystems = Action('DescribeFileSystems')
+DisassociateFileSystemAliases = Action('DisassociateFileSystemAliases')
 ListTagsForResource = Action('ListTagsForResource')
 TagResource = Action('TagResource')
 UntagResource = Action('UntagResource')

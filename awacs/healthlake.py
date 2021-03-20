@@ -1,0 +1,40 @@
+# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# All rights reserved.
+#
+# See LICENSE file for full license.
+
+from aws import Action as BaseAction
+from aws import BaseARN
+
+service_name = 'Amazon HealthLake'
+prefix = 'healthlake'
+
+
+class Action(BaseAction):
+    def __init__(self, action=None):
+        sup = super(Action, self)
+        sup.__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource='', region='', account=''):
+        sup = super(ARN, self)
+        sup.__init__(service=prefix, resource=resource, region=region,
+                     account=account)
+
+
+CreateFHIRDatastore = Action('CreateFHIRDatastore')
+CreateResource = Action('CreateResource')
+DeleteFHIRDatastore = Action('DeleteFHIRDatastore')
+DeleteResource = Action('DeleteResource')
+DescribeFHIRDatastore = Action('DescribeFHIRDatastore')
+DescribeFHIRExportJob = Action('DescribeFHIRExportJob')
+DescribeFHIRImportJob = Action('DescribeFHIRImportJob')
+GetCapabilities = Action('GetCapabilities')
+ListFHIRDatastores = Action('ListFHIRDatastores')
+ReadResource = Action('ReadResource')
+SearchWithGet = Action('SearchWithGet')
+SearchWithPost = Action('SearchWithPost')
+StartFHIRExportJob = Action('StartFHIRExportJob')
+StartFHIRImportJob = Action('StartFHIRImportJob')
+UpdateResource = Action('UpdateResource')

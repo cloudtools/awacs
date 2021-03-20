@@ -36,10 +36,16 @@ class S3_ARN(ARN):
 AbortMultipartUpload = Action('AbortMultipartUpload')
 BypassGovernanceRetention = Action('BypassGovernanceRetention')
 CreateAccessPoint = Action('CreateAccessPoint')
+CreateAccessPointForObjectLambda = \
+    Action('CreateAccessPointForObjectLambda')
 CreateBucket = Action('CreateBucket')
 CreateJob = Action('CreateJob')
 DeleteAccessPoint = Action('DeleteAccessPoint')
+DeleteAccessPointForObjectLambda = \
+    Action('DeleteAccessPointForObjectLambda')
 DeleteAccessPointPolicy = Action('DeleteAccessPointPolicy')
+DeleteAccessPointPolicyForObjectLambda = \
+    Action('DeleteAccessPointPolicyForObjectLambda')
 DeleteBucket = Action('DeleteBucket')
 DeleteBucketOwnershipControls = Action('DeleteBucketOwnershipControls')
 DeleteBucketPolicy = Action('DeleteBucketPolicy')
@@ -55,8 +61,15 @@ DeleteStorageLensConfigurationTagging = \
 DescribeJob = Action('DescribeJob')
 GetAccelerateConfiguration = Action('GetAccelerateConfiguration')
 GetAccessPoint = Action('GetAccessPoint')
+GetAccessPointConfigurationForObjectLambda = \
+    Action('GetAccessPointConfigurationForObjectLambda')
+GetAccessPointForObjectLambda = Action('GetAccessPointForObjectLambda')
 GetAccessPointPolicy = Action('GetAccessPointPolicy')
+GetAccessPointPolicyForObjectLambda = \
+    Action('GetAccessPointPolicyForObjectLambda')
 GetAccessPointPolicyStatus = Action('GetAccessPointPolicyStatus')
+GetAccessPointPolicyStatusForObjectLambda = \
+    Action('GetAccessPointPolicyStatusForObjectLambda')
 GetAccountPublicAccessBlock = Action('GetAccountPublicAccessBlock')
 GetAnalyticsConfiguration = Action('GetAnalyticsConfiguration')
 GetBucketAcl = Action('GetBucketAcl')
@@ -100,6 +113,8 @@ GetStorageLensConfigurationTagging = \
 GetStorageLensDashboard = Action('GetStorageLensDashboard')
 HeadBucket = Action('HeadBucket')
 ListAccessPoints = Action('ListAccessPoints')
+ListAccessPointsForObjectLambda = \
+    Action('ListAccessPointsForObjectLambda')
 ListAllMyBuckets = Action('ListAllMyBuckets')
 ListBucket = Action('ListBucket')
 ListBucketByTags = Action('ListBucketByTags')
@@ -112,7 +127,11 @@ ListStorageLensConfigurations = Action('ListStorageLensConfigurations')
 ObjectOwnerOverrideToBucketOwner = \
     Action('ObjectOwnerOverrideToBucketOwner')
 PutAccelerateConfiguration = Action('PutAccelerateConfiguration')
+PutAccessPointConfigurationForObjectLambda = \
+    Action('PutAccessPointConfigurationForObjectLambda')
 PutAccessPointPolicy = Action('PutAccessPointPolicy')
+PutAccessPointPolicyForObjectLambda = \
+    Action('PutAccessPointPolicyForObjectLambda')
 PutAccountPublicAccessBlock = Action('PutAccountPublicAccessBlock')
 PutAnalyticsConfiguration = Action('PutAnalyticsConfiguration')
 PutBucketAcl = Action('PutBucketAcl')
