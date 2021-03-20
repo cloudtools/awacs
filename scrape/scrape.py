@@ -79,6 +79,11 @@ IGNORED_SERVICE_ALIASES = {
     "Elastic Load Balancing V2": "elasticloadbalancing",
 }
 
+RENAME_SERVICE = {
+    "lambda": "awslambda",
+}
+rename_service = lambda name: RENAME_SERVICE.get(name, name)
+
 
 async def main() -> None:
     services_with_actions: DefaultDict[str, Set[str]] = DefaultDict(set)
@@ -248,7 +253,7 @@ async def write_service(
         # Add a final newline
         content.append("")
 
-    awacs_service = service_prefix.replace("-", "_")
+    awacs_service = rename_service(service_prefix.replace("-", "_"))
     filename = "".join([BASEDIR, "/", awacs_service, ".py"])
     async with aiofiles.open(filename, "w") as fp:
         await fp.write("\n".join(content))
