@@ -82,7 +82,10 @@ IGNORED_SERVICE_ALIASES = {
 RENAME_SERVICE = {
     "lambda": "awslambda",
 }
-rename_service = lambda name: RENAME_SERVICE.get(name, name)
+
+
+def rename_service(name):
+    return RENAME_SERVICE.get(name, name)
 
 
 async def main() -> None:
