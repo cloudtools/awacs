@@ -13,12 +13,12 @@ __version__ = "1.0.4"
 valid_names = re.compile(r'^[a-zA-Z0-9]+$')
 
 
-class AWSObject(object):
+class AWSObject:
     def __init__(self, name, type=None, dictname=None, props={}, **kwargs):
         self.name = name
         self.props = props
         # Cache the keys for validity checks
-        self.propnames = list(props.keys())
+        self.propnames = props.keys()
 
         # unset/None is also legal
         if name and not valid_names.match(name):
@@ -131,7 +131,7 @@ class AWSProperty(AWSObject):
         sup.__init__(None, props=self.props, **kwargs)
 
 
-class AWSHelperFn(object):
+class AWSHelperFn:
     def getdata(self, data):
         if isinstance(data, AWSObject):
             return data.name
