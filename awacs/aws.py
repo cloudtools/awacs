@@ -172,15 +172,15 @@ class Statement(AWSProperty):
         'Principal': (Principal, False),
         'Resource': (list, False),
         'NotResource': (list, False),
-        'Sid': (basestring, False),
+        'Sid': (str, False),
     }
 
 
 class Policy(AWSProperty):
     props = {
-        'Id': (basestring, False),
+        'Id': (str, False),
         'Statement': ([Statement], True),
-        'Version': (basestring, False),
+        'Version': (str, False),
     }
 
     def JSONrepr(self):

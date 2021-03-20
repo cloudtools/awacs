@@ -18,7 +18,7 @@ class AWSObject(object):
         self.name = name
         self.props = props
         # Cache the keys for validity checks
-        self.propnames = props.keys()
+        self.propnames = list(props.keys())
 
         # unset/None is also legal
         if name and not valid_names.match(name):
