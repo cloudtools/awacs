@@ -68,6 +68,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Kinesis Analytics V2": "kinesisanalytics",
     "Amazon Lex V2": "lex",
     "Amazon Pinpoint Email Service": "ses",
+    "Amazon Simple Email Service v2": "ses",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
     "AWS Marketplace Entitlement Service": "aws-marketplace",
