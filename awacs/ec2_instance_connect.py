@@ -3,8 +3,8 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action as BaseAction
-from aws import BaseARN
+from .aws import Action as BaseAction
+from .aws import BaseARN
 
 service_name = 'Amazon EC2 Instance Connect'
 prefix = 'ec2-instance-connect'
