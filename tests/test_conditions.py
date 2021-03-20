@@ -7,12 +7,11 @@ import json
 
 class TestConditions(unittest.TestCase):
     def test_for_all_values(self):
-        c = aws.Condition(aws.ForAllValuesStringLike(
-            "dynamodb:requestedAttributes", [
-                "PostDateTime",
-                "Message",
-                "Tags"
-            ]))
+        c = aws.Condition(
+            aws.ForAllValuesStringLike(
+                "dynamodb:requestedAttributes", ["PostDateTime", "Message", "Tags"]
+            )
+        )
         pd = aws.PolicyDocument(
             Statement=[
                 aws.Statement(
@@ -20,14 +19,27 @@ class TestConditions(unittest.TestCase):
                     Effect=aws.Allow,
                     Resource=[s3.ARN("myBucket")],
                     Condition=c,
-                )])
-        self.assertEqual({u'Statement': [
+                )
+            ]
+        )
+        self.assertEqual(
             {
-                u'Action': [u's3:ListBucket'],
-                u'Condition': {u'ForAllValues:StringLike':
-                               {u'dynamodb:requestedAttributes':
-                                [u'PostDateTime', u'Message', u'Tags']}},
-                u'Effect': u'Allow',
-                u'Resource': [u'arn:aws:s3:::myBucket']}
-            ]},
-            json.loads(pd.to_json()))
+                u"Statement": [
+                    {
+                        u"Action": [u"s3:ListBucket"],
+                        u"Condition": {
+                            u"ForAllValues:StringLike": {
+                                u"dynamodb:requestedAttributes": [
+                                    u"PostDateTime",
+                                    u"Message",
+                                    u"Tags",
+                                ]
+                            }
+                        },
+                        u"Effect": u"Allow",
+                        u"Resource": [u"arn:aws:s3:::myBucket"],
+                    }
+                ]
+            },
+            json.loads(pd.to_json()),
+        )

@@ -10,7 +10,7 @@ import types
 
 __version__ = "1.0.4"
 
-valid_names = re.compile(r'^[a-zA-Z0-9]+$')
+valid_names = re.compile(r"^[a-zA-Z0-9]+$")
 
 
 class AWSObject:
@@ -22,7 +22,7 @@ class AWSObject:
 
         # unset/None is also legal
         if name and not valid_names.match(name):
-            raise ValueError('Name not alphanumeric')
+            raise ValueError("Name not alphanumeric")
 
         # Create the list of properties set on this object by the user
         self.properties = {}
@@ -45,7 +45,7 @@ class AWSObject:
             raise AttributeError(name) from exc
 
     def __setattr__(self, name, value):
-        if '_AWSObject__initialized' not in self.__dict__:
+        if "_AWSObject__initialized" not in self.__dict__:
             return dict.__setattr__(self, name, value)
         elif name in self.propnames:
             # Check the type of the object and compare against what we were
@@ -75,21 +75,20 @@ class AWSObject:
             # what we were expecting. Special case AWS helper functions and its
             # sub classes. Also handles AWS helper functions from other
             # libraries like cloudtools/troposphere.
-            elif isinstance(value, expected_type) or \
-                    'AWSHelperFn' in [c.__name__
-                                      for c in inspect.getmro(type(value))]:
+            elif isinstance(value, expected_type) or "AWSHelperFn" in [
+                c.__name__ for c in inspect.getmro(type(value))
+            ]:
                 return self.properties.__setitem__(name, value)
             else:
                 self._raise_type(name, value, expected_type)
 
-        full_class_name = "%s.%s" % (self.__class__.__module__,
-                                     self.__class__.__name__)
-        raise AttributeError("'%s' object does not support attribute '%s'" %
-                             (full_class_name, name))
+        full_class_name = "%s.%s" % (self.__class__.__module__, self.__class__.__name__)
+        raise AttributeError(
+            "'%s' object does not support attribute '%s'" % (full_class_name, name)
+        )
 
     def _raise_type(self, name, value, expected_type):
-        raise TypeError('%s is %s, expected %s' %
-                        (name, type(value), expected_type))
+        raise TypeError("%s is %s, expected %s" % (name, type(value), expected_type))
 
     def validate(self):
         pass
@@ -97,8 +96,7 @@ class AWSObject:
     def JSONrepr(self):
         for k, v in self.props.items():
             if v[1] and k not in self.properties:
-                raise ValueError("Resource %s required in type %s" %
-                                 (k, type(self)))
+                raise ValueError("Resource %s required in type %s" % (k, type(self)))
         self.validate()
         return self.resource
 
@@ -157,6 +155,6 @@ class AWSHelperFn:
 
 class awsencode(json.JSONEncoder):
     def default(self, obj):
-        if hasattr(obj, 'JSONrepr'):
+        if hasattr(obj, "JSONrepr"):
             return obj.JSONrepr()
         return json.JSONEncoder.default(self, obj)
