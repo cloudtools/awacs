@@ -13,8 +13,7 @@ class TestPrincipal(unittest.TestCase):
     def test_normal_principal(self):
         p = Principal("AWS", "arn:aws:iam::AccountNumber-WithoutHyphens:root")
         self.assertEqual(
-            p.data,
-            {'AWS': 'arn:aws:iam::AccountNumber-WithoutHyphens:root'}
+            p.data, {"AWS": "arn:aws:iam::AccountNumber-WithoutHyphens:root"}
         )
         with self.assertRaises(ValueError):
             p = Principal("AWS")
@@ -27,22 +26,23 @@ class TestPrincipal(unittest.TestCase):
 class TestBaseARN(unittest.TestCase):
     def test_aws(self):
         arn = BaseARN("service", "resource", "us-east-1", "account")
-        self.assertEqual(
-            arn.JSONrepr(), "arn:aws:service:us-east-1:account:resource")
+        self.assertEqual(arn.JSONrepr(), "arn:aws:service:us-east-1:account:resource")
 
     def test_cn(self):
         arn = BaseARN("service", "resource", "cn-north-1", "account")
         self.assertEqual(
-            arn.JSONrepr(), "arn:aws-cn:service:cn-north-1:account:resource")
+            arn.JSONrepr(), "arn:aws-cn:service:cn-north-1:account:resource"
+        )
 
     def test_gov(self):
         arn = BaseARN("service", "resource", "us-gov-west-1", "account")
         self.assertEqual(
-            arn.JSONrepr(),
-            "arn:aws-us-gov:service:us-gov-west-1:account:resource")
+            arn.JSONrepr(), "arn:aws-us-gov:service:us-gov-west-1:account:resource"
+        )
 
     def test_dynamic(self):
         arn = BaseARN("service", "resource", "${AWS::Region}", "account")
         self.assertEqual(
             arn.JSONrepr(),
-            "arn:${AWS::Partition}:service:${AWS::Region}:account:resource")
+            "arn:${AWS::Partition}:service:${AWS::Region}:account:resource",
+        )

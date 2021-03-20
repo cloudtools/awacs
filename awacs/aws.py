@@ -41,20 +41,20 @@ VpcSourceIp = "aws:VpcSourceIp"
 class Action(AWSHelperFn):
     def __init__(self, prefix, action=None):
         self.prefix = prefix
-        if prefix == '*' and action:
+        if prefix == "*" and action:
             raise ValueError("Action not supported with wildcard prefix")
         else:
             self.action = action
 
     def JSONrepr(self):
-        if self.prefix == '*' and not self.action:
+        if self.prefix == "*" and not self.action:
             return self.prefix
         else:
-            return ''.join([self.prefix, ":", self.action])
+            return "".join([self.prefix, ":", self.action])
 
 
 class BaseARN(AWSHelperFn):
-    def __init__(self, service, resource, region='', account=''):
+    def __init__(self, service, resource, region="", account=""):
         region_string = region.lower()
         if region == "${AWS::Region}":
             aws_partition = "${AWS::Partition}"
@@ -65,22 +65,30 @@ class BaseARN(AWSHelperFn):
         else:
             aws_partition = "aws"
 
-        regionless = ['iam', 's3']
+        regionless = ["iam", "s3"]
         if service in regionless:
             region = ""
 
         self.data = "arn:%s:%s:%s:%s:%s" % (
-            aws_partition, service, region, account, resource)
+            aws_partition,
+            service,
+            region,
+            account,
+            resource,
+        )
 
     def JSONrepr(self):
         return self.data
 
 
 class ARN(BaseARN):
-    def __init__(self, service, resource, region='', account=''):
+    def __init__(self, service, resource, region="", account=""):
         super(ARN, self).__init__(service, resource, region, account)
-        warnings.warn('This is going away. Either use a service specific '
-                      'ARN class, or use the BaseARN class.', FutureWarning)
+        warnings.warn(
+            "This is going away. Either use a service specific "
+            "ARN class, or use the BaseARN class.",
+            FutureWarning,
+        )
 
 
 class ConditionElement(AWSHelperFn):
@@ -117,8 +125,7 @@ class Condition(AWSHelperFn):
         elif isinstance(conditions, list):
             for c in conditions:
                 if not isinstance(c, ConditionElement):
-                    raise ValueError(
-                        "ConditionElement is type %s" % (type(c),))
+                    raise ValueError("ConditionElement is type %s" % (type(c),))
             self.conditions = conditions
         else:
             raise TypeError
@@ -136,15 +143,14 @@ class Principal(AWSHelperFn):
     def __init__(self, principal, resources=None):
         if principal == "*":
             if resources:
-                raise ValueError("Cannot provide resources if principal is "
-                                 "'*'.")
+                raise ValueError("Cannot provide resources if principal is " "'*'.")
             self.data = "*"
         else:
             if not resources:
                 raise ValueError("Must provide resources with principal.")
             if principal not in self.VALID_PRINCIPALS:
-                raise ValueError("Principal must be one of: %s" % (
-                    ', '.join(self.VALID_PRINCIPALS))
+                raise ValueError(
+                    "Principal must be one of: %s" % (", ".join(self.VALID_PRINCIPALS))
                 )
             self.data = {principal: resources}
 
@@ -155,7 +161,7 @@ class Principal(AWSHelperFn):
 class AWSPrincipal(Principal):
     def __init__(self, principals):
         sup = super(AWSPrincipal, self)
-        sup.__init__('AWS', principals)
+        sup.__init__("AWS", principals)
 
 
 def effect(x):
@@ -166,23 +172,23 @@ def effect(x):
 
 class Statement(AWSProperty):
     props = {
-        'Action': ([Action], False),
-        'Condition': (Condition, False),
-        'Effect': (effect, True),
-        'NotAction': (list, False),
-        'NotPrincipal': (Principal, False),
-        'Principal': (Principal, False),
-        'Resource': (list, False),
-        'NotResource': (list, False),
-        'Sid': (str, False),
+        "Action": ([Action], False),
+        "Condition": (Condition, False),
+        "Effect": (effect, True),
+        "NotAction": (list, False),
+        "NotPrincipal": (Principal, False),
+        "Principal": (Principal, False),
+        "Resource": (list, False),
+        "NotResource": (list, False),
+        "Sid": (str, False),
     }
 
 
 class Policy(AWSProperty):
     props = {
-        'Id': (str, False),
-        'Statement': ([Statement], True),
-        'Version': (str, False),
+        "Id": (str, False),
+        "Statement": ([Statement], True),
+        "Version": (str, False),
     }
 
     def JSONrepr(self):
@@ -222,20 +228,18 @@ _condition_strings = [
     "StringNotLike",
 ]
 
-_condition_qualifier_strings = [
-    "ForAnyValue",
-    "ForAllValues"
-]
+_condition_qualifier_strings = ["ForAnyValue", "ForAllValues"]
 
 
 def make_condition(type_name, condition_name):
-    globals()[type_name] = type(type_name, (ConditionElement,),
-                                dict(condition=condition_name))
-    globals()[type_name + "IfExists"] = type(type_name + "IfExists",
-                                             (ConditionElement,),
-                                             dict(
-                                                  condition=condition_name +
-                                                  "IfExists"))
+    globals()[type_name] = type(
+        type_name, (ConditionElement,), dict(condition=condition_name)
+    )
+    globals()[type_name + "IfExists"] = type(
+        type_name + "IfExists",
+        (ConditionElement,),
+        dict(condition=condition_name + "IfExists"),
+    )
 
 
 # Create condition classes
@@ -243,4 +247,4 @@ for i in _condition_strings:
     make_condition(i, i)
 
     for qual in _condition_qualifier_strings:
-        make_condition(qual+i, "%s:%s" % (qual, i))
+        make_condition(qual + i, "%s:%s" % (qual, i))

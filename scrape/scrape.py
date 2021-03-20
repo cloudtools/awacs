@@ -30,10 +30,9 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 """
 
 CLASSES_S3 = """\
@@ -44,20 +43,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
         # account is empty for S3
-        account = ''
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        account = ""
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 """
 
 LEGACY_ARN_CLASS = """\
 class {upper}_ARN(ARN):
     def __init__(self, *args, **kwargs):
         super({upper}_ARN, self).__init__(*args, **kwargs)
-        warnings.warn("This class is going away. Use {lower}.ARN instead.",
-                      FutureWarning)
+        warnings.warn("This class is going away. Use {lower}.ARN instead.", FutureWarning)
 """
 
 LEGACY_ARNS = ["iam", "s3", "sdb", "sns", "sqs"]
@@ -94,9 +91,7 @@ async def main() -> None:
     service_page_responses = await collect_service_info()
 
     for r in service_page_responses:
-        service_name, service_prefix, actions = await extract_actions(
-            html=r.text
-        )
+        service_name, service_prefix, actions = await extract_actions(html=r.text)
         services_with_actions[service_prefix].update(actions)
 
         if IGNORED_SERVICE_ALIASES.get(service_name) != service_prefix:
@@ -113,15 +108,11 @@ async def main() -> None:
 
     original_services_with_actions = await collect_existing_actions()
     for service_prefix, actions in services_with_actions.items():
-        actions.update(
-            original_services_with_actions.get(service_prefix) or set()
-        )
+        actions.update(original_services_with_actions.get(service_prefix) or set())
 
     await asyncio.gather(
         *(
-            write_service(
-                service_prefix, service_names[service_prefix], actions
-            )
+            write_service(service_prefix, service_names[service_prefix], actions)
             for service_prefix, actions in services_with_actions.items()
         )
     )
@@ -130,18 +121,14 @@ async def main() -> None:
 async def collect_existing_actions() -> Dict[str, Set[str]]:
     # pylint: disable=import-outside-toplevel
     if "" in sys.path:
-        sys.path.remove(
-            ""
-        )  # Import the installed awacs (that was processed by 2to3)
+        sys.path.remove("")  # Import the installed awacs (that was processed by 2to3)
 
     import awacs
     from awacs.aws import Action as BaseAction
 
     services_with_actions: DefaultDict[str, Set[str]] = DefaultDict(set)
 
-    for path in (
-        path.stem for path in Path(awacs.__file__).parent.glob("*.py")
-    ):
+    for path in (path.stem for path in Path(awacs.__file__).parent.glob("*.py")):
         if path.startswith("__"):
             continue
         module = importlib.import_module(f"awacs.{path}")
@@ -190,7 +177,7 @@ async def collect_service_info() -> List[httpx.Response]:
             service_page_responses += await asyncio.gather(
                 *[
                     client.get(urllib.parse.urljoin(BASE_URL, link))
-                    for link in service_links[start:start + max_connections]
+                    for link in service_links[start : start + max_connections]
                 ]
             )
         return service_page_responses
@@ -224,19 +211,18 @@ async def write_service(
     content: List[str] = []
     if service_prefix in LEGACY_ARNS:
         content.append("import warnings")
+        content.append("")
     content.append(HEADER)
 
-    content.append(f"service_name = '{service_name}'")
-    content.append(f"prefix = '{service_prefix}'")
+    content.append(f'service_name = "{service_name}"')
+    content.append(f'prefix = "{service_prefix}"')
     content.append("")
     content.append("")
     content.append(CLASSES_S3 if service_prefix == "s3" else CLASSES)
     content.append("")
     if service_prefix in LEGACY_ARNS:
         content.append(
-            LEGACY_ARN_CLASS.format(
-                lower=service_prefix, upper=service_prefix.upper()
-            )
+            LEGACY_ARN_CLASS.format(lower=service_prefix, upper=service_prefix.upper())
         )
         content.append("")
 
@@ -245,11 +231,12 @@ async def write_service(
         # Handle action such as "ReEncrypt*"
         if action[-1] == "*":
             action = action[:-1]
-        # Wrap lines for pep8
-        if len(action) > 30:
-            action_string = "{action} = \\\n    Action('{action}')"
+        # Wrap lines for black
+        linelength = len(action) * 2 + 13
+        if linelength >= 88:
+            action_string = '{action} = Action(\n    "{action}"\n)'
         else:
-            action_string = "{action} = Action('{action}')"
+            action_string = '{action} = Action("{action}")'
         content.append(action_string.format(action=action))
 
     if content[-1] != "":
