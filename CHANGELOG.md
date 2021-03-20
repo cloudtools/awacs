@@ -1,3 +1,12 @@
+## 1.0.4 (2021-03-20)
+* Action Update 2021-11
+* Fix scrape breakage by mapping "Amazon Simple Email Service v2" to "ses"
+* Map lambda to awslambda and remove lambda.py
+* Action Update 2021-11
+* Update copyright date
+* Update "make test" to not use the deleted tools directory
+* Fix pycodestyle issue with using a lambda in scrape.py
+
 ## 1.0.3 (2021-03-08)
 * Fix typo in CHANGELOG
 * Action Update 2021-04
