@@ -3,8 +3,8 @@
 #
 # See LICENSE file for full license.
 
-from aws import Action as BaseAction
-from aws import BaseARN
+from .aws import Action as BaseAction
+from .aws import BaseARN
 
 service_name = 'AWS WAF V2'
 prefix = 'wafv2'
