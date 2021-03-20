@@ -1,5 +1,5 @@
 import warnings
-# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# Copyright (c) 2012-2021, Mark Peek <mark@peek.org>
 # All rights reserved.
 #
 # See LICENSE file for full license.

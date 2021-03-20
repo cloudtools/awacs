@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://docs.aws.amazon.com/IAM/latest/UserGuide/"
 
 HEADER = """\
-# Copyright (c) 2012-2013, Mark Peek <mark@peek.org>
+# Copyright (c) 2012-2021, Mark Peek <mark@peek.org>
 # All rights reserved.
 #
 # See LICENSE file for full license.
