@@ -214,12 +214,7 @@ async def write_service(
         # Handle action such as "ReEncrypt*"
         if action[-1] == "*":
             action = action[:-1]
-        # Wrap lines for black
-        linelength = len(action) * 2 + 13
-        if linelength >= 88:
-            action_string = '{action} = Action(\n    "{action}"\n)'
-        else:
-            action_string = '{action} = Action("{action}")'
+        action_string = '{action} = Action("{action}")'
         content.append(action_string.format(action=action))
 
     if content[-1] != "":
@@ -261,3 +256,4 @@ def is_service_prefix(tag):
 
 if __name__ == "__main__":
     asyncio.run(main())
+    print("And now run 'black awacs/'", flush=True)
