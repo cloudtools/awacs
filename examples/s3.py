@@ -2,11 +2,16 @@
 # http://docs.aws.amazon.com/IAM/latest/UserGuide/
 # ExampleIAMPolicies.html#iampolicy-example-s3homedir
 
-from awacs.aws import Action, Allow, Condition
-from awacs.aws import Policy, Statement
-from awacs.aws import StringEquals, StringLike
 import awacs.s3 as s3
-
+from awacs.aws import (
+    Action,
+    Allow,
+    Condition,
+    Policy,
+    Statement,
+    StringEquals,
+    StringLike,
+)
 
 pd = Policy(
     Statement=[

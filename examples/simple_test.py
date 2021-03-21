@@ -1,6 +1,5 @@
 from awacs.aws import Action, Allow, Policy, Statement
 
-
 pd = Policy(
     Statement=[
         Statement(

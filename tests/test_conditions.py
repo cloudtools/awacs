@@ -1,8 +1,8 @@
+import json
 import unittest
 
 import awacs.aws as aws
 import awacs.s3 as s3
-import json
 
 
 class TestConditions(unittest.TestCase):

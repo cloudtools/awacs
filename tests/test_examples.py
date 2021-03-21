@@ -2,7 +2,6 @@ import os
 import re
 import sys
 import unittest
-
 from functools import partial
 
 
