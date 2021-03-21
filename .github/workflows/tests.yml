@@ -34,6 +34,20 @@ jobs:
           PYVERSION=$(python -c "import sys; print(''.join([str(sys.version_info.major), str(sys.version_info.minor)]))")
           python -m tox -f $(python -m tox --listenvs | grep "^py${PYVERSION}" | tr '\n' ',')
 
+  mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip tox
+      - name: Run mypy
+        run: python -m tox -e mypy
+
   lint:
     runs-on: ubuntu-latest
     steps:
