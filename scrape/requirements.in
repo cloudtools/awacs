@@ -1,5 +1,10 @@
 aiofiles>=0.6.0
 beautifulsoup4>=4.9.3
+black==20.8b1
 httpx[http2]>=0.16.1
+isort==5.8.0
 lxml>=4.6.2
+pycodestyle==2.7.0
+pyflakes==2.3.0
+tox==3.23.0
 wheel>=0.36.2
