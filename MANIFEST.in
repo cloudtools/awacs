@@ -7,4 +7,5 @@ recursive-include examples *.py
 recursive-include tests *.py
 
 exclude Makefile
+exclude mypy.ini
 recursive-exclude scrape *
