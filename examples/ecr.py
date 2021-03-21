@@ -20,7 +20,7 @@ pd = Policy(
                 ecr.ListImages,
                 ecr.BatchGetImage,
             ],
-            Resource=['*']
+            Resource=["*"],
         )
     ]
 )

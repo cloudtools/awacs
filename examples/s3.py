@@ -13,26 +13,28 @@ pd = Policy(
         Statement(
             Action=[s3.ListAllMyBuckets, s3.GetBucketLocation],
             Effect=Allow,
-            Resource=[s3.ARN("*"), ],
+            Resource=[
+                s3.ARN("*"),
+            ],
         ),
         Statement(
             Action=[s3.ListBucket],
             Effect=Allow,
             Resource=[s3.ARN("myBucket")],
             Condition=Condition(
-                StringEquals({
-                    's3:prefix': ['', 'home/'],
-                    's3:delimiter': ['/'],
-                }),
+                StringEquals(
+                    {
+                        "s3:prefix": ["", "home/"],
+                        "s3:delimiter": ["/"],
+                    }
+                ),
             ),
         ),
         Statement(
             Action=[s3.ListBucket],
             Effect=Allow,
             Resource=[s3.ARN("myBucket")],
-            Condition=Condition(
-                StringLike("s3:prefix", ["home/${aws:username}/*"])
-            ),
+            Condition=Condition(StringLike("s3:prefix", ["home/${aws:username}/*"])),
         ),
         Statement(
             Action=[Action("s3", "*")],
