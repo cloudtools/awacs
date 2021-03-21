@@ -11,15 +11,15 @@ prefix = "appstream"
 
 
 class Action(BaseAction):
-    def __init__(self, action=None):
-        sup = super(Action, self)
-        sup.__init__(prefix, action)
+    def __init__(self, action: str = None) -> None:
+        super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
-    def __init__(self, resource="", region="", account=""):
-        sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region, account=account)
+    def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
+        super().__init__(
+            service=prefix, resource=resource, region=region, account=account
+        )
 
 
 AssociateFleet = Action("AssociateFleet")

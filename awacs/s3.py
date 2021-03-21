@@ -11,17 +11,14 @@ prefix = "s3"
 
 
 class Action(BaseAction):
-    def __init__(self, action=None):
-        sup = super(Action, self)
-        sup.__init__(prefix, action)
+    def __init__(self, action: str = None) -> None:
+        super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
-    def __init__(self, resource="", region="", account=""):
-        sup = super(ARN, self)
+    def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
         # account is empty for S3
-        account = ""
-        sup.__init__(service=prefix, resource=resource, region=region, account=account)
+        super().__init__(service=prefix, resource=resource, region=region, account="")
 
 
 AbortMultipartUpload = Action("AbortMultipartUpload")
