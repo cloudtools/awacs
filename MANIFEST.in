@@ -1,4 +1,10 @@
 include LICENSE
-include README.md
+include *.md
 include .gitignore
+include tox.ini
+recursive-include awacs *.py
 recursive-include examples *.py
+recursive-include tests *.py
+
+exclude Makefile
+recursive-exclude scrape *

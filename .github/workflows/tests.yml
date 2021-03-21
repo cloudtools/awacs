@@ -47,5 +47,5 @@ jobs:
           python -m pip install --upgrade pip tox
       - name: Lint code
         run: python -m tox -e qa
-      - name: Check readme
-        run: python -m tox -e readme
+      - name: Check manifest and readme
+        run: python -m tox -e package
