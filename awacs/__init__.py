@@ -7,6 +7,7 @@ import inspect
 import json
 import re
 import types
+from typing import Any, NoReturn, Optional, TypeVar, Union
 
 __version__ = "1.0.4"
 
@@ -14,18 +15,25 @@ valid_names = re.compile(r"^[a-zA-Z0-9]+$")
 
 
 class AWSObject:
-    def __init__(self, name, type=None, dictname=None, props={}, **kwargs):
+    def __init__(
+        self,
+        name: Optional[str],
+        type: Any = None,
+        dictname: Any = None,
+        props: dict = None,
+        **kwargs: Any
+    ) -> None:
         self.name = name
-        self.props = props
+        self.props = props or {}
         # Cache the keys for validity checks
-        self.propnames = props.keys()
+        self.propnames = self.props.keys()
 
         # unset/None is also legal
         if name and not valid_names.match(name):
             raise ValueError("Name not alphanumeric")
 
         # Create the list of properties set on this object by the user
-        self.properties = {}
+        self.properties: dict = {}
         if dictname:
             self.resource = {
                 dictname: self.properties,
@@ -38,13 +46,13 @@ class AWSObject:
         for k, v in kwargs.items():
             self.__setattr__(k, v)
 
-    def __getattr__(self, name):
+    def __getattr__(self, name: str) -> Any:
         try:
             return self.properties.__getitem__(name)
         except KeyError as exc:
             raise AttributeError(name) from exc
 
-    def __setattr__(self, name, value):
+    def __setattr__(self, name: str, value: Any) -> Any:
         if "_AWSObject__initialized" not in self.__dict__:
             return dict.__setattr__(self, name, value)
         elif name in self.propnames:
@@ -87,33 +95,33 @@ class AWSObject:
             "'%s' object does not support attribute '%s'" % (full_class_name, name)
         )
 
-    def _raise_type(self, name, value, expected_type):
+    def _raise_type(self, name: str, value: Any, expected_type: Any) -> NoReturn:
         raise TypeError("%s is %s, expected %s" % (name, type(value), expected_type))
 
-    def validate(self):
+    def validate(self) -> None:
         pass
 
-    def JSONrepr(self):
+    def JSONrepr(self) -> dict:
         for k, v in self.props.items():
             if v[1] and k not in self.properties:
                 raise ValueError("Resource %s required in type %s" % (k, type(self)))
         self.validate()
         return self.resource
 
-    def to_json(self, indent=4, sort_keys=True):
+    def to_json(self, indent: int = 4, sort_keys: bool = True) -> str:
         p = self.properties
         return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
             return self.to_json() == other.to_json()
         else:
             return False
 
-    def __ne__(self, other):
+    def __ne__(self, other: Any) -> bool:
         return not self == other
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         return hash(self.to_json())
 
 
@@ -124,36 +132,39 @@ class AWSProperty(AWSObject):
     aws-product-property-reference.html
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs: Any) -> None:
         super().__init__(None, props=self.props, **kwargs)
 
 
+T = TypeVar("T")
+
+
 class AWSHelperFn:
-    def getdata(self, data):
+    def getdata(self, data: Union[AWSObject, T]) -> Union[str, None, T]:
         if isinstance(data, AWSObject):
             return data.name
         else:
             return data
 
-    def to_json(self, indent=4, sort_keys=True):
+    def to_json(self, indent: int = 4, sort_keys: bool = True) -> str:
         p = self
         return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
             return self.to_json() == other.to_json()
         else:
             return False
 
-    def __ne__(self, other):
+    def __ne__(self, other: Any) -> bool:
         return not self == other
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         return hash(self.to_json())
 
 
 class awsencode(json.JSONEncoder):
-    def default(self, obj):
+    def default(self, obj: Any) -> Any:
         if hasattr(obj, "JSONrepr"):
             return obj.JSONrepr()
         return json.JSONEncoder.default(self, obj)

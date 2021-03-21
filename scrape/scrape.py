@@ -24,12 +24,12 @@ from .aws import BaseARN
 
 CLASSES = """\
 class Action(BaseAction):
-    def __init__(self, action=None):
+    def __init__(self, action: str = None) -> None:
         super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
-    def __init__(self, resource="", region="", account=""):
+    def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
         super().__init__(
             service=prefix, resource=resource, region=region, account=account
         )
@@ -37,13 +37,12 @@ class ARN(BaseARN):
 
 CLASSES_S3 = """\
 class Action(BaseAction):
-    def __init__(self, action=None):
+    def __init__(self, action: str = None) -> None:
         super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
-    def __init__(self, resource="", region="", account=""):
-        sup = super(ARN, self)
+    def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
         # account is empty for S3
         super().__init__(service=prefix, resource=resource, region=region, account="")
 """
