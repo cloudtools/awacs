@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon FreeRTOS'
-prefix = 'freertos'
+service_name = "Amazon FreeRTOS"
+prefix = "freertos"
 
 
 class Action(BaseAction):
@@ -17,20 +17,19 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateSoftwareConfiguration = Action('CreateSoftwareConfiguration')
-DeleteSoftwareConfiguration = Action('DeleteSoftwareConfiguration')
-DescribeHardwarePlatform = Action('DescribeHardwarePlatform')
-DescribeSoftwareConfiguration = Action('DescribeSoftwareConfiguration')
-GetSoftwareURL = Action('GetSoftwareURL')
-GetSoftwareURLForConfiguration = Action('GetSoftwareURLForConfiguration')
-ListFreeRTOSVersions = Action('ListFreeRTOSVersions')
-ListHardwarePlatforms = Action('ListHardwarePlatforms')
-ListHardwareVendors = Action('ListHardwareVendors')
-ListSoftwareConfigurations = Action('ListSoftwareConfigurations')
-UpdateSoftwareConfiguration = Action('UpdateSoftwareConfiguration')
+CreateSoftwareConfiguration = Action("CreateSoftwareConfiguration")
+DeleteSoftwareConfiguration = Action("DeleteSoftwareConfiguration")
+DescribeHardwarePlatform = Action("DescribeHardwarePlatform")
+DescribeSoftwareConfiguration = Action("DescribeSoftwareConfiguration")
+GetSoftwareURL = Action("GetSoftwareURL")
+GetSoftwareURLForConfiguration = Action("GetSoftwareURLForConfiguration")
+ListFreeRTOSVersions = Action("ListFreeRTOSVersions")
+ListHardwarePlatforms = Action("ListHardwarePlatforms")
+ListHardwareVendors = Action("ListHardwareVendors")
+ListSoftwareConfigurations = Action("ListSoftwareConfigurations")
+UpdateSoftwareConfiguration = Action("UpdateSoftwareConfiguration")

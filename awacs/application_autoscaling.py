@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Application Auto Scaling'
-prefix = 'application-autoscaling'
+service_name = "Application Auto Scaling"
+prefix = "application-autoscaling"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DeleteScalingPolicy = Action('DeleteScalingPolicy')
-DeleteScheduledAction = Action('DeleteScheduledAction')
-DeregisterScalableTarget = Action('DeregisterScalableTarget')
-DescribeScalableTargets = Action('DescribeScalableTargets')
-DescribeScalingActivities = Action('DescribeScalingActivities')
-DescribeScalingPolicies = Action('DescribeScalingPolicies')
-DescribeScheduledActions = Action('DescribeScheduledActions')
-PutScalingPolicy = Action('PutScalingPolicy')
-PutScheduledAction = Action('PutScheduledAction')
-RegisterScalableTarget = Action('RegisterScalableTarget')
+DeleteScalingPolicy = Action("DeleteScalingPolicy")
+DeleteScheduledAction = Action("DeleteScheduledAction")
+DeregisterScalableTarget = Action("DeregisterScalableTarget")
+DescribeScalableTargets = Action("DescribeScalableTargets")
+DescribeScalingActivities = Action("DescribeScalingActivities")
+DescribeScalingPolicies = Action("DescribeScalingPolicies")
+DescribeScheduledActions = Action("DescribeScheduledActions")
+PutScalingPolicy = Action("PutScalingPolicy")
+PutScheduledAction = Action("PutScheduledAction")
+RegisterScalableTarget = Action("RegisterScalableTarget")

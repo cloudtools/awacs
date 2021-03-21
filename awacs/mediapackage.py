@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental MediaPackage'
-prefix = 'mediapackage'
+service_name = "AWS Elemental MediaPackage"
+prefix = "mediapackage"
 
 
 class Action(BaseAction):
@@ -17,27 +17,25 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateChannel = Action('CreateChannel')
-CreateHarvestJob = Action('CreateHarvestJob')
-CreateOriginEndpoint = Action('CreateOriginEndpoint')
-DeleteChannel = Action('DeleteChannel')
-DeleteOriginEndpoint = Action('DeleteOriginEndpoint')
-DescribeChannel = Action('DescribeChannel')
-DescribeHarvestJob = Action('DescribeHarvestJob')
-DescribeOriginEndpoint = Action('DescribeOriginEndpoint')
-ListChannels = Action('ListChannels')
-ListHarvestJobs = Action('ListHarvestJobs')
-ListOriginEndpoints = Action('ListOriginEndpoints')
-ListTagsForResource = Action('ListTagsForResource')
-RotateIngestEndpointCredentials = \
-    Action('RotateIngestEndpointCredentials')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateChannel = Action('UpdateChannel')
-UpdateOriginEndpoint = Action('UpdateOriginEndpoint')
+CreateChannel = Action("CreateChannel")
+CreateHarvestJob = Action("CreateHarvestJob")
+CreateOriginEndpoint = Action("CreateOriginEndpoint")
+DeleteChannel = Action("DeleteChannel")
+DeleteOriginEndpoint = Action("DeleteOriginEndpoint")
+DescribeChannel = Action("DescribeChannel")
+DescribeHarvestJob = Action("DescribeHarvestJob")
+DescribeOriginEndpoint = Action("DescribeOriginEndpoint")
+ListChannels = Action("ListChannels")
+ListHarvestJobs = Action("ListHarvestJobs")
+ListOriginEndpoints = Action("ListOriginEndpoints")
+ListTagsForResource = Action("ListTagsForResource")
+RotateIngestEndpointCredentials = Action("RotateIngestEndpointCredentials")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateChannel = Action("UpdateChannel")
+UpdateOriginEndpoint = Action("UpdateOriginEndpoint")

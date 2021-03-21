@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Lake Formation'
-prefix = 'lakeformation'
+service_name = "AWS Lake Formation"
+prefix = "lakeformation"
 
 
 class Action(BaseAction):
@@ -17,23 +17,22 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-BatchGrantPermissions = Action('BatchGrantPermissions')
-BatchRevokePermissions = Action('BatchRevokePermissions')
-DeregisterResource = Action('DeregisterResource')
-DescribeResource = Action('DescribeResource')
-GetDataAccess = Action('GetDataAccess')
-GetDataLakeSettings = Action('GetDataLakeSettings')
-GetEffectivePermissionsForPath = Action('GetEffectivePermissionsForPath')
-GrantPermissions = Action('GrantPermissions')
-ListPermissions = Action('ListPermissions')
-ListResources = Action('ListResources')
-PutDataLakeSettings = Action('PutDataLakeSettings')
-RegisterResource = Action('RegisterResource')
-RevokePermissions = Action('RevokePermissions')
-UpdateResource = Action('UpdateResource')
+BatchGrantPermissions = Action("BatchGrantPermissions")
+BatchRevokePermissions = Action("BatchRevokePermissions")
+DeregisterResource = Action("DeregisterResource")
+DescribeResource = Action("DescribeResource")
+GetDataAccess = Action("GetDataAccess")
+GetDataLakeSettings = Action("GetDataLakeSettings")
+GetEffectivePermissionsForPath = Action("GetEffectivePermissionsForPath")
+GrantPermissions = Action("GrantPermissions")
+ListPermissions = Action("ListPermissions")
+ListResources = Action("ListResources")
+PutDataLakeSettings = Action("PutDataLakeSettings")
+RegisterResource = Action("RegisterResource")
+RevokePermissions = Action("RevokePermissions")
+UpdateResource = Action("UpdateResource")

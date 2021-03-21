@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Managed Service for Prometheus'
-prefix = 'aps'
+service_name = "Amazon Managed Service for Prometheus"
+prefix = "aps"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateWorkspace = Action('CreateWorkspace')
-DeleteWorkspace = Action('DeleteWorkspace')
-DescribeWorkspace = Action('DescribeWorkspace')
-GetLabels = Action('GetLabels')
-GetMetricMetadata = Action('GetMetricMetadata')
-GetSeries = Action('GetSeries')
-ListWorkspaces = Action('ListWorkspaces')
-QueryMetrics = Action('QueryMetrics')
-RemoteWrite = Action('RemoteWrite')
-UpdateWorkspaceAlias = Action('UpdateWorkspaceAlias')
+CreateWorkspace = Action("CreateWorkspace")
+DeleteWorkspace = Action("DeleteWorkspace")
+DescribeWorkspace = Action("DescribeWorkspace")
+GetLabels = Action("GetLabels")
+GetMetricMetadata = Action("GetMetricMetadata")
+GetSeries = Action("GetSeries")
+ListWorkspaces = Action("ListWorkspaces")
+QueryMetrics = Action("QueryMetrics")
+RemoteWrite = Action("RemoteWrite")
+UpdateWorkspaceAlias = Action("UpdateWorkspaceAlias")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Elastic Block Store'
-prefix = 'ebs'
+service_name = "Amazon Elastic Block Store"
+prefix = "ebs"
 
 
 class Action(BaseAction):
@@ -17,15 +17,14 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CompleteSnapshot = Action('CompleteSnapshot')
-GetSnapshotBlock = Action('GetSnapshotBlock')
-ListChangedBlocks = Action('ListChangedBlocks')
-ListSnapshotBlocks = Action('ListSnapshotBlocks')
-PutSnapshotBlock = Action('PutSnapshotBlock')
-StartSnapshot = Action('StartSnapshot')
+CompleteSnapshot = Action("CompleteSnapshot")
+GetSnapshotBlock = Action("GetSnapshotBlock")
+ListChangedBlocks = Action("ListChangedBlocks")
+ListSnapshotBlocks = Action("ListSnapshotBlocks")
+PutSnapshotBlock = Action("PutSnapshotBlock")
+StartSnapshot = Action("StartSnapshot")

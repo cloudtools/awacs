@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Resource Group Tagging API'
-prefix = 'tag'
+service_name = "Amazon Resource Group Tagging API"
+prefix = "tag"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AddResourceTags = Action('AddResourceTags')
-DescribeReportCreation = Action('DescribeReportCreation')
-GetComplianceSummary = Action('GetComplianceSummary')
-GetResources = Action('GetResources')
-GetTagKeys = Action('GetTagKeys')
-GetTagValues = Action('GetTagValues')
-RemoveResourceTags = Action('RemoveResourceTags')
-StartReportCreation = Action('StartReportCreation')
-TagResources = Action('TagResources')
-UntagResources = Action('UntagResources')
+AddResourceTags = Action("AddResourceTags")
+DescribeReportCreation = Action("DescribeReportCreation")
+GetComplianceSummary = Action("GetComplianceSummary")
+GetResources = Action("GetResources")
+GetTagKeys = Action("GetTagKeys")
+GetTagValues = Action("GetTagValues")
+RemoveResourceTags = Action("RemoveResourceTags")
+StartReportCreation = Action("StartReportCreation")
+TagResources = Action("TagResources")
+UntagResources = Action("UntagResources")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Cognito Sync'
-prefix = 'cognito-sync'
+service_name = "Amazon Cognito Sync"
+prefix = "cognito-sync"
 
 
 class Action(BaseAction):
@@ -17,28 +17,27 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-BulkPublish = Action('BulkPublish')
-DeleteDataset = Action('DeleteDataset')
-DescribeDataset = Action('DescribeDataset')
-DescribeIdentityPoolUsage = Action('DescribeIdentityPoolUsage')
-DescribeIdentityUsage = Action('DescribeIdentityUsage')
-GetBulkPublishDetails = Action('GetBulkPublishDetails')
-GetCognitoEvents = Action('GetCognitoEvents')
-GetIdentityPoolConfiguration = Action('GetIdentityPoolConfiguration')
-ListDatasets = Action('ListDatasets')
-ListIdentityPoolUsage = Action('ListIdentityPoolUsage')
-ListRecords = Action('ListRecords')
-QueryRecords = Action('QueryRecords')
-RegisterDevice = Action('RegisterDevice')
-SetCognitoEvents = Action('SetCognitoEvents')
-SetDatasetConfiguration = Action('SetDatasetConfiguration')
-SetIdentityPoolConfiguration = Action('SetIdentityPoolConfiguration')
-SubscribeToDataset = Action('SubscribeToDataset')
-UnsubscribeFromDataset = Action('UnsubscribeFromDataset')
-UpdateRecords = Action('UpdateRecords')
+BulkPublish = Action("BulkPublish")
+DeleteDataset = Action("DeleteDataset")
+DescribeDataset = Action("DescribeDataset")
+DescribeIdentityPoolUsage = Action("DescribeIdentityPoolUsage")
+DescribeIdentityUsage = Action("DescribeIdentityUsage")
+GetBulkPublishDetails = Action("GetBulkPublishDetails")
+GetCognitoEvents = Action("GetCognitoEvents")
+GetIdentityPoolConfiguration = Action("GetIdentityPoolConfiguration")
+ListDatasets = Action("ListDatasets")
+ListIdentityPoolUsage = Action("ListIdentityPoolUsage")
+ListRecords = Action("ListRecords")
+QueryRecords = Action("QueryRecords")
+RegisterDevice = Action("RegisterDevice")
+SetCognitoEvents = Action("SetCognitoEvents")
+SetDatasetConfiguration = Action("SetDatasetConfiguration")
+SetIdentityPoolConfiguration = Action("SetIdentityPoolConfiguration")
+SubscribeToDataset = Action("SubscribeToDataset")
+UnsubscribeFromDataset = Action("UnsubscribeFromDataset")
+UpdateRecords = Action("UpdateRecords")

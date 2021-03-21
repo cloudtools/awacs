@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Textract'
-prefix = 'textract'
+service_name = "Amazon Textract"
+prefix = "textract"
 
 
 class Action(BaseAction):
@@ -17,15 +17,14 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AnalyzeDocument = Action('AnalyzeDocument')
-DetectDocumentText = Action('DetectDocumentText')
-GetDocumentAnalysis = Action('GetDocumentAnalysis')
-GetDocumentTextDetection = Action('GetDocumentTextDetection')
-StartDocumentAnalysis = Action('StartDocumentAnalysis')
-StartDocumentTextDetection = Action('StartDocumentTextDetection')
+AnalyzeDocument = Action("AnalyzeDocument")
+DetectDocumentText = Action("DetectDocumentText")
+GetDocumentAnalysis = Action("GetDocumentAnalysis")
+GetDocumentTextDetection = Action("GetDocumentTextDetection")
+StartDocumentAnalysis = Action("StartDocumentAnalysis")
+StartDocumentTextDetection = Action("StartDocumentTextDetection")

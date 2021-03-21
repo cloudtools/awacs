@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Comprehend Medical'
-prefix = 'comprehendmedical'
+service_name = "Amazon Comprehend Medical"
+prefix = "comprehendmedical"
 
 
 class Action(BaseAction):
@@ -17,30 +17,29 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DescribeEntitiesDetectionV2Job = Action('DescribeEntitiesDetectionV2Job')
-DescribeICD10CMInferenceJob = Action('DescribeICD10CMInferenceJob')
-DescribePHIDetectionJob = Action('DescribePHIDetectionJob')
-DescribeRxNormInferenceJob = Action('DescribeRxNormInferenceJob')
-DetectEntities = Action('DetectEntities')
-DetectEntitiesV2 = Action('DetectEntitiesV2')
-DetectPHI = Action('DetectPHI')
-InferICD10CM = Action('InferICD10CM')
-InferRxNorm = Action('InferRxNorm')
-ListEntitiesDetectionV2Jobs = Action('ListEntitiesDetectionV2Jobs')
-ListICD10CMInferenceJobs = Action('ListICD10CMInferenceJobs')
-ListPHIDetectionJobs = Action('ListPHIDetectionJobs')
-ListRxNormInferenceJobs = Action('ListRxNormInferenceJobs')
-StartEntitiesDetectionV2Job = Action('StartEntitiesDetectionV2Job')
-StartICD10CMInferenceJob = Action('StartICD10CMInferenceJob')
-StartPHIDetectionJob = Action('StartPHIDetectionJob')
-StartRxNormInferenceJob = Action('StartRxNormInferenceJob')
-StopEntitiesDetectionV2Job = Action('StopEntitiesDetectionV2Job')
-StopICD10CMInferenceJob = Action('StopICD10CMInferenceJob')
-StopPHIDetectionJob = Action('StopPHIDetectionJob')
-StopRxNormInferenceJob = Action('StopRxNormInferenceJob')
+DescribeEntitiesDetectionV2Job = Action("DescribeEntitiesDetectionV2Job")
+DescribeICD10CMInferenceJob = Action("DescribeICD10CMInferenceJob")
+DescribePHIDetectionJob = Action("DescribePHIDetectionJob")
+DescribeRxNormInferenceJob = Action("DescribeRxNormInferenceJob")
+DetectEntities = Action("DetectEntities")
+DetectEntitiesV2 = Action("DetectEntitiesV2")
+DetectPHI = Action("DetectPHI")
+InferICD10CM = Action("InferICD10CM")
+InferRxNorm = Action("InferRxNorm")
+ListEntitiesDetectionV2Jobs = Action("ListEntitiesDetectionV2Jobs")
+ListICD10CMInferenceJobs = Action("ListICD10CMInferenceJobs")
+ListPHIDetectionJobs = Action("ListPHIDetectionJobs")
+ListRxNormInferenceJobs = Action("ListRxNormInferenceJobs")
+StartEntitiesDetectionV2Job = Action("StartEntitiesDetectionV2Job")
+StartICD10CMInferenceJob = Action("StartICD10CMInferenceJob")
+StartPHIDetectionJob = Action("StartPHIDetectionJob")
+StartRxNormInferenceJob = Action("StartRxNormInferenceJob")
+StopEntitiesDetectionV2Job = Action("StopEntitiesDetectionV2Job")
+StopICD10CMInferenceJob = Action("StopICD10CMInferenceJob")
+StopPHIDetectionJob = Action("StopPHIDetectionJob")
+StopRxNormInferenceJob = Action("StopRxNormInferenceJob")

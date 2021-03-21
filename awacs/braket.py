@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Braket'
-prefix = 'braket'
+service_name = "Amazon Braket"
+prefix = "braket"
 
 
 class Action(BaseAction):
@@ -17,18 +17,17 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CancelQuantumTask = Action('CancelQuantumTask')
-CreateQuantumTask = Action('CreateQuantumTask')
-GetDevice = Action('GetDevice')
-GetQuantumTask = Action('GetQuantumTask')
-ListTagsForResource = Action('ListTagsForResource')
-SearchDevices = Action('SearchDevices')
-SearchQuantumTasks = Action('SearchQuantumTasks')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CancelQuantumTask = Action("CancelQuantumTask")
+CreateQuantumTask = Action("CreateQuantumTask")
+GetDevice = Action("GetDevice")
+GetQuantumTask = Action("GetQuantumTask")
+ListTagsForResource = Action("ListTagsForResource")
+SearchDevices = Action("SearchDevices")
+SearchQuantumTasks = Action("SearchQuantumTasks")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

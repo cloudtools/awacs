@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Savings Plans'
-prefix = 'savingsplans'
+service_name = "AWS Savings Plans"
+prefix = "savingsplans"
 
 
 class Action(BaseAction):
@@ -17,19 +17,17 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateSavingsPlan = Action('CreateSavingsPlan')
-DeleteQueuedSavingsPlan = Action('DeleteQueuedSavingsPlan')
-DescribeSavingsPlanRates = Action('DescribeSavingsPlanRates')
-DescribeSavingsPlans = Action('DescribeSavingsPlans')
-DescribeSavingsPlansOfferingRates = \
-    Action('DescribeSavingsPlansOfferingRates')
-DescribeSavingsPlansOfferings = Action('DescribeSavingsPlansOfferings')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CreateSavingsPlan = Action("CreateSavingsPlan")
+DeleteQueuedSavingsPlan = Action("DeleteQueuedSavingsPlan")
+DescribeSavingsPlanRates = Action("DescribeSavingsPlanRates")
+DescribeSavingsPlans = Action("DescribeSavingsPlans")
+DescribeSavingsPlansOfferingRates = Action("DescribeSavingsPlansOfferingRates")
+DescribeSavingsPlansOfferings = Action("DescribeSavingsPlansOfferings")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

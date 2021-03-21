@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Route 53 Resolver'
-prefix = 'route53resolver'
+service_name = "Amazon Route 53 Resolver"
+prefix = "route53resolver"
 
 
 class Action(BaseAction):
@@ -17,53 +17,45 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateResolverEndpointIpAddress = \
-    Action('AssociateResolverEndpointIpAddress')
-AssociateResolverQueryLogConfig = \
-    Action('AssociateResolverQueryLogConfig')
-AssociateResolverRule = Action('AssociateResolverRule')
-CreateResolverEndpoint = Action('CreateResolverEndpoint')
-CreateResolverQueryLogConfig = Action('CreateResolverQueryLogConfig')
-CreateResolverRule = Action('CreateResolverRule')
-DeleteResolverEndpoint = Action('DeleteResolverEndpoint')
-DeleteResolverQueryLogConfig = Action('DeleteResolverQueryLogConfig')
-DeleteResolverRule = Action('DeleteResolverRule')
-DisassociateResolverEndpointIpAddress = \
-    Action('DisassociateResolverEndpointIpAddress')
-DisassociateResolverQueryLogConfig = \
-    Action('DisassociateResolverQueryLogConfig')
-DisassociateResolverRule = Action('DisassociateResolverRule')
-GetResolverDnssecConfig = Action('GetResolverDnssecConfig')
-GetResolverEndpoint = Action('GetResolverEndpoint')
-GetResolverQueryLogConfig = Action('GetResolverQueryLogConfig')
-GetResolverQueryLogConfigAssociation = \
-    Action('GetResolverQueryLogConfigAssociation')
-GetResolverQueryLogConfigPolicy = \
-    Action('GetResolverQueryLogConfigPolicy')
-GetResolverRule = Action('GetResolverRule')
-GetResolverRuleAssociation = Action('GetResolverRuleAssociation')
-GetResolverRulePolicy = Action('GetResolverRulePolicy')
-ListResolverDnssecConfigs = Action('ListResolverDnssecConfigs')
-ListResolverEndpointIpAddresses = \
-    Action('ListResolverEndpointIpAddresses')
-ListResolverEndpoints = Action('ListResolverEndpoints')
-ListResolverQueryLogConfigAssociations = \
-    Action('ListResolverQueryLogConfigAssociations')
-ListResolverQueryLogConfigs = Action('ListResolverQueryLogConfigs')
-ListResolverRuleAssociations = Action('ListResolverRuleAssociations')
-ListResolverRules = Action('ListResolverRules')
-ListTagsForResource = Action('ListTagsForResource')
-PutResolverQueryLogConfigPolicy = \
-    Action('PutResolverQueryLogConfigPolicy')
-PutResolverRulePolicy = Action('PutResolverRulePolicy')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateResolverDnssecConfig = Action('UpdateResolverDnssecConfig')
-UpdateResolverEndpoint = Action('UpdateResolverEndpoint')
-UpdateResolverRule = Action('UpdateResolverRule')
+AssociateResolverEndpointIpAddress = Action("AssociateResolverEndpointIpAddress")
+AssociateResolverQueryLogConfig = Action("AssociateResolverQueryLogConfig")
+AssociateResolverRule = Action("AssociateResolverRule")
+CreateResolverEndpoint = Action("CreateResolverEndpoint")
+CreateResolverQueryLogConfig = Action("CreateResolverQueryLogConfig")
+CreateResolverRule = Action("CreateResolverRule")
+DeleteResolverEndpoint = Action("DeleteResolverEndpoint")
+DeleteResolverQueryLogConfig = Action("DeleteResolverQueryLogConfig")
+DeleteResolverRule = Action("DeleteResolverRule")
+DisassociateResolverEndpointIpAddress = Action("DisassociateResolverEndpointIpAddress")
+DisassociateResolverQueryLogConfig = Action("DisassociateResolverQueryLogConfig")
+DisassociateResolverRule = Action("DisassociateResolverRule")
+GetResolverDnssecConfig = Action("GetResolverDnssecConfig")
+GetResolverEndpoint = Action("GetResolverEndpoint")
+GetResolverQueryLogConfig = Action("GetResolverQueryLogConfig")
+GetResolverQueryLogConfigAssociation = Action("GetResolverQueryLogConfigAssociation")
+GetResolverQueryLogConfigPolicy = Action("GetResolverQueryLogConfigPolicy")
+GetResolverRule = Action("GetResolverRule")
+GetResolverRuleAssociation = Action("GetResolverRuleAssociation")
+GetResolverRulePolicy = Action("GetResolverRulePolicy")
+ListResolverDnssecConfigs = Action("ListResolverDnssecConfigs")
+ListResolverEndpointIpAddresses = Action("ListResolverEndpointIpAddresses")
+ListResolverEndpoints = Action("ListResolverEndpoints")
+ListResolverQueryLogConfigAssociations = Action(
+    "ListResolverQueryLogConfigAssociations"
+)
+ListResolverQueryLogConfigs = Action("ListResolverQueryLogConfigs")
+ListResolverRuleAssociations = Action("ListResolverRuleAssociations")
+ListResolverRules = Action("ListResolverRules")
+ListTagsForResource = Action("ListTagsForResource")
+PutResolverQueryLogConfigPolicy = Action("PutResolverQueryLogConfigPolicy")
+PutResolverRulePolicy = Action("PutResolverRulePolicy")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateResolverDnssecConfig = Action("UpdateResolverDnssecConfig")
+UpdateResolverEndpoint = Action("UpdateResolverEndpoint")
+UpdateResolverRule = Action("UpdateResolverRule")

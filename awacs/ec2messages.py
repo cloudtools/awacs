@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Message Delivery Service'
-prefix = 'ec2messages'
+service_name = "Amazon Message Delivery Service"
+prefix = "ec2messages"
 
 
 class Action(BaseAction):
@@ -17,15 +17,14 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AcknowledgeMessage = Action('AcknowledgeMessage')
-DeleteMessage = Action('DeleteMessage')
-FailMessage = Action('FailMessage')
-GetEndpoint = Action('GetEndpoint')
-GetMessages = Action('GetMessages')
-SendReply = Action('SendReply')
+AcknowledgeMessage = Action("AcknowledgeMessage")
+DeleteMessage = Action("DeleteMessage")
+FailMessage = Action("FailMessage")
+GetEndpoint = Action("GetEndpoint")
+GetMessages = Action("GetMessages")
+SendReply = Action("SendReply")

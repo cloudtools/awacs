@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS IQ Permissions'
-prefix = 'iq-permission'
+service_name = "AWS IQ Permissions"
+prefix = "iq-permission"
 
 
 class Action(BaseAction):
@@ -17,10 +17,9 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-ApproveAccessGrant = Action('ApproveAccessGrant')
+ApproveAccessGrant = Action("ApproveAccessGrant")

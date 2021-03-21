@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS CodeStar'
-prefix = 'codestar'
+service_name = "AWS CodeStar"
+prefix = "codestar"
 
 
 class Action(BaseAction):
@@ -17,31 +17,30 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateTeamMember = Action('AssociateTeamMember')
-CreateProject = Action('CreateProject')
-CreateUserProfile = Action('CreateUserProfile')
-DeleteExtendedAccess = Action('DeleteExtendedAccess')
-DeleteProject = Action('DeleteProject')
-DeleteUserProfile = Action('DeleteUserProfile')
-DescribeProject = Action('DescribeProject')
-DescribeUserProfile = Action('DescribeUserProfile')
-DisassociateTeamMember = Action('DisassociateTeamMember')
-GetExtendedAccess = Action('GetExtendedAccess')
-ListProjects = Action('ListProjects')
-ListResources = Action('ListResources')
-ListTagsForProject = Action('ListTagsForProject')
-ListTeamMembers = Action('ListTeamMembers')
-ListUserProfiles = Action('ListUserProfiles')
-PutExtendedAccess = Action('PutExtendedAccess')
-TagProject = Action('TagProject')
-UntagProject = Action('UntagProject')
-UpdateProject = Action('UpdateProject')
-UpdateTeamMember = Action('UpdateTeamMember')
-UpdateUserProfile = Action('UpdateUserProfile')
-VerifyServiceRole = Action('VerifyServiceRole')
+AssociateTeamMember = Action("AssociateTeamMember")
+CreateProject = Action("CreateProject")
+CreateUserProfile = Action("CreateUserProfile")
+DeleteExtendedAccess = Action("DeleteExtendedAccess")
+DeleteProject = Action("DeleteProject")
+DeleteUserProfile = Action("DeleteUserProfile")
+DescribeProject = Action("DescribeProject")
+DescribeUserProfile = Action("DescribeUserProfile")
+DisassociateTeamMember = Action("DisassociateTeamMember")
+GetExtendedAccess = Action("GetExtendedAccess")
+ListProjects = Action("ListProjects")
+ListResources = Action("ListResources")
+ListTagsForProject = Action("ListTagsForProject")
+ListTeamMembers = Action("ListTeamMembers")
+ListUserProfiles = Action("ListUserProfiles")
+PutExtendedAccess = Action("PutExtendedAccess")
+TagProject = Action("TagProject")
+UntagProject = Action("UntagProject")
+UpdateProject = Action("UpdateProject")
+UpdateTeamMember = Action("UpdateTeamMember")
+UpdateUserProfile = Action("UpdateUserProfile")
+VerifyServiceRole = Action("VerifyServiceRole")

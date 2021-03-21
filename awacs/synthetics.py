@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon CloudWatch Synthetics'
-prefix = 'synthetics'
+service_name = "Amazon CloudWatch Synthetics"
+prefix = "synthetics"
 
 
 class Action(BaseAction):
@@ -17,20 +17,19 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateCanary = Action('CreateCanary')
-DeleteCanary = Action('DeleteCanary')
-DescribeCanaries = Action('DescribeCanaries')
-DescribeCanariesLastRun = Action('DescribeCanariesLastRun')
-GetCanaryRuns = Action('GetCanaryRuns')
-ListTagsForResource = Action('ListTagsForResource')
-StartCanary = Action('StartCanary')
-StopCanary = Action('StopCanary')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateCanary = Action('UpdateCanary')
+CreateCanary = Action("CreateCanary")
+DeleteCanary = Action("DeleteCanary")
+DescribeCanaries = Action("DescribeCanaries")
+DescribeCanariesLastRun = Action("DescribeCanariesLastRun")
+GetCanaryRuns = Action("GetCanaryRuns")
+ListTagsForResource = Action("ListTagsForResource")
+StartCanary = Action("StartCanary")
+StopCanary = Action("StopCanary")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateCanary = Action("UpdateCanary")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Activate'
-prefix = 'activate'
+service_name = "AWS Activate"
+prefix = "activate"
 
 
 class Action(BaseAction):
@@ -17,17 +17,16 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateForm = Action('CreateForm')
-GetAccountContact = Action('GetAccountContact')
-GetContentInfo = Action('GetContentInfo')
-GetCosts = Action('GetCosts')
-GetCredits = Action('GetCredits')
-GetMemberInfo = Action('GetMemberInfo')
-GetProgram = Action('GetProgram')
-PutMemberInfo = Action('PutMemberInfo')
+CreateForm = Action("CreateForm")
+GetAccountContact = Action("GetAccountContact")
+GetContentInfo = Action("GetContentInfo")
+GetCosts = Action("GetCosts")
+GetCredits = Action("GetCredits")
+GetMemberInfo = Action("GetMemberInfo")
+GetProgram = Action("GetProgram")
+PutMemberInfo = Action("PutMemberInfo")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Data Lifecycle Manager'
-prefix = 'dlm'
+service_name = "Amazon Data Lifecycle Manager"
+prefix = "dlm"
 
 
 class Action(BaseAction):
@@ -17,17 +17,16 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateLifecyclePolicy = Action('CreateLifecyclePolicy')
-DeleteLifecyclePolicy = Action('DeleteLifecyclePolicy')
-GetLifecyclePolicies = Action('GetLifecyclePolicies')
-GetLifecyclePolicy = Action('GetLifecyclePolicy')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateLifecyclePolicy = Action('UpdateLifecyclePolicy')
+CreateLifecyclePolicy = Action("CreateLifecyclePolicy")
+DeleteLifecyclePolicy = Action("DeleteLifecyclePolicy")
+GetLifecyclePolicies = Action("GetLifecyclePolicies")
+GetLifecyclePolicy = Action("GetLifecyclePolicy")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateLifecyclePolicy = Action("UpdateLifecyclePolicy")

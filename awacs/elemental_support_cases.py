@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Elemental Support Cases'
-prefix = 'elemental-support-cases'
+service_name = "Elemental Support Cases"
+prefix = "elemental-support-cases"
 
 
 class Action(BaseAction):
@@ -17,13 +17,12 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateCase = Action('CreateCase')
-GetCase = Action('GetCase')
-GetCases = Action('GetCases')
-UpdateCase = Action('UpdateCase')
+CreateCase = Action("CreateCase")
+GetCase = Action("GetCase")
+GetCases = Action("GetCases")
+UpdateCase = Action("UpdateCase")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Lookout for Vision'
-prefix = 'lookoutvision'
+service_name = "Amazon Lookout for Vision"
+prefix = "lookoutvision"
 
 
 class Action(BaseAction):
@@ -17,31 +17,30 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateDataset = Action('CreateDataset')
-CreateModel = Action('CreateModel')
-CreateProject = Action('CreateProject')
-DeleteDataset = Action('DeleteDataset')
-DeleteModel = Action('DeleteModel')
-DeleteProject = Action('DeleteProject')
-DescribeDataset = Action('DescribeDataset')
-DescribeModel = Action('DescribeModel')
-DescribeProject = Action('DescribeProject')
-DescribeTrialDetection = Action('DescribeTrialDetection')
-DetectAnomalies = Action('DetectAnomalies')
-ListDatasetEntries = Action('ListDatasetEntries')
-ListModels = Action('ListModels')
-ListProjects = Action('ListProjects')
-ListTagsForResource = Action('ListTagsForResource')
-ListTrialDetections = Action('ListTrialDetections')
-StartModel = Action('StartModel')
-StartTrialDetection = Action('StartTrialDetection')
-StopModel = Action('StopModel')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateDatasetEntries = Action('UpdateDatasetEntries')
+CreateDataset = Action("CreateDataset")
+CreateModel = Action("CreateModel")
+CreateProject = Action("CreateProject")
+DeleteDataset = Action("DeleteDataset")
+DeleteModel = Action("DeleteModel")
+DeleteProject = Action("DeleteProject")
+DescribeDataset = Action("DescribeDataset")
+DescribeModel = Action("DescribeModel")
+DescribeProject = Action("DescribeProject")
+DescribeTrialDetection = Action("DescribeTrialDetection")
+DetectAnomalies = Action("DetectAnomalies")
+ListDatasetEntries = Action("ListDatasetEntries")
+ListModels = Action("ListModels")
+ListProjects = Action("ListProjects")
+ListTagsForResource = Action("ListTagsForResource")
+ListTrialDetections = Action("ListTrialDetections")
+StartModel = Action("StartModel")
+StartTrialDetection = Action("StartTrialDetection")
+StopModel = Action("StopModel")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateDatasetEntries = Action("UpdateDatasetEntries")

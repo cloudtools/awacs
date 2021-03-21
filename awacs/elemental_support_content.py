@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Elemental Support Content'
-prefix = 'elemental-support-content'
+service_name = "Elemental Support Content"
+prefix = "elemental-support-content"
 
 
 class Action(BaseAction):
@@ -17,10 +17,9 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-Query = Action('Query')
+Query = Action("Query")

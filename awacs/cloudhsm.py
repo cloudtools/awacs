@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS CloudHSM'
-prefix = 'cloudhsm'
+service_name = "AWS CloudHSM"
+prefix = "cloudhsm"
 
 
 class Action(BaseAction):
@@ -17,40 +17,39 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AddTagsToResource = Action('AddTagsToResource')
-CopyBackupToRegion = Action('CopyBackupToRegion')
-CreateCluster = Action('CreateCluster')
-CreateHapg = Action('CreateHapg')
-CreateHsm = Action('CreateHsm')
-CreateLunaClient = Action('CreateLunaClient')
-DeleteBackup = Action('DeleteBackup')
-DeleteCluster = Action('DeleteCluster')
-DeleteHapg = Action('DeleteHapg')
-DeleteHsm = Action('DeleteHsm')
-DeleteLunaClient = Action('DeleteLunaClient')
-DescribeBackups = Action('DescribeBackups')
-DescribeClusters = Action('DescribeClusters')
-DescribeHapg = Action('DescribeHapg')
-DescribeHsm = Action('DescribeHsm')
-DescribeLunaClient = Action('DescribeLunaClient')
-GetConfig = Action('GetConfig')
-InitializeCluster = Action('InitializeCluster')
-ListAvailableZones = Action('ListAvailableZones')
-ListHapgs = Action('ListHapgs')
-ListHsms = Action('ListHsms')
-ListLunaClients = Action('ListLunaClients')
-ListTags = Action('ListTags')
-ListTagsForResource = Action('ListTagsForResource')
-ModifyHapg = Action('ModifyHapg')
-ModifyHsm = Action('ModifyHsm')
-ModifyLunaClient = Action('ModifyLunaClient')
-RemoveTagsFromResource = Action('RemoveTagsFromResource')
-RestoreBackup = Action('RestoreBackup')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+AddTagsToResource = Action("AddTagsToResource")
+CopyBackupToRegion = Action("CopyBackupToRegion")
+CreateCluster = Action("CreateCluster")
+CreateHapg = Action("CreateHapg")
+CreateHsm = Action("CreateHsm")
+CreateLunaClient = Action("CreateLunaClient")
+DeleteBackup = Action("DeleteBackup")
+DeleteCluster = Action("DeleteCluster")
+DeleteHapg = Action("DeleteHapg")
+DeleteHsm = Action("DeleteHsm")
+DeleteLunaClient = Action("DeleteLunaClient")
+DescribeBackups = Action("DescribeBackups")
+DescribeClusters = Action("DescribeClusters")
+DescribeHapg = Action("DescribeHapg")
+DescribeHsm = Action("DescribeHsm")
+DescribeLunaClient = Action("DescribeLunaClient")
+GetConfig = Action("GetConfig")
+InitializeCluster = Action("InitializeCluster")
+ListAvailableZones = Action("ListAvailableZones")
+ListHapgs = Action("ListHapgs")
+ListHsms = Action("ListHsms")
+ListLunaClients = Action("ListLunaClients")
+ListTags = Action("ListTags")
+ListTagsForResource = Action("ListTagsForResource")
+ModifyHapg = Action("ModifyHapg")
+ModifyHsm = Action("ModifyHsm")
+ModifyLunaClient = Action("ModifyLunaClient")
+RemoveTagsFromResource = Action("RemoveTagsFromResource")
+RestoreBackup = Action("RestoreBackup")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

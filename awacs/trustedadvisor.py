@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Trusted Advisor'
-prefix = 'trustedadvisor'
+service_name = "AWS Trusted Advisor"
+prefix = "trustedadvisor"
 
 
 class Action(BaseAction):
@@ -17,32 +17,29 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DescribeAccount = Action('DescribeAccount')
-DescribeAccountAccess = Action('DescribeAccountAccess')
-DescribeCheckItems = Action('DescribeCheckItems')
-DescribeCheckRefreshStatuses = Action('DescribeCheckRefreshStatuses')
-DescribeCheckSummaries = Action('DescribeCheckSummaries')
-DescribeChecks = Action('DescribeChecks')
-DescribeNotificationPreferences = \
-    Action('DescribeNotificationPreferences')
-DescribeOrganization = Action('DescribeOrganization')
-DescribeOrganizationAccounts = Action('DescribeOrganizationAccounts')
-DescribeReports = Action('DescribeReports')
-DescribeServiceMetadata = Action('DescribeServiceMetadata')
-ExcludeCheckItems = Action('ExcludeCheckItems')
-GenerateReport = Action('GenerateReport')
-IncludeCheckItems = Action('IncludeCheckItems')
-ListAccountsForParent = Action('ListAccountsForParent')
-ListOrganizationalUnitsForParent = \
-    Action('ListOrganizationalUnitsForParent')
-ListRoots = Action('ListRoots')
-RefreshCheck = Action('RefreshCheck')
-SetAccountAccess = Action('SetAccountAccess')
-SetOrganizationAccess = Action('SetOrganizationAccess')
-UpdateNotificationPreferences = Action('UpdateNotificationPreferences')
+DescribeAccount = Action("DescribeAccount")
+DescribeAccountAccess = Action("DescribeAccountAccess")
+DescribeCheckItems = Action("DescribeCheckItems")
+DescribeCheckRefreshStatuses = Action("DescribeCheckRefreshStatuses")
+DescribeCheckSummaries = Action("DescribeCheckSummaries")
+DescribeChecks = Action("DescribeChecks")
+DescribeNotificationPreferences = Action("DescribeNotificationPreferences")
+DescribeOrganization = Action("DescribeOrganization")
+DescribeOrganizationAccounts = Action("DescribeOrganizationAccounts")
+DescribeReports = Action("DescribeReports")
+DescribeServiceMetadata = Action("DescribeServiceMetadata")
+ExcludeCheckItems = Action("ExcludeCheckItems")
+GenerateReport = Action("GenerateReport")
+IncludeCheckItems = Action("IncludeCheckItems")
+ListAccountsForParent = Action("ListAccountsForParent")
+ListOrganizationalUnitsForParent = Action("ListOrganizationalUnitsForParent")
+ListRoots = Action("ListRoots")
+RefreshCheck = Action("RefreshCheck")
+SetAccountAccess = Action("SetAccountAccess")
+SetOrganizationAccess = Action("SetOrganizationAccess")
+UpdateNotificationPreferences = Action("UpdateNotificationPreferences")

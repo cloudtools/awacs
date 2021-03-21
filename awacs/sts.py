@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Security Token Service'
-prefix = 'sts'
+service_name = "AWS Security Token Service"
+prefix = "sts"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssumeRole = Action('AssumeRole')
-AssumeRoleWithSAML = Action('AssumeRoleWithSAML')
-AssumeRoleWithWebIdentity = Action('AssumeRoleWithWebIdentity')
-DecodeAuthorizationMessage = Action('DecodeAuthorizationMessage')
-GetAccessKeyInfo = Action('GetAccessKeyInfo')
-GetCallerIdentity = Action('GetCallerIdentity')
-GetFederationToken = Action('GetFederationToken')
-GetServiceBearerToken = Action('GetServiceBearerToken')
-GetSessionToken = Action('GetSessionToken')
-TagSession = Action('TagSession')
+AssumeRole = Action("AssumeRole")
+AssumeRoleWithSAML = Action("AssumeRoleWithSAML")
+AssumeRoleWithWebIdentity = Action("AssumeRoleWithWebIdentity")
+DecodeAuthorizationMessage = Action("DecodeAuthorizationMessage")
+GetAccessKeyInfo = Action("GetAccessKeyInfo")
+GetCallerIdentity = Action("GetCallerIdentity")
+GetFederationToken = Action("GetFederationToken")
+GetServiceBearerToken = Action("GetServiceBearerToken")
+GetSessionToken = Action("GetSessionToken")
+TagSession = Action("TagSession")

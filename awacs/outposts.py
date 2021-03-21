@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Outposts'
-prefix = 'outposts'
+service_name = "AWS Outposts"
+prefix = "outposts"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateOutpost = Action('CreateOutpost')
-DeleteOutpost = Action('DeleteOutpost')
-DeleteSite = Action('DeleteSite')
-GetOutpost = Action('GetOutpost')
-GetOutpostInstanceTypes = Action('GetOutpostInstanceTypes')
-ListOutposts = Action('ListOutposts')
-ListSites = Action('ListSites')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CreateOutpost = Action("CreateOutpost")
+DeleteOutpost = Action("DeleteOutpost")
+DeleteSite = Action("DeleteSite")
+GetOutpost = Action("GetOutpost")
+GetOutpostInstanceTypes = Action("GetOutpostInstanceTypes")
+ListOutposts = Action("ListOutposts")
+ListSites = Action("ListSites")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

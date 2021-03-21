@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Polly'
-prefix = 'polly'
+service_name = "Amazon Polly"
+prefix = "polly"
 
 
 class Action(BaseAction):
@@ -17,18 +17,17 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DeleteLexicon = Action('DeleteLexicon')
-DescribeVoices = Action('DescribeVoices')
-GetLexicon = Action('GetLexicon')
-GetSpeechSynthesisTask = Action('GetSpeechSynthesisTask')
-ListLexicons = Action('ListLexicons')
-ListSpeechSynthesisTasks = Action('ListSpeechSynthesisTasks')
-PutLexicon = Action('PutLexicon')
-StartSpeechSynthesisTask = Action('StartSpeechSynthesisTask')
-SynthesizeSpeech = Action('SynthesizeSpeech')
+DeleteLexicon = Action("DeleteLexicon")
+DescribeVoices = Action("DescribeVoices")
+GetLexicon = Action("GetLexicon")
+GetSpeechSynthesisTask = Action("GetSpeechSynthesisTask")
+ListLexicons = Action("ListLexicons")
+ListSpeechSynthesisTasks = Action("ListSpeechSynthesisTasks")
+PutLexicon = Action("PutLexicon")
+StartSpeechSynthesisTask = Action("StartSpeechSynthesisTask")
+SynthesizeSpeech = Action("SynthesizeSpeech")

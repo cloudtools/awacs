@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Application Discovery Arsenal'
-prefix = 'arsenal'
+service_name = "Application Discovery Arsenal"
+prefix = "arsenal"
 
 
 class Action(BaseAction):
@@ -17,10 +17,9 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-RegisterOnPremisesAgent = Action('RegisterOnPremisesAgent')
+RegisterOnPremisesAgent = Action("RegisterOnPremisesAgent")

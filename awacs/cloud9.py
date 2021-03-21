@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Cloud9'
-prefix = 'cloud9'
+service_name = "AWS Cloud9"
+prefix = "cloud9"
 
 
 class Action(BaseAction):
@@ -17,27 +17,26 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateEnvironmentEC2 = Action('CreateEnvironmentEC2')
-CreateEnvironmentMembership = Action('CreateEnvironmentMembership')
-CreateEnvironmentSSH = Action('CreateEnvironmentSSH')
-DeleteEnvironment = Action('DeleteEnvironment')
-DeleteEnvironmentMembership = Action('DeleteEnvironmentMembership')
-DescribeEnvironmentMemberships = Action('DescribeEnvironmentMemberships')
-DescribeEnvironmentStatus = Action('DescribeEnvironmentStatus')
-DescribeEnvironments = Action('DescribeEnvironments')
-GetUserPublicKey = Action('GetUserPublicKey')
-GetUserSettings = Action('GetUserSettings')
-ListEnvironments = Action('ListEnvironments')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateEnvironment = Action('UpdateEnvironment')
-UpdateEnvironmentMembership = Action('UpdateEnvironmentMembership')
-UpdateUserSettings = Action('UpdateUserSettings')
-ValidateEnvironmentName = Action('ValidateEnvironmentName')
+CreateEnvironmentEC2 = Action("CreateEnvironmentEC2")
+CreateEnvironmentMembership = Action("CreateEnvironmentMembership")
+CreateEnvironmentSSH = Action("CreateEnvironmentSSH")
+DeleteEnvironment = Action("DeleteEnvironment")
+DeleteEnvironmentMembership = Action("DeleteEnvironmentMembership")
+DescribeEnvironmentMemberships = Action("DescribeEnvironmentMemberships")
+DescribeEnvironmentStatus = Action("DescribeEnvironmentStatus")
+DescribeEnvironments = Action("DescribeEnvironments")
+GetUserPublicKey = Action("GetUserPublicKey")
+GetUserSettings = Action("GetUserSettings")
+ListEnvironments = Action("ListEnvironments")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateEnvironment = Action("UpdateEnvironment")
+UpdateEnvironmentMembership = Action("UpdateEnvironmentMembership")
+UpdateUserSettings = Action("UpdateUserSettings")
+ValidateEnvironmentName = Action("ValidateEnvironmentName")

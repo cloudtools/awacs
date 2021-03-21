@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon S3 Object Lambda'
-prefix = 's3-object-lambda'
+service_name = "Amazon S3 Object Lambda"
+prefix = "s3-object-lambda"
 
 
 class Action(BaseAction):
@@ -17,27 +17,26 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AbortMultipartUpload = Action('AbortMultipartUpload')
-DeleteObject = Action('DeleteObject')
-DeleteObjectTagging = Action('DeleteObjectTagging')
-GetObject = Action('GetObject')
-GetObjectAcl = Action('GetObjectAcl')
-GetObjectLegalHold = Action('GetObjectLegalHold')
-GetObjectRetention = Action('GetObjectRetention')
-GetObjectTagging = Action('GetObjectTagging')
-GetObjectVersion = Action('GetObjectVersion')
-ListBucket = Action('ListBucket')
-ListMultipartUploadParts = Action('ListMultipartUploadParts')
-PutObject = Action('PutObject')
-PutObjectAcl = Action('PutObjectAcl')
-PutObjectLegalHold = Action('PutObjectLegalHold')
-PutObjectRetention = Action('PutObjectRetention')
-PutObjectTagging = Action('PutObjectTagging')
-RestoreObject = Action('RestoreObject')
-WriteGetObjectResponse = Action('WriteGetObjectResponse')
+AbortMultipartUpload = Action("AbortMultipartUpload")
+DeleteObject = Action("DeleteObject")
+DeleteObjectTagging = Action("DeleteObjectTagging")
+GetObject = Action("GetObject")
+GetObjectAcl = Action("GetObjectAcl")
+GetObjectLegalHold = Action("GetObjectLegalHold")
+GetObjectRetention = Action("GetObjectRetention")
+GetObjectTagging = Action("GetObjectTagging")
+GetObjectVersion = Action("GetObjectVersion")
+ListBucket = Action("ListBucket")
+ListMultipartUploadParts = Action("ListMultipartUploadParts")
+PutObject = Action("PutObject")
+PutObjectAcl = Action("PutObjectAcl")
+PutObjectLegalHold = Action("PutObjectLegalHold")
+PutObjectRetention = Action("PutObjectRetention")
+PutObjectTagging = Action("PutObjectTagging")
+RestoreObject = Action("RestoreObject")
+WriteGetObjectResponse = Action("WriteGetObjectResponse")

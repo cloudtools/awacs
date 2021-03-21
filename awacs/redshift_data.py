@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Redshift Data API'
-prefix = 'redshift-data'
+service_name = "Amazon Redshift Data API"
+prefix = "redshift-data"
 
 
 class Action(BaseAction):
@@ -17,18 +17,17 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CancelStatement = Action('CancelStatement')
-DescribeStatement = Action('DescribeStatement')
-DescribeTable = Action('DescribeTable')
-ExecuteStatement = Action('ExecuteStatement')
-GetStatementResult = Action('GetStatementResult')
-ListDatabases = Action('ListDatabases')
-ListSchemas = Action('ListSchemas')
-ListStatements = Action('ListStatements')
-ListTables = Action('ListTables')
+CancelStatement = Action("CancelStatement")
+DescribeStatement = Action("DescribeStatement")
+DescribeTable = Action("DescribeTable")
+ExecuteStatement = Action("ExecuteStatement")
+GetStatementResult = Action("GetStatementResult")
+ListDatabases = Action("ListDatabases")
+ListSchemas = Action("ListSchemas")
+ListStatements = Action("ListStatements")
+ListTables = Action("ListTables")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Session Manager Message Gateway Service'
-prefix = 'ssmmessages'
+service_name = "Amazon Session Manager Message Gateway Service"
+prefix = "ssmmessages"
 
 
 class Action(BaseAction):
@@ -17,13 +17,12 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateControlChannel = Action('CreateControlChannel')
-CreateDataChannel = Action('CreateDataChannel')
-OpenControlChannel = Action('OpenControlChannel')
-OpenDataChannel = Action('OpenDataChannel')
+CreateControlChannel = Action("CreateControlChannel")
+CreateDataChannel = Action("CreateDataChannel")
+OpenControlChannel = Action("OpenControlChannel")
+OpenDataChannel = Action("OpenDataChannel")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Monitron'
-prefix = 'monitron'
+service_name = "Amazon Monitron"
+prefix = "monitron"
 
 
 class Action(BaseAction):
@@ -17,21 +17,20 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateProjectAdminUser = Action('AssociateProjectAdminUser')
-CreateProject = Action('CreateProject')
-DeleteProject = Action('DeleteProject')
-DisassociateProjectAdminUser = Action('DisassociateProjectAdminUser')
-GetProject = Action('GetProject')
-GetProjectAdminUser = Action('GetProjectAdminUser')
-ListProjectAdminUsers = Action('ListProjectAdminUsers')
-ListProjects = Action('ListProjects')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateProject = Action('UpdateProject')
+AssociateProjectAdminUser = Action("AssociateProjectAdminUser")
+CreateProject = Action("CreateProject")
+DeleteProject = Action("DeleteProject")
+DisassociateProjectAdminUser = Action("DisassociateProjectAdminUser")
+GetProject = Action("GetProject")
+GetProjectAdminUser = Action("GetProjectAdminUser")
+ListProjectAdminUsers = Action("ListProjectAdminUsers")
+ListProjects = Action("ListProjects")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateProject = Action("UpdateProject")

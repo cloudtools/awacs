@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental Appliances and Software'
-prefix = 'elemental-appliances-software'
+service_name = "AWS Elemental Appliances and Software"
+prefix = "elemental-appliances-software"
 
 
 class Action(BaseAction):
@@ -17,16 +17,15 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateQuote = Action('CreateQuote')
-GetQuote = Action('GetQuote')
-ListQuotes = Action('ListQuotes')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateQuote = Action('UpdateQuote')
+CreateQuote = Action("CreateQuote")
+GetQuote = Action("GetQuote")
+ListQuotes = Action("ListQuotes")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateQuote = Action("UpdateQuote")

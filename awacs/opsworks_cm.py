@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS OpsWorks Configuration Management'
-prefix = 'opsworks-cm'
+service_name = "AWS OpsWorks Configuration Management"
+prefix = "opsworks-cm"
 
 
 class Action(BaseAction):
@@ -17,27 +17,26 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateNode = Action('AssociateNode')
-CreateBackup = Action('CreateBackup')
-CreateServer = Action('CreateServer')
-DeleteBackup = Action('DeleteBackup')
-DeleteServer = Action('DeleteServer')
-DescribeAccountAttributes = Action('DescribeAccountAttributes')
-DescribeBackups = Action('DescribeBackups')
-DescribeEvents = Action('DescribeEvents')
-DescribeNodeAssociationStatus = Action('DescribeNodeAssociationStatus')
-DescribeServers = Action('DescribeServers')
-DisassociateNode = Action('DisassociateNode')
-ListTagsForResource = Action('ListTagsForResource')
-RestoreServer = Action('RestoreServer')
-StartMaintenance = Action('StartMaintenance')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateServer = Action('UpdateServer')
-UpdateServerEngineAttributes = Action('UpdateServerEngineAttributes')
+AssociateNode = Action("AssociateNode")
+CreateBackup = Action("CreateBackup")
+CreateServer = Action("CreateServer")
+DeleteBackup = Action("DeleteBackup")
+DeleteServer = Action("DeleteServer")
+DescribeAccountAttributes = Action("DescribeAccountAttributes")
+DescribeBackups = Action("DescribeBackups")
+DescribeEvents = Action("DescribeEvents")
+DescribeNodeAssociationStatus = Action("DescribeNodeAssociationStatus")
+DescribeServers = Action("DescribeServers")
+DisassociateNode = Action("DisassociateNode")
+ListTagsForResource = Action("ListTagsForResource")
+RestoreServer = Action("RestoreServer")
+StartMaintenance = Action("StartMaintenance")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateServer = Action("UpdateServer")
+UpdateServerEngineAttributes = Action("UpdateServerEngineAttributes")

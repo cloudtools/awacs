@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS CloudTrail'
-prefix = 'cloudtrail'
+service_name = "AWS CloudTrail"
+prefix = "cloudtrail"
 
 
 class Action(BaseAction):
@@ -17,27 +17,26 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AddTags = Action('AddTags')
-CreateTrail = Action('CreateTrail')
-DeleteTrail = Action('DeleteTrail')
-DescribeTrails = Action('DescribeTrails')
-GetEventSelectors = Action('GetEventSelectors')
-GetInsightSelectors = Action('GetInsightSelectors')
-GetTrail = Action('GetTrail')
-GetTrailStatus = Action('GetTrailStatus')
-ListPublicKeys = Action('ListPublicKeys')
-ListTags = Action('ListTags')
-ListTrails = Action('ListTrails')
-LookupEvents = Action('LookupEvents')
-PutEventSelectors = Action('PutEventSelectors')
-PutInsightSelectors = Action('PutInsightSelectors')
-RemoveTags = Action('RemoveTags')
-StartLogging = Action('StartLogging')
-StopLogging = Action('StopLogging')
-UpdateTrail = Action('UpdateTrail')
+AddTags = Action("AddTags")
+CreateTrail = Action("CreateTrail")
+DeleteTrail = Action("DeleteTrail")
+DescribeTrails = Action("DescribeTrails")
+GetEventSelectors = Action("GetEventSelectors")
+GetInsightSelectors = Action("GetInsightSelectors")
+GetTrail = Action("GetTrail")
+GetTrailStatus = Action("GetTrailStatus")
+ListPublicKeys = Action("ListPublicKeys")
+ListTags = Action("ListTags")
+ListTrails = Action("ListTrails")
+LookupEvents = Action("LookupEvents")
+PutEventSelectors = Action("PutEventSelectors")
+PutInsightSelectors = Action("PutInsightSelectors")
+RemoveTags = Action("RemoveTags")
+StartLogging = Action("StartLogging")
+StopLogging = Action("StopLogging")
+UpdateTrail = Action("UpdateTrail")

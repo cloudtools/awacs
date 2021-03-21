@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental Appliances and Software Activation Service'
-prefix = 'elemental-activations'
+service_name = "AWS Elemental Appliances and Software Activation Service"
+prefix = "elemental-activations"
 
 
 class Action(BaseAction):
@@ -17,19 +17,18 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CompleteAccountRegistration = Action('CompleteAccountRegistration')
-CompleteFileUpload = Action('CompleteFileUpload')
-DownloadSoftware = Action('DownloadSoftware')
-GenerateLicenses = Action('GenerateLicenses')
-GetActivation = Action('GetActivation')
-ListTagsForResource = Action('ListTagsForResource')
-StartAccountRegistration = Action('StartAccountRegistration')
-StartFileUpload = Action('StartFileUpload')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CompleteAccountRegistration = Action("CompleteAccountRegistration")
+CompleteFileUpload = Action("CompleteFileUpload")
+DownloadSoftware = Action("DownloadSoftware")
+GenerateLicenses = Action("GenerateLicenses")
+GetActivation = Action("GetActivation")
+ListTagsForResource = Action("ListTagsForResource")
+StartAccountRegistration = Action("StartAccountRegistration")
+StartFileUpload = Action("StartFileUpload")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
