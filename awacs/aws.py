@@ -4,8 +4,15 @@
 # See LICENSE file for full license.
 
 import warnings
+from abc import ABCMeta, abstractmethod
+from typing import Any, Dict, List, Optional, Union
 
 from . import AWSHelperFn, AWSProperty
+
+try:
+    from typing import Literal  # type: ignore[attr-defined]
+except ImportError:
+    from typing_extensions import Literal
 
 # Policy effect constants.
 Allow = "Allow"
@@ -39,22 +46,24 @@ VpcSourceIp = "aws:VpcSourceIp"
 
 
 class Action(AWSHelperFn):
-    def __init__(self, prefix, action=None):
+    def __init__(self, prefix: str, action: str = None) -> None:
         self.prefix = prefix
         if prefix == "*" and action:
             raise ValueError("Action not supported with wildcard prefix")
         else:
             self.action = action
 
-    def JSONrepr(self):
-        if self.prefix == "*" and not self.action:
+    def JSONrepr(self) -> str:
+        if self.prefix == "*" or not self.action:
             return self.prefix
         else:
             return "".join([self.prefix, ":", self.action])
 
 
 class BaseARN(AWSHelperFn):
-    def __init__(self, service, resource, region="", account=""):
+    def __init__(
+        self, service: str, resource: str, region: str = "", account: str = ""
+    ) -> None:
         region_string = region.lower()
         if region == "${AWS::Region}":
             aws_partition = "${AWS::Partition}"
@@ -77,12 +86,14 @@ class BaseARN(AWSHelperFn):
             resource,
         )
 
-    def JSONrepr(self):
+    def JSONrepr(self) -> str:
         return self.data
 
 
 class ARN(BaseARN):
-    def __init__(self, service, resource, region="", account=""):
+    def __init__(
+        self, service: str, resource: str, region: str = "", account: str = ""
+    ) -> None:
         super().__init__(service, resource, region, account)
         warnings.warn(
             "This is going away. Either use a service specific "
@@ -91,8 +102,8 @@ class ARN(BaseARN):
         )
 
 
-class ConditionElement(AWSHelperFn):
-    def __init__(self, data, value=None):
+class ConditionElement(AWSHelperFn, metaclass=ABCMeta):
+    def __init__(self, data: Union[str, dict], value: Any = None) -> None:
         """Create a ConditionElement
 
         There are two supported ways to create a new ConditionElement.
@@ -104,22 +115,30 @@ class ConditionElement(AWSHelperFn):
                 's3:delimiter': ['/'],
             }),
         """
-        self.cond_dict = None
+        self.cond_dict: Optional[dict] = None
         if value is not None:
             self.key = data
             self.value = value
         else:
+            assert isinstance(data, dict)
             self.cond_dict = data
 
-    def get_dict(self):
+    def get_dict(self) -> dict:
         if self.cond_dict:
             return self.cond_dict
         else:
             return {self.key: self.value}
 
+    @property
+    @abstractmethod
+    def condition(self) -> str:
+        raise NotImplementedError
+
 
 class Condition(AWSHelperFn):
-    def __init__(self, conditions):
+    def __init__(
+        self, conditions: Union[ConditionElement, List[ConditionElement]]
+    ) -> None:
         if isinstance(conditions, ConditionElement):
             self.conditions = [conditions]
         elif isinstance(conditions, list):
@@ -130,7 +149,7 @@ class Condition(AWSHelperFn):
         else:
             raise TypeError
 
-    def JSONrepr(self):
+    def JSONrepr(self) -> dict:
         d = {}
         for c in self.conditions:
             d[c.condition] = c.get_dict()
@@ -138,9 +157,10 @@ class Condition(AWSHelperFn):
 
 
 class Principal(AWSHelperFn):
+    data: Union[Literal["*"], Dict[str, Any]]
     VALID_PRINCIPALS = ["AWS", "CanonicalUser", "Federated", "Service"]
 
-    def __init__(self, principal, resources=None):
+    def __init__(self, principal: str, resources: Any = None) -> None:
         if principal == "*":
             if resources:
                 raise ValueError("Cannot provide resources if principal is " "'*'.")
@@ -154,16 +174,16 @@ class Principal(AWSHelperFn):
                 )
             self.data = {principal: resources}
 
-    def JSONrepr(self):
+    def JSONrepr(self) -> Union[Literal["*"], Dict[str, Any]]:
         return self.data
 
 
 class AWSPrincipal(Principal):
-    def __init__(self, principals):
+    def __init__(self, principals: Any) -> None:
         super().__init__("AWS", principals)
 
 
-def effect(x):
+def effect(x: str) -> str:
     if x not in [Allow, Deny]:
         raise ValueError(x)
     return x
@@ -190,7 +210,7 @@ class Policy(AWSProperty):
         "Version": (str, False),
     }
 
-    def JSONrepr(self):
+    def JSONrepr(self) -> dict:
         return self.properties
 
 
@@ -230,7 +250,7 @@ _condition_strings = [
 _condition_qualifier_strings = ["ForAnyValue", "ForAllValues"]
 
 
-def make_condition(type_name, condition_name):
+def make_condition(type_name: str, condition_name: str) -> None:
     globals()[type_name] = type(
         type_name, (ConditionElement,), dict(condition=condition_name)
     )
