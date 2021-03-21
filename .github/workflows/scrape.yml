@@ -26,6 +26,8 @@ jobs:
         run: |
           git config user.name "GitHub Workflow"
           git config user.email cloudtools@users.noreply.github.com
+          isort awacs
+          black awacs
           git add awacs/
           git commit -m "Action Update $(date "+%G-%V")" || true
           git push
