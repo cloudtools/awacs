@@ -125,8 +125,7 @@ class AWSProperty(AWSObject):
     """
 
     def __init__(self, **kwargs):
-        sup = super(AWSProperty, self)
-        sup.__init__(None, props=self.props, **kwargs)
+        super().__init__(None, props=self.props, **kwargs)
 
 
 class AWSHelperFn:

@@ -25,29 +25,27 @@ from .aws import BaseARN
 CLASSES = """\
 class Action(BaseAction):
     def __init__(self, action=None):
-        sup = super(Action, self)
-        sup.__init__(prefix, action)
+        super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
     def __init__(self, resource="", region="", account=""):
-        sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region, account=account)
+        super().__init__(
+            service=prefix, resource=resource, region=region, account=account
+        )
 """
 
 CLASSES_S3 = """\
 class Action(BaseAction):
     def __init__(self, action=None):
-        sup = super(Action, self)
-        sup.__init__(prefix, action)
+        super().__init__(prefix, action)
 
 
 class ARN(BaseARN):
     def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
         # account is empty for S3
-        account = ""
-        sup.__init__(service=prefix, resource=resource, region=region, account=account)
+        super().__init__(service=prefix, resource=resource, region=region, account="")
 """
 
 BASEDIR = "awacs"
