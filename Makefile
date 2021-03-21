@@ -1,8 +1,8 @@
 .PHONY: test
 
 PYDIRS=setup.py awacs examples tests
+PYVERSION=`python -c "import sys; print(''.join([str(sys.version_info.major), str(sys.version_info.minor)]))"`
 
 test:
-	pycodestyle ${PYDIRS}
-	pyflakes ${PYDIRS}
-	python setup.py test
+	python -m tox -e qa
+	python -m tox --listenvs | grep "^py${PYVERSION}" | tr "\n" "," | xargs python -m tox -f

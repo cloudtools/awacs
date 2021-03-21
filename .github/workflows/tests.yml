@@ -1,0 +1,51 @@
+---
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+        - 3.6
+        - 3.7
+        - 3.8
+        - 3.9
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip tox tox-factor
+      - name: Run tox targets for ${{ matrix.python-version }}
+        run: |
+          PYVERSION=$(python -c "import sys; print(''.join([str(sys.version_info.major), str(sys.version_info.minor)]))")
+          python -m tox -f $(python -m tox --listenvs | grep "^py${PYVERSION}" | tr '\n' ',')
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip tox
+      - name: Lint code
+        run: python -m tox -e qa
+      - name: Check readme
+        run: python -m tox -e readme
