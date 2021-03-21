@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Elastic Transcoder'
-prefix = 'elastictranscoder'
+service_name = "Amazon Elastic Transcoder"
+prefix = "elastictranscoder"
 
 
 class Action(BaseAction):
@@ -17,26 +17,25 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CancelJob = Action('CancelJob')
-CreateJob = Action('CreateJob')
-CreatePipeline = Action('CreatePipeline')
-CreatePreset = Action('CreatePreset')
-DeletePipeline = Action('DeletePipeline')
-DeletePreset = Action('DeletePreset')
-ListJobsByPipeline = Action('ListJobsByPipeline')
-ListJobsByStatus = Action('ListJobsByStatus')
-ListPipelines = Action('ListPipelines')
-ListPresets = Action('ListPresets')
-ReadJob = Action('ReadJob')
-ReadPipeline = Action('ReadPipeline')
-ReadPreset = Action('ReadPreset')
-TestRole = Action('TestRole')
-UpdatePipeline = Action('UpdatePipeline')
-UpdatePipelineNotifications = Action('UpdatePipelineNotifications')
-UpdatePipelineStatus = Action('UpdatePipelineStatus')
+CancelJob = Action("CancelJob")
+CreateJob = Action("CreateJob")
+CreatePipeline = Action("CreatePipeline")
+CreatePreset = Action("CreatePreset")
+DeletePipeline = Action("DeletePipeline")
+DeletePreset = Action("DeletePreset")
+ListJobsByPipeline = Action("ListJobsByPipeline")
+ListJobsByStatus = Action("ListJobsByStatus")
+ListPipelines = Action("ListPipelines")
+ListPresets = Action("ListPresets")
+ReadJob = Action("ReadJob")
+ReadPipeline = Action("ReadPipeline")
+ReadPreset = Action("ReadPreset")
+TestRole = Action("TestRole")
+UpdatePipeline = Action("UpdatePipeline")
+UpdatePipelineNotifications = Action("UpdatePipelineNotifications")
+UpdatePipelineStatus = Action("UpdatePipelineStatus")

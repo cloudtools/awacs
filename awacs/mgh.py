@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Migration Hub'
-prefix = 'mgh'
+service_name = "AWS Migration Hub"
+prefix = "mgh"
 
 
 class Action(BaseAction):
@@ -17,28 +17,27 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateCreatedArtifact = Action('AssociateCreatedArtifact')
-AssociateDiscoveredResource = Action('AssociateDiscoveredResource')
-CreateHomeRegionControl = Action('CreateHomeRegionControl')
-CreateProgressUpdateStream = Action('CreateProgressUpdateStream')
-DeleteProgressUpdateStream = Action('DeleteProgressUpdateStream')
-DescribeApplicationState = Action('DescribeApplicationState')
-DescribeHomeRegionControls = Action('DescribeHomeRegionControls')
-DescribeMigrationTask = Action('DescribeMigrationTask')
-DisassociateCreatedArtifact = Action('DisassociateCreatedArtifact')
-DisassociateDiscoveredResource = Action('DisassociateDiscoveredResource')
-GetHomeRegion = Action('GetHomeRegion')
-ImportMigrationTask = Action('ImportMigrationTask')
-ListCreatedArtifacts = Action('ListCreatedArtifacts')
-ListDiscoveredResources = Action('ListDiscoveredResources')
-ListMigrationTasks = Action('ListMigrationTasks')
-ListProgressUpdateStreams = Action('ListProgressUpdateStreams')
-NotifyApplicationState = Action('NotifyApplicationState')
-NotifyMigrationTaskState = Action('NotifyMigrationTaskState')
-PutResourceAttributes = Action('PutResourceAttributes')
+AssociateCreatedArtifact = Action("AssociateCreatedArtifact")
+AssociateDiscoveredResource = Action("AssociateDiscoveredResource")
+CreateHomeRegionControl = Action("CreateHomeRegionControl")
+CreateProgressUpdateStream = Action("CreateProgressUpdateStream")
+DeleteProgressUpdateStream = Action("DeleteProgressUpdateStream")
+DescribeApplicationState = Action("DescribeApplicationState")
+DescribeHomeRegionControls = Action("DescribeHomeRegionControls")
+DescribeMigrationTask = Action("DescribeMigrationTask")
+DisassociateCreatedArtifact = Action("DisassociateCreatedArtifact")
+DisassociateDiscoveredResource = Action("DisassociateDiscoveredResource")
+GetHomeRegion = Action("GetHomeRegion")
+ImportMigrationTask = Action("ImportMigrationTask")
+ListCreatedArtifacts = Action("ListCreatedArtifacts")
+ListDiscoveredResources = Action("ListDiscoveredResources")
+ListMigrationTasks = Action("ListMigrationTasks")
+ListProgressUpdateStreams = Action("ListProgressUpdateStreams")
+NotifyApplicationState = Action("NotifyApplicationState")
+NotifyMigrationTaskState = Action("NotifyMigrationTaskState")
+PutResourceAttributes = Action("PutResourceAttributes")

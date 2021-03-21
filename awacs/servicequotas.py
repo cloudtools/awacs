@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Service Quotas'
-prefix = 'servicequotas'
+service_name = "Service Quotas"
+prefix = "servicequotas"
 
 
 class Action(BaseAction):
@@ -17,36 +17,39 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateServiceQuotaTemplate = Action('AssociateServiceQuotaTemplate')
-DeleteServiceQuotaIncreaseRequestFromTemplate = \
-    Action('DeleteServiceQuotaIncreaseRequestFromTemplate')
-DisassociateServiceQuotaTemplate = \
-    Action('DisassociateServiceQuotaTemplate')
-GetAWSDefaultServiceQuota = Action('GetAWSDefaultServiceQuota')
-GetAssociationForServiceQuotaTemplate = \
-    Action('GetAssociationForServiceQuotaTemplate')
-GetRequestedServiceQuotaChange = Action('GetRequestedServiceQuotaChange')
-GetServiceQuota = Action('GetServiceQuota')
-GetServiceQuotaIncreaseRequestFromTemplate = \
-    Action('GetServiceQuotaIncreaseRequestFromTemplate')
-ListAWSDefaultServiceQuotas = Action('ListAWSDefaultServiceQuotas')
-ListRequestedServiceQuotaChangeHistory = \
-    Action('ListRequestedServiceQuotaChangeHistory')
-ListRequestedServiceQuotaChangeHistoryByQuota = \
-    Action('ListRequestedServiceQuotaChangeHistoryByQuota')
-ListServiceQuotaIncreaseRequestsInTemplate = \
-    Action('ListServiceQuotaIncreaseRequestsInTemplate')
-ListServiceQuotas = Action('ListServiceQuotas')
-ListServices = Action('ListServices')
-ListTagsForResource = Action('ListTagsForResource')
-PutServiceQuotaIncreaseRequestIntoTemplate = \
-    Action('PutServiceQuotaIncreaseRequestIntoTemplate')
-RequestServiceQuotaIncrease = Action('RequestServiceQuotaIncrease')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+AssociateServiceQuotaTemplate = Action("AssociateServiceQuotaTemplate")
+DeleteServiceQuotaIncreaseRequestFromTemplate = Action(
+    "DeleteServiceQuotaIncreaseRequestFromTemplate"
+)
+DisassociateServiceQuotaTemplate = Action("DisassociateServiceQuotaTemplate")
+GetAWSDefaultServiceQuota = Action("GetAWSDefaultServiceQuota")
+GetAssociationForServiceQuotaTemplate = Action("GetAssociationForServiceQuotaTemplate")
+GetRequestedServiceQuotaChange = Action("GetRequestedServiceQuotaChange")
+GetServiceQuota = Action("GetServiceQuota")
+GetServiceQuotaIncreaseRequestFromTemplate = Action(
+    "GetServiceQuotaIncreaseRequestFromTemplate"
+)
+ListAWSDefaultServiceQuotas = Action("ListAWSDefaultServiceQuotas")
+ListRequestedServiceQuotaChangeHistory = Action(
+    "ListRequestedServiceQuotaChangeHistory"
+)
+ListRequestedServiceQuotaChangeHistoryByQuota = Action(
+    "ListRequestedServiceQuotaChangeHistoryByQuota"
+)
+ListServiceQuotaIncreaseRequestsInTemplate = Action(
+    "ListServiceQuotaIncreaseRequestsInTemplate"
+)
+ListServiceQuotas = Action("ListServiceQuotas")
+ListServices = Action("ListServices")
+ListTagsForResource = Action("ListTagsForResource")
+PutServiceQuotaIncreaseRequestIntoTemplate = Action(
+    "PutServiceQuotaIncreaseRequestIntoTemplate"
+)
+RequestServiceQuotaIncrease = Action("RequestServiceQuotaIncrease")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Fleet Hub for AWS IoT Device Management'
-prefix = 'iotfleethub'
+service_name = "Fleet Hub for AWS IoT Device Management"
+prefix = "iotfleethub"
 
 
 class Action(BaseAction):
@@ -17,22 +17,21 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateApplication = Action('CreateApplication')
-CreateDashboard = Action('CreateDashboard')
-DeleteApplication = Action('DeleteApplication')
-DeleteDashboard = Action('DeleteDashboard')
-DescribeApplication = Action('DescribeApplication')
-DescribeDashboard = Action('DescribeDashboard')
-ListApplications = Action('ListApplications')
-ListDashboards = Action('ListDashboards')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateApplication = Action('UpdateApplication')
-UpdateDashboard = Action('UpdateDashboard')
+CreateApplication = Action("CreateApplication")
+CreateDashboard = Action("CreateDashboard")
+DeleteApplication = Action("DeleteApplication")
+DeleteDashboard = Action("DeleteDashboard")
+DescribeApplication = Action("DescribeApplication")
+DescribeDashboard = Action("DescribeDashboard")
+ListApplications = Action("ListApplications")
+ListDashboards = Action("ListDashboards")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateApplication = Action("UpdateApplication")
+UpdateDashboard = Action("UpdateDashboard")

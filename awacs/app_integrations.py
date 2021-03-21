@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon AppIntegrations'
-prefix = 'app-integrations'
+service_name = "Amazon AppIntegrations"
+prefix = "app-integrations"
 
 
 class Action(BaseAction):
@@ -17,23 +17,19 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateEventIntegration = Action('CreateEventIntegration')
-CreateEventIntegrationAssociation = \
-    Action('CreateEventIntegrationAssociation')
-DeleteEventIntegration = Action('DeleteEventIntegration')
-DeleteEventIntegrationAssociation = \
-    Action('DeleteEventIntegrationAssociation')
-GetEventIntegration = Action('GetEventIntegration')
-ListEventIntegrationAssociations = \
-    Action('ListEventIntegrationAssociations')
-ListEventIntegrations = Action('ListEventIntegrations')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateEventIntegration = Action('UpdateEventIntegration')
+CreateEventIntegration = Action("CreateEventIntegration")
+CreateEventIntegrationAssociation = Action("CreateEventIntegrationAssociation")
+DeleteEventIntegration = Action("DeleteEventIntegration")
+DeleteEventIntegrationAssociation = Action("DeleteEventIntegrationAssociation")
+GetEventIntegration = Action("GetEventIntegration")
+ListEventIntegrationAssociations = Action("ListEventIntegrationAssociations")
+ListEventIntegrations = Action("ListEventIntegrations")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateEventIntegration = Action("UpdateEventIntegration")

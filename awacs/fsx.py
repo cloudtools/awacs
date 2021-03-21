@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon FSx'
-prefix = 'fsx'
+service_name = "Amazon FSx"
+prefix = "fsx"
 
 
 class Action(BaseAction):
@@ -17,26 +17,25 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AssociateFileSystemAliases = Action('AssociateFileSystemAliases')
-CancelDataRepositoryTask = Action('CancelDataRepositoryTask')
-CreateBackup = Action('CreateBackup')
-CreateDataRepositoryTask = Action('CreateDataRepositoryTask')
-CreateFileSystem = Action('CreateFileSystem')
-CreateFileSystemFromBackup = Action('CreateFileSystemFromBackup')
-DeleteBackup = Action('DeleteBackup')
-DeleteFileSystem = Action('DeleteFileSystem')
-DescribeBackups = Action('DescribeBackups')
-DescribeDataRepositoryTasks = Action('DescribeDataRepositoryTasks')
-DescribeFileSystemAliases = Action('DescribeFileSystemAliases')
-DescribeFileSystems = Action('DescribeFileSystems')
-DisassociateFileSystemAliases = Action('DisassociateFileSystemAliases')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateFileSystem = Action('UpdateFileSystem')
+AssociateFileSystemAliases = Action("AssociateFileSystemAliases")
+CancelDataRepositoryTask = Action("CancelDataRepositoryTask")
+CreateBackup = Action("CreateBackup")
+CreateDataRepositoryTask = Action("CreateDataRepositoryTask")
+CreateFileSystem = Action("CreateFileSystem")
+CreateFileSystemFromBackup = Action("CreateFileSystemFromBackup")
+DeleteBackup = Action("DeleteBackup")
+DeleteFileSystem = Action("DeleteFileSystem")
+DescribeBackups = Action("DescribeBackups")
+DescribeDataRepositoryTasks = Action("DescribeDataRepositoryTasks")
+DescribeFileSystemAliases = Action("DescribeFileSystemAliases")
+DescribeFileSystems = Action("DescribeFileSystems")
+DisassociateFileSystemAliases = Action("DisassociateFileSystemAliases")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateFileSystem = Action("UpdateFileSystem")

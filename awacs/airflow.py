@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Managed Workflows for Apache Airflow'
-prefix = 'airflow'
+service_name = "Amazon Managed Workflows for Apache Airflow"
+prefix = "airflow"
 
 
 class Action(BaseAction):
@@ -17,20 +17,19 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateCliToken = Action('CreateCliToken')
-CreateEnvironment = Action('CreateEnvironment')
-CreateWebLoginToken = Action('CreateWebLoginToken')
-DeleteEnvironment = Action('DeleteEnvironment')
-GetEnvironment = Action('GetEnvironment')
-ListEnvironments = Action('ListEnvironments')
-ListTagsForResource = Action('ListTagsForResource')
-PublishMetrics = Action('PublishMetrics')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
-UpdateEnvironment = Action('UpdateEnvironment')
+CreateCliToken = Action("CreateCliToken")
+CreateEnvironment = Action("CreateEnvironment")
+CreateWebLoginToken = Action("CreateWebLoginToken")
+DeleteEnvironment = Action("DeleteEnvironment")
+GetEnvironment = Action("GetEnvironment")
+ListEnvironments = Action("ListEnvironments")
+ListTagsForResource = Action("ListTagsForResource")
+PublishMetrics = Action("PublishMetrics")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateEnvironment = Action("UpdateEnvironment")

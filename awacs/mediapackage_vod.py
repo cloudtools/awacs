@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental MediaPackage VOD'
-prefix = 'mediapackage-vod'
+service_name = "AWS Elemental MediaPackage VOD"
+prefix = "mediapackage-vod"
 
 
 class Action(BaseAction):
@@ -17,24 +17,23 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateAsset = Action('CreateAsset')
-CreatePackagingConfiguration = Action('CreatePackagingConfiguration')
-CreatePackagingGroup = Action('CreatePackagingGroup')
-DeleteAsset = Action('DeleteAsset')
-DeletePackagingConfiguration = Action('DeletePackagingConfiguration')
-DeletePackagingGroup = Action('DeletePackagingGroup')
-DescribeAsset = Action('DescribeAsset')
-DescribePackagingConfiguration = Action('DescribePackagingConfiguration')
-DescribePackagingGroup = Action('DescribePackagingGroup')
-ListAssets = Action('ListAssets')
-ListPackagingConfigurations = Action('ListPackagingConfigurations')
-ListPackagingGroups = Action('ListPackagingGroups')
-ListTagsForResource = Action('ListTagsForResource')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CreateAsset = Action("CreateAsset")
+CreatePackagingConfiguration = Action("CreatePackagingConfiguration")
+CreatePackagingGroup = Action("CreatePackagingGroup")
+DeleteAsset = Action("DeleteAsset")
+DeletePackagingConfiguration = Action("DeletePackagingConfiguration")
+DeletePackagingGroup = Action("DeletePackagingGroup")
+DescribeAsset = Action("DescribeAsset")
+DescribePackagingConfiguration = Action("DescribePackagingConfiguration")
+DescribePackagingGroup = Action("DescribePackagingGroup")
+ListAssets = Action("ListAssets")
+ListPackagingConfigurations = Action("ListPackagingConfigurations")
+ListPackagingGroups = Action("ListPackagingGroups")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

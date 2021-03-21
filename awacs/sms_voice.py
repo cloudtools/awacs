@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Pinpoint SMS and Voice Service'
-prefix = 'sms-voice'
+service_name = "Amazon Pinpoint SMS and Voice Service"
+prefix = "sms-voice"
 
 
 class Action(BaseAction):
@@ -17,21 +17,22 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateConfigurationSet = Action('CreateConfigurationSet')
-CreateConfigurationSetEventDestination = \
-    Action('CreateConfigurationSetEventDestination')
-DeleteConfigurationSet = Action('DeleteConfigurationSet')
-DeleteConfigurationSetEventDestination = \
-    Action('DeleteConfigurationSetEventDestination')
-GetConfigurationSetEventDestinations = \
-    Action('GetConfigurationSetEventDestinations')
-ListConfigurationSets = Action('ListConfigurationSets')
-SendVoiceMessage = Action('SendVoiceMessage')
-UpdateConfigurationSetEventDestination = \
-    Action('UpdateConfigurationSetEventDestination')
+CreateConfigurationSet = Action("CreateConfigurationSet")
+CreateConfigurationSetEventDestination = Action(
+    "CreateConfigurationSetEventDestination"
+)
+DeleteConfigurationSet = Action("DeleteConfigurationSet")
+DeleteConfigurationSetEventDestination = Action(
+    "DeleteConfigurationSetEventDestination"
+)
+GetConfigurationSetEventDestinations = Action("GetConfigurationSetEventDestinations")
+ListConfigurationSets = Action("ListConfigurationSets")
+SendVoiceMessage = Action("SendVoiceMessage")
+UpdateConfigurationSetEventDestination = Action(
+    "UpdateConfigurationSetEventDestination"
+)

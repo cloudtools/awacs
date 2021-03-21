@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Health APIs and Notifications'
-prefix = 'health'
+service_name = "AWS Health APIs and Notifications"
+prefix = "health"
 
 
 class Action(BaseAction):
@@ -17,28 +17,31 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DescribeAffectedAccountsForOrganization = \
-    Action('DescribeAffectedAccountsForOrganization')
-DescribeAffectedEntities = Action('DescribeAffectedEntities')
-DescribeAffectedEntitiesForOrganization = \
-    Action('DescribeAffectedEntitiesForOrganization')
-DescribeEntityAggregates = Action('DescribeEntityAggregates')
-DescribeEventAggregates = Action('DescribeEventAggregates')
-DescribeEventDetails = Action('DescribeEventDetails')
-DescribeEventDetailsForOrganization = \
-    Action('DescribeEventDetailsForOrganization')
-DescribeEventTypes = Action('DescribeEventTypes')
-DescribeEvents = Action('DescribeEvents')
-DescribeEventsForOrganization = Action('DescribeEventsForOrganization')
-DescribeHealthServiceStatusForOrganization = \
-    Action('DescribeHealthServiceStatusForOrganization')
-DisableHealthServiceAccessForOrganization = \
-    Action('DisableHealthServiceAccessForOrganization')
-EnableHealthServiceAccessForOrganization = \
-    Action('EnableHealthServiceAccessForOrganization')
+DescribeAffectedAccountsForOrganization = Action(
+    "DescribeAffectedAccountsForOrganization"
+)
+DescribeAffectedEntities = Action("DescribeAffectedEntities")
+DescribeAffectedEntitiesForOrganization = Action(
+    "DescribeAffectedEntitiesForOrganization"
+)
+DescribeEntityAggregates = Action("DescribeEntityAggregates")
+DescribeEventAggregates = Action("DescribeEventAggregates")
+DescribeEventDetails = Action("DescribeEventDetails")
+DescribeEventDetailsForOrganization = Action("DescribeEventDetailsForOrganization")
+DescribeEventTypes = Action("DescribeEventTypes")
+DescribeEvents = Action("DescribeEvents")
+DescribeEventsForOrganization = Action("DescribeEventsForOrganization")
+DescribeHealthServiceStatusForOrganization = Action(
+    "DescribeHealthServiceStatusForOrganization"
+)
+DisableHealthServiceAccessForOrganization = Action(
+    "DisableHealthServiceAccessForOrganization"
+)
+EnableHealthServiceAccessForOrganization = Action(
+    "EnableHealthServiceAccessForOrganization"
+)

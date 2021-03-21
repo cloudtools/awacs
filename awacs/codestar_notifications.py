@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS CodeStar Notifications'
-prefix = 'codestar-notifications'
+service_name = "AWS CodeStar Notifications"
+prefix = "codestar-notifications"
 
 
 class Action(BaseAction):
@@ -17,22 +17,21 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateNotificationRule = Action('CreateNotificationRule')
-DeleteNotificationRule = Action('DeleteNotificationRule')
-DeleteTarget = Action('DeleteTarget')
-DescribeNotificationRule = Action('DescribeNotificationRule')
-ListEventTypes = Action('ListEventTypes')
-ListNotificationRules = Action('ListNotificationRules')
-ListTagsForResource = Action('ListTagsForResource')
-ListTargets = Action('ListTargets')
-Subscribe = Action('Subscribe')
-TagResource = Action('TagResource')
-Unsubscribe = Action('Unsubscribe')
-UntagResource = Action('UntagResource')
-UpdateNotificationRule = Action('UpdateNotificationRule')
+CreateNotificationRule = Action("CreateNotificationRule")
+DeleteNotificationRule = Action("DeleteNotificationRule")
+DeleteTarget = Action("DeleteTarget")
+DescribeNotificationRule = Action("DescribeNotificationRule")
+ListEventTypes = Action("ListEventTypes")
+ListNotificationRules = Action("ListNotificationRules")
+ListTagsForResource = Action("ListTagsForResource")
+ListTargets = Action("ListTargets")
+Subscribe = Action("Subscribe")
+TagResource = Action("TagResource")
+Unsubscribe = Action("Unsubscribe")
+UntagResource = Action("UntagResource")
+UpdateNotificationRule = Action("UpdateNotificationRule")

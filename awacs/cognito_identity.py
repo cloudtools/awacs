@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Cognito Identity'
-prefix = 'cognito-identity'
+service_name = "Amazon Cognito Identity"
+prefix = "cognito-identity"
 
 
 class Action(BaseAction):
@@ -17,33 +17,31 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateIdentityPool = Action('CreateIdentityPool')
-DeleteIdentities = Action('DeleteIdentities')
-DeleteIdentityPool = Action('DeleteIdentityPool')
-DescribeIdentity = Action('DescribeIdentity')
-DescribeIdentityPool = Action('DescribeIdentityPool')
-GetCredentialsForIdentity = Action('GetCredentialsForIdentity')
-GetId = Action('GetId')
-GetIdentityPoolRoles = Action('GetIdentityPoolRoles')
-GetOpenIdToken = Action('GetOpenIdToken')
-GetOpenIdTokenForDeveloperIdentity = \
-    Action('GetOpenIdTokenForDeveloperIdentity')
-GetPrincipalTagAttributeMap = Action('GetPrincipalTagAttributeMap')
-ListIdentities = Action('ListIdentities')
-ListIdentityPools = Action('ListIdentityPools')
-ListTagsForResource = Action('ListTagsForResource')
-LookupDeveloperIdentity = Action('LookupDeveloperIdentity')
-MergeDeveloperIdentities = Action('MergeDeveloperIdentities')
-SetIdentityPoolRoles = Action('SetIdentityPoolRoles')
-SetPrincipalTagAttributeMap = Action('SetPrincipalTagAttributeMap')
-TagResource = Action('TagResource')
-UnlinkDeveloperIdentity = Action('UnlinkDeveloperIdentity')
-UnlinkIdentity = Action('UnlinkIdentity')
-UntagResource = Action('UntagResource')
-UpdateIdentityPool = Action('UpdateIdentityPool')
+CreateIdentityPool = Action("CreateIdentityPool")
+DeleteIdentities = Action("DeleteIdentities")
+DeleteIdentityPool = Action("DeleteIdentityPool")
+DescribeIdentity = Action("DescribeIdentity")
+DescribeIdentityPool = Action("DescribeIdentityPool")
+GetCredentialsForIdentity = Action("GetCredentialsForIdentity")
+GetId = Action("GetId")
+GetIdentityPoolRoles = Action("GetIdentityPoolRoles")
+GetOpenIdToken = Action("GetOpenIdToken")
+GetOpenIdTokenForDeveloperIdentity = Action("GetOpenIdTokenForDeveloperIdentity")
+GetPrincipalTagAttributeMap = Action("GetPrincipalTagAttributeMap")
+ListIdentities = Action("ListIdentities")
+ListIdentityPools = Action("ListIdentityPools")
+ListTagsForResource = Action("ListTagsForResource")
+LookupDeveloperIdentity = Action("LookupDeveloperIdentity")
+MergeDeveloperIdentities = Action("MergeDeveloperIdentities")
+SetIdentityPoolRoles = Action("SetIdentityPoolRoles")
+SetPrincipalTagAttributeMap = Action("SetPrincipalTagAttributeMap")
+TagResource = Action("TagResource")
+UnlinkDeveloperIdentity = Action("UnlinkDeveloperIdentity")
+UnlinkIdentity = Action("UnlinkIdentity")
+UntagResource = Action("UntagResource")
+UpdateIdentityPool = Action("UpdateIdentityPool")

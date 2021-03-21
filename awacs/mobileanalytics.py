@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Mobile Analytics'
-prefix = 'mobileanalytics'
+service_name = "Amazon Mobile Analytics"
+prefix = "mobileanalytics"
 
 
 class Action(BaseAction):
@@ -17,12 +17,11 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-GetFinancialReports = Action('GetFinancialReports')
-GetReports = Action('GetReports')
-PutEvents = Action('PutEvents')
+GetFinancialReports = Action("GetFinancialReports")
+GetReports = Action("GetReports")
+PutEvents = Action("PutEvents")

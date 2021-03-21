@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Marketplace Management Portal'
-prefix = 'aws-marketplace-management'
+service_name = "AWS Marketplace Management Portal"
+prefix = "aws-marketplace-management"
 
 
 class Action(BaseAction):
@@ -17,14 +17,13 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-uploadFiles = Action('uploadFiles')
-viewMarketing = Action('viewMarketing')
-viewReports = Action('viewReports')
-viewSettings = Action('viewSettings')
-viewSupport = Action('viewSupport')
+uploadFiles = Action("uploadFiles")
+viewMarketing = Action("viewMarketing")
+viewReports = Action("viewReports")
+viewSettings = Action("viewSettings")
+viewSupport = Action("viewSupport")

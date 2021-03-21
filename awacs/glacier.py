@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Glacier'
-prefix = 'glacier'
+service_name = "Amazon Glacier"
+prefix = "glacier"
 
 
 class Action(BaseAction):
@@ -17,42 +17,41 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-AbortMultipartUpload = Action('AbortMultipartUpload')
-AbortVaultLock = Action('AbortVaultLock')
-AddTagsToVault = Action('AddTagsToVault')
-CompleteMultipartUpload = Action('CompleteMultipartUpload')
-CompleteVaultLock = Action('CompleteVaultLock')
-CreateVault = Action('CreateVault')
-DeleteArchive = Action('DeleteArchive')
-DeleteVault = Action('DeleteVault')
-DeleteVaultAccessPolicy = Action('DeleteVaultAccessPolicy')
-DeleteVaultNotifications = Action('DeleteVaultNotifications')
-DescribeJob = Action('DescribeJob')
-DescribeVault = Action('DescribeVault')
-GetDataRetrievalPolicy = Action('GetDataRetrievalPolicy')
-GetJobOutput = Action('GetJobOutput')
-GetVaultAccessPolicy = Action('GetVaultAccessPolicy')
-GetVaultLock = Action('GetVaultLock')
-GetVaultNotifications = Action('GetVaultNotifications')
-InitiateJob = Action('InitiateJob')
-InitiateMultipartUpload = Action('InitiateMultipartUpload')
-InitiateVaultLock = Action('InitiateVaultLock')
-ListJobs = Action('ListJobs')
-ListMultipartUploads = Action('ListMultipartUploads')
-ListParts = Action('ListParts')
-ListProvisionedCapacity = Action('ListProvisionedCapacity')
-ListTagsForVault = Action('ListTagsForVault')
-ListVaults = Action('ListVaults')
-PurchaseProvisionedCapacity = Action('PurchaseProvisionedCapacity')
-RemoveTagsFromVault = Action('RemoveTagsFromVault')
-SetDataRetrievalPolicy = Action('SetDataRetrievalPolicy')
-SetVaultAccessPolicy = Action('SetVaultAccessPolicy')
-SetVaultNotifications = Action('SetVaultNotifications')
-UploadArchive = Action('UploadArchive')
-UploadMultipartPart = Action('UploadMultipartPart')
+AbortMultipartUpload = Action("AbortMultipartUpload")
+AbortVaultLock = Action("AbortVaultLock")
+AddTagsToVault = Action("AddTagsToVault")
+CompleteMultipartUpload = Action("CompleteMultipartUpload")
+CompleteVaultLock = Action("CompleteVaultLock")
+CreateVault = Action("CreateVault")
+DeleteArchive = Action("DeleteArchive")
+DeleteVault = Action("DeleteVault")
+DeleteVaultAccessPolicy = Action("DeleteVaultAccessPolicy")
+DeleteVaultNotifications = Action("DeleteVaultNotifications")
+DescribeJob = Action("DescribeJob")
+DescribeVault = Action("DescribeVault")
+GetDataRetrievalPolicy = Action("GetDataRetrievalPolicy")
+GetJobOutput = Action("GetJobOutput")
+GetVaultAccessPolicy = Action("GetVaultAccessPolicy")
+GetVaultLock = Action("GetVaultLock")
+GetVaultNotifications = Action("GetVaultNotifications")
+InitiateJob = Action("InitiateJob")
+InitiateMultipartUpload = Action("InitiateMultipartUpload")
+InitiateVaultLock = Action("InitiateVaultLock")
+ListJobs = Action("ListJobs")
+ListMultipartUploads = Action("ListMultipartUploads")
+ListParts = Action("ListParts")
+ListProvisionedCapacity = Action("ListProvisionedCapacity")
+ListTagsForVault = Action("ListTagsForVault")
+ListVaults = Action("ListVaults")
+PurchaseProvisionedCapacity = Action("PurchaseProvisionedCapacity")
+RemoveTagsFromVault = Action("RemoveTagsFromVault")
+SetDataRetrievalPolicy = Action("SetDataRetrievalPolicy")
+SetVaultAccessPolicy = Action("SetVaultAccessPolicy")
+SetVaultNotifications = Action("SetVaultNotifications")
+UploadArchive = Action("UploadArchive")
+UploadMultipartPart = Action("UploadMultipartPart")

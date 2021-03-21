@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Batch'
-prefix = 'batch'
+service_name = "AWS Batch"
+prefix = "batch"
 
 
 class Action(BaseAction):
@@ -17,28 +17,27 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CancelJob = Action('CancelJob')
-CreateComputeEnvironment = Action('CreateComputeEnvironment')
-CreateJobQueue = Action('CreateJobQueue')
-DeleteComputeEnvironment = Action('DeleteComputeEnvironment')
-DeleteJobQueue = Action('DeleteJobQueue')
-DeregisterJobDefinition = Action('DeregisterJobDefinition')
-DescribeComputeEnvironments = Action('DescribeComputeEnvironments')
-DescribeJobDefinitions = Action('DescribeJobDefinitions')
-DescribeJobQueues = Action('DescribeJobQueues')
-DescribeJobs = Action('DescribeJobs')
-ListJobs = Action('ListJobs')
-ListTagsForResource = Action('ListTagsForResource')
-RegisterJobDefinition = Action('RegisterJobDefinition')
-SubmitJob = Action('SubmitJob')
-TagResource = Action('TagResource')
-TerminateJob = Action('TerminateJob')
-UntagResource = Action('UntagResource')
-UpdateComputeEnvironment = Action('UpdateComputeEnvironment')
-UpdateJobQueue = Action('UpdateJobQueue')
+CancelJob = Action("CancelJob")
+CreateComputeEnvironment = Action("CreateComputeEnvironment")
+CreateJobQueue = Action("CreateJobQueue")
+DeleteComputeEnvironment = Action("DeleteComputeEnvironment")
+DeleteJobQueue = Action("DeleteJobQueue")
+DeregisterJobDefinition = Action("DeregisterJobDefinition")
+DescribeComputeEnvironments = Action("DescribeComputeEnvironments")
+DescribeJobDefinitions = Action("DescribeJobDefinitions")
+DescribeJobQueues = Action("DescribeJobQueues")
+DescribeJobs = Action("DescribeJobs")
+ListJobs = Action("ListJobs")
+ListTagsForResource = Action("ListTagsForResource")
+RegisterJobDefinition = Action("RegisterJobDefinition")
+SubmitJob = Action("SubmitJob")
+TagResource = Action("TagResource")
+TerminateJob = Action("TerminateJob")
+UntagResource = Action("UntagResource")
+UpdateComputeEnvironment = Action("UpdateComputeEnvironment")
+UpdateJobQueue = Action("UpdateJobQueue")

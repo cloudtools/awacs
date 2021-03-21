@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon Translate'
-prefix = 'translate'
+service_name = "Amazon Translate"
+prefix = "translate"
 
 
 class Action(BaseAction):
@@ -17,23 +17,22 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateParallelData = Action('CreateParallelData')
-DeleteParallelData = Action('DeleteParallelData')
-DeleteTerminology = Action('DeleteTerminology')
-DescribeTextTranslationJob = Action('DescribeTextTranslationJob')
-GetParallelData = Action('GetParallelData')
-GetTerminology = Action('GetTerminology')
-ImportTerminology = Action('ImportTerminology')
-ListParallelData = Action('ListParallelData')
-ListTerminologies = Action('ListTerminologies')
-ListTextTranslationJobs = Action('ListTextTranslationJobs')
-StartTextTranslationJob = Action('StartTextTranslationJob')
-StopTextTranslationJob = Action('StopTextTranslationJob')
-TranslateText = Action('TranslateText')
-UpdateParallelData = Action('UpdateParallelData')
+CreateParallelData = Action("CreateParallelData")
+DeleteParallelData = Action("DeleteParallelData")
+DeleteTerminology = Action("DeleteTerminology")
+DescribeTextTranslationJob = Action("DescribeTextTranslationJob")
+GetParallelData = Action("GetParallelData")
+GetTerminology = Action("GetTerminology")
+ImportTerminology = Action("ImportTerminology")
+ListParallelData = Action("ListParallelData")
+ListTerminologies = Action("ListTerminologies")
+ListTextTranslationJobs = Action("ListTextTranslationJobs")
+StartTextTranslationJob = Action("StartTextTranslationJob")
+StopTextTranslationJob = Action("StopTextTranslationJob")
+TranslateText = Action("TranslateText")
+UpdateParallelData = Action("UpdateParallelData")

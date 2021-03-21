@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Billing'
-prefix = 'aws-portal'
+service_name = "AWS Billing"
+prefix = "aws-portal"
 
 
 class Action(BaseAction):
@@ -17,16 +17,15 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-ModifyAccount = Action('ModifyAccount')
-ModifyBilling = Action('ModifyBilling')
-ModifyPaymentMethods = Action('ModifyPaymentMethods')
-ViewAccount = Action('ViewAccount')
-ViewBilling = Action('ViewBilling')
-ViewPaymentMethods = Action('ViewPaymentMethods')
-ViewUsage = Action('ViewUsage')
+ModifyAccount = Action("ModifyAccount")
+ModifyBilling = Action("ModifyBilling")
+ModifyPaymentMethods = Action("ModifyPaymentMethods")
+ViewAccount = Action("ViewAccount")
+ViewBilling = Action("ViewBilling")
+ViewPaymentMethods = Action("ViewPaymentMethods")
+ViewUsage = Action("ViewUsage")

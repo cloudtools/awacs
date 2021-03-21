@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Manage Amazon API Gateway'
-prefix = 'apigateway'
+service_name = "Manage Amazon API Gateway"
+prefix = "apigateway"
 
 
 class Action(BaseAction):
@@ -17,18 +17,17 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DELETE = Action('DELETE')
-GET = Action('GET')
-HEAD = Action('HEAD')
-OPTIONS = Action('OPTIONS')
-PATCH = Action('PATCH')
-POST = Action('POST')
-PUT = Action('PUT')
-SetWebACL = Action('SetWebACL')
-UpdateRestApiPolicy = Action('UpdateRestApiPolicy')
+DELETE = Action("DELETE")
+GET = Action("GET")
+HEAD = Action("HEAD")
+OPTIONS = Action("OPTIONS")
+PATCH = Action("PATCH")
+POST = Action("POST")
+PUT = Action("PUT")
+SetWebACL = Action("SetWebACL")
+UpdateRestApiPolicy = Action("UpdateRestApiPolicy")

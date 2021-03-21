@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon RDS Data API'
-prefix = 'rds-data'
+service_name = "Amazon RDS Data API"
+prefix = "rds-data"
 
 
 class Action(BaseAction):
@@ -17,15 +17,14 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-BatchExecuteStatement = Action('BatchExecuteStatement')
-BeginTransaction = Action('BeginTransaction')
-CommitTransaction = Action('CommitTransaction')
-ExecuteSql = Action('ExecuteSql')
-ExecuteStatement = Action('ExecuteStatement')
-RollbackTransaction = Action('RollbackTransaction')
+BatchExecuteStatement = Action("BatchExecuteStatement")
+BeginTransaction = Action("BeginTransaction")
+CommitTransaction = Action("CommitTransaction")
+ExecuteSql = Action("ExecuteSql")
+ExecuteStatement = Action("ExecuteStatement")
+RollbackTransaction = Action("RollbackTransaction")

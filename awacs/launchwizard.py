@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Launch Wizard'
-prefix = 'launchwizard'
+service_name = "Launch Wizard"
+prefix = "launchwizard"
 
 
 class Action(BaseAction):
@@ -17,17 +17,16 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DeleteApp = Action('DeleteApp')
-DescribeProvisionedApp = Action('DescribeProvisionedApp')
-DescribeProvisioningEvents = Action('DescribeProvisioningEvents')
-GetInfrastructureSuggestion = Action('GetInfrastructureSuggestion')
-GetIpAddress = Action('GetIpAddress')
-GetResourceCostEstimate = Action('GetResourceCostEstimate')
-ListProvisionedApps = Action('ListProvisionedApps')
-StartProvisioning = Action('StartProvisioning')
+DeleteApp = Action("DeleteApp")
+DescribeProvisionedApp = Action("DescribeProvisionedApp")
+DescribeProvisioningEvents = Action("DescribeProvisioningEvents")
+GetInfrastructureSuggestion = Action("GetInfrastructureSuggestion")
+GetIpAddress = Action("GetIpAddress")
+GetResourceCostEstimate = Action("GetResourceCostEstimate")
+ListProvisionedApps = Action("ListProvisionedApps")
+StartProvisioning = Action("StartProvisioning")

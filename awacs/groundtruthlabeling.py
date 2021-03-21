@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'Amazon GroundTruth Labeling'
-prefix = 'groundtruthlabeling'
+service_name = "Amazon GroundTruth Labeling"
+prefix = "groundtruthlabeling"
 
 
 class Action(BaseAction):
@@ -17,14 +17,12 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DescribeConsoleJob = Action('DescribeConsoleJob')
-ListDatasetObjects = Action('ListDatasetObjects')
-RunFilterOrSampleDatasetJob = Action('RunFilterOrSampleDatasetJob')
-RunGenerateManifestByCrawlingJob = \
-    Action('RunGenerateManifestByCrawlingJob')
+DescribeConsoleJob = Action("DescribeConsoleJob")
+ListDatasetObjects = Action("ListDatasetObjects")
+RunFilterOrSampleDatasetJob = Action("RunFilterOrSampleDatasetJob")
+RunGenerateManifestByCrawlingJob = Action("RunGenerateManifestByCrawlingJob")

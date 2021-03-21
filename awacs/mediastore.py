@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental MediaStore'
-prefix = 'mediastore'
+service_name = "AWS Elemental MediaStore"
+prefix = "mediastore"
 
 
 class Action(BaseAction):
@@ -17,35 +17,34 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CreateContainer = Action('CreateContainer')
-DeleteContainer = Action('DeleteContainer')
-DeleteContainerPolicy = Action('DeleteContainerPolicy')
-DeleteCorsPolicy = Action('DeleteCorsPolicy')
-DeleteLifecyclePolicy = Action('DeleteLifecyclePolicy')
-DeleteMetricPolicy = Action('DeleteMetricPolicy')
-DeleteObject = Action('DeleteObject')
-DescribeContainer = Action('DescribeContainer')
-DescribeObject = Action('DescribeObject')
-GetContainerPolicy = Action('GetContainerPolicy')
-GetCorsPolicy = Action('GetCorsPolicy')
-GetLifecyclePolicy = Action('GetLifecyclePolicy')
-GetMetricPolicy = Action('GetMetricPolicy')
-GetObject = Action('GetObject')
-ListContainers = Action('ListContainers')
-ListItems = Action('ListItems')
-ListTagsForResource = Action('ListTagsForResource')
-PutContainerPolicy = Action('PutContainerPolicy')
-PutCorsPolicy = Action('PutCorsPolicy')
-PutLifecyclePolicy = Action('PutLifecyclePolicy')
-PutMetricPolicy = Action('PutMetricPolicy')
-PutObject = Action('PutObject')
-StartAccessLogging = Action('StartAccessLogging')
-StopAccessLogging = Action('StopAccessLogging')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+CreateContainer = Action("CreateContainer")
+DeleteContainer = Action("DeleteContainer")
+DeleteContainerPolicy = Action("DeleteContainerPolicy")
+DeleteCorsPolicy = Action("DeleteCorsPolicy")
+DeleteLifecyclePolicy = Action("DeleteLifecyclePolicy")
+DeleteMetricPolicy = Action("DeleteMetricPolicy")
+DeleteObject = Action("DeleteObject")
+DescribeContainer = Action("DescribeContainer")
+DescribeObject = Action("DescribeObject")
+GetContainerPolicy = Action("GetContainerPolicy")
+GetCorsPolicy = Action("GetCorsPolicy")
+GetLifecyclePolicy = Action("GetLifecyclePolicy")
+GetMetricPolicy = Action("GetMetricPolicy")
+GetObject = Action("GetObject")
+ListContainers = Action("ListContainers")
+ListItems = Action("ListItems")
+ListTagsForResource = Action("ListTagsForResource")
+PutContainerPolicy = Action("PutContainerPolicy")
+PutCorsPolicy = Action("PutCorsPolicy")
+PutLifecyclePolicy = Action("PutLifecyclePolicy")
+PutMetricPolicy = Action("PutMetricPolicy")
+PutObject = Action("PutObject")
+StartAccessLogging = Action("StartAccessLogging")
+StopAccessLogging = Action("StopAccessLogging")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

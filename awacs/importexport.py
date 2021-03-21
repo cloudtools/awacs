@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Import Export Disk Service'
-prefix = 'importexport'
+service_name = "AWS Import Export Disk Service"
+prefix = "importexport"
 
 
 class Action(BaseAction):
@@ -17,15 +17,14 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-CancelJob = Action('CancelJob')
-CreateJob = Action('CreateJob')
-GetShippingLabel = Action('GetShippingLabel')
-GetStatus = Action('GetStatus')
-ListJobs = Action('ListJobs')
-UpdateJob = Action('UpdateJob')
+CancelJob = Action("CancelJob")
+CreateJob = Action("CreateJob")
+GetShippingLabel = Action("GetShippingLabel")
+GetStatus = Action("GetStatus")
+ListJobs = Action("ListJobs")
+UpdateJob = Action("UpdateJob")

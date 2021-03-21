@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Identity Store'
-prefix = 'identitystore'
+service_name = "AWS Identity Store"
+prefix = "identitystore"
 
 
 class Action(BaseAction):
@@ -17,13 +17,12 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DescribeGroup = Action('DescribeGroup')
-DescribeUser = Action('DescribeUser')
-ListGroups = Action('ListGroups')
-ListUsers = Action('ListUsers')
+DescribeGroup = Action("DescribeGroup")
+DescribeUser = Action("DescribeUser")
+ListGroups = Action("ListGroups")
+ListUsers = Action("ListUsers")

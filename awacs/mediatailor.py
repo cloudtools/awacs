@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = 'AWS Elemental MediaTailor'
-prefix = 'mediatailor'
+service_name = "AWS Elemental MediaTailor"
+prefix = "mediatailor"
 
 
 class Action(BaseAction):
@@ -17,16 +17,15 @@ class Action(BaseAction):
 
 
 class ARN(BaseARN):
-    def __init__(self, resource='', region='', account=''):
+    def __init__(self, resource="", region="", account=""):
         sup = super(ARN, self)
-        sup.__init__(service=prefix, resource=resource, region=region,
-                     account=account)
+        sup.__init__(service=prefix, resource=resource, region=region, account=account)
 
 
-DeletePlaybackConfiguration = Action('DeletePlaybackConfiguration')
-GetPlaybackConfiguration = Action('GetPlaybackConfiguration')
-ListPlaybackConfigurations = Action('ListPlaybackConfigurations')
-ListTagsForResource = Action('ListTagsForResource')
-PutPlaybackConfiguration = Action('PutPlaybackConfiguration')
-TagResource = Action('TagResource')
-UntagResource = Action('UntagResource')
+DeletePlaybackConfiguration = Action("DeletePlaybackConfiguration")
+GetPlaybackConfiguration = Action("GetPlaybackConfiguration")
+ListPlaybackConfigurations = Action("ListPlaybackConfigurations")
+ListTagsForResource = Action("ListTagsForResource")
+PutPlaybackConfiguration = Action("PutPlaybackConfiguration")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
