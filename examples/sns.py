@@ -1,8 +1,6 @@
-from awacs.aws import Allow, ArnEquals, AWSPrincipal, Condition
-from awacs.aws import Policy, Statement
 import awacs.sns as sns
 import awacs.sqs as sqs
-
+from awacs.aws import Allow, ArnEquals, AWSPrincipal, Condition, Policy, Statement
 
 region = "us-east-1"
 account = "012345678891"

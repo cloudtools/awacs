@@ -1,10 +1,8 @@
 # Example taken from AWS docs:
 # http://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr_managed_policies.html
 
-from awacs.aws import Allow
-from awacs.aws import Policy, Statement
 import awacs.ecr as ecr
-
+from awacs.aws import Allow, Policy, Statement
 
 # AmazonEC2ContainerRegistryReadOnly
 pd = Policy(

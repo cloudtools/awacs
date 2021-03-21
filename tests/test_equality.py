@@ -1,8 +1,14 @@
 import unittest
 
-from awacs import s3, ec2, iam
-from awacs.aws import PolicyDocument, Statement, Action, Condition
-from awacs.aws import StringEquals, StringLike
+from awacs import ec2, iam, s3
+from awacs.aws import (
+    Action,
+    Condition,
+    PolicyDocument,
+    Statement,
+    StringEquals,
+    StringLike,
+)
 
 
 class TestEquality(unittest.TestCase):

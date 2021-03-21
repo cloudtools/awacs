@@ -1,8 +1,14 @@
-from awacs.aws import Allow, AWSPrincipal, Condition
-from awacs.aws import Policy, Statement
-from awacs.aws import DateGreaterThan, DateLessThan, IpAddress
 import awacs.sqs as sqs
-
+from awacs.aws import (
+    Allow,
+    AWSPrincipal,
+    Condition,
+    DateGreaterThan,
+    DateLessThan,
+    IpAddress,
+    Policy,
+    Statement,
+)
 
 region = "us-east-1"
 account = "444455556666"

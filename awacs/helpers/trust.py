@@ -1,5 +1,5 @@
-from awacs.aws import Statement, Principal, Allow, Policy
 from awacs import sts
+from awacs.aws import Allow, Policy, Principal, Statement
 
 
 def make_simple_assume_statement(*principals):

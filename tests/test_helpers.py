@@ -1,8 +1,8 @@
 import unittest
 
 from awacs.helpers.trust import (
-    get_default_assumerole_policy,
     get_application_autoscaling_assumerole_policy,
+    get_default_assumerole_policy,
     get_lambda_edge_assumerole_policy,
     make_service_domain_name,
 )
