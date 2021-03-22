@@ -5,7 +5,7 @@ import awacs
 from awacs.aws import Action, PolicyDocument
 
 
-class AWSHelperFn(object):
+class AWSHelperFn:
     """Mock class to test classes with non-awacs AWSHelperFn parent."""
 
     def to_json(self, indent=4, sort_keys=True):
@@ -53,7 +53,7 @@ class TestAWSObject(unittest.TestCase):
 
 class TestAWSProperty(unittest.TestCase):
     def test_prop_value_type_mismatch_expect_list(self):
-        class InvalidClass(object):
+        class InvalidClass:
             """Class of invalid type."""
 
         tests_values = ["val", {"key": "val"}, {"val"}, tuple("val"), InvalidClass()]
