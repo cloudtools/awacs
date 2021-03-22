@@ -24,20 +24,20 @@ class TestConditions(unittest.TestCase):
         )
         self.assertEqual(
             {
-                u"Statement": [
+                "Statement": [
                     {
-                        u"Action": [u"s3:ListBucket"],
-                        u"Condition": {
-                            u"ForAllValues:StringLike": {
-                                u"dynamodb:requestedAttributes": [
-                                    u"PostDateTime",
-                                    u"Message",
-                                    u"Tags",
+                        "Action": ["s3:ListBucket"],
+                        "Condition": {
+                            "ForAllValues:StringLike": {
+                                "dynamodb:requestedAttributes": [
+                                    "PostDateTime",
+                                    "Message",
+                                    "Tags",
                                 ]
                             }
                         },
-                        u"Effect": u"Allow",
-                        u"Resource": [u"arn:aws:s3:::myBucket"],
+                        "Effect": "Allow",
+                        "Resource": ["arn:aws:s3:::myBucket"],
                     }
                 ]
             },
