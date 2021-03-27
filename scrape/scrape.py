@@ -50,6 +50,7 @@ class ARN(BaseARN):
 BASEDIR = "awacs"
 
 IGNORED_SERVICE_ALIASES = {
+    "Amazon API Gateway Management V2": "apigateway",
     "Amazon Kinesis Analytics V2": "kinesisanalytics",
     "Amazon Lex V2": "lex",
     "Amazon Pinpoint Email Service": "ses",
