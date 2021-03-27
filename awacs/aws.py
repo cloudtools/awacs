@@ -3,7 +3,6 @@
 #
 # See LICENSE file for full license.
 
-import warnings
 from abc import ABCMeta, abstractmethod
 from typing import Any, Dict, List, Optional, Union
 
@@ -88,18 +87,6 @@ class BaseARN(AWSHelperFn):
 
     def JSONrepr(self) -> str:
         return self.data
-
-
-class ARN(BaseARN):
-    def __init__(
-        self, service: str, resource: str, region: str = "", account: str = ""
-    ) -> None:
-        super().__init__(service, resource, region, account)
-        warnings.warn(
-            "This is going away. Either use a service specific "
-            "ARN class, or use the BaseARN class.",
-            FutureWarning,
-        )
 
 
 class ConditionElement(AWSHelperFn, metaclass=ABCMeta):
