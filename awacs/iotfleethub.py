@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Fleet Hub for AWS IoT Device Management"
+service_name = "AWS IoT Fleet Hub for Device Management"
 prefix = "iotfleethub"
 
 

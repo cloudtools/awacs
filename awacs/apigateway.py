@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Manage Amazon API Gateway"
+service_name = "Amazon API Gateway Management"
 prefix = "apigateway"
 
 
@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AddCertificateToDomain = Action("AddCertificateToDomain")
 DELETE = Action("DELETE")
 GET = Action("GET")
 HEAD = Action("HEAD")
@@ -29,5 +30,6 @@ OPTIONS = Action("OPTIONS")
 PATCH = Action("PATCH")
 POST = Action("POST")
 PUT = Action("PUT")
+RemoveCertificateFromDomain = Action("RemoveCertificateFromDomain")
 SetWebACL = Action("SetWebACL")
 UpdateRestApiPolicy = Action("UpdateRestApiPolicy")
