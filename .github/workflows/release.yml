@@ -18,10 +18,10 @@ jobs:
           python-version: 3.6
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade "twine>=3.4.1" "wheel>=0.36.2"
+        python -m pip install --upgrade "build>=0.3.1" "twine>=3.4.1"
     - name: Build package
       run: |
-        python setup.py sdist bdist_wheel
+        python -m build --sdist --wheel .
     - name: Check basics before uploading the package
       run: |
         python -m tox -e package
