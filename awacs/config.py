@@ -43,6 +43,9 @@ DeliverConfigSnapshot = Action("DeliverConfigSnapshot")
 DescribeAggregateComplianceByConfigRules = Action(
     "DescribeAggregateComplianceByConfigRules"
 )
+DescribeAggregateComplianceByConformancePacks = Action(
+    "DescribeAggregateComplianceByConformancePacks"
+)
 DescribeAggregationAuthorizations = Action("DescribeAggregationAuthorizations")
 DescribeComplianceByConfigRule = Action("DescribeComplianceByConfigRule")
 DescribeComplianceByResource = Action("DescribeComplianceByResource")
@@ -77,6 +80,9 @@ GetAggregateComplianceDetailsByConfigRule = Action(
 )
 GetAggregateConfigRuleComplianceSummary = Action(
     "GetAggregateConfigRuleComplianceSummary"
+)
+GetAggregateConformancePackComplianceSummary = Action(
+    "GetAggregateConformancePackComplianceSummary"
 )
 GetAggregateDiscoveredResourceCounts = Action("GetAggregateDiscoveredResourceCounts")
 GetAggregateResourceConfig = Action("GetAggregateResourceConfig")

@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+CheckCasePermission = Action("CheckCasePermission")
 CreateCase = Action("CreateCase")
 GetCase = Action("GetCase")
 GetCases = Action("GetCases")

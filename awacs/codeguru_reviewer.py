@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 AssociateRepository = Action("AssociateRepository")
+CreateCodeReview = Action("CreateCodeReview")
 CreateConnectionToken = Action("CreateConnectionToken")
 DescribeCodeReview = Action("DescribeCodeReview")
 DescribeRecommendationFeedback = Action("DescribeRecommendationFeedback")
@@ -33,5 +34,8 @@ ListCodeReviews = Action("ListCodeReviews")
 ListRecommendationFeedback = Action("ListRecommendationFeedback")
 ListRecommendations = Action("ListRecommendations")
 ListRepositoryAssociations = Action("ListRepositoryAssociations")
+ListTagsForResource = Action("ListTagsForResource")
 ListThirdPartyRepositories = Action("ListThirdPartyRepositories")
 PutRecommendationFeedback = Action("PutRecommendationFeedback")
+TagResource = Action("TagResource")
+UnTagResource = Action("UnTagResource")

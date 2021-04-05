@@ -23,3 +23,4 @@ class ARN(BaseARN):
 
 
 SendSSHPublicKey = Action("SendSSHPublicKey")
+SendSerialConsoleSSHPublicKey = Action("SendSerialConsoleSSHPublicKey")
