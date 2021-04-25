@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AssociatePatchToManifestJob = Action("AssociatePatchToManifestJob")
 DescribeConsoleJob = Action("DescribeConsoleJob")
 ListDatasetObjects = Action("ListDatasetObjects")
 RunFilterOrSampleDatasetJob = Action("RunFilterOrSampleDatasetJob")

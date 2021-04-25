@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route53 Domains"
+service_name = "Amazon Route 53 Domains"
 prefix = "route53domains"
 
 
@@ -22,7 +22,14 @@ class ARN(BaseARN):
         )
 
 
+AcceptDomainTransferFromAnotherAwsAccount = Action(
+    "AcceptDomainTransferFromAnotherAwsAccount"
+)
+CancelDomainTransferToAnotherAwsAccount = Action(
+    "CancelDomainTransferToAnotherAwsAccount"
+)
 CheckDomainAvailability = Action("CheckDomainAvailability")
+CheckDomainTransferability = Action("CheckDomainTransferability")
 DeleteTagsForDomain = Action("DeleteTagsForDomain")
 DisableDomainAutoRenew = Action("DisableDomainAutoRenew")
 DisableDomainTransferLock = Action("DisableDomainTransferLock")
@@ -36,10 +43,14 @@ ListDomains = Action("ListDomains")
 ListOperations = Action("ListOperations")
 ListTagsForDomain = Action("ListTagsForDomain")
 RegisterDomain = Action("RegisterDomain")
+RejectDomainTransferFromAnotherAwsAccount = Action(
+    "RejectDomainTransferFromAnotherAwsAccount"
+)
 RenewDomain = Action("RenewDomain")
 ResendContactReachabilityEmail = Action("ResendContactReachabilityEmail")
 RetrieveDomainAuthCode = Action("RetrieveDomainAuthCode")
 TransferDomain = Action("TransferDomain")
+TransferDomainToAnotherAwsAccount = Action("TransferDomainToAnotherAwsAccount")
 UpdateDomainContact = Action("UpdateDomainContact")
 UpdateDomainContactPrivacy = Action("UpdateDomainContactPrivacy")
 UpdateDomainNameservers = Action("UpdateDomainNameservers")

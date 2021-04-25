@@ -22,9 +22,11 @@ class ARN(BaseARN):
         )
 
 
+AssociateLicense = Action("AssociateLicense")
 CreateWorkspace = Action("CreateWorkspace")
 DeleteWorkspace = Action("DeleteWorkspace")
 DescribeWorkspace = Action("DescribeWorkspace")
+DisassociateLicense = Action("DisassociateLicense")
 ListPermissions = Action("ListPermissions")
 ListWorkspaces = Action("ListWorkspaces")
 UpdatePermissions = Action("UpdatePermissions")

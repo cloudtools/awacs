@@ -23,3 +23,9 @@ class ARN(BaseARN):
 
 
 Connect = Action("Connect")
+DescribeAcceleratorOfferings = Action("DescribeAcceleratorOfferings")
+DescribeAcceleratorTypes = Action("DescribeAcceleratorTypes")
+DescribeAccelerators = Action("DescribeAccelerators")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")

@@ -356,6 +356,7 @@ DetachVolume = Action("DetachVolume")
 DetachVpnGateway = Action("DetachVpnGateway")
 DisableEbsEncryptionByDefault = Action("DisableEbsEncryptionByDefault")
 DisableFastSnapshotRestores = Action("DisableFastSnapshotRestores")
+DisableSerialConsoleAccess = Action("DisableSerialConsoleAccess")
 DisableTransitGatewayRouteTablePropagation = Action(
     "DisableTransitGatewayRouteTablePropagation"
 )
@@ -375,6 +376,7 @@ DisassociateTransitGatewayRouteTable = Action("DisassociateTransitGatewayRouteTa
 DisassociateVpcCidrBlock = Action("DisassociateVpcCidrBlock")
 EnableEbsEncryptionByDefault = Action("EnableEbsEncryptionByDefault")
 EnableFastSnapshotRestores = Action("EnableFastSnapshotRestores")
+EnableSerialConsoleAccess = Action("EnableSerialConsoleAccess")
 EnableTransitGatewayRouteTablePropagation = Action(
     "EnableTransitGatewayRouteTablePropagation"
 )
@@ -406,6 +408,7 @@ GetManagedPrefixListAssociations = Action("GetManagedPrefixListAssociations")
 GetManagedPrefixListEntries = Action("GetManagedPrefixListEntries")
 GetPasswordData = Action("GetPasswordData")
 GetReservedInstancesExchangeQuote = Action("GetReservedInstancesExchangeQuote")
+GetSerialConsoleAccessStatus = Action("GetSerialConsoleAccessStatus")
 GetTransitGatewayAttachmentPropagations = Action(
     "GetTransitGatewayAttachmentPropagations"
 )
