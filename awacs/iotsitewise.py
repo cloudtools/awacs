@@ -61,6 +61,9 @@ DescribeAssetProperty = Action("DescribeAssetProperty")
 DescribeAssetTemplates = Action("DescribeAssetTemplates")
 DescribeAssets = Action("DescribeAssets")
 DescribeDashboard = Action("DescribeDashboard")
+DescribeDefaultEncryptionConfiguration = Action(
+    "DescribeDefaultEncryptionConfiguration"
+)
 DescribeGateway = Action("DescribeGateway")
 DescribeGatewayCapabilityConfiguration = Action(
     "DescribeGatewayCapabilityConfiguration"
@@ -100,6 +103,7 @@ ListProjects = Action("ListProjects")
 ListTagsForResource = Action("ListTagsForResource")
 ListViewEntities = Action("ListViewEntities")
 ListViews = Action("ListViews")
+PutDefaultEncryptionConfiguration = Action("PutDefaultEncryptionConfiguration")
 PutLoggingOptions = Action("PutLoggingOptions")
 RegisterViewEntities = Action("RegisterViewEntities")
 TagResource = Action("TagResource")
