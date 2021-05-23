@@ -19,13 +19,13 @@ def make_simple_assume_policy(*principals: Any) -> Policy:
 
 
 def make_service_domain_name(service: str, region: str = "") -> str:
-    """ Helper function for creating proper service domain names. """
+    """Helper function for creating proper service domain names."""
     tld = ".com.cn" if region == "cn-north-1" else ".com"
     return "{}.amazonaws{}".format(service, tld)
 
 
 def get_codedeploy_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the AWS CodeDeploy AssumeRole Policy. """
+    """Helper function for building the AWS CodeDeploy AssumeRole Policy."""
     service = make_service_domain_name("codedeploy", region)
     return make_simple_assume_policy(service)
 
@@ -42,25 +42,25 @@ def get_default_assumerole_policy(region: str = "") -> Policy:
 
 
 def get_ecs_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the ECS AssumeRole Policy. """
+    """Helper function for building the ECS AssumeRole Policy."""
     service = make_service_domain_name("ecs", region)
     return make_simple_assume_policy(service)
 
 
 def get_ecs_task_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the AssumeRole Policy for ECS Tasks. """
+    """Helper function for building the AssumeRole Policy for ECS Tasks."""
     service = make_service_domain_name("ecs-tasks", region)
     return make_simple_assume_policy(service)
 
 
 def get_lambda_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the AWS Lambda AssumeRole Policy. """
+    """Helper function for building the AWS Lambda AssumeRole Policy."""
     service = make_service_domain_name("lambda", region)
     return make_simple_assume_policy(service)
 
 
 def get_lambda_edge_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the AWS Lambda@Edge AssumeRole Policy. """
+    """Helper function for building the AWS Lambda@Edge AssumeRole Policy."""
     return make_simple_assume_policy(
         *[
             make_service_domain_name(service, region)
@@ -70,6 +70,6 @@ def get_lambda_edge_assumerole_policy(region: str = "") -> Policy:
 
 
 def get_application_autoscaling_assumerole_policy(region: str = "") -> Policy:
-    """ Helper function for building the AWS Lambda AssumeRole Policy. """
+    """Helper function for building the AWS Lambda AssumeRole Policy."""
     service = make_service_domain_name("application-autoscaling", region)
     return make_simple_assume_policy(service)

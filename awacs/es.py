@@ -27,6 +27,9 @@ AcceptInboundCrossClusterSearchConnection = Action(
 )
 AddTags = Action("AddTags")
 AssociatePackage = Action("AssociatePackage")
+CancelElasticsearchServiceSoftwareUpdate = Action(
+    "CancelElasticsearchServiceSoftwareUpdate"
+)
 CreateElasticsearchDomain = Action("CreateElasticsearchDomain")
 CreateElasticsearchServiceRole = Action("CreateElasticsearchServiceRole")
 CreateOutboundCrossClusterSearchConnection = Action(
@@ -88,6 +91,9 @@ RejectInboundCrossClusterSearchConnection = Action(
     "RejectInboundCrossClusterSearchConnection"
 )
 RemoveTags = Action("RemoveTags")
+StartElasticsearchServiceSoftwareUpdate = Action(
+    "StartElasticsearchServiceSoftwareUpdate"
+)
 UpdateElasticsearchDomainConfig = Action("UpdateElasticsearchDomainConfig")
 UpdatePackage = Action("UpdatePackage")
 UpgradeElasticsearchDomain = Action("UpgradeElasticsearchDomain")
