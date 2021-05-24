@@ -10,3 +10,4 @@ recursive-include tests *.py
 exclude Makefile
 exclude mypy.ini
 recursive-exclude scrape *
+recursive-exclude scripts *
