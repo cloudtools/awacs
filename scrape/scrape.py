@@ -43,8 +43,12 @@ class Action(BaseAction):
 
 class ARN(BaseARN):
     def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
-        # account is empty for S3
-        super().__init__(service=prefix, resource=resource, region=region, account="")
+        # account is empty for S3 buckets
+        if not resource.startswith(("accesspoint/", "job/", "storage-lens/")):
+            account = ""
+        super().__init__(
+            service=prefix, resource=resource, region=region, account=account
+        )
 """
 
 BASEDIR = "awacs"
