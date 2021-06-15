@@ -73,8 +73,11 @@ class BaseARN(AWSHelperFn):
         else:
             aws_partition = "aws"
 
-        regionless = ["iam", "s3"]
-        if service in regionless:
+        if service == "iam":
+            region = ""
+        elif service == "s3" and not resource.startswith(
+            ("accesspoint/", "job/", "storage-lens/")
+        ):
             region = ""
 
         self.data = "arn:%s:%s:%s:%s:%s" % (
