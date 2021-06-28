@@ -4,7 +4,7 @@ black==21.6b0
 httpx[http2]>=0.16.1
 isort==5.8.0
 lxml>=4.6.2
-mypy==0.812
+mypy==0.910
 pycodestyle==2.7.0
 pyflakes==2.3.1
 tox==3.23.1
