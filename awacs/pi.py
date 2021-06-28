@@ -23,4 +23,5 @@ class ARN(BaseARN):
 
 
 DescribeDimensionKeys = Action("DescribeDimensionKeys")
+GetDimensionKeyDetails = Action("GetDimensionKeyDetails")
 GetResourceMetrics = Action("GetResourceMetrics")

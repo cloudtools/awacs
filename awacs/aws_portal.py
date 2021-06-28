@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Billing"
+service_name = "AWS Billing and Cost Management"
 prefix = "aws-portal"
 
 
