@@ -98,7 +98,7 @@ class ConditionElement(AWSHelperFn, metaclass=ABCMeta):
 
         There are two supported ways to create a new ConditionElement.
         For a simple key/value pair use something of the form:
-            StringEquals('s3:prefix': ['', 'home/']),
+            StringEquals('s3:prefix', ['', 'home/']),
         If more than one condition is needed, pass a dict:
             StringEquals({
                 's3:prefix': ['', 'home/'],
