@@ -1,3 +1,63 @@
+## 2.0.0 (2021-07-05)
+This release now only supports Python 3.6+
+Special thanks to @michael-k for the Python 3 work and tooling improvements.
+
+* Changes for Python 3.6+ (deprecating Python 2.x)
+* Update generated files for Python 3.6+
+* Update Python3 changes per review feedback
+* Do not hardcode partition if region isn't
+* Bump httpx[http2] from 0.16.1 to 0.17.0 in /scrape
+* Properly chain exception
+* Fix imports for 'Amazon Mechanical Turk Crowd'
+* Switch from Travis CI to GitHub Actions and use tox
+* Update manifest and check it with 'check_manifest'
+* Change packaging to use declarative config in setup.cfg
+* Add a release workflow
+* Tweaks for "make test"
+* Format the project files and auto-generate code for black code formatting
+* Deprecate legacy ARN generation
+* Run black on examples
+* Regenerate awacs code with black code formatting
+* Black format crowd.py
+* Changes for "make test" to work properly with black formatting
+* Add new tools to requirements.txt and run black/isort during scrape
+* Run isort on project files
+* Per review feedback, remove arbitrary indenting and use black for formatting
+* Bump httpx[http2] from 0.17.0 to 0.17.1 in /scrape
+* Use Python 3 way to call super()
+* Add type hints
+* Regenerate awacs code with type hints
+* Check type hints with mypy
+* Add 'py.typed' for PEP 561 compat
+* Stop inheriting from object explicitly
+* Remove 'u' prefix from strings
+* Bump lxml from 4.6.2 to 4.6.3 in /scrape
+* Fix scrape breakage by mapping "Amazon API Gateway Management V2" to "apigateway"
+* Add mypy dependency
+* Action Update 2021-12
+* Action Update 2021-14
+* New actions for services and adds mgm (application migration service)
+* Action Update 2021-15
+* Action Update 2021-16
+* Action Update 2021-19
+* Remove aws.ARN
+* Bump pyflakes from 2.3.0 to 2.3.1 in /scrape
+* Bump httpx[http2] from 0.17.1 to 0.18.1 in /scrape
+* Bump tox from 3.23.0 to 3.23.1 in /scrape
+* Bump black from 20.8b1 to 21.5b1 in /scrape
+* Bump aiofiles from 0.6.0 to 0.7.0 in /scrape
+* Action Update 2021-20
+* Add static definitions for Conditions to allow for better linting
+* Action Update 2021-26
+* Bump black from 21.5b1 to 21.6b0 in /scrape
+* Do not remove account and region from non-bucket s3 ARNs
+* Bump httpx[http2] from 0.18.1 to 0.18.2 in /scrape
+* Bump mypy from 0.812 to 0.910 in /scrape
+* Fix syntax error in comment
+* Bump isort from 5.8.0 to 5.9.1 in /scrape
+* Use PyPA's `build` project to build sdist and wheel
+* Action Update 2021-26
+
 ## 1.0.4 (2021-03-20)
 * Action Update 2021-11
 * Fix scrape breakage by mapping "Amazon Simple Email Service v2" to "ses"
