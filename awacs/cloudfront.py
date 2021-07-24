@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AssociateAlias = Action("AssociateAlias")
 CreateCachePolicy = Action("CreateCachePolicy")
 CreateCloudFrontOriginAccessIdentity = Action("CreateCloudFrontOriginAccessIdentity")
 CreateDistribution = Action("CreateDistribution")
@@ -76,6 +77,7 @@ GetStreamingDistribution = Action("GetStreamingDistribution")
 GetStreamingDistributionConfig = Action("GetStreamingDistributionConfig")
 ListCachePolicies = Action("ListCachePolicies")
 ListCloudFrontOriginAccessIdentities = Action("ListCloudFrontOriginAccessIdentities")
+ListConflictingAliases = Action("ListConflictingAliases")
 ListDistributions = Action("ListDistributions")
 ListDistributionsByCachePolicyId = Action("ListDistributionsByCachePolicyId")
 ListDistributionsByKeyGroup = Action("ListDistributionsByKeyGroup")

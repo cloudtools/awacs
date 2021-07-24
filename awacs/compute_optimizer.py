@@ -24,7 +24,9 @@ class ARN(BaseARN):
 
 DescribeRecommendationExportJobs = Action("DescribeRecommendationExportJobs")
 ExportAutoScalingGroupRecommendations = Action("ExportAutoScalingGroupRecommendations")
+ExportEBSVolumeRecommendations = Action("ExportEBSVolumeRecommendations")
 ExportEC2InstanceRecommendations = Action("ExportEC2InstanceRecommendations")
+ExportLambdaFunctionRecommendations = Action("ExportLambdaFunctionRecommendations")
 GetAutoScalingGroupRecommendations = Action("GetAutoScalingGroupRecommendations")
 GetEBSVolumeRecommendations = Action("GetEBSVolumeRecommendations")
 GetEC2InstanceRecommendations = Action("GetEC2InstanceRecommendations")
