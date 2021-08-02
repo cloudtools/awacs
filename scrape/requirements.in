@@ -2,7 +2,7 @@ aiofiles>=0.6.0
 beautifulsoup4>=4.9.3
 black==21.6b0
 httpx[http2]>=0.16.1
-isort==5.9.1
+isort==5.9.3
 lxml>=4.6.2
 mypy==0.910
 pycodestyle==2.7.0
