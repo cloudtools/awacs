@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+BatchExecuteStatement = Action("BatchExecuteStatement")
 CancelStatement = Action("CancelStatement")
 DescribeStatement = Action("DescribeStatement")
 DescribeTable = Action("DescribeTable")

@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AcceptInboundConnection = Action("AcceptInboundConnection")
 AcceptInboundCrossClusterSearchConnection = Action(
     "AcceptInboundCrossClusterSearchConnection"
 )
@@ -30,30 +31,45 @@ AssociatePackage = Action("AssociatePackage")
 CancelElasticsearchServiceSoftwareUpdate = Action(
     "CancelElasticsearchServiceSoftwareUpdate"
 )
+CreateDataPrepperPipeline = Action("CreateDataPrepperPipeline")
+CreateDomain = Action("CreateDomain")
 CreateElasticsearchDomain = Action("CreateElasticsearchDomain")
 CreateElasticsearchServiceRole = Action("CreateElasticsearchServiceRole")
+CreateOutboundConnection = Action("CreateOutboundConnection")
 CreateOutboundCrossClusterSearchConnection = Action(
     "CreateOutboundCrossClusterSearchConnection"
 )
 CreatePackage = Action("CreatePackage")
+CreateServiceRole = Action("CreateServiceRole")
+DeleteDataPrepperPipeline = Action("DeleteDataPrepperPipeline")
+DeleteDomain = Action("DeleteDomain")
 DeleteElasticsearchDomain = Action("DeleteElasticsearchDomain")
 DeleteElasticsearchServiceRole = Action("DeleteElasticsearchServiceRole")
+DeleteInboundConnection = Action("DeleteInboundConnection")
 DeleteInboundCrossClusterSearchConnection = Action(
     "DeleteInboundCrossClusterSearchConnection"
 )
+DeleteOutboundConnection = Action("DeleteOutboundConnection")
 DeleteOutboundCrossClusterSearchConnection = Action(
     "DeleteOutboundCrossClusterSearchConnection"
 )
 DeletePackage = Action("DeletePackage")
+DescribeDataPrepperPipeline = Action("DescribeDataPrepperPipeline")
+DescribeDomain = Action("DescribeDomain")
+DescribeDomainConfig = Action("DescribeDomainConfig")
+DescribeDomains = Action("DescribeDomains")
 DescribeElasticsearchDomain = Action("DescribeElasticsearchDomain")
 DescribeElasticsearchDomainConfig = Action("DescribeElasticsearchDomainConfig")
 DescribeElasticsearchDomains = Action("DescribeElasticsearchDomains")
 DescribeElasticsearchInstanceTypeLimits = Action(
     "DescribeElasticsearchInstanceTypeLimits"
 )
+DescribeInboundConnections = Action("DescribeInboundConnections")
 DescribeInboundCrossClusterSearchConnections = Action(
     "DescribeInboundCrossClusterSearchConnections"
 )
+DescribeInstanceTypeLimits = Action("DescribeInstanceTypeLimits")
+DescribeOutboundConnections = Action("DescribeOutboundConnections")
 DescribeOutboundCrossClusterSearchConnections = Action(
     "DescribeOutboundCrossClusterSearchConnections"
 )
@@ -64,6 +80,8 @@ DescribeReservedElasticsearchInstanceOfferings = Action(
 DescribeReservedElasticsearchInstances = Action(
     "DescribeReservedElasticsearchInstances"
 )
+DescribeReservedInstanceOfferings = Action("DescribeReservedInstanceOfferings")
+DescribeReservedInstances = Action("DescribeReservedInstances")
 DissociatePackage = Action("DissociatePackage")
 ESCrossClusterGet = Action("ESCrossClusterGet")
 ESHttpDelete = Action("ESHttpDelete")
@@ -73,20 +91,28 @@ ESHttpPatch = Action("ESHttpPatch")
 ESHttpPost = Action("ESHttpPost")
 ESHttpPut = Action("ESHttpPut")
 GetCompatibleElasticsearchVersions = Action("GetCompatibleElasticsearchVersions")
+GetCompatibleVersions = Action("GetCompatibleVersions")
 GetPackageVersionHistory = Action("GetPackageVersionHistory")
 GetUpgradeHistory = Action("GetUpgradeHistory")
 GetUpgradeStatus = Action("GetUpgradeStatus")
+IngestDataPrepperPipeline = Action("IngestDataPrepperPipeline")
+ListDataPrepperPipelines = Action("ListDataPrepperPipelines")
 ListDomainNames = Action("ListDomainNames")
 ListDomainsForPackage = Action("ListDomainsForPackage")
 ListElasticsearchInstanceTypeDetails = Action("ListElasticsearchInstanceTypeDetails")
 ListElasticsearchInstanceTypes = Action("ListElasticsearchInstanceTypes")
 ListElasticsearchVersions = Action("ListElasticsearchVersions")
+ListInstanceTypeDetails = Action("ListInstanceTypeDetails")
+ListInstanceTypes = Action("ListInstanceTypes")
 ListPackagesForDomain = Action("ListPackagesForDomain")
 ListTags = Action("ListTags")
+ListVersions = Action("ListVersions")
 PurchaseReservedElasticsearchInstance = Action("PurchaseReservedElasticsearchInstance")
 PurchaseReservedElasticsearchInstanceOffering = Action(
     "PurchaseReservedElasticsearchInstanceOffering"
 )
+PurchaseReservedInstanceOffering = Action("PurchaseReservedInstanceOffering")
+RejectInboundConnection = Action("RejectInboundConnection")
 RejectInboundCrossClusterSearchConnection = Action(
     "RejectInboundCrossClusterSearchConnection"
 )
@@ -94,6 +120,8 @@ RemoveTags = Action("RemoveTags")
 StartElasticsearchServiceSoftwareUpdate = Action(
     "StartElasticsearchServiceSoftwareUpdate"
 )
+UpdateDataPrepperPipeline = Action("UpdateDataPrepperPipeline")
+UpdateDomainConfig = Action("UpdateDomainConfig")
 UpdateElasticsearchDomainConfig = Action("UpdateElasticsearchDomainConfig")
 UpdatePackage = Action("UpdatePackage")
 UpgradeElasticsearchDomain = Action("UpgradeElasticsearchDomain")

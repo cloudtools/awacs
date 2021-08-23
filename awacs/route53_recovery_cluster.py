@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon WorkMail Message Flow"
-prefix = "workmailmessageflow"
+service_name = "Amazon Route53 Recovery Cluster"
+prefix = "route53-recovery-cluster"
 
 
 class Action(BaseAction):
@@ -22,5 +22,6 @@ class ARN(BaseARN):
         )
 
 
-GetRawMessageContent = Action("GetRawMessageContent")
-PutRawMessageContent = Action("PutRawMessageContent")
+GetRoutingControlState = Action("GetRoutingControlState")
+UpdateRoutingControlState = Action("UpdateRoutingControlState")
+UpdateRoutingControlStates = Action("UpdateRoutingControlStates")

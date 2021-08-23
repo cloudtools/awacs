@@ -44,6 +44,7 @@ DescribeApplicableIndividualAssessments = Action(
 )
 DescribeCertificates = Action("DescribeCertificates")
 DescribeConnections = Action("DescribeConnections")
+DescribeEndpointSettings = Action("DescribeEndpointSettings")
 DescribeEndpointTypes = Action("DescribeEndpointTypes")
 DescribeEndpoints = Action("DescribeEndpoints")
 DescribeEventCategories = Action("DescribeEventCategories")

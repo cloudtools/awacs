@@ -94,6 +94,7 @@ ExecuteProvisionedProductServiceAction = Action(
 )
 GetAWSOrganizationsAccessStatus = Action("GetAWSOrganizationsAccessStatus")
 GetApplication = Action("GetApplication")
+GetAssociatedResource = Action("GetAssociatedResource")
 GetAttributeGroup = Action("GetAttributeGroup")
 GetProvisionedProductOutputs = Action("GetProvisionedProductOutputs")
 ImportAsProvisionedProduct = Action("ImportAsProvisionedProduct")

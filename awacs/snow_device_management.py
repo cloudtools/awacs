@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS BugBust"
-prefix = "bugbust"
+service_name = "AWS Snow Device Management"
+prefix = "snow-device-management"
 
 
 class Action(BaseAction):
@@ -22,20 +22,16 @@ class ARN(BaseARN):
         )
 
 
-CreateEvent = Action("CreateEvent")
-EvaluateProfilingGroups = Action("EvaluateProfilingGroups")
-GetEvent = Action("GetEvent")
-GetJoinEventStatus = Action("GetJoinEventStatus")
-JoinEvent = Action("JoinEvent")
-ListBugs = Action("ListBugs")
-ListEventParticipants = Action("ListEventParticipants")
-ListEventScores = Action("ListEventScores")
-ListEvents = Action("ListEvents")
-ListProfilingGroups = Action("ListProfilingGroups")
-ListPullRequests = Action("ListPullRequests")
+CancelTask = Action("CancelTask")
+CreateTask = Action("CreateTask")
+DescribeDevice = Action("DescribeDevice")
+DescribeDeviceEc2Instances = Action("DescribeDeviceEc2Instances")
+DescribeExecution = Action("DescribeExecution")
+DescribeTask = Action("DescribeTask")
+ListDeviceResources = Action("ListDeviceResources")
+ListDevices = Action("ListDevices")
+ListExecutions = Action("ListExecutions")
 ListTagsForResource = Action("ListTagsForResource")
+ListTasks = Action("ListTasks")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
-UpdateEvent = Action("UpdateEvent")
-UpdateWorkItem = Action("UpdateWorkItem")
-UpdateWorkItemAdmin = Action("UpdateWorkItemAdmin")
