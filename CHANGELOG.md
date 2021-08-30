@@ -1,3 +1,8 @@
+## 2.0.1 (2021-08-30)
+* Action Update 2021-29
+* Action Update 2021-34
+* Action Update 2021-35
+
 ## 2.0.0 (2021-07-05)
 This release now only supports Python 3.6+
 Special thanks to @michael-k for the Python 3 work and tooling improvements.
