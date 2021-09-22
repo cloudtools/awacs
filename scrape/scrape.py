@@ -4,7 +4,7 @@ import importlib
 import sys
 import urllib.parse
 from pathlib import Path
-from typing import DefaultDict, Dict, List, Set, Tuple
+from typing import DefaultDict, Dict, Iterable, List, Set, Tuple
 
 import aiofiles
 import httpx
@@ -64,6 +64,7 @@ IGNORED_SERVICE_ALIASES = {
     "AWS Marketplace Entitlement Service": "aws-marketplace",
     "AWS Marketplace Image Building Service": "aws-marketplace",
     "AWS Marketplace Metering Service": "aws-marketplace",
+    "AWS Marketplace Private Marketplace": "aws-marketplace",
     "AWS Marketplace Procurement Systems Integration": "aws-marketplace",
     "AWS Private Marketplace": "aws-marketplace",
     "Elastic Load Balancing V2": "elasticloadbalancing",
@@ -83,8 +84,10 @@ async def main() -> None:
     service_names: Dict[str, str] = {}
     service_page_responses = await collect_service_info()
 
-    for r in service_page_responses:
-        service_name, service_prefix, actions = await extract_actions(html=r.text)
+    for link, r in service_page_responses:
+        service_name, service_prefix, actions = await extract_actions(
+            html=r.text, link=link
+        )
         services_with_actions[service_prefix].update(actions)
 
         if IGNORED_SERVICE_ALIASES.get(service_name) != service_prefix:
@@ -133,7 +136,7 @@ async def collect_existing_actions() -> Dict[str, Set[str]]:
     return dict(services_with_actions)
 
 
-async def collect_service_info() -> List[httpx.Response]:
+async def collect_service_info() -> Iterable[Tuple[str, httpx.Response]]:
     max_connections = 2
     async with httpx.AsyncClient(
         http2=True,
@@ -173,16 +176,16 @@ async def collect_service_info() -> List[httpx.Response]:
                     for link in service_links[start : start + max_connections]
                 ]
             )
-        return service_page_responses
+        return zip(service_links, service_page_responses)
 
 
-async def extract_actions(html: str) -> Tuple[str, str, Set[str]]:
+async def extract_actions(html: str, link: str) -> Tuple[str, str, Set[str]]:
     parsed_html = BeautifulSoup(html, features="lxml")
     service_prefixes = parsed_html.body.find_all(is_service_prefix)
     if len(service_prefixes) < 1:
-        raise ValueError("Found no service prefix.")
+        raise ValueError(f"Found no service prefix in {link!r}.")
     if len(service_prefixes) > 1:
-        raise ValueError("Found more than one service prefix.")
+        raise ValueError(f"Found more than one service prefix in {link!r}.")
 
     service_prefix_tag = service_prefixes[0]
     service_name = service_prefix_tag.previous[: -len(" (service prefix: ")]
@@ -252,7 +255,7 @@ def is_service_prefix(tag):
         tag
         and tag.name == "code"
         and tag.previous_element
-        and tag.previous_element.endswith("(service prefix: ")
+        and tag.previous_element.strip().endswith("(service prefix:")
     )
 
 
