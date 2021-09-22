@@ -7,7 +7,7 @@ import inspect
 import json
 import re
 import types
-from typing import Any, NoReturn, Optional, TypeVar, Union
+from typing import Any, KeysView, NoReturn, Optional, TypeVar, Union
 
 __version__ = "2.0.1"
 
@@ -25,8 +25,6 @@ class AWSObject:
     ) -> None:
         self.name = name
         self.props = props or {}
-        # Cache the keys for validity checks
-        self.propnames = self.props.keys()
 
         # unset/None is also legal
         if name and not valid_names.match(name):
@@ -46,6 +44,11 @@ class AWSObject:
         for k, v in kwargs.items():
             self.__setattr__(k, v)
 
+    @property
+    def propnames(self) -> KeysView[str]:
+        # For backwards compatibility; should be removed in v3
+        return self.props.keys()
+
     def __getattr__(self, name: str) -> Any:
         try:
             return self.properties.__getitem__(name)
@@ -55,7 +58,7 @@ class AWSObject:
     def __setattr__(self, name: str, value: Any) -> Any:
         if "_AWSObject__initialized" not in self.__dict__:
             return dict.__setattr__(self, name, value)
-        elif name in self.propnames:
+        elif name in self.props:
             # Check the type of the object and compare against what we were
             # expecting.
             expected_type = self.props[name][0]
