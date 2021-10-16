@@ -72,4 +72,5 @@ UpdateApplicationResourceLifecycle = Action("UpdateApplicationResourceLifecycle"
 UpdateApplicationVersion = Action("UpdateApplicationVersion")
 UpdateConfigurationTemplate = Action("UpdateConfigurationTemplate")
 UpdateEnvironment = Action("UpdateEnvironment")
+UpdateTagsForResource = Action("UpdateTagsForResource")
 ValidateConfigurationSettings = Action("ValidateConfigurationSettings")

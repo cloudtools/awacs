@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+ConfigureLogs = Action("ConfigureLogs")
 CreateAsset = Action("CreateAsset")
 CreatePackagingConfiguration = Action("CreatePackagingConfiguration")
 CreatePackagingGroup = Action("CreatePackagingGroup")

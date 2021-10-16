@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Managed Service for Grafana"
+service_name = "Amazon Managed Grafana"
 prefix = "grafana"
 
 
@@ -26,8 +26,10 @@ AssociateLicense = Action("AssociateLicense")
 CreateWorkspace = Action("CreateWorkspace")
 DeleteWorkspace = Action("DeleteWorkspace")
 DescribeWorkspace = Action("DescribeWorkspace")
+DescribeWorkspaceAuthentication = Action("DescribeWorkspaceAuthentication")
 DisassociateLicense = Action("DisassociateLicense")
 ListPermissions = Action("ListPermissions")
 ListWorkspaces = Action("ListWorkspaces")
 UpdatePermissions = Action("UpdatePermissions")
 UpdateWorkspace = Action("UpdateWorkspace")
+UpdateWorkspaceAuthentication = Action("UpdateWorkspaceAuthentication")

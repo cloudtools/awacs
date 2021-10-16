@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Elasticsearch Service"
+service_name = "Amazon OpenSearch Service (successor to Amazon Elasticsearch Service)"
 prefix = "es"
 
 
@@ -31,6 +31,7 @@ AssociatePackage = Action("AssociatePackage")
 CancelElasticsearchServiceSoftwareUpdate = Action(
     "CancelElasticsearchServiceSoftwareUpdate"
 )
+CancelServiceSoftwareUpdate = Action("CancelServiceSoftwareUpdate")
 CreateDataPrepperPipeline = Action("CreateDataPrepperPipeline")
 CreateDomain = Action("CreateDomain")
 CreateElasticsearchDomain = Action("CreateElasticsearchDomain")
@@ -56,6 +57,7 @@ DeleteOutboundCrossClusterSearchConnection = Action(
 DeletePackage = Action("DeletePackage")
 DescribeDataPrepperPipeline = Action("DescribeDataPrepperPipeline")
 DescribeDomain = Action("DescribeDomain")
+DescribeDomainAutoTunes = Action("DescribeDomainAutoTunes")
 DescribeDomainConfig = Action("DescribeDomainConfig")
 DescribeDomains = Action("DescribeDomains")
 DescribeElasticsearchDomain = Action("DescribeElasticsearchDomain")
@@ -120,8 +122,10 @@ RemoveTags = Action("RemoveTags")
 StartElasticsearchServiceSoftwareUpdate = Action(
     "StartElasticsearchServiceSoftwareUpdate"
 )
+StartServiceSoftwareUpdate = Action("StartServiceSoftwareUpdate")
 UpdateDataPrepperPipeline = Action("UpdateDataPrepperPipeline")
 UpdateDomainConfig = Action("UpdateDomainConfig")
 UpdateElasticsearchDomainConfig = Action("UpdateElasticsearchDomainConfig")
 UpdatePackage = Action("UpdatePackage")
+UpgradeDomain = Action("UpgradeDomain")
 UpgradeElasticsearchDomain = Action("UpgradeElasticsearchDomain")

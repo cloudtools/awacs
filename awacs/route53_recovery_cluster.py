@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route53 Recovery Cluster"
+service_name = "Amazon Route 53 Recovery Cluster"
 prefix = "route53-recovery-cluster"
 
 

@@ -185,6 +185,7 @@ GetSagemakerServicecatalogPortfolioStatus = Action(
 )
 GetSearchSuggestions = Action("GetSearchSuggestions")
 InvokeEndpoint = Action("InvokeEndpoint")
+InvokeEndpointAsync = Action("InvokeEndpointAsync")
 ListActions = Action("ListActions")
 ListAlgorithms = Action("ListAlgorithms")
 ListAppImageConfigs = Action("ListAppImageConfigs")

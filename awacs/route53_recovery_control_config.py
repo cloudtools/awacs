@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route53 Recovery Controls"
+service_name = "Amazon Route 53 Recovery Controls"
 prefix = "route53-recovery-control-config"
 
 

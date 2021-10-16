@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+ConfigureLogs = Action("ConfigureLogs")
 CreateChannel = Action("CreateChannel")
 CreateHarvestJob = Action("CreateHarvestJob")
 CreateOriginEndpoint = Action("CreateOriginEndpoint")

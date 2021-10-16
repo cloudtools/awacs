@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 BatchDeleteDocument = Action("BatchDeleteDocument")
+BatchGetDocumentStatus = Action("BatchGetDocumentStatus")
 BatchPutDocument = Action("BatchPutDocument")
 ClearQuerySuggestions = Action("ClearQuerySuggestions")
 CreateDataSource = Action("CreateDataSource")

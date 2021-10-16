@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Accounts"
+service_name = "AWS Account Management"
 prefix = "account"
 
 
@@ -22,6 +22,9 @@ class ARN(BaseARN):
         )
 
 
+DeleteAlternateContact = Action("DeleteAlternateContact")
 DisableRegion = Action("DisableRegion")
 EnableRegion = Action("EnableRegion")
+GetAlternateContact = Action("GetAlternateContact")
 ListRegions = Action("ListRegions")
+PutAlternateContact = Action("PutAlternateContact")

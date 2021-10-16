@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route53 Recovery Readiness"
+service_name = "Amazon Route 53 Recovery Readiness"
 prefix = "route53-recovery-readiness"
 
 
