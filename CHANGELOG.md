@@ -1,3 +1,9 @@
+## 2.0.2 (2021-10-16)
+* Fix scraper and improve error messages
+* Stop “caching” prop names
+* Fix scraper to deal with AWS doc changes
+* Action Update 2021-41
+
 ## 2.0.1 (2021-08-30)
 * Action Update 2021-29
 * Action Update 2021-34

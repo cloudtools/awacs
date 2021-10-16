@@ -9,7 +9,7 @@ import re
 import types
 from typing import Any, KeysView, NoReturn, Optional, TypeVar, Union
 
-__version__ = "2.0.1"
+__version__ = "2.0.2"
 
 valid_names = re.compile(r"^[a-zA-Z0-9]+$")
 
