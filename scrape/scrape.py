@@ -59,6 +59,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Lex V2": "lex",
     "Amazon Pinpoint Email Service": "ses",
     "Amazon Simple Email Service v2": "ses",
+    "AWS Cloud Control API": "cloudformation",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
     "AWS Marketplace Entitlement Service": "aws-marketplace",
@@ -188,7 +189,7 @@ async def extract_actions(html: str, link: str) -> Tuple[str, str, Set[str]]:
         raise ValueError(f"Found more than one service prefix in {link!r}.")
 
     service_prefix_tag = service_prefixes[0]
-    service_name = service_prefix_tag.previous[: -len(" (service prefix: ")]
+    service_name = service_prefix_tag.previous.strip()[: -len(" (service prefix:")]
     service_prefix = service_prefix_tag.text
     actions = set()
 
