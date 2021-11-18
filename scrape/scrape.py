@@ -156,16 +156,13 @@ async def collect_service_info() -> Iterable[Tuple[str, httpx.Response]]:
         for link in parsed_html.body.find_all("a"):
             href = link.attrs["href"]
             if href.startswith("./list_") and href.endswith(".html"):
-                service_links.append(href)
+                service_links.append(r.url.join(href))
 
         # This doesn't work at the moment,
         # see https://github.com/encode/httpx/issues/1171
         #
-        # return await asyncio.gather(
-        #     *[
-        #         client.get(urllib.parse.urljoin(BASE_URL, link))
-        #         for link in service_links
-        #     ]
+        # service_page_responses = await asyncio.gather(
+        #     *[client.get(link) for link in service_links]
         # )
         #
         # workaround
@@ -173,7 +170,7 @@ async def collect_service_info() -> Iterable[Tuple[str, httpx.Response]]:
         for start in range(0, len(service_links), max_connections):
             service_page_responses += await asyncio.gather(
                 *[
-                    client.get(urllib.parse.urljoin(BASE_URL, link))
+                    client.get(link)
                     for link in service_links[start : start + max_connections]
                 ]
             )
