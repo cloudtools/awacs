@@ -10,7 +10,7 @@ import aiofiles
 import httpx
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://docs.aws.amazon.com/IAM/latest/UserGuide/"
+BASE_URL = "https://docs.aws.amazon.com/service-authorization/latest/reference/"
 
 HEADER = """\
 # Copyright (c) 2012-2021, Mark Peek <mark@peek.org>
