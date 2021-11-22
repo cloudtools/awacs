@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Outposts"
-prefix = "outposts"
+service_name = "AmazonMediaImport"
+prefix = "mediaimport"
 
 
 class Action(BaseAction):
@@ -22,14 +22,4 @@ class ARN(BaseARN):
         )
 
 
-CreateOrder = Action("CreateOrder")
-CreateOutpost = Action("CreateOutpost")
-DeleteOutpost = Action("DeleteOutpost")
-DeleteSite = Action("DeleteSite")
-GetOutpost = Action("GetOutpost")
-GetOutpostInstanceTypes = Action("GetOutpostInstanceTypes")
-ListOutposts = Action("ListOutposts")
-ListSites = Action("ListSites")
-ListTagsForResource = Action("ListTagsForResource")
-TagResource = Action("TagResource")
-UntagResource = Action("UntagResource")
+CreateDatabaseBinarySnapshot = Action("CreateDatabaseBinarySnapshot")

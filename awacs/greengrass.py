@@ -24,6 +24,12 @@ class ARN(BaseARN):
 
 AssociateRoleToGroup = Action("AssociateRoleToGroup")
 AssociateServiceRoleToAccount = Action("AssociateServiceRoleToAccount")
+BatchAssociateClientDeviceWithCoreDevice = Action(
+    "BatchAssociateClientDeviceWithCoreDevice"
+)
+BatchDisassociateClientDeviceFromCoreDevice = Action(
+    "BatchDisassociateClientDeviceFromCoreDevice"
+)
 CancelDeployment = Action("CancelDeployment")
 CreateComponentVersion = Action("CreateComponentVersion")
 CreateConnectorDefinition = Action("CreateConnectorDefinition")
@@ -89,6 +95,9 @@ GetSubscriptionDefinitionVersion = Action("GetSubscriptionDefinitionVersion")
 GetThingRuntimeConfiguration = Action("GetThingRuntimeConfiguration")
 ListBulkDeploymentDetailedReports = Action("ListBulkDeploymentDetailedReports")
 ListBulkDeployments = Action("ListBulkDeployments")
+ListClientDevicesAssociatedWithCoreDevice = Action(
+    "ListClientDevicesAssociatedWithCoreDevice"
+)
 ListComponentVersions = Action("ListComponentVersions")
 ListComponents = Action("ListComponents")
 ListConnectorDefinitionVersions = Action("ListConnectorDefinitionVersions")

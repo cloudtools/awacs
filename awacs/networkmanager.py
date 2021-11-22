@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Network Manager"
+service_name = "AWS Network Manager"
 prefix = "networkmanager"
 
 
@@ -45,6 +45,12 @@ GetCustomerGatewayAssociations = Action("GetCustomerGatewayAssociations")
 GetDevices = Action("GetDevices")
 GetLinkAssociations = Action("GetLinkAssociations")
 GetLinks = Action("GetLinks")
+GetNetworkResourceCounts = Action("GetNetworkResourceCounts")
+GetNetworkResourceRelationships = Action("GetNetworkResourceRelationships")
+GetNetworkResources = Action("GetNetworkResources")
+GetNetworkRoutes = Action("GetNetworkRoutes")
+GetNetworkTelemetry = Action("GetNetworkTelemetry")
+GetRouteAnalysis = Action("GetRouteAnalysis")
 GetSites = Action("GetSites")
 GetTransitGatewayConnectPeerAssociations = Action(
     "GetTransitGatewayConnectPeerAssociations"
@@ -52,10 +58,12 @@ GetTransitGatewayConnectPeerAssociations = Action(
 GetTransitGatewayRegistrations = Action("GetTransitGatewayRegistrations")
 ListTagsForResource = Action("ListTagsForResource")
 RegisterTransitGateway = Action("RegisterTransitGateway")
+StartRouteAnalysis = Action("StartRouteAnalysis")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateConnection = Action("UpdateConnection")
 UpdateDevice = Action("UpdateDevice")
 UpdateGlobalNetwork = Action("UpdateGlobalNetwork")
 UpdateLink = Action("UpdateLink")
+UpdateNetworkResourceMetadata = Action("UpdateNetworkResourceMetadata")
 UpdateSite = Action("UpdateSite")
