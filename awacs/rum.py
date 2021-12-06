@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Braket"
-prefix = "braket"
+service_name = "AWS CloudWatch RUM"
+prefix = "rum"
 
 
 class Action(BaseAction):
@@ -22,16 +22,13 @@ class ARN(BaseARN):
         )
 
 
-CancelJob = Action("CancelJob")
-CancelQuantumTask = Action("CancelQuantumTask")
-CreateJob = Action("CreateJob")
-CreateQuantumTask = Action("CreateQuantumTask")
-GetDevice = Action("GetDevice")
-GetJob = Action("GetJob")
-GetQuantumTask = Action("GetQuantumTask")
+CreateAppMonitor = Action("CreateAppMonitor")
+DeleteAppMonitor = Action("DeleteAppMonitor")
+GetAppMonitor = Action("GetAppMonitor")
+GetAppMonitorData = Action("GetAppMonitorData")
+ListAppMonitors = Action("ListAppMonitors")
 ListTagsForResource = Action("ListTagsForResource")
-SearchDevices = Action("SearchDevices")
-SearchJobs = Action("SearchJobs")
-SearchQuantumTasks = Action("SearchQuantumTasks")
+PutRumEvents = Action("PutRumEvents")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateAppMonitor = Action("UpdateAppMonitor")

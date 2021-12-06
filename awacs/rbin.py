@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Braket"
-prefix = "braket"
+service_name = "Recycle Bin"
+prefix = "rbin"
 
 
 class Action(BaseAction):
@@ -22,16 +22,11 @@ class ARN(BaseARN):
         )
 
 
-CancelJob = Action("CancelJob")
-CancelQuantumTask = Action("CancelQuantumTask")
-CreateJob = Action("CreateJob")
-CreateQuantumTask = Action("CreateQuantumTask")
-GetDevice = Action("GetDevice")
-GetJob = Action("GetJob")
-GetQuantumTask = Action("GetQuantumTask")
+CreateRule = Action("CreateRule")
+DeleteRule = Action("DeleteRule")
+GetRule = Action("GetRule")
+ListRules = Action("ListRules")
 ListTagsForResource = Action("ListTagsForResource")
-SearchDevices = Action("SearchDevices")
-SearchJobs = Action("SearchJobs")
-SearchQuantumTasks = Action("SearchQuantumTasks")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateRule = Action("UpdateRule")

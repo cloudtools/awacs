@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+DeleteRecommendationPreferences = Action("DeleteRecommendationPreferences")
 DescribeRecommendationExportJobs = Action("DescribeRecommendationExportJobs")
 ExportAutoScalingGroupRecommendations = Action("ExportAutoScalingGroupRecommendations")
 ExportEBSVolumeRecommendations = Action("ExportEBSVolumeRecommendations")
@@ -31,8 +32,11 @@ GetAutoScalingGroupRecommendations = Action("GetAutoScalingGroupRecommendations"
 GetEBSVolumeRecommendations = Action("GetEBSVolumeRecommendations")
 GetEC2InstanceRecommendations = Action("GetEC2InstanceRecommendations")
 GetEC2RecommendationProjectedMetrics = Action("GetEC2RecommendationProjectedMetrics")
+GetEffectiveRecommendationPreferences = Action("GetEffectiveRecommendationPreferences")
 GetEnrollmentStatus = Action("GetEnrollmentStatus")
 GetEnrollmentStatusesForOrganization = Action("GetEnrollmentStatusesForOrganization")
 GetLambdaFunctionRecommendations = Action("GetLambdaFunctionRecommendations")
+GetRecommendationPreferences = Action("GetRecommendationPreferences")
 GetRecommendationSummaries = Action("GetRecommendationSummaries")
+PutRecommendationPreferences = Action("PutRecommendationPreferences")
 UpdateEnrollmentStatus = Action("UpdateEnrollmentStatus")
