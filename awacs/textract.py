@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 AnalyzeDocument = Action("AnalyzeDocument")
 AnalyzeExpense = Action("AnalyzeExpense")
+AnalyzeID = Action("AnalyzeID")
 DetectDocumentText = Action("DetectDocumentText")
 GetDocumentAnalysis = Action("GetDocumentAnalysis")
 GetDocumentTextDetection = Action("GetDocumentTextDetection")
