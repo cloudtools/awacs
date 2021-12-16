@@ -158,22 +158,9 @@ async def collect_service_info() -> Iterable[Tuple[str, httpx.Response]]:
             if href.startswith("./list_") and href.endswith(".html"):
                 service_links.append(r.url.join(href))
 
-        # This doesn't work at the moment,
-        # see https://github.com/encode/httpx/issues/1171
-        #
-        # service_page_responses = await asyncio.gather(
-        #     *[client.get(link) for link in service_links]
-        # )
-        #
-        # workaround
-        service_page_responses = []
-        for start in range(0, len(service_links), max_connections):
-            service_page_responses += await asyncio.gather(
-                *[
-                    client.get(link)
-                    for link in service_links[start : start + max_connections]
-                ]
-            )
+        service_page_responses = await asyncio.gather(
+            *[client.get(link) for link in service_links]
+        )
         return zip(service_links, service_page_responses)
 
 
@@ -259,4 +246,4 @@ def is_service_prefix(tag):
 
 if __name__ == "__main__":
     asyncio.run(main())
-    print("And now run 'black awacs/'", flush=True)
+    print("And now run 'isort awacs/' and 'black awacs/'", flush=True)
