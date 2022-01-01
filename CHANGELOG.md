@@ -1,3 +1,15 @@
+## 2.1.0 (2022-01-01)
+* Update base url used by scraper
+* Make scraper resilient to base url changes
+* Run tests against Python 3.10 and add trove classifier
+* Action Update 2021-47
+* Action Update 2021-48
+* Action Update 2021-49
+* Action Update 2021-50
+* Remove workaround from scraper
+* Action Update 2021-52
+* Remove support for Python 3.6 due to EOL
+
 ## 2.0.2 (2021-10-16)
 * Fix scraper and improve error messages
 * Stop “caching” prop names
