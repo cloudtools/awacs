@@ -127,6 +127,7 @@ PutAccessPointConfigurationForObjectLambda = Action(
 )
 PutAccessPointPolicy = Action("PutAccessPointPolicy")
 PutAccessPointPolicyForObjectLambda = Action("PutAccessPointPolicyForObjectLambda")
+PutAccessPointPublicAccessBlock = Action("PutAccessPointPublicAccessBlock")
 PutAccountPublicAccessBlock = Action("PutAccountPublicAccessBlock")
 PutAnalyticsConfiguration = Action("PutAnalyticsConfiguration")
 PutBucketAcl = Action("PutBucketAcl")

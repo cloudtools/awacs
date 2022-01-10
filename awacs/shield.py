@@ -39,10 +39,16 @@ DescribeEmergencyContactSettings = Action("DescribeEmergencyContactSettings")
 DescribeProtection = Action("DescribeProtection")
 DescribeProtectionGroup = Action("DescribeProtectionGroup")
 DescribeSubscription = Action("DescribeSubscription")
+DisableApplicationLayerAutomaticResponse = Action(
+    "DisableApplicationLayerAutomaticResponse"
+)
 DisableProactiveEngagement = Action("DisableProactiveEngagement")
 DisassociateDRTLogBucket = Action("DisassociateDRTLogBucket")
 DisassociateDRTRole = Action("DisassociateDRTRole")
 DisassociateHealthCheck = Action("DisassociateHealthCheck")
+EnableApplicationLayerAutomaticResponse = Action(
+    "EnableApplicationLayerAutomaticResponse"
+)
 EnableProactiveEngagement = Action("EnableProactiveEngagement")
 GetSubscriptionState = Action("GetSubscriptionState")
 ListAttacks = Action("ListAttacks")
@@ -52,6 +58,9 @@ ListResourcesInProtectionGroup = Action("ListResourcesInProtectionGroup")
 ListTagsForResource = Action("ListTagsForResource")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateApplicationLayerAutomaticResponse = Action(
+    "UpdateApplicationLayerAutomaticResponse"
+)
 UpdateEmergencyContactSettings = Action("UpdateEmergencyContactSettings")
 UpdateProtectionGroup = Action("UpdateProtectionGroup")
 UpdateSubscription = Action("UpdateSubscription")
