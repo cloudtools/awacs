@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 CreateSuiteDefinition = Action("CreateSuiteDefinition")
 DeleteSuiteDefinition = Action("DeleteSuiteDefinition")
+GetEndpoint = Action("GetEndpoint")
 GetSuiteDefinition = Action("GetSuiteDefinition")
 GetSuiteRun = Action("GetSuiteRun")
 GetSuiteRunReport = Action("GetSuiteRunReport")
