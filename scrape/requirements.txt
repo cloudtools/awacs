@@ -60,13 +60,13 @@ hpack==4.0.0 \
     --hash=sha256:84a076fad3dc9a9f8063ccb8041ef100867b1878b25ef0ee63847a5d53818a6c \
     --hash=sha256:fc41de0c63e687ebffde81187a948221294896f6bdc0ae2312708df339430095
     # via h2
-httpcore==0.14.3 \
-    --hash=sha256:9a98d2416b78976fc5396ff1f6b26ae9885efbb3105d24eed490f20ab4c95ec1 \
-    --hash=sha256:d10162a63265a0228d5807964bd964478cbdb5178f9a2eedfebb2faba27eef5d
+httpcore==0.14.5 \
+    --hash=sha256:2621ee769d0236574df51b305c5f4c69ca8f0c7b215221ad247b1ee42a9a9de1 \
+    --hash=sha256:435ab519628a6e2393f67812dea3ca5c6ad23b457412cd119295d9f906d96a2b
     # via httpx
-httpx[http2]==0.21.1 \
-    --hash=sha256:02af20df486b78892a614a7ccd4e4e86a5409ec4981ab0e422c579a887acad83 \
-    --hash=sha256:208e5ef2ad4d105213463cfd541898ed9d11851b346473539a8425e644bb7c66
+httpx[http2]==0.22.0 \
+    --hash=sha256:d8e778f76d9bbd46af49e7f062467e3157a5a3d2ae4876a4bbfd8a51ed9c9cb4 \
+    --hash=sha256:e35e83d1d2b9b2a609ef367cc4c1e66fd80b750348b20cc9e19d1952fc2ca3f6
     # via -r requirements.in
 hyperframe==6.0.1 \
     --hash=sha256:0ec6bafd80d8ad2195c4f03aacba3a8265e57bc4cff261e802bf39970ed02a15 \
