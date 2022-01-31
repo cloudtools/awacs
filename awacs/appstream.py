@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 AssociateApplicationFleet = Action("AssociateApplicationFleet")
+AssociateApplicationToEntitlement = Action("AssociateApplicationToEntitlement")
 AssociateApplicatonToEntitlement = Action("AssociateApplicatonToEntitlement")
 AssociateFleet = Action("AssociateFleet")
 BatchAssociateUserStack = Action("BatchAssociateUserStack")
@@ -67,6 +68,9 @@ DescribeUserStackAssociations = Action("DescribeUserStackAssociations")
 DescribeUsers = Action("DescribeUsers")
 DisableUser = Action("DisableUser")
 DisassociateApplicationFleet = Action("DisassociateApplicationFleet")
+DisassociateApplicationFromEntitlement = Action(
+    "DisassociateApplicationFromEntitlement"
+)
 DisassociateApplicatonFromEntitlement = Action("DisassociateApplicatonFromEntitlement")
 DisassociateFleet = Action("DisassociateFleet")
 EnableUser = Action("EnableUser")
