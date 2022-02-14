@@ -80,6 +80,7 @@ CreateCapacityReservationFleet = Action("CreateCapacityReservationFleet")
 CreateCarrierGateway = Action("CreateCarrierGateway")
 CreateClientVpnEndpoint = Action("CreateClientVpnEndpoint")
 CreateClientVpnRoute = Action("CreateClientVpnRoute")
+CreateCoipPoolPermission = Action("CreateCoipPoolPermission")
 CreateCustomerGateway = Action("CreateCustomerGateway")
 CreateDefaultSubnet = Action("CreateDefaultSubnet")
 CreateDefaultVpc = Action("CreateDefaultVpc")
@@ -99,6 +100,9 @@ CreateKeyPair = Action("CreateKeyPair")
 CreateLaunchTemplate = Action("CreateLaunchTemplate")
 CreateLaunchTemplateVersion = Action("CreateLaunchTemplateVersion")
 CreateLocalGatewayRoute = Action("CreateLocalGatewayRoute")
+CreateLocalGatewayRouteTablePermission = Action(
+    "CreateLocalGatewayRouteTablePermission"
+)
 CreateLocalGatewayRouteTableVpcAssociation = Action(
     "CreateLocalGatewayRouteTableVpcAssociation"
 )
@@ -154,6 +158,7 @@ CreateVpnGateway = Action("CreateVpnGateway")
 DeleteCarrierGateway = Action("DeleteCarrierGateway")
 DeleteClientVpnEndpoint = Action("DeleteClientVpnEndpoint")
 DeleteClientVpnRoute = Action("DeleteClientVpnRoute")
+DeleteCoipPoolPermission = Action("DeleteCoipPoolPermission")
 DeleteCustomerGateway = Action("DeleteCustomerGateway")
 DeleteDhcpOptions = Action("DeleteDhcpOptions")
 DeleteEgressOnlyInternetGateway = Action("DeleteEgressOnlyInternetGateway")
@@ -169,6 +174,9 @@ DeleteKeyPair = Action("DeleteKeyPair")
 DeleteLaunchTemplate = Action("DeleteLaunchTemplate")
 DeleteLaunchTemplateVersions = Action("DeleteLaunchTemplateVersions")
 DeleteLocalGatewayRoute = Action("DeleteLocalGatewayRoute")
+DeleteLocalGatewayRouteTablePermission = Action(
+    "DeleteLocalGatewayRouteTablePermission"
+)
 DeleteLocalGatewayRouteTableVpcAssociation = Action(
     "DeleteLocalGatewayRouteTableVpcAssociation"
 )
@@ -298,6 +306,9 @@ DescribeIpv6Pools = Action("DescribeIpv6Pools")
 DescribeKeyPairs = Action("DescribeKeyPairs")
 DescribeLaunchTemplateVersions = Action("DescribeLaunchTemplateVersions")
 DescribeLaunchTemplates = Action("DescribeLaunchTemplates")
+DescribeLocalGatewayRouteTablePermissions = Action(
+    "DescribeLocalGatewayRouteTablePermissions"
+)
 DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations = Action(
     "DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations"
 )
