@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AccountConfigurations = Action("AccountConfigurations")
 CancelIngestion = Action("CancelIngestion")
 CreateAccountCustomization = Action("CreateAccountCustomization")
 CreateAdmin = Action("CreateAdmin")
@@ -126,6 +127,7 @@ PassDataSet = Action("PassDataSet")
 PassDataSource = Action("PassDataSource")
 RegisterUser = Action("RegisterUser")
 RestoreAnalysis = Action("RestoreAnalysis")
+ScopeDownPolicy = Action("ScopeDownPolicy")
 SearchAnalyses = Action("SearchAnalyses")
 SearchDashboards = Action("SearchDashboards")
 SearchDirectoryGroups = Action("SearchDirectoryGroups")
