@@ -58,6 +58,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Kinesis Analytics V2": "kinesisanalytics",
     "Amazon Lex V2": "lex",
     "Amazon Pinpoint Email Service": "ses",
+    "Amazon Pinpoint SMS Voice V2": "sms-voice",
     "Amazon Simple Email Service v2": "ses",
     "AWS Cloud Control API": "cloudformation",
     "AWS IoT Greengrass V2": "greengrass",
