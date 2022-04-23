@@ -28,6 +28,7 @@ BatchGetImage = Action("BatchGetImage")
 BatchGetRepositoryScanningConfiguration = Action(
     "BatchGetRepositoryScanningConfiguration"
 )
+BatchImportUpstreamImage = Action("BatchImportUpstreamImage")
 CompleteLayerUpload = Action("CompleteLayerUpload")
 CreatePullThroughCacheRule = Action("CreatePullThroughCacheRule")
 CreateRepository = Action("CreateRepository")

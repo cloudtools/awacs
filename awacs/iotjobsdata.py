@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route 53 Recovery Cluster"
-prefix = "route53-recovery-cluster"
+service_name = "AWS IoT Jobs DataPlane"
+prefix = "iotjobsdata"
 
 
 class Action(BaseAction):
@@ -22,7 +22,7 @@ class ARN(BaseARN):
         )
 
 
-GetRoutingControlState = Action("GetRoutingControlState")
-ListRoutingControls = Action("ListRoutingControls")
-UpdateRoutingControlState = Action("UpdateRoutingControlState")
-UpdateRoutingControlStates = Action("UpdateRoutingControlStates")
+DescribeJobExecution = Action("DescribeJobExecution")
+GetPendingJobExecutions = Action("GetPendingJobExecutions")
+StartNextPendingJobExecution = Action("StartNextPendingJobExecution")
+UpdateJobExecution = Action("UpdateJobExecution")

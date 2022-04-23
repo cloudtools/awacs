@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWSDataSync"
+service_name = "AWS DataSync"
 prefix = "datasync"
 
 
@@ -26,6 +26,7 @@ CancelTaskExecution = Action("CancelTaskExecution")
 CreateAgent = Action("CreateAgent")
 CreateLocationEfs = Action("CreateLocationEfs")
 CreateLocationFsxLustre = Action("CreateLocationFsxLustre")
+CreateLocationFsxOpenZfs = Action("CreateLocationFsxOpenZfs")
 CreateLocationFsxWindows = Action("CreateLocationFsxWindows")
 CreateLocationHdfs = Action("CreateLocationHdfs")
 CreateLocationNfs = Action("CreateLocationNfs")
@@ -39,6 +40,7 @@ DeleteTask = Action("DeleteTask")
 DescribeAgent = Action("DescribeAgent")
 DescribeLocationEfs = Action("DescribeLocationEfs")
 DescribeLocationFsxLustre = Action("DescribeLocationFsxLustre")
+DescribeLocationFsxOpenZfs = Action("DescribeLocationFsxOpenZfs")
 DescribeLocationFsxWindows = Action("DescribeLocationFsxWindows")
 DescribeLocationHdfs = Action("DescribeLocationHdfs")
 DescribeLocationNfs = Action("DescribeLocationNfs")

@@ -23,11 +23,13 @@ class ARN(BaseARN):
 
 
 AssociateAdminAccount = Action("AssociateAdminAccount")
+AssociateThirdPartyFirewall = Action("AssociateThirdPartyFirewall")
 DeleteAppsList = Action("DeleteAppsList")
 DeleteNotificationChannel = Action("DeleteNotificationChannel")
 DeletePolicy = Action("DeletePolicy")
 DeleteProtocolsList = Action("DeleteProtocolsList")
 DisassociateAdminAccount = Action("DisassociateAdminAccount")
+DisassociateThirdPartyFirewall = Action("DisassociateThirdPartyFirewall")
 GetAdminAccount = Action("GetAdminAccount")
 GetAppsList = Action("GetAppsList")
 GetComplianceDetail = Action("GetComplianceDetail")
@@ -35,6 +37,9 @@ GetNotificationChannel = Action("GetNotificationChannel")
 GetPolicy = Action("GetPolicy")
 GetProtectionStatus = Action("GetProtectionStatus")
 GetProtocolsList = Action("GetProtocolsList")
+GetThirdPartyFirewallAssociationStatus = Action(
+    "GetThirdPartyFirewallAssociationStatus"
+)
 GetViolationDetails = Action("GetViolationDetails")
 ListAppsLists = Action("ListAppsLists")
 ListComplianceStatus = Action("ListComplianceStatus")
@@ -42,6 +47,9 @@ ListMemberAccounts = Action("ListMemberAccounts")
 ListPolicies = Action("ListPolicies")
 ListProtocolsLists = Action("ListProtocolsLists")
 ListTagsForResource = Action("ListTagsForResource")
+ListThirdPartyFirewallFirewallPolicies = Action(
+    "ListThirdPartyFirewallFirewallPolicies"
+)
 PutAppsList = Action("PutAppsList")
 PutNotificationChannel = Action("PutNotificationChannel")
 PutPolicy = Action("PutPolicy")

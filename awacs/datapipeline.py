@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Data Pipeline"
+service_name = "AWS Data Pipeline"
 prefix = "datapipeline"
 
 

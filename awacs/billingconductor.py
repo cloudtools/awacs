@@ -55,6 +55,7 @@ ListPricingRulesAssociatedToPricingPlan = Action(
 ListResourcesAssociatedToCustomLineItem = Action(
     "ListResourcesAssociatedToCustomLineItem"
 )
+ListTagsForResource = Action("ListTagsForResource")
 ListTagsResource = Action("ListTagsResource")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")

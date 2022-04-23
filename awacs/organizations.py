@@ -25,6 +25,7 @@ class ARN(BaseARN):
 AcceptHandshake = Action("AcceptHandshake")
 AttachPolicy = Action("AttachPolicy")
 CancelHandshake = Action("CancelHandshake")
+CloseAccount = Action("CloseAccount")
 CreateAccount = Action("CreateAccount")
 CreateGovCloudAccount = Action("CreateGovCloudAccount")
 CreateOrganization = Action("CreateOrganization")

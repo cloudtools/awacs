@@ -533,6 +533,7 @@ ModifyInstanceCapacityReservationAttributes = Action(
 ModifyInstanceCreditSpecification = Action("ModifyInstanceCreditSpecification")
 ModifyInstanceEventStartTime = Action("ModifyInstanceEventStartTime")
 ModifyInstanceEventWindow = Action("ModifyInstanceEventWindow")
+ModifyInstanceMaintenanceOptions = Action("ModifyInstanceMaintenanceOptions")
 ModifyInstanceMetadataOptions = Action("ModifyInstanceMetadataOptions")
 ModifyInstancePlacement = Action("ModifyInstancePlacement")
 ModifyIpam = Action("ModifyIpam")

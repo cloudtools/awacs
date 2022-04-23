@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 AddNotificationChannel = Action("AddNotificationChannel")
+DeleteInsight = Action("DeleteInsight")
 DescribeAccountHealth = Action("DescribeAccountHealth")
 DescribeAccountOverview = Action("DescribeAccountOverview")
 DescribeAnomaly = Action("DescribeAnomaly")
