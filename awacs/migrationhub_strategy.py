@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Migration Hub Strategy Recommendations."
+service_name = "AWS Migration Hub Strategy Recommendations"
 prefix = "migrationhub-strategy"
 
 

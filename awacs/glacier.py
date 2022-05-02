@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Glacier"
+service_name = "Amazon S3 Glacier"
 prefix = "glacier"
 
 
