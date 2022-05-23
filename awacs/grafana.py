@@ -24,7 +24,9 @@ class ARN(BaseARN):
 
 AssociateLicense = Action("AssociateLicense")
 CreateWorkspace = Action("CreateWorkspace")
+CreateWorkspaceApiKey = Action("CreateWorkspaceApiKey")
 DeleteWorkspace = Action("DeleteWorkspace")
+DeleteWorkspaceApiKey = Action("DeleteWorkspaceApiKey")
 DescribeWorkspace = Action("DescribeWorkspace")
 DescribeWorkspaceAuthentication = Action("DescribeWorkspaceAuthentication")
 DisassociateLicense = Action("DisassociateLicense")

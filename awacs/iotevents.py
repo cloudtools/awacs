@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 BatchAcknowledgeAlarm = Action("BatchAcknowledgeAlarm")
+BatchDeleteDetector = Action("BatchDeleteDetector")
 BatchDisableAlarm = Action("BatchDisableAlarm")
 BatchEnableAlarm = Action("BatchEnableAlarm")
 BatchPutMessage = Action("BatchPutMessage")
