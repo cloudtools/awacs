@@ -27,6 +27,8 @@ AssociateFailbackClientToRecoveryInstanceForDrs = Action(
 )
 BatchCreateVolumeSnapshotGroupForDrs = Action("BatchCreateVolumeSnapshotGroupForDrs")
 BatchDeleteSnapshotRequestForDrs = Action("BatchDeleteSnapshotRequestForDrs")
+CreateConvertedSnapshotForDrs = Action("CreateConvertedSnapshotForDrs")
+CreateExtendedSourceServer = Action("CreateExtendedSourceServer")
 CreateRecoveryInstanceForDrs = Action("CreateRecoveryInstanceForDrs")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
@@ -70,6 +72,8 @@ GetSuggestedFailbackClientDeviceMappingForDrs = Action(
 )
 InitializeService = Action("InitializeService")
 IssueAgentCertificateForDrs = Action("IssueAgentCertificateForDrs")
+ListExtensibleSourceServers = Action("ListExtensibleSourceServers")
+ListStagingAccounts = Action("ListStagingAccounts")
 ListTagsForResource = Action("ListTagsForResource")
 NotifyAgentAuthenticationForDrs = Action("NotifyAgentAuthenticationForDrs")
 NotifyAgentConnectedForDrs = Action("NotifyAgentConnectedForDrs")

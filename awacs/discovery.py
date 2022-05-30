@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Application Discovery"
+service_name = "AWS Application Discovery Service"
 prefix = "discovery"
 
 
@@ -42,6 +42,7 @@ DisassociateConfigurationItemsFromApplication = Action(
 )
 ExportConfigurations = Action("ExportConfigurations")
 GetDiscoverySummary = Action("GetDiscoverySummary")
+GetNetworkConnectionGraph = Action("GetNetworkConnectionGraph")
 ListConfigurations = Action("ListConfigurations")
 ListServerNeighbors = Action("ListServerNeighbors")
 StartContinuousExport = Action("StartContinuousExport")
