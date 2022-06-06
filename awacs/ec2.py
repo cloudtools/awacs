@@ -469,6 +469,7 @@ GetHostReservationPurchasePreview = Action("GetHostReservationPurchasePreview")
 GetInstanceTypesFromInstanceRequirements = Action(
     "GetInstanceTypesFromInstanceRequirements"
 )
+GetInstanceUefiData = Action("GetInstanceUefiData")
 GetIpamAddressHistory = Action("GetIpamAddressHistory")
 GetIpamPoolAllocations = Action("GetIpamPoolAllocations")
 GetIpamPoolCidrs = Action("GetIpamPoolCidrs")
