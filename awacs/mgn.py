@@ -25,11 +25,13 @@ class ARN(BaseARN):
 BatchCreateVolumeSnapshotGroupForMgn = Action("BatchCreateVolumeSnapshotGroupForMgn")
 BatchDeleteSnapshotRequestForMgn = Action("BatchDeleteSnapshotRequestForMgn")
 ChangeServerLifeCycleState = Action("ChangeServerLifeCycleState")
+CreateLaunchConfigurationTemplate = Action("CreateLaunchConfigurationTemplate")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
 )
 CreateVcenterClientForMgn = Action("CreateVcenterClientForMgn")
 DeleteJob = Action("DeleteJob")
+DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
 DeleteReplicationConfigurationTemplate = Action(
     "DeleteReplicationConfigurationTemplate"
 )
@@ -37,6 +39,7 @@ DeleteSourceServer = Action("DeleteSourceServer")
 DeleteVcenterClient = Action("DeleteVcenterClient")
 DescribeJobLogItems = Action("DescribeJobLogItems")
 DescribeJobs = Action("DescribeJobs")
+DescribeLaunchConfigurationTemplates = Action("DescribeLaunchConfigurationTemplates")
 DescribeReplicationConfigurationTemplates = Action(
     "DescribeReplicationConfigurationTemplates"
 )
@@ -59,6 +62,7 @@ GetLaunchConfiguration = Action("GetLaunchConfiguration")
 GetReplicationConfiguration = Action("GetReplicationConfiguration")
 GetVcenterClientCommandsForMgn = Action("GetVcenterClientCommandsForMgn")
 InitializeService = Action("InitializeService")
+IssueClientCertificateForMgn = Action("IssueClientCertificateForMgn")
 ListTagsForResource = Action("ListTagsForResource")
 MarkAsArchived = Action("MarkAsArchived")
 NotifyAgentAuthenticationForMgn = Action("NotifyAgentAuthenticationForMgn")
@@ -90,8 +94,10 @@ UpdateAgentReplicationProcessStateForMgn = Action(
 )
 UpdateAgentSourcePropertiesForMgn = Action("UpdateAgentSourcePropertiesForMgn")
 UpdateLaunchConfiguration = Action("UpdateLaunchConfiguration")
+UpdateLaunchConfigurationTemplate = Action("UpdateLaunchConfigurationTemplate")
 UpdateReplicationConfiguration = Action("UpdateReplicationConfiguration")
 UpdateReplicationConfigurationTemplate = Action(
     "UpdateReplicationConfigurationTemplate"
 )
 UpdateSourceServerReplicationType = Action("UpdateSourceServerReplicationType")
+VerifyClientRoleForMgn = Action("VerifyClientRoleForMgn")
