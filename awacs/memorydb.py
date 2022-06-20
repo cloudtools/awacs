@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+BatchUpdateCluster = Action("BatchUpdateCluster")
 BatchUpdateClusters = Action("BatchUpdateClusters")
 CopySnapshot = Action("CopySnapshot")
 CreateAcl = Action("CreateAcl")
@@ -47,6 +48,7 @@ DescribeSnapshots = Action("DescribeSnapshots")
 DescribeSubnetGroups = Action("DescribeSubnetGroups")
 DescribeUsers = Action("DescribeUsers")
 FailoverShard = Action("FailoverShard")
+ListAllowedNodeTypeUpdates = Action("ListAllowedNodeTypeUpdates")
 ListNodeTypeUpdates = Action("ListNodeTypeUpdates")
 ListTags = Action("ListTags")
 ResetParameterGroup = Action("ResetParameterGroup")

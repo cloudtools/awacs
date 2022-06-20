@@ -74,6 +74,7 @@ DisassociateWirelessGatewayFromCertificate = Action(
 DisassociateWirelessGatewayFromThing = Action("DisassociateWirelessGatewayFromThing")
 GetDestination = Action("GetDestination")
 GetDeviceProfile = Action("GetDeviceProfile")
+GetEventConfigurationByResourceTypes = Action("GetEventConfigurationByResourceTypes")
 GetEventConfigurationsByResourceTypes = Action("GetEventConfigurationsByResourceTypes")
 GetFuotaTask = Action("GetFuotaTask")
 GetLogLevelsByResourceTypes = Action("GetLogLevelsByResourceTypes")
@@ -125,6 +126,9 @@ TagResource = Action("TagResource")
 TestWirelessDevice = Action("TestWirelessDevice")
 UntagResource = Action("UntagResource")
 UpdateDestination = Action("UpdateDestination")
+UpdateEventConfigurationByResourceTypes = Action(
+    "UpdateEventConfigurationByResourceTypes"
+)
 UpdateEventConfigurationsByResourceTypes = Action(
     "UpdateEventConfigurationsByResourceTypes"
 )
