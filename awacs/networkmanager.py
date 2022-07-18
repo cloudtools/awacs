@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Network Manager"
+service_name = "AWS Network Manager"
 prefix = "networkmanager"
 
 
@@ -36,6 +36,10 @@ CreateGlobalNetwork = Action("CreateGlobalNetwork")
 CreateLink = Action("CreateLink")
 CreateSite = Action("CreateSite")
 CreateSiteToSiteVpnAttachment = Action("CreateSiteToSiteVpnAttachment")
+CreateTransitGatewayPeering = Action("CreateTransitGatewayPeering")
+CreateTransitGatewayRouteTableAttachment = Action(
+    "CreateTransitGatewayRouteTableAttachment"
+)
 CreateVpcAttachment = Action("CreateVpcAttachment")
 DeleteAttachment = Action("DeleteAttachment")
 DeleteConnectPeer = Action("DeleteConnectPeer")
@@ -45,6 +49,7 @@ DeleteCoreNetworkPolicyVersion = Action("DeleteCoreNetworkPolicyVersion")
 DeleteDevice = Action("DeleteDevice")
 DeleteGlobalNetwork = Action("DeleteGlobalNetwork")
 DeleteLink = Action("DeleteLink")
+DeletePeering = Action("DeletePeering")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
 DeleteSite = Action("DeleteSite")
 DeregisterTransitGateway = Action("DeregisterTransitGateway")
@@ -59,6 +64,7 @@ GetConnectPeer = Action("GetConnectPeer")
 GetConnectPeerAssociations = Action("GetConnectPeerAssociations")
 GetConnections = Action("GetConnections")
 GetCoreNetwork = Action("GetCoreNetwork")
+GetCoreNetworkChangeEvents = Action("GetCoreNetworkChangeEvents")
 GetCoreNetworkChangeSet = Action("GetCoreNetworkChangeSet")
 GetCoreNetworkPolicy = Action("GetCoreNetworkPolicy")
 GetCustomerGatewayAssociations = Action("GetCustomerGatewayAssociations")
@@ -77,13 +83,16 @@ GetSites = Action("GetSites")
 GetTransitGatewayConnectPeerAssociations = Action(
     "GetTransitGatewayConnectPeerAssociations"
 )
+GetTransitGatewayPeering = Action("GetTransitGatewayPeering")
 GetTransitGatewayRegistrations = Action("GetTransitGatewayRegistrations")
+GetTransitGatewayRouteTableAttachment = Action("GetTransitGatewayRouteTableAttachment")
 GetVpcAttachment = Action("GetVpcAttachment")
 ListAttachments = Action("ListAttachments")
 ListConnectPeers = Action("ListConnectPeers")
 ListCoreNetworkPolicyVersions = Action("ListCoreNetworkPolicyVersions")
 ListCoreNetworks = Action("ListCoreNetworks")
 ListOrganizationServiceAccessStatus = Action("ListOrganizationServiceAccessStatus")
+ListPeerings = Action("ListPeerings")
 ListTagsForResource = Action("ListTagsForResource")
 PutCoreNetworkPolicy = Action("PutCoreNetworkPolicy")
 PutResourcePolicy = Action("PutResourcePolicy")
