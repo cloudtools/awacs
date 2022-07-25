@@ -25,6 +25,9 @@ class ARN(BaseARN):
 AddMemberToGroup = Action("AddMemberToGroup")
 AssociateDirectory = Action("AssociateDirectory")
 AssociateProfile = Action("AssociateProfile")
+AttachCustomerManagedPolicyReferenceToPermissionSet = Action(
+    "AttachCustomerManagedPolicyReferenceToPermissionSet"
+)
 AttachManagedPolicyToPermissionSet = Action("AttachManagedPolicyToPermissionSet")
 CreateAccountAssignment = Action("CreateAccountAssignment")
 CreateAlias = Action("CreateAlias")
@@ -49,6 +52,9 @@ DeleteInstanceAccessControlAttributeConfiguration = Action(
 )
 DeleteManagedApplicationInstance = Action("DeleteManagedApplicationInstance")
 DeletePermissionSet = Action("DeletePermissionSet")
+DeletePermissionsBoundaryFromPermissionSet = Action(
+    "DeletePermissionsBoundaryFromPermissionSet"
+)
 DeletePermissionsPolicy = Action("DeletePermissionsPolicy")
 DeleteProfile = Action("DeleteProfile")
 DeleteUser = Action("DeleteUser")
@@ -69,6 +75,9 @@ DescribePermissionSetProvisioningStatus = Action(
 DescribePermissionsPolicies = Action("DescribePermissionsPolicies")
 DescribeRegisteredRegions = Action("DescribeRegisteredRegions")
 DescribeUsers = Action("DescribeUsers")
+DetachCustomerManagedPolicyReferenceFromPermissionSet = Action(
+    "DetachCustomerManagedPolicyReferenceFromPermissionSet"
+)
 DetachManagedPolicyFromPermissionSet = Action("DetachManagedPolicyFromPermissionSet")
 DisableUser = Action("DisableUser")
 DisassociateDirectory = Action("DisassociateDirectory")
@@ -80,6 +89,9 @@ GetInlinePolicyForPermissionSet = Action("GetInlinePolicyForPermissionSet")
 GetManagedApplicationInstance = Action("GetManagedApplicationInstance")
 GetMfaDeviceManagementForDirectory = Action("GetMfaDeviceManagementForDirectory")
 GetPermissionSet = Action("GetPermissionSet")
+GetPermissionsBoundaryForPermissionSet = Action(
+    "GetPermissionsBoundaryForPermissionSet"
+)
 GetPermissionsPolicy = Action("GetPermissionsPolicy")
 GetProfile = Action("GetProfile")
 GetSSOConfiguration = Action("GetSSOConfiguration")
@@ -101,6 +113,9 @@ ListApplicationInstanceCertificates = Action("ListApplicationInstanceCertificate
 ListApplicationInstances = Action("ListApplicationInstances")
 ListApplicationTemplates = Action("ListApplicationTemplates")
 ListApplications = Action("ListApplications")
+ListCustomerManagedPolicyReferencesInPermissionSet = Action(
+    "ListCustomerManagedPolicyReferencesInPermissionSet"
+)
 ListDirectoryAssociations = Action("ListDirectoryAssociations")
 ListGroupsForUser = Action("ListGroupsForUser")
 ListInstances = Action("ListInstances")
@@ -117,6 +132,7 @@ ListTagsForResource = Action("ListTagsForResource")
 ProvisionPermissionSet = Action("ProvisionPermissionSet")
 PutInlinePolicyToPermissionSet = Action("PutInlinePolicyToPermissionSet")
 PutMfaDeviceManagementForDirectory = Action("PutMfaDeviceManagementForDirectory")
+PutPermissionsBoundaryToPermissionSet = Action("PutPermissionsBoundaryToPermissionSet")
 PutPermissionsPolicy = Action("PutPermissionsPolicy")
 RemoveMemberFromGroup = Action("RemoveMemberFromGroup")
 SearchGroups = Action("SearchGroups")

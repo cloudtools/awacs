@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Storage Gateway"
+service_name = "AWS Storage Gateway"
 prefix = "storagegateway"
 
 

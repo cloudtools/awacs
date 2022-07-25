@@ -50,6 +50,7 @@ AssociateSubnetCidrBlock = Action("AssociateSubnetCidrBlock")
 AssociateTransitGatewayMulticastDomain = Action(
     "AssociateTransitGatewayMulticastDomain"
 )
+AssociateTransitGatewayPolicyTable = Action("AssociateTransitGatewayPolicyTable")
 AssociateTransitGatewayRouteTable = Action("AssociateTransitGatewayRouteTable")
 AssociateTrunkInterface = Action("AssociateTrunkInterface")
 AssociateVpcCidrBlock = Action("AssociateVpcCidrBlock")
@@ -138,11 +139,15 @@ CreateTransitGatewayConnect = Action("CreateTransitGatewayConnect")
 CreateTransitGatewayConnectPeer = Action("CreateTransitGatewayConnectPeer")
 CreateTransitGatewayMulticastDomain = Action("CreateTransitGatewayMulticastDomain")
 CreateTransitGatewayPeeringAttachment = Action("CreateTransitGatewayPeeringAttachment")
+CreateTransitGatewayPolicyTable = Action("CreateTransitGatewayPolicyTable")
 CreateTransitGatewayPrefixListReference = Action(
     "CreateTransitGatewayPrefixListReference"
 )
 CreateTransitGatewayRoute = Action("CreateTransitGatewayRoute")
 CreateTransitGatewayRouteTable = Action("CreateTransitGatewayRouteTable")
+CreateTransitGatewayRouteTableAnnouncement = Action(
+    "CreateTransitGatewayRouteTableAnnouncement"
+)
 CreateTransitGatewayVpcAttachment = Action("CreateTransitGatewayVpcAttachment")
 CreateVolume = Action("CreateVolume")
 CreateVpc = Action("CreateVpc")
@@ -213,11 +218,15 @@ DeleteTransitGatewayConnect = Action("DeleteTransitGatewayConnect")
 DeleteTransitGatewayConnectPeer = Action("DeleteTransitGatewayConnectPeer")
 DeleteTransitGatewayMulticastDomain = Action("DeleteTransitGatewayMulticastDomain")
 DeleteTransitGatewayPeeringAttachment = Action("DeleteTransitGatewayPeeringAttachment")
+DeleteTransitGatewayPolicyTable = Action("DeleteTransitGatewayPolicyTable")
 DeleteTransitGatewayPrefixListReference = Action(
     "DeleteTransitGatewayPrefixListReference"
 )
 DeleteTransitGatewayRoute = Action("DeleteTransitGatewayRoute")
 DeleteTransitGatewayRouteTable = Action("DeleteTransitGatewayRouteTable")
+DeleteTransitGatewayRouteTableAnnouncement = Action(
+    "DeleteTransitGatewayRouteTableAnnouncement"
+)
 DeleteTransitGatewayVpcAttachment = Action("DeleteTransitGatewayVpcAttachment")
 DeleteVolume = Action("DeleteVolume")
 DeleteVpc = Action("DeleteVpc")
@@ -378,6 +387,10 @@ DescribeTransitGatewayMulticastDomains = Action(
 DescribeTransitGatewayPeeringAttachments = Action(
     "DescribeTransitGatewayPeeringAttachments"
 )
+DescribeTransitGatewayPolicyTables = Action("DescribeTransitGatewayPolicyTables")
+DescribeTransitGatewayRouteTableAnnouncements = Action(
+    "DescribeTransitGatewayRouteTableAnnouncements"
+)
 DescribeTransitGatewayRouteTables = Action("DescribeTransitGatewayRouteTables")
 DescribeTransitGatewayVpcAttachments = Action("DescribeTransitGatewayVpcAttachments")
 DescribeTransitGateways = Action("DescribeTransitGateways")
@@ -430,6 +443,7 @@ DisassociateSubnetCidrBlock = Action("DisassociateSubnetCidrBlock")
 DisassociateTransitGatewayMulticastDomain = Action(
     "DisassociateTransitGatewayMulticastDomain"
 )
+DisassociateTransitGatewayPolicyTable = Action("DisassociateTransitGatewayPolicyTable")
 DisassociateTransitGatewayRouteTable = Action("DisassociateTransitGatewayRouteTable")
 DisassociateTrunkInterface = Action("DisassociateTrunkInterface")
 DisassociateVpcCidrBlock = Action("DisassociateVpcCidrBlock")
@@ -493,6 +507,10 @@ GetTransitGatewayAttachmentPropagations = Action(
 GetTransitGatewayMulticastDomainAssociations = Action(
     "GetTransitGatewayMulticastDomainAssociations"
 )
+GetTransitGatewayPolicyTableAssociations = Action(
+    "GetTransitGatewayPolicyTableAssociations"
+)
+GetTransitGatewayPolicyTableEntries = Action("GetTransitGatewayPolicyTableEntries")
 GetTransitGatewayPrefixListReferences = Action("GetTransitGatewayPrefixListReferences")
 GetTransitGatewayRouteTableAssociations = Action(
     "GetTransitGatewayRouteTableAssociations"

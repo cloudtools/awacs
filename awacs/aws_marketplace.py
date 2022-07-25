@@ -23,13 +23,16 @@ class ARN(BaseARN):
 
 
 AcceptAgreementApprovalRequest = Action("AcceptAgreementApprovalRequest")
+AcceptAgreementRequest = Action("AcceptAgreementRequest")
 AssociateProductsWithPrivateMarketplace = Action(
     "AssociateProductsWithPrivateMarketplace"
 )
 BatchMeterUsage = Action("BatchMeterUsage")
+CancelAgreement = Action("CancelAgreement")
 CancelAgreementRequest = Action("CancelAgreementRequest")
 CancelChangeSet = Action("CancelChangeSet")
 CompleteTask = Action("CompleteTask")
+CreateAgreementRequest = Action("CreateAgreementRequest")
 CreatePrivateMarketplace = Action("CreatePrivateMarketplace")
 CreatePrivateMarketplaceProfile = Action("CreatePrivateMarketplaceProfile")
 CreatePrivateMarketplaceRequests = Action("CreatePrivateMarketplaceRequests")
