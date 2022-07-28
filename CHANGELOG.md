@@ -1,3 +1,32 @@
+## 2.2.0 (2022-07-28)
+* Action Update 2022-02
+* Action Update 2022-03
+* Action Update 2022-04
+* Action Update 2022-05
+* Action Update 2022-06
+* Action Update 2022-07
+* Action Update 2022-08
+* Action Update 2022-09
+* Action Update 2022-10
+* Action Update 2022-11
+* Action Update 2022-12
+* Action Update 2022-13
+* Fix scrape breakage by mapping "Amazon Pinpoint SMS Voice V2" to "sms-voice"
+* Action Update 2022-16
+* Action Update 2022-18
+* Action Update 2022-19
+* Action Update 2022-20
+* Action Update 2022-21
+* Action Update 2022-22
+* Action Update 2022-23
+* Action Update 2022-24
+* Action Update 2022-25
+* Action Update 2022-26
+* Action Update 2022-27
+* Action Update 2022-28
+* Action Update 2022-29
+* Action Update 2022-30
+
 ## 2.1.0 (2022-01-01)
 * Update base url used by scraper
 * Make scraper resilient to base url changes
