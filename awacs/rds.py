@@ -122,6 +122,7 @@ FailoverDBCluster = Action("FailoverDBCluster")
 FailoverGlobalCluster = Action("FailoverGlobalCluster")
 ImportInstallationMedia = Action("ImportInstallationMedia")
 ListTagsForResource = Action("ListTagsForResource")
+ModifyActivityStream = Action("ModifyActivityStream")
 ModifyCertificates = Action("ModifyCertificates")
 ModifyCurrentDBClusterCapacity = Action("ModifyCurrentDBClusterCapacity")
 ModifyCustomDBEngineVersion = Action("ModifyCustomDBEngineVersion")
@@ -176,3 +177,4 @@ StopDBInstance = Action("StopDBInstance")
 StopDBInstanceAutomatedBackupsReplication = Action(
     "StopDBInstanceAutomatedBackupsReplication"
 )
+SwitchoverReadReplica = Action("SwitchoverReadReplica")

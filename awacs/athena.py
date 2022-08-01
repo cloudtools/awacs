@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 BatchGetNamedQuery = Action("BatchGetNamedQuery")
+BatchGetPreparedStatement = Action("BatchGetPreparedStatement")
 BatchGetQueryExecution = Action("BatchGetQueryExecution")
 CancelQueryExecution = Action("CancelQueryExecution")
 CreateDataCatalog = Action("CreateDataCatalog")

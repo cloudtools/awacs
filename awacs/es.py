@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon OpenSearch Service (successor to Amazon Elasticsearch Service)"
+service_name = "Amazon OpenSearch Service"
 prefix = "es"
 
 

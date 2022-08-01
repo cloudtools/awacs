@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "CloudWatch Application Insights"
+service_name = "Amazon CloudWatch Application Insights"
 prefix = "applicationinsights"
 
 
