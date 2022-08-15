@@ -22,12 +22,16 @@ class ARN(BaseARN):
         )
 
 
+DeleteNotificationConfigurationForDelegatedAdmin = Action(
+    "DeleteNotificationConfigurationForDelegatedAdmin"
+)
 DescribeAccount = Action("DescribeAccount")
 DescribeAccountAccess = Action("DescribeAccountAccess")
 DescribeCheckItems = Action("DescribeCheckItems")
 DescribeCheckRefreshStatuses = Action("DescribeCheckRefreshStatuses")
 DescribeCheckSummaries = Action("DescribeCheckSummaries")
 DescribeChecks = Action("DescribeChecks")
+DescribeNotificationConfigurations = Action("DescribeNotificationConfigurations")
 DescribeNotificationPreferences = Action("DescribeNotificationPreferences")
 DescribeOrganization = Action("DescribeOrganization")
 DescribeOrganizationAccounts = Action("DescribeOrganizationAccounts")
@@ -46,5 +50,6 @@ ListRoots = Action("ListRoots")
 RefreshCheck = Action("RefreshCheck")
 SetAccountAccess = Action("SetAccountAccess")
 SetOrganizationAccess = Action("SetOrganizationAccess")
+UpdateNotificationConfigurations = Action("UpdateNotificationConfigurations")
 UpdateNotificationPreferences = Action("UpdateNotificationPreferences")
 UpdateRiskStatus = Action("UpdateRiskStatus")
