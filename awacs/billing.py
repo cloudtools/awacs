@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Tiros"
-prefix = "tiros"
+service_name = "AWS Billing and Cost Management "
+prefix = "billing"
 
 
 class Action(BaseAction):
@@ -22,7 +22,4 @@ class ARN(BaseARN):
         )
 
 
-CreateQuery = Action("CreateQuery")
-ExtendQuery = Action("ExtendQuery")
-GetQueryAnswer = Action("GetQueryAnswer")
-GetQueryExplanation = Action("GetQueryExplanation")
+ListBillingViews = Action("ListBillingViews")
