@@ -81,6 +81,8 @@ CreateCapacityReservationFleet = Action("CreateCapacityReservationFleet")
 CreateCarrierGateway = Action("CreateCarrierGateway")
 CreateClientVpnEndpoint = Action("CreateClientVpnEndpoint")
 CreateClientVpnRoute = Action("CreateClientVpnRoute")
+CreateCoipCidr = Action("CreateCoipCidr")
+CreateCoipPool = Action("CreateCoipPool")
 CreateCoipPoolPermission = Action("CreateCoipPoolPermission")
 CreateCustomerGateway = Action("CreateCustomerGateway")
 CreateDefaultSubnet = Action("CreateDefaultSubnet")
@@ -101,8 +103,12 @@ CreateKeyPair = Action("CreateKeyPair")
 CreateLaunchTemplate = Action("CreateLaunchTemplate")
 CreateLaunchTemplateVersion = Action("CreateLaunchTemplateVersion")
 CreateLocalGatewayRoute = Action("CreateLocalGatewayRoute")
+CreateLocalGatewayRouteTable = Action("CreateLocalGatewayRouteTable")
 CreateLocalGatewayRouteTablePermission = Action(
     "CreateLocalGatewayRouteTablePermission"
+)
+CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation = Action(
+    "CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation"
 )
 CreateLocalGatewayRouteTableVpcAssociation = Action(
     "CreateLocalGatewayRouteTableVpcAssociation"
@@ -163,6 +169,8 @@ CreateVpnGateway = Action("CreateVpnGateway")
 DeleteCarrierGateway = Action("DeleteCarrierGateway")
 DeleteClientVpnEndpoint = Action("DeleteClientVpnEndpoint")
 DeleteClientVpnRoute = Action("DeleteClientVpnRoute")
+DeleteCoipCidr = Action("DeleteCoipCidr")
+DeleteCoipPool = Action("DeleteCoipPool")
 DeleteCoipPoolPermission = Action("DeleteCoipPoolPermission")
 DeleteCustomerGateway = Action("DeleteCustomerGateway")
 DeleteDhcpOptions = Action("DeleteDhcpOptions")
@@ -179,8 +187,12 @@ DeleteKeyPair = Action("DeleteKeyPair")
 DeleteLaunchTemplate = Action("DeleteLaunchTemplate")
 DeleteLaunchTemplateVersions = Action("DeleteLaunchTemplateVersions")
 DeleteLocalGatewayRoute = Action("DeleteLocalGatewayRoute")
+DeleteLocalGatewayRouteTable = Action("DeleteLocalGatewayRouteTable")
 DeleteLocalGatewayRouteTablePermission = Action(
     "DeleteLocalGatewayRouteTablePermission"
+)
+DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation = Action(
+    "DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation"
 )
 DeleteLocalGatewayRouteTableVpcAssociation = Action(
     "DeleteLocalGatewayRouteTableVpcAssociation"

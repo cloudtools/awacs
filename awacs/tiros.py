@@ -24,5 +24,6 @@ class ARN(BaseARN):
 
 CreateQuery = Action("CreateQuery")
 ExtendQuery = Action("ExtendQuery")
+GetExtensionAccounts = Action("GetExtensionAccounts")
 GetQueryAnswer = Action("GetQueryAnswer")
 GetQueryExplanation = Action("GetQueryExplanation")
