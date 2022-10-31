@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Elemental Support Content"
-prefix = "elemental-support-content"
+service_name = "AWS App2Container"
+prefix = "a2c"
 
 
 class Action(BaseAction):
@@ -22,4 +22,7 @@ class ARN(BaseARN):
         )
 
 
-Query = Action("Query")
+GetContainerizationJobDetails = Action("GetContainerizationJobDetails")
+GetDeploymentJobDetails = Action("GetDeploymentJobDetails")
+StartContainerizationJob = Action("StartContainerizationJob")
+StartDeploymentJob = Action("StartDeploymentJob")

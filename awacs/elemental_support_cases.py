@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Elemental Support Cases"
+service_name = "AWS Elemental Support Cases"
 prefix = "elemental-support-cases"
 
 

@@ -24,6 +24,7 @@ class ARN(BaseARN):
 
 CreateProject = Action("CreateProject")
 DeleteProject = Action("DeleteProject")
+GetAccountDetails = Action("GetAccountDetails")
 GetBatch = Action("GetBatch")
 GetProject = Action("GetProject")
 ListBatchDataTransfers = Action("ListBatchDataTransfers")

@@ -23,6 +23,7 @@ class ARN(BaseARN):
 
 
 AddCustomRoutingEndpoints = Action("AddCustomRoutingEndpoints")
+AddEndpoints = Action("AddEndpoints")
 AdvertiseByoipCidr = Action("AdvertiseByoipCidr")
 AllowCustomRoutingTraffic = Action("AllowCustomRoutingTraffic")
 CreateAccelerator = Action("CreateAccelerator")
@@ -63,6 +64,7 @@ ListListeners = Action("ListListeners")
 ListTagsForResource = Action("ListTagsForResource")
 ProvisionByoipCidr = Action("ProvisionByoipCidr")
 RemoveCustomRoutingEndpoints = Action("RemoveCustomRoutingEndpoints")
+RemoveEndpoints = Action("RemoveEndpoints")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateAccelerator = Action("UpdateAccelerator")

@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Elemental Support Content"
-prefix = "elemental-support-content"
+service_name = "AWS Identity Store Auth"
+prefix = "identitystore-auth"
 
 
 class Action(BaseAction):
@@ -22,4 +22,6 @@ class ARN(BaseARN):
         )
 
 
-Query = Action("Query")
+BatchDeleteSession = Action("BatchDeleteSession")
+BatchGetSession = Action("BatchGetSession")
+ListSessions = Action("ListSessions")
