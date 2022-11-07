@@ -118,6 +118,7 @@ EnableSnapshotCopy = Action("EnableSnapshotCopy")
 ExecuteQuery = Action("ExecuteQuery")
 FetchResults = Action("FetchResults")
 GetClusterCredentials = Action("GetClusterCredentials")
+GetClusterCredentialsWithIAM = Action("GetClusterCredentialsWithIAM")
 GetReservedNodeExchangeConfigurationOptions = Action(
     "GetReservedNodeExchangeConfigurationOptions"
 )

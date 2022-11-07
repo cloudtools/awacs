@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Certificate Manager Private Certificate Authority"
+service_name = "AWS Private Certificate Authority"
 prefix = "acm-pca"
 
 

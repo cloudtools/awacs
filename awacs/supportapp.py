@@ -6,7 +6,7 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Support App for Slack"
+service_name = "AWS Support App in Slack"
 prefix = "supportapp"
 
 
@@ -26,9 +26,12 @@ CreateSlackChannelConfiguration = Action("CreateSlackChannelConfiguration")
 DeleteAccountAlias = Action("DeleteAccountAlias")
 DeleteSlackChannelConfiguration = Action("DeleteSlackChannelConfiguration")
 DeleteSlackWorkspaceConfiguration = Action("DeleteSlackWorkspaceConfiguration")
+DescribeSlackChannels = Action("DescribeSlackChannels")
 GetAccountAlias = Action("GetAccountAlias")
+GetSlackOauthParameters = Action("GetSlackOauthParameters")
 ListSlackChannelConfigurations = Action("ListSlackChannelConfigurations")
 ListSlackWorkspaceConfigurations = Action("ListSlackWorkspaceConfigurations")
 PutAccountAlias = Action("PutAccountAlias")
+RedeemSlackOauthCode = Action("RedeemSlackOauthCode")
 RegisterSlackWorkspaceForOrganization = Action("RegisterSlackWorkspaceForOrganization")
 UpdateSlackChannelConfiguration = Action("UpdateSlackChannelConfiguration")
