@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Elemental Appliances and Software"
-prefix = "elemental-appliances-software"
+service_name = "Amazon EventBridge Scheduler"
+prefix = "scheduler"
 
 
 class Action(BaseAction):
@@ -22,20 +22,15 @@ class ARN(BaseARN):
         )
 
 
-CompleteUpload = Action("CompleteUpload")
-CreateOrderV1 = Action("CreateOrderV1")
-CreateQuote = Action("CreateQuote")
-GetAvsCorrectAddress = Action("GetAvsCorrectAddress")
-GetBillingAddresses = Action("GetBillingAddresses")
-GetDeliveryAddressesV2 = Action("GetDeliveryAddressesV2")
-GetOrder = Action("GetOrder")
-GetOrdersV2 = Action("GetOrdersV2")
-GetQuote = Action("GetQuote")
-GetTaxes = Action("GetTaxes")
-ListQuotes = Action("ListQuotes")
+CreateSchedule = Action("CreateSchedule")
+CreateScheduleGroup = Action("CreateScheduleGroup")
+DeleteSchedule = Action("DeleteSchedule")
+DeleteScheduleGroup = Action("DeleteScheduleGroup")
+GetSchedule = Action("GetSchedule")
+GetScheduleGroup = Action("GetScheduleGroup")
+ListScheduleGroups = Action("ListScheduleGroups")
+ListSchedules = Action("ListSchedules")
 ListTagsForResource = Action("ListTagsForResource")
-StartUpload = Action("StartUpload")
-SubmitOrderV1 = Action("SubmitOrderV1")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
-UpdateQuote = Action("UpdateQuote")
+UpdateSchedule = Action("UpdateSchedule")

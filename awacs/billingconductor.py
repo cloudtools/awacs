@@ -43,6 +43,7 @@ DisassociatePricingRules = Action("DisassociatePricingRules")
 ListAccountAssociations = Action("ListAccountAssociations")
 ListBillingGroupCostReports = Action("ListBillingGroupCostReports")
 ListBillingGroups = Action("ListBillingGroups")
+ListCustomLineItemVersions = Action("ListCustomLineItemVersions")
 ListCustomLineItems = Action("ListCustomLineItems")
 ListPricingPlans = Action("ListPricingPlans")
 ListPricingPlansAssociatedWithPricingRule = Action(

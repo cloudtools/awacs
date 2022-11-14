@@ -23,14 +23,18 @@ class ARN(BaseARN):
 
 
 CancelJobRun = Action("CancelJobRun")
+CreateJobTemplate = Action("CreateJobTemplate")
 CreateManagedEndpoint = Action("CreateManagedEndpoint")
 CreateVirtualCluster = Action("CreateVirtualCluster")
+DeleteJobTemplate = Action("DeleteJobTemplate")
 DeleteManagedEndpoint = Action("DeleteManagedEndpoint")
 DeleteVirtualCluster = Action("DeleteVirtualCluster")
 DescribeJobRun = Action("DescribeJobRun")
+DescribeJobTemplate = Action("DescribeJobTemplate")
 DescribeManagedEndpoint = Action("DescribeManagedEndpoint")
 DescribeVirtualCluster = Action("DescribeVirtualCluster")
 ListJobRuns = Action("ListJobRuns")
+ListJobTemplates = Action("ListJobTemplates")
 ListManagedEndpoints = Action("ListManagedEndpoints")
 ListTagsForResource = Action("ListTagsForResource")
 ListVirtualClusters = Action("ListVirtualClusters")

@@ -92,6 +92,7 @@ GetComplianceSummaryByConfigRule = Action("GetComplianceSummaryByConfigRule")
 GetComplianceSummaryByResourceType = Action("GetComplianceSummaryByResourceType")
 GetConformancePackComplianceDetails = Action("GetConformancePackComplianceDetails")
 GetConformancePackComplianceSummary = Action("GetConformancePackComplianceSummary")
+GetCustomRulePolicy = Action("GetCustomRulePolicy")
 GetDiscoveredResourceCounts = Action("GetDiscoveredResourceCounts")
 GetOrganizationConfigRuleDetailedStatus = Action(
     "GetOrganizationConfigRuleDetailedStatus"
@@ -99,11 +100,13 @@ GetOrganizationConfigRuleDetailedStatus = Action(
 GetOrganizationConformancePackDetailedStatus = Action(
     "GetOrganizationConformancePackDetailedStatus"
 )
+GetOrganizationCustomRulePolicy = Action("GetOrganizationCustomRulePolicy")
 GetResourceConfigHistory = Action("GetResourceConfigHistory")
 GetResources = Action("GetResources")
 GetStoredQuery = Action("GetStoredQuery")
 GetTagKeys = Action("GetTagKeys")
 ListAggregateDiscoveredResources = Action("ListAggregateDiscoveredResources")
+ListConformancePackComplianceScores = Action("ListConformancePackComplianceScores")
 ListDiscoveredResources = Action("ListDiscoveredResources")
 ListStoredQueries = Action("ListStoredQueries")
 ListTagsForResource = Action("ListTagsForResource")

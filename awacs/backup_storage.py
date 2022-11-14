@@ -22,4 +22,18 @@ class ARN(BaseARN):
         )
 
 
+CommitBackupJob = Action("CommitBackupJob")
+DeleteObjects = Action("DeleteObjects")
+DescribeBackupJob = Action("DescribeBackupJob")
+GetBaseBackup = Action("GetBaseBackup")
+GetChunk = Action("GetChunk")
+GetIncrementalBaseBackup = Action("GetIncrementalBaseBackup")
+GetObjectMetadata = Action("GetObjectMetadata")
+ListChunks = Action("ListChunks")
+ListObjects = Action("ListObjects")
 MountCapsule = Action("MountCapsule")
+NotifyObjectComplete = Action("NotifyObjectComplete")
+PutChunk = Action("PutChunk")
+PutObject = Action("PutObject")
+StartObject = Action("StartObject")
+UpdateObjectComplete = Action("UpdateObjectComplete")
