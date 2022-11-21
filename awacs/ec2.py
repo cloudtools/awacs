@@ -22,6 +22,7 @@ class ARN(BaseARN):
         )
 
 
+AcceptAddressTransfer = Action("AcceptAddressTransfer")
 AcceptReservedInstancesExchangeQuote = Action("AcceptReservedInstancesExchangeQuote")
 AcceptTransitGatewayMulticastDomainAssociations = Action(
     "AcceptTransitGatewayMulticastDomainAssociations"
@@ -68,6 +69,7 @@ CancelCapacityReservation = Action("CancelCapacityReservation")
 CancelCapacityReservationFleets = Action("CancelCapacityReservationFleets")
 CancelConversionTask = Action("CancelConversionTask")
 CancelExportTask = Action("CancelExportTask")
+CancelImageLaunchPermission = Action("CancelImageLaunchPermission")
 CancelImportTask = Action("CancelImportTask")
 CancelReservedInstancesListing = Action("CancelReservedInstancesListing")
 CancelSpotFleetRequests = Action("CancelSpotFleetRequests")
@@ -267,6 +269,7 @@ DeregisterTransitGatewayMulticastGroupSources = Action(
     "DeregisterTransitGatewayMulticastGroupSources"
 )
 DescribeAccountAttributes = Action("DescribeAccountAttributes")
+DescribeAddressTransfers = Action("DescribeAddressTransfers")
 DescribeAddresses = Action("DescribeAddresses")
 DescribeAddressesAttribute = Action("DescribeAddressesAttribute")
 DescribeAggregateIdFormat = Action("DescribeAggregateIdFormat")
@@ -433,6 +436,7 @@ DetachInternetGateway = Action("DetachInternetGateway")
 DetachNetworkInterface = Action("DetachNetworkInterface")
 DetachVolume = Action("DetachVolume")
 DetachVpnGateway = Action("DetachVpnGateway")
+DisableAddressTransfer = Action("DisableAddressTransfer")
 DisableEbsEncryptionByDefault = Action("DisableEbsEncryptionByDefault")
 DisableFastLaunch = Action("DisableFastLaunch")
 DisableFastSnapshotRestores = Action("DisableFastSnapshotRestores")
@@ -459,6 +463,7 @@ DisassociateTransitGatewayPolicyTable = Action("DisassociateTransitGatewayPolicy
 DisassociateTransitGatewayRouteTable = Action("DisassociateTransitGatewayRouteTable")
 DisassociateTrunkInterface = Action("DisassociateTrunkInterface")
 DisassociateVpcCidrBlock = Action("DisassociateVpcCidrBlock")
+EnableAddressTransfer = Action("EnableAddressTransfer")
 EnableEbsEncryptionByDefault = Action("EnableEbsEncryptionByDefault")
 EnableFastLaunch = Action("EnableFastLaunch")
 EnableFastSnapshotRestores = Action("EnableFastSnapshotRestores")

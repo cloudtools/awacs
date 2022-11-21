@@ -69,6 +69,9 @@ DescribeAgentStatus = Action("DescribeAgentStatus")
 DescribeContact = Action("DescribeContact")
 DescribeContactFlow = Action("DescribeContactFlow")
 DescribeContactFlowModule = Action("DescribeContactFlowModule")
+DescribeForecastingPlanningSchedulingIntegration = Action(
+    "DescribeForecastingPlanningSchedulingIntegration"
+)
 DescribeHoursOfOperation = Action("DescribeHoursOfOperation")
 DescribeInstance = Action("DescribeInstance")
 DescribeInstanceAttribute = Action("DescribeInstanceAttribute")
@@ -94,6 +97,7 @@ DisassociatePhoneNumberContactFlow = Action("DisassociatePhoneNumberContactFlow"
 DisassociateQueueQuickConnects = Action("DisassociateQueueQuickConnects")
 DisassociateRoutingProfileQueues = Action("DisassociateRoutingProfileQueues")
 DisassociateSecurityKey = Action("DisassociateSecurityKey")
+DismissUserContact = Action("DismissUserContact")
 GetContactAttributes = Action("GetContactAttributes")
 GetCurrentMetricData = Action("GetCurrentMetricData")
 GetCurrentUserData = Action("GetCurrentUserData")
@@ -148,11 +152,17 @@ SearchVocabularies = Action("SearchVocabularies")
 StartChatContact = Action("StartChatContact")
 StartContactRecording = Action("StartContactRecording")
 StartContactStreaming = Action("StartContactStreaming")
+StartForecastingPlanningSchedulingIntegration = Action(
+    "StartForecastingPlanningSchedulingIntegration"
+)
 StartOutboundVoiceContact = Action("StartOutboundVoiceContact")
 StartTaskContact = Action("StartTaskContact")
 StopContact = Action("StopContact")
 StopContactRecording = Action("StopContactRecording")
 StopContactStreaming = Action("StopContactStreaming")
+StopForecastingPlanningSchedulingIntegration = Action(
+    "StopForecastingPlanningSchedulingIntegration"
+)
 SuspendContactRecording = Action("SuspendContactRecording")
 TagResource = Action("TagResource")
 TransferContact = Action("TransferContact")

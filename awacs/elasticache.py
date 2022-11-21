@@ -27,6 +27,7 @@ AuthorizeCacheSecurityGroupIngress = Action("AuthorizeCacheSecurityGroupIngress"
 BatchApplyUpdateAction = Action("BatchApplyUpdateAction")
 BatchStopUpdateAction = Action("BatchStopUpdateAction")
 CompleteMigration = Action("CompleteMigration")
+Connect = Action("Connect")
 CopySnapshot = Action("CopySnapshot")
 CreateCacheCluster = Action("CreateCacheCluster")
 CreateCacheParameterGroup = Action("CreateCacheParameterGroup")

@@ -67,6 +67,10 @@ GetEnvironmentTemplateMinorVersion = Action("GetEnvironmentTemplateMinorVersion"
 GetEnvironmentTemplateVersion = Action("GetEnvironmentTemplateVersion")
 GetRepository = Action("GetRepository")
 GetRepositorySyncStatus = Action("GetRepositorySyncStatus")
+GetResourceTemplateVersionStatusCounts = Action(
+    "GetResourceTemplateVersionStatusCounts"
+)
+GetResourcesSummary = Action("GetResourcesSummary")
 GetService = Action("GetService")
 GetServiceInstance = Action("GetServiceInstance")
 GetServiceTemplate = Action("GetServiceTemplate")

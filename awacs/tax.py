@@ -23,4 +23,8 @@ class ARN(BaseARN):
 
 
 GetExemptions = Action("GetExemptions")
+GetTaxInterview = Action("GetTaxInterview")
+GetTaxRegistration = Action("GetTaxRegistration")
+PutTaxInterview = Action("PutTaxInterview")
+PutTaxRegistration = Action("PutTaxRegistration")
 UpdateExemptions = Action("UpdateExemptions")
