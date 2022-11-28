@@ -1,3 +1,25 @@
+## 2.3.0 (2022-11-28)
+* Action Update 2022-31
+* Action Update 2022-32
+* Action Update 2022-33
+* Action Update 2022-34
+* Action Update 2022-35
+* Action Update 2022-36
+* Action Update 2022-37
+* Action Update 2022-38
+* Action Update 2022-39
+* Action Update 2022-40
+* Action Update 2022-41
+* Action Update 2022-42
+* Action Update 2022-43
+* Action Update 2022-44
+* Use the latest github actions
+* Run tests against Python 3.11 and add trove classifier
+* Action Update 2022-45
+* Action Update 2022-46
+* Action Update 2022-47
+* Action Update 2022-48(
+
 ## 2.2.0 (2022-07-28)
 * Action Update 2022-02
 * Action Update 2022-03
