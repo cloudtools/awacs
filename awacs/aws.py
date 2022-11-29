@@ -45,7 +45,7 @@ VpcSourceIp = "aws:VpcSourceIp"
 
 
 class Action(AWSHelperFn):
-    def __init__(self, prefix: str, action: str = None) -> None:
+    def __init__(self, prefix: str, action: Optional[str] = None) -> None:
         self.prefix = prefix
         if prefix == "*" and action:
             raise ValueError("Action not supported with wildcard prefix")
@@ -93,7 +93,7 @@ class BaseARN(AWSHelperFn):
 
 
 class ConditionElement(AWSHelperFn, metaclass=ABCMeta):
-    def __init__(self, data: Union[str, dict], value: Any = None) -> None:
+    def __init__(self, data: Union[str, dict], value: Optional[Any] = None) -> None:
         """Create a ConditionElement
 
         There are two supported ways to create a new ConditionElement.
@@ -150,7 +150,7 @@ class Principal(AWSHelperFn):
     data: Union[Literal["*"], Dict[str, Any]]
     VALID_PRINCIPALS = ["AWS", "CanonicalUser", "Federated", "Service"]
 
-    def __init__(self, principal: str, resources: Any = None) -> None:
+    def __init__(self, principal: str, resources: Optional[Any] = None) -> None:
         if principal == "*":
             if resources:
                 raise ValueError("Cannot provide resources if principal is " "'*'.")
