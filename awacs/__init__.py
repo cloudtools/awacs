@@ -18,9 +18,9 @@ class AWSObject:
     def __init__(
         self,
         name: Optional[str],
-        type: Any = None,
-        dictname: Any = None,
-        props: dict = None,
+        type: Optional[Any] = None,
+        dictname: Optional[Any] = None,
+        props: Optional[dict] = None,
         **kwargs: Any
     ) -> None:
         self.name = name
