@@ -39,4 +39,13 @@ ListEntitledSecurityProfileSnapshots = Action("ListEntitledSecurityProfileSnapsh
 ListEntitledSecurityProfiles = Action("ListEntitledSecurityProfiles")
 ListSecurityProfileSnapshots = Action("ListSecurityProfileSnapshots")
 ListSecurityProfiles = Action("ListSecurityProfiles")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateSecurityProfile = Action("UpdateSecurityProfile")
+UpdateSecurityProfileSnapshotCreationConfiguration = Action(
+    "UpdateSecurityProfileSnapshotCreationConfiguration"
+)
+UpdateSecurityProfileSnapshotReleaseConfiguration = Action(
+    "UpdateSecurityProfileSnapshotReleaseConfiguration"
+)

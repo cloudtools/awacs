@@ -53,6 +53,10 @@ ListTranscriptionJobs = Action("ListTranscriptionJobs")
 ListVocabularies = Action("ListVocabularies")
 ListVocabularyFilters = Action("ListVocabularyFilters")
 StartCallAnalyticsJob = Action("StartCallAnalyticsJob")
+StartCallAnalyticsStreamTranscription = Action("StartCallAnalyticsStreamTranscription")
+StartCallAnalyticsStreamTranscriptionWebSocket = Action(
+    "StartCallAnalyticsStreamTranscriptionWebSocket"
+)
 StartMedicalStreamTranscription = Action("StartMedicalStreamTranscription")
 StartMedicalStreamTranscriptionWebSocket = Action(
     "StartMedicalStreamTranscriptionWebSocket"

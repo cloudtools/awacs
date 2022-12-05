@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Recycle Bin"
-prefix = "rbin"
+service_name = "Amazon CloudWatch Observability Access Manager"
+prefix = "oam"
 
 
 class Action(BaseAction):
@@ -22,13 +22,18 @@ class ARN(BaseARN):
         )
 
 
-CreateRule = Action("CreateRule")
-DeleteRule = Action("DeleteRule")
-GetRule = Action("GetRule")
-ListRules = Action("ListRules")
+CreateLink = Action("CreateLink")
+CreateSink = Action("CreateSink")
+DeleteLink = Action("DeleteLink")
+DeleteSink = Action("DeleteSink")
+GetLink = Action("GetLink")
+GetSink = Action("GetSink")
+GetSinkPolicy = Action("GetSinkPolicy")
+ListAttachedLinks = Action("ListAttachedLinks")
+ListLinks = Action("ListLinks")
+ListSinks = Action("ListSinks")
 ListTagsForResource = Action("ListTagsForResource")
-LockRule = Action("LockRule")
+PutSinkPolicy = Action("PutSinkPolicy")
 TagResource = Action("TagResource")
-UnlockRule = Action("UnlockRule")
 UntagResource = Action("UntagResource")
-UpdateRule = Action("UpdateRule")
+UpdateLink = Action("UpdateLink")

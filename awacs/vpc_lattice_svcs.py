@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Artifact"
-prefix = "artifact"
+service_name = "Amazon VPC Lattice Services"
+prefix = "vpc-lattice-svcs"
 
 
 class Action(BaseAction):
@@ -22,11 +22,4 @@ class ARN(BaseARN):
         )
 
 
-AcceptAgreement = Action("AcceptAgreement")
-DownloadAgreement = Action("DownloadAgreement")
-Get = Action("Get")
-GetReport = Action("GetReport")
-GetReportMetadata = Action("GetReportMetadata")
-GetTermForReport = Action("GetTermForReport")
-ListReports = Action("ListReports")
-TerminateAgreement = Action("TerminateAgreement")
+Invoke = Action("Invoke")

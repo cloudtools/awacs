@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Recycle Bin"
-prefix = "rbin"
+service_name = "AWS SimSpace Weaver"
+prefix = "simspaceweaver"
 
 
 class Action(BaseAction):
@@ -22,13 +22,18 @@ class ARN(BaseARN):
         )
 
 
-CreateRule = Action("CreateRule")
-DeleteRule = Action("DeleteRule")
-GetRule = Action("GetRule")
-ListRules = Action("ListRules")
+DeleteApp = Action("DeleteApp")
+DeleteSimulation = Action("DeleteSimulation")
+DescribeApp = Action("DescribeApp")
+DescribeSimulation = Action("DescribeSimulation")
+ListApps = Action("ListApps")
+ListSimulations = Action("ListSimulations")
 ListTagsForResource = Action("ListTagsForResource")
-LockRule = Action("LockRule")
+StartApp = Action("StartApp")
+StartClock = Action("StartClock")
+StartSimulation = Action("StartSimulation")
+StopApp = Action("StopApp")
+StopClock = Action("StopClock")
+StopSimulation = Action("StopSimulation")
 TagResource = Action("TagResource")
-UnlockRule = Action("UnlockRule")
 UntagResource = Action("UntagResource")
-UpdateRule = Action("UpdateRule")

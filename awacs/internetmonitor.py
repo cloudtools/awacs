@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Artifact"
-prefix = "artifact"
+service_name = "Amazon CloudWatch Internet Monitor"
+prefix = "internetmonitor"
 
 
 class Action(BaseAction):
@@ -22,11 +22,13 @@ class ARN(BaseARN):
         )
 
 
-AcceptAgreement = Action("AcceptAgreement")
-DownloadAgreement = Action("DownloadAgreement")
-Get = Action("Get")
-GetReport = Action("GetReport")
-GetReportMetadata = Action("GetReportMetadata")
-GetTermForReport = Action("GetTermForReport")
-ListReports = Action("ListReports")
-TerminateAgreement = Action("TerminateAgreement")
+CreateMonitor = Action("CreateMonitor")
+DeleteMonitor = Action("DeleteMonitor")
+GetHealthEvent = Action("GetHealthEvent")
+GetMonitor = Action("GetMonitor")
+ListHealthEvents = Action("ListHealthEvents")
+ListMonitors = Action("ListMonitors")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateMonitor = Action("UpdateMonitor")

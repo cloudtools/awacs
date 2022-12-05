@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Recycle Bin"
-prefix = "rbin"
+service_name = "Amazon DocumentDB Elastic Clusters"
+prefix = "docdb-elastic"
 
 
 class Action(BaseAction):
@@ -22,13 +22,16 @@ class ARN(BaseARN):
         )
 
 
-CreateRule = Action("CreateRule")
-DeleteRule = Action("DeleteRule")
-GetRule = Action("GetRule")
-ListRules = Action("ListRules")
+CreateCluster = Action("CreateCluster")
+CreateClusterSnapshot = Action("CreateClusterSnapshot")
+DeleteCluster = Action("DeleteCluster")
+DeleteClusterSnapshot = Action("DeleteClusterSnapshot")
+GetCluster = Action("GetCluster")
+GetClusterSnapshot = Action("GetClusterSnapshot")
+ListClusterSnapshots = Action("ListClusterSnapshots")
+ListClusters = Action("ListClusters")
 ListTagsForResource = Action("ListTagsForResource")
-LockRule = Action("LockRule")
+RestoreClusterFromSnapshot = Action("RestoreClusterFromSnapshot")
 TagResource = Action("TagResource")
-UnlockRule = Action("UnlockRule")
 UntagResource = Action("UntagResource")
-UpdateRule = Action("UpdateRule")
+UpdateCluster = Action("UpdateCluster")

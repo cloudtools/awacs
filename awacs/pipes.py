@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Artifact"
-prefix = "artifact"
+service_name = "Amazon EventBridge Pipes"
+prefix = "pipes"
 
 
 class Action(BaseAction):
@@ -22,11 +22,13 @@ class ARN(BaseARN):
         )
 
 
-AcceptAgreement = Action("AcceptAgreement")
-DownloadAgreement = Action("DownloadAgreement")
-Get = Action("Get")
-GetReport = Action("GetReport")
-GetReportMetadata = Action("GetReportMetadata")
-GetTermForReport = Action("GetTermForReport")
-ListReports = Action("ListReports")
-TerminateAgreement = Action("TerminateAgreement")
+CreatePipe = Action("CreatePipe")
+DeletePipe = Action("DeletePipe")
+DescribePipe = Action("DescribePipe")
+ListPipes = Action("ListPipes")
+ListTagsForResource = Action("ListTagsForResource")
+StartPipe = Action("StartPipe")
+StopPipe = Action("StopPipe")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdatePipe = Action("UpdatePipe")

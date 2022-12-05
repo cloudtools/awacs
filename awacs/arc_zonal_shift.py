@@ -6,8 +6,8 @@
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Artifact"
-prefix = "artifact"
+service_name = "Amazon Route 53 Application Recovery Controller - Zonal Shift"
+prefix = "arc-zonal-shift"
 
 
 class Action(BaseAction):
@@ -22,11 +22,9 @@ class ARN(BaseARN):
         )
 
 
-AcceptAgreement = Action("AcceptAgreement")
-DownloadAgreement = Action("DownloadAgreement")
-Get = Action("Get")
-GetReport = Action("GetReport")
-GetReportMetadata = Action("GetReportMetadata")
-GetTermForReport = Action("GetTermForReport")
-ListReports = Action("ListReports")
-TerminateAgreement = Action("TerminateAgreement")
+CancelZonalShift = Action("CancelZonalShift")
+GetManagedResource = Action("GetManagedResource")
+ListManagedResources = Action("ListManagedResources")
+ListZonalShifts = Action("ListZonalShifts")
+StartZonalShift = Action("StartZonalShift")
+UpdateZonalShift = Action("UpdateZonalShift")
