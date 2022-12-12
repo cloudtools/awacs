@@ -56,8 +56,14 @@ GetTags = Action("GetTags")
 GetUsageForecast = Action("GetUsageForecast")
 ListCostAllocationTags = Action("ListCostAllocationTags")
 ListCostCategoryDefinitions = Action("ListCostCategoryDefinitions")
+ListSavingsPlansPurchaseRecommendationGeneration = Action(
+    "ListSavingsPlansPurchaseRecommendationGeneration"
+)
 ListTagsForResource = Action("ListTagsForResource")
 ProvideAnomalyFeedback = Action("ProvideAnomalyFeedback")
+StartSavingsPlansPurchaseRecommendationGeneration = Action(
+    "StartSavingsPlansPurchaseRecommendationGeneration"
+)
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateAnomalyMonitor = Action("UpdateAnomalyMonitor")
