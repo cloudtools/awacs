@@ -1,6 +1,6 @@
 aiofiles>=0.8.0
 beautifulsoup4>=4.10.0
-black==21.12b0
+black==23.1a1
 httpx[http2]>=0.21.1
 isort==5.10.1
 lxml>=4.7.1
