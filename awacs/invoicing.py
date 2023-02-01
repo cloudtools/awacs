@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Launch Wizard"
-prefix = "launchwizard"
+service_name = "AWS Invoicing Service"
+prefix = "invoicing"
 
 
 class Action(BaseAction):
@@ -24,11 +24,7 @@ class ARN(BaseARN):
         )
 
 
-DeleteApp = Action("DeleteApp")
-DescribeProvisionedApp = Action("DescribeProvisionedApp")
-DescribeProvisioningEvents = Action("DescribeProvisioningEvents")
-GetInfrastructureSuggestion = Action("GetInfrastructureSuggestion")
-GetIpAddress = Action("GetIpAddress")
-GetResourceCostEstimate = Action("GetResourceCostEstimate")
-ListProvisionedApps = Action("ListProvisionedApps")
-StartProvisioning = Action("StartProvisioning")
+GetInvoiceEmailDeliveryPreferences = Action("GetInvoiceEmailDeliveryPreferences")
+GetInvoicePDF = Action("GetInvoicePDF")
+ListInvoiceSummaries = Action("ListInvoiceSummaries")
+PutInvoiceEmailDeliveryPreferences = Action("PutInvoiceEmailDeliveryPreferences")

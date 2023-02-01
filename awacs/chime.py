@@ -181,6 +181,9 @@ GetProxySession = Action("GetProxySession")
 GetRetentionSettings = Action("GetRetentionSettings")
 GetRoom = Action("GetRoom")
 GetSipMediaApplication = Action("GetSipMediaApplication")
+GetSipMediaApplicationAlexaSkillConfiguration = Action(
+    "GetSipMediaApplicationAlexaSkillConfiguration"
+)
 GetSipMediaApplicationLoggingConfiguration = Action(
     "GetSipMediaApplicationLoggingConfiguration"
 )
@@ -215,6 +218,7 @@ ListAppInstanceUsers = Action("ListAppInstanceUsers")
 ListAppInstances = Action("ListAppInstances")
 ListAttendeeTags = Action("ListAttendeeTags")
 ListAttendees = Action("ListAttendees")
+ListAvailableVoiceConnectorRegions = Action("ListAvailableVoiceConnectorRegions")
 ListBots = Action("ListBots")
 ListCDRBucket = Action("ListCDRBucket")
 ListCallingRegions = Action("ListCallingRegions")
@@ -263,6 +267,9 @@ PutAppInstanceStreamingConfigurations = Action("PutAppInstanceStreamingConfigura
 PutChannelMembershipPreferences = Action("PutChannelMembershipPreferences")
 PutEventsConfiguration = Action("PutEventsConfiguration")
 PutRetentionSettings = Action("PutRetentionSettings")
+PutSipMediaApplicationAlexaSkillConfiguration = Action(
+    "PutSipMediaApplicationAlexaSkillConfiguration"
+)
 PutSipMediaApplicationLoggingConfiguration = Action(
     "PutSipMediaApplicationLoggingConfiguration"
 )
@@ -338,3 +345,4 @@ UpdateVoiceConnector = Action("UpdateVoiceConnector")
 UpdateVoiceConnectorGroup = Action("UpdateVoiceConnectorGroup")
 ValidateAccountResource = Action("ValidateAccountResource")
 ValidateDelegate = Action("ValidateDelegate")
+ValidateE911Address = Action("ValidateE911Address")

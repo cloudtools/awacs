@@ -66,6 +66,7 @@ DescribeAccountAssignmentCreationStatus = Action(
 DescribeAccountAssignmentDeletionStatus = Action(
     "DescribeAccountAssignmentDeletionStatus"
 )
+DescribeDirectories = Action("DescribeDirectories")
 DescribeGroups = Action("DescribeGroups")
 DescribeInstanceAccessControlAttributeConfiguration = Action(
     "DescribeInstanceAccessControlAttributeConfiguration"
@@ -76,6 +77,7 @@ DescribePermissionSetProvisioningStatus = Action(
 )
 DescribePermissionsPolicies = Action("DescribePermissionsPolicies")
 DescribeRegisteredRegions = Action("DescribeRegisteredRegions")
+DescribeTrusts = Action("DescribeTrusts")
 DescribeUsers = Action("DescribeUsers")
 DetachCustomerManagedPolicyReferenceFromPermissionSet = Action(
     "DetachCustomerManagedPolicyReferenceFromPermissionSet"
@@ -132,6 +134,7 @@ ListProfileAssociations = Action("ListProfileAssociations")
 ListProfiles = Action("ListProfiles")
 ListTagsForResource = Action("ListTagsForResource")
 ProvisionPermissionSet = Action("ProvisionPermissionSet")
+PutApplicationAssignmentConfiguration = Action("PutApplicationAssignmentConfiguration")
 PutInlinePolicyToPermissionSet = Action("PutInlinePolicyToPermissionSet")
 PutMfaDeviceManagementForDirectory = Action("PutMfaDeviceManagementForDirectory")
 PutPermissionsBoundaryToPermissionSet = Action("PutPermissionsBoundaryToPermissionSet")

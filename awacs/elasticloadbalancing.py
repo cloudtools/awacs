@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Elastic Load Balancing"
+service_name = "AWS Elastic Load Balancing"
 prefix = "elasticloadbalancing"
 
 

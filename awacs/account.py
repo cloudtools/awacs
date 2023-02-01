@@ -24,11 +24,15 @@ class ARN(BaseARN):
         )
 
 
+CloseAccount = Action("CloseAccount")
 DeleteAlternateContact = Action("DeleteAlternateContact")
 DisableRegion = Action("DisableRegion")
 EnableRegion = Action("EnableRegion")
+GetAccountInformation = Action("GetAccountInformation")
 GetAlternateContact = Action("GetAlternateContact")
+GetChallengeQuestions = Action("GetChallengeQuestions")
 GetContactInformation = Action("GetContactInformation")
 ListRegions = Action("ListRegions")
 PutAlternateContact = Action("PutAlternateContact")
+PutChallengeQuestions = Action("PutChallengeQuestions")
 PutContactInformation = Action("PutContactInformation")

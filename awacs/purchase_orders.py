@@ -24,5 +24,12 @@ class ARN(BaseARN):
         )
 
 
+AddPurchaseOrder = Action("AddPurchaseOrder")
+DeletePurchaseOrder = Action("DeletePurchaseOrder")
+GetPurchaseOrder = Action("GetPurchaseOrder")
+ListPurchaseOrderInvoices = Action("ListPurchaseOrderInvoices")
+ListPurchaseOrders = Action("ListPurchaseOrders")
 ModifyPurchaseOrders = Action("ModifyPurchaseOrders")
+UpdatePurchaseOrder = Action("UpdatePurchaseOrder")
+UpdatePurchaseOrderStatus = Action("UpdatePurchaseOrderStatus")
 ViewPurchaseOrders = Action("ViewPurchaseOrders")

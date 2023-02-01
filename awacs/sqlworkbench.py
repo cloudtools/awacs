@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AssociateConnectionWithChart = Action("AssociateConnectionWithChart")
 AssociateConnectionWithTab = Action("AssociateConnectionWithTab")
+AssociateNotebookWithTab = Action("AssociateNotebookWithTab")
 AssociateQueryWithTab = Action("AssociateQueryWithTab")
 BatchDeleteFolder = Action("BatchDeleteFolder")
 BatchGetNotebookCell = Action("BatchGetNotebookCell")

@@ -24,4 +24,16 @@ class ARN(BaseARN):
         )
 
 
+GetBillingData = Action("GetBillingData")
+GetBillingDetails = Action("GetBillingDetails")
+GetBillingNotifications = Action("GetBillingNotifications")
+GetBillingPreferences = Action("GetBillingPreferences")
+GetContractInformation = Action("GetContractInformation")
+GetCredits = Action("GetCredits")
+GetIAMAccessPreference = Action("GetIAMAccessPreference")
+GetSellerOfRecord = Action("GetSellerOfRecord")
 ListBillingViews = Action("ListBillingViews")
+PutContractInformation = Action("PutContractInformation")
+RedeemCredits = Action("RedeemCredits")
+UpdateBillingPreferences = Action("UpdateBillingPreferences")
+UpdateIAMAccessPreference = Action("UpdateIAMAccessPreference")

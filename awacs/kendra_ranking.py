@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Launch Wizard"
-prefix = "launchwizard"
+service_name = "Amazon Kendra Intelligent Ranking"
+prefix = "kendra-ranking"
 
 
 class Action(BaseAction):
@@ -24,11 +24,12 @@ class ARN(BaseARN):
         )
 
 
-DeleteApp = Action("DeleteApp")
-DescribeProvisionedApp = Action("DescribeProvisionedApp")
-DescribeProvisioningEvents = Action("DescribeProvisioningEvents")
-GetInfrastructureSuggestion = Action("GetInfrastructureSuggestion")
-GetIpAddress = Action("GetIpAddress")
-GetResourceCostEstimate = Action("GetResourceCostEstimate")
-ListProvisionedApps = Action("ListProvisionedApps")
-StartProvisioning = Action("StartProvisioning")
+CreateRescoreExecutionPlan = Action("CreateRescoreExecutionPlan")
+DeleteRescoreExecutionPlan = Action("DeleteRescoreExecutionPlan")
+DescribeRescoreExecutionPlan = Action("DescribeRescoreExecutionPlan")
+ListRescoreExecutionPlans = Action("ListRescoreExecutionPlans")
+ListTagsForResource = Action("ListTagsForResource")
+Rescore = Action("Rescore")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateRescoreExecutionPlan = Action("UpdateRescoreExecutionPlan")

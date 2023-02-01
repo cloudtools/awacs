@@ -26,5 +26,10 @@ class ARN(BaseARN):
 
 DeleteReportDefinition = Action("DeleteReportDefinition")
 DescribeReportDefinitions = Action("DescribeReportDefinitions")
+GetClassicReport = Action("GetClassicReport")
+GetClassicReportPreferences = Action("GetClassicReportPreferences")
+GetUsageReport = Action("GetUsageReport")
 ModifyReportDefinition = Action("ModifyReportDefinition")
+PutClassicReportPreferences = Action("PutClassicReportPreferences")
 PutReportDefinition = Action("PutReportDefinition")
+ValidateReportDestination = Action("ValidateReportDestination")
