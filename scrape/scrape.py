@@ -18,13 +18,15 @@ HEADER = """\
 #
 # See LICENSE file for full license.
 
+from typing import Optional
+
 from .aws import Action as BaseAction
 from .aws import BaseARN
 """
 
 CLASSES = """\
 class Action(BaseAction):
-    def __init__(self, action: str = None) -> None:
+    def __init__(self, action: Optional[str] = None) -> None:
         super().__init__(prefix, action)
 
 
@@ -37,7 +39,7 @@ class ARN(BaseARN):
 
 CLASSES_S3 = """\
 class Action(BaseAction):
-    def __init__(self, action: str = None) -> None:
+    def __init__(self, action: Optional[str] = None) -> None:
         super().__init__(prefix, action)
 
 
@@ -63,11 +65,13 @@ IGNORED_SERVICE_ALIASES = {
     "AWS Cloud Control API": "cloudformation",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
+    "AWS Marketplace Discovery": "aws-marketplace",
     "AWS Marketplace Entitlement Service": "aws-marketplace",
     "AWS Marketplace Image Building Service": "aws-marketplace",
     "AWS Marketplace Metering Service": "aws-marketplace",
     "AWS Marketplace Private Marketplace": "aws-marketplace",
     "AWS Marketplace Procurement Systems Integration": "aws-marketplace",
+    "AWS Marketplace Seller Reporting": "aws-marketplace",
     "AWS Private Marketplace": "aws-marketplace",
     "Elastic Load Balancing V2": "elasticloadbalancing",
 }
