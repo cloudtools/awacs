@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+ConfigureLogsForChannel = Action("ConfigureLogsForChannel")
 ConfigureLogsForPlaybackConfiguration = Action("ConfigureLogsForPlaybackConfiguration")
 CreateChannel = Action("CreateChannel")
 CreateLiveSource = Action("CreateLiveSource")
@@ -64,5 +65,6 @@ TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateChannel = Action("UpdateChannel")
 UpdateLiveSource = Action("UpdateLiveSource")
+UpdateProgram = Action("UpdateProgram")
 UpdateSourceLocation = Action("UpdateSourceLocation")
 UpdateVodSource = Action("UpdateVodSource")

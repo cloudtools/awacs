@@ -135,6 +135,7 @@ ListRealtimeContactAnalysisSegments = Action("ListRealtimeContactAnalysisSegment
 ListRoutingProfileQueues = Action("ListRoutingProfileQueues")
 ListRoutingProfiles = Action("ListRoutingProfiles")
 ListRule = Action("ListRule")
+ListRules = Action("ListRules")
 ListSecurityKeys = Action("ListSecurityKeys")
 ListSecurityProfilePermissions = Action("ListSecurityProfilePermissions")
 ListSecurityProfiles = Action("ListSecurityProfiles")

@@ -25,3 +25,10 @@ class ARN(BaseARN):
 
 
 ApproveAccessGrant = Action("ApproveAccessGrant")
+ApprovePermissionRequest = Action("ApprovePermissionRequest")
+CreatePermissionRequest = Action("CreatePermissionRequest")
+GetPermissionRequest = Action("GetPermissionRequest")
+ListPermissionRequests = Action("ListPermissionRequests")
+RejectPermissionRequest = Action("RejectPermissionRequest")
+RevokePermissionRequest = Action("RevokePermissionRequest")
+WithdrawPermissionRequest = Action("WithdrawPermissionRequest")

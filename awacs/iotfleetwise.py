@@ -26,6 +26,8 @@ class ARN(BaseARN):
 
 AssociateVehicle = Action("AssociateVehicle")
 AssociateVehicleFleet = Action("AssociateVehicleFleet")
+BatchCreateVehicle = Action("BatchCreateVehicle")
+BatchUpdateVehicle = Action("BatchUpdateVehicle")
 CreateCampaign = Action("CreateCampaign")
 CreateDecoderManifest = Action("CreateDecoderManifest")
 CreateFleet = Action("CreateFleet")
