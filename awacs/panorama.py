@@ -86,6 +86,9 @@ ListTagsForResource = Action("ListTagsForResource")
 ProvisionDevice = Action("ProvisionDevice")
 RegisterPackageVersion = Action("RegisterPackageVersion")
 RemoveApplicationInstance = Action("RemoveApplicationInstance")
+SignalApplicationInstanceNodeInstances = Action(
+    "SignalApplicationInstanceNodeInstances"
+)
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateApp = Action("UpdateApp")
