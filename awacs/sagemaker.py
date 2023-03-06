@@ -211,6 +211,7 @@ DisassociateTrialComponent = Action("DisassociateTrialComponent")
 EnableSagemakerServicecatalogPortfolio = Action(
     "EnableSagemakerServicecatalogPortfolio"
 )
+GetDeployments = Action("GetDeployments")
 GetDeviceFleetReport = Action("GetDeviceFleetReport")
 GetDeviceRegistration = Action("GetDeviceRegistration")
 GetLineageGroupPolicy = Action("GetLineageGroupPolicy")

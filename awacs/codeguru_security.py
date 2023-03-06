@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Price List"
-prefix = "pricing"
+service_name = "Amazon CodeGuru Security"
+prefix = "codeguru-security"
 
 
 class Action(BaseAction):
@@ -24,8 +24,11 @@ class ARN(BaseARN):
         )
 
 
-DescribeServices = Action("DescribeServices")
-GetAttributeValues = Action("GetAttributeValues")
-GetPriceListFileUrl = Action("GetPriceListFileUrl")
-GetProducts = Action("GetProducts")
-ListPriceLists = Action("ListPriceLists")
+BatchGetFindings = Action("BatchGetFindings")
+CreateScan = Action("CreateScan")
+CreateUploadUrl = Action("CreateUploadUrl")
+DeleteScansByCategory = Action("DeleteScansByCategory")
+GetScan = Action("GetScan")
+ListFindings = Action("ListFindings")
+ListScans = Action("ListScans")
+UpdateAccountConfiguration = Action("UpdateAccountConfiguration")

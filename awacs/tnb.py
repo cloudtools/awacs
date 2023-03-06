@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS service to enable 5G automation"
+service_name = "AWS Telco Network Builder"
 prefix = "tnb"
 
 
@@ -46,6 +46,7 @@ ListSolFunctionPackages = Action("ListSolFunctionPackages")
 ListSolNetworkInstances = Action("ListSolNetworkInstances")
 ListSolNetworkOperations = Action("ListSolNetworkOperations")
 ListSolNetworkPackages = Action("ListSolNetworkPackages")
+ListTagsForResource = Action("ListTagsForResource")
 PutSolFunctionPackageContent = Action("PutSolFunctionPackageContent")
 PutSolNetworkPackageContent = Action("PutSolNetworkPackageContent")
 TagResource = Action("TagResource")
