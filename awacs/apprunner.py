@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AssociateCustomDomain = Action("AssociateCustomDomain")
+AssociateWebAcl = Action("AssociateWebAcl")
 CreateAutoScalingConfiguration = Action("CreateAutoScalingConfiguration")
 CreateConnection = Action("CreateConnection")
 CreateObservabilityConfiguration = Action("CreateObservabilityConfiguration")
@@ -44,7 +45,10 @@ DescribeOperation = Action("DescribeOperation")
 DescribeService = Action("DescribeService")
 DescribeVpcConnector = Action("DescribeVpcConnector")
 DescribeVpcIngressConnection = Action("DescribeVpcIngressConnection")
+DescribeWebAclForService = Action("DescribeWebAclForService")
 DisassociateCustomDomain = Action("DisassociateCustomDomain")
+DisassociateWebAcl = Action("DisassociateWebAcl")
+ListAssociatedServicesForWebAcl = Action("ListAssociatedServicesForWebAcl")
 ListAutoScalingConfigurations = Action("ListAutoScalingConfigurations")
 ListConnections = Action("ListConnections")
 ListObservabilityConfigurations = Action("ListObservabilityConfigurations")

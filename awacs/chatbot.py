@@ -25,8 +25,16 @@ class ARN(BaseARN):
 
 
 CreateChimeWebhookConfiguration = Action("CreateChimeWebhookConfiguration")
+CreateMicrosoftTeamsChannelConfiguration = Action(
+    "CreateMicrosoftTeamsChannelConfiguration"
+)
 CreateSlackChannelConfiguration = Action("CreateSlackChannelConfiguration")
 DeleteChimeWebhookConfiguration = Action("DeleteChimeWebhookConfiguration")
+DeleteMicrosoftTeamsChannelConfiguration = Action(
+    "DeleteMicrosoftTeamsChannelConfiguration"
+)
+DeleteMicrosoftTeamsConfiguredTeam = Action("DeleteMicrosoftTeamsConfiguredTeam")
+DeleteMicrosoftTeamsUserIdentity = Action("DeleteMicrosoftTeamsUserIdentity")
 DeleteSlackChannelConfiguration = Action("DeleteSlackChannelConfiguration")
 DeleteSlackUserIdentity = Action("DeleteSlackUserIdentity")
 DeleteSlackWorkspaceAuthorization = Action("DeleteSlackWorkspaceAuthorization")
@@ -36,8 +44,19 @@ DescribeSlackChannels = Action("DescribeSlackChannels")
 DescribeSlackUserIdentities = Action("DescribeSlackUserIdentities")
 DescribeSlackWorkspaces = Action("DescribeSlackWorkspaces")
 GetAccountPreferences = Action("GetAccountPreferences")
+GetMicrosoftTeamsChannelConfiguration = Action("GetMicrosoftTeamsChannelConfiguration")
+GetMicrosoftTeamsOauthParameters = Action("GetMicrosoftTeamsOauthParameters")
 GetSlackOauthParameters = Action("GetSlackOauthParameters")
+ListMicrosoftTeamsChannelConfigurations = Action(
+    "ListMicrosoftTeamsChannelConfigurations"
+)
+ListMicrosoftTeamsConfiguredTeams = Action("ListMicrosoftTeamsConfiguredTeams")
+ListMicrosoftTeamsUserIdentities = Action("ListMicrosoftTeamsUserIdentities")
+RedeemMicrosoftTeamsOauthCode = Action("RedeemMicrosoftTeamsOauthCode")
 RedeemSlackOauthCode = Action("RedeemSlackOauthCode")
 UpdateAccountPreferences = Action("UpdateAccountPreferences")
 UpdateChimeWebhookConfiguration = Action("UpdateChimeWebhookConfiguration")
+UpdateMicrosoftTeamsChannelConfiguration = Action(
+    "UpdateMicrosoftTeamsChannelConfiguration"
+)
 UpdateSlackChannelConfiguration = Action("UpdateSlackChannelConfiguration")

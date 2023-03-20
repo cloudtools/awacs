@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AssociateMember = Action("AssociateMember")
 BatchGetAccountStatus = Action("BatchGetAccountStatus")
+BatchGetCodeSnippet = Action("BatchGetCodeSnippet")
 BatchGetFreeTrialInfo = Action("BatchGetFreeTrialInfo")
 CancelFindingsReport = Action("CancelFindingsReport")
 CreateFilter = Action("CreateFilter")
