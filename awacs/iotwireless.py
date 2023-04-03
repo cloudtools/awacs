@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS IoT Core for LoRaWAN"
+service_name = "AWS IoT Wireless"
 prefix = "iotwireless"
 
 
@@ -54,6 +54,7 @@ DeleteNetworkAnalyzerConfiguration = Action("DeleteNetworkAnalyzerConfiguration"
 DeleteQueuedMessages = Action("DeleteQueuedMessages")
 DeleteServiceProfile = Action("DeleteServiceProfile")
 DeleteWirelessDevice = Action("DeleteWirelessDevice")
+DeleteWirelessDeviceImportTask = Action("DeleteWirelessDeviceImportTask")
 DeleteWirelessGateway = Action("DeleteWirelessGateway")
 DeleteWirelessGatewayTask = Action("DeleteWirelessGatewayTask")
 DeleteWirelessGatewayTaskDefinition = Action("DeleteWirelessGatewayTaskDefinition")
@@ -93,6 +94,7 @@ GetResourcePosition = Action("GetResourcePosition")
 GetServiceEndpoint = Action("GetServiceEndpoint")
 GetServiceProfile = Action("GetServiceProfile")
 GetWirelessDevice = Action("GetWirelessDevice")
+GetWirelessDeviceImportTask = Action("GetWirelessDeviceImportTask")
 GetWirelessDeviceStatistics = Action("GetWirelessDeviceStatistics")
 GetWirelessGateway = Action("GetWirelessGateway")
 GetWirelessGatewayCertificate = Action("GetWirelessGatewayCertificate")
@@ -102,6 +104,9 @@ GetWirelessGatewayTask = Action("GetWirelessGatewayTask")
 GetWirelessGatewayTaskDefinition = Action("GetWirelessGatewayTaskDefinition")
 ListDestinations = Action("ListDestinations")
 ListDeviceProfiles = Action("ListDeviceProfiles")
+ListDevicesForWirelessDeviceImportTask = Action(
+    "ListDevicesForWirelessDeviceImportTask"
+)
 ListEventConfigurations = Action("ListEventConfigurations")
 ListFuotaTasks = Action("ListFuotaTasks")
 ListMulticastGroups = Action("ListMulticastGroups")
@@ -112,6 +117,7 @@ ListPositionConfigurations = Action("ListPositionConfigurations")
 ListQueuedMessages = Action("ListQueuedMessages")
 ListServiceProfiles = Action("ListServiceProfiles")
 ListTagsForResource = Action("ListTagsForResource")
+ListWirelessDeviceImportTasks = Action("ListWirelessDeviceImportTasks")
 ListWirelessDevices = Action("ListWirelessDevices")
 ListWirelessGatewayTaskDefinitions = Action("ListWirelessGatewayTaskDefinitions")
 ListWirelessGateways = Action("ListWirelessGateways")
@@ -130,6 +136,8 @@ StartBulkDisassociateWirelessDeviceFromMulticastGroup = Action(
 StartFuotaTask = Action("StartFuotaTask")
 StartMulticastGroupSession = Action("StartMulticastGroupSession")
 StartNetworkAnalyzerStream = Action("StartNetworkAnalyzerStream")
+StartSingleWirelessDeviceImportTask = Action("StartSingleWirelessDeviceImportTask")
+StartWirelessDeviceImportTask = Action("StartWirelessDeviceImportTask")
 TagResource = Action("TagResource")
 TestWirelessDevice = Action("TestWirelessDevice")
 UntagResource = Action("UntagResource")
@@ -149,4 +157,5 @@ UpdatePosition = Action("UpdatePosition")
 UpdateResourceEventConfiguration = Action("UpdateResourceEventConfiguration")
 UpdateResourcePosition = Action("UpdateResourcePosition")
 UpdateWirelessDevice = Action("UpdateWirelessDevice")
+UpdateWirelessDeviceImportTask = Action("UpdateWirelessDeviceImportTask")
 UpdateWirelessGateway = Action("UpdateWirelessGateway")
