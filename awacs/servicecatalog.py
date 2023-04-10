@@ -131,6 +131,15 @@ ListStackInstancesForProvisionedProduct = Action(
 )
 ListTagOptions = Action("ListTagOptions")
 ListTagsForResource = Action("ListTagsForResource")
+NotifyProvisionProductEngineWorkflowResult = Action(
+    "NotifyProvisionProductEngineWorkflowResult"
+)
+NotifyTerminateProvisionedProductEngineWorkflowResult = Action(
+    "NotifyTerminateProvisionedProductEngineWorkflowResult"
+)
+NotifyUpdateProvisionedProductEngineWorkflowResult = Action(
+    "NotifyUpdateProvisionedProductEngineWorkflowResult"
+)
 ProvisionProduct = Action("ProvisionProduct")
 PutConfiguration = Action("PutConfiguration")
 RejectPortfolioShare = Action("RejectPortfolioShare")

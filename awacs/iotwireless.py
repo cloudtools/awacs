@@ -58,6 +58,7 @@ DeleteWirelessDeviceImportTask = Action("DeleteWirelessDeviceImportTask")
 DeleteWirelessGateway = Action("DeleteWirelessGateway")
 DeleteWirelessGatewayTask = Action("DeleteWirelessGatewayTask")
 DeleteWirelessGatewayTaskDefinition = Action("DeleteWirelessGatewayTaskDefinition")
+DeregisterWirelessDevice = Action("DeregisterWirelessDevice")
 DisassociateAwsAccountFromPartnerAccount = Action(
     "DisassociateAwsAccountFromPartnerAccount"
 )
