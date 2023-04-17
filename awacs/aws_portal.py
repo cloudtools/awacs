@@ -24,9 +24,11 @@ class ARN(BaseARN):
         )
 
 
+GetConsoleActionSetEnforced = Action("GetConsoleActionSetEnforced")
 ModifyAccount = Action("ModifyAccount")
 ModifyBilling = Action("ModifyBilling")
 ModifyPaymentMethods = Action("ModifyPaymentMethods")
+UpdateConsoleActionSetEnforced = Action("UpdateConsoleActionSetEnforced")
 ViewAccount = Action("ViewAccount")
 ViewBilling = Action("ViewBilling")
 ViewPaymentMethods = Action("ViewPaymentMethods")
