@@ -31,6 +31,7 @@ BatchCreateVolumeSnapshotGroupForDrs = Action("BatchCreateVolumeSnapshotGroupFor
 BatchDeleteSnapshotRequestForDrs = Action("BatchDeleteSnapshotRequestForDrs")
 CreateConvertedSnapshotForDrs = Action("CreateConvertedSnapshotForDrs")
 CreateExtendedSourceServer = Action("CreateExtendedSourceServer")
+CreateLaunchConfigurationTemplate = Action("CreateLaunchConfigurationTemplate")
 CreateRecoveryInstanceForDrs = Action("CreateRecoveryInstanceForDrs")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
@@ -38,6 +39,7 @@ CreateReplicationConfigurationTemplate = Action(
 CreateSessionForDrs = Action("CreateSessionForDrs")
 CreateSourceServerForDrs = Action("CreateSourceServerForDrs")
 DeleteJob = Action("DeleteJob")
+DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
 DeleteRecoveryInstance = Action("DeleteRecoveryInstance")
 DeleteReplicationConfigurationTemplate = Action(
     "DeleteReplicationConfigurationTemplate"
@@ -45,6 +47,7 @@ DeleteReplicationConfigurationTemplate = Action(
 DeleteSourceServer = Action("DeleteSourceServer")
 DescribeJobLogItems = Action("DescribeJobLogItems")
 DescribeJobs = Action("DescribeJobs")
+DescribeLaunchConfigurationTemplates = Action("DescribeLaunchConfigurationTemplates")
 DescribeRecoveryInstances = Action("DescribeRecoveryInstances")
 DescribeRecoverySnapshots = Action("DescribeRecoverySnapshots")
 DescribeReplicationConfigurationTemplates = Action(
@@ -117,6 +120,7 @@ UpdateFailbackReplicationConfiguration = Action(
     "UpdateFailbackReplicationConfiguration"
 )
 UpdateLaunchConfiguration = Action("UpdateLaunchConfiguration")
+UpdateLaunchConfigurationTemplate = Action("UpdateLaunchConfigurationTemplate")
 UpdateReplicationCertificateForDrs = Action("UpdateReplicationCertificateForDrs")
 UpdateReplicationConfiguration = Action("UpdateReplicationConfiguration")
 UpdateReplicationConfigurationTemplate = Action(

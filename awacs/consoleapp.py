@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon CodeWhisperer"
-prefix = "codewhisperer"
+service_name = "AWS Management Console Mobile App"
+prefix = "consoleapp"
 
 
 class Action(BaseAction):
@@ -24,11 +24,5 @@ class ARN(BaseARN):
         )
 
 
-CreateProfile = Action("CreateProfile")
-DeleteProfile = Action("DeleteProfile")
-GenerateRecommendations = Action("GenerateRecommendations")
-ListProfiles = Action("ListProfiles")
-ListTagsForResource = Action("ListTagsForResource")
-TagResource = Action("TagResource")
-UntagResource = Action("UntagResource")
-UpdateProfile = Action("UpdateProfile")
+GetDeviceIdentity = Action("GetDeviceIdentity")
+ListDeviceIdentities = Action("ListDeviceIdentities")

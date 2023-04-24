@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon CodeWhisperer"
-prefix = "codewhisperer"
+service_name = "AWS User Notifications Contacts"
+prefix = "notifications-contacts"
 
 
 class Action(BaseAction):
@@ -24,11 +24,12 @@ class ARN(BaseARN):
         )
 
 
-CreateProfile = Action("CreateProfile")
-DeleteProfile = Action("DeleteProfile")
-GenerateRecommendations = Action("GenerateRecommendations")
-ListProfiles = Action("ListProfiles")
+ActivateEmailContact = Action("ActivateEmailContact")
+CreateEmailContact = Action("CreateEmailContact")
+DeleteEmailContact = Action("DeleteEmailContact")
+GetEmailContact = Action("GetEmailContact")
+ListEmailContacts = Action("ListEmailContacts")
 ListTagsForResource = Action("ListTagsForResource")
+SendActivationCode = Action("SendActivationCode")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
-UpdateProfile = Action("UpdateProfile")
