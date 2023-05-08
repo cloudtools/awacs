@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+APIAccessAll = Action("APIAccessAll")
 BatchGetCollection = Action("BatchGetCollection")
 BatchGetVpcEndpoint = Action("BatchGetVpcEndpoint")
 CreateAccessPolicy = Action("CreateAccessPolicy")
@@ -31,6 +32,7 @@ CreateCollection = Action("CreateCollection")
 CreateSecurityConfig = Action("CreateSecurityConfig")
 CreateSecurityPolicy = Action("CreateSecurityPolicy")
 CreateVpcEndpoint = Action("CreateVpcEndpoint")
+DashboardsAccessAll = Action("DashboardsAccessAll")
 DeleteAccessPolicy = Action("DeleteAccessPolicy")
 DeleteCollection = Action("DeleteCollection")
 DeleteSecurityConfig = Action("DeleteSecurityConfig")
