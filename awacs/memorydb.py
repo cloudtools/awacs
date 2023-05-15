@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 BatchUpdateCluster = Action("BatchUpdateCluster")
 BatchUpdateClusters = Action("BatchUpdateClusters")
+Connect = Action("Connect")
 CopySnapshot = Action("CopySnapshot")
 CreateAcl = Action("CreateAcl")
 CreateCluster = Action("CreateCluster")

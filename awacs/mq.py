@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 CreateBroker = Action("CreateBroker")
 CreateConfiguration = Action("CreateConfiguration")
+CreateReplicaBroker = Action("CreateReplicaBroker")
 CreateTags = Action("CreateTags")
 CreateUser = Action("CreateUser")
 DeleteBroker = Action("DeleteBroker")

@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+CreateSnapshot = Action("CreateSnapshot")
 DeleteApp = Action("DeleteApp")
 DeleteSimulation = Action("DeleteSimulation")
 DescribeApp = Action("DescribeApp")

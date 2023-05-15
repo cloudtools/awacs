@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon CodeGuru Security"
-prefix = "codeguru-security"
+service_name = "AWS Customer Verification Service"
+prefix = "customer-verification"
 
 
 class Action(BaseAction):
@@ -24,12 +24,7 @@ class ARN(BaseARN):
         )
 
 
-BatchGetFindings = Action("BatchGetFindings")
-CreateScan = Action("CreateScan")
-CreateUploadUrl = Action("CreateUploadUrl")
-DeleteScansByCategory = Action("DeleteScansByCategory")
-GetFindings = Action("GetFindings")
-GetScan = Action("GetScan")
-ListFindings = Action("ListFindings")
-ListScans = Action("ListScans")
-UpdateAccountConfiguration = Action("UpdateAccountConfiguration")
+CreateCustomerVerificationDetails = Action("CreateCustomerVerificationDetails")
+GetCustomerVerificationDetails = Action("GetCustomerVerificationDetails")
+GetCustomerVerificationEligibility = Action("GetCustomerVerificationEligibility")
+UpdateCustomerVerificationDetails = Action("UpdateCustomerVerificationDetails")
