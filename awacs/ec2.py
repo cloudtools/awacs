@@ -59,6 +59,7 @@ AssociateTransitGatewayMulticastDomain = Action(
 AssociateTransitGatewayPolicyTable = Action("AssociateTransitGatewayPolicyTable")
 AssociateTransitGatewayRouteTable = Action("AssociateTransitGatewayRouteTable")
 AssociateTrunkInterface = Action("AssociateTrunkInterface")
+AssociateVerifiedAccessInstanceWebAcl = Action("AssociateVerifiedAccessInstanceWebAcl")
 AssociateVpcCidrBlock = Action("AssociateVpcCidrBlock")
 AttachClassicLinkVpc = Action("AttachClassicLinkVpc")
 AttachInternetGateway = Action("AttachInternetGateway")
@@ -438,6 +439,9 @@ DescribeVerifiedAccessGroups = Action("DescribeVerifiedAccessGroups")
 DescribeVerifiedAccessInstanceLoggingConfigurations = Action(
     "DescribeVerifiedAccessInstanceLoggingConfigurations"
 )
+DescribeVerifiedAccessInstanceWebAclAssociations = Action(
+    "DescribeVerifiedAccessInstanceWebAclAssociations"
+)
 DescribeVerifiedAccessInstances = Action("DescribeVerifiedAccessInstances")
 DescribeVerifiedAccessTrustProviders = Action("DescribeVerifiedAccessTrustProviders")
 DescribeVolumeAttribute = Action("DescribeVolumeAttribute")
@@ -498,6 +502,9 @@ DisassociateTransitGatewayMulticastDomain = Action(
 DisassociateTransitGatewayPolicyTable = Action("DisassociateTransitGatewayPolicyTable")
 DisassociateTransitGatewayRouteTable = Action("DisassociateTransitGatewayRouteTable")
 DisassociateTrunkInterface = Action("DisassociateTrunkInterface")
+DisassociateVerifiedAccessInstanceWebAcl = Action(
+    "DisassociateVerifiedAccessInstanceWebAcl"
+)
 DisassociateVpcCidrBlock = Action("DisassociateVpcCidrBlock")
 EnableAddressTransfer = Action("EnableAddressTransfer")
 EnableAwsNetworkPerformanceMetricSubscription = Action(
@@ -582,10 +589,13 @@ GetTransitGatewayRouteTablePropagations = Action(
 )
 GetVerifiedAccessEndpointPolicy = Action("GetVerifiedAccessEndpointPolicy")
 GetVerifiedAccessGroupPolicy = Action("GetVerifiedAccessGroupPolicy")
+GetVerifiedAccessInstanceWebAcl = Action("GetVerifiedAccessInstanceWebAcl")
 GetVpnConnectionDeviceSampleConfiguration = Action(
     "GetVpnConnectionDeviceSampleConfiguration"
 )
 GetVpnConnectionDeviceTypes = Action("GetVpnConnectionDeviceTypes")
+GetVpnTunnelReplacementStatus = Action("GetVpnTunnelReplacementStatus")
+ImportByoipCidrToIpam = Action("ImportByoipCidrToIpam")
 ImportClientVpnClientCertificateRevocationList = Action(
     "ImportClientVpnClientCertificateRevocationList"
 )
@@ -710,6 +720,7 @@ ReplaceNetworkAclEntry = Action("ReplaceNetworkAclEntry")
 ReplaceRoute = Action("ReplaceRoute")
 ReplaceRouteTableAssociation = Action("ReplaceRouteTableAssociation")
 ReplaceTransitGatewayRoute = Action("ReplaceTransitGatewayRoute")
+ReplaceVpnTunnel = Action("ReplaceVpnTunnel")
 ReportInstanceStatus = Action("ReportInstanceStatus")
 RequestSpotFleet = Action("RequestSpotFleet")
 RequestSpotInstances = Action("RequestSpotInstances")
