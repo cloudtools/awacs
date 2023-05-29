@@ -127,6 +127,7 @@ PutConfigurationSetSuppressionOptions = Action("PutConfigurationSetSuppressionOp
 PutConfigurationSetTrackingOptions = Action("PutConfigurationSetTrackingOptions")
 PutConfigurationSetVdmOptions = Action("PutConfigurationSetVdmOptions")
 PutDedicatedIpInPool = Action("PutDedicatedIpInPool")
+PutDedicatedIpPoolScalingAttributes = Action("PutDedicatedIpPoolScalingAttributes")
 PutDedicatedIpWarmupAttributes = Action("PutDedicatedIpWarmupAttributes")
 PutDeliverabilityDashboardOption = Action("PutDeliverabilityDashboardOption")
 PutEmailIdentityConfigurationSetAttributes = Action(
