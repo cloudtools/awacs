@@ -24,6 +24,18 @@ class ARN(BaseARN):
         )
 
 
+GetAdditionalSellerNotificationRecipients = Action(
+    "GetAdditionalSellerNotificationRecipients"
+)
+GetBankAccountVerificationDetails = Action("GetBankAccountVerificationDetails")
+GetSecondaryUserVerificationDetails = Action("GetSecondaryUserVerificationDetails")
+GetSellerVerificationDetails = Action("GetSellerVerificationDetails")
+PutAdditionalSellerNotificationRecipients = Action(
+    "PutAdditionalSellerNotificationRecipients"
+)
+PutBankAccountVerificationDetails = Action("PutBankAccountVerificationDetails")
+PutSecondaryUserVerificationDetails = Action("PutSecondaryUserVerificationDetails")
+PutSellerVerificationDetails = Action("PutSellerVerificationDetails")
 uploadFiles = Action("uploadFiles")
 viewMarketing = Action("viewMarketing")
 viewReports = Action("viewReports")

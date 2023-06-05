@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+CancelFlowExecutions = Action("CancelFlowExecutions")
 CreateConnectorProfile = Action("CreateConnectorProfile")
 CreateFlow = Action("CreateFlow")
 DeleteConnectorProfile = Action("DeleteConnectorProfile")

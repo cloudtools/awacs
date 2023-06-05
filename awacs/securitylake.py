@@ -26,24 +26,42 @@ class ARN(BaseARN):
 
 CreateAwsLogSource = Action("CreateAwsLogSource")
 CreateCustomLogSource = Action("CreateCustomLogSource")
+CreateDataLake = Action("CreateDataLake")
+CreateDataLakeExceptionSubscription = Action("CreateDataLakeExceptionSubscription")
+CreateDataLakeOrganizationConfiguration = Action(
+    "CreateDataLakeOrganizationConfiguration"
+)
 CreateDatalake = Action("CreateDatalake")
 CreateDatalakeAutoEnable = Action("CreateDatalakeAutoEnable")
 CreateDatalakeDelegatedAdmin = Action("CreateDatalakeDelegatedAdmin")
 CreateDatalakeExceptionsSubscription = Action("CreateDatalakeExceptionsSubscription")
 CreateSubscriber = Action("CreateSubscriber")
+CreateSubscriberNotification = Action("CreateSubscriberNotification")
 CreateSubscriptionNotificationConfiguration = Action(
     "CreateSubscriptionNotificationConfiguration"
 )
 DeleteAwsLogSource = Action("DeleteAwsLogSource")
 DeleteCustomLogSource = Action("DeleteCustomLogSource")
+DeleteDataLake = Action("DeleteDataLake")
+DeleteDataLakeExceptionSubscription = Action("DeleteDataLakeExceptionSubscription")
+DeleteDataLakeOrganizationConfiguration = Action(
+    "DeleteDataLakeOrganizationConfiguration"
+)
 DeleteDatalake = Action("DeleteDatalake")
 DeleteDatalakeAutoEnable = Action("DeleteDatalakeAutoEnable")
 DeleteDatalakeDelegatedAdmin = Action("DeleteDatalakeDelegatedAdmin")
 DeleteDatalakeExceptionsSubscription = Action("DeleteDatalakeExceptionsSubscription")
 DeleteSubscriber = Action("DeleteSubscriber")
+DeleteSubscriberNotification = Action("DeleteSubscriberNotification")
 DeleteSubscriptionNotificationConfiguration = Action(
     "DeleteSubscriptionNotificationConfiguration"
 )
+DeregisterDataLakeDelegatedAdministrator = Action(
+    "DeregisterDataLakeDelegatedAdministrator"
+)
+GetDataLakeExceptionSubscription = Action("GetDataLakeExceptionSubscription")
+GetDataLakeOrganizationConfiguration = Action("GetDataLakeOrganizationConfiguration")
+GetDataLakeSources = Action("GetDataLakeSources")
 GetDatalake = Action("GetDatalake")
 GetDatalakeAutoEnable = Action("GetDatalakeAutoEnable")
 GetDatalakeExceptionsExpiry = Action("GetDatalakeExceptionsExpiry")
@@ -53,13 +71,21 @@ GetSubscriber = Action("GetSubscriber")
 GetSubscriptionNotificationConfiguration = Action(
     "GetSubscriptionNotificationConfiguration"
 )
+ListDataLakeExceptions = Action("ListDataLakeExceptions")
+ListDataLakes = Action("ListDataLakes")
 ListDatalakeExceptions = Action("ListDatalakeExceptions")
 ListLogSources = Action("ListLogSources")
 ListSubscribers = Action("ListSubscribers")
+RegisterDataLakeDelegatedAdministrator = Action(
+    "RegisterDataLakeDelegatedAdministrator"
+)
+UpdateDataLake = Action("UpdateDataLake")
+UpdateDataLakeExceptionSubscription = Action("UpdateDataLakeExceptionSubscription")
 UpdateDatalake = Action("UpdateDatalake")
 UpdateDatalakeExceptionsExpiry = Action("UpdateDatalakeExceptionsExpiry")
 UpdateDatalakeExceptionsSubscription = Action("UpdateDatalakeExceptionsSubscription")
 UpdateSubscriber = Action("UpdateSubscriber")
+UpdateSubscriberNotification = Action("UpdateSubscriberNotification")
 UpdateSubscriptionNotificationConfiguration = Action(
     "UpdateSubscriptionNotificationConfiguration"
 )
