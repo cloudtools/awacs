@@ -29,11 +29,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip tox tox-factor
+          python -m pip install --upgrade pip tox
       - name: Run tox targets for ${{ matrix.python-version }}
         run: |
           PYVERSION=$(python -c "import sys; print(''.join([str(sys.version_info.major), str(sys.version_info.minor)]))")
-          python -m tox -f $(python -m tox --listenvs | grep "^py${PYVERSION}" | tr '\n' ',')
+          python -m tox -f $(python -m tox --listenvs | grep "^py${PYVERSION}" | tr '\n' ' ')
 
   mypy:
     runs-on: ubuntu-latest
