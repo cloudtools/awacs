@@ -63,6 +63,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Pinpoint SMS Voice V2": "sms-voice",
     "Amazon Simple Email Service v2": "ses",
     "AWS Cloud Control API": "cloudformation",
+    "AWS Elastic Load Balancing V2": "elasticloadbalancing",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
     "AWS Marketplace Discovery": "aws-marketplace",
@@ -73,7 +74,6 @@ IGNORED_SERVICE_ALIASES = {
     "AWS Marketplace Procurement Systems Integration": "aws-marketplace",
     "AWS Marketplace Seller Reporting": "aws-marketplace",
     "AWS Private Marketplace": "aws-marketplace",
-    "Elastic Load Balancing V2": "elasticloadbalancing",
 }
 
 RENAME_SERVICE = {
