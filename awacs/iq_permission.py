@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 ApproveAccessGrant = Action("ApproveAccessGrant")
 ApprovePermissionRequest = Action("ApprovePermissionRequest")
+AssumePermissionRole = Action("AssumePermissionRole")
 CreatePermissionRequest = Action("CreatePermissionRequest")
 GetPermissionRequest = Action("GetPermissionRequest")
 ListPermissionRequests = Action("ListPermissionRequests")

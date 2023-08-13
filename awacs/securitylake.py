@@ -76,9 +76,12 @@ ListDataLakes = Action("ListDataLakes")
 ListDatalakeExceptions = Action("ListDatalakeExceptions")
 ListLogSources = Action("ListLogSources")
 ListSubscribers = Action("ListSubscribers")
+ListTagsForResource = Action("ListTagsForResource")
 RegisterDataLakeDelegatedAdministrator = Action(
     "RegisterDataLakeDelegatedAdministrator"
 )
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateDataLake = Action("UpdateDataLake")
 UpdateDataLakeExceptionSubscription = Action("UpdateDataLakeExceptionSubscription")
 UpdateDatalake = Action("UpdateDatalake")

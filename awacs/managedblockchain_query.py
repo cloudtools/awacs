@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Artifact"
-prefix = "artifact"
+service_name = "Amazon Managed Blockchain Query"
+prefix = "managedblockchain-query"
 
 
 class Action(BaseAction):
@@ -24,13 +24,9 @@ class ARN(BaseARN):
         )
 
 
-AcceptAgreement = Action("AcceptAgreement")
-DownloadAgreement = Action("DownloadAgreement")
-Get = Action("Get")
-GetAccountSettings = Action("GetAccountSettings")
-GetReport = Action("GetReport")
-GetReportMetadata = Action("GetReportMetadata")
-GetTermForReport = Action("GetTermForReport")
-ListReports = Action("ListReports")
-PutAccountSettings = Action("PutAccountSettings")
-TerminateAgreement = Action("TerminateAgreement")
+BatchGetTokenBalance = Action("BatchGetTokenBalance")
+GetTokenBalance = Action("GetTokenBalance")
+GetTransaction = Action("GetTransaction")
+ListTokenBalances = Action("ListTokenBalances")
+ListTransactionEvents = Action("ListTransactionEvents")
+ListTransactions = Action("ListTransactions")

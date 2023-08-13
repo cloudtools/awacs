@@ -51,6 +51,9 @@ GetReservationCoverage = Action("GetReservationCoverage")
 GetReservationPurchaseRecommendation = Action("GetReservationPurchaseRecommendation")
 GetReservationUtilization = Action("GetReservationUtilization")
 GetRightsizingRecommendation = Action("GetRightsizingRecommendation")
+GetSavingsPlanPurchaseRecommendationDetails = Action(
+    "GetSavingsPlanPurchaseRecommendationDetails"
+)
 GetSavingsPlansCoverage = Action("GetSavingsPlansCoverage")
 GetSavingsPlansPurchaseRecommendation = Action("GetSavingsPlansPurchaseRecommendation")
 GetSavingsPlansUtilization = Action("GetSavingsPlansUtilization")

@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AssociateFileGateway = Action("AssociateFileGateway")
 AssociateFileSystemAliases = Action("AssociateFileSystemAliases")
+BypassSnaplockEnterpriseRetention = Action("BypassSnaplockEnterpriseRetention")
 CancelDataRepositoryTask = Action("CancelDataRepositoryTask")
 CopyBackup = Action("CopyBackup")
 CreateBackup = Action("CreateBackup")

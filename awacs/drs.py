@@ -27,6 +27,7 @@ class ARN(BaseARN):
 AssociateFailbackClientToRecoveryInstanceForDrs = Action(
     "AssociateFailbackClientToRecoveryInstanceForDrs"
 )
+AssociateSourceNetworkStack = Action("AssociateSourceNetworkStack")
 BatchCreateVolumeSnapshotGroupForDrs = Action("BatchCreateVolumeSnapshotGroupForDrs")
 BatchDeleteSnapshotRequestForDrs = Action("BatchDeleteSnapshotRequestForDrs")
 CreateConvertedSnapshotForDrs = Action("CreateConvertedSnapshotForDrs")
@@ -37,6 +38,7 @@ CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
 )
 CreateSessionForDrs = Action("CreateSessionForDrs")
+CreateSourceNetwork = Action("CreateSourceNetwork")
 CreateSourceServerForDrs = Action("CreateSourceServerForDrs")
 DeleteJob = Action("DeleteJob")
 DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
@@ -44,6 +46,7 @@ DeleteRecoveryInstance = Action("DeleteRecoveryInstance")
 DeleteReplicationConfigurationTemplate = Action(
     "DeleteReplicationConfigurationTemplate"
 )
+DeleteSourceNetwork = Action("DeleteSourceNetwork")
 DeleteSourceServer = Action("DeleteSourceServer")
 DescribeJobLogItems = Action("DescribeJobLogItems")
 DescribeJobs = Action("DescribeJobs")
@@ -57,9 +60,11 @@ DescribeReplicationServerAssociationsForDrs = Action(
     "DescribeReplicationServerAssociationsForDrs"
 )
 DescribeSnapshotRequestsForDrs = Action("DescribeSnapshotRequestsForDrs")
+DescribeSourceNetworks = Action("DescribeSourceNetworks")
 DescribeSourceServers = Action("DescribeSourceServers")
 DisconnectRecoveryInstance = Action("DisconnectRecoveryInstance")
 DisconnectSourceServer = Action("DisconnectSourceServer")
+ExportSourceNetworkCfnTemplate = Action("ExportSourceNetworkCfnTemplate")
 GetAgentCommandForDrs = Action("GetAgentCommandForDrs")
 GetAgentConfirmedResumeInfoForDrs = Action("GetAgentConfirmedResumeInfoForDrs")
 GetAgentInstallationAssetsForDrs = Action("GetAgentInstallationAssetsForDrs")
@@ -100,8 +105,11 @@ SendVolumeStatsForDrs = Action("SendVolumeStatsForDrs")
 StartFailbackLaunch = Action("StartFailbackLaunch")
 StartRecovery = Action("StartRecovery")
 StartReplication = Action("StartReplication")
+StartSourceNetworkRecovery = Action("StartSourceNetworkRecovery")
+StartSourceNetworkReplication = Action("StartSourceNetworkReplication")
 StopFailback = Action("StopFailback")
 StopReplication = Action("StopReplication")
+StopSourceNetworkReplication = Action("StopSourceNetworkReplication")
 TagResource = Action("TagResource")
 TerminateRecoveryInstances = Action("TerminateRecoveryInstances")
 UntagResource = Action("UntagResource")

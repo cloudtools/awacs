@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Omics"
+service_name = "AWS HealthOmics"
 prefix = "omics"
 
 

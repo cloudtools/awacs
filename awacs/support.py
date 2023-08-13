@@ -31,10 +31,12 @@ DescribeAttachment = Action("DescribeAttachment")
 DescribeCaseAttributes = Action("DescribeCaseAttributes")
 DescribeCases = Action("DescribeCases")
 DescribeCommunications = Action("DescribeCommunications")
+DescribeCreateCaseOptions = Action("DescribeCreateCaseOptions")
 DescribeIssueTypes = Action("DescribeIssueTypes")
 DescribeServices = Action("DescribeServices")
 DescribeSeverityLevels = Action("DescribeSeverityLevels")
 DescribeSupportLevel = Action("DescribeSupportLevel")
+DescribeSupportedLanguages = Action("DescribeSupportedLanguages")
 DescribeTrustedAdvisorCheckRefreshStatuses = Action(
     "DescribeTrustedAdvisorCheckRefreshStatuses"
 )

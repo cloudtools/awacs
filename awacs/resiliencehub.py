@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Resilience Hub Service"
+service_name = "AWS Resilience Hub"
 prefix = "resiliencehub"
 
 
@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AddDraftAppVersionResourceMappings = Action("AddDraftAppVersionResourceMappings")
+BatchUpdateRecommendationStatus = Action("BatchUpdateRecommendationStatus")
 CreateApp = Action("CreateApp")
 CreateAppVersionAppComponent = Action("CreateAppVersionAppComponent")
 CreateAppVersionResource = Action("CreateAppVersionResource")
@@ -52,6 +53,7 @@ DescribeDraftAppVersionResourcesImportStatus = Action(
 DescribeResiliencyPolicy = Action("DescribeResiliencyPolicy")
 ImportResourcesToDraftAppVersion = Action("ImportResourcesToDraftAppVersion")
 ListAlarmRecommendations = Action("ListAlarmRecommendations")
+ListAppAssessmentComplianceDrifts = Action("ListAppAssessmentComplianceDrifts")
 ListAppAssessments = Action("ListAppAssessments")
 ListAppComponentCompliances = Action("ListAppComponentCompliances")
 ListAppComponentRecommendations = Action("ListAppComponentRecommendations")

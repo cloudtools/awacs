@@ -24,5 +24,6 @@ class ARN(BaseARN):
         )
 
 
+OpenTunnel = Action("OpenTunnel")
 SendSSHPublicKey = Action("SendSSHPublicKey")
 SendSerialConsoleSSHPublicKey = Action("SendSerialConsoleSSHPublicKey")

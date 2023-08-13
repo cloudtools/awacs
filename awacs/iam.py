@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Identity and Access Management"
+service_name = "AWS Identity and Access Management (IAM)"
 prefix = "iam"
 
 
@@ -92,6 +92,7 @@ GetGroup = Action("GetGroup")
 GetGroupPolicy = Action("GetGroupPolicy")
 GetInstanceProfile = Action("GetInstanceProfile")
 GetLoginProfile = Action("GetLoginProfile")
+GetMFADevice = Action("GetMFADevice")
 GetOpenIDConnectProvider = Action("GetOpenIDConnectProvider")
 GetOrganizationsAccessReport = Action("GetOrganizationsAccessReport")
 GetPolicy = Action("GetPolicy")

@@ -222,6 +222,9 @@ GetRecord = Action("GetRecord")
 GetSagemakerServicecatalogPortfolioStatus = Action(
     "GetSagemakerServicecatalogPortfolioStatus"
 )
+GetScalingPolicyConfigurationRecommendation = Action(
+    "GetScalingPolicyConfigurationRecommendation"
+)
 GetSearchSuggestions = Action("GetSearchSuggestions")
 ImportHubContent = Action("ImportHubContent")
 InvokeEndpoint = Action("InvokeEndpoint")
