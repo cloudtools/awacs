@@ -1,3 +1,31 @@
+## 2.4.0 (2023-08-13)
+* Action Update 2022-49
+* Action Update 2022-50
+* Fix for mypy which disallows implicit Optional
+* Output correct Optional for type checking and fix up aliases
+* Action Update 2023-05
+* Action Update 2023-06
+* Action Update 2023-08
+* Action Update 2023-09
+* Action Update 2023-10
+* Action Update 2023-11
+* Action Update 2023-12
+* Action Update 2023-13
+* Action Update 2023-14
+* Action Update 2023-15
+* Action Update 2023-16
+* Action Update 2023-17
+* Action Update 2023-18
+* Action Update 2023-19
+* Action Update 2023-20
+* Action Update 2023-21
+* Action Update 2023-22
+* Action Update 2023-23
+* Fix scraper
+* Bump scraper's requirements
+* Fix tests
+* Action Update 2023-32
+
 ## 2.3.0 (2022-11-28)
 * Action Update 2022-31
 * Action Update 2022-32
