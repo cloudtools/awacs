@@ -44,6 +44,7 @@ ListSecurityProfiles = Action("ListSecurityProfiles")
 ListTagsForResource = Action("ListTagsForResource")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateDataSource = Action("UpdateDataSource")
 UpdateSecurityProfile = Action("UpdateSecurityProfile")
 UpdateSecurityProfileSnapshotCreationConfiguration = Action(
     "UpdateSecurityProfileSnapshotCreationConfiguration"

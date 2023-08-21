@@ -24,9 +24,16 @@ class ARN(BaseARN):
         )
 
 
+CreatePerformanceAnalysisReport = Action("CreatePerformanceAnalysisReport")
+DeletePerformanceAnalysisReport = Action("DeletePerformanceAnalysisReport")
 DescribeDimensionKeys = Action("DescribeDimensionKeys")
 GetDimensionKeyDetails = Action("GetDimensionKeyDetails")
+GetPerformanceAnalysisReport = Action("GetPerformanceAnalysisReport")
 GetResourceMetadata = Action("GetResourceMetadata")
 GetResourceMetrics = Action("GetResourceMetrics")
 ListAvailableResourceDimensions = Action("ListAvailableResourceDimensions")
 ListAvailableResourceMetrics = Action("ListAvailableResourceMetrics")
+ListPerformanceAnalysisReports = Action("ListPerformanceAnalysisReports")
+ListTagsForResource = Action("ListTagsForResource")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
