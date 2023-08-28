@@ -288,6 +288,7 @@ ListPipelineParametersForExecution = Action("ListPipelineParametersForExecution"
 ListPipelines = Action("ListPipelines")
 ListProcessingJobs = Action("ListProcessingJobs")
 ListProjects = Action("ListProjects")
+ListResourceCatalogs = Action("ListResourceCatalogs")
 ListSharedModelEvents = Action("ListSharedModelEvents")
 ListSharedModelVersions = Action("ListSharedModelVersions")
 ListSharedModels = Action("ListSharedModels")
