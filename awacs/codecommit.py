@@ -89,6 +89,7 @@ ListAssociatedApprovalRuleTemplatesForRepository = Action(
     "ListAssociatedApprovalRuleTemplatesForRepository"
 )
 ListBranches = Action("ListBranches")
+ListFileCommitHistory = Action("ListFileCommitHistory")
 ListPullRequests = Action("ListPullRequests")
 ListRepositories = Action("ListRepositories")
 ListRepositoriesForApprovalRuleTemplate = Action(
