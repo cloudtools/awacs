@@ -222,6 +222,7 @@ GetRecord = Action("GetRecord")
 GetSagemakerServicecatalogPortfolioStatus = Action(
     "GetSagemakerServicecatalogPortfolioStatus"
 )
+GetScalingConfigurationRecommendation = Action("GetScalingConfigurationRecommendation")
 GetScalingPolicyConfigurationRecommendation = Action(
     "GetScalingPolicyConfigurationRecommendation"
 )
