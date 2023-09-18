@@ -41,6 +41,7 @@ CreateSessionForDrs = Action("CreateSessionForDrs")
 CreateSourceNetwork = Action("CreateSourceNetwork")
 CreateSourceServerForDrs = Action("CreateSourceServerForDrs")
 DeleteJob = Action("DeleteJob")
+DeleteLaunchAction = Action("DeleteLaunchAction")
 DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
 DeleteRecoveryInstance = Action("DeleteRecoveryInstance")
 DeleteReplicationConfigurationTemplate = Action(
@@ -83,6 +84,7 @@ GetSuggestedFailbackClientDeviceMappingForDrs = Action(
 InitializeService = Action("InitializeService")
 IssueAgentCertificateForDrs = Action("IssueAgentCertificateForDrs")
 ListExtensibleSourceServers = Action("ListExtensibleSourceServers")
+ListLaunchActions = Action("ListLaunchActions")
 ListStagingAccounts = Action("ListStagingAccounts")
 ListTagsForResource = Action("ListTagsForResource")
 NotifyAgentAuthenticationForDrs = Action("NotifyAgentAuthenticationForDrs")
@@ -94,6 +96,7 @@ NotifyReplicationServerAuthenticationForDrs = Action(
     "NotifyReplicationServerAuthenticationForDrs"
 )
 NotifyVolumeEventForDrs = Action("NotifyVolumeEventForDrs")
+PutLaunchAction = Action("PutLaunchAction")
 RetryDataReplication = Action("RetryDataReplication")
 ReverseReplication = Action("ReverseReplication")
 SendAgentLogsForDrs = Action("SendAgentLogsForDrs")

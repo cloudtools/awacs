@@ -32,6 +32,9 @@ DescribeAffectedEntitiesForOrganization = Action(
     "DescribeAffectedEntitiesForOrganization"
 )
 DescribeEntityAggregates = Action("DescribeEntityAggregates")
+DescribeEntityAggregatesForOrganization = Action(
+    "DescribeEntityAggregatesForOrganization"
+)
 DescribeEventAggregates = Action("DescribeEventAggregates")
 DescribeEventDetails = Action("DescribeEventDetails")
 DescribeEventDetailsForOrganization = Action("DescribeEventDetailsForOrganization")
