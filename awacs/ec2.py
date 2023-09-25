@@ -481,6 +481,7 @@ DisableAwsNetworkPerformanceMetricSubscription = Action(
 DisableEbsEncryptionByDefault = Action("DisableEbsEncryptionByDefault")
 DisableFastLaunch = Action("DisableFastLaunch")
 DisableFastSnapshotRestores = Action("DisableFastSnapshotRestores")
+DisableImageBlockPublicAccess = Action("DisableImageBlockPublicAccess")
 DisableImageDeprecation = Action("DisableImageDeprecation")
 DisableIpamOrganizationAdminAccount = Action("DisableIpamOrganizationAdminAccount")
 DisableSerialConsoleAccess = Action("DisableSerialConsoleAccess")
@@ -516,6 +517,7 @@ EnableAwsNetworkPerformanceMetricSubscription = Action(
 EnableEbsEncryptionByDefault = Action("EnableEbsEncryptionByDefault")
 EnableFastLaunch = Action("EnableFastLaunch")
 EnableFastSnapshotRestores = Action("EnableFastSnapshotRestores")
+EnableImageBlockPublicAccess = Action("EnableImageBlockPublicAccess")
 EnableImageDeprecation = Action("EnableImageDeprecation")
 EnableIpamOrganizationAdminAccount = Action("EnableIpamOrganizationAdminAccount")
 EnableReachabilityAnalyzerOrganizationSharing = Action(
@@ -550,6 +552,7 @@ GetEbsEncryptionByDefault = Action("GetEbsEncryptionByDefault")
 GetFlowLogsIntegrationTemplate = Action("GetFlowLogsIntegrationTemplate")
 GetGroupsForCapacityReservation = Action("GetGroupsForCapacityReservation")
 GetHostReservationPurchasePreview = Action("GetHostReservationPurchasePreview")
+GetImageBlockPublicAccessState = Action("GetImageBlockPublicAccessState")
 GetInstanceTypesFromInstanceRequirements = Action(
     "GetInstanceTypesFromInstanceRequirements"
 )
