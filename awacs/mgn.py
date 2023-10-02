@@ -32,6 +32,7 @@ BatchCreateVolumeSnapshotGroupForMgn = Action("BatchCreateVolumeSnapshotGroupFor
 BatchDeleteSnapshotRequestForMgn = Action("BatchDeleteSnapshotRequestForMgn")
 ChangeServerLifeCycleState = Action("ChangeServerLifeCycleState")
 CreateApplication = Action("CreateApplication")
+CreateConnector = Action("CreateConnector")
 CreateLaunchConfigurationTemplate = Action("CreateLaunchConfigurationTemplate")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
@@ -39,6 +40,7 @@ CreateReplicationConfigurationTemplate = Action(
 CreateVcenterClientForMgn = Action("CreateVcenterClientForMgn")
 CreateWave = Action("CreateWave")
 DeleteApplication = Action("DeleteApplication")
+DeleteConnector = Action("DeleteConnector")
 DeleteJob = Action("DeleteJob")
 DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
 DeleteReplicationConfigurationTemplate = Action(
@@ -76,6 +78,7 @@ GetVcenterClientCommandsForMgn = Action("GetVcenterClientCommandsForMgn")
 InitializeService = Action("InitializeService")
 IssueClientCertificateForMgn = Action("IssueClientCertificateForMgn")
 ListApplications = Action("ListApplications")
+ListConnectors = Action("ListConnectors")
 ListExportErrors = Action("ListExportErrors")
 ListExports = Action("ListExports")
 ListImportErrors = Action("ListImportErrors")
@@ -126,12 +129,14 @@ UpdateAgentReplicationProcessStateForMgn = Action(
 )
 UpdateAgentSourcePropertiesForMgn = Action("UpdateAgentSourcePropertiesForMgn")
 UpdateApplication = Action("UpdateApplication")
+UpdateConnector = Action("UpdateConnector")
 UpdateLaunchConfiguration = Action("UpdateLaunchConfiguration")
 UpdateLaunchConfigurationTemplate = Action("UpdateLaunchConfigurationTemplate")
 UpdateReplicationConfiguration = Action("UpdateReplicationConfiguration")
 UpdateReplicationConfigurationTemplate = Action(
     "UpdateReplicationConfigurationTemplate"
 )
+UpdateSourceServer = Action("UpdateSourceServer")
 UpdateSourceServerReplicationType = Action("UpdateSourceServerReplicationType")
 UpdateWave = Action("UpdateWave")
 VerifyClientRoleForMgn = Action("VerifyClientRoleForMgn")
