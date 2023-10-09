@@ -185,4 +185,5 @@ StopDBInstanceAutomatedBackupsReplication = Action(
     "StopDBInstanceAutomatedBackupsReplication"
 )
 SwitchoverBlueGreenDeployment = Action("SwitchoverBlueGreenDeployment")
+SwitchoverGlobalCluster = Action("SwitchoverGlobalCluster")
 SwitchoverReadReplica = Action("SwitchoverReadReplica")
