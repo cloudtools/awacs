@@ -74,6 +74,10 @@ CreateMediaInsightsPipelineConfiguration = Action(
     "CreateMediaInsightsPipelineConfiguration"
 )
 CreateMediaLiveConnectorPipeline = Action("CreateMediaLiveConnectorPipeline")
+CreateMediaPipelineKinesisVideoStreamPool = Action(
+    "CreateMediaPipelineKinesisVideoStreamPool"
+)
+CreateMediaStreamPipeline = Action("CreateMediaStreamPipeline")
 CreateMeeting = Action("CreateMeeting")
 CreateMeetingDialOut = Action("CreateMeetingDialOut")
 CreateMeetingWithAttendees = Action("CreateMeetingWithAttendees")
@@ -116,6 +120,9 @@ DeleteMediaInsightsPipelineConfiguration = Action(
     "DeleteMediaInsightsPipelineConfiguration"
 )
 DeleteMediaPipeline = Action("DeleteMediaPipeline")
+DeleteMediaPipelineKinesisVideoStreamPool = Action(
+    "DeleteMediaPipelineKinesisVideoStreamPool"
+)
 DeleteMeeting = Action("DeleteMeeting")
 DeleteMessagingStreamingConfigurations = Action(
     "DeleteMessagingStreamingConfigurations"
@@ -189,6 +196,9 @@ GetGlobalSettings = Action("GetGlobalSettings")
 GetMediaCapturePipeline = Action("GetMediaCapturePipeline")
 GetMediaInsightsPipelineConfiguration = Action("GetMediaInsightsPipelineConfiguration")
 GetMediaPipeline = Action("GetMediaPipeline")
+GetMediaPipelineKinesisVideoStreamPool = Action(
+    "GetMediaPipelineKinesisVideoStreamPool"
+)
 GetMeeting = Action("GetMeeting")
 GetMeetingDetail = Action("GetMeetingDetail")
 GetMessagingSessionEndpoint = Action("GetMessagingSessionEndpoint")
@@ -266,6 +276,9 @@ ListGroups = Action("ListGroups")
 ListMediaCapturePipelines = Action("ListMediaCapturePipelines")
 ListMediaInsightsPipelineConfigurations = Action(
     "ListMediaInsightsPipelineConfigurations"
+)
+ListMediaPipelineKinesisVideoStreamPools = Action(
+    "ListMediaPipelineKinesisVideoStreamPools"
 )
 ListMediaPipelines = Action("ListMediaPipelines")
 ListMeetingEvents = Action("ListMeetingEvents")
@@ -370,6 +383,9 @@ UpdateMediaInsightsPipelineConfiguration = Action(
     "UpdateMediaInsightsPipelineConfiguration"
 )
 UpdateMediaInsightsPipelineStatus = Action("UpdateMediaInsightsPipelineStatus")
+UpdateMediaPipelineKinesisVideoStreamPool = Action(
+    "UpdateMediaPipelineKinesisVideoStreamPool"
+)
 UpdatePhoneNumber = Action("UpdatePhoneNumber")
 UpdatePhoneNumberSettings = Action("UpdatePhoneNumberSettings")
 UpdateProxySession = Action("UpdateProxySession")

@@ -25,8 +25,10 @@ class ARN(BaseARN):
 
 
 BatchGetTokenBalance = Action("BatchGetTokenBalance")
+GetAssetContract = Action("GetAssetContract")
 GetTokenBalance = Action("GetTokenBalance")
 GetTransaction = Action("GetTransaction")
+ListAssetContracts = Action("ListAssetContracts")
 ListTokenBalances = Action("ListTokenBalances")
 ListTransactionEvents = Action("ListTransactionEvents")
 ListTransactions = Action("ListTransactions")
