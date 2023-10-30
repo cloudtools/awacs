@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+AcceptUserAgreement = Action("AcceptUserAgreement")
+AccessBraketFeature = Action("AccessBraketFeature")
 CancelJob = Action("CancelJob")
 CancelQuantumTask = Action("CancelQuantumTask")
 CreateJob = Action("CreateJob")
@@ -31,6 +33,8 @@ CreateQuantumTask = Action("CreateQuantumTask")
 GetDevice = Action("GetDevice")
 GetJob = Action("GetJob")
 GetQuantumTask = Action("GetQuantumTask")
+GetServiceLinkedRoleStatus = Action("GetServiceLinkedRoleStatus")
+GetUserAgreementStatus = Action("GetUserAgreementStatus")
 ListTagsForResource = Action("ListTagsForResource")
 SearchDevices = Action("SearchDevices")
 SearchJobs = Action("SearchJobs")
