@@ -40,6 +40,7 @@ AssociateTrafficDistributionGroupUser = Action("AssociateTrafficDistributionGrou
 BatchAssociateAnalyticsDataSet = Action("BatchAssociateAnalyticsDataSet")
 BatchDisassociateAnalyticsDataSet = Action("BatchDisassociateAnalyticsDataSet")
 BatchGetFlowAssociation = Action("BatchGetFlowAssociation")
+BatchPutContact = Action("BatchPutContact")
 ClaimPhoneNumber = Action("ClaimPhoneNumber")
 CreateAgentStatus = Action("CreateAgentStatus")
 CreateContactFlow = Action("CreateContactFlow")
