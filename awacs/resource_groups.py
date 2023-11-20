@@ -24,8 +24,10 @@ class ARN(BaseARN):
         )
 
 
+AssociateResource = Action("AssociateResource")
 CreateGroup = Action("CreateGroup")
 DeleteGroup = Action("DeleteGroup")
+DisassociateResource = Action("DisassociateResource")
 GetAccountSettings = Action("GetAccountSettings")
 GetGroup = Action("GetGroup")
 GetGroupConfiguration = Action("GetGroupConfiguration")

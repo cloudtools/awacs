@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+BatchGetIncidentFindings = Action("BatchGetIncidentFindings")
 CreateReplicationSet = Action("CreateReplicationSet")
 CreateResponsePlan = Action("CreateResponsePlan")
 CreateTimelineEvent = Action("CreateTimelineEvent")
@@ -37,6 +38,7 @@ GetReplicationSet = Action("GetReplicationSet")
 GetResourcePolicies = Action("GetResourcePolicies")
 GetResponsePlan = Action("GetResponsePlan")
 GetTimelineEvent = Action("GetTimelineEvent")
+ListIncidentFindings = Action("ListIncidentFindings")
 ListIncidentRecords = Action("ListIncidentRecords")
 ListRelatedItems = Action("ListRelatedItems")
 ListReplicationSets = Action("ListReplicationSets")

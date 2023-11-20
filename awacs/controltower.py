@@ -67,7 +67,10 @@ ListManagedOrganizationalUnits = Action("ListManagedOrganizationalUnits")
 ListManagedOrganizationalUnitsForGuardrail = Action(
     "ListManagedOrganizationalUnitsForGuardrail"
 )
+ListTagsForResource = Action("ListTagsForResource")
 ManageOrganizationalUnit = Action("ManageOrganizationalUnit")
 PerformPreLaunchChecks = Action("PerformPreLaunchChecks")
 SetupLandingZone = Action("SetupLandingZone")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateAccountFactoryConfig = Action("UpdateAccountFactoryConfig")

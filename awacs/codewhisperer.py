@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 AssociateCustomizationPermission = Action("AssociateCustomizationPermission")
 CreateCustomization = Action("CreateCustomization")
 CreateProfile = Action("CreateProfile")
