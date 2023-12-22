@@ -1,3 +1,21 @@
+## 2.4.1 (2023-12-22)
+* Action Update 2023-34
+* Action Update 2023-35
+* Action Update 2023-36
+* Action Update 2023-37
+* Action Update 2023-38
+* Action Update 2023-39
+* Action Update 2023-40
+* Action Update 2023-41
+* Action Update 2023-42
+* Action Update 2023-43
+* Action Update 2023-44
+* Action Update 2023-45
+* Action Update 2023-46
+* Action Update 2023-47
+* Fix scraper by adding new service name alias
+* Action Update 2023-51
+
 ## 2.4.0 (2023-08-13)
 * Action Update 2022-49
 * Action Update 2022-50
