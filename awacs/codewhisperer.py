@@ -34,6 +34,7 @@ DisassociateCustomizationPermission = Action("DisassociateCustomizationPermissio
 GenerateRecommendations = Action("GenerateRecommendations")
 GetCustomization = Action("GetCustomization")
 ListCustomizationPermissions = Action("ListCustomizationPermissions")
+ListCustomizationVersions = Action("ListCustomizationVersions")
 ListCustomizations = Action("ListCustomizations")
 ListProfiles = Action("ListProfiles")
 ListTagsForResource = Action("ListTagsForResource")

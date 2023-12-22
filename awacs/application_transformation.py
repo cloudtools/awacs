@@ -24,12 +24,16 @@ class ARN(BaseARN):
         )
 
 
+GetContainerization = Action("GetContainerization")
+GetDeployment = Action("GetDeployment")
 GetGroupingAssessment = Action("GetGroupingAssessment")
 GetPortingCompatibilityAssessment = Action("GetPortingCompatibilityAssessment")
 GetPortingRecommendationAssessment = Action("GetPortingRecommendationAssessment")
 GetRuntimeAssessment = Action("GetRuntimeAssessment")
 PutLogData = Action("PutLogData")
 PutMetricData = Action("PutMetricData")
+StartContainerization = Action("StartContainerization")
+StartDeployment = Action("StartDeployment")
 StartGroupingAssessment = Action("StartGroupingAssessment")
 StartPortingCompatibilityAssessment = Action("StartPortingCompatibilityAssessment")
 StartPortingRecommendationAssessment = Action("StartPortingRecommendationAssessment")
