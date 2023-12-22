@@ -66,6 +66,7 @@ IGNORED_SERVICE_ALIASES = {
     "AWS Elastic Load Balancing V2": "elasticloadbalancing",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
+    "AWS Marketplace Deployment Service": "aws-marketplace",
     "AWS Marketplace Discovery": "aws-marketplace",
     "AWS Marketplace Entitlement Service": "aws-marketplace",
     "AWS Marketplace Image Building Service": "aws-marketplace",

@@ -26,15 +26,47 @@ class ARN(BaseARN):
 
 AcceptConnection = Action("AcceptConnection")
 AssociateIamRoleToConnection = Action("AssociateIamRoleToConnection")
+AssociateIdentityCenterApplicationToSpace = Action(
+    "AssociateIdentityCenterApplicationToSpace"
+)
+AssociateIdentityToIdentityCenterApplication = Action(
+    "AssociateIdentityToIdentityCenterApplication"
+)
+BatchAssociateIdentitiesToIdentityCenterApplication = Action(
+    "BatchAssociateIdentitiesToIdentityCenterApplication"
+)
+BatchDisassociateIdentitiesFromIdentityCenterApplication = Action(
+    "BatchDisassociateIdentitiesFromIdentityCenterApplication"
+)
+CreateIdentityCenterApplication = Action("CreateIdentityCenterApplication")
+CreateSpace = Action("CreateSpace")
+CreateSpaceAdminRoleAssignment = Action("CreateSpaceAdminRoleAssignment")
 DeleteConnection = Action("DeleteConnection")
+DeleteIdentityCenterApplication = Action("DeleteIdentityCenterApplication")
 DisassociateIamRoleFromConnection = Action("DisassociateIamRoleFromConnection")
+DisassociateIdentityCenterApplicationFromSpace = Action(
+    "DisassociateIdentityCenterApplicationFromSpace"
+)
+DisassociateIdentityFromIdentityCenterApplication = Action(
+    "DisassociateIdentityFromIdentityCenterApplication"
+)
 GetBillingAuthorization = Action("GetBillingAuthorization")
 GetConnection = Action("GetConnection")
+GetIdentityCenterApplication = Action("GetIdentityCenterApplication")
 GetPendingConnection = Action("GetPendingConnection")
 ListConnections = Action("ListConnections")
 ListIamRolesForConnection = Action("ListIamRolesForConnection")
+ListIdentityCenterApplications = Action("ListIdentityCenterApplications")
+ListIdentityCenterApplicationsForSpace = Action(
+    "ListIdentityCenterApplicationsForSpace"
+)
+ListSpacesForIdentityCenterApplication = Action(
+    "ListSpacesForIdentityCenterApplication"
+)
 ListTagsForResource = Action("ListTagsForResource")
 PutBillingAuthorization = Action("PutBillingAuthorization")
 RejectConnection = Action("RejectConnection")
+SynchronizeIdentityCenterApplication = Action("SynchronizeIdentityCenterApplication")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateIdentityCenterApplication = Action("UpdateIdentityCenterApplication")

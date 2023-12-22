@@ -28,44 +28,75 @@ BatchGetCollaborationAnalysisTemplate = Action("BatchGetCollaborationAnalysisTem
 BatchGetSchema = Action("BatchGetSchema")
 CreateAnalysisTemplate = Action("CreateAnalysisTemplate")
 CreateCollaboration = Action("CreateCollaboration")
+CreateConfiguredAudienceModelAssociation = Action(
+    "CreateConfiguredAudienceModelAssociation"
+)
 CreateConfiguredTable = Action("CreateConfiguredTable")
 CreateConfiguredTableAnalysisRule = Action("CreateConfiguredTableAnalysisRule")
 CreateConfiguredTableAssociation = Action("CreateConfiguredTableAssociation")
 CreateMembership = Action("CreateMembership")
+CreatePrivacyBudgetTemplate = Action("CreatePrivacyBudgetTemplate")
 DeleteAnalysisTemplate = Action("DeleteAnalysisTemplate")
 DeleteCollaboration = Action("DeleteCollaboration")
+DeleteConfiguredAudienceModelAssociation = Action(
+    "DeleteConfiguredAudienceModelAssociation"
+)
 DeleteConfiguredTable = Action("DeleteConfiguredTable")
 DeleteConfiguredTableAnalysisRule = Action("DeleteConfiguredTableAnalysisRule")
 DeleteConfiguredTableAssociation = Action("DeleteConfiguredTableAssociation")
 DeleteMember = Action("DeleteMember")
 DeleteMembership = Action("DeleteMembership")
+DeletePrivacyBudgetTemplate = Action("DeletePrivacyBudgetTemplate")
 GetAnalysisTemplate = Action("GetAnalysisTemplate")
 GetCollaboration = Action("GetCollaboration")
 GetCollaborationAnalysisTemplate = Action("GetCollaborationAnalysisTemplate")
+GetCollaborationConfiguredAudienceModelAssociation = Action(
+    "GetCollaborationConfiguredAudienceModelAssociation"
+)
+GetCollaborationPrivacyBudgetTemplate = Action("GetCollaborationPrivacyBudgetTemplate")
+GetConfiguredAudienceModelAssociation = Action("GetConfiguredAudienceModelAssociation")
 GetConfiguredTable = Action("GetConfiguredTable")
 GetConfiguredTableAnalysisRule = Action("GetConfiguredTableAnalysisRule")
 GetConfiguredTableAssociation = Action("GetConfiguredTableAssociation")
 GetMembership = Action("GetMembership")
+GetPrivacyBudgetTemplate = Action("GetPrivacyBudgetTemplate")
 GetProtectedQuery = Action("GetProtectedQuery")
 GetSchema = Action("GetSchema")
 GetSchemaAnalysisRule = Action("GetSchemaAnalysisRule")
 ListAnalysisTemplates = Action("ListAnalysisTemplates")
 ListCollaborationAnalysisTemplates = Action("ListCollaborationAnalysisTemplates")
+ListCollaborationConfiguredAudienceModelAssociations = Action(
+    "ListCollaborationConfiguredAudienceModelAssociations"
+)
+ListCollaborationPrivacyBudgetTemplates = Action(
+    "ListCollaborationPrivacyBudgetTemplates"
+)
+ListCollaborationPrivacyBudgets = Action("ListCollaborationPrivacyBudgets")
 ListCollaborations = Action("ListCollaborations")
+ListConfiguredAudienceModelAssociations = Action(
+    "ListConfiguredAudienceModelAssociations"
+)
 ListConfiguredTableAssociations = Action("ListConfiguredTableAssociations")
 ListConfiguredTables = Action("ListConfiguredTables")
 ListMembers = Action("ListMembers")
 ListMemberships = Action("ListMemberships")
+ListPrivacyBudgetTemplates = Action("ListPrivacyBudgetTemplates")
+ListPrivacyBudgets = Action("ListPrivacyBudgets")
 ListProtectedQueries = Action("ListProtectedQueries")
 ListSchemas = Action("ListSchemas")
 ListTagsForResource = Action("ListTagsForResource")
+PreviewPrivacyImpact = Action("PreviewPrivacyImpact")
 StartProtectedQuery = Action("StartProtectedQuery")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateAnalysisTemplate = Action("UpdateAnalysisTemplate")
 UpdateCollaboration = Action("UpdateCollaboration")
+UpdateConfiguredAudienceModelAssociation = Action(
+    "UpdateConfiguredAudienceModelAssociation"
+)
 UpdateConfiguredTable = Action("UpdateConfiguredTable")
 UpdateConfiguredTableAnalysisRule = Action("UpdateConfiguredTableAnalysisRule")
 UpdateConfiguredTableAssociation = Action("UpdateConfiguredTableAssociation")
 UpdateMembership = Action("UpdateMembership")
+UpdatePrivacyBudgetTemplate = Action("UpdatePrivacyBudgetTemplate")
 UpdateProtectedQuery = Action("UpdateProtectedQuery")

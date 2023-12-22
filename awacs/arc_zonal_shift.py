@@ -25,8 +25,13 @@ class ARN(BaseARN):
 
 
 CancelZonalShift = Action("CancelZonalShift")
+CreatePracticeRunConfiguration = Action("CreatePracticeRunConfiguration")
+DeletePracticeRunConfiguration = Action("DeletePracticeRunConfiguration")
 GetManagedResource = Action("GetManagedResource")
+ListAutoshifts = Action("ListAutoshifts")
 ListManagedResources = Action("ListManagedResources")
 ListZonalShifts = Action("ListZonalShifts")
 StartZonalShift = Action("StartZonalShift")
+UpdatePracticeRunConfiguration = Action("UpdatePracticeRunConfiguration")
+UpdateZonalAutoshiftConfiguration = Action("UpdateZonalAutoshiftConfiguration")
 UpdateZonalShift = Action("UpdateZonalShift")

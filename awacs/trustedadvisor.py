@@ -52,12 +52,24 @@ GenerateReport = Action("GenerateReport")
 GetEngagement = Action("GetEngagement")
 GetEngagementAttachment = Action("GetEngagementAttachment")
 GetEngagementType = Action("GetEngagementType")
+GetOrganizationRecommendation = Action("GetOrganizationRecommendation")
+GetRecommendation = Action("GetRecommendation")
 IncludeCheckItems = Action("IncludeCheckItems")
 ListAccountsForParent = Action("ListAccountsForParent")
+ListChecks = Action("ListChecks")
 ListEngagementCommunications = Action("ListEngagementCommunications")
 ListEngagementTypes = Action("ListEngagementTypes")
 ListEngagements = Action("ListEngagements")
+ListOrganizationRecommendationAccounts = Action(
+    "ListOrganizationRecommendationAccounts"
+)
+ListOrganizationRecommendationResources = Action(
+    "ListOrganizationRecommendationResources"
+)
+ListOrganizationRecommendations = Action("ListOrganizationRecommendations")
 ListOrganizationalUnitsForParent = Action("ListOrganizationalUnitsForParent")
+ListRecommendationResources = Action("ListRecommendationResources")
+ListRecommendations = Action("ListRecommendations")
 ListRoots = Action("ListRoots")
 RefreshCheck = Action("RefreshCheck")
 SetAccountAccess = Action("SetAccountAccess")
@@ -66,4 +78,8 @@ UpdateEngagement = Action("UpdateEngagement")
 UpdateEngagementStatus = Action("UpdateEngagementStatus")
 UpdateNotificationConfigurations = Action("UpdateNotificationConfigurations")
 UpdateNotificationPreferences = Action("UpdateNotificationPreferences")
+UpdateOrganizationRecommendationLifecycle = Action(
+    "UpdateOrganizationRecommendationLifecycle"
+)
+UpdateRecommendationLifecycle = Action("UpdateRecommendationLifecycle")
 UpdateRiskStatus = Action("UpdateRiskStatus")

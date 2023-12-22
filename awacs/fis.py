@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Fault Injection Simulator"
+service_name = "AWS Fault Injection Service"
 prefix = "fis"
 
 
@@ -25,21 +25,33 @@ class ARN(BaseARN):
 
 
 CreateExperimentTemplate = Action("CreateExperimentTemplate")
+CreateTargetAccountConfiguration = Action("CreateTargetAccountConfiguration")
 DeleteExperimentTemplate = Action("DeleteExperimentTemplate")
+DeleteTargetAccountConfiguration = Action("DeleteTargetAccountConfiguration")
 GetAction = Action("GetAction")
 GetExperiment = Action("GetExperiment")
+GetExperimentTargetAccountConfiguration = Action(
+    "GetExperimentTargetAccountConfiguration"
+)
 GetExperimentTemplate = Action("GetExperimentTemplate")
+GetTargetAccountConfiguration = Action("GetTargetAccountConfiguration")
 GetTargetResourceType = Action("GetTargetResourceType")
 InjectApiInternalError = Action("InjectApiInternalError")
 InjectApiThrottleError = Action("InjectApiThrottleError")
 InjectApiUnavailableError = Action("InjectApiUnavailableError")
 ListActions = Action("ListActions")
+ListExperimentResolvedTargets = Action("ListExperimentResolvedTargets")
+ListExperimentTargetAccountConfigurations = Action(
+    "ListExperimentTargetAccountConfigurations"
+)
 ListExperimentTemplates = Action("ListExperimentTemplates")
 ListExperiments = Action("ListExperiments")
 ListTagsForResource = Action("ListTagsForResource")
+ListTargetAccountConfigurations = Action("ListTargetAccountConfigurations")
 ListTargetResourceTypes = Action("ListTargetResourceTypes")
 StartExperiment = Action("StartExperiment")
 StopExperiment = Action("StopExperiment")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateExperimentTemplate = Action("UpdateExperimentTemplate")
+UpdateTargetAccountConfiguration = Action("UpdateTargetAccountConfiguration")

@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+BatchGetSecretValue = Action("BatchGetSecretValue")
 CancelRotateSecret = Action("CancelRotateSecret")
 CreateSecret = Action("CreateSecret")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
