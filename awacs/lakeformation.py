@@ -31,12 +31,21 @@ CancelTransaction = Action("CancelTransaction")
 CommitTransaction = Action("CommitTransaction")
 CreateDataCellsFilter = Action("CreateDataCellsFilter")
 CreateLFTag = Action("CreateLFTag")
+CreateLakeFormationIdentityCenterConfiguration = Action(
+    "CreateLakeFormationIdentityCenterConfiguration"
+)
 CreateLakeFormationOptIn = Action("CreateLakeFormationOptIn")
 DeleteDataCellsFilter = Action("DeleteDataCellsFilter")
 DeleteLFTag = Action("DeleteLFTag")
+DeleteLakeFormationIdentityCenterConfiguration = Action(
+    "DeleteLakeFormationIdentityCenterConfiguration"
+)
 DeleteLakeFormationOptIn = Action("DeleteLakeFormationOptIn")
 DeleteObjectsOnCancel = Action("DeleteObjectsOnCancel")
 DeregisterResource = Action("DeregisterResource")
+DescribeLakeFormationIdentityCenterConfiguration = Action(
+    "DescribeLakeFormationIdentityCenterConfiguration"
+)
 DescribeResource = Action("DescribeResource")
 DescribeTransaction = Action("DescribeTransaction")
 ExtendTransaction = Action("ExtendTransaction")
@@ -69,6 +78,9 @@ StartQueryPlanning = Action("StartQueryPlanning")
 StartTransaction = Action("StartTransaction")
 UpdateDataCellsFilter = Action("UpdateDataCellsFilter")
 UpdateLFTag = Action("UpdateLFTag")
+UpdateLakeFormationIdentityCenterConfiguration = Action(
+    "UpdateLakeFormationIdentityCenterConfiguration"
+)
 UpdateResource = Action("UpdateResource")
 UpdateTableObjects = Action("UpdateTableObjects")
 UpdateTableStorageOptimizer = Action("UpdateTableStorageOptimizer")
