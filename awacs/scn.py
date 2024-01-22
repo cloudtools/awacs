@@ -25,11 +25,13 @@ class ARN(BaseARN):
 
 
 AssignAdminPermissionsToUser = Action("AssignAdminPermissionsToUser")
+CreateBillOfMaterialsImportJob = Action("CreateBillOfMaterialsImportJob")
 CreateInstance = Action("CreateInstance")
 CreateSSOApplication = Action("CreateSSOApplication")
 DeleteInstance = Action("DeleteInstance")
 DeleteSSOApplication = Action("DeleteSSOApplication")
 DescribeInstance = Action("DescribeInstance")
+GetBillOfMaterialsImportJob = Action("GetBillOfMaterialsImportJob")
 ListAdminUsers = Action("ListAdminUsers")
 ListInstances = Action("ListInstances")
 ListTagsForResource = Action("ListTagsForResource")
