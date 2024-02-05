@@ -100,6 +100,9 @@ ListDataSourceRunActivities = Action("ListDataSourceRunActivities")
 ListDataSourceRuns = Action("ListDataSourceRuns")
 ListDataSources = Action("ListDataSources")
 ListDomains = Action("ListDomains")
+ListEnvironmentBlueprintConfigurationSummaries = Action(
+    "ListEnvironmentBlueprintConfigurationSummaries"
+)
 ListEnvironmentBlueprintConfigurations = Action(
     "ListEnvironmentBlueprintConfigurations"
 )
