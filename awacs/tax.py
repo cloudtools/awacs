@@ -27,6 +27,7 @@ class ARN(BaseARN):
 BatchPutTaxRegistration = Action("BatchPutTaxRegistration")
 DeleteTaxRegistration = Action("DeleteTaxRegistration")
 GetExemptions = Action("GetExemptions")
+GetTaxInfoReportingDocument = Action("GetTaxInfoReportingDocument")
 GetTaxInheritance = Action("GetTaxInheritance")
 GetTaxInterview = Action("GetTaxInterview")
 GetTaxRegistration = Action("GetTaxRegistration")

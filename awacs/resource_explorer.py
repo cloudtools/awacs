@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Tag Editor"
+service_name = "Tag Editor"
 prefix = "resource-explorer"
 
 
