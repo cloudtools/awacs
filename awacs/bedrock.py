@@ -53,6 +53,7 @@ DeleteModelInvocationLoggingConfiguration = Action(
 )
 DeletePrompt = Action("DeletePrompt")
 DeleteProvisionedModelThroughput = Action("DeleteProvisionedModelThroughput")
+DetectGeneratedContent = Action("DetectGeneratedContent")
 DisassociateAgentKnowledgeBase = Action("DisassociateAgentKnowledgeBase")
 GetAgent = Action("GetAgent")
 GetAgentActionGroup = Action("GetAgentActionGroup")
