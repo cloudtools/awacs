@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Session Manager Message Gateway Service"
+service_name = "Amazon Message Gateway Service"
 prefix = "ssmmessages"
 
 
