@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 CreateSyncFilter = Action("CreateSyncFilter")
 CreateSyncProfile = Action("CreateSyncProfile")
 CreateSyncTarget = Action("CreateSyncTarget")

@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 GetConversation = Action("GetConversation")
 GetTroubleshootingResults = Action("GetTroubleshootingResults")
+ListConversations = Action("ListConversations")
 SendMessage = Action("SendMessage")
 StartConversation = Action("StartConversation")
 StartTroubleshootingAnalysis = Action("StartTroubleshootingAnalysis")
