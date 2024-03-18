@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AcceptPredictions = Action("AcceptPredictions")
 AcceptSubscriptionRequest = Action("AcceptSubscriptionRequest")
+CancelMetadataGenerationRun = Action("CancelMetadataGenerationRun")
 CancelSubscription = Action("CancelSubscription")
 CreateAsset = Action("CreateAsset")
 CreateAssetRevision = Action("CreateAssetRevision")
