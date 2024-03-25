@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AddMembersToGroup = Action("AddMembersToGroup")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 AssociateDelegateToResource = Action("AssociateDelegateToResource")
 AssociateMemberToGroup = Action("AssociateMemberToGroup")
 AssumeImpersonationRole = Action("AssumeImpersonationRole")

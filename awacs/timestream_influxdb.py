@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Timestream Influxdb"
+service_name = "Amazon Timestream InfluxDB"
 prefix = "timestream-influxdb"
 
 
