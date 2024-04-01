@@ -25,7 +25,18 @@ class ARN(BaseARN):
 
 
 AssociatePatchToManifestJob = Action("AssociatePatchToManifestJob")
+CreateBatch = Action("CreateBatch")
+CreateIntakeForm = Action("CreateIntakeForm")
+CreateProject = Action("CreateProject")
+CreateWorkflowDefinition = Action("CreateWorkflowDefinition")
 DescribeConsoleJob = Action("DescribeConsoleJob")
+GenerateLIDARPreviewTaskConfigJob = Action("GenerateLIDARPreviewTaskConfigJob")
+GetBatch = Action("GetBatch")
+GetIntakeFormStatus = Action("GetIntakeFormStatus")
+ListBatches = Action("ListBatches")
 ListDatasetObjects = Action("ListDatasetObjects")
+ListProjects = Action("ListProjects")
 RunFilterOrSampleDatasetJob = Action("RunFilterOrSampleDatasetJob")
 RunGenerateManifestByCrawlingJob = Action("RunGenerateManifestByCrawlingJob")
+RunGenerateManifestMetricsJob = Action("RunGenerateManifestMetricsJob")
+UpdateBatch = Action("UpdateBatch")

@@ -61,6 +61,7 @@ GetSavingsPlansUtilization = Action("GetSavingsPlansUtilization")
 GetSavingsPlansUtilizationDetails = Action("GetSavingsPlansUtilizationDetails")
 GetTags = Action("GetTags")
 GetUsageForecast = Action("GetUsageForecast")
+ListCostAllocationTagBackfillHistory = Action("ListCostAllocationTagBackfillHistory")
 ListCostAllocationTags = Action("ListCostAllocationTags")
 ListCostCategoryDefinitions = Action("ListCostCategoryDefinitions")
 ListSavingsPlansPurchaseRecommendationGeneration = Action(
@@ -68,6 +69,7 @@ ListSavingsPlansPurchaseRecommendationGeneration = Action(
 )
 ListTagsForResource = Action("ListTagsForResource")
 ProvideAnomalyFeedback = Action("ProvideAnomalyFeedback")
+StartCostAllocationTagBackfill = Action("StartCostAllocationTagBackfill")
 StartSavingsPlansPurchaseRecommendationGeneration = Action(
     "StartSavingsPlansPurchaseRecommendationGeneration"
 )
