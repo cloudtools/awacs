@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 BatchGetCollaborationAnalysisTemplate = Action("BatchGetCollaborationAnalysisTemplate")
 BatchGetSchema = Action("BatchGetSchema")
+BatchGetSchemaAnalysisRule = Action("BatchGetSchemaAnalysisRule")
 CreateAnalysisTemplate = Action("CreateAnalysisTemplate")
 CreateCollaboration = Action("CreateCollaboration")
 CreateConfiguredAudienceModelAssociation = Action(

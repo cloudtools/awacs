@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+CopyClusterSnapshot = Action("CopyClusterSnapshot")
 CreateCluster = Action("CreateCluster")
 CreateClusterSnapshot = Action("CreateClusterSnapshot")
 DeleteCluster = Action("DeleteCluster")
@@ -34,6 +35,8 @@ ListClusterSnapshots = Action("ListClusterSnapshots")
 ListClusters = Action("ListClusters")
 ListTagsForResource = Action("ListTagsForResource")
 RestoreClusterFromSnapshot = Action("RestoreClusterFromSnapshot")
+StartCluster = Action("StartCluster")
+StopCluster = Action("StopCluster")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateCluster = Action("UpdateCluster")
