@@ -25,11 +25,14 @@ class ARN(BaseARN):
 
 
 GetConversation = Action("GetConversation")
+GetIdentityMetadata = Action("GetIdentityMetadata")
 GetTroubleshootingResults = Action("GetTroubleshootingResults")
 ListConversations = Action("ListConversations")
+PassRequest = Action("PassRequest")
 SendMessage = Action("SendMessage")
 StartConversation = Action("StartConversation")
 StartTroubleshootingAnalysis = Action("StartTroubleshootingAnalysis")
 StartTroubleshootingResolutionExplanation = Action(
     "StartTroubleshootingResolutionExplanation"
 )
+UpdateTroubleshootingCommandResult = Action("UpdateTroubleshootingCommandResult")
