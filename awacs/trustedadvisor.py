@@ -24,6 +24,9 @@ class ARN(BaseARN):
         )
 
 
+BatchUpdateRecommendationResourceExclusion = Action(
+    "BatchUpdateRecommendationResourceExclusion"
+)
 CreateEngagement = Action("CreateEngagement")
 CreateEngagementAttachment = Action("CreateEngagementAttachment")
 CreateEngagementCommunication = Action("CreateEngagementCommunication")

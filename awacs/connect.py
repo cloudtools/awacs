@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 ActivateEvaluationForm = Action("ActivateEvaluationForm")
+AdminGetEmergencyAccessToken = Action("AdminGetEmergencyAccessToken")
 AssociateApprovedOrigin = Action("AssociateApprovedOrigin")
 AssociateBot = Action("AssociateBot")
 AssociateCustomerProfilesDomain = Action("AssociateCustomerProfilesDomain")

@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+CreateAssignment = Action("CreateAssignment")
+DeleteAssignment = Action("DeleteAssignment")
 GetConversation = Action("GetConversation")
 GetIdentityMetadata = Action("GetIdentityMetadata")
 GetTroubleshootingResults = Action("GetTroubleshootingResults")

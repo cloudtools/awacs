@@ -24,4 +24,5 @@ class ARN(BaseARN):
         )
 
 
+Connect = Action("Connect")
 Invoke = Action("Invoke")
