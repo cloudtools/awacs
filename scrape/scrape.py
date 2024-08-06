@@ -62,6 +62,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Pinpoint Email Service": "ses",
     "Amazon Pinpoint SMS Voice V2": "sms-voice",
     "Amazon Simple Email Service v2": "ses",
+    "Amazon Simple Email Service - Mail Manager": "ses",
     "AWS Cloud Control API": "cloudformation",
     "AWS Elastic Load Balancing V2": "elasticloadbalancing",
     "AWS IoT Greengrass V2": "greengrass",
@@ -80,6 +81,9 @@ IGNORED_SERVICE_ALIASES = {
 RENAME_SERVICE = {
     "lambda": "awslambda",
 }
+
+
+write_service_semaphore = asyncio.Semaphore(10)
 
 
 def rename_service(name):
@@ -219,8 +223,9 @@ async def write_service(
 
     awacs_service = rename_service(service_prefix.replace("-", "_"))
     filename = "".join([BASEDIR, "/", awacs_service, ".py"])
-    async with aiofiles.open(filename, "w") as fp:
-        await fp.write("\n".join(content))
+    async with write_service_semaphore:
+        async with aiofiles.open(filename, "w") as fp:
+            await fp.write("\n".join(content))
 
 
 async def _actions_from_table(table) -> Set[str]:
