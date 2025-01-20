@@ -39,6 +39,7 @@ AssociatePhoneNumbersWithVoiceConnectorGroup = Action(
 AssociateSigninDelegateGroupsWithAccount = Action(
     "AssociateSigninDelegateGroupsWithAccount"
 )
+AssociateVoiceConnectorConnect = Action("AssociateVoiceConnectorConnect")
 AuthorizeDirectory = Action("AuthorizeDirectory")
 BatchCreateAttendee = Action("BatchCreateAttendee")
 BatchCreateChannelMembership = Action("BatchCreateChannelMembership")
@@ -67,6 +68,8 @@ CreateChannelBan = Action("CreateChannelBan")
 CreateChannelFlow = Action("CreateChannelFlow")
 CreateChannelMembership = Action("CreateChannelMembership")
 CreateChannelModerator = Action("CreateChannelModerator")
+CreateConnectAnalyticsConnector = Action("CreateConnectAnalyticsConnector")
+CreateConnectCallTransferConnector = Action("CreateConnectCallTransferConnector")
 CreateMediaCapturePipeline = Action("CreateMediaCapturePipeline")
 CreateMediaConcatenationPipeline = Action("CreateMediaConcatenationPipeline")
 CreateMediaInsightsPipeline = Action("CreateMediaInsightsPipeline")
@@ -137,6 +140,9 @@ DeleteVoiceConnector = Action("DeleteVoiceConnector")
 DeleteVoiceConnectorEmergencyCallingConfiguration = Action(
     "DeleteVoiceConnectorEmergencyCallingConfiguration"
 )
+DeleteVoiceConnectorExternalSystemsConfiguration = Action(
+    "DeleteVoiceConnectorExternalSystemsConfiguration"
+)
 DeleteVoiceConnectorGroup = Action("DeleteVoiceConnectorGroup")
 DeleteVoiceConnectorOrigination = Action("DeleteVoiceConnectorOrigination")
 DeleteVoiceConnectorProxy = Action("DeleteVoiceConnectorProxy")
@@ -177,6 +183,7 @@ DisassociatePhoneNumbersFromVoiceConnectorGroup = Action(
 DisassociateSigninDelegateGroupsFromAccount = Action(
     "DisassociateSigninDelegateGroupsFromAccount"
 )
+DisassociateVoiceConnectorConnect = Action("DisassociateVoiceConnectorConnect")
 DisconnectDirectory = Action("DisconnectDirectory")
 GetAccount = Action("GetAccount")
 GetAccountResource = Action("GetAccountResource")
@@ -226,6 +233,9 @@ GetUserSettings = Action("GetUserSettings")
 GetVoiceConnector = Action("GetVoiceConnector")
 GetVoiceConnectorEmergencyCallingConfiguration = Action(
     "GetVoiceConnectorEmergencyCallingConfiguration"
+)
+GetVoiceConnectorExternalSystemsConfiguration = Action(
+    "GetVoiceConnectorExternalSystemsConfiguration"
 )
 GetVoiceConnectorGroup = Action("GetVoiceConnectorGroup")
 GetVoiceConnectorLoggingConfiguration = Action("GetVoiceConnectorLoggingConfiguration")
@@ -320,6 +330,9 @@ PutSipMediaApplicationLoggingConfiguration = Action(
 )
 PutVoiceConnectorEmergencyCallingConfiguration = Action(
     "PutVoiceConnectorEmergencyCallingConfiguration"
+)
+PutVoiceConnectorExternalSystemsConfiguration = Action(
+    "PutVoiceConnectorExternalSystemsConfiguration"
 )
 PutVoiceConnectorLoggingConfiguration = Action("PutVoiceConnectorLoggingConfiguration")
 PutVoiceConnectorOrigination = Action("PutVoiceConnectorOrigination")

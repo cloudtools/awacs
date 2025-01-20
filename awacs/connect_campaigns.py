@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "High-volume outbound communications"
+service_name = "Amazon Connect Outbound Campaigns"
 prefix = "connect-campaigns"
 
 
@@ -26,7 +26,11 @@ class ARN(BaseARN):
 
 CreateCampaign = Action("CreateCampaign")
 DeleteCampaign = Action("DeleteCampaign")
+DeleteCampaignChannelSubtypeConfig = Action("DeleteCampaignChannelSubtypeConfig")
+DeleteCampaignCommunicationLimits = Action("DeleteCampaignCommunicationLimits")
+DeleteCampaignCommunicationTime = Action("DeleteCampaignCommunicationTime")
 DeleteConnectInstanceConfig = Action("DeleteConnectInstanceConfig")
+DeleteConnectInstanceIntegration = Action("DeleteConnectInstanceIntegration")
 DeleteInstanceOnboardingJob = Action("DeleteInstanceOnboardingJob")
 DescribeCampaign = Action("DescribeCampaign")
 GetCampaignState = Action("GetCampaignState")
@@ -34,16 +38,26 @@ GetCampaignStateBatch = Action("GetCampaignStateBatch")
 GetConnectInstanceConfig = Action("GetConnectInstanceConfig")
 GetInstanceOnboardingJobStatus = Action("GetInstanceOnboardingJobStatus")
 ListCampaigns = Action("ListCampaigns")
+ListConnectInstanceIntegrations = Action("ListConnectInstanceIntegrations")
 ListTagsForResource = Action("ListTagsForResource")
 PauseCampaign = Action("PauseCampaign")
 PutConnectInstanceConfig = Action("PutConnectInstanceConfig")
+PutConnectInstanceIntegration = Action("PutConnectInstanceIntegration")
 PutDialRequestBatch = Action("PutDialRequestBatch")
+PutOutboundRequestBatch = Action("PutOutboundRequestBatch")
+PutProfileOutboundRequestBatch = Action("PutProfileOutboundRequestBatch")
 ResumeCampaign = Action("ResumeCampaign")
 StartCampaign = Action("StartCampaign")
 StartInstanceOnboardingJob = Action("StartInstanceOnboardingJob")
 StopCampaign = Action("StopCampaign")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateCampaignChannelSubtypeConfig = Action("UpdateCampaignChannelSubtypeConfig")
+UpdateCampaignCommunicationLimits = Action("UpdateCampaignCommunicationLimits")
+UpdateCampaignCommunicationTime = Action("UpdateCampaignCommunicationTime")
 UpdateCampaignDialerConfig = Action("UpdateCampaignDialerConfig")
+UpdateCampaignFlowAssociation = Action("UpdateCampaignFlowAssociation")
 UpdateCampaignName = Action("UpdateCampaignName")
 UpdateCampaignOutboundCallConfig = Action("UpdateCampaignOutboundCallConfig")
+UpdateCampaignSchedule = Action("UpdateCampaignSchedule")
+UpdateCampaignSource = Action("UpdateCampaignSource")

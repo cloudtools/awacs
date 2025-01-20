@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+ApplyPendingMaintenanceAction = Action("ApplyPendingMaintenanceAction")
 CopyClusterSnapshot = Action("CopyClusterSnapshot")
 CreateCluster = Action("CreateCluster")
 CreateClusterSnapshot = Action("CreateClusterSnapshot")
@@ -31,8 +32,10 @@ DeleteCluster = Action("DeleteCluster")
 DeleteClusterSnapshot = Action("DeleteClusterSnapshot")
 GetCluster = Action("GetCluster")
 GetClusterSnapshot = Action("GetClusterSnapshot")
+GetPendingMaintenanceAction = Action("GetPendingMaintenanceAction")
 ListClusterSnapshots = Action("ListClusterSnapshots")
 ListClusters = Action("ListClusters")
+ListPendingMaintenanceActions = Action("ListPendingMaintenanceActions")
 ListTagsForResource = Action("ListTagsForResource")
 RestoreClusterFromSnapshot = Action("RestoreClusterFromSnapshot")
 StartCluster = Action("StartCluster")

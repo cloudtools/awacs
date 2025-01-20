@@ -27,4 +27,5 @@ class ARN(BaseARN):
 CreateSupportPlanSchedule = Action("CreateSupportPlanSchedule")
 GetSupportPlan = Action("GetSupportPlan")
 GetSupportPlanUpdateStatus = Action("GetSupportPlanUpdateStatus")
+ListSupportPlanModifiers = Action("ListSupportPlanModifiers")
 StartSupportPlanUpdate = Action("StartSupportPlanUpdate")

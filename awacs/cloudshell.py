@@ -27,6 +27,7 @@ class ARN(BaseARN):
 CreateEnvironment = Action("CreateEnvironment")
 CreateSession = Action("CreateSession")
 DeleteEnvironment = Action("DeleteEnvironment")
+DescribeEnvironments = Action("DescribeEnvironments")
 GetEnvironmentStatus = Action("GetEnvironmentStatus")
 GetFileDownloadUrls = Action("GetFileDownloadUrls")
 GetFileUploadUrls = Action("GetFileUploadUrls")

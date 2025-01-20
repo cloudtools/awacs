@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 CreateCustomerVerificationDetails = Action("CreateCustomerVerificationDetails")
+CreateUploadUrls = Action("CreateUploadUrls")
 GetCustomerVerificationDetails = Action("GetCustomerVerificationDetails")
 GetCustomerVerificationEligibility = Action("GetCustomerVerificationEligibility")
 UpdateCustomerVerificationDetails = Action("UpdateCustomerVerificationDetails")

@@ -25,12 +25,18 @@ class ARN(BaseARN):
 
 
 AcceptAgreement = Action("AcceptAgreement")
+AcceptNdaForAgreement = Action("AcceptNdaForAgreement")
 DownloadAgreement = Action("DownloadAgreement")
 Get = Action("Get")
 GetAccountSettings = Action("GetAccountSettings")
+GetAgreement = Action("GetAgreement")
+GetCustomerAgreement = Action("GetCustomerAgreement")
+GetNdaForAgreement = Action("GetNdaForAgreement")
 GetReport = Action("GetReport")
 GetReportMetadata = Action("GetReportMetadata")
 GetTermForReport = Action("GetTermForReport")
+ListAgreements = Action("ListAgreements")
+ListCustomerAgreements = Action("ListCustomerAgreements")
 ListReports = Action("ListReports")
 PutAccountSettings = Action("PutAccountSettings")
 TerminateAgreement = Action("TerminateAgreement")

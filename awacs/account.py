@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AcceptPrimaryEmailUpdate = Action("AcceptPrimaryEmailUpdate")
 CloseAccount = Action("CloseAccount")
 DeleteAlternateContact = Action("DeleteAlternateContact")
 DisableRegion = Action("DisableRegion")
@@ -32,8 +33,10 @@ GetAccountInformation = Action("GetAccountInformation")
 GetAlternateContact = Action("GetAlternateContact")
 GetChallengeQuestions = Action("GetChallengeQuestions")
 GetContactInformation = Action("GetContactInformation")
+GetPrimaryEmail = Action("GetPrimaryEmail")
 GetRegionOptStatus = Action("GetRegionOptStatus")
 ListRegions = Action("ListRegions")
 PutAlternateContact = Action("PutAlternateContact")
 PutChallengeQuestions = Action("PutChallengeQuestions")
 PutContactInformation = Action("PutContactInformation")
+StartPrimaryEmailUpdate = Action("StartPrimaryEmailUpdate")

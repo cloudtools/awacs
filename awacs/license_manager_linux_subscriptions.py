@@ -24,7 +24,14 @@ class ARN(BaseARN):
         )
 
 
+DeregisterSubscriptionProvider = Action("DeregisterSubscriptionProvider")
+GetRegisteredSubscriptionProvider = Action("GetRegisteredSubscriptionProvider")
 GetServiceSettings = Action("GetServiceSettings")
 ListLinuxSubscriptionInstances = Action("ListLinuxSubscriptionInstances")
 ListLinuxSubscriptions = Action("ListLinuxSubscriptions")
+ListRegisteredSubscriptionProviders = Action("ListRegisteredSubscriptionProviders")
+ListTagsForResource = Action("ListTagsForResource")
+RegisterSubscriptionProvider = Action("RegisterSubscriptionProvider")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateServiceSettings = Action("UpdateServiceSettings")

@@ -27,6 +27,7 @@ class ARN(BaseARN):
 AssumeRole = Action("AssumeRole")
 AssumeRoleWithSAML = Action("AssumeRoleWithSAML")
 AssumeRoleWithWebIdentity = Action("AssumeRoleWithWebIdentity")
+AssumeRoot = Action("AssumeRoot")
 DecodeAuthorizationMessage = Action("DecodeAuthorizationMessage")
 GetAccessKeyInfo = Action("GetAccessKeyInfo")
 GetCallerIdentity = Action("GetCallerIdentity")

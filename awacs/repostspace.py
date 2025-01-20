@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS re:Post Private"
+service_name = "AWS rePost Private"
 prefix = "repostspace"
 
 
@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+BatchAddRole = Action("BatchAddRole")
+BatchRemoveRole = Action("BatchRemoveRole")
 CreateSpace = Action("CreateSpace")
 DeleteSpace = Action("DeleteSpace")
 DeregisterAdmin = Action("DeregisterAdmin")

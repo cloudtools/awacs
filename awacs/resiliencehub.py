@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AcceptResourceGroupingRecommendations = Action("AcceptResourceGroupingRecommendations")
 AddDraftAppVersionResourceMappings = Action("AddDraftAppVersionResourceMappings")
 BatchUpdateRecommendationStatus = Action("BatchUpdateRecommendationStatus")
 CreateApp = Action("CreateApp")
@@ -50,7 +51,11 @@ DescribeAppVersionTemplate = Action("DescribeAppVersionTemplate")
 DescribeDraftAppVersionResourcesImportStatus = Action(
     "DescribeDraftAppVersionResourcesImportStatus"
 )
+DescribeMetricsExport = Action("DescribeMetricsExport")
 DescribeResiliencyPolicy = Action("DescribeResiliencyPolicy")
+DescribeResourceGroupingRecommendationTask = Action(
+    "DescribeResourceGroupingRecommendationTask"
+)
 ImportResourcesToDraftAppVersion = Action("ImportResourcesToDraftAppVersion")
 ListAlarmRecommendations = Action("ListAlarmRecommendations")
 ListAppAssessmentComplianceDrifts = Action("ListAppAssessmentComplianceDrifts")
@@ -64,8 +69,10 @@ ListAppVersionResourceMappings = Action("ListAppVersionResourceMappings")
 ListAppVersionResources = Action("ListAppVersionResources")
 ListAppVersions = Action("ListAppVersions")
 ListApps = Action("ListApps")
+ListMetrics = Action("ListMetrics")
 ListRecommendationTemplates = Action("ListRecommendationTemplates")
 ListResiliencyPolicies = Action("ListResiliencyPolicies")
+ListResourceGroupingRecommendations = Action("ListResourceGroupingRecommendations")
 ListSopRecommendations = Action("ListSopRecommendations")
 ListSuggestedResiliencyPolicies = Action("ListSuggestedResiliencyPolicies")
 ListTagsForResource = Action("ListTagsForResource")
@@ -73,9 +80,14 @@ ListTestRecommendations = Action("ListTestRecommendations")
 ListUnsupportedAppVersionResources = Action("ListUnsupportedAppVersionResources")
 PublishAppVersion = Action("PublishAppVersion")
 PutDraftAppVersionTemplate = Action("PutDraftAppVersionTemplate")
+RejectResourceGroupingRecommendations = Action("RejectResourceGroupingRecommendations")
 RemoveDraftAppVersionResourceMappings = Action("RemoveDraftAppVersionResourceMappings")
 ResolveAppVersionResources = Action("ResolveAppVersionResources")
 StartAppAssessment = Action("StartAppAssessment")
+StartMetricsExport = Action("StartMetricsExport")
+StartResourceGroupingRecommendationTask = Action(
+    "StartResourceGroupingRecommendationTask"
+)
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateApp = Action("UpdateApp")

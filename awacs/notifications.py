@@ -25,21 +25,51 @@ class ARN(BaseARN):
 
 
 AssociateChannel = Action("AssociateChannel")
+AssociateManagedNotificationAccountContact = Action(
+    "AssociateManagedNotificationAccountContact"
+)
+AssociateManagedNotificationAdditionalChannel = Action(
+    "AssociateManagedNotificationAdditionalChannel"
+)
 CreateEventRule = Action("CreateEventRule")
 CreateNotificationConfiguration = Action("CreateNotificationConfiguration")
 DeleteEventRule = Action("DeleteEventRule")
 DeleteNotificationConfiguration = Action("DeleteNotificationConfiguration")
 DeregisterNotificationHub = Action("DeregisterNotificationHub")
+DisableNotificationsAccessForOrganization = Action(
+    "DisableNotificationsAccessForOrganization"
+)
 DisassociateChannel = Action("DisassociateChannel")
+DisassociateManagedNotificationAccountContact = Action(
+    "DisassociateManagedNotificationAccountContact"
+)
+DisassociateManagedNotificationAdditionalChannel = Action(
+    "DisassociateManagedNotificationAdditionalChannel"
+)
+EnableNotificationsAccessForOrganization = Action(
+    "EnableNotificationsAccessForOrganization"
+)
 GetEventRule = Action("GetEventRule")
+GetFeatureOptInStatus = Action("GetFeatureOptInStatus")
+GetManagedNotificationChildEvent = Action("GetManagedNotificationChildEvent")
+GetManagedNotificationConfiguration = Action("GetManagedNotificationConfiguration")
+GetManagedNotificationEvent = Action("GetManagedNotificationEvent")
 GetNotificationConfiguration = Action("GetNotificationConfiguration")
 GetNotificationEvent = Action("GetNotificationEvent")
+GetNotificationsAccessForOrganization = Action("GetNotificationsAccessForOrganization")
 ListChannels = Action("ListChannels")
 ListEventRules = Action("ListEventRules")
+ListManagedNotificationChannelAssociations = Action(
+    "ListManagedNotificationChannelAssociations"
+)
+ListManagedNotificationChildEvents = Action("ListManagedNotificationChildEvents")
+ListManagedNotificationConfigurations = Action("ListManagedNotificationConfigurations")
+ListManagedNotificationEvents = Action("ListManagedNotificationEvents")
 ListNotificationConfigurations = Action("ListNotificationConfigurations")
 ListNotificationEvents = Action("ListNotificationEvents")
 ListNotificationHubs = Action("ListNotificationHubs")
 ListTagsForResource = Action("ListTagsForResource")
+PutFeatureOptInStatus = Action("PutFeatureOptInStatus")
 RegisterNotificationHub = Action("RegisterNotificationHub")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")

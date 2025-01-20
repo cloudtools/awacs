@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+GetControl = Action("GetControl")
 ListCommonControls = Action("ListCommonControls")
+ListControls = Action("ListControls")
 ListDomains = Action("ListDomains")
 ListObjectives = Action("ListObjectives")

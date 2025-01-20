@@ -24,7 +24,16 @@ class ARN(BaseARN):
         )
 
 
+BatchGetInvoiceProfile = Action("BatchGetInvoiceProfile")
+CreateInvoiceUnit = Action("CreateInvoiceUnit")
+DeleteInvoiceUnit = Action("DeleteInvoiceUnit")
 GetInvoiceEmailDeliveryPreferences = Action("GetInvoiceEmailDeliveryPreferences")
 GetInvoicePDF = Action("GetInvoicePDF")
+GetInvoiceUnit = Action("GetInvoiceUnit")
 ListInvoiceSummaries = Action("ListInvoiceSummaries")
+ListInvoiceUnits = Action("ListInvoiceUnits")
+ListTagsForResource = Action("ListTagsForResource")
 PutInvoiceEmailDeliveryPreferences = Action("PutInvoiceEmailDeliveryPreferences")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateInvoiceUnit = Action("UpdateInvoiceUnit")

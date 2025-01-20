@@ -25,11 +25,13 @@ class ARN(BaseARN):
 
 
 AddLeaderboardAccessPermission = Action("AddLeaderboardAccessPermission")
+AdminDescribeAccountKey = Action("AdminDescribeAccountKey")
 AdminGetAccountConfig = Action("AdminGetAccountConfig")
 AdminListAssociatedResources = Action("AdminListAssociatedResources")
 AdminListAssociatedUsers = Action("AdminListAssociatedUsers")
 AdminManageUser = Action("AdminManageUser")
 AdminSetAccountConfig = Action("AdminSetAccountConfig")
+AdminUpdateAccountKey = Action("AdminUpdateAccountKey")
 CloneReinforcementLearningModel = Action("CloneReinforcementLearningModel")
 CreateAccountResources = Action("CreateAccountResources")
 CreateCar = Action("CreateCar")

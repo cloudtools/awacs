@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AddCertificateToDomain = Action("AddCertificateToDomain")
+CreateAccessAssociation = Action("CreateAccessAssociation")
 DELETE = Action("DELETE")
 GET = Action("GET")
 HEAD = Action("HEAD")
@@ -32,6 +33,9 @@ OPTIONS = Action("OPTIONS")
 PATCH = Action("PATCH")
 POST = Action("POST")
 PUT = Action("PUT")
+RejectAccessAssociation = Action("RejectAccessAssociation")
 RemoveCertificateFromDomain = Action("RemoveCertificateFromDomain")
 SetWebACL = Action("SetWebACL")
+UpdateDomainNameManagementPolicy = Action("UpdateDomainNameManagementPolicy")
+UpdateDomainNamePolicy = Action("UpdateDomainNamePolicy")
 UpdateRestApiPolicy = Action("UpdateRestApiPolicy")

@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route 53 Application Recovery Controller - Zonal Shift"
+service_name = "Amazon Application Recovery Controller - Zonal Shift"
 prefix = "arc-zonal-shift"
 
 
@@ -27,11 +27,17 @@ class ARN(BaseARN):
 CancelZonalShift = Action("CancelZonalShift")
 CreatePracticeRunConfiguration = Action("CreatePracticeRunConfiguration")
 DeletePracticeRunConfiguration = Action("DeletePracticeRunConfiguration")
+GetAutoshiftObserverNotificationStatus = Action(
+    "GetAutoshiftObserverNotificationStatus"
+)
 GetManagedResource = Action("GetManagedResource")
 ListAutoshifts = Action("ListAutoshifts")
 ListManagedResources = Action("ListManagedResources")
 ListZonalShifts = Action("ListZonalShifts")
 StartZonalShift = Action("StartZonalShift")
+UpdateAutoshiftObserverNotificationStatus = Action(
+    "UpdateAutoshiftObserverNotificationStatus"
+)
 UpdatePracticeRunConfiguration = Action("UpdatePracticeRunConfiguration")
 UpdateZonalAutoshiftConfiguration = Action("UpdateZonalAutoshiftConfiguration")
 UpdateZonalShift = Action("UpdateZonalShift")

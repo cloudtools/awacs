@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 CreateAdminSession = Action("CreateAdminSession")
 CreateNetwork = Action("CreateNetwork")
+DeleteNetwork = Action("DeleteNetwork")
 ListNetworks = Action("ListNetworks")
 ListTagsForResource = Action("ListTagsForResource")
 TagResource = Action("TagResource")

@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AddPolicyStatement = Action("AddPolicyStatement")
+BatchDeleteUniqueId = Action("BatchDeleteUniqueId")
 CreateIdMappingWorkflow = Action("CreateIdMappingWorkflow")
 CreateIdNamespace = Action("CreateIdNamespace")
 CreateMatchingWorkflow = Action("CreateMatchingWorkflow")
@@ -61,3 +62,4 @@ UpdateIdNamespace = Action("UpdateIdNamespace")
 UpdateMatchingWorkflow = Action("UpdateMatchingWorkflow")
 UpdateSchemaMapping = Action("UpdateSchemaMapping")
 UseIdNamespace = Action("UseIdNamespace")
+UseWorkflow = Action("UseWorkflow")

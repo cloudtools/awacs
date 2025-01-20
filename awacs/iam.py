@@ -73,7 +73,15 @@ DeleteVirtualMFADevice = Action("DeleteVirtualMFADevice")
 DetachGroupPolicy = Action("DetachGroupPolicy")
 DetachRolePolicy = Action("DetachRolePolicy")
 DetachUserPolicy = Action("DetachUserPolicy")
+DisableOrganizationsRootCredentialsManagement = Action(
+    "DisableOrganizationsRootCredentialsManagement"
+)
+DisableOrganizationsRootSessions = Action("DisableOrganizationsRootSessions")
 EnableMFADevice = Action("EnableMFADevice")
+EnableOrganizationsRootCredentialsManagement = Action(
+    "EnableOrganizationsRootCredentialsManagement"
+)
+EnableOrganizationsRootSessions = Action("EnableOrganizationsRootSessions")
 FinalizeSmsMfaRegistration = Action("FinalizeSmsMfaRegistration")
 GenerateCredentialReport = Action("GenerateCredentialReport")
 GenerateOrganizationsAccessReport = Action("GenerateOrganizationsAccessReport")
@@ -126,6 +134,7 @@ ListMFADeviceTags = Action("ListMFADeviceTags")
 ListMFADevices = Action("ListMFADevices")
 ListOpenIDConnectProviderTags = Action("ListOpenIDConnectProviderTags")
 ListOpenIDConnectProviders = Action("ListOpenIDConnectProviders")
+ListOrganizationsFeatures = Action("ListOrganizationsFeatures")
 ListPolicies = Action("ListPolicies")
 ListPoliciesGrantingServiceAccess = Action("ListPoliciesGrantingServiceAccess")
 ListPolicyTags = Action("ListPolicyTags")

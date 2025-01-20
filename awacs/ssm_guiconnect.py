@@ -26,4 +26,5 @@ class ARN(BaseARN):
 
 CancelConnection = Action("CancelConnection")
 GetConnection = Action("GetConnection")
+ListConnections = Action("ListConnections")
 StartConnection = Action("StartConnection")

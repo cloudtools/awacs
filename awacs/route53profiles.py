@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon Route 53 Profiles enables sharing DNS settings with VPCs"
+service_name = "Amazon Route 53 Profiles"
 prefix = "route53profiles"
 
 
@@ -32,11 +32,13 @@ DisassociateProfile = Action("DisassociateProfile")
 DisassociateResourceFromProfile = Action("DisassociateResourceFromProfile")
 GetProfile = Action("GetProfile")
 GetProfileAssociation = Action("GetProfileAssociation")
+GetProfilePolicy = Action("GetProfilePolicy")
 GetProfileResourceAssociation = Action("GetProfileResourceAssociation")
 ListProfileAssociations = Action("ListProfileAssociations")
 ListProfileResourceAssociations = Action("ListProfileResourceAssociations")
 ListProfiles = Action("ListProfiles")
 ListTagsForResource = Action("ListTagsForResource")
+PutProfilePolicy = Action("PutProfilePolicy")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateProfileResourceAssociation = Action("UpdateProfileResourceAssociation")

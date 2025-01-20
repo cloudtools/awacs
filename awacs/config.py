@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AssociateResourceTypes = Action("AssociateResourceTypes")
 BatchGetAggregateResourceConfig = Action("BatchGetAggregateResourceConfig")
 BatchGetResourceConfig = Action("BatchGetResourceConfig")
 DeleteAggregationAuthorization = Action("DeleteAggregationAuthorization")
@@ -40,6 +41,9 @@ DeleteRemediationConfiguration = Action("DeleteRemediationConfiguration")
 DeleteRemediationExceptions = Action("DeleteRemediationExceptions")
 DeleteResourceConfig = Action("DeleteResourceConfig")
 DeleteRetentionConfiguration = Action("DeleteRetentionConfiguration")
+DeleteServiceLinkedConfigurationRecorder = Action(
+    "DeleteServiceLinkedConfigurationRecorder"
+)
 DeleteStoredQuery = Action("DeleteStoredQuery")
 DeliverConfigSnapshot = Action("DeliverConfigSnapshot")
 DescribeAggregateComplianceByConfigRules = Action(
@@ -77,6 +81,7 @@ DescribeRemediationConfigurations = Action("DescribeRemediationConfigurations")
 DescribeRemediationExceptions = Action("DescribeRemediationExceptions")
 DescribeRemediationExecutionStatus = Action("DescribeRemediationExecutionStatus")
 DescribeRetentionConfigurations = Action("DescribeRetentionConfigurations")
+DisassociateResourceTypes = Action("DisassociateResourceTypes")
 GetAggregateComplianceDetailsByConfigRule = Action(
     "GetAggregateComplianceDetailsByConfigRule"
 )
@@ -109,6 +114,7 @@ GetResources = Action("GetResources")
 GetStoredQuery = Action("GetStoredQuery")
 GetTagKeys = Action("GetTagKeys")
 ListAggregateDiscoveredResources = Action("ListAggregateDiscoveredResources")
+ListConfigurationRecorders = Action("ListConfigurationRecorders")
 ListConformancePackComplianceScores = Action("ListConformancePackComplianceScores")
 ListDiscoveredResources = Action("ListDiscoveredResources")
 ListResourceEvaluations = Action("ListResourceEvaluations")
@@ -128,6 +134,7 @@ PutRemediationConfigurations = Action("PutRemediationConfigurations")
 PutRemediationExceptions = Action("PutRemediationExceptions")
 PutResourceConfig = Action("PutResourceConfig")
 PutRetentionConfiguration = Action("PutRetentionConfiguration")
+PutServiceLinkedConfigurationRecorder = Action("PutServiceLinkedConfigurationRecorder")
 PutStoredQuery = Action("PutStoredQuery")
 SelectAggregateResourceConfig = Action("SelectAggregateResourceConfig")
 SelectResourceConfig = Action("SelectResourceConfig")

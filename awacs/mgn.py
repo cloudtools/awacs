@@ -34,6 +34,7 @@ ChangeServerLifeCycleState = Action("ChangeServerLifeCycleState")
 CreateApplication = Action("CreateApplication")
 CreateConnector = Action("CreateConnector")
 CreateLaunchConfigurationTemplate = Action("CreateLaunchConfigurationTemplate")
+CreateNetworkMigrationDefinition = Action("CreateNetworkMigrationDefinition")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
 )
@@ -43,6 +44,7 @@ DeleteApplication = Action("DeleteApplication")
 DeleteConnector = Action("DeleteConnector")
 DeleteJob = Action("DeleteJob")
 DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
+DeleteNetworkMigrationDefinition = Action("DeleteNetworkMigrationDefinition")
 DeleteReplicationConfigurationTemplate = Action(
     "DeleteReplicationConfigurationTemplate"
 )
@@ -73,6 +75,10 @@ GetAgentRuntimeConfigurationForMgn = Action("GetAgentRuntimeConfigurationForMgn"
 GetAgentSnapshotCreditsForMgn = Action("GetAgentSnapshotCreditsForMgn")
 GetChannelCommandsForMgn = Action("GetChannelCommandsForMgn")
 GetLaunchConfiguration = Action("GetLaunchConfiguration")
+GetNetworkMigrationDefinition = Action("GetNetworkMigrationDefinition")
+GetNetworkMigrationMapperSegmentConstruct = Action(
+    "GetNetworkMigrationMapperSegmentConstruct"
+)
 GetReplicationConfiguration = Action("GetReplicationConfiguration")
 GetVcenterClientCommandsForMgn = Action("GetVcenterClientCommandsForMgn")
 InitializeService = Action("InitializeService")
@@ -84,6 +90,24 @@ ListExports = Action("ListExports")
 ListImportErrors = Action("ListImportErrors")
 ListImports = Action("ListImports")
 ListManagedAccounts = Action("ListManagedAccounts")
+ListNetworkMigrationAnalyses = Action("ListNetworkMigrationAnalyses")
+ListNetworkMigrationAnalysisResults = Action("ListNetworkMigrationAnalysisResults")
+ListNetworkMigrationCodeGenerationSegments = Action(
+    "ListNetworkMigrationCodeGenerationSegments"
+)
+ListNetworkMigrationCodeGenerations = Action("ListNetworkMigrationCodeGenerations")
+ListNetworkMigrationDefinitions = Action("ListNetworkMigrationDefinitions")
+ListNetworkMigrationDeployedStacks = Action("ListNetworkMigrationDeployedStacks")
+ListNetworkMigrationDeployedStacksDeletions = Action(
+    "ListNetworkMigrationDeployedStacksDeletions"
+)
+ListNetworkMigrationDeployments = Action("ListNetworkMigrationDeployments")
+ListNetworkMigrationExecutions = Action("ListNetworkMigrationExecutions")
+ListNetworkMigrationMapperSegmentConstructs = Action(
+    "ListNetworkMigrationMapperSegmentConstructs"
+)
+ListNetworkMigrationMapperSegments = Action("ListNetworkMigrationMapperSegments")
+ListNetworkMigrationMappings = Action("ListNetworkMigrationMappings")
 ListSourceServerActions = Action("ListSourceServerActions")
 ListTagsForResource = Action("ListTagsForResource")
 ListTemplateActions = Action("ListTemplateActions")
@@ -113,6 +137,13 @@ SendVcenterClientMetricsForMgn = Action("SendVcenterClientMetricsForMgn")
 StartCutover = Action("StartCutover")
 StartExport = Action("StartExport")
 StartImport = Action("StartImport")
+StartNetworkMigrationAnalysis = Action("StartNetworkMigrationAnalysis")
+StartNetworkMigrationCodeGeneration = Action("StartNetworkMigrationCodeGeneration")
+StartNetworkMigrationDeployedStacksDeletion = Action(
+    "StartNetworkMigrationDeployedStacksDeletion"
+)
+StartNetworkMigrationDeployment = Action("StartNetworkMigrationDeployment")
+StartNetworkMigrationMapping = Action("StartNetworkMigrationMapping")
 StartReplication = Action("StartReplication")
 StartTest = Action("StartTest")
 StopReplication = Action("StopReplication")
@@ -132,6 +163,11 @@ UpdateApplication = Action("UpdateApplication")
 UpdateConnector = Action("UpdateConnector")
 UpdateLaunchConfiguration = Action("UpdateLaunchConfiguration")
 UpdateLaunchConfigurationTemplate = Action("UpdateLaunchConfigurationTemplate")
+UpdateNetworkMigrationDefinition = Action("UpdateNetworkMigrationDefinition")
+UpdateNetworkMigrationMapperSegment = Action("UpdateNetworkMigrationMapperSegment")
+UpdateNetworkMigrationMapperSegmentConstruct = Action(
+    "UpdateNetworkMigrationMapperSegmentConstruct"
+)
 UpdateReplicationConfiguration = Action("UpdateReplicationConfiguration")
 UpdateReplicationConfigurationTemplate = Action(
     "UpdateReplicationConfigurationTemplate"

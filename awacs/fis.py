@@ -34,6 +34,7 @@ GetExperimentTargetAccountConfiguration = Action(
     "GetExperimentTargetAccountConfiguration"
 )
 GetExperimentTemplate = Action("GetExperimentTemplate")
+GetSafetyLever = Action("GetSafetyLever")
 GetTargetAccountConfiguration = Action("GetTargetAccountConfiguration")
 GetTargetResourceType = Action("GetTargetResourceType")
 InjectApiInternalError = Action("InjectApiInternalError")
@@ -54,4 +55,5 @@ StopExperiment = Action("StopExperiment")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateExperimentTemplate = Action("UpdateExperimentTemplate")
+UpdateSafetyLeverState = Action("UpdateSafetyLeverState")
 UpdateTargetAccountConfiguration = Action("UpdateTargetAccountConfiguration")

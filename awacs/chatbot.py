@@ -24,12 +24,15 @@ class ARN(BaseARN):
         )
 
 
+AssociateToConfiguration = Action("AssociateToConfiguration")
 CreateChimeWebhookConfiguration = Action("CreateChimeWebhookConfiguration")
+CreateCustomAction = Action("CreateCustomAction")
 CreateMicrosoftTeamsChannelConfiguration = Action(
     "CreateMicrosoftTeamsChannelConfiguration"
 )
 CreateSlackChannelConfiguration = Action("CreateSlackChannelConfiguration")
 DeleteChimeWebhookConfiguration = Action("DeleteChimeWebhookConfiguration")
+DeleteCustomAction = Action("DeleteCustomAction")
 DeleteMicrosoftTeamsChannelConfiguration = Action(
     "DeleteMicrosoftTeamsChannelConfiguration"
 )
@@ -43,19 +46,27 @@ DescribeSlackChannelConfigurations = Action("DescribeSlackChannelConfigurations"
 DescribeSlackChannels = Action("DescribeSlackChannels")
 DescribeSlackUserIdentities = Action("DescribeSlackUserIdentities")
 DescribeSlackWorkspaces = Action("DescribeSlackWorkspaces")
+DisassociateFromConfiguration = Action("DisassociateFromConfiguration")
 GetAccountPreferences = Action("GetAccountPreferences")
+GetCustomAction = Action("GetCustomAction")
 GetMicrosoftTeamsChannelConfiguration = Action("GetMicrosoftTeamsChannelConfiguration")
 GetMicrosoftTeamsOauthParameters = Action("GetMicrosoftTeamsOauthParameters")
 GetSlackOauthParameters = Action("GetSlackOauthParameters")
+ListAssociations = Action("ListAssociations")
+ListCustomActions = Action("ListCustomActions")
 ListMicrosoftTeamsChannelConfigurations = Action(
     "ListMicrosoftTeamsChannelConfigurations"
 )
 ListMicrosoftTeamsConfiguredTeams = Action("ListMicrosoftTeamsConfiguredTeams")
 ListMicrosoftTeamsUserIdentities = Action("ListMicrosoftTeamsUserIdentities")
+ListTagsForResource = Action("ListTagsForResource")
 RedeemMicrosoftTeamsOauthCode = Action("RedeemMicrosoftTeamsOauthCode")
 RedeemSlackOauthCode = Action("RedeemSlackOauthCode")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateAccountPreferences = Action("UpdateAccountPreferences")
 UpdateChimeWebhookConfiguration = Action("UpdateChimeWebhookConfiguration")
+UpdateCustomAction = Action("UpdateCustomAction")
 UpdateMicrosoftTeamsChannelConfiguration = Action(
     "UpdateMicrosoftTeamsChannelConfiguration"
 )

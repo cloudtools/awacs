@@ -24,28 +24,77 @@ class ARN(BaseARN):
         )
 
 
+CancelTrainedModel = Action("CancelTrainedModel")
+CancelTrainedModelInferenceJob = Action("CancelTrainedModelInferenceJob")
 CreateAudienceModel = Action("CreateAudienceModel")
 CreateConfiguredAudienceModel = Action("CreateConfiguredAudienceModel")
+CreateConfiguredModelAlgorithm = Action("CreateConfiguredModelAlgorithm")
+CreateConfiguredModelAlgorithmAssociation = Action(
+    "CreateConfiguredModelAlgorithmAssociation"
+)
+CreateMLInputChannel = Action("CreateMLInputChannel")
+CreateTrainedModel = Action("CreateTrainedModel")
 CreateTrainingDataset = Action("CreateTrainingDataset")
 DeleteAudienceGenerationJob = Action("DeleteAudienceGenerationJob")
 DeleteAudienceModel = Action("DeleteAudienceModel")
 DeleteConfiguredAudienceModel = Action("DeleteConfiguredAudienceModel")
 DeleteConfiguredAudienceModelPolicy = Action("DeleteConfiguredAudienceModelPolicy")
+DeleteConfiguredModelAlgorithm = Action("DeleteConfiguredModelAlgorithm")
+DeleteConfiguredModelAlgorithmAssociation = Action(
+    "DeleteConfiguredModelAlgorithmAssociation"
+)
+DeleteMLConfiguration = Action("DeleteMLConfiguration")
+DeleteMLInputChannelData = Action("DeleteMLInputChannelData")
+DeleteTrainedModelOutput = Action("DeleteTrainedModelOutput")
 DeleteTrainingDataset = Action("DeleteTrainingDataset")
 GetAudienceGenerationJob = Action("GetAudienceGenerationJob")
 GetAudienceModel = Action("GetAudienceModel")
+GetCollaborationConfiguredModelAlgorithmAssociation = Action(
+    "GetCollaborationConfiguredModelAlgorithmAssociation"
+)
+GetCollaborationMLInputChannel = Action("GetCollaborationMLInputChannel")
+GetCollaborationTrainedModel = Action("GetCollaborationTrainedModel")
 GetConfiguredAudienceModel = Action("GetConfiguredAudienceModel")
 GetConfiguredAudienceModelPolicy = Action("GetConfiguredAudienceModelPolicy")
+GetConfiguredModelAlgorithm = Action("GetConfiguredModelAlgorithm")
+GetConfiguredModelAlgorithmAssociation = Action(
+    "GetConfiguredModelAlgorithmAssociation"
+)
+GetMLConfiguration = Action("GetMLConfiguration")
+GetMLInputChannel = Action("GetMLInputChannel")
+GetTrainedModel = Action("GetTrainedModel")
+GetTrainedModelInferenceJob = Action("GetTrainedModelInferenceJob")
 GetTrainingDataset = Action("GetTrainingDataset")
 ListAudienceExportJobs = Action("ListAudienceExportJobs")
 ListAudienceGenerationJobs = Action("ListAudienceGenerationJobs")
 ListAudienceModels = Action("ListAudienceModels")
+ListCollaborationConfiguredModelAlgorithmAssociations = Action(
+    "ListCollaborationConfiguredModelAlgorithmAssociations"
+)
+ListCollaborationMLInputChannels = Action("ListCollaborationMLInputChannels")
+ListCollaborationTrainedModelExportJobs = Action(
+    "ListCollaborationTrainedModelExportJobs"
+)
+ListCollaborationTrainedModelInferenceJobs = Action(
+    "ListCollaborationTrainedModelInferenceJobs"
+)
+ListCollaborationTrainedModels = Action("ListCollaborationTrainedModels")
 ListConfiguredAudienceModels = Action("ListConfiguredAudienceModels")
+ListConfiguredModelAlgorithmAssociations = Action(
+    "ListConfiguredModelAlgorithmAssociations"
+)
+ListConfiguredModelAlgorithms = Action("ListConfiguredModelAlgorithms")
+ListMLInputChannels = Action("ListMLInputChannels")
 ListTagsForResource = Action("ListTagsForResource")
+ListTrainedModelInferenceJobs = Action("ListTrainedModelInferenceJobs")
+ListTrainedModels = Action("ListTrainedModels")
 ListTrainingDatasets = Action("ListTrainingDatasets")
 PutConfiguredAudienceModelPolicy = Action("PutConfiguredAudienceModelPolicy")
+PutMLConfiguration = Action("PutMLConfiguration")
 StartAudienceExportJob = Action("StartAudienceExportJob")
 StartAudienceGenerationJob = Action("StartAudienceGenerationJob")
+StartTrainedModelExportJob = Action("StartTrainedModelExportJob")
+StartTrainedModelInferenceJob = Action("StartTrainedModelInferenceJob")
 TagResource = Action("TagResource")
 UnTagResource = Action("UnTagResource")
 UpdateConfiguredAudienceModel = Action("UpdateConfiguredAudienceModel")
