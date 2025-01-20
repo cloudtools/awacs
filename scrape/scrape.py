@@ -65,6 +65,7 @@ IGNORED_SERVICE_ALIASES = {
     "Amazon Simple Email Service - Mail Manager": "ses",
     "AWS Cloud Control API": "cloudformation",
     "AWS Elastic Load Balancing V2": "elasticloadbalancing",
+    "AWS End User Messaging SMS and Voice V2": "sms-voice",
     "AWS IoT Greengrass V2": "greengrass",
     "AWS Marketplace Catalog": "aws-marketplace",
     "AWS Marketplace Deployment Service": "aws-marketplace",
@@ -74,6 +75,7 @@ IGNORED_SERVICE_ALIASES = {
     "AWS Marketplace Metering Service": "aws-marketplace",
     "AWS Marketplace Private Marketplace": "aws-marketplace",
     "AWS Marketplace Procurement Systems Integration": "aws-marketplace",
+    "AWS Marketplace Reporting": "aws-marketplace",
     "AWS Marketplace Seller Reporting": "aws-marketplace",
     "AWS Private Marketplace": "aws-marketplace",
 }
@@ -171,6 +173,10 @@ async def collect_service_info() -> Iterable[Tuple[str, httpx.Response]]:
         service_page_responses = await asyncio.gather(
             *[client.get(link) for link in service_links]
         )
+        for response in service_page_responses:
+            if response.status_code == 301:
+                service_page_responses.remove(response)
+                service_links.remove(response.url)
         return zip(service_links, service_page_responses)
 
 
@@ -211,11 +217,12 @@ async def write_service(
 
     for action in sorted(actions):
         action = action.strip()
+        action_name = action.replace("-", "")
         # Handle action such as "ReEncrypt*"
         if action[-1] == "*":
             action = action[:-1]
-        action_string = '{action} = Action("{action}")'
-        content.append(action_string.format(action=action))
+        action_string = '{action_name} = Action("{action}")'
+        content.append(action_string.format(action_name=action_name, action=action))
 
     if content[-1] != "":
         # Add a final newline
