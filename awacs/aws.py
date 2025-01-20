@@ -9,9 +9,9 @@ from typing import Any, Dict, List, Optional, Union
 from . import AWSHelperFn, AWSProperty
 
 try:
-    from typing import Literal  # type: ignore[attr-defined]
+    from typing import Literal
 except ImportError:
-    from typing_extensions import Literal
+    from typing_extensions import Literal  # type: ignore[assignment]
 
 # Policy effect constants.
 Allow = "Allow"
