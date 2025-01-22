@@ -1,3 +1,35 @@
+## 2.5.0 (2025-01-22)
+* Action Update 2024-01
+* Action Update 2024-02
+* Action Update 2024-03
+* Action Update 2024-04
+* Action Update 2024-05
+* Action Update 2024-06
+* Action Update 2024-07
+* Action Update 2024-08
+* Action Update 2024-09
+* Action Update 2024-10
+* Action Update 2024-11
+* Action Update 2024-12
+* Action Update 2024-13
+* Action Update 2024-14
+* Action Update 2024-15
+* Action Update 2024-16
+* Action Update 2024-17
+* Action Update 2024-18
+* Action Update 2024-19
+* Action Update 2024-20
+* Action Update 2024-21
+* Fix scrape action
+* Remove deprecated AWS service IoT1Click
+* Workaround mypy errors for now
+* Remove Python 3.7/3.8 (EOL) and add Python 3.12/3.13
+* Upgrade all of the scrape dependencies
+* Fixups for scrape.py (#272)
+* scrape: update actions and use Python 3.13
+* Action Update 2025-04
+* Switch to pytest and other version updates
+
 ## 2.4.1 (2023-12-22)
 * Action Update 2023-34
 * Action Update 2023-35
