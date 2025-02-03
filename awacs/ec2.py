@@ -705,6 +705,9 @@ ModifyInstanceEventWindow = Action("ModifyInstanceEventWindow")
 ModifyInstanceMaintenanceOptions = Action("ModifyInstanceMaintenanceOptions")
 ModifyInstanceMetadataDefaults = Action("ModifyInstanceMetadataDefaults")
 ModifyInstanceMetadataOptions = Action("ModifyInstanceMetadataOptions")
+ModifyInstanceNetworkPerformanceOptions = Action(
+    "ModifyInstanceNetworkPerformanceOptions"
+)
 ModifyInstancePlacement = Action("ModifyInstancePlacement")
 ModifyIpam = Action("ModifyIpam")
 ModifyIpamPool = Action("ModifyIpamPool")

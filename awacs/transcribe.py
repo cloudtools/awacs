@@ -42,6 +42,7 @@ DescribeLanguageModel = Action("DescribeLanguageModel")
 GetCallAnalyticsCategory = Action("GetCallAnalyticsCategory")
 GetCallAnalyticsJob = Action("GetCallAnalyticsJob")
 GetMedicalScribeJob = Action("GetMedicalScribeJob")
+GetMedicalScribeStream = Action("GetMedicalScribeStream")
 GetMedicalTranscriptionJob = Action("GetMedicalTranscriptionJob")
 GetMedicalVocabulary = Action("GetMedicalVocabulary")
 GetTranscriptionJob = Action("GetTranscriptionJob")
@@ -63,6 +64,7 @@ StartCallAnalyticsStreamTranscriptionWebSocket = Action(
     "StartCallAnalyticsStreamTranscriptionWebSocket"
 )
 StartMedicalScribeJob = Action("StartMedicalScribeJob")
+StartMedicalScribeStream = Action("StartMedicalScribeStream")
 StartMedicalStreamTranscription = Action("StartMedicalStreamTranscription")
 StartMedicalStreamTranscriptionWebSocket = Action(
     "StartMedicalStreamTranscriptionWebSocket"
