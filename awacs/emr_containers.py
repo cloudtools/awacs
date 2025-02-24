@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 CancelJobRun = Action("CancelJobRun")
+CreateCertificate = Action("CreateCertificate")
 CreateJobTemplate = Action("CreateJobTemplate")
 CreateManagedEndpoint = Action("CreateManagedEndpoint")
 CreateSecurityConfiguration = Action("CreateSecurityConfiguration")
