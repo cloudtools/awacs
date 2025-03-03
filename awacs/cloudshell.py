@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+ApproveCommand = Action("ApproveCommand")
 CreateEnvironment = Action("CreateEnvironment")
 CreateSession = Action("CreateSession")
 DeleteEnvironment = Action("DeleteEnvironment")
