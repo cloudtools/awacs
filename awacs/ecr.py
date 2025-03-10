@@ -52,6 +52,7 @@ DescribeRepositoryCreationTemplates = Action("DescribeRepositoryCreationTemplate
 GetAccountSetting = Action("GetAccountSetting")
 GetAuthorizationToken = Action("GetAuthorizationToken")
 GetDownloadUrlForLayer = Action("GetDownloadUrlForLayer")
+GetImageCopyStatus = Action("GetImageCopyStatus")
 GetLifecyclePolicy = Action("GetLifecyclePolicy")
 GetLifecyclePolicyPreview = Action("GetLifecyclePolicyPreview")
 GetRegistryPolicy = Action("GetRegistryPolicy")

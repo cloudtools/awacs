@@ -65,6 +65,7 @@ GetUserId = Action("GetUserId")
 GetUserPoolInfo = Action("GetUserPoolInfo")
 ImportExternalIdPCertificate = Action("ImportExternalIdPCertificate")
 IsMemberInGroup = Action("IsMemberInGroup")
+IsMemberInGroups = Action("IsMemberInGroups")
 ListBearerTokens = Action("ListBearerTokens")
 ListExternalIdPCertificates = Action("ListExternalIdPCertificates")
 ListExternalIdPConfigurationsForDirectory = Action(
