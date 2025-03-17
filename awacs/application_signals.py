@@ -27,6 +27,7 @@ class ARN(BaseARN):
 BatchGetServiceLevelObjectiveBudgetReport = Action(
     "BatchGetServiceLevelObjectiveBudgetReport"
 )
+BatchUpdateExclusionWindows = Action("BatchUpdateExclusionWindows")
 CreateServiceLevelObjective = Action("CreateServiceLevelObjective")
 DeleteServiceLevelObjective = Action("DeleteServiceLevelObjective")
 GetService = Action("GetService")
@@ -35,6 +36,9 @@ Link = Action("Link")
 ListObservedEntities = Action("ListObservedEntities")
 ListServiceDependencies = Action("ListServiceDependencies")
 ListServiceDependents = Action("ListServiceDependents")
+ListServiceLevelObjectiveExclusionWindows = Action(
+    "ListServiceLevelObjectiveExclusionWindows"
+)
 ListServiceLevelObjectives = Action("ListServiceLevelObjectives")
 ListServiceOperations = Action("ListServiceOperations")
 ListServices = Action("ListServices")
