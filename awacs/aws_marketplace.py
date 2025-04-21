@@ -57,6 +57,7 @@ DisassociateProductsFromPrivateMarketplace = Action(
     "DisassociateProductsFromPrivateMarketplace"
 )
 GetAgreementApprovalRequest = Action("GetAgreementApprovalRequest")
+GetAgreementEntitlements = Action("GetAgreementEntitlements")
 GetAgreementRequest = Action("GetAgreementRequest")
 GetAgreementTerms = Action("GetAgreementTerms")
 GetBuyerDashboard = Action("GetBuyerDashboard")
