@@ -25,6 +25,9 @@ class ARN(BaseARN):
 
 
 CancelConnection = Action("CancelConnection")
+DeleteConnectionRecordingPreferences = Action("DeleteConnectionRecordingPreferences")
 GetConnection = Action("GetConnection")
+GetConnectionRecordingPreferences = Action("GetConnectionRecordingPreferences")
 ListConnections = Action("ListConnections")
 StartConnection = Action("StartConnection")
+UpdateConnectionRecordingPreferences = Action("UpdateConnectionRecordingPreferences")
