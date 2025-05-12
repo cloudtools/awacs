@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon CloudWatch Network Monitor"
+service_name = "Amazon CloudWatch Network Synthetic Monitor"
 prefix = "networkmonitor"
 
 
