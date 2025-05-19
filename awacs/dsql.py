@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AddPeerCluster = Action("AddPeerCluster")
 CreateCluster = Action("CreateCluster")
 CreateMultiRegionClusters = Action("CreateMultiRegionClusters")
 DbConnect = Action("DbConnect")
@@ -34,6 +35,9 @@ GetCluster = Action("GetCluster")
 GetVpcEndpointServiceName = Action("GetVpcEndpointServiceName")
 ListClusters = Action("ListClusters")
 ListTagsForResource = Action("ListTagsForResource")
+PutMultiRegionProperties = Action("PutMultiRegionProperties")
+PutWitnessRegion = Action("PutWitnessRegion")
+RemovePeerCluster = Action("RemovePeerCluster")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateCluster = Action("UpdateCluster")

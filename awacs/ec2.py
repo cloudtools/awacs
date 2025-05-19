@@ -138,6 +138,10 @@ CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation = Action(
 CreateLocalGatewayRouteTableVpcAssociation = Action(
     "CreateLocalGatewayRouteTableVpcAssociation"
 )
+CreateLocalGatewayVirtualInterface = Action("CreateLocalGatewayVirtualInterface")
+CreateLocalGatewayVirtualInterfaceGroup = Action(
+    "CreateLocalGatewayVirtualInterfaceGroup"
+)
 CreateManagedPrefixList = Action("CreateManagedPrefixList")
 CreateNatGateway = Action("CreateNatGateway")
 CreateNetworkAcl = Action("CreateNetworkAcl")
@@ -234,6 +238,10 @@ DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation = Action(
 )
 DeleteLocalGatewayRouteTableVpcAssociation = Action(
     "DeleteLocalGatewayRouteTableVpcAssociation"
+)
+DeleteLocalGatewayVirtualInterface = Action("DeleteLocalGatewayVirtualInterface")
+DeleteLocalGatewayVirtualInterfaceGroup = Action(
+    "DeleteLocalGatewayVirtualInterfaceGroup"
 )
 DeleteManagedPrefixList = Action("DeleteManagedPrefixList")
 DeleteNatGateway = Action("DeleteNatGateway")
@@ -429,6 +437,7 @@ DescribeNetworkInsightsPaths = Action("DescribeNetworkInsightsPaths")
 DescribeNetworkInterfaceAttribute = Action("DescribeNetworkInterfaceAttribute")
 DescribeNetworkInterfacePermissions = Action("DescribeNetworkInterfacePermissions")
 DescribeNetworkInterfaces = Action("DescribeNetworkInterfaces")
+DescribeOutpostLags = Action("DescribeOutpostLags")
 DescribePlacementGroups = Action("DescribePlacementGroups")
 DescribePrefixLists = Action("DescribePrefixLists")
 DescribePrincipalIdFormat = Action("DescribePrincipalIdFormat")
@@ -451,6 +460,7 @@ DescribeSecurityGroupReferences = Action("DescribeSecurityGroupReferences")
 DescribeSecurityGroupRules = Action("DescribeSecurityGroupRules")
 DescribeSecurityGroupVpcAssociations = Action("DescribeSecurityGroupVpcAssociations")
 DescribeSecurityGroups = Action("DescribeSecurityGroups")
+DescribeServiceLinkVirtualInterfaces = Action("DescribeServiceLinkVirtualInterfaces")
 DescribeSnapshotAttribute = Action("DescribeSnapshotAttribute")
 DescribeSnapshotTierStatus = Action("DescribeSnapshotTierStatus")
 DescribeSnapshots = Action("DescribeSnapshots")
