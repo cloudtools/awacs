@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS IAM Identity Center (successor to AWS Single Sign-On) directory"
+service_name = "AWS IAM Identity Center directory"
 prefix = "sso-directory"
 
 
