@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AssociateServiceQuotaTemplate = Action("AssociateServiceQuotaTemplate")
+CreateSupportCase = Action("CreateSupportCase")
 DeleteServiceQuotaIncreaseRequestFromTemplate = Action(
     "DeleteServiceQuotaIncreaseRequestFromTemplate"
 )
