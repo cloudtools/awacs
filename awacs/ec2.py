@@ -107,6 +107,7 @@ CreateCoipPoolPermission = Action("CreateCoipPoolPermission")
 CreateCustomerGateway = Action("CreateCustomerGateway")
 CreateDefaultSubnet = Action("CreateDefaultSubnet")
 CreateDefaultVpc = Action("CreateDefaultVpc")
+CreateDelegateMacVolumeOwnershipTask = Action("CreateDelegateMacVolumeOwnershipTask")
 CreateDhcpOptions = Action("CreateDhcpOptions")
 CreateEgressOnlyInternetGateway = Action("CreateEgressOnlyInternetGateway")
 CreateFleet = Action("CreateFleet")
@@ -141,6 +142,9 @@ CreateLocalGatewayRouteTableVpcAssociation = Action(
 CreateLocalGatewayVirtualInterface = Action("CreateLocalGatewayVirtualInterface")
 CreateLocalGatewayVirtualInterfaceGroup = Action(
     "CreateLocalGatewayVirtualInterfaceGroup"
+)
+CreateMacSystemIntegrityProtectionModificationTask = Action(
+    "CreateMacSystemIntegrityProtectionModificationTask"
 )
 CreateManagedPrefixList = Action("CreateManagedPrefixList")
 CreateNatGateway = Action("CreateNatGateway")
@@ -424,6 +428,7 @@ DescribeLocalGatewayVirtualInterfaces = Action("DescribeLocalGatewayVirtualInter
 DescribeLocalGateways = Action("DescribeLocalGateways")
 DescribeLockedSnapshots = Action("DescribeLockedSnapshots")
 DescribeMacHosts = Action("DescribeMacHosts")
+DescribeMacModificationTasks = Action("DescribeMacModificationTasks")
 DescribeManagedPrefixLists = Action("DescribeManagedPrefixLists")
 DescribeMovingAddresses = Action("DescribeMovingAddresses")
 DescribeNatGateways = Action("DescribeNatGateways")
@@ -619,6 +624,7 @@ ExportTransitGatewayRoutes = Action("ExportTransitGatewayRoutes")
 ExportVerifiedAccessInstanceClientConfiguration = Action(
     "ExportVerifiedAccessInstanceClientConfiguration"
 )
+GetActiveVpnTunnelStatus = Action("GetActiveVpnTunnelStatus")
 GetAllowedImagesSettings = Action("GetAllowedImagesSettings")
 GetAssociatedEnclaveCertificateIamRoles = Action(
     "GetAssociatedEnclaveCertificateIamRoles"
@@ -745,6 +751,7 @@ ModifyLocalGatewayRoute = Action("ModifyLocalGatewayRoute")
 ModifyManagedPrefixList = Action("ModifyManagedPrefixList")
 ModifyNetworkInterfaceAttribute = Action("ModifyNetworkInterfaceAttribute")
 ModifyPrivateDnsNameOptions = Action("ModifyPrivateDnsNameOptions")
+ModifyPublicIpDnsNameOptions = Action("ModifyPublicIpDnsNameOptions")
 ModifyReservedInstances = Action("ModifyReservedInstances")
 ModifyRouteServer = Action("ModifyRouteServer")
 ModifySecurityGroupRules = Action("ModifySecurityGroupRules")
