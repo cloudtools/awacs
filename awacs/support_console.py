@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Control Catalog"
-prefix = "controlcatalog"
+service_name = "AWS Support Console"
+prefix = "support-console"
 
 
 class Action(BaseAction):
@@ -24,9 +24,14 @@ class ARN(BaseARN):
         )
 
 
-GetControl = Action("GetControl")
-ListCommonControls = Action("ListCommonControls")
-ListControlMappings = Action("ListControlMappings")
-ListControls = Action("ListControls")
-ListDomains = Action("ListDomains")
-ListObjectives = Action("ListObjectives")
+CheckSubscription = Action("CheckSubscription")
+CreateCaseDraft = Action("CreateCaseDraft")
+CreateContact = Action("CreateContact")
+DeleteCaseDraft = Action("DeleteCaseDraft")
+DescribeDynamicHelp = Action("DescribeDynamicHelp")
+GetAccountGovCloudEnabled = Action("GetAccountGovCloudEnabled")
+GetAccountState = Action("GetAccountState")
+GetBanner = Action("GetBanner")
+GetCaseDraft = Action("GetCaseDraft")
+GetQuestionnaire = Action("GetQuestionnaire")
+SaveFeedback = Action("SaveFeedback")
