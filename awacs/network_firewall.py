@@ -24,6 +24,10 @@ class ARN(BaseARN):
         )
 
 
+AcceptNetworkFirewallTransitGatewayAttachment = Action(
+    "AcceptNetworkFirewallTransitGatewayAttachment"
+)
+AssociateAvailabilityZones = Action("AssociateAvailabilityZones")
 AssociateFirewallPolicy = Action("AssociateFirewallPolicy")
 AssociateSubnets = Action("AssociateSubnets")
 CreateFirewall = Action("CreateFirewall")
@@ -33,6 +37,9 @@ CreateTLSInspectionConfiguration = Action("CreateTLSInspectionConfiguration")
 CreateVpcEndpointAssociation = Action("CreateVpcEndpointAssociation")
 DeleteFirewall = Action("DeleteFirewall")
 DeleteFirewallPolicy = Action("DeleteFirewallPolicy")
+DeleteNetworkFirewallTransitGatewayAttachment = Action(
+    "DeleteNetworkFirewallTransitGatewayAttachment"
+)
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
 DeleteRuleGroup = Action("DeleteRuleGroup")
 DeleteTLSInspectionConfiguration = Action("DeleteTLSInspectionConfiguration")
@@ -47,6 +54,7 @@ DescribeRuleGroup = Action("DescribeRuleGroup")
 DescribeRuleGroupMetadata = Action("DescribeRuleGroupMetadata")
 DescribeTLSInspectionConfiguration = Action("DescribeTLSInspectionConfiguration")
 DescribeVpcEndpointAssociation = Action("DescribeVpcEndpointAssociation")
+DisassociateAvailabilityZones = Action("DisassociateAvailabilityZones")
 DisassociateSubnets = Action("DisassociateSubnets")
 GetAnalysisReportResults = Action("GetAnalysisReportResults")
 ListAnalysisReports = Action("ListAnalysisReports")
@@ -59,11 +67,17 @@ ListTLSInspectionConfigurations = Action("ListTLSInspectionConfigurations")
 ListTagsForResource = Action("ListTagsForResource")
 ListVpcEndpointAssociations = Action("ListVpcEndpointAssociations")
 PutResourcePolicy = Action("PutResourcePolicy")
+RejectNetworkFirewallTransitGatewayAttachment = Action(
+    "RejectNetworkFirewallTransitGatewayAttachment"
+)
 StartAnalysisReport = Action("StartAnalysisReport")
 StartFlowCapture = Action("StartFlowCapture")
 StartFlowFlush = Action("StartFlowFlush")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateAvailabilityZoneChangeProtection = Action(
+    "UpdateAvailabilityZoneChangeProtection"
+)
 UpdateFirewallAnalysisSettings = Action("UpdateFirewallAnalysisSettings")
 UpdateFirewallDeleteProtection = Action("UpdateFirewallDeleteProtection")
 UpdateFirewallDescription = Action("UpdateFirewallDescription")
