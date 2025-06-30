@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AssociateViaAWSService = Action("AssociateViaAWSService")
 AssociateViaAWSServiceEventsAndStates = Action("AssociateViaAWSService-EventsAndStates")
 CreateAccessLogSubscription = Action("CreateAccessLogSubscription")
 CreateListener = Action("CreateListener")

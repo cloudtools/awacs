@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessAllEventLogs = Action("AccessAllEventLogs")
 AddInstanceFleet = Action("AddInstanceFleet")
 AddInstanceGroups = Action("AddInstanceGroups")
 AddJobFlowSteps = Action("AddJobFlowSteps")
