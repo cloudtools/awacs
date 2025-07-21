@@ -209,6 +209,12 @@ SubmitMultiRegionAccessPointRoutes = Action("SubmitMultiRegionAccessPointRoutes"
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateAccessGrantsLocation = Action("UpdateAccessGrantsLocation")
+UpdateBucketMetadataInventoryTableConfiguration = Action(
+    "UpdateBucketMetadataInventoryTableConfiguration"
+)
+UpdateBucketMetadataJournalTableConfiguration = Action(
+    "UpdateBucketMetadataJournalTableConfiguration"
+)
 UpdateJobPriority = Action("UpdateJobPriority")
 UpdateJobStatus = Action("UpdateJobStatus")
 UpdateStorageLensGroup = Action("UpdateStorageLensGroup")

@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Free Tier"
-prefix = "freetier"
+service_name = "AWS Shield network security director"
+prefix = "network-security-director"
 
 
 class Action(BaseAction):
@@ -24,10 +24,12 @@ class ARN(BaseARN):
         )
 
 
-GetAccountActivity = Action("GetAccountActivity")
-GetAccountPlanState = Action("GetAccountPlanState")
-GetFreeTierAlertPreference = Action("GetFreeTierAlertPreference")
-GetFreeTierUsage = Action("GetFreeTierUsage")
-ListAccountActivities = Action("ListAccountActivities")
-PutFreeTierAlertPreference = Action("PutFreeTierAlertPreference")
-UpgradeAccountPlan = Action("UpgradeAccountPlan")
+GetFinding = Action("GetFinding")
+GetNetworkSecurityScan = Action("GetNetworkSecurityScan")
+GetResource = Action("GetResource")
+ListFindings = Action("ListFindings")
+ListInsights = Action("ListInsights")
+ListRemediations = Action("ListRemediations")
+ListResources = Action("ListResources")
+StartNetworkSecurityScan = Action("StartNetworkSecurityScan")
+UpdateFinding = Action("UpdateFinding")

@@ -62,6 +62,7 @@ ListAllowedMultiRegionClusterUpdates = Action("ListAllowedMultiRegionClusterUpda
 ListAllowedNodeTypeUpdates = Action("ListAllowedNodeTypeUpdates")
 ListNodeTypeUpdates = Action("ListNodeTypeUpdates")
 ListTags = Action("ListTags")
+PauseMultiRegionClusterReplication = Action("PauseMultiRegionClusterReplication")
 PurchaseReservedNodesOffering = Action("PurchaseReservedNodesOffering")
 ResetParameterGroup = Action("ResetParameterGroup")
 TagResource = Action("TagResource")
