@@ -25,6 +25,12 @@ class ARN(BaseARN):
 
 
 AssociateMember = Action("AssociateMember")
+BatchAssociateCodeSecurityScanConfiguration = Action(
+    "BatchAssociateCodeSecurityScanConfiguration"
+)
+BatchDisassociateCodeSecurityScanConfiguration = Action(
+    "BatchDisassociateCodeSecurityScanConfiguration"
+)
 BatchGetAccountStatus = Action("BatchGetAccountStatus")
 BatchGetCodeSnippet = Action("BatchGetCodeSnippet")
 BatchGetFindingDetails = Action("BatchGetFindingDetails")
@@ -36,10 +42,14 @@ BatchUpdateMemberEc2DeepInspectionStatus = Action(
 CancelFindingsReport = Action("CancelFindingsReport")
 CancelSbomExport = Action("CancelSbomExport")
 CreateCisScanConfiguration = Action("CreateCisScanConfiguration")
+CreateCodeSecurityIntegration = Action("CreateCodeSecurityIntegration")
+CreateCodeSecurityScanConfiguration = Action("CreateCodeSecurityScanConfiguration")
 CreateFilter = Action("CreateFilter")
 CreateFindingsReport = Action("CreateFindingsReport")
 CreateSbomExport = Action("CreateSbomExport")
 DeleteCisScanConfiguration = Action("DeleteCisScanConfiguration")
+DeleteCodeSecurityIntegration = Action("DeleteCodeSecurityIntegration")
+DeleteCodeSecurityScanConfiguration = Action("DeleteCodeSecurityScanConfiguration")
 DeleteFilter = Action("DeleteFilter")
 DescribeOrganizationConfiguration = Action("DescribeOrganizationConfiguration")
 Disable = Action("Disable")
@@ -50,6 +60,9 @@ EnableDelegatedAdminAccount = Action("EnableDelegatedAdminAccount")
 GetCisScanReport = Action("GetCisScanReport")
 GetCisScanResultDetails = Action("GetCisScanResultDetails")
 GetClustersForImage = Action("GetClustersForImage")
+GetCodeSecurityIntegration = Action("GetCodeSecurityIntegration")
+GetCodeSecurityScan = Action("GetCodeSecurityScan")
+GetCodeSecurityScanConfiguration = Action("GetCodeSecurityScanConfiguration")
 GetConfiguration = Action("GetConfiguration")
 GetDelegatedAdminAccount = Action("GetDelegatedAdminAccount")
 GetEc2DeepInspectionConfiguration = Action("GetEc2DeepInspectionConfiguration")
@@ -64,6 +77,11 @@ ListCisScanResultsAggregatedByTargetResource = Action(
     "ListCisScanResultsAggregatedByTargetResource"
 )
 ListCisScans = Action("ListCisScans")
+ListCodeSecurityIntegrations = Action("ListCodeSecurityIntegrations")
+ListCodeSecurityScanConfigurationAssociations = Action(
+    "ListCodeSecurityScanConfigurationAssociations"
+)
+ListCodeSecurityScanConfigurations = Action("ListCodeSecurityScanConfigurations")
 ListCoverage = Action("ListCoverage")
 ListCoverageStatistics = Action("ListCoverageStatistics")
 ListDelegatedAdminAccounts = Action("ListDelegatedAdminAccounts")
@@ -78,10 +96,13 @@ SearchVulnerabilities = Action("SearchVulnerabilities")
 SendCisSessionHealth = Action("SendCisSessionHealth")
 SendCisSessionTelemetry = Action("SendCisSessionTelemetry")
 StartCisSession = Action("StartCisSession")
+StartCodeSecurityScan = Action("StartCodeSecurityScan")
 StopCisSession = Action("StopCisSession")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateCisScanConfiguration = Action("UpdateCisScanConfiguration")
+UpdateCodeSecurityIntegration = Action("UpdateCodeSecurityIntegration")
+UpdateCodeSecurityScanConfiguration = Action("UpdateCodeSecurityScanConfiguration")
 UpdateConfiguration = Action("UpdateConfiguration")
 UpdateEc2DeepInspectionConfiguration = Action("UpdateEc2DeepInspectionConfiguration")
 UpdateEncryptionKey = Action("UpdateEncryptionKey")

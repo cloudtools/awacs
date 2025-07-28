@@ -341,6 +341,8 @@ DescribeCapacityBlockExtensionOfferings = Action(
     "DescribeCapacityBlockExtensionOfferings"
 )
 DescribeCapacityBlockOfferings = Action("DescribeCapacityBlockOfferings")
+DescribeCapacityBlockStatus = Action("DescribeCapacityBlockStatus")
+DescribeCapacityBlocks = Action("DescribeCapacityBlocks")
 DescribeCapacityReservationBillingRequests = Action(
     "DescribeCapacityReservationBillingRequests"
 )

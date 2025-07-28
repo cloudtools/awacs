@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AccessInteractiveEndpoints = Action("AccessInteractiveEndpoints")
 AccessLivyEndpoints = Action("AccessLivyEndpoints")
+AccessSystemProfileLogs = Action("AccessSystemProfileLogs")
 CancelJobRun = Action("CancelJobRun")
 CreateApplication = Action("CreateApplication")
 DeleteApplication = Action("DeleteApplication")
