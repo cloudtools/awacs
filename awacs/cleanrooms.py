@@ -125,11 +125,13 @@ UpdateConfiguredAudienceModelAssociation = Action(
     "UpdateConfiguredAudienceModelAssociation"
 )
 UpdateConfiguredTable = Action("UpdateConfiguredTable")
+UpdateConfiguredTableAllowedColumns = Action("UpdateConfiguredTableAllowedColumns")
 UpdateConfiguredTableAnalysisRule = Action("UpdateConfiguredTableAnalysisRule")
 UpdateConfiguredTableAssociation = Action("UpdateConfiguredTableAssociation")
 UpdateConfiguredTableAssociationAnalysisRule = Action(
     "UpdateConfiguredTableAssociationAnalysisRule"
 )
+UpdateConfiguredTableReference = Action("UpdateConfiguredTableReference")
 UpdateIdMappingTable = Action("UpdateIdMappingTable")
 UpdateIdNamespaceAssociation = Action("UpdateIdNamespaceAssociation")
 UpdateMembership = Action("UpdateMembership")

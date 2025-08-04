@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 ActivateEventSource = Action("ActivateEventSource")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 CancelReplay = Action("CancelReplay")
 CreateApiDestination = Action("CreateApiDestination")
 CreateArchive = Action("CreateArchive")
