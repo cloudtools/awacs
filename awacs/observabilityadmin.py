@@ -24,12 +24,21 @@ class ARN(BaseARN):
         )
 
 
+CreateTelemetryRule = Action("CreateTelemetryRule")
+CreateTelemetryRuleForOrganization = Action("CreateTelemetryRuleForOrganization")
+DeleteTelemetryRule = Action("DeleteTelemetryRule")
+DeleteTelemetryRuleForOrganization = Action("DeleteTelemetryRuleForOrganization")
 GetTelemetryEvaluationStatus = Action("GetTelemetryEvaluationStatus")
 GetTelemetryEvaluationStatusForOrganization = Action(
     "GetTelemetryEvaluationStatusForOrganization"
 )
+GetTelemetryRule = Action("GetTelemetryRule")
+GetTelemetryRuleForOrganization = Action("GetTelemetryRuleForOrganization")
 ListResourceTelemetry = Action("ListResourceTelemetry")
 ListResourceTelemetryForOrganization = Action("ListResourceTelemetryForOrganization")
+ListTagsForResource = Action("ListTagsForResource")
+ListTelemetryRules = Action("ListTelemetryRules")
+ListTelemetryRulesForOrganization = Action("ListTelemetryRulesForOrganization")
 StartTelemetryEvaluation = Action("StartTelemetryEvaluation")
 StartTelemetryEvaluationForOrganization = Action(
     "StartTelemetryEvaluationForOrganization"
@@ -38,3 +47,7 @@ StopTelemetryEvaluation = Action("StopTelemetryEvaluation")
 StopTelemetryEvaluationForOrganization = Action(
     "StopTelemetryEvaluationForOrganization"
 )
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateTelemetryRule = Action("UpdateTelemetryRule")
+UpdateTelemetryRuleForOrganization = Action("UpdateTelemetryRuleForOrganization")

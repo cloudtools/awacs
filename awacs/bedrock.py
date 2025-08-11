@@ -31,10 +31,18 @@ AssociateAgentKnowledgeBase = Action("AssociateAgentKnowledgeBase")
 AssociateThirdPartyKnowledgeBase = Action("AssociateThirdPartyKnowledgeBase")
 BatchDeleteEvaluationJob = Action("BatchDeleteEvaluationJob")
 CallWithBearerToken = Action("CallWithBearerToken")
+CancelAutomatedReasoningPolicyBuildWorkflow = Action(
+    "CancelAutomatedReasoningPolicyBuildWorkflow"
+)
 CreateAgent = Action("CreateAgent")
 CreateAgentActionGroup = Action("CreateAgentActionGroup")
 CreateAgentAlias = Action("CreateAgentAlias")
 CreateAgentDraftSnapshot = Action("CreateAgentDraftSnapshot")
+CreateAutomatedReasoningPolicy = Action("CreateAutomatedReasoningPolicy")
+CreateAutomatedReasoningPolicyTestCase = Action(
+    "CreateAutomatedReasoningPolicyTestCase"
+)
+CreateAutomatedReasoningPolicyVersion = Action("CreateAutomatedReasoningPolicyVersion")
 CreateBlueprint = Action("CreateBlueprint")
 CreateBlueprintVersion = Action("CreateBlueprintVersion")
 CreateCustomModel = Action("CreateCustomModel")
@@ -67,6 +75,13 @@ DeleteAgentActionGroup = Action("DeleteAgentActionGroup")
 DeleteAgentAlias = Action("DeleteAgentAlias")
 DeleteAgentMemory = Action("DeleteAgentMemory")
 DeleteAgentVersion = Action("DeleteAgentVersion")
+DeleteAutomatedReasoningPolicy = Action("DeleteAutomatedReasoningPolicy")
+DeleteAutomatedReasoningPolicyBuildWorkflow = Action(
+    "DeleteAutomatedReasoningPolicyBuildWorkflow"
+)
+DeleteAutomatedReasoningPolicyTestCase = Action(
+    "DeleteAutomatedReasoningPolicyTestCase"
+)
 DeleteBlueprint = Action("DeleteBlueprint")
 DeleteCustomModel = Action("DeleteCustomModel")
 DeleteCustomModelDeployment = Action("DeleteCustomModelDeployment")
@@ -96,6 +111,7 @@ DetectGeneratedContent = Action("DetectGeneratedContent")
 DisassociateAgentCollaborator = Action("DisassociateAgentCollaborator")
 DisassociateAgentKnowledgeBase = Action("DisassociateAgentKnowledgeBase")
 EndSession = Action("EndSession")
+ExportAutomatedReasoningPolicyVersion = Action("ExportAutomatedReasoningPolicyVersion")
 GenerateQuery = Action("GenerateQuery")
 GetAgent = Action("GetAgent")
 GetAgentActionGroup = Action("GetAgentActionGroup")
@@ -105,6 +121,21 @@ GetAgentKnowledgeBase = Action("GetAgentKnowledgeBase")
 GetAgentMemory = Action("GetAgentMemory")
 GetAgentVersion = Action("GetAgentVersion")
 GetAsyncInvoke = Action("GetAsyncInvoke")
+GetAutomatedReasoningPolicy = Action("GetAutomatedReasoningPolicy")
+GetAutomatedReasoningPolicyAnnotations = Action(
+    "GetAutomatedReasoningPolicyAnnotations"
+)
+GetAutomatedReasoningPolicyBuildWorkflow = Action(
+    "GetAutomatedReasoningPolicyBuildWorkflow"
+)
+GetAutomatedReasoningPolicyBuildWorkflowResultAssets = Action(
+    "GetAutomatedReasoningPolicyBuildWorkflowResultAssets"
+)
+GetAutomatedReasoningPolicyNextScenario = Action(
+    "GetAutomatedReasoningPolicyNextScenario"
+)
+GetAutomatedReasoningPolicyTestCase = Action("GetAutomatedReasoningPolicyTestCase")
+GetAutomatedReasoningPolicyTestResult = Action("GetAutomatedReasoningPolicyTestResult")
 GetBlueprint = Action("GetBlueprint")
 GetBlueprintRecommendation = Action("GetBlueprintRecommendation")
 GetCustomModel = Action("GetCustomModel")
@@ -144,6 +175,7 @@ GetSession = Action("GetSession")
 GetUseCaseForModelAccess = Action("GetUseCaseForModelAccess")
 IngestKnowledgeBaseDocuments = Action("IngestKnowledgeBaseDocuments")
 InvokeAgent = Action("InvokeAgent")
+InvokeAutomatedReasoningPolicy = Action("InvokeAutomatedReasoningPolicy")
 InvokeBlueprintRecommendationAsync = Action("InvokeBlueprintRecommendationAsync")
 InvokeBuilder = Action("InvokeBuilder")
 InvokeDataAutomationAsync = Action("InvokeDataAutomationAsync")
@@ -158,6 +190,14 @@ ListAgentKnowledgeBases = Action("ListAgentKnowledgeBases")
 ListAgentVersions = Action("ListAgentVersions")
 ListAgents = Action("ListAgents")
 ListAsyncInvokes = Action("ListAsyncInvokes")
+ListAutomatedReasoningPolicies = Action("ListAutomatedReasoningPolicies")
+ListAutomatedReasoningPolicyBuildWorkflows = Action(
+    "ListAutomatedReasoningPolicyBuildWorkflows"
+)
+ListAutomatedReasoningPolicyTestCases = Action("ListAutomatedReasoningPolicyTestCases")
+ListAutomatedReasoningPolicyTestResults = Action(
+    "ListAutomatedReasoningPolicyTestResults"
+)
 ListBlueprints = Action("ListBlueprints")
 ListCustomModelDeployments = Action("ListCustomModelDeployments")
 ListCustomModels = Action("ListCustomModels")
@@ -206,6 +246,12 @@ RenderPrompt = Action("RenderPrompt")
 Rerank = Action("Rerank")
 Retrieve = Action("Retrieve")
 RetrieveAndGenerate = Action("RetrieveAndGenerate")
+StartAutomatedReasoningPolicyBuildWorkflow = Action(
+    "StartAutomatedReasoningPolicyBuildWorkflow"
+)
+StartAutomatedReasoningPolicyTestWorkflow = Action(
+    "StartAutomatedReasoningPolicyTestWorkflow"
+)
 StartFlowExecution = Action("StartFlowExecution")
 StartIngestionJob = Action("StartIngestionJob")
 StopEvaluationJob = Action("StopEvaluationJob")
@@ -220,6 +266,13 @@ UpdateAgentActionGroup = Action("UpdateAgentActionGroup")
 UpdateAgentAlias = Action("UpdateAgentAlias")
 UpdateAgentCollaborator = Action("UpdateAgentCollaborator")
 UpdateAgentKnowledgeBase = Action("UpdateAgentKnowledgeBase")
+UpdateAutomatedReasoningPolicy = Action("UpdateAutomatedReasoningPolicy")
+UpdateAutomatedReasoningPolicyAnnotations = Action(
+    "UpdateAutomatedReasoningPolicyAnnotations"
+)
+UpdateAutomatedReasoningPolicyTestCase = Action(
+    "UpdateAutomatedReasoningPolicyTestCase"
+)
 UpdateBlueprint = Action("UpdateBlueprint")
 UpdateDataAutomationProject = Action("UpdateDataAutomationProject")
 UpdateDataSource = Action("UpdateDataSource")
