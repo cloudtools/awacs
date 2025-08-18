@@ -8,10 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = (
-    "AWS Service for managing AWS Management Console user experience capabilities."
-)
-prefix = "uxc"
+service_name = "AWS Billing And Cost Management Recommended Actions"
+prefix = "bcm-recommended-actions"
 
 
 class Action(BaseAction):
@@ -26,6 +24,4 @@ class ARN(BaseARN):
         )
 
 
-DeleteAccountColor = Action("DeleteAccountColor")
-GetAccountColor = Action("GetAccountColor")
-PutAccountColor = Action("PutAccountColor")
+ListRecommendedActions = Action("ListRecommendedActions")
