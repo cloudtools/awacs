@@ -25,15 +25,24 @@ class ARN(BaseARN):
 
 
 AssociateWhatsAppBusinessAccount = Action("AssociateWhatsAppBusinessAccount")
+CreateWhatsAppMessageTemplate = Action("CreateWhatsAppMessageTemplate")
+CreateWhatsAppMessageTemplateFromLibrary = Action(
+    "CreateWhatsAppMessageTemplateFromLibrary"
+)
+CreateWhatsAppMessageTemplateMedia = Action("CreateWhatsAppMessageTemplateMedia")
 DeleteWhatsAppMessageMedia = Action("DeleteWhatsAppMessageMedia")
+DeleteWhatsAppMessageTemplate = Action("DeleteWhatsAppMessageTemplate")
 DisassociateWhatsAppBusinessAccount = Action("DisassociateWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccount = Action("GetLinkedWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccountPhoneNumber = Action(
     "GetLinkedWhatsAppBusinessAccountPhoneNumber"
 )
 GetWhatsAppMessageMedia = Action("GetWhatsAppMessageMedia")
+GetWhatsAppMessageTemplate = Action("GetWhatsAppMessageTemplate")
 ListLinkedWhatsAppBusinessAccounts = Action("ListLinkedWhatsAppBusinessAccounts")
 ListTagsForResource = Action("ListTagsForResource")
+ListWhatsAppMessageTemplates = Action("ListWhatsAppMessageTemplates")
+ListWhatsAppTemplateLibrary = Action("ListWhatsAppTemplateLibrary")
 PostWhatsAppMessageMedia = Action("PostWhatsAppMessageMedia")
 PutWhatsAppBusinessAccountEventDestinations = Action(
     "PutWhatsAppBusinessAccountEventDestinations"
@@ -41,3 +50,4 @@ PutWhatsAppBusinessAccountEventDestinations = Action(
 SendWhatsAppMessage = Action("SendWhatsAppMessage")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateWhatsAppMessageTemplate = Action("UpdateWhatsAppMessageTemplate")
