@@ -29,6 +29,7 @@ BatchGetSchema = Action("BatchGetSchema")
 BatchGetSchemaAnalysisRule = Action("BatchGetSchemaAnalysisRule")
 CreateAnalysisTemplate = Action("CreateAnalysisTemplate")
 CreateCollaboration = Action("CreateCollaboration")
+CreateCollaborationChangeRequest = Action("CreateCollaborationChangeRequest")
 CreateConfiguredAudienceModelAssociation = Action(
     "CreateConfiguredAudienceModelAssociation"
 )
@@ -61,6 +62,7 @@ DeletePrivacyBudgetTemplate = Action("DeletePrivacyBudgetTemplate")
 GetAnalysisTemplate = Action("GetAnalysisTemplate")
 GetCollaboration = Action("GetCollaboration")
 GetCollaborationAnalysisTemplate = Action("GetCollaborationAnalysisTemplate")
+GetCollaborationChangeRequest = Action("GetCollaborationChangeRequest")
 GetCollaborationConfiguredAudienceModelAssociation = Action(
     "GetCollaborationConfiguredAudienceModelAssociation"
 )
@@ -85,6 +87,7 @@ GetSchema = Action("GetSchema")
 GetSchemaAnalysisRule = Action("GetSchemaAnalysisRule")
 ListAnalysisTemplates = Action("ListAnalysisTemplates")
 ListCollaborationAnalysisTemplates = Action("ListCollaborationAnalysisTemplates")
+ListCollaborationChangeRequests = Action("ListCollaborationChangeRequests")
 ListCollaborationConfiguredAudienceModelAssociations = Action(
     "ListCollaborationConfiguredAudienceModelAssociations"
 )

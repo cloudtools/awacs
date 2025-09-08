@@ -31,6 +31,7 @@ AssociateManagedNotificationAccountContact = Action(
 AssociateManagedNotificationAdditionalChannel = Action(
     "AssociateManagedNotificationAdditionalChannel"
 )
+AssociateOrganizationalUnit = Action("AssociateOrganizationalUnit")
 CreateEventRule = Action("CreateEventRule")
 CreateNotificationConfiguration = Action("CreateNotificationConfiguration")
 DeleteEventRule = Action("DeleteEventRule")
@@ -46,6 +47,7 @@ DisassociateManagedNotificationAccountContact = Action(
 DisassociateManagedNotificationAdditionalChannel = Action(
     "DisassociateManagedNotificationAdditionalChannel"
 )
+DisassociateOrganizationalUnit = Action("DisassociateOrganizationalUnit")
 EnableNotificationsAccessForOrganization = Action(
     "EnableNotificationsAccessForOrganization"
 )
@@ -65,9 +67,11 @@ ListManagedNotificationChannelAssociations = Action(
 ListManagedNotificationChildEvents = Action("ListManagedNotificationChildEvents")
 ListManagedNotificationConfigurations = Action("ListManagedNotificationConfigurations")
 ListManagedNotificationEvents = Action("ListManagedNotificationEvents")
+ListMemberAccounts = Action("ListMemberAccounts")
 ListNotificationConfigurations = Action("ListNotificationConfigurations")
 ListNotificationEvents = Action("ListNotificationEvents")
 ListNotificationHubs = Action("ListNotificationHubs")
+ListOrganizationalUnits = Action("ListOrganizationalUnits")
 ListTagsForResource = Action("ListTagsForResource")
 PutFeatureOptInStatus = Action("PutFeatureOptInStatus")
 RegisterNotificationHub = Action("RegisterNotificationHub")
