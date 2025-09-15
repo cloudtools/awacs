@@ -26,8 +26,13 @@ class ARN(BaseARN):
 
 AssociateConnectorResource = Action("AssociateConnectorResource")
 CreateProfile = Action("CreateProfile")
+DeleteConnector = Action("DeleteConnector")
 DeleteProfile = Action("DeleteProfile")
 GetConnector = Action("GetConnector")
+ListConnectors = Action("ListConnectors")
 ListProfiles = Action("ListProfiles")
+ListTagsForResource = Action("ListTagsForResource")
 RejectConnector = Action("RejectConnector")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
 UpdateProfile = Action("UpdateProfile")
