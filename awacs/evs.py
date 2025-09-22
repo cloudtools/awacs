@@ -24,10 +24,12 @@ class ARN(BaseARN):
         )
 
 
+AssociateEipToVlan = Action("AssociateEipToVlan")
 CreateEnvironment = Action("CreateEnvironment")
 CreateEnvironmentHost = Action("CreateEnvironmentHost")
 DeleteEnvironment = Action("DeleteEnvironment")
 DeleteEnvironmentHost = Action("DeleteEnvironmentHost")
+DisassociateEipFromVlan = Action("DisassociateEipFromVlan")
 GetEnvironment = Action("GetEnvironment")
 ListEnvironmentHosts = Action("ListEnvironmentHosts")
 ListEnvironmentVlans = Action("ListEnvironmentVlans")

@@ -34,6 +34,7 @@ CallWithBearerToken = Action("CallWithBearerToken")
 CancelAutomatedReasoningPolicyBuildWorkflow = Action(
     "CancelAutomatedReasoningPolicyBuildWorkflow"
 )
+CountTokens = Action("CountTokens")
 CreateAgent = Action("CreateAgent")
 CreateAgentActionGroup = Action("CreateAgentActionGroup")
 CreateAgentAlias = Action("CreateAgentAlias")

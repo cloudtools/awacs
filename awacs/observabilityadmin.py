@@ -24,30 +24,46 @@ class ARN(BaseARN):
         )
 
 
+CreateCentralizationRuleForOrganization = Action(
+    "CreateCentralizationRuleForOrganization"
+)
 CreateTelemetryRule = Action("CreateTelemetryRule")
 CreateTelemetryRuleForOrganization = Action("CreateTelemetryRuleForOrganization")
+DeleteCentralizationRuleForOrganization = Action(
+    "DeleteCentralizationRuleForOrganization"
+)
 DeleteTelemetryRule = Action("DeleteTelemetryRule")
 DeleteTelemetryRuleForOrganization = Action("DeleteTelemetryRuleForOrganization")
+GetCentralizationRuleForOrganization = Action("GetCentralizationRuleForOrganization")
+GetTelemetryEnrichmentStatus = Action("GetTelemetryEnrichmentStatus")
 GetTelemetryEvaluationStatus = Action("GetTelemetryEvaluationStatus")
 GetTelemetryEvaluationStatusForOrganization = Action(
     "GetTelemetryEvaluationStatusForOrganization"
 )
 GetTelemetryRule = Action("GetTelemetryRule")
 GetTelemetryRuleForOrganization = Action("GetTelemetryRuleForOrganization")
+ListCentralizationRulesForOrganization = Action(
+    "ListCentralizationRulesForOrganization"
+)
 ListResourceTelemetry = Action("ListResourceTelemetry")
 ListResourceTelemetryForOrganization = Action("ListResourceTelemetryForOrganization")
 ListTagsForResource = Action("ListTagsForResource")
 ListTelemetryRules = Action("ListTelemetryRules")
 ListTelemetryRulesForOrganization = Action("ListTelemetryRulesForOrganization")
+StartTelemetryEnrichment = Action("StartTelemetryEnrichment")
 StartTelemetryEvaluation = Action("StartTelemetryEvaluation")
 StartTelemetryEvaluationForOrganization = Action(
     "StartTelemetryEvaluationForOrganization"
 )
+StopTelemetryEnrichment = Action("StopTelemetryEnrichment")
 StopTelemetryEvaluation = Action("StopTelemetryEvaluation")
 StopTelemetryEvaluationForOrganization = Action(
     "StopTelemetryEvaluationForOrganization"
 )
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateCentralizationRuleForOrganization = Action(
+    "UpdateCentralizationRuleForOrganization"
+)
 UpdateTelemetryRule = Action("UpdateTelemetryRule")
 UpdateTelemetryRuleForOrganization = Action("UpdateTelemetryRuleForOrganization")
