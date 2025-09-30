@@ -11,7 +11,7 @@ from . import AWSHelperFn, AWSProperty
 try:
     from typing import Literal
 except ImportError:
-    from typing_extensions import Literal  # type: ignore[assignment]
+    from typing_extensions import Literal
 
 # Policy effect constants.
 Allow = "Allow"
