@@ -25,3 +25,5 @@ class ARN(BaseARN):
 
 
 CreateTokenWithIAM = Action("CreateTokenWithIAM")
+IntrospectTokenWithIAM = Action("IntrospectTokenWithIAM")
+RevokeTokenWithIAM = Action("RevokeTokenWithIAM")

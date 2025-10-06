@@ -24,9 +24,11 @@ class ARN(BaseARN):
         )
 
 
+AssociateSourceViews = Action("AssociateSourceViews")
 CreateBillingView = Action("CreateBillingView")
 DeleteBillingView = Action("DeleteBillingView")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
+DisassociateSourceViews = Action("DisassociateSourceViews")
 GetBillingData = Action("GetBillingData")
 GetBillingDetails = Action("GetBillingDetails")
 GetBillingNotifications = Action("GetBillingNotifications")
@@ -49,3 +51,4 @@ UntagResource = Action("UntagResource")
 UpdateBillingPreferences = Action("UpdateBillingPreferences")
 UpdateBillingView = Action("UpdateBillingView")
 UpdateIAMAccessPreference = Action("UpdateIAMAccessPreference")
+UseSourceView = Action("UseSourceView")
