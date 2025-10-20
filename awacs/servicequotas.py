@@ -32,6 +32,7 @@ DeleteServiceQuotaIncreaseRequestFromTemplate = Action(
 DisassociateServiceQuotaTemplate = Action("DisassociateServiceQuotaTemplate")
 GetAWSDefaultServiceQuota = Action("GetAWSDefaultServiceQuota")
 GetAssociationForServiceQuotaTemplate = Action("GetAssociationForServiceQuotaTemplate")
+GetAutoManagementConfiguration = Action("GetAutoManagementConfiguration")
 GetRequestedServiceQuotaChange = Action("GetRequestedServiceQuotaChange")
 GetServiceQuota = Action("GetServiceQuota")
 GetServiceQuotaIncreaseRequestFromTemplate = Action(
@@ -54,5 +55,8 @@ PutServiceQuotaIncreaseRequestIntoTemplate = Action(
     "PutServiceQuotaIncreaseRequestIntoTemplate"
 )
 RequestServiceQuotaIncrease = Action("RequestServiceQuotaIncrease")
+StartAutoManagement = Action("StartAutoManagement")
+StopAutoManagement = Action("StopAutoManagement")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateAutoManagement = Action("UpdateAutoManagement")
