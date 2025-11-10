@@ -27,6 +27,7 @@ class ARN(BaseARN):
 AddListenerCertificates = Action("AddListenerCertificates")
 AddTags = Action("AddTags")
 AddTrustStoreRevocations = Action("AddTrustStoreRevocations")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 ApplySecurityGroupsToLoadBalancer = Action("ApplySecurityGroupsToLoadBalancer")
 AttachLoadBalancerToSubnets = Action("AttachLoadBalancerToSubnets")
 ConfigureHealthCheck = Action("ConfigureHealthCheck")

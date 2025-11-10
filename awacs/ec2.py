@@ -95,6 +95,8 @@ ConfirmProductInstance = Action("ConfirmProductInstance")
 CopyFpgaImage = Action("CopyFpgaImage")
 CopyImage = Action("CopyImage")
 CopySnapshot = Action("CopySnapshot")
+CopyVolumes = Action("CopyVolumes")
+CreateCapacityManagerDataExport = Action("CreateCapacityManagerDataExport")
 CreateCapacityReservation = Action("CreateCapacityReservation")
 CreateCapacityReservationBySplitting = Action("CreateCapacityReservationBySplitting")
 CreateCapacityReservationFleet = Action("CreateCapacityReservationFleet")
@@ -208,6 +210,7 @@ CreateVpcPeeringConnection = Action("CreateVpcPeeringConnection")
 CreateVpnConnection = Action("CreateVpnConnection")
 CreateVpnConnectionRoute = Action("CreateVpnConnectionRoute")
 CreateVpnGateway = Action("CreateVpnGateway")
+DeleteCapacityManagerDataExport = Action("DeleteCapacityManagerDataExport")
 DeleteCarrierGateway = Action("DeleteCarrierGateway")
 DeleteClientVpnEndpoint = Action("DeleteClientVpnEndpoint")
 DeleteClientVpnRoute = Action("DeleteClientVpnRoute")
@@ -345,6 +348,7 @@ DescribeCapacityBlockExtensionOfferings = Action(
 DescribeCapacityBlockOfferings = Action("DescribeCapacityBlockOfferings")
 DescribeCapacityBlockStatus = Action("DescribeCapacityBlockStatus")
 DescribeCapacityBlocks = Action("DescribeCapacityBlocks")
+DescribeCapacityManagerDataExports = Action("DescribeCapacityManagerDataExports")
 DescribeCapacityReservationBillingRequests = Action(
     "DescribeCapacityReservationBillingRequests"
 )
@@ -554,6 +558,7 @@ DisableAllowedImagesSettings = Action("DisableAllowedImagesSettings")
 DisableAwsNetworkPerformanceMetricSubscription = Action(
     "DisableAwsNetworkPerformanceMetricSubscription"
 )
+DisableCapacityManager = Action("DisableCapacityManager")
 DisableEbsEncryptionByDefault = Action("DisableEbsEncryptionByDefault")
 DisableFastLaunch = Action("DisableFastLaunch")
 DisableFastSnapshotRestores = Action("DisableFastSnapshotRestores")
@@ -601,6 +606,7 @@ EnableAllowedImagesSettings = Action("EnableAllowedImagesSettings")
 EnableAwsNetworkPerformanceMetricSubscription = Action(
     "EnableAwsNetworkPerformanceMetricSubscription"
 )
+EnableCapacityManager = Action("EnableCapacityManager")
 EnableEbsEncryptionByDefault = Action("EnableEbsEncryptionByDefault")
 EnableFastLaunch = Action("EnableFastLaunch")
 EnableFastSnapshotRestores = Action("EnableFastSnapshotRestores")
@@ -638,6 +644,9 @@ GetAssociatedEnclaveCertificateIamRoles = Action(
 )
 GetAssociatedIpv6PoolCidrs = Action("GetAssociatedIpv6PoolCidrs")
 GetAwsNetworkPerformanceData = Action("GetAwsNetworkPerformanceData")
+GetCapacityManagerAttributes = Action("GetCapacityManagerAttributes")
+GetCapacityManagerMetricData = Action("GetCapacityManagerMetricData")
+GetCapacityManagerMetricDimensions = Action("GetCapacityManagerMetricDimensions")
 GetCapacityReservationUsage = Action("GetCapacityReservationUsage")
 GetCoipPoolUsage = Action("GetCoipPoolUsage")
 GetConsoleOutput = Action("GetConsoleOutput")
@@ -897,6 +906,9 @@ UnassignPrivateIpAddresses = Action("UnassignPrivateIpAddresses")
 UnassignPrivateNatGatewayAddress = Action("UnassignPrivateNatGatewayAddress")
 UnlockSnapshot = Action("UnlockSnapshot")
 UnmonitorInstances = Action("UnmonitorInstances")
+UpdateCapacityManagerOrganizationsAccess = Action(
+    "UpdateCapacityManagerOrganizationsAccess"
+)
 UpdateSecurityGroupRuleDescriptionsEgress = Action(
     "UpdateSecurityGroupRuleDescriptionsEgress"
 )
