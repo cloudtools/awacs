@@ -44,6 +44,7 @@ CreateDataPrepperPipeline = Action("CreateDataPrepperPipeline")
 CreateDomain = Action("CreateDomain")
 CreateElasticsearchDomain = Action("CreateElasticsearchDomain")
 CreateElasticsearchServiceRole = Action("CreateElasticsearchServiceRole")
+CreateIndex = Action("CreateIndex")
 CreateOutboundConnection = Action("CreateOutboundConnection")
 CreateOutboundCrossClusterSearchConnection = Action(
     "CreateOutboundCrossClusterSearchConnection"
@@ -62,6 +63,7 @@ DeleteInboundConnection = Action("DeleteInboundConnection")
 DeleteInboundCrossClusterSearchConnection = Action(
     "DeleteInboundCrossClusterSearchConnection"
 )
+DeleteIndex = Action("DeleteIndex")
 DeleteOutboundConnection = Action("DeleteOutboundConnection")
 DeleteOutboundCrossClusterSearchConnection = Action(
     "DeleteOutboundCrossClusterSearchConnection"
@@ -117,6 +119,7 @@ GetCompatibleVersions = Action("GetCompatibleVersions")
 GetDataSource = Action("GetDataSource")
 GetDirectQueryDataSource = Action("GetDirectQueryDataSource")
 GetDomainMaintenanceStatus = Action("GetDomainMaintenanceStatus")
+GetIndex = Action("GetIndex")
 GetPackageVersionHistory = Action("GetPackageVersionHistory")
 GetUpgradeHistory = Action("GetUpgradeHistory")
 GetUpgradeStatus = Action("GetUpgradeStatus")
@@ -162,6 +165,7 @@ UpdateDataSource = Action("UpdateDataSource")
 UpdateDirectQueryDataSource = Action("UpdateDirectQueryDataSource")
 UpdateDomainConfig = Action("UpdateDomainConfig")
 UpdateElasticsearchDomainConfig = Action("UpdateElasticsearchDomainConfig")
+UpdateIndex = Action("UpdateIndex")
 UpdatePackage = Action("UpdatePackage")
 UpdatePackageScope = Action("UpdatePackageScope")
 UpdateScheduledAction = Action("UpdateScheduledAction")

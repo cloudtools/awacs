@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS Cost Optimization Hub"
-prefix = "cost-optimization-hub"
+service_name = "Amazon EKS MCP Server"
+prefix = "eks-mcp"
 
 
 class Action(BaseAction):
@@ -24,11 +24,6 @@ class ARN(BaseARN):
         )
 
 
-GetPreferences = Action("GetPreferences")
-GetRecommendation = Action("GetRecommendation")
-ListEfficiencyMetrics = Action("ListEfficiencyMetrics")
-ListEnrollmentStatuses = Action("ListEnrollmentStatuses")
-ListRecommendationSummaries = Action("ListRecommendationSummaries")
-ListRecommendations = Action("ListRecommendations")
-UpdateEnrollmentStatus = Action("UpdateEnrollmentStatus")
-UpdatePreferences = Action("UpdatePreferences")
+CallPrivilegedTool = Action("CallPrivilegedTool")
+CallReadOnlyTool = Action("CallReadOnlyTool")
+InvokeMcp = Action("InvokeMcp")

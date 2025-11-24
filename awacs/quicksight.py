@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AccountConfigurations = Action("AccountConfigurations")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 BatchCreateTopicReviewedAnswer = Action("BatchCreateTopicReviewedAnswer")
 BatchDeleteTopicReviewedAnswer = Action("BatchDeleteTopicReviewedAnswer")
 CancelIngestion = Action("CancelIngestion")

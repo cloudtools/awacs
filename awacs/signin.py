@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+AuthorizeOAuth2Access = Action("AuthorizeOAuth2Access")
+CreateOAuth2Token = Action("CreateOAuth2Token")
 CreateTrustedIdentityPropagationApplicationForConsole = Action(
     "CreateTrustedIdentityPropagationApplicationForConsole"
 )
