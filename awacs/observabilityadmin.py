@@ -27,19 +27,25 @@ class ARN(BaseARN):
 CreateCentralizationRuleForOrganization = Action(
     "CreateCentralizationRuleForOrganization"
 )
+CreateS3TableIntegration = Action("CreateS3TableIntegration")
+CreateTelemetryPipeline = Action("CreateTelemetryPipeline")
 CreateTelemetryRule = Action("CreateTelemetryRule")
 CreateTelemetryRuleForOrganization = Action("CreateTelemetryRuleForOrganization")
 DeleteCentralizationRuleForOrganization = Action(
     "DeleteCentralizationRuleForOrganization"
 )
+DeleteS3TableIntegration = Action("DeleteS3TableIntegration")
+DeleteTelemetryPipeline = Action("DeleteTelemetryPipeline")
 DeleteTelemetryRule = Action("DeleteTelemetryRule")
 DeleteTelemetryRuleForOrganization = Action("DeleteTelemetryRuleForOrganization")
 GetCentralizationRuleForOrganization = Action("GetCentralizationRuleForOrganization")
+GetS3TableIntegration = Action("GetS3TableIntegration")
 GetTelemetryEnrichmentStatus = Action("GetTelemetryEnrichmentStatus")
 GetTelemetryEvaluationStatus = Action("GetTelemetryEvaluationStatus")
 GetTelemetryEvaluationStatusForOrganization = Action(
     "GetTelemetryEvaluationStatusForOrganization"
 )
+GetTelemetryPipeline = Action("GetTelemetryPipeline")
 GetTelemetryRule = Action("GetTelemetryRule")
 GetTelemetryRuleForOrganization = Action("GetTelemetryRuleForOrganization")
 ListCentralizationRulesForOrganization = Action(
@@ -47,7 +53,9 @@ ListCentralizationRulesForOrganization = Action(
 )
 ListResourceTelemetry = Action("ListResourceTelemetry")
 ListResourceTelemetryForOrganization = Action("ListResourceTelemetryForOrganization")
+ListS3TableIntegrations = Action("ListS3TableIntegrations")
 ListTagsForResource = Action("ListTagsForResource")
+ListTelemetryPipelines = Action("ListTelemetryPipelines")
 ListTelemetryRules = Action("ListTelemetryRules")
 ListTelemetryRulesForOrganization = Action("ListTelemetryRulesForOrganization")
 StartTelemetryEnrichment = Action("StartTelemetryEnrichment")
@@ -61,9 +69,14 @@ StopTelemetryEvaluationForOrganization = Action(
     "StopTelemetryEvaluationForOrganization"
 )
 TagResource = Action("TagResource")
+TestTelemetryPipeline = Action("TestTelemetryPipeline")
 UntagResource = Action("UntagResource")
 UpdateCentralizationRuleForOrganization = Action(
     "UpdateCentralizationRuleForOrganization"
 )
+UpdateTelemetryPipeline = Action("UpdateTelemetryPipeline")
 UpdateTelemetryRule = Action("UpdateTelemetryRule")
 UpdateTelemetryRuleForOrganization = Action("UpdateTelemetryRuleForOrganization")
+ValidateTelemetryPipelineConfiguration = Action(
+    "ValidateTelemetryPipelineConfiguration"
+)

@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon SageMaker Unified Studio MCP"
-prefix = "sagemaker-unified-studio-mcp"
+service_name = "AWS MCP Server"
+prefix = "aws-mcp"
 
 
 class Action(BaseAction):
@@ -24,6 +24,6 @@ class ARN(BaseARN):
         )
 
 
-CallPrivilegedTool = Action("CallPrivilegedTool")
 CallReadOnlyTool = Action("CallReadOnlyTool")
+CallReadWriteTool = Action("CallReadWriteTool")
 InvokeMcp = Action("InvokeMcp")

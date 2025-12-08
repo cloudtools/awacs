@@ -8,8 +8,8 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "Amazon SageMaker Unified Studio MCP"
-prefix = "sagemaker-unified-studio-mcp"
+service_name = "Amazon Bedrock Powered by AWS Mantle"
+prefix = "bedrock-mantle"
 
 
 class Action(BaseAction):
@@ -24,6 +24,10 @@ class ARN(BaseARN):
         )
 
 
-CallPrivilegedTool = Action("CallPrivilegedTool")
-CallReadOnlyTool = Action("CallReadOnlyTool")
-InvokeMcp = Action("InvokeMcp")
+CallWithBearerToken = Action("CallWithBearerToken")
+CancelInference = Action("CancelInference")
+CreateInference = Action("CreateInference")
+DeleteInference = Action("DeleteInference")
+GetInference = Action("GetInference")
+GetModel = Action("GetModel")
+ListModels = Action("ListModels")

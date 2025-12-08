@@ -25,7 +25,12 @@ class ARN(BaseARN):
 
 
 ApplicationAccessAll = Action("ApplicationAccessAll")
+CancelAutoOptimizeJob = Action("CancelAutoOptimizeJob")
 CancelDirectQuery = Action("CancelDirectQuery")
+DeleteAutoOptimizeJob = Action("DeleteAutoOptimizeJob")
+GetAutoOptimizeJob = Action("GetAutoOptimizeJob")
 GetDirectQuery = Action("GetDirectQuery")
 GetDirectQueryResult = Action("GetDirectQueryResult")
+ListAutoOptimizeJobs = Action("ListAutoOptimizeJobs")
 StartDirectQuery = Action("StartDirectQuery")
+SubmitAutoOptimizeJob = Action("SubmitAutoOptimizeJob")
