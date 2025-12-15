@@ -27,6 +27,7 @@ class ARN(BaseARN):
 CancelContact = Action("CancelContact")
 CreateConfig = Action("CreateConfig")
 CreateDataflowEndpointGroup = Action("CreateDataflowEndpointGroup")
+CreateDataflowEndpointGroupV2 = Action("CreateDataflowEndpointGroupV2")
 CreateEphemeris = Action("CreateEphemeris")
 CreateMissionProfile = Action("CreateMissionProfile")
 DeleteConfig = Action("DeleteConfig")

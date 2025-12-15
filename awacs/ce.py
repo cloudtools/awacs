@@ -68,6 +68,7 @@ ListCommitmentPurchaseAnalyses = Action("ListCommitmentPurchaseAnalyses")
 ListCostAllocationTagBackfillHistory = Action("ListCostAllocationTagBackfillHistory")
 ListCostAllocationTags = Action("ListCostAllocationTags")
 ListCostCategoryDefinitions = Action("ListCostCategoryDefinitions")
+ListCostCategoryResourceAssociations = Action("ListCostCategoryResourceAssociations")
 ListSavingsPlansPurchaseRecommendationGeneration = Action(
     "ListSavingsPlansPurchaseRecommendationGeneration"
 )

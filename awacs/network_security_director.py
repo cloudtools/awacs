@@ -27,6 +27,7 @@ class ARN(BaseARN):
 GetFinding = Action("GetFinding")
 GetNetworkSecurityScan = Action("GetNetworkSecurityScan")
 GetResource = Action("GetResource")
+ListAccountSummaries = Action("ListAccountSummaries")
 ListFindings = Action("ListFindings")
 ListInsights = Action("ListInsights")
 ListRemediations = Action("ListRemediations")
