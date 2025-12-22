@@ -124,6 +124,7 @@ TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateAnalysisTemplate = Action("UpdateAnalysisTemplate")
 UpdateCollaboration = Action("UpdateCollaboration")
+UpdateCollaborationChangeRequest = Action("UpdateCollaborationChangeRequest")
 UpdateConfiguredAudienceModelAssociation = Action(
     "UpdateConfiguredAudienceModelAssociation"
 )
