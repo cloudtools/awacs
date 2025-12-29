@@ -8,7 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = "AWS service to manage AI agents for UI workflows"
+service_name = "Amazon Nova Act"
 prefix = "nova-act"
 
 
