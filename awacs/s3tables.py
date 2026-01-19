@@ -31,6 +31,7 @@ DeleteNamespace = Action("DeleteNamespace")
 DeleteTable = Action("DeleteTable")
 DeleteTableBucket = Action("DeleteTableBucket")
 DeleteTableBucketEncryption = Action("DeleteTableBucketEncryption")
+DeleteTableBucketMetricsConfiguration = Action("DeleteTableBucketMetricsConfiguration")
 DeleteTableBucketPolicy = Action("DeleteTableBucketPolicy")
 DeleteTableBucketReplication = Action("DeleteTableBucketReplication")
 DeleteTablePolicy = Action("DeleteTablePolicy")
@@ -42,6 +43,7 @@ GetTableBucketEncryption = Action("GetTableBucketEncryption")
 GetTableBucketMaintenanceConfiguration = Action(
     "GetTableBucketMaintenanceConfiguration"
 )
+GetTableBucketMetricsConfiguration = Action("GetTableBucketMetricsConfiguration")
 GetTableBucketPolicy = Action("GetTableBucketPolicy")
 GetTableBucketReplication = Action("GetTableBucketReplication")
 GetTableBucketStorageClass = Action("GetTableBucketStorageClass")
@@ -64,6 +66,7 @@ PutTableBucketEncryption = Action("PutTableBucketEncryption")
 PutTableBucketMaintenanceConfiguration = Action(
     "PutTableBucketMaintenanceConfiguration"
 )
+PutTableBucketMetricsConfiguration = Action("PutTableBucketMetricsConfiguration")
 PutTableBucketPolicy = Action("PutTableBucketPolicy")
 PutTableBucketReplication = Action("PutTableBucketReplication")
 PutTableBucketStorageClass = Action("PutTableBucketStorageClass")

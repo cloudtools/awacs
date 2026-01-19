@@ -97,6 +97,9 @@ GetTransitGatewayPeering = Action("GetTransitGatewayPeering")
 GetTransitGatewayRegistrations = Action("GetTransitGatewayRegistrations")
 GetTransitGatewayRouteTableAttachment = Action("GetTransitGatewayRouteTableAttachment")
 GetVpcAttachment = Action("GetVpcAttachment")
+ListAttachmentRoutingPolicyAssociations = Action(
+    "ListAttachmentRoutingPolicyAssociations"
+)
 ListAttachments = Action("ListAttachments")
 ListConnectPeers = Action("ListConnectPeers")
 ListCoreNetworkPolicyVersions = Action("ListCoreNetworkPolicyVersions")
