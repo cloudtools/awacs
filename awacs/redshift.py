@@ -140,6 +140,7 @@ FailoverPrimaryCompute = Action("FailoverPrimaryCompute")
 FetchResults = Action("FetchResults")
 GetClusterCredentials = Action("GetClusterCredentials")
 GetClusterCredentialsWithIAM = Action("GetClusterCredentialsWithIAM")
+GetIdentityCenterAuthToken = Action("GetIdentityCenterAuthToken")
 GetReservedNodeExchangeConfigurationOptions = Action(
     "GetReservedNodeExchangeConfigurationOptions"
 )

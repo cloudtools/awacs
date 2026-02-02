@@ -219,4 +219,5 @@ UpdateBucketMetadataJournalTableConfiguration = Action(
 )
 UpdateJobPriority = Action("UpdateJobPriority")
 UpdateJobStatus = Action("UpdateJobStatus")
+UpdateObjectEncryption = Action("UpdateObjectEncryption")
 UpdateStorageLensGroup = Action("UpdateStorageLensGroup")
