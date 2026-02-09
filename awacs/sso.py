@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AddMemberToGroup = Action("AddMemberToGroup")
+AddRegion = Action("AddRegion")
 AssociateDirectory = Action("AssociateDirectory")
 AssociateProfile = Action("AssociateProfile")
 AttachCustomerManagedPolicyReferenceToPermissionSet = Action(
@@ -91,6 +92,7 @@ DescribePermissionSetProvisioningStatus = Action(
     "DescribePermissionSetProvisioningStatus"
 )
 DescribePermissionsPolicies = Action("DescribePermissionsPolicies")
+DescribeRegion = Action("DescribeRegion")
 DescribeRegisteredRegions = Action("DescribeRegisteredRegions")
 DescribeTrustedTokenIssuer = Action("DescribeTrustedTokenIssuer")
 DescribeTrusts = Action("DescribeTrusts")
@@ -162,6 +164,7 @@ ListPermissionSetsProvisionedToAccount = Action(
 )
 ListProfileAssociations = Action("ListProfileAssociations")
 ListProfiles = Action("ListProfiles")
+ListRegions = Action("ListRegions")
 ListTagsForResource = Action("ListTagsForResource")
 ListTrustedTokenIssuers = Action("ListTrustedTokenIssuers")
 ProvisionPermissionSet = Action("ProvisionPermissionSet")
@@ -175,6 +178,7 @@ PutMfaDeviceManagementForDirectory = Action("PutMfaDeviceManagementForDirectory"
 PutPermissionsBoundaryToPermissionSet = Action("PutPermissionsBoundaryToPermissionSet")
 PutPermissionsPolicy = Action("PutPermissionsPolicy")
 RemoveMemberFromGroup = Action("RemoveMemberFromGroup")
+RemoveRegion = Action("RemoveRegion")
 SearchGroups = Action("SearchGroups")
 SearchUsers = Action("SearchUsers")
 SetTemporaryPassword = Action("SetTemporaryPassword")
