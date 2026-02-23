@@ -25,9 +25,17 @@ class ARN(BaseARN):
 
 
 CallWithBearerToken = Action("CallWithBearerToken")
+CancelFineTuningJob = Action("CancelFineTuningJob")
 CancelInference = Action("CancelInference")
+CreateFile = Action("CreateFile")
+CreateFineTuningJob = Action("CreateFineTuningJob")
 CreateInference = Action("CreateInference")
+DeleteFile = Action("DeleteFile")
 DeleteInference = Action("DeleteInference")
+GetFile = Action("GetFile")
+GetFineTuningJob = Action("GetFineTuningJob")
 GetInference = Action("GetInference")
 GetModel = Action("GetModel")
+ListFiles = Action("ListFiles")
+ListFineTuningJobs = Action("ListFineTuningJobs")
 ListModels = Action("ListModels")

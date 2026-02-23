@@ -34,6 +34,7 @@ DisableDefaultKeyReplicationRegions = Action("DisableDefaultKeyReplicationRegion
 EnableDefaultKeyReplicationRegions = Action("EnableDefaultKeyReplicationRegions")
 EncryptData = Action("EncryptData")
 ExportKey = Action("ExportKey")
+GenerateAs2805KekValidation = Action("GenerateAs2805KekValidation")
 GenerateCardValidationData = Action("GenerateCardValidationData")
 GenerateMac = Action("GenerateMac")
 GenerateMacEmvPinChange = Action("GenerateMacEmvPinChange")
