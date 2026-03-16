@@ -154,6 +154,10 @@ RejectInboundCrossClusterSearchConnection = Action(
 )
 RemoveTags = Action("RemoveTags")
 RevokeVpcEndpointAccess = Action("RevokeVpcEndpointAccess")
+RollbackElasticsearchServiceSoftwareUpdate = Action(
+    "RollbackElasticsearchServiceSoftwareUpdate"
+)
+RollbackServiceSoftwareUpdate = Action("RollbackServiceSoftwareUpdate")
 StartDomainMaintenance = Action("StartDomainMaintenance")
 StartElasticsearchServiceSoftwareUpdate = Action(
     "StartElasticsearchServiceSoftwareUpdate"

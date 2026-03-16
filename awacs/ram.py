@@ -50,6 +50,7 @@ ListReplacePermissionAssociationsWork = Action("ListReplacePermissionAssociation
 ListResourceSharePermissions = Action("ListResourceSharePermissions")
 ListResourceTypes = Action("ListResourceTypes")
 ListResources = Action("ListResources")
+ListSourceAssociations = Action("ListSourceAssociations")
 PromotePermissionCreatedFromPolicy = Action("PromotePermissionCreatedFromPolicy")
 PromoteResourceShareCreatedFromPolicy = Action("PromoteResourceShareCreatedFromPolicy")
 RejectResourceShareInvitation = Action("RejectResourceShareInvitation")
