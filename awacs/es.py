@@ -117,6 +117,7 @@ GetApplication = Action("GetApplication")
 GetCompatibleElasticsearchVersions = Action("GetCompatibleElasticsearchVersions")
 GetCompatibleVersions = Action("GetCompatibleVersions")
 GetDataSource = Action("GetDataSource")
+GetDefaultApplicationSetting = Action("GetDefaultApplicationSetting")
 GetDirectQueryDataSource = Action("GetDirectQueryDataSource")
 GetDomainMaintenanceStatus = Action("GetDomainMaintenanceStatus")
 GetIndex = Action("GetIndex")
@@ -148,6 +149,7 @@ PurchaseReservedElasticsearchInstanceOffering = Action(
     "PurchaseReservedElasticsearchInstanceOffering"
 )
 PurchaseReservedInstanceOffering = Action("PurchaseReservedInstanceOffering")
+PutDefaultApplicationSetting = Action("PutDefaultApplicationSetting")
 RejectInboundConnection = Action("RejectInboundConnection")
 RejectInboundCrossClusterSearchConnection = Action(
     "RejectInboundCrossClusterSearchConnection"

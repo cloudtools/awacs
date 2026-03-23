@@ -8,9 +8,7 @@ from typing import Optional
 from .aws import Action as BaseAction
 from .aws import BaseARN
 
-service_name = (
-    "AWS Service for managing AWS Management Console user experience capabilities."
-)
+service_name = "AWS User Experience Customization"
 prefix = "uxc"
 
 
@@ -28,4 +26,7 @@ class ARN(BaseARN):
 
 DeleteAccountColor = Action("DeleteAccountColor")
 GetAccountColor = Action("GetAccountColor")
+GetAccountCustomizations = Action("GetAccountCustomizations")
+ListServices = Action("ListServices")
 PutAccountColor = Action("PutAccountColor")
+UpdateAccountCustomizations = Action("UpdateAccountCustomizations")

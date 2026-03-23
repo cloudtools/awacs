@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 AcceptAdministratorInvitation = Action("AcceptAdministratorInvitation")
 AcceptInvitation = Action("AcceptInvitation")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 BatchDeleteAutomationRules = Action("BatchDeleteAutomationRules")
 BatchDisableStandards = Action("BatchDisableStandards")
 BatchEnableStandards = Action("BatchEnableStandards")
