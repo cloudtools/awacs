@@ -89,6 +89,7 @@ DescribeInboundConnections = Action("DescribeInboundConnections")
 DescribeInboundCrossClusterSearchConnections = Action(
     "DescribeInboundCrossClusterSearchConnections"
 )
+DescribeInsightDetails = Action("DescribeInsightDetails")
 DescribeInstanceTypeLimits = Action("DescribeInstanceTypeLimits")
 DescribeOutboundConnections = Action("DescribeOutboundConnections")
 DescribeOutboundCrossClusterSearchConnections = Action(
@@ -135,6 +136,7 @@ ListDomainsForPackage = Action("ListDomainsForPackage")
 ListElasticsearchInstanceTypeDetails = Action("ListElasticsearchInstanceTypeDetails")
 ListElasticsearchInstanceTypes = Action("ListElasticsearchInstanceTypes")
 ListElasticsearchVersions = Action("ListElasticsearchVersions")
+ListInsights = Action("ListInsights")
 ListInstanceTypeDetails = Action("ListInstanceTypeDetails")
 ListInstanceTypes = Action("ListInstanceTypes")
 ListPackagesForDomain = Action("ListPackagesForDomain")
