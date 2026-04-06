@@ -25,3 +25,7 @@ class ARN(BaseARN):
 
 
 GetCarbonFootprintSummary = Action("GetCarbonFootprintSummary")
+GetEstimatedCarbonEmissions = Action("GetEstimatedCarbonEmissions")
+GetEstimatedCarbonEmissionsDimensionValues = Action(
+    "GetEstimatedCarbonEmissionsDimensionValues"
+)
