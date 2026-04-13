@@ -70,6 +70,7 @@ DeleteOutboundCrossClusterSearchConnection = Action(
 )
 DeletePackage = Action("DeletePackage")
 DeleteVpcEndpoint = Action("DeleteVpcEndpoint")
+DeregisterCapability = Action("DeregisterCapability")
 DescribeDataPrepperPipeline = Action("DescribeDataPrepperPipeline")
 DescribeDomain = Action("DescribeDomain")
 DescribeDomainAutoTunes = Action("DescribeDomainAutoTunes")
@@ -115,6 +116,7 @@ ESHttpPatch = Action("ESHttpPatch")
 ESHttpPost = Action("ESHttpPost")
 ESHttpPut = Action("ESHttpPut")
 GetApplication = Action("GetApplication")
+GetCapability = Action("GetCapability")
 GetCompatibleElasticsearchVersions = Action("GetCompatibleElasticsearchVersions")
 GetCompatibleVersions = Action("GetCompatibleVersions")
 GetDataSource = Action("GetDataSource")
@@ -152,6 +154,7 @@ PurchaseReservedElasticsearchInstanceOffering = Action(
 )
 PurchaseReservedInstanceOffering = Action("PurchaseReservedInstanceOffering")
 PutDefaultApplicationSetting = Action("PutDefaultApplicationSetting")
+RegisterCapability = Action("RegisterCapability")
 RejectInboundConnection = Action("RejectInboundConnection")
 RejectInboundCrossClusterSearchConnection = Action(
     "RejectInboundCrossClusterSearchConnection"

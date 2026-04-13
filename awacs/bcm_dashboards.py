@@ -25,11 +25,17 @@ class ARN(BaseARN):
 
 
 CreateDashboard = Action("CreateDashboard")
+CreateScheduledReport = Action("CreateScheduledReport")
 DeleteDashboard = Action("DeleteDashboard")
+DeleteScheduledReport = Action("DeleteScheduledReport")
+ExecuteScheduledReport = Action("ExecuteScheduledReport")
 GetDashboard = Action("GetDashboard")
 GetResourcePolicy = Action("GetResourcePolicy")
+GetScheduledReport = Action("GetScheduledReport")
 ListDashboards = Action("ListDashboards")
+ListScheduledReports = Action("ListScheduledReports")
 ListTagsForResource = Action("ListTagsForResource")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateDashboard = Action("UpdateDashboard")
+UpdateScheduledReport = Action("UpdateScheduledReport")
