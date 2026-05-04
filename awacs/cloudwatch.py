@@ -28,6 +28,7 @@ BatchGetServiceLevelIndicatorReport = Action("BatchGetServiceLevelIndicatorRepor
 BatchGetServiceLevelObjectiveBudgetReport = Action(
     "BatchGetServiceLevelObjectiveBudgetReport"
 )
+CallWithBearerToken = Action("CallWithBearerToken")
 CreateServiceLevelObjective = Action("CreateServiceLevelObjective")
 DeleteAlarmMuteRule = Action("DeleteAlarmMuteRule")
 DeleteAlarms = Action("DeleteAlarms")

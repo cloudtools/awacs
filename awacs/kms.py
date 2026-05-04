@@ -49,6 +49,7 @@ GenerateDataKeyPairWithoutPlaintext = Action("GenerateDataKeyPairWithoutPlaintex
 GenerateDataKeyWithoutPlaintext = Action("GenerateDataKeyWithoutPlaintext")
 GenerateMac = Action("GenerateMac")
 GenerateRandom = Action("GenerateRandom")
+GetKeyLastUsage = Action("GetKeyLastUsage")
 GetKeyPolicy = Action("GetKeyPolicy")
 GetKeyRotationStatus = Action("GetKeyRotationStatus")
 GetParametersForImport = Action("GetParametersForImport")
