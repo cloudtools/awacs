@@ -50,6 +50,22 @@ class TestAWSObject(unittest.TestCase):
             "'statement'",
         )
 
+    def test_to_json(self):
+        p = PolicyDocument(Version="2012-10-17", Statement=[])
+
+        self.assertEqual(
+            p.to_json(),
+            '{\n    "Statement": [],\n    "Version": "2012-10-17"\n}',
+        )
+
+    def test_to_json_indent_non(self):
+        p = PolicyDocument(Version="2012-10-17", Statement=[])
+
+        self.assertEqual(
+            p.to_json(indent=None),
+            '{"Statement": [], "Version": "2012-10-17"}',
+        )
+
 
 class TestAWSProperty(unittest.TestCase):
     def test_prop_value_type_mismatch_expect_list(self):
