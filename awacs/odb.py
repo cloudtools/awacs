@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AcceptMarketplaceRegistration = Action("AcceptMarketplaceRegistration")
+AssociateIamRoleToResource = Action("AssociateIamRoleToResource")
 CreateCloudAutonomousVmCluster = Action("CreateCloudAutonomousVmCluster")
 CreateCloudExadataInfrastructure = Action("CreateCloudExadataInfrastructure")
 CreateCloudVmCluster = Action("CreateCloudVmCluster")
@@ -41,6 +42,7 @@ DeleteGrantShare = Action("DeleteGrantShare")
 DeleteOdbNetwork = Action("DeleteOdbNetwork")
 DeleteOdbPeeringConnection = Action("DeleteOdbPeeringConnection")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
+DisassociateIamRoleFromResource = Action("DisassociateIamRoleFromResource")
 GetCloudAutonomousVmCluster = Action("GetCloudAutonomousVmCluster")
 GetCloudExadataInfrastructure = Action("GetCloudExadataInfrastructure")
 GetCloudExadataInfrastructureUnallocatedResources = Action(

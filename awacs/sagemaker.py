@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessModelPackage = Action("AccessModelPackage")
 AddAssociation = Action("AddAssociation")
 AddTags = Action("AddTags")
 AssociateTrialComponent = Action("AssociateTrialComponent")

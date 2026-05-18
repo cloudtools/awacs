@@ -26,5 +26,6 @@ class ARN(BaseARN):
 
 NotifyHeartbeat = Action("NotifyHeartbeat")
 SendTelemetry = Action("SendTelemetry")
+SendTelemetryEvent = Action("SendTelemetryEvent")
 StartSession = Action("StartSession")
 StopSession = Action("StopSession")
