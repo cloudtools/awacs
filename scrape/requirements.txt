@@ -5,13 +5,13 @@
 #    pip-compile scrape/requirements.in
 #
 aiofiles==24.1.0
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 anyio==4.8.0
     # via httpx
 beautifulsoup4==4.12.3
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 black==24.10.0
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 cachetools==5.5.0
     # via tox
 certifi==2024.12.14
@@ -39,7 +39,7 @@ hpack==4.0.0
 httpcore==1.0.7
     # via httpx
 httpx[http2]==0.28.1
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 hyperframe==6.0.1
     # via h2
 idna==3.10
@@ -47,11 +47,11 @@ idna==3.10
     #   anyio
     #   httpx
 isort==5.13.2
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 lxml==5.3.0
-    # via -r scrape/requirements.in
-mypy==1.14.1
-    # via -r scrape/requirements.in
+    # via -r requirements.in
+mypy==1.15.0
+    # via -r requirements.in
 mypy-extensions==1.0.0
     # via
     #   black
@@ -71,9 +71,9 @@ platformdirs==4.3.6
 pluggy==1.5.0
     # via tox
 pycodestyle==2.12.1
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 pyflakes==3.2.0
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 pyproject-api==1.8.0
     # via tox
 sniffio==1.3.1
@@ -81,10 +81,10 @@ sniffio==1.3.1
 soupsieve==2.6
     # via beautifulsoup4
 tox==4.23.2
-    # via -r scrape/requirements.in
+    # via -r requirements.in
 typing-extensions==4.12.2
     # via mypy
 virtualenv==20.29.1
     # via tox
 wheel==0.45.1
-    # via -r scrape/requirements.in
+    # via -r requirements.in
