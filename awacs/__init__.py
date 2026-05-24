@@ -111,7 +111,7 @@ class AWSObject:
         self.validate()
         return self.resource
 
-    def to_json(self, indent: int = 4, sort_keys: bool = True) -> str:
+    def to_json(self, indent: Optional[int] = 4, sort_keys: bool = True) -> str:
         p = self.properties
         return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
 
@@ -149,7 +149,7 @@ class AWSHelperFn:
         else:
             return data
 
-    def to_json(self, indent: int = 4, sort_keys: bool = True) -> str:
+    def to_json(self, indent: Optional[int] = 4, sort_keys: bool = True) -> str:
         p = self
         return json.dumps(p, cls=awsencode, indent=indent, sort_keys=sort_keys)
 
