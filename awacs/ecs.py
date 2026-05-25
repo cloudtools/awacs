@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+ContinueServiceDeployment = Action("ContinueServiceDeployment")
 CreateCapacityProvider = Action("CreateCapacityProvider")
 CreateCluster = Action("CreateCluster")
 CreateDaemon = Action("CreateDaemon")
