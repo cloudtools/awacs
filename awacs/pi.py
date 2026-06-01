@@ -33,6 +33,9 @@ GetResourceMetadata = Action("GetResourceMetadata")
 GetResourceMetrics = Action("GetResourceMetrics")
 ListAvailableResourceDimensions = Action("ListAvailableResourceDimensions")
 ListAvailableResourceMetrics = Action("ListAvailableResourceMetrics")
+ListPerformanceAnalysisReportRecommendations = Action(
+    "ListPerformanceAnalysisReportRecommendations"
+)
 ListPerformanceAnalysisReports = Action("ListPerformanceAnalysisReports")
 ListTagsForResource = Action("ListTagsForResource")
 TagResource = Action("TagResource")

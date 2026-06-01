@@ -206,6 +206,7 @@ PutEmailIdentityFeedbackAttributes = Action("PutEmailIdentityFeedbackAttributes"
 PutEmailIdentityMailFromAttributes = Action("PutEmailIdentityMailFromAttributes")
 PutIdentityPolicy = Action("PutIdentityPolicy")
 PutSuppressedDestination = Action("PutSuppressedDestination")
+PutTenantSuppressionAttributes = Action("PutTenantSuppressionAttributes")
 RegisterMemberToAddressList = Action("RegisterMemberToAddressList")
 ReorderReceiptRuleSet = Action("ReorderReceiptRuleSet")
 ReplicateEmailIdentityDkimSigningKey = Action("ReplicateEmailIdentityDkimSigningKey")
