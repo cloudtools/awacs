@@ -1,8 +1,8 @@
 import glob
 import os
-import pytest
 import sys
 
+import pytest
 
 files = glob.glob(os.path.join("examples", "*.py"))
 
