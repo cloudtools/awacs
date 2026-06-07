@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessTransformProfile = Action("AccessTransformProfile")
 AssociateConnectorResource = Action("AssociateConnectorResource")
 CreateProfile = Action("CreateProfile")
 DeleteAgentRuntimeConfiguration = Action("DeleteAgentRuntimeConfiguration")
