@@ -28,6 +28,7 @@ class ARN(BaseARN):
 
 
 AbortMultipartUpload = Action("AbortMultipartUpload")
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 AssociateAccessGrantsIdentityCenter = Action("AssociateAccessGrantsIdentityCenter")
 BypassGovernanceRetention = Action("BypassGovernanceRetention")
 CreateAccessGrant = Action("CreateAccessGrant")

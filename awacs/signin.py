@@ -24,11 +24,22 @@ class ARN(BaseARN):
         )
 
 
+Authenticate = Action("Authenticate")
 AuthorizeOAuth2Access = Action("AuthorizeOAuth2Access")
+CreateAccount = Action("CreateAccount")
 CreateOAuth2Token = Action("CreateOAuth2Token")
 CreateTrustedIdentityPropagationApplicationForConsole = Action(
     "CreateTrustedIdentityPropagationApplicationForConsole"
 )
+DeleteConsoleAuthorizationConfiguration = Action(
+    "DeleteConsoleAuthorizationConfiguration"
+)
+DeleteResourcePermissionStatement = Action("DeleteResourcePermissionStatement")
+GetConsoleAuthorizationConfiguration = Action("GetConsoleAuthorizationConfiguration")
+GetResourcePolicy = Action("GetResourcePolicy")
+ListResourcePermissionStatements = Action("ListResourcePermissionStatements")
 ListTrustedIdentityPropagationApplicationsForConsole = Action(
     "ListTrustedIdentityPropagationApplicationsForConsole"
 )
+PutConsoleAuthorizationConfiguration = Action("PutConsoleAuthorizationConfiguration")
+PutResourcePermissionStatement = Action("PutResourcePermissionStatement")
