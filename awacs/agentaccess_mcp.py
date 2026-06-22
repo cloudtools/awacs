@@ -24,6 +24,8 @@ class ARN(BaseARN):
         )
 
 
+CallForwardedTool = Action("CallForwardedTool")
+CheckConnectionStatus = Action("CheckConnectionStatus")
 DoubleClick = Action("DoubleClick")
 GetScreenshot = Action("GetScreenshot")
 HoldKey = Action("HoldKey")
