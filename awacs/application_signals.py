@@ -24,19 +24,27 @@ class ARN(BaseARN):
         )
 
 
+BatchDeleteInstrumentationConfigurations = Action(
+    "BatchDeleteInstrumentationConfigurations"
+)
 BatchGetServiceLevelObjectiveBudgetReport = Action(
     "BatchGetServiceLevelObjectiveBudgetReport"
 )
 BatchUpdateExclusionWindows = Action("BatchUpdateExclusionWindows")
+CreateInstrumentationConfiguration = Action("CreateInstrumentationConfiguration")
 CreateServiceLevelObjective = Action("CreateServiceLevelObjective")
 DeleteGroupingConfiguration = Action("DeleteGroupingConfiguration")
+DeleteInstrumentationConfiguration = Action("DeleteInstrumentationConfiguration")
 DeleteServiceLevelObjective = Action("DeleteServiceLevelObjective")
+GetInstrumentationConfiguration = Action("GetInstrumentationConfiguration")
+GetInstrumentationConfigurationStatus = Action("GetInstrumentationConfigurationStatus")
 GetService = Action("GetService")
 GetServiceLevelObjective = Action("GetServiceLevelObjective")
 Link = Action("Link")
 ListAuditFindings = Action("ListAuditFindings")
 ListEntityEvents = Action("ListEntityEvents")
 ListGroupingAttributeDefinitions = Action("ListGroupingAttributeDefinitions")
+ListInstrumentationConfigurations = Action("ListInstrumentationConfigurations")
 ListObservedEntities = Action("ListObservedEntities")
 ListServiceDependencies = Action("ListServiceDependencies")
 ListServiceDependents = Action("ListServiceDependents")
@@ -49,6 +57,9 @@ ListServiceStates = Action("ListServiceStates")
 ListServices = Action("ListServices")
 ListTagsForResource = Action("ListTagsForResource")
 PutGroupingConfiguration = Action("PutGroupingConfiguration")
+ReportInstrumentationConfigurationStatus = Action(
+    "ReportInstrumentationConfigurationStatus"
+)
 StartDiscovery = Action("StartDiscovery")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
