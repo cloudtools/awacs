@@ -25,29 +25,39 @@ class ARN(BaseARN):
 
 
 AssociateWhatsAppBusinessAccount = Action("AssociateWhatsAppBusinessAccount")
+CreateWhatsAppFlow = Action("CreateWhatsAppFlow")
 CreateWhatsAppMessageTemplate = Action("CreateWhatsAppMessageTemplate")
 CreateWhatsAppMessageTemplateFromLibrary = Action(
     "CreateWhatsAppMessageTemplateFromLibrary"
 )
 CreateWhatsAppMessageTemplateMedia = Action("CreateWhatsAppMessageTemplateMedia")
+DeleteWhatsAppFlow = Action("DeleteWhatsAppFlow")
 DeleteWhatsAppMessageMedia = Action("DeleteWhatsAppMessageMedia")
 DeleteWhatsAppMessageTemplate = Action("DeleteWhatsAppMessageTemplate")
+DeprecateWhatsAppFlow = Action("DeprecateWhatsAppFlow")
 DisassociateWhatsAppBusinessAccount = Action("DisassociateWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccount = Action("GetLinkedWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccountPhoneNumber = Action(
     "GetLinkedWhatsAppBusinessAccountPhoneNumber"
 )
+GetWhatsAppFlow = Action("GetWhatsAppFlow")
+GetWhatsAppFlowPreview = Action("GetWhatsAppFlowPreview")
 GetWhatsAppMessageMedia = Action("GetWhatsAppMessageMedia")
 GetWhatsAppMessageTemplate = Action("GetWhatsAppMessageTemplate")
 ListLinkedWhatsAppBusinessAccounts = Action("ListLinkedWhatsAppBusinessAccounts")
 ListTagsForResource = Action("ListTagsForResource")
+ListWhatsAppFlowAssets = Action("ListWhatsAppFlowAssets")
+ListWhatsAppFlows = Action("ListWhatsAppFlows")
 ListWhatsAppMessageTemplates = Action("ListWhatsAppMessageTemplates")
 ListWhatsAppTemplateLibrary = Action("ListWhatsAppTemplateLibrary")
 PostWhatsAppMessageMedia = Action("PostWhatsAppMessageMedia")
+PublishWhatsAppFlow = Action("PublishWhatsAppFlow")
 PutWhatsAppBusinessAccountEventDestinations = Action(
     "PutWhatsAppBusinessAccountEventDestinations"
 )
 SendWhatsAppMessage = Action("SendWhatsAppMessage")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateWhatsAppFlow = Action("UpdateWhatsAppFlow")
+UpdateWhatsAppFlowAssets = Action("UpdateWhatsAppFlowAssets")
 UpdateWhatsAppMessageTemplate = Action("UpdateWhatsAppMessageTemplate")

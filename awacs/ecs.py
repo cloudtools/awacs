@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 ContinueServiceDeployment = Action("ContinueServiceDeployment")
 CreateCapacityProvider = Action("CreateCapacityProvider")
 CreateCluster = Action("CreateCluster")
