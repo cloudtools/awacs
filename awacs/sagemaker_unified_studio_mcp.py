@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AuthorizeVpce = Action("AuthorizeVpce")
 CallPrivilegedTool = Action("CallPrivilegedTool")
 CallReadOnlyTool = Action("CallReadOnlyTool")
 InvokeMcp = Action("InvokeMcp")
