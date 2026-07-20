@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessDataQualityRuntimeConfiguration = Action("AccessDataQualityRuntimeConfiguration")
 AuthorizeInboundIntegration = Action("AuthorizeInboundIntegration")
 BatchCreatePartition = Action("BatchCreatePartition")
 BatchDeleteConnection = Action("BatchDeleteConnection")

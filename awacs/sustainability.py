@@ -29,3 +29,7 @@ GetEstimatedCarbonEmissions = Action("GetEstimatedCarbonEmissions")
 GetEstimatedCarbonEmissionsDimensionValues = Action(
     "GetEstimatedCarbonEmissionsDimensionValues"
 )
+GetEstimatedWaterAllocation = Action("GetEstimatedWaterAllocation")
+GetEstimatedWaterAllocationDimensionValues = Action(
+    "GetEstimatedWaterAllocationDimensionValues"
+)
