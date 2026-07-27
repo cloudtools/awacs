@@ -41,6 +41,7 @@ ListProcurementPortalPreferences = Action("ListProcurementPortalPreferences")
 ListTagsForResource = Action("ListTagsForResource")
 PutInvoiceEmailDeliveryPreferences = Action("PutInvoiceEmailDeliveryPreferences")
 PutProcurementPortalPreference = Action("PutProcurementPortalPreference")
+SendProcurementPortalValidation = Action("SendProcurementPortalValidation")
 StartInvoiceCorrection = Action("StartInvoiceCorrection")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
@@ -48,3 +49,4 @@ UpdateInvoiceUnit = Action("UpdateInvoiceUnit")
 UpdateProcurementPortalPreferenceStatus = Action(
     "UpdateProcurementPortalPreferenceStatus"
 )
+VerifyProcurementPortalValidation = Action("VerifyProcurementPortalValidation")

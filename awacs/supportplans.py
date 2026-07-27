@@ -24,8 +24,16 @@ class ARN(BaseARN):
         )
 
 
+AcceptSupportAgreement = Action("AcceptSupportAgreement")
+CancelSupportAgreement = Action("CancelSupportAgreement")
+CreateSupportAgreement = Action("CreateSupportAgreement")
 CreateSupportPlanSchedule = Action("CreateSupportPlanSchedule")
+GetSupportAgreement = Action("GetSupportAgreement")
 GetSupportPlan = Action("GetSupportPlan")
 GetSupportPlanUpdateStatus = Action("GetSupportPlanUpdateStatus")
+ListSupportAgreementRevisions = Action("ListSupportAgreementRevisions")
+ListSupportAgreements = Action("ListSupportAgreements")
 ListSupportPlanModifiers = Action("ListSupportPlanModifiers")
+RejectSupportAgreement = Action("RejectSupportAgreement")
 StartSupportPlanUpdate = Action("StartSupportPlanUpdate")
+UpdateSupportAgreement = Action("UpdateSupportAgreement")
