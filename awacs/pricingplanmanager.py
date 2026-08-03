@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+ApprovePaidSubscription = Action("ApprovePaidSubscription")
 AssociateResourcesToSubscription = Action("AssociateResourcesToSubscription")
 CancelSubscription = Action("CancelSubscription")
 CancelSubscriptionChange = Action("CancelSubscriptionChange")
