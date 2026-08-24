@@ -50,6 +50,7 @@ AssignIpv6Addresses = Action("AssignIpv6Addresses")
 AssignPrivateIpAddresses = Action("AssignPrivateIpAddresses")
 AssignPrivateNatGatewayAddress = Action("AssignPrivateNatGatewayAddress")
 AssociateAddress = Action("AssociateAddress")
+AssociateApplicationStatusCheck = Action("AssociateApplicationStatusCheck")
 AssociateCapacityReservationBillingOwner = Action(
     "AssociateCapacityReservationBillingOwner"
 )
@@ -102,6 +103,7 @@ CopyFpgaImage = Action("CopyFpgaImage")
 CopyImage = Action("CopyImage")
 CopySnapshot = Action("CopySnapshot")
 CopyVolumes = Action("CopyVolumes")
+CreateApplicationStatusCheck = Action("CreateApplicationStatusCheck")
 CreateCapacityManagerDataExport = Action("CreateCapacityManagerDataExport")
 CreateCapacityReservation = Action("CreateCapacityReservation")
 CreateCapacityReservationBySplitting = Action("CreateCapacityReservationBySplitting")
@@ -207,6 +209,7 @@ CreateTransitGatewayMeteringPolicyEntry = Action(
 CreateTransitGatewayMulticastDomain = Action("CreateTransitGatewayMulticastDomain")
 CreateTransitGatewayPeeringAttachment = Action("CreateTransitGatewayPeeringAttachment")
 CreateTransitGatewayPolicyTable = Action("CreateTransitGatewayPolicyTable")
+CreateTransitGatewayPolicyTableEntry = Action("CreateTransitGatewayPolicyTableEntry")
 CreateTransitGatewayPrefixListReference = Action(
     "CreateTransitGatewayPrefixListReference"
 )
@@ -234,6 +237,7 @@ CreateVpnConcentrator = Action("CreateVpnConcentrator")
 CreateVpnConnection = Action("CreateVpnConnection")
 CreateVpnConnectionRoute = Action("CreateVpnConnectionRoute")
 CreateVpnGateway = Action("CreateVpnGateway")
+DeleteApplicationStatusCheck = Action("DeleteApplicationStatusCheck")
 DeleteCapacityManagerDataExport = Action("DeleteCapacityManagerDataExport")
 DeleteCarrierGateway = Action("DeleteCarrierGateway")
 DeleteClientVpnEndpoint = Action("DeleteClientVpnEndpoint")
@@ -326,6 +330,7 @@ DeleteTransitGatewayMeteringPolicyEntry = Action(
 DeleteTransitGatewayMulticastDomain = Action("DeleteTransitGatewayMulticastDomain")
 DeleteTransitGatewayPeeringAttachment = Action("DeleteTransitGatewayPeeringAttachment")
 DeleteTransitGatewayPolicyTable = Action("DeleteTransitGatewayPolicyTable")
+DeleteTransitGatewayPolicyTableEntry = Action("DeleteTransitGatewayPolicyTableEntry")
 DeleteTransitGatewayPrefixListReference = Action(
     "DeleteTransitGatewayPrefixListReference"
 )
@@ -374,6 +379,11 @@ DescribeAddressTransfers = Action("DescribeAddressTransfers")
 DescribeAddresses = Action("DescribeAddresses")
 DescribeAddressesAttribute = Action("DescribeAddressesAttribute")
 DescribeAggregateIdFormat = Action("DescribeAggregateIdFormat")
+DescribeApplicationStatus = Action("DescribeApplicationStatus")
+DescribeApplicationStatusCheckAssociations = Action(
+    "DescribeApplicationStatusCheckAssociations"
+)
+DescribeApplicationStatusChecks = Action("DescribeApplicationStatusChecks")
 DescribeAvailabilityZones = Action("DescribeAvailabilityZones")
 DescribeAwsNetworkPerformanceMetricSubscriptions = Action(
     "DescribeAwsNetworkPerformanceMetricSubscriptions"
@@ -615,6 +625,9 @@ DetachVolume = Action("DetachVolume")
 DetachVpnGateway = Action("DetachVpnGateway")
 DisableAddressTransfer = Action("DisableAddressTransfer")
 DisableAllowedImagesSettings = Action("DisableAllowedImagesSettings")
+DisableApplicationStatusCheckSuppression = Action(
+    "DisableApplicationStatusCheckSuppression"
+)
 DisableAwsNetworkPerformanceMetricSubscription = Action(
     "DisableAwsNetworkPerformanceMetricSubscription"
 )
@@ -639,6 +652,7 @@ DisableVgwRoutePropagation = Action("DisableVgwRoutePropagation")
 DisableVpcClassicLink = Action("DisableVpcClassicLink")
 DisableVpcClassicLinkDnsSupport = Action("DisableVpcClassicLinkDnsSupport")
 DisassociateAddress = Action("DisassociateAddress")
+DisassociateApplicationStatusCheck = Action("DisassociateApplicationStatusCheck")
 DisassociateCapacityReservationBillingOwner = Action(
     "DisassociateCapacityReservationBillingOwner"
 )
@@ -665,6 +679,9 @@ DisassociateVerifiedAccessInstanceWebAcl = Action(
 DisassociateVpcCidrBlock = Action("DisassociateVpcCidrBlock")
 EnableAddressTransfer = Action("EnableAddressTransfer")
 EnableAllowedImagesSettings = Action("EnableAllowedImagesSettings")
+EnableApplicationStatusCheckSuppression = Action(
+    "EnableApplicationStatusCheckSuppression"
+)
 EnableAwsNetworkPerformanceMetricSubscription = Action(
     "EnableAwsNetworkPerformanceMetricSubscription"
 )
@@ -813,6 +830,7 @@ ListSnapshotsInRecycleBin = Action("ListSnapshotsInRecycleBin")
 ListVolumesInRecycleBin = Action("ListVolumesInRecycleBin")
 LockSnapshot = Action("LockSnapshot")
 ModifyAddressAttribute = Action("ModifyAddressAttribute")
+ModifyApplicationStatusCheck = Action("ModifyApplicationStatusCheck")
 ModifyAvailabilityZoneGroup = Action("ModifyAvailabilityZoneGroup")
 ModifyCapacityReservation = Action("ModifyCapacityReservation")
 ModifyCapacityReservationFleet = Action("ModifyCapacityReservationFleet")
@@ -872,6 +890,7 @@ ModifyTrafficMirrorFilterRule = Action("ModifyTrafficMirrorFilterRule")
 ModifyTrafficMirrorSession = Action("ModifyTrafficMirrorSession")
 ModifyTransitGateway = Action("ModifyTransitGateway")
 ModifyTransitGatewayMeteringPolicy = Action("ModifyTransitGatewayMeteringPolicy")
+ModifyTransitGatewayPolicyTableEntry = Action("ModifyTransitGatewayPolicyTableEntry")
 ModifyTransitGatewayPrefixListReference = Action(
     "ModifyTransitGatewayPrefixListReference"
 )
@@ -895,6 +914,7 @@ ModifyVpcEndpoint = Action("ModifyVpcEndpoint")
 ModifyVpcEndpointConnectionNotification = Action(
     "ModifyVpcEndpointConnectionNotification"
 )
+ModifyVpcEndpointPayerResponsibility = Action("ModifyVpcEndpointPayerResponsibility")
 ModifyVpcEndpointServiceConfiguration = Action("ModifyVpcEndpointServiceConfiguration")
 ModifyVpcEndpointServicePayerResponsibility = Action(
     "ModifyVpcEndpointServicePayerResponsibility"
