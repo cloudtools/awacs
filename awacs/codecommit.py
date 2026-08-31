@@ -59,6 +59,7 @@ DisassociateApprovalRuleTemplateFromRepository = Action(
 EvaluatePullRequestApprovalRules = Action("EvaluatePullRequestApprovalRules")
 GetApprovalRuleTemplate = Action("GetApprovalRuleTemplate")
 GetBlob = Action("GetBlob")
+GetBlobDifferences = Action("GetBlobDifferences")
 GetBranch = Action("GetBranch")
 GetComment = Action("GetComment")
 GetCommentReactions = Action("GetCommentReactions")

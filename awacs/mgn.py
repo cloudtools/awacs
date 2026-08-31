@@ -104,6 +104,9 @@ ListNetworkMigrationDeployedStacksDeletions = Action(
     "ListNetworkMigrationDeployedStacksDeletions"
 )
 ListNetworkMigrationDeployments = Action("ListNetworkMigrationDeployments")
+ListNetworkMigrationExecutionArtifacts = Action(
+    "ListNetworkMigrationExecutionArtifacts"
+)
 ListNetworkMigrationExecutions = Action("ListNetworkMigrationExecutions")
 ListNetworkMigrationMapperSegmentConstructs = Action(
     "ListNetworkMigrationMapperSegmentConstructs"
