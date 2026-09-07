@@ -27,6 +27,10 @@ class ARN(BaseARN):
 AcceptAdministratorInvitation = Action("AcceptAdministratorInvitation")
 AcceptInvitation = Action("AcceptInvitation")
 ArchiveFindings = Action("ArchiveFindings")
+CreateCustomDetectionRuleAssociation = Action("CreateCustomDetectionRuleAssociation")
+CreateCustomDetectionRuleOrgConfiguration = Action(
+    "CreateCustomDetectionRuleOrgConfiguration"
+)
 CreateDetector = Action("CreateDetector")
 CreateFilter = Action("CreateFilter")
 CreateIPSet = Action("CreateIPSet")
@@ -39,6 +43,10 @@ CreateThreatEntitySet = Action("CreateThreatEntitySet")
 CreateThreatIntelSet = Action("CreateThreatIntelSet")
 CreateTrustedEntitySet = Action("CreateTrustedEntitySet")
 DeclineInvitations = Action("DeclineInvitations")
+DeleteCustomDetectionRuleAssociation = Action("DeleteCustomDetectionRuleAssociation")
+DeleteCustomDetectionRuleOrgConfiguration = Action(
+    "DeleteCustomDetectionRuleOrgConfiguration"
+)
 DeleteDetector = Action("DeleteDetector")
 DeleteFilter = Action("DeleteFilter")
 DeleteIPSet = Action("DeleteIPSet")
@@ -59,6 +67,11 @@ DisassociateMembers = Action("DisassociateMembers")
 EnableOrganizationAdminAccount = Action("EnableOrganizationAdminAccount")
 GetAdministratorAccount = Action("GetAdministratorAccount")
 GetCoverageStatistics = Action("GetCoverageStatistics")
+GetCustomDetectionRule = Action("GetCustomDetectionRule")
+GetCustomDetectionRuleAssociation = Action("GetCustomDetectionRuleAssociation")
+GetCustomDetectionRuleOrgConfiguration = Action(
+    "GetCustomDetectionRuleOrgConfiguration"
+)
 GetDetector = Action("GetDetector")
 GetFilter = Action("GetFilter")
 GetFindings = Action("GetFindings")
@@ -80,6 +93,11 @@ GetTrustedEntitySet = Action("GetTrustedEntitySet")
 GetUsageStatistics = Action("GetUsageStatistics")
 InviteMembers = Action("InviteMembers")
 ListCoverage = Action("ListCoverage")
+ListCustomDetectionRuleAssociations = Action("ListCustomDetectionRuleAssociations")
+ListCustomDetectionRuleOrgConfigurations = Action(
+    "ListCustomDetectionRuleOrgConfigurations"
+)
+ListCustomDetectionRules = Action("ListCustomDetectionRules")
 ListDetectors = Action("ListDetectors")
 ListFilters = Action("ListFilters")
 ListFindings = Action("ListFindings")
@@ -103,6 +121,10 @@ StopMonitoringMembers = Action("StopMonitoringMembers")
 TagResource = Action("TagResource")
 UnarchiveFindings = Action("UnarchiveFindings")
 UntagResource = Action("UntagResource")
+UpdateCustomDetectionRuleAssociation = Action("UpdateCustomDetectionRuleAssociation")
+UpdateCustomDetectionRuleOrgConfiguration = Action(
+    "UpdateCustomDetectionRuleOrgConfiguration"
+)
 UpdateDetector = Action("UpdateDetector")
 UpdateFilter = Action("UpdateFilter")
 UpdateFindingsFeedback = Action("UpdateFindingsFeedback")
