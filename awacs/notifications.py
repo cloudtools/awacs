@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessSensitiveEvents = Action("AccessSensitiveEvents")
 AssociateChannel = Action("AssociateChannel")
 AssociateManagedNotificationAccountContact = Action(
     "AssociateManagedNotificationAccountContact"
@@ -75,7 +76,11 @@ ListOrganizationalUnits = Action("ListOrganizationalUnits")
 ListTagsForResource = Action("ListTagsForResource")
 PutFeatureOptInStatus = Action("PutFeatureOptInStatus")
 RegisterNotificationHub = Action("RegisterNotificationHub")
+SubscribeSensitiveEvents = Action("SubscribeSensitiveEvents")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
 UpdateEventRule = Action("UpdateEventRule")
+UpdateManagedNotificationChannelAssociation = Action(
+    "UpdateManagedNotificationChannelAssociation"
+)
 UpdateNotificationConfiguration = Action("UpdateNotificationConfiguration")

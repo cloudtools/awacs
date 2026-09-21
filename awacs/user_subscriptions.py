@@ -24,12 +24,18 @@ class ARN(BaseARN):
         )
 
 
+CancelPurchaseSession = Action("CancelPurchaseSession")
+ConfirmPurchaseSession = Action("ConfirmPurchaseSession")
 CreateClaim = Action("CreateClaim")
 CreateClaimAddOn = Action("CreateClaimAddOn")
+CreatePurchaseSession = Action("CreatePurchaseSession")
+CreateUpdatePlanPreview = Action("CreateUpdatePlanPreview")
 DeleteAutoTopUpRule = Action("DeleteAutoTopUpRule")
 DeleteClaim = Action("DeleteClaim")
 GetAutoTopUpRule = Action("GetAutoTopUpRule")
+GetCurrentPlanDetails = Action("GetCurrentPlanDetails")
 GetEffectiveUsageLimit = Action("GetEffectiveUsageLimit")
+GetPurchaseSession = Action("GetPurchaseSession")
 GetUsageLimitHistory = Action("GetUsageLimitHistory")
 ListApplicationClaims = Action("ListApplicationClaims")
 ListClaimAddOns = Action("ListClaimAddOns")
