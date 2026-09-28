@@ -85,3 +85,9 @@ UpdateManagedRuleSetVersionExpiryDate = Action("UpdateManagedRuleSetVersionExpir
 UpdateRegexPatternSet = Action("UpdateRegexPatternSet")
 UpdateRuleGroup = Action("UpdateRuleGroup")
 UpdateWebACL = Action("UpdateWebACL")
+ValidateNetworkSecurityManagerRuleConfiguration = Action(
+    "ValidateNetworkSecurityManagerRuleConfiguration"
+)
+ValidateNetworkSecurityManagerWebACLConfiguration = Action(
+    "ValidateNetworkSecurityManagerWebACLConfiguration"
+)

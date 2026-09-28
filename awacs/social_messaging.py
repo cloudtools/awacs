@@ -40,6 +40,7 @@ GetLinkedWhatsAppBusinessAccount = Action("GetLinkedWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccountPhoneNumber = Action(
     "GetLinkedWhatsAppBusinessAccountPhoneNumber"
 )
+GetWhatsAppCallPermission = Action("GetWhatsAppCallPermission")
 GetWhatsAppFlow = Action("GetWhatsAppFlow")
 GetWhatsAppFlowPreview = Action("GetWhatsAppFlowPreview")
 GetWhatsAppMessageMedia = Action("GetWhatsAppMessageMedia")
@@ -55,9 +56,13 @@ PublishWhatsAppFlow = Action("PublishWhatsAppFlow")
 PutWhatsAppBusinessAccountEventDestinations = Action(
     "PutWhatsAppBusinessAccountEventDestinations"
 )
+SendWhatsAppCallEvent = Action("SendWhatsAppCallEvent")
 SendWhatsAppMessage = Action("SendWhatsAppMessage")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateLinkedWhatsAppBusinessAccountPhoneNumber = Action(
+    "UpdateLinkedWhatsAppBusinessAccountPhoneNumber"
+)
 UpdateWhatsAppFlow = Action("UpdateWhatsAppFlow")
 UpdateWhatsAppFlowAssets = Action("UpdateWhatsAppFlowAssets")
 UpdateWhatsAppMessageTemplate = Action("UpdateWhatsAppMessageTemplate")

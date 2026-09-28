@@ -27,6 +27,7 @@ class ARN(BaseARN):
 CreateCentralizationRuleForOrganization = Action(
     "CreateCentralizationRuleForOrganization"
 )
+CreateDatasetIntegration = Action("CreateDatasetIntegration")
 CreateS3TableIntegration = Action("CreateS3TableIntegration")
 CreateTelemetryPipeline = Action("CreateTelemetryPipeline")
 CreateTelemetryRule = Action("CreateTelemetryRule")
@@ -34,11 +35,13 @@ CreateTelemetryRuleForOrganization = Action("CreateTelemetryRuleForOrganization"
 DeleteCentralizationRuleForOrganization = Action(
     "DeleteCentralizationRuleForOrganization"
 )
+DeleteDatasetIntegration = Action("DeleteDatasetIntegration")
 DeleteS3TableIntegration = Action("DeleteS3TableIntegration")
 DeleteTelemetryPipeline = Action("DeleteTelemetryPipeline")
 DeleteTelemetryRule = Action("DeleteTelemetryRule")
 DeleteTelemetryRuleForOrganization = Action("DeleteTelemetryRuleForOrganization")
 GetCentralizationRuleForOrganization = Action("GetCentralizationRuleForOrganization")
+GetDatasetIntegration = Action("GetDatasetIntegration")
 GetS3TableIntegration = Action("GetS3TableIntegration")
 GetTelemetryEnrichmentStatus = Action("GetTelemetryEnrichmentStatus")
 GetTelemetryEvaluationStatus = Action("GetTelemetryEvaluationStatus")
@@ -51,6 +54,7 @@ GetTelemetryRuleForOrganization = Action("GetTelemetryRuleForOrganization")
 ListCentralizationRulesForOrganization = Action(
     "ListCentralizationRulesForOrganization"
 )
+ListDatasetIntegrations = Action("ListDatasetIntegrations")
 ListResourceTelemetry = Action("ListResourceTelemetry")
 ListResourceTelemetryForOrganization = Action("ListResourceTelemetryForOrganization")
 ListS3TableIntegrations = Action("ListS3TableIntegrations")
@@ -74,6 +78,7 @@ UntagResource = Action("UntagResource")
 UpdateCentralizationRuleForOrganization = Action(
     "UpdateCentralizationRuleForOrganization"
 )
+UpdateDatasetIntegration = Action("UpdateDatasetIntegration")
 UpdateTelemetryPipeline = Action("UpdateTelemetryPipeline")
 UpdateTelemetryRule = Action("UpdateTelemetryRule")
 UpdateTelemetryRuleForOrganization = Action("UpdateTelemetryRuleForOrganization")

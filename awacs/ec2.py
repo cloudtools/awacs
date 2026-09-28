@@ -999,6 +999,7 @@ ReplaceIamInstanceProfileAssociation = Action("ReplaceIamInstanceProfileAssociat
 ReplaceImageCriteriaInAllowedImagesSettings = Action(
     "ReplaceImageCriteriaInAllowedImagesSettings"
 )
+ReplaceImageInstanceTypeSpecification = Action("ReplaceImageInstanceTypeSpecification")
 ReplaceNetworkAclAssociation = Action("ReplaceNetworkAclAssociation")
 ReplaceNetworkAclEntry = Action("ReplaceNetworkAclEntry")
 ReplaceRoute = Action("ReplaceRoute")
@@ -1060,5 +1061,8 @@ UpdateSecurityGroupRuleDescriptionsEgress = Action(
 )
 UpdateSecurityGroupRuleDescriptionsIngress = Action(
     "UpdateSecurityGroupRuleDescriptionsIngress"
+)
+ValidateSecurityGroupQuotasForInterface = Action(
+    "ValidateSecurityGroupQuotasForInterface"
 )
 WithdrawByoipCidr = Action("WithdrawByoipCidr")

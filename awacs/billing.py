@@ -45,6 +45,7 @@ GetIAMAccessPreference = Action("GetIAMAccessPreference")
 GetMonthlyTracking = Action("GetMonthlyTracking")
 GetResourcePolicy = Action("GetResourcePolicy")
 GetSellerOfRecord = Action("GetSellerOfRecord")
+ListBillingViewSegments = Action("ListBillingViewSegments")
 ListBillingViews = Action("ListBillingViews")
 ListEnterpriseSupportLinkedAccountCharges = Action(
     "ListEnterpriseSupportLinkedAccountCharges"

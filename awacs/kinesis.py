@@ -69,4 +69,7 @@ UpdateChannel = Action("UpdateChannel")
 UpdateMaxRecordSize = Action("UpdateMaxRecordSize")
 UpdateShardCount = Action("UpdateShardCount")
 UpdateStreamMode = Action("UpdateStreamMode")
+UpdateStreamRecordDistributionStrategy = Action(
+    "UpdateStreamRecordDistributionStrategy"
+)
 UpdateStreamWarmThroughput = Action("UpdateStreamWarmThroughput")
