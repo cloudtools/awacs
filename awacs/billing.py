@@ -47,6 +47,10 @@ GetResourcePolicy = Action("GetResourcePolicy")
 GetSellerOfRecord = Action("GetSellerOfRecord")
 ListBillingViewSegments = Action("ListBillingViewSegments")
 ListBillingViews = Action("ListBillingViews")
+ListBusinessSupportAccountCharges = Action("ListBusinessSupportAccountCharges")
+ListBusinessSupportSubscriptionHistory = Action(
+    "ListBusinessSupportSubscriptionHistory"
+)
 ListEnterpriseSupportLinkedAccountCharges = Action(
     "ListEnterpriseSupportLinkedAccountCharges"
 )

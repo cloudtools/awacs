@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AssociateWhatsAppBusinessAccount = Action("AssociateWhatsAppBusinessAccount")
+CreateWhatsAppDataset = Action("CreateWhatsAppDataset")
 CreateWhatsAppFlow = Action("CreateWhatsAppFlow")
 CreateWhatsAppMessageTemplate = Action("CreateWhatsAppMessageTemplate")
 CreateWhatsAppMessageTemplateFromLibrary = Action(
@@ -40,6 +41,7 @@ GetLinkedWhatsAppBusinessAccount = Action("GetLinkedWhatsAppBusinessAccount")
 GetLinkedWhatsAppBusinessAccountPhoneNumber = Action(
     "GetLinkedWhatsAppBusinessAccountPhoneNumber"
 )
+GetWhatsAppBusinessPublicKey = Action("GetWhatsAppBusinessPublicKey")
 GetWhatsAppCallPermission = Action("GetWhatsAppCallPermission")
 GetWhatsAppFlow = Action("GetWhatsAppFlow")
 GetWhatsAppFlowPreview = Action("GetWhatsAppFlowPreview")
@@ -56,7 +58,9 @@ PublishWhatsAppFlow = Action("PublishWhatsAppFlow")
 PutWhatsAppBusinessAccountEventDestinations = Action(
     "PutWhatsAppBusinessAccountEventDestinations"
 )
+PutWhatsAppBusinessPublicKey = Action("PutWhatsAppBusinessPublicKey")
 SendWhatsAppCallEvent = Action("SendWhatsAppCallEvent")
+SendWhatsAppConversionEvent = Action("SendWhatsAppConversionEvent")
 SendWhatsAppMessage = Action("SendWhatsAppMessage")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
