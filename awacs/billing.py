@@ -51,6 +51,8 @@ ListBusinessSupportAccountCharges = Action("ListBusinessSupportAccountCharges")
 ListBusinessSupportSubscriptionHistory = Action(
     "ListBusinessSupportSubscriptionHistory"
 )
+ListCreditEntitlementPeriods = Action("ListCreditEntitlementPeriods")
+ListCreditEntitlements = Action("ListCreditEntitlements")
 ListEnterpriseSupportLinkedAccountCharges = Action(
     "ListEnterpriseSupportLinkedAccountCharges"
 )
@@ -59,7 +61,9 @@ ListTagsForResource = Action("ListTagsForResource")
 PutContractInformation = Action("PutContractInformation")
 PutResourcePolicy = Action("PutResourcePolicy")
 RedeemCredits = Action("RedeemCredits")
+SplitCredit = Action("SplitCredit")
 TagResource = Action("TagResource")
+TransferCredit = Action("TransferCredit")
 UntagResource = Action("UntagResource")
 UpdateBillingPreferences = Action("UpdateBillingPreferences")
 UpdateBillingView = Action("UpdateBillingView")
