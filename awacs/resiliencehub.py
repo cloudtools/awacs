@@ -76,6 +76,7 @@ DescribeResiliencyPolicy = Action("DescribeResiliencyPolicy")
 DescribeResourceGroupingRecommendationTask = Action(
     "DescribeResourceGroupingRecommendationTask"
 )
+GetDependencyInsights = Action("GetDependencyInsights")
 GetFailureModeFinding = Action("GetFailureModeFinding")
 GetPolicy = Action("GetPolicy")
 GetService = Action("GetService")
@@ -106,6 +107,7 @@ ListFailureModeFindings = Action("ListFailureModeFindings")
 ListInputSources = Action("ListInputSources")
 ListMetrics = Action("ListMetrics")
 ListPolicies = Action("ListPolicies")
+ListPolicyEvents = Action("ListPolicyEvents")
 ListRecommendationTemplates = Action("ListRecommendationTemplates")
 ListReports = Action("ListReports")
 ListResiliencyPolicies = Action("ListResiliencyPolicies")
@@ -139,6 +141,7 @@ RejectResourceGroupingRecommendations = Action("RejectResourceGroupingRecommenda
 RemoveDraftAppVersionResourceMappings = Action("RemoveDraftAppVersionResourceMappings")
 ResolveAppVersionResources = Action("ResolveAppVersionResources")
 StartAppAssessment = Action("StartAppAssessment")
+StartDependencyInsights = Action("StartDependencyInsights")
 StartFailureModeAssessment = Action("StartFailureModeAssessment")
 StartMetricsExport = Action("StartMetricsExport")
 StartResourceGroupingRecommendationTask = Action(
