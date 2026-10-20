@@ -1,3 +1,26 @@
+## 2.6.1 (2026-10-20)
+* Action Update 2026-25
+* Action Update 2026-26
+* Action Update 2026-27
+* Action Update 2026-28
+* Action Update 2026-29
+* Action Update 2026-30
+* Action Update 2026-31
+* Action Update 2026-32
+* Action Update 2026-33
+* Action Update 2026-34
+* Action Update 2026-35
+* Action Update 2026-36
+* Action Update 2026-37
+* Action Update 2026-38
+* Action Update 2026-39
+* Action Update 2026-40
+* Action Update 2026-41
+* Action Update 2026-42
+* Use latest actions (#287)
+* Run tests against Python 3.15 and add trove classifier (#288)
+* Action Update 2026-43
+
 ## 2.6.0 (2026-06-07)
 * Action Update 2025-05
 * Action Update 2025-06
