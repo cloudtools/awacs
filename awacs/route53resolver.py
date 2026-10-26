@@ -25,6 +25,7 @@ class ARN(BaseARN):
 
 
 AssociateFirewallRuleGroup = Action("AssociateFirewallRuleGroup")
+AssociateFirewallRuleGroupWithService = Action("AssociateFirewallRuleGroupWithService")
 AssociateResolverEndpointIpAddress = Action("AssociateResolverEndpointIpAddress")
 AssociateResolverQueryLogConfig = Action("AssociateResolverQueryLogConfig")
 AssociateResolverRule = Action("AssociateResolverRule")

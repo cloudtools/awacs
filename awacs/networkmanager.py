@@ -97,6 +97,7 @@ GetTransitGatewayPeering = Action("GetTransitGatewayPeering")
 GetTransitGatewayRegistrations = Action("GetTransitGatewayRegistrations")
 GetTransitGatewayRouteTableAttachment = Action("GetTransitGatewayRouteTableAttachment")
 GetVpcAttachment = Action("GetVpcAttachment")
+ListAttachmentNatConfigurations = Action("ListAttachmentNatConfigurations")
 ListAttachmentRoutingPolicyAssociations = Action(
     "ListAttachmentRoutingPolicyAssociations"
 )
@@ -120,6 +121,7 @@ StartOrganizationServiceAccessUpdate = Action("StartOrganizationServiceAccessUpd
 StartRouteAnalysis = Action("StartRouteAnalysis")
 TagResource = Action("TagResource")
 UntagResource = Action("UntagResource")
+UpdateAttachmentNatConfiguration = Action("UpdateAttachmentNatConfiguration")
 UpdateConnection = Action("UpdateConnection")
 UpdateCoreNetwork = Action("UpdateCoreNetwork")
 UpdateDevice = Action("UpdateDevice")

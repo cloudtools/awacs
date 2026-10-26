@@ -1,0 +1,125 @@
+# Copyright (c) 2012-2021, Mark Peek <mark@peek.org>
+# All rights reserved.
+#
+# See LICENSE file for full license.
+
+from typing import Optional
+
+from .aws import Action as BaseAction
+from .aws import BaseARN
+
+service_name = "AWS Assurance"
+prefix = "assurance"
+
+
+class Action(BaseAction):
+    def __init__(self, action: Optional[str] = None) -> None:
+        super().__init__(prefix, action)
+
+
+class ARN(BaseARN):
+    def __init__(self, resource: str = "", region: str = "", account: str = "") -> None:
+        super().__init__(
+            service=prefix, resource=resource, region=region, account=account
+        )
+
+
+AcceptInvitation = Action("AcceptInvitation")
+AssignPermissionSet = Action("AssignPermissionSet")
+BatchGetComment = Action("BatchGetComment")
+BatchGetControl = Action("BatchGetControl")
+BatchGetTask = Action("BatchGetTask")
+Chat = Action("Chat")
+CreateAnnotation = Action("CreateAnnotation")
+CreateComment = Action("CreateComment")
+CreateControl = Action("CreateControl")
+CreateControlGroup = Action("CreateControlGroup")
+CreateEnvironment = Action("CreateEnvironment")
+CreateEnvironmentConnection = Action("CreateEnvironmentConnection")
+CreateFramework = Action("CreateFramework")
+CreateInvitation = Action("CreateInvitation")
+CreatePermissionSet = Action("CreatePermissionSet")
+CreateProject = Action("CreateProject")
+CreateTask = Action("CreateTask")
+DeleteAnnotation = Action("DeleteAnnotation")
+DeleteComment = Action("DeleteComment")
+DeleteControl = Action("DeleteControl")
+DeleteControlGroup = Action("DeleteControlGroup")
+DeleteEnvironment = Action("DeleteEnvironment")
+DeleteEnvironmentConnection = Action("DeleteEnvironmentConnection")
+DeleteEvidence = Action("DeleteEvidence")
+DeleteFramework = Action("DeleteFramework")
+DeleteInvitation = Action("DeleteInvitation")
+DeletePermissionSet = Action("DeletePermissionSet")
+DeleteProject = Action("DeleteProject")
+DeregisterOrganizationDelegatedAdmin = Action("DeregisterOrganizationDelegatedAdmin")
+DisableFramework = Action("DisableFramework")
+DownloadEvidence = Action("DownloadEvidence")
+EnableFramework = Action("EnableFramework")
+GetAnnotation = Action("GetAnnotation")
+GetAssessment = Action("GetAssessment")
+GetAssessmentReportContent = Action("GetAssessmentReportContent")
+GetAssessmentReportExport = Action("GetAssessmentReportExport")
+GetChatMessages = Action("GetChatMessages")
+GetComment = Action("GetComment")
+GetControl = Action("GetControl")
+GetControlGroup = Action("GetControlGroup")
+GetControlStatus = Action("GetControlStatus")
+GetEnvironment = Action("GetEnvironment")
+GetEvidence = Action("GetEvidence")
+GetEvidenceContent = Action("GetEvidenceContent")
+GetFramework = Action("GetFramework")
+GetInvitation = Action("GetInvitation")
+GetPermissionSet = Action("GetPermissionSet")
+GetProject = Action("GetProject")
+GetTask = Action("GetTask")
+ListAssessmentAnnotations = Action("ListAssessmentAnnotations")
+ListAssessmentJournalRecords = Action("ListAssessmentJournalRecords")
+ListAssessmentOutcomes = Action("ListAssessmentOutcomes")
+ListAssessments = Action("ListAssessments")
+ListChatSessions = Action("ListChatSessions")
+ListComments = Action("ListComments")
+ListConnectionItems = Action("ListConnectionItems")
+ListControlGroups = Action("ListControlGroups")
+ListControlResources = Action("ListControlResources")
+ListControls = Action("ListControls")
+ListDiscoveredResources = Action("ListDiscoveredResources")
+ListEnabledFrameworks = Action("ListEnabledFrameworks")
+ListEnvironmentConnections = Action("ListEnvironmentConnections")
+ListEnvironments = Action("ListEnvironments")
+ListEvidence = Action("ListEvidence")
+ListEvidenceAnnotations = Action("ListEvidenceAnnotations")
+ListFrameworks = Action("ListFrameworks")
+ListInboundInvitations = Action("ListInboundInvitations")
+ListOutboundInvitations = Action("ListOutboundInvitations")
+ListPermissionSetAssignments = Action("ListPermissionSetAssignments")
+ListPermissionSets = Action("ListPermissionSets")
+ListProjects = Action("ListProjects")
+ListResourcesForControl = Action("ListResourcesForControl")
+ListTagsForResource = Action("ListTagsForResource")
+ListTaskHistory = Action("ListTaskHistory")
+ListTasks = Action("ListTasks")
+PublishFramework = Action("PublishFramework")
+PutControlStatusOverride = Action("PutControlStatusOverride")
+PutEvidence = Action("PutEvidence")
+RegisterOrganizationDelegatedAdmin = Action("RegisterOrganizationDelegatedAdmin")
+RejectInvitation = Action("RejectInvitation")
+RevokePermissionSet = Action("RevokePermissionSet")
+StartAssessment = Action("StartAssessment")
+StartAssessmentReportExport = Action("StartAssessmentReportExport")
+StartResourceDiscovery = Action("StartResourceDiscovery")
+TagResource = Action("TagResource")
+UntagResource = Action("UntagResource")
+UpdateAnnotation = Action("UpdateAnnotation")
+UpdateAssessment = Action("UpdateAssessment")
+UpdateComment = Action("UpdateComment")
+UpdateControl = Action("UpdateControl")
+UpdateControlGroup = Action("UpdateControlGroup")
+UpdateEnvironment = Action("UpdateEnvironment")
+UpdateEvidence = Action("UpdateEvidence")
+UpdateFramework = Action("UpdateFramework")
+UpdatePermissionSet = Action("UpdatePermissionSet")
+UpdateProject = Action("UpdateProject")
+UpdateTask = Action("UpdateTask")
+UploadEvidence = Action("UploadEvidence")
+VendConnectionAccessToken = Action("VendConnectionAccessToken")

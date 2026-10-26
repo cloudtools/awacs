@@ -24,10 +24,18 @@ class ARN(BaseARN):
         )
 
 
+AssociateContract = Action("AssociateContract")
 AssociateSourceViews = Action("AssociateSourceViews")
+CancelContractualInvestmentAttestation = Action(
+    "CancelContractualInvestmentAttestation"
+)
 CreateBillingView = Action("CreateBillingView")
+CreateContractualInvestmentAttestation = Action(
+    "CreateContractualInvestmentAttestation"
+)
 DeleteBillingView = Action("DeleteBillingView")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
+DisassociateContract = Action("DisassociateContract")
 DisassociateSourceViews = Action("DisassociateSourceViews")
 GetBillingData = Action("GetBillingData")
 GetBillingDetails = Action("GetBillingDetails")
@@ -51,6 +59,10 @@ ListBusinessSupportAccountCharges = Action("ListBusinessSupportAccountCharges")
 ListBusinessSupportSubscriptionHistory = Action(
     "ListBusinessSupportSubscriptionHistory"
 )
+ListContracts = Action("ListContracts")
+ListContractualInvestmentAttestations = Action("ListContractualInvestmentAttestations")
+ListContractualInvestmentSummaries = Action("ListContractualInvestmentSummaries")
+ListContractualInvestments = Action("ListContractualInvestments")
 ListCreditEntitlementPeriods = Action("ListCreditEntitlementPeriods")
 ListCreditEntitlements = Action("ListCreditEntitlements")
 ListEnterpriseSupportLinkedAccountCharges = Action(
