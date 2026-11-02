@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AccessAirflowResource = Action("AccessAirflowResource")
 CreateCliToken = Action("CreateCliToken")
 CreateEnvironment = Action("CreateEnvironment")
 CreateWebLoginToken = Action("CreateWebLoginToken")

@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 BatchGetTraceSummaryById = Action("BatchGetTraceSummaryById")
 BatchGetTraces = Action("BatchGetTraces")
+CallWithBearerToken = Action("CallWithBearerToken")
 CancelTraceRetrieval = Action("CancelTraceRetrieval")
 CreateGroup = Action("CreateGroup")
 CreateSamplingRule = Action("CreateSamplingRule")

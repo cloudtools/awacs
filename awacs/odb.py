@@ -115,6 +115,9 @@ UpdateAutonomousDatabase = Action("UpdateAutonomousDatabase")
 UpdateAutonomousDatabaseBackup = Action("UpdateAutonomousDatabaseBackup")
 UpdateCloudExadataInfrastructure = Action("UpdateCloudExadataInfrastructure")
 UpdateExadbVmCluster = Action("UpdateExadbVmCluster")
+UpdateExascaleCloudExadataInfrastructure = Action(
+    "UpdateExascaleCloudExadataInfrastructure"
+)
 UpdateExascaleDbStorageVault = Action("UpdateExascaleDbStorageVault")
 UpdateGrantShare = Action("UpdateGrantShare")
 UpdateOdbNetwork = Action("UpdateOdbNetwork")
