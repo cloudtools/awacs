@@ -59,6 +59,7 @@ RejectDomainTransferFromAnotherAwsAccount = Action(
 RenewDomain = Action("RenewDomain")
 ResendContactReachabilityEmail = Action("ResendContactReachabilityEmail")
 ResendOperationAuthorization = Action("ResendOperationAuthorization")
+RestoreDomain = Action("RestoreDomain")
 RetrieveDomainAuthCode = Action("RetrieveDomainAuthCode")
 TransferDomain = Action("TransferDomain")
 TransferDomainToAnotherAwsAccount = Action("TransferDomainToAnotherAwsAccount")

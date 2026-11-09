@@ -35,6 +35,7 @@ CreateApplication = Action("CreateApplication")
 CreateConnector = Action("CreateConnector")
 CreateLaunchConfigurationTemplate = Action("CreateLaunchConfigurationTemplate")
 CreateNetworkMigrationDefinition = Action("CreateNetworkMigrationDefinition")
+CreateRemoteSourceAction = Action("CreateRemoteSourceAction")
 CreateReplicationConfigurationTemplate = Action(
     "CreateReplicationConfigurationTemplate"
 )
@@ -45,6 +46,7 @@ DeleteConnector = Action("DeleteConnector")
 DeleteJob = Action("DeleteJob")
 DeleteLaunchConfigurationTemplate = Action("DeleteLaunchConfigurationTemplate")
 DeleteNetworkMigrationDefinition = Action("DeleteNetworkMigrationDefinition")
+DeleteRemoteSourceAction = Action("DeleteRemoteSourceAction")
 DeleteReplicationConfigurationTemplate = Action(
     "DeleteReplicationConfigurationTemplate"
 )
@@ -76,6 +78,7 @@ GetAgentRuntimeConfigurationForMgn = Action("GetAgentRuntimeConfigurationForMgn"
 GetAgentSnapshotCreditsForMgn = Action("GetAgentSnapshotCreditsForMgn")
 GetChannelCommandsForMgn = Action("GetChannelCommandsForMgn")
 GetLaunchConfiguration = Action("GetLaunchConfiguration")
+GetLaunchConfigurationDefaults = Action("GetLaunchConfigurationDefaults")
 GetNetworkMigrationDefinition = Action("GetNetworkMigrationDefinition")
 GetNetworkMigrationMapperSegmentConstruct = Action(
     "GetNetworkMigrationMapperSegmentConstruct"
@@ -108,12 +111,19 @@ ListNetworkMigrationExecutionArtifacts = Action(
     "ListNetworkMigrationExecutionArtifacts"
 )
 ListNetworkMigrationExecutions = Action("ListNetworkMigrationExecutions")
+ListNetworkMigrationInsights = Action("ListNetworkMigrationInsights")
 ListNetworkMigrationMapperSegmentConstructs = Action(
     "ListNetworkMigrationMapperSegmentConstructs"
 )
 ListNetworkMigrationMapperSegments = Action("ListNetworkMigrationMapperSegments")
 ListNetworkMigrationMappingUpdates = Action("ListNetworkMigrationMappingUpdates")
 ListNetworkMigrationMappings = Action("ListNetworkMigrationMappings")
+ListRemoteSourceActionInvocationResults = Action(
+    "ListRemoteSourceActionInvocationResults"
+)
+ListRemoteSourceActionInvocations = Action("ListRemoteSourceActionInvocations")
+ListRemoteSourceActionJobs = Action("ListRemoteSourceActionJobs")
+ListRemoteSourceActions = Action("ListRemoteSourceActions")
 ListSourceServerActions = Action("ListSourceServerActions")
 ListTagsForResource = Action("ListTagsForResource")
 ListTemplateActions = Action("ListTemplateActions")
@@ -152,6 +162,7 @@ StartNetworkMigrationDeployedStacksDeletion = Action(
 StartNetworkMigrationDeployment = Action("StartNetworkMigrationDeployment")
 StartNetworkMigrationMapping = Action("StartNetworkMigrationMapping")
 StartNetworkMigrationMappingUpdate = Action("StartNetworkMigrationMappingUpdate")
+StartRemoteSourceActionJob = Action("StartRemoteSourceActionJob")
 StartReplication = Action("StartReplication")
 StartSnapshotGroupForMgn = Action("StartSnapshotGroupForMgn")
 StartTest = Action("StartTest")
@@ -172,12 +183,14 @@ UpdateAgentSourcePropertiesForMgn = Action("UpdateAgentSourcePropertiesForMgn")
 UpdateApplication = Action("UpdateApplication")
 UpdateConnector = Action("UpdateConnector")
 UpdateLaunchConfiguration = Action("UpdateLaunchConfiguration")
+UpdateLaunchConfigurationDefaults = Action("UpdateLaunchConfigurationDefaults")
 UpdateLaunchConfigurationTemplate = Action("UpdateLaunchConfigurationTemplate")
 UpdateNetworkMigrationDefinition = Action("UpdateNetworkMigrationDefinition")
 UpdateNetworkMigrationMapperSegment = Action("UpdateNetworkMigrationMapperSegment")
 UpdateNetworkMigrationMapperSegmentConstruct = Action(
     "UpdateNetworkMigrationMapperSegmentConstruct"
 )
+UpdateRemoteSourceAction = Action("UpdateRemoteSourceAction")
 UpdateReplicationConfiguration = Action("UpdateReplicationConfiguration")
 UpdateReplicationConfigurationTemplate = Action(
     "UpdateReplicationConfigurationTemplate"

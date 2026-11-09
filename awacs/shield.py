@@ -24,6 +24,7 @@ class ARN(BaseARN):
         )
 
 
+AllowVendedLogDeliveryForResource = Action("AllowVendedLogDeliveryForResource")
 AssociateDRTLogBucket = Action("AssociateDRTLogBucket")
 AssociateDRTRole = Action("AssociateDRTRole")
 AssociateHealthCheck = Action("AssociateHealthCheck")

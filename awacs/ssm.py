@@ -51,6 +51,9 @@ DeleteParameters = Action("DeleteParameters")
 DeletePatchBaseline = Action("DeletePatchBaseline")
 DeleteResourceDataSync = Action("DeleteResourceDataSync")
 DeleteResourcePolicy = Action("DeleteResourcePolicy")
+DeregisterDefaultHostManagementConfiguration = Action(
+    "DeregisterDefaultHostManagementConfiguration"
+)
 DeregisterManagedInstance = Action("DeregisterManagedInstance")
 DeregisterPatchBaselineForPatchGroup = Action("DeregisterPatchBaselineForPatchGroup")
 DeregisterTargetFromMaintenanceWindow = Action("DeregisterTargetFromMaintenanceWindow")
@@ -159,6 +162,9 @@ PutConfigurePackageResult = Action("PutConfigurePackageResult")
 PutInventory = Action("PutInventory")
 PutParameter = Action("PutParameter")
 PutResourcePolicy = Action("PutResourcePolicy")
+RegisterDefaultHostManagementConfiguration = Action(
+    "RegisterDefaultHostManagementConfiguration"
+)
 RegisterDefaultPatchBaseline = Action("RegisterDefaultPatchBaseline")
 RegisterManagedInstance = Action("RegisterManagedInstance")
 RegisterPatchBaselineForPatchGroup = Action("RegisterPatchBaselineForPatchGroup")

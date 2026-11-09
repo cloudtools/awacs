@@ -26,6 +26,7 @@ class ARN(BaseARN):
 
 CallForwardedTool = Action("CallForwardedTool")
 CheckConnectionStatus = Action("CheckConnectionStatus")
+CloseSession = Action("CloseSession")
 DoubleClick = Action("DoubleClick")
 GetScreenshot = Action("GetScreenshot")
 GetSessionInfo = Action("GetSessionInfo")

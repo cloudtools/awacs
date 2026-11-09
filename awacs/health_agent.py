@@ -25,6 +25,9 @@ class ARN(BaseARN):
 
 
 ActivateSubscription = Action("ActivateSubscription")
+BatchRefillPatientPharmacyPrescriptions = Action(
+    "BatchRefillPatientPharmacyPrescriptions"
+)
 CancelAppointment = Action("CancelAppointment")
 CreateAgent = Action("CreateAgent")
 CreateDomain = Action("CreateDomain")
@@ -54,6 +57,7 @@ ListIntegrations = Action("ListIntegrations")
 ListPatientAppointments = Action("ListPatientAppointments")
 ListPatientInsuranceCoverages = Action("ListPatientInsuranceCoverages")
 ListPatientMedications = Action("ListPatientMedications")
+ListPatientPharmacyPrescriptions = Action("ListPatientPharmacyPrescriptions")
 ListProviders = Action("ListProviders")
 ListSessionRecords = Action("ListSessionRecords")
 ListSubscriptions = Action("ListSubscriptions")
